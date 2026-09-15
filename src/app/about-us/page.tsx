@@ -77,6 +77,22 @@ export default function AboutPage() {
             ))}
           </div>
 
+          <h2 className="mt-16 text-2xl text-obsidian">Leadership</h2>
+          <div className="mt-6 max-w-xl rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
+            <h3 className="text-lg font-medium text-obsidian">{FOUNDER_NAME}</h3>
+            <p className="text-sm text-slate">Founder &amp; Managing Partner</p>
+            <p className="mt-3 text-sm leading-relaxed text-slate">
+              {FOUNDER_CREDENTIALS}. Leads the firm&apos;s audit, taxation,
+              and compliance practice, and heads client engagements across
+              incorporation, GST, and advisory work.
+            </p>
+          </div>
+          <p className="mt-4 max-w-2xl text-sm text-slate">
+            Our full team includes 16 professionals across audit, tax, and
+            GST — individual profiles for other partners and senior team
+            members will be added here as they&apos;re finalised.
+          </p>
+
           <h2 className="mt-16 text-2xl text-obsidian">Areas we serve</h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
             Our office is in Anna Nagar, Chennai, and we work with clients

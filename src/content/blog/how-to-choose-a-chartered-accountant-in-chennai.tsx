@@ -1,8 +1,8 @@
 import type { BlogPostMeta } from "@/lib/blog";
 
 export const meta: BlogPostMeta = {
-  slug: "how-to-choose-the-best-ca-in-chennai",
-  title: "How to Choose the Best CA in Chennai",
+  slug: "how-to-choose-a-chartered-accountant-in-chennai",
+  title: "How to Choose a Chartered Accountant in Chennai",
   description:
     "A practical checklist for picking a chartered accountant in Chennai — credentials, service breadth, responsiveness, and red flags to watch for.",
   date: "2026-09-16",
@@ -31,7 +31,7 @@ export default function Body() {
   return (
     <>
       <p>
-        The best CA in Chennai for your business is not necessarily the one with the
+        The right CA for your business is not necessarily the one with the
         most Google reviews or the flashiest website — it&apos;s the one whose
         service breadth, responsiveness, and credentials actually match what your
         business needs. Here is a practical checklist to run through before you

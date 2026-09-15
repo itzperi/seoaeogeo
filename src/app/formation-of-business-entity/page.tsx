@@ -17,12 +17,12 @@ export const metadata: Metadata = {
 };
 
 const ENTITIES = [
-  { name: "Private Limited Company", href: "/private-limited-company-incorporation-chennai", text: "Limited liability, investor-ready structure with share capital — our most requested registration." },
+  { name: "Private Limited Company", href: "/private-limited-company-incorporation-chennai", text: "Limited liability, investor-ready structure with share capital." },
   { name: "Public Limited Company", href: "/contact", text: "For businesses planning to raise capital from the public, with statutory board and disclosure requirements." },
   { name: "Limited Liability Partnership (LLP)", href: "/contact", text: "Limited liability with the flexibility of a partnership — popular for professional and services firms." },
   { name: "Partnership Firm", href: "/contact", text: "Deed drafting, registration, and compliance for traditional partnership businesses." },
   { name: "One Person Company (OPC)", href: "/contact", text: "Limited liability for solo founders who want a corporate structure without a co-founder." },
-  { name: "Sole Proprietorship", href: "/contact", text: "The fastest, lowest-cost way to start a small, low-risk local business." },
+  { name: "Sole Proprietorship", href: "/contact", text: "A simple structure for a small, low-risk local business, with minimal registration formalities." },
   { name: "Business Conversion", href: "/contact", text: "Convert a proprietorship or partnership into an LLP or Private Limited Company as you scale." },
 ];
 

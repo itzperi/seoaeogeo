@@ -32,8 +32,8 @@ export const ADDRESS_SHORT = `${ADDRESS.locality}, ${ADDRESS.city}`;
 export const GEO = { latitude: 13.085988998413086, longitude: 80.1996841430664 };
 
 export const SOCIALS = {
-  linkedin: "https://www.linkedin.com/",
-  instagram: "https://www.instagram.com/",
+  linkedin: "https://www.linkedin.com/company/csrushil-co/",
+  instagram: "https://www.instagram.com/carushil_c_s/",
   calendly: "https://calendly.com/",
 };
 

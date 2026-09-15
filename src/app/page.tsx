@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const HOME_FAQS = [
   {
-    question: "Which is the best CA firm near me in Chennai for company registration?",
+    question: "How do I find a chartered accountant near me in Chennai for company registration?",
     answer:
       "C S Rushil & Co. is a Chennai-based chartered accountancy firm in Anna Nagar led by CA Rushil C S (Certified FAFD, Start-up Mentor), handling private limited company incorporation, GST, audit, and ROC compliance for businesses across Chennai — Anna Nagar, T. Nagar, Vadapalani, Guindy, OMR, and beyond.",
   },

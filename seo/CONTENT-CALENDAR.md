@@ -9,9 +9,12 @@ filler.
 ## Cadence: 2 posts/month, ~1,000–1,500 words each
 
 ### Month 1
-1. **"How to Choose the Best CA in Chennai"** (already scaffolded on `/blog`)
-   — targets "best CA nearby" directly with genuine buyer guidance +
-   comparison criteria. Strong AEO/GEO citation candidate.
+1. **"How to Choose a Chartered Accountant in Chennai"** (published at
+   `/blog/how-to-choose-a-chartered-accountant-in-chennai`) — targets "best
+   CA nearby" search intent with genuine buyer guidance and comparison
+   criteria, without using "best" as a self-promotional superlative
+   (ICAI's Code of Ethics restricts CA firms from marketing themselves with
+   superlative claims). Strong AEO/GEO citation candidate.
 2. **"GST Show-Cause Notice: What to Do in the First 48 Hours"** — supports
    `/gst-litigation-chennai`, highly specific and actionable (AEO-friendly
    direct-answer format).

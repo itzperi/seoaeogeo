@@ -18,8 +18,8 @@ export type BlogPostModule = {
 // Static registry — Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
-  "how-to-choose-the-best-ca-in-chennai": () =>
-    import("@/content/blog/how-to-choose-the-best-ca-in-chennai"),
+  "how-to-choose-a-chartered-accountant-in-chennai": () =>
+    import("@/content/blog/how-to-choose-a-chartered-accountant-in-chennai"),
   "gst-show-cause-notice-first-48-hours": () =>
     import("@/content/blog/gst-show-cause-notice-first-48-hours"),
   "spice-plus-incorporation-explained": () =>
@@ -49,8 +49,8 @@ export type BlogSlug = keyof typeof modules;
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
   {
-    slug: "how-to-choose-the-best-ca-in-chennai",
-    title: "How to Choose the Best CA in Chennai",
+    slug: "how-to-choose-a-chartered-accountant-in-chennai",
+    title: "How to Choose a Chartered Accountant in Chennai",
     description:
       "A practical checklist for picking a chartered accountant in Chennai — credentials, service breadth, responsiveness, and red flags to watch for.",
     date: "2026-09-16",

@@ -22,7 +22,6 @@ export function organizationSchema() {
     image: `${SITE_URL}/logo.png`,
     telephone: PHONE_TEL,
     email: EMAIL,
-    priceRange: "₹₹",
     founder: {
       "@type": "Person",
       name: FOUNDER_NAME,
