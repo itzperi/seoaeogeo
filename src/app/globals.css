@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy-950: #0a1930;
+  --color-navy-900: #0d2340;
+  --color-navy-800: #14315a;
+  --color-navy-700: #1c4278;
+  --color-navy-600: #275494;
+  --color-gold-600: #a9781f;
+  --color-gold-500: #c8962c;
+  --color-gold-400: #dcae4d;
+  --color-gold-100: #f7ecd6;
+  --color-emerald-600: #157a4a;
+  --color-emerald-100: #e2f5ea;
+  --color-paper: #ffffff;
+  --color-fog: #f6f7fb;
+  --color-mist: #eef1f7;
+  --color-ink: #101828;
+  --color-slate: #55607a;
+  --color-ash: #dde2ec;
+
+  --font-display: "Fraunces", "Georgia", serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  --radius-card: 20px;
+  --radius-button: 10px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.06), 0 8px 24px rgba(16, 24, 40, 0.06);
+  --shadow-elevated: 0 20px 50px rgba(10, 25, 48, 0.18);
+}
+
+@theme inline {
+  --color-navy-950: var(--color-navy-950);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-600: var(--color-navy-600);
+  --color-gold-600: var(--color-gold-600);
+  --color-gold-500: var(--color-gold-500);
+  --color-gold-400: var(--color-gold-400);
+  --color-gold-100: var(--color-gold-100);
+  --color-emerald-600: var(--color-emerald-600);
+  --color-emerald-100: var(--color-emerald-100);
+  --color-paper: var(--color-paper);
+  --color-fog: var(--color-fog);
+  --color-mist: var(--color-mist);
+  --color-ink: var(--color-ink);
+  --color-slate: var(--color-slate);
+  --color-ash: var(--color-ash);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --radius-card: var(--radius-card);
+  --radius-button: var(--radius-button);
+  --radius-pill: var(--radius-pill);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-fog);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+.container-page {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 24px;
+}
+
+@media (min-width: 768px) {
+  .container-page {
+    padding-inline: 40px;
+  }
+}
