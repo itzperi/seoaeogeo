@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/goods-and-services-tax`;
 
 export const metadata: Metadata = {
-  title: "GST Registration & Return Filing in Chennai | C S Rushil & Co.",
+  title: "GST Registration & Return Filing in Chennai",
   description:
     "GST registration, return filing, amendments, cancellations, and notice replies for businesses in Chennai. Facing a dispute? See our dedicated GST litigation service.",
   alternates: { canonical: "/goods-and-services-tax" },
@@ -66,40 +66,42 @@ export default function GstPage() {
         subhead="Registration, return filing, amendments, cancellations, and notice replies — GST compliance handled end-to-end so you stay penalty-free."
       />
 
-      <section className="container-page py-16">
-        <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">What is GST?</h2>
-        <p className="mt-4 max-w-3xl leading-relaxed text-[var(--color-slate)]">
-          GST (Goods and Services Tax) is a comprehensive, indirect tax levied on the
-          supply of goods and services in India, replacing multiple older taxes like
-          VAT, service tax, and excise duty into one unified system. Tax is collected
-          at every stage of the supply chain with credit available for tax paid on
-          inputs, which simplifies compliance and improves ease of doing business —
-          provided returns are filed accurately and on time.
-        </p>
-
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {SERVICES.map((s) => (
-            <div key={s.name} className="rounded-[var(--radius-card)] border border-[var(--color-ash)] bg-[var(--color-paper)] p-6 shadow-[var(--shadow-card)]">
-              <h3 className="font-semibold text-[var(--color-navy-900)]">{s.name}</h3>
-              <p className="mt-2 text-sm text-[var(--color-slate)]">{s.text}</p>
-            </div>
-          ))}
-        </div>
-
-        <div className="mt-14 rounded-[var(--radius-card)] bg-[var(--color-mist)] p-8">
-          <h2 className="text-xl font-medium text-[var(--color-navy-900)]">
-            Received a GST show-cause notice or facing an appeal?
-          </h2>
-          <p className="mt-3 text-[var(--color-slate)]">
-            Notice replies, departmental audits, appeals, and GST Appellate Tribunal
-            representation are handled on our dedicated GST litigation page.
+      <section className="bg-paper py-16">
+        <div className="container-page">
+          <h2 className="text-2xl text-obsidian">What is GST?</h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            GST (Goods and Services Tax) is a comprehensive, indirect tax levied on the
+            supply of goods and services in India, replacing multiple older taxes like
+            VAT, service tax, and excise duty into one unified system. Tax is collected
+            at every stage of the supply chain with credit available for tax paid on
+            inputs, which simplifies compliance and improves ease of doing business —
+            provided returns are filed accurately and on time.
           </p>
-          <Link
-            href="/gst-litigation-chennai"
-            className="mt-4 inline-block rounded-[var(--radius-button)] bg-[var(--color-navy-900)] px-5 py-2.5 text-sm font-medium text-white hover:bg-[var(--color-navy-800)]"
-          >
-            View GST Litigation Services →
-          </Link>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {SERVICES.map((s) => (
+              <div key={s.name} className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
+                <h3 className="font-medium text-obsidian">{s.name}</h3>
+                <p className="mt-2 text-sm text-slate">{s.text}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-16 rounded-cards bg-lilac-mist p-8">
+            <h2 className="text-xl font-medium text-obsidian">
+              Received a GST show-cause notice or facing an appeal?
+            </h2>
+            <p className="mt-3 text-slate">
+              Notice replies, departmental audits, appeals, and GST Appellate Tribunal
+              representation are handled on our dedicated GST litigation page.
+            </p>
+            <Link
+              href="/gst-litigation-chennai"
+              className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
+            >
+              View GST Litigation Services →
+            </Link>
+          </div>
         </div>
       </section>
 

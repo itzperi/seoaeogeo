@@ -10,9 +10,9 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/formation-of-business-entity`;
 
 export const metadata: Metadata = {
-  title: "Business Entity Formation & Registration in Chennai",
+  title: "Company Registration in Chennai — All Business Structures",
   description:
-    "Register the right business structure in Chennai — Private Limited, LLP, OPC, Partnership, or Sole Proprietorship — with end-to-end documentation and compliance from C S Rushil & Co.",
+    "Company registration in Chennai — Private Limited, LLP, OPC, Partnership, or Sole Proprietorship — with end-to-end documentation and compliance from C S Rushil & Co.",
   alternates: { canonical: "/formation-of-business-entity" },
 };
 
@@ -63,53 +63,55 @@ export default function FormationPage() {
       <Breadcrumbs items={[{ name: "Formation of Business Entity", href: "/formation-of-business-entity" }]} />
       <PageHero
         eyebrow="Business Registration · Chennai"
-        h1="Formation of a Business Entity"
+        h1="Company Registration in Chennai — All Business Structures"
         subhead="Strategic guidance and entity structuring — from Private Limited Company incorporation to Sole Proprietorship — with compliance built in from day one."
       />
 
-      <section className="container-page py-16">
-        <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
-          What is formation of a business entity?
-        </h2>
-        <p className="mt-4 max-w-3xl leading-relaxed text-[var(--color-slate)]">
-          Formation of a business entity is the process of legally establishing a
-          business structure under applicable law — selecting the right entity type,
-          completing registration, documentation, and regulatory approvals. It gives
-          your business a distinct legal identity, defines your liability exposure,
-          and sets the tax and compliance framework you&apos;ll operate under going
-          forward. Choosing correctly at this stage avoids costly conversions later.
-        </p>
-
-        <h2 className="mt-14 text-2xl font-medium text-[var(--color-navy-900)]">
-          Structures we register
-        </h2>
-        <div className="mt-6 grid gap-6 sm:grid-cols-2">
-          {ENTITIES.map((entity) => (
-            <Link
-              key={entity.name}
-              href={entity.href}
-              className="rounded-[var(--radius-card)] border border-[var(--color-ash)] bg-[var(--color-paper)] p-6 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5 hover:shadow-[var(--shadow-elevated)]"
-            >
-              <h3 className="font-semibold text-[var(--color-navy-900)]">{entity.name}</h3>
-              <p className="mt-2 text-sm text-[var(--color-slate)]">{entity.text}</p>
-            </Link>
-          ))}
-        </div>
-
-        <div className="mt-14 rounded-[var(--radius-card)] bg-[var(--color-mist)] p-8">
-          <h2 className="text-xl font-medium text-[var(--color-navy-900)]">
-            Looking specifically for Private Limited Company registration?
+      <section className="bg-paper py-16">
+        <div className="container-page">
+          <h2 className="text-2xl text-obsidian">
+            What is formation of a business entity?
           </h2>
-          <p className="mt-3 text-[var(--color-slate)]">
-            We have a dedicated guide covering the full SPICe+ process, timelines,
-            fees, and a Private Ltd vs LLP vs OPC comparison.
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            Formation of a business entity is the process of legally establishing a
+            business structure under applicable law — selecting the right entity type,
+            completing registration, documentation, and regulatory approvals. It gives
+            your business a distinct legal identity, defines your liability exposure,
+            and sets the tax and compliance framework you&apos;ll operate under going
+            forward. Choosing correctly at this stage avoids costly conversions later.
           </p>
-          <Link
-            href="/private-limited-company-incorporation-chennai"
-            className="mt-4 inline-block rounded-[var(--radius-button)] bg-[var(--color-navy-900)] px-5 py-2.5 text-sm font-medium text-white hover:bg-[var(--color-navy-800)]"
-          >
-            View Private Limited Incorporation Guide →
-          </Link>
+
+          <h2 className="mt-16 text-2xl text-obsidian">
+            Structures we register
+          </h2>
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {ENTITIES.map((entity) => (
+              <Link
+                key={entity.name}
+                href={entity.href}
+                className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5"
+              >
+                <h3 className="font-medium text-obsidian">{entity.name}</h3>
+                <p className="mt-2 text-sm text-slate">{entity.text}</p>
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-16 rounded-cards bg-lilac-mist p-8">
+            <h2 className="text-xl font-medium text-obsidian">
+              Looking specifically for Private Limited Company registration?
+            </h2>
+            <p className="mt-3 text-slate">
+              We have a dedicated guide covering the full SPICe+ process, timelines,
+              fees, and a Private Ltd vs LLP vs OPC comparison.
+            </p>
+            <Link
+              href="/private-limited-company-incorporation-chennai"
+              className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
+            >
+              View Private Limited Incorporation Guide →
+            </Link>
+          </div>
         </div>
       </section>
 

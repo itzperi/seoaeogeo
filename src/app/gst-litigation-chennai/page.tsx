@@ -10,10 +10,15 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/gst-litigation-chennai`;
 
 export const metadata: Metadata = {
-  title: "GST Litigation in Chennai | Appeals & Notice Reply | C S Rushil & Co.",
+  title: "GST Litigation in Chennai | Appeals & Notice Reply",
   description:
     "GST litigation support in Chennai — show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GSTAT representation by C S Rushil & Co.",
   alternates: { canonical: "/gst-litigation-chennai" },
+  openGraph: {
+    title: "GST Litigation in Chennai",
+    description: "Show-cause notice replies, appeals, and GSTAT representation by a Chennai chartered accountancy firm.",
+    url: "/gst-litigation-chennai",
+  },
 };
 
 const DISPUTE_TYPES = [
@@ -80,14 +85,14 @@ export default function GstLitigationPage() {
         subhead="Show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal representation — handled by chartered accountants who can appear on your behalf under Section 116 of the CGST Act."
       />
 
-      <section className="container-page py-16">
-        <div className="grid gap-12 lg:grid-cols-3">
-          <div className="lg:col-span-2 space-y-10">
+      <section className="bg-paper py-16">
+        <div className="container-page grid grid-cols-1 gap-12 lg:grid-cols-3">
+          <div className="lg:col-span-2 space-y-12">
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 What is GST litigation?
               </h2>
-              <p className="mt-4 leading-relaxed text-[var(--color-slate)]">
+              <p className="mt-4 leading-relaxed text-slate">
                 GST litigation covers every stage of a tax dispute with the GST
                 department — from replying to a show-cause notice, through
                 departmental audit and assessment, to appeals before the Appellate
@@ -97,7 +102,7 @@ export default function GstLitigationPage() {
                 often determines whether the matter is resolved quickly or escalates
                 into years of appeal.
               </p>
-              <p className="mt-4 rounded-[var(--radius-card)] border border-[var(--color-gold-400)]/40 bg-[var(--color-gold-100)] p-5 text-sm leading-relaxed text-[var(--color-ink)]">
+              <p className="mt-4 rounded-cards border border-royal-violet/20 bg-lilac-mist p-6 text-sm leading-relaxed text-obsidian">
                 Under Section 116 of the CGST Act, a practising Chartered Accountant is
                 a statutorily recognised authorised representative and can appear and
                 argue on your behalf before GST officers, the Appellate Authority, and
@@ -107,18 +112,18 @@ export default function GstLitigationPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 Litigation stages we handle
               </h2>
               <ol className="mt-4 space-y-4">
                 {STAGES.map((s, i) => (
-                  <li key={s.stage} className="flex gap-4 rounded-[var(--radius-card)] border border-[var(--color-ash)] bg-[var(--color-paper)] p-5">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-navy-900)] text-sm font-semibold text-white">
+                  <li key={s.stage} className="flex gap-4 rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-royal-violet text-sm font-medium text-white">
                       {i + 1}
                     </span>
                     <div>
-                      <p className="font-semibold text-[var(--color-ink)]">{s.stage}</p>
-                      <p className="mt-1 text-sm text-[var(--color-slate)]">{s.text}</p>
+                      <p className="font-medium text-obsidian">{s.stage}</p>
+                      <p className="mt-1 text-sm text-slate">{s.text}</p>
                     </div>
                   </li>
                 ))}
@@ -126,24 +131,35 @@ export default function GstLitigationPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 Types of GST disputes we handle
               </h2>
-              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {DISPUTE_TYPES.map((d) => (
-                  <div key={d.title} className="rounded-[var(--radius-card)] border border-[var(--color-ash)] bg-[var(--color-paper)] p-5">
-                    <p className="font-semibold text-[var(--color-ink)]">{d.title}</p>
-                    <p className="mt-1 text-sm text-[var(--color-slate)]">{d.text}</p>
+                  <div key={d.title} className="rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]">
+                    <p className="font-medium text-obsidian">{d.title}</p>
+                    <p className="mt-1 text-sm text-slate">{d.text}</p>
                   </div>
                 ))}
               </div>
+              <p className="mt-4 rounded-cards border border-royal-violet/20 bg-lilac-mist p-5 text-sm leading-relaxed text-obsidian">
+                <strong>Our take:</strong> ITC mismatch notices are, in our
+                experience, the single most common trigger for a GST
+                show-cause notice among Chennai SMEs and traders — usually
+                because a supplier filed their return late or incorrectly,
+                not because of anything the recipient business did wrong.
+                The fix is rarely "pay the demand" — it's proving the
+                mismatch sits with the supplier's filing, which requires
+                pulling GSTR-2B history and correspondence, not just
+                arguing the point.
+              </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 Why this matters for Chennai businesses
               </h2>
-              <p className="mt-4 leading-relaxed text-[var(--color-slate)]">
+              <p className="mt-4 leading-relaxed text-slate">
                 Much of the visible online content on GST litigation is written by
                 national law firms targeting a broad audience. A Chennai-based CA firm
                 that understands local jurisdictional officers, filing practices at the
@@ -155,28 +171,28 @@ export default function GstLitigationPage() {
             </div>
           </div>
 
-          <aside className="lg:sticky lg:top-28 h-fit space-y-6">
-            <div className="rounded-[var(--radius-card)] bg-[var(--color-navy-900)] p-7 text-white">
-              <h3 className="text-lg font-semibold">Received a GST notice?</h3>
-              <p className="mt-2 text-sm text-white/75">
+          <aside className="lg:sticky lg:top-24 h-fit space-y-6">
+            <div className="rounded-cards bg-royal-violet p-8">
+              <h3 className="text-lg font-medium text-white">Received a GST notice?</h3>
+              <p className="mt-2 text-sm text-white/80">
                 Reply deadlines are strict and non-negotiable. Send us the notice and
                 we&apos;ll assess your response window and options within 24 hours.
               </p>
               <Link
                 href="/contact"
-                className="mt-5 inline-block w-full rounded-[var(--radius-button)] bg-white px-5 py-3 text-center text-sm font-medium text-[var(--color-navy-900)] hover:bg-gold-100"
+                className="mt-5 inline-block w-full rounded-buttons bg-white px-5 py-3 text-center text-sm font-medium text-obsidian hover:bg-lilac-mist"
               >
                 Get Urgent Consultation
               </Link>
             </div>
-            <div className="rounded-[var(--radius-card)] border border-[var(--color-ash)] bg-[var(--color-paper)] p-7">
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-[var(--color-slate)]">
+            <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
+              <h3 className="eyebrow text-xs text-slate">
                 Related services
               </h3>
               <ul className="mt-4 space-y-3 text-sm">
-                <li><Link href="/goods-and-services-tax" className="text-[var(--color-navy-900)] hover:underline">GST Registration &amp; Returns</Link></li>
-                <li><Link href="/audit-and-assurance" className="text-[var(--color-navy-900)] hover:underline">Audit &amp; Assurance</Link></li>
-                <li><Link href="/direct-tax" className="text-[var(--color-navy-900)] hover:underline">Direct Tax</Link></li>
+                <li><Link href="/goods-and-services-tax" className="text-royal-violet hover:underline">GST Registration &amp; Returns</Link></li>
+                <li><Link href="/audit-and-assurance" className="text-royal-violet hover:underline">Audit &amp; Assurance</Link></li>
+                <li><Link href="/direct-tax" className="text-royal-violet hover:underline">Direct Tax</Link></li>
               </ul>
             </div>
           </aside>

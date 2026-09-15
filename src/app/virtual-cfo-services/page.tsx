@@ -36,6 +36,7 @@ export default function Page() {
         { question: "How many hours per month does a Virtual CFO engagement involve?", answer: "This depends on your business complexity and reporting needs — typically ranging from a few hours a week to a few days a month, scoped during your initial consultation." },
         { question: "Can a Virtual CFO help with fundraising?", answer: "Yes — we prepare financial models, clean up historical financials for due diligence, and support investor reporting through your fundraising process." },
       ]}
+      relatedSlugs={["audit-and-assurance", "management-consultancy", "direct-tax"]}
     />
   );
 }

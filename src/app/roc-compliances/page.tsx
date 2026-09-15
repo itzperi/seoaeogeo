@@ -36,6 +36,7 @@ export default function Page() {
         { question: "Do LLPs also have ROC compliance requirements?", answer: "Yes — LLPs file Form 11 (Annual Return) and Form 8 (Statement of Accounts) annually, with different due dates from companies." },
         { question: "Can you fix past non-compliance?", answer: "Yes, we conduct a compliance health check, identify pending filings, and regularise them through the MCA's condonation and late-filing mechanisms where available." },
       ]}
+      relatedSlugs={["formation-of-business-entity", "private-limited-company-incorporation-chennai", "audit-and-assurance"]}
     />
   );
 }

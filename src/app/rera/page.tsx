@@ -36,6 +36,7 @@ export default function Page() {
         { question: "How often must progress reports be filed?", answer: "Quarterly Progress Reports (QPRs) must be filed with TNRERA every quarter until the project receives its completion certificate." },
         { question: "Do real estate agents need separate RERA registration?", answer: "Yes, agents facilitating sale or purchase of RERA-registered projects must independently register as real estate agents under RERA." },
       ]}
+      relatedSlugs={["formation-of-business-entity", "direct-tax", "roc-compliances"]}
     />
   );
 }

@@ -1,39 +1,41 @@
 import Link from "next/link";
 import { SERVICES } from "@/lib/services";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import MobileNav from "./MobileNav";
 
 const NAV_LINKS = [
   { href: "/about-us", label: "About" },
   { href: "/blog", label: "Insights" },
-  { href: "/career", label: "Careers" },
   { href: "/contact", label: "Contact" },
 ];
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--color-ash)] bg-[var(--color-paper)]/95 backdrop-blur">
-      <div className="container-page flex h-20 items-center justify-between gap-6">
+    <header className="sticky top-0 z-50 border-b border-ash bg-paper relative">
+      <div className="container-page flex h-16 items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <span className="font-display text-xl font-medium text-[var(--color-navy-900)]">
-            C S Rushil &amp; Co.
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-royal-violet">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 20L20 4M20 4H9M20 4V15" stroke="#ffffff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
           </span>
-          <span className="hidden sm:inline text-xs uppercase tracking-[0.14em] text-[var(--color-slate)] border-l border-[var(--color-ash)] pl-2">
-            Chartered Accountants
+          <span className="font-display text-base text-obsidian">
+            C S Rushil &amp; Co.
           </span>
         </Link>
 
-        <nav className="hidden lg:flex items-center gap-1 text-sm font-medium text-[var(--color-slate)]">
+        <nav className="hidden lg:flex items-center gap-1 text-sm font-medium text-slate">
           <div className="group relative">
-            <button className="rounded-full px-4 py-2 hover:bg-[var(--color-mist)] hover:text-[var(--color-navy-900)]">
+            <button className="rounded-navpills px-4 py-2 hover:bg-fog hover:text-obsidian">
               Services
             </button>
             <div className="invisible absolute left-0 top-full pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100">
-              <div className="w-96 rounded-2xl border border-[var(--color-ash)] bg-[var(--color-paper)] p-2 shadow-[var(--shadow-elevated)]">
+              <div className="w-96 rounded-2xl border border-ash bg-paper p-2 shadow-[var(--shadow-card)]">
                 {SERVICES.map((service) => (
                   <Link
                     key={service.slug}
                     href={`/${service.slug}`}
-                    className="block rounded-xl px-4 py-2.5 text-sm text-[var(--color-ink)] hover:bg-[var(--color-mist)]"
+                    className="block rounded-lg px-4 py-2.5 text-sm text-obsidian hover:bg-fog"
                   >
                     {service.name}
                   </Link>
@@ -45,7 +47,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-4 py-2 hover:bg-[var(--color-mist)] hover:text-[var(--color-navy-900)]"
+              className="rounded-navpills px-4 py-2 hover:bg-fog hover:text-obsidian"
             >
               {link.label}
             </Link>
@@ -55,16 +57,17 @@ export default function Header() {
         <div className="flex items-center gap-3 shrink-0">
           <a
             href={`tel:${PHONE_TEL}`}
-            className="hidden sm:inline text-sm font-medium text-[var(--color-navy-900)]"
+            className="hidden sm:inline text-sm font-medium text-slate hover:text-obsidian"
           >
             {PHONE_DISPLAY}
           </a>
           <Link
             href="/contact"
-            className="rounded-[var(--radius-button)] bg-[var(--color-navy-900)] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[var(--color-navy-800)]"
+            className="hidden lg:inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white shadow-[var(--shadow-button)] transition hover:opacity-90"
           >
-            Get Free Consultation
+            Get Free Quote
           </Link>
+          <MobileNav services={SERVICES} />
         </div>
       </div>
     </header>

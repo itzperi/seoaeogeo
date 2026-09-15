@@ -10,10 +10,15 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/private-limited-company-incorporation-chennai`;
 
 export const metadata: Metadata = {
-  title: "Private Limited Company Incorporation in Chennai | C S Rushil & Co.",
+  title: "Private Limited Company Incorporation in Chennai",
   description:
     "Register your Private Limited Company in Chennai with SPICe+ filing, DIN/DSC, MoA/AoA drafting, and post-incorporation compliance — handled end-to-end by C S Rushil & Co.",
   alternates: { canonical: "/private-limited-company-incorporation-chennai" },
+  openGraph: {
+    title: "Private Limited Company Incorporation in Chennai",
+    description: "End-to-end SPICe+ incorporation handled by a Chennai-based chartered accountancy firm.",
+    url: "/private-limited-company-incorporation-chennai",
+  },
 };
 
 const FAQS = [
@@ -91,14 +96,14 @@ export default function IncorporationPage() {
         subhead="End-to-end SPICe+ incorporation — DSC, DIN, name approval, MoA/AoA drafting, and post-incorporation compliance — managed by a Chennai-based chartered accountancy firm."
       />
 
-      <section className="container-page py-16">
-        <div className="grid gap-12 lg:grid-cols-3">
-          <div className="lg:col-span-2 space-y-10">
+      <section className="bg-paper py-16">
+        <div className="container-page grid grid-cols-1 gap-12 lg:grid-cols-3">
+          <div className="lg:col-span-2 space-y-12">
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 What is Private Limited Company Incorporation?
               </h2>
-              <p className="mt-4 leading-relaxed text-[var(--color-slate)]">
+              <p className="mt-4 leading-relaxed text-slate">
                 Private Limited Company incorporation is the legal process of registering
                 a business as a distinct corporate entity under the Companies Act, 2013,
                 through the Ministry of Corporate Affairs (MCA). It gives the business a
@@ -106,37 +111,46 @@ export default function IncorporationPage() {
                 their share capital, and is the structure most banks, investors, and
                 government tenders prefer to work with. For Chennai-based founders, the
                 registered office can be your home address, a co-working space, or a
-                commercial address in areas like Vadapalani, T. Nagar, Guindy, or OMR —
+                commercial address in areas like Anna Nagar, T. Nagar, Guindy, or OMR —
                 the MCA has no location restriction within India.
               </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 Eligibility &amp; requirements
               </h2>
-              <ul className="mt-4 space-y-3 text-[var(--color-slate)]">
+              <ul className="mt-4 space-y-3 text-slate">
                 <li>• Minimum 2 directors and 2 shareholders (can be the same individuals), maximum 15 directors.</li>
                 <li>• At least one director must be a resident of India (stayed in India for 120+ days in the previous financial year).</li>
                 <li>• No minimum paid-up capital requirement.</li>
                 <li>• A registered office address in India with proof of ownership/rental and a No Objection Certificate.</li>
                 <li>• Valid PAN, Aadhaar, and a functional email/mobile number for each director for OTP verification.</li>
               </ul>
+              <p className="mt-4 rounded-cards border border-royal-violet/20 bg-lilac-mist p-5 text-sm leading-relaxed text-obsidian">
+                <strong>What we actually see slow this down:</strong> the most
+                common cause of a SPICe+ rejection or resubmission we handle
+                for Chennai founders isn&apos;t a policy issue — it&apos;s a
+                director&apos;s name, date of birth, or address not matching
+                exactly between their PAN and Aadhaar records (a middle name
+                present on one and not the other is a frequent culprit). We
+                check this before filing, not after a rejection.
+              </p>
             </div>
 
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 Step-by-step MCA incorporation process
               </h2>
               <ol className="mt-4 space-y-4">
                 {STEPS.map((step, i) => (
-                  <li key={step.name} className="flex gap-4 rounded-[var(--radius-card)] border border-[var(--color-ash)] bg-[var(--color-paper)] p-5">
-                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-navy-900)] text-sm font-semibold text-white">
+                  <li key={step.name} className="flex gap-4 rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-royal-violet text-sm font-medium text-white">
                       {i + 1}
                     </span>
                     <div>
-                      <p className="font-semibold text-[var(--color-ink)]">{step.name}</p>
-                      <p className="mt-1 text-sm text-[var(--color-slate)]">{step.text}</p>
+                      <p className="font-medium text-obsidian">{step.name}</p>
+                      <p className="mt-1 text-sm text-slate">{step.text}</p>
                     </div>
                   </li>
                 ))}
@@ -144,28 +158,28 @@ export default function IncorporationPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 Private Ltd vs LLP vs OPC vs Sole Proprietorship
               </h2>
-              <div className="mt-4 overflow-x-auto rounded-[var(--radius-card)] border border-[var(--color-ash)]">
+              <div className="mt-4 overflow-x-auto rounded-cards border border-ash">
                 <table className="w-full min-w-[640px] border-collapse text-sm">
                   <thead>
-                    <tr className="bg-[var(--color-mist)] text-left">
-                      <th className="p-4 font-semibold text-[var(--color-ink)]">Entity Type</th>
-                      <th className="p-4 font-semibold text-[var(--color-ink)]">Liability</th>
-                      <th className="p-4 font-semibold text-[var(--color-ink)]">Compliance</th>
-                      <th className="p-4 font-semibold text-[var(--color-ink)]">Ownership</th>
-                      <th className="p-4 font-semibold text-[var(--color-ink)]">Best For</th>
+                    <tr className="bg-fog text-left">
+                      <th className="p-4 font-medium text-obsidian">Entity Type</th>
+                      <th className="p-4 font-medium text-obsidian">Liability</th>
+                      <th className="p-4 font-medium text-obsidian">Compliance</th>
+                      <th className="p-4 font-medium text-obsidian">Ownership</th>
+                      <th className="p-4 font-medium text-obsidian">Best For</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody className="bg-paper">
                     {COMPARISON.map((row) => (
-                      <tr key={row.type} className="border-t border-[var(--color-ash)]">
-                        <td className="p-4 font-medium text-[var(--color-ink)]">{row.type}</td>
-                        <td className="p-4 text-[var(--color-slate)]">{row.liability}</td>
-                        <td className="p-4 text-[var(--color-slate)]">{row.compliance}</td>
-                        <td className="p-4 text-[var(--color-slate)]">{row.ownership}</td>
-                        <td className="p-4 text-[var(--color-slate)]">{row.bestFor}</td>
+                      <tr key={row.type} className="border-t border-ash">
+                        <td className="p-4 font-medium text-obsidian">{row.type}</td>
+                        <td className="p-4 text-slate">{row.liability}</td>
+                        <td className="p-4 text-slate">{row.compliance}</td>
+                        <td className="p-4 text-slate">{row.ownership}</td>
+                        <td className="p-4 text-slate">{row.bestFor}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -174,10 +188,10 @@ export default function IncorporationPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 Government fees vs. professional fees
               </h2>
-              <p className="mt-4 leading-relaxed text-[var(--color-slate)]">
+              <p className="mt-4 leading-relaxed text-slate">
                 Government fees include MCA form fees, stamp duty on authorised share
                 capital (varies by state), and DIN/DSC issuance charges — these are fixed
                 by statute and paid directly to the government or issuing authority.
@@ -189,10 +203,10 @@ export default function IncorporationPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl font-medium text-[var(--color-navy-900)]">
+              <h2 className="text-2xl text-obsidian">
                 Post-incorporation compliance checklist
               </h2>
-              <ul className="mt-4 space-y-3 text-[var(--color-slate)]">
+              <ul className="mt-4 space-y-3 text-slate">
                 <li>• File INC-20A (Commencement of Business) within 180 days of incorporation.</li>
                 <li>• Open a current bank account in the company&apos;s name.</li>
                 <li>• Appoint your first statutory auditor within 30 days of incorporation.</li>
@@ -203,30 +217,30 @@ export default function IncorporationPage() {
             </div>
           </div>
 
-          <aside className="lg:sticky lg:top-28 h-fit space-y-6">
-            <div className="rounded-[var(--radius-card)] bg-[var(--color-navy-900)] p-7 text-white">
-              <h3 className="text-lg font-semibold">Get a fixed-fee quote</h3>
-              <p className="mt-2 text-sm text-white/75">
+          <aside className="lg:sticky lg:top-24 h-fit space-y-6">
+            <div className="rounded-cards bg-royal-violet p-8">
+              <h3 className="text-lg font-medium text-white">Get a fixed-fee quote</h3>
+              <p className="mt-2 text-sm text-white/80">
                 Tell us your director count and authorised capital — we&apos;ll send an
                 itemised quote separating government and professional fees within one
                 business day.
               </p>
               <Link
                 href="/contact"
-                className="mt-5 inline-block w-full rounded-[var(--radius-button)] bg-white px-5 py-3 text-center text-sm font-medium text-[var(--color-navy-900)] hover:bg-gold-100"
+                className="mt-5 inline-block w-full rounded-buttons bg-white px-5 py-3 text-center text-sm font-medium text-obsidian hover:bg-lilac-mist"
               >
                 Book Free Consultation
               </Link>
             </div>
-            <div className="rounded-[var(--radius-card)] border border-[var(--color-ash)] bg-[var(--color-paper)] p-7">
-              <h3 className="text-sm font-semibold uppercase tracking-wide text-[var(--color-slate)]">
+            <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
+              <h3 className="eyebrow text-xs text-slate">
                 Related services
               </h3>
               <ul className="mt-4 space-y-3 text-sm">
-                <li><Link href="/formation-of-business-entity" className="text-[var(--color-navy-900)] hover:underline">Formation of Business Entity (all structures)</Link></li>
-                <li><Link href="/roc-compliances" className="text-[var(--color-navy-900)] hover:underline">ROC Compliances</Link></li>
-                <li><Link href="/goods-and-services-tax" className="text-[var(--color-navy-900)] hover:underline">GST Registration</Link></li>
-                <li><Link href="/virtual-cfo-services" className="text-[var(--color-navy-900)] hover:underline">Virtual CFO Services</Link></li>
+                <li><Link href="/formation-of-business-entity" className="text-royal-violet hover:underline">Formation of Business Entity (all structures)</Link></li>
+                <li><Link href="/roc-compliances" className="text-royal-violet hover:underline">ROC Compliances</Link></li>
+                <li><Link href="/goods-and-services-tax" className="text-royal-violet hover:underline">GST Registration</Link></li>
+                <li><Link href="/virtual-cfo-services" className="text-royal-violet hover:underline">Virtual CFO Services</Link></li>
               </ul>
             </div>
           </aside>

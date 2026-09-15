@@ -1,58 +1,48 @@
 @import "tailwindcss";
 
 :root {
-  --color-navy-950: #0a1930;
-  --color-navy-900: #0d2340;
-  --color-navy-800: #14315a;
-  --color-navy-700: #1c4278;
-  --color-navy-600: #275494;
-  --color-gold-600: #a9781f;
-  --color-gold-500: #c8962c;
-  --color-gold-400: #dcae4d;
-  --color-gold-100: #f7ecd6;
-  --color-emerald-600: #157a4a;
-  --color-emerald-100: #e2f5ea;
+  --color-royal-violet: #5423e7;
+  --color-electric-iris: #7047eb;
+  --color-lemon-zest: #ffc233;
+  --color-orchid: #cf75ff;
+  --color-lilac-mist: #e5b5fe;
+  --color-obsidian: #121217;
   --color-paper: #ffffff;
-  --color-fog: #f6f7fb;
-  --color-mist: #eef1f7;
-  --color-ink: #101828;
-  --color-slate: #55607a;
-  --color-ash: #dde2ec;
+  --color-fog: #f7f7f8;
+  --color-slate: #6c6c89;
+  --color-ash: #d1d1db;
 
-  --font-display: "Fraunces", "Georgia", serif;
-  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-display: "Circularpro Book", "Plus Jakarta Sans", ui-sans-serif, sans-serif;
+  --font-body: "Inter", ui-sans-serif, sans-serif;
 
-  --radius-card: 20px;
-  --radius-button: 10px;
-  --radius-pill: 999px;
+  --radius-cards: 48px;
+  --radius-input: 8px;
+  --radius-buttons: 8px;
+  --radius-largecta: 32px;
+  --radius-navpills: 40px;
 
-  --shadow-card: 0 1px 2px rgba(16, 24, 40, 0.06), 0 8px 24px rgba(16, 24, 40, 0.06);
-  --shadow-elevated: 0 20px 50px rgba(10, 25, 48, 0.18);
+  --shadow-card: 0 4px 24px rgba(18, 18, 23, 0.06);
+  --shadow-button: 0 1px 2px rgba(18, 18, 23, 0.08);
 }
 
 @theme inline {
-  --color-navy-950: var(--color-navy-950);
-  --color-navy-900: var(--color-navy-900);
-  --color-navy-800: var(--color-navy-800);
-  --color-navy-700: var(--color-navy-700);
-  --color-navy-600: var(--color-navy-600);
-  --color-gold-600: var(--color-gold-600);
-  --color-gold-500: var(--color-gold-500);
-  --color-gold-400: var(--color-gold-400);
-  --color-gold-100: var(--color-gold-100);
-  --color-emerald-600: var(--color-emerald-600);
-  --color-emerald-100: var(--color-emerald-100);
+  --color-royal-violet: var(--color-royal-violet);
+  --color-electric-iris: var(--color-electric-iris);
+  --color-lemon-zest: var(--color-lemon-zest);
+  --color-orchid: var(--color-orchid);
+  --color-lilac-mist: var(--color-lilac-mist);
+  --color-obsidian: var(--color-obsidian);
   --color-paper: var(--color-paper);
   --color-fog: var(--color-fog);
-  --color-mist: var(--color-mist);
-  --color-ink: var(--color-ink);
   --color-slate: var(--color-slate);
   --color-ash: var(--color-ash);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
-  --radius-card: var(--radius-card);
-  --radius-button: var(--radius-button);
-  --radius-pill: var(--radius-pill);
+  --radius-cards: var(--radius-cards);
+  --radius-input: var(--radius-input);
+  --radius-buttons: var(--radius-buttons);
+  --radius-largecta: var(--radius-largecta);
+  --radius-navpills: var(--radius-navpills);
 }
 
 html {
@@ -61,13 +51,21 @@ html {
 
 body {
   background: var(--color-fog);
-  color: var(--color-ink);
+  color: var(--color-obsidian);
   font-family: var(--font-body);
 }
 
 h1, h2, h3, h4 {
   font-family: var(--font-display);
-  letter-spacing: -0.01em;
+  font-weight: 400;
+  letter-spacing: -0.04em;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.143em;
 }
 
 .container-page {
