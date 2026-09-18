@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AREAS } from "@/lib/areas";
 import { SERVICES } from "@/lib/services";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import MobileNav from "./MobileNav";
@@ -33,6 +34,24 @@ export default function Header() {
                     className="block rounded-lg px-4 py-2.5 text-sm text-obsidian hover:bg-fog"
                   >
                     {service.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="group relative">
+            <button className="rounded-navpills px-4 py-2 hover:bg-fog hover:text-obsidian">
+              Locations
+            </button>
+            <div className="invisible absolute left-0 top-full pt-2 opacity-0 transition group-hover:visible group-hover:opacity-100">
+              <div className="w-56 rounded-2xl border border-ash bg-paper p-2 shadow-[var(--shadow-card)]">
+                {AREAS.map((area) => (
+                  <Link
+                    key={area.slug}
+                    href={`/${area.slug}`}
+                    className="block rounded-lg px-4 py-2.5 text-sm text-obsidian hover:bg-fog"
+                  >
+                    {area.name}
                   </Link>
                 ))}
               </div>

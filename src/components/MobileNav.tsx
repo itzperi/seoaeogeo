@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { AREAS } from "@/lib/areas";
 import type { ServiceSummary } from "@/lib/services";
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
@@ -40,6 +41,21 @@ export default function MobileNav({ services }: { services: ServiceSummary[] }) 
                     className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
                   >
                     {service.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <p className="eyebrow mt-6 text-xs text-slate">Locations</p>
+            <ul className="mt-3 space-y-1">
+              {AREAS.map((area) => (
+                <li key={area.slug}>
+                  <Link
+                    href={`/${area.slug}`}
+                    onClick={() => setOpen(false)}
+                    className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
+                  >
+                    {area.name}
                   </Link>
                 </li>
               ))}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AREAS } from "@/lib/areas";
 import { SERVICES } from "@/lib/services";
 import { ADDRESS_FULL, ADDRESS_SHORT, EMAIL, GOOGLE_MAPS_EMBED_SRC, PHONE_DISPLAY, PHONE_TEL, SOCIALS } from "@/lib/site";
 
@@ -19,7 +20,7 @@ export default function Footer() {
           />
         </div>
       </div>
-      <div className="container-page grid grid-cols-1 gap-10 py-16 md:grid-cols-4">
+      <div className="container-page grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-5">
         <div>
           <p className="font-display text-lg">C S Rushil &amp; Co.</p>
           <p className="mt-3 text-sm text-slate">
@@ -40,6 +41,19 @@ export default function Footer() {
               <li key={s.slug}>
                 <Link href={`/${s.slug}`} className="hover:text-obsidian">
                   {s.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div>
+          <p className="eyebrow text-xs text-slate">Locations</p>
+          <ul className="mt-4 space-y-2 text-sm text-slate">
+            {AREAS.map((area) => (
+              <li key={area.slug}>
+                <Link href={`/${area.slug}`} className="hover:text-obsidian">
+                  {area.name}
                 </Link>
               </li>
             ))}
