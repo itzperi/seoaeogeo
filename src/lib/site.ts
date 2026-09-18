@@ -37,6 +37,10 @@ export const SOCIALS = {
   calendly: "https://calendly.com/",
 };
 
+// wa.me expects the number with no "+" or spaces. Same NAP phone number as
+// everywhere else — do not point this at a different number.
+export const WHATSAPP_LINK = `https://wa.me/${PHONE_TEL.replace(/\D/g, "")}`;
+
 // Precise pin (lat/long) rather than an address-text search, so the embed
 // points at the exact office rather than a general Anna Nagar location.
 export const GOOGLE_MAPS_EMBED_SRC = `https://www.google.com/maps?q=${GEO.latitude},${GEO.longitude}&z=17&hl=en&output=embed`;

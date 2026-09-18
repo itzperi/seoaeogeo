@@ -3,10 +3,11 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, serviceSchema } from "@/lib/schema";
+import { JsonLd, howToSchema, serviceSchema } from "@/lib/schema";
 import { getService } from "@/lib/services";
 
 export type SubService = { name: string; text: string };
+export type HowToStep = { name: string; text: string };
 
 export default function ServicePageTemplate({
   pageUrl,
@@ -20,6 +21,7 @@ export default function ServicePageTemplate({
   introHeading,
   subServices,
   subServicesHeading,
+  howTo,
   faqs,
   relatedSlugs = [],
 }: {
@@ -34,6 +36,7 @@ export default function ServicePageTemplate({
   introHeading: string;
   subServices: SubService[];
   subServicesHeading: string;
+  howTo?: { heading: string; steps: HowToStep[] };
   faqs: FAQItem[];
   relatedSlugs?: string[];
 }) {
@@ -48,6 +51,15 @@ export default function ServicePageTemplate({
           serviceType,
         })}
       />
+      {howTo && (
+        <JsonLd
+          data={howToSchema({
+            name: h1,
+            description: subhead,
+            steps: howTo.steps,
+          })}
+        />
+      )}
       <Breadcrumbs items={[{ name: crumbLabel, href: crumbHref }]} />
       <PageHero eyebrow={eyebrow} h1={h1} subhead={subhead} />
 
@@ -70,6 +82,25 @@ export default function ServicePageTemplate({
               </div>
             ))}
           </div>
+
+          {howTo && (
+            <>
+              <h2 className="mt-14 text-2xl text-obsidian">{howTo.heading}</h2>
+              <ol className="mt-6 space-y-4">
+                {howTo.steps.map((step, i) => (
+                  <li key={step.name} className="flex gap-4 rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]">
+                    <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-royal-violet text-sm font-medium text-white">
+                      {i + 1}
+                    </span>
+                    <div>
+                      <p className="font-medium text-obsidian">{step.name}</p>
+                      <p className="mt-1 text-sm text-slate">{step.text}</p>
+                    </div>
+                  </li>
+                ))}
+              </ol>
+            </>
+          )}
 
           {related.length > 0 && (
             <>

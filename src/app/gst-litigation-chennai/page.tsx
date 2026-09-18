@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, serviceSchema } from "@/lib/schema";
+import { JsonLd, howToSchema, serviceSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/gst-litigation-chennai`;
@@ -42,27 +42,27 @@ const FAQS = [
   {
     question: "Can a Chartered Accountant represent me in GST litigation?",
     answer:
-      "Yes. Under Section 116 of the CGST Act, a Chartered Accountant is a recognised 'authorised representative' and can independently represent taxpayers before GST officers, the Appellate Authority, and the GST Appellate Tribunal (GSTAT) — you do not need a separate advocate for most GST proceedings.",
+      "Yes. Under Section 116 of the CGST Act, a Chartered Accountant is a recognised 'authorised representative' and can independently represent taxpayers before GST officers, the Appellate Authority, and the GST Appellate Tribunal (GSTAT) — you do not need a separate advocate for most GST proceedings. This includes drafting and filing replies, appearing at personal hearings, and arguing the case on the merits of the tax and accounting position. Businesses often prefer a CA for GST disputes specifically because the same professional who handled the underlying returns, reconciliations, and books of account can defend them, rather than briefing an advocate from scratch on the transaction history. Advocates remain necessary for writ petitions before the High Court or Supreme Court, which fall outside a CA's representation rights.",
   },
   {
     question: "What should I do if I receive a GST show-cause notice?",
     answer:
-      "Do not ignore it. Note the response deadline (usually 30 days), gather related invoices, e-way bills, and returns, and get a professional reply drafted. A poorly drafted or missed reply can lead to an ex-parte order confirming the entire demand.",
+      "Do not ignore it. Note the response deadline stated on the notice (usually 30 days, though it can vary), and immediately start gathering the related invoices, e-way bills, GSTR filings, and any correspondence referenced in the notice. A poorly drafted or missed reply can lead to an ex-parte order confirming the entire demand, interest, and penalty — after which your only recourse is a costlier appeal with a mandatory pre-deposit. The first 48 hours matter most: identifying exactly which allegation (classification, valuation, ITC mismatch, or procedural lapse) the notice raises determines what documentation to prioritise before drafting begins.",
   },
   {
     question: "How long does a GST appeal take?",
     answer:
-      "A first appeal before the Appellate Authority typically takes 6–18 months depending on the jurisdiction's case backlog. GSTAT timelines vary further since the tribunal benches are still being operationalised in several states; we advise clients realistically at each stage rather than promising fixed timelines.",
+      "A first appeal before the Appellate Authority typically takes 6–18 months depending on the jurisdiction's case backlog and how many hearings the officer schedules before passing an order. GSTAT (second appeal) timelines vary further since the tribunal benches are still being operationalised in several states, and a genuinely new tribunal bench can mean a longer wait simply due to case volume rather than the merits of your matter. We advise clients realistically at each stage — including what evidence to prepare while waiting — rather than promising a fixed timeline no lawyer or CA can actually guarantee given how tribunal scheduling works.",
   },
   {
     question: "Is there a pre-deposit required to file a GST appeal?",
     answer:
-      "Yes. To file a first appeal you must pre-deposit 10% of the disputed tax amount (subject to a cap), and a further 10% for a second appeal to GSTAT. We factor this into your litigation strategy and cash-flow planning upfront.",
+      "Yes. To file a first appeal before the Appellate Authority you must pre-deposit 10% of the disputed tax amount (subject to a statutory cap), and a further 10% of the remaining disputed amount to file a second appeal to GSTAT. This pre-deposit is refundable with interest if you ultimately win, but it must be paid upfront before the appeal is even admitted for hearing — it is not optional or negotiable. We factor this into your litigation strategy and cash-flow planning at the outset, since businesses are sometimes caught off guard by having to fund a pre-deposit on top of ongoing operating expenses mid-dispute.",
   },
   {
     question: "Do you handle GST litigation for businesses outside Chennai?",
     answer:
-      "Our core practice is Chennai and Tamil Nadu jurisdiction, where we have direct familiarity with local GST officers and appellate benches, but we also support clients with pan-India GST notices through documentation review and drafting.",
+      "Our core practice is Chennai and Tamil Nadu jurisdiction, where we have direct familiarity with local GST officers, the Appellate Authority benches, and how specific commissionerates tend to interpret disputed provisions — that local knowledge often shapes how a reply or appeal is framed. That said, we also support clients with pan-India GST notices through documentation review, reply drafting, and coordinating with local representation where a personal hearing requires it. If your registered office and the jurisdictional GST officer are both outside Tamil Nadu, we'll be upfront about where our direct involvement is most effective versus where a locally-based representative may serve you better.",
   },
 ];
 
@@ -76,6 +76,13 @@ export default function GstLitigationPage() {
             "Representation for GST show-cause notices, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal (GSTAT) proceedings.",
           url: PAGE_URL,
           serviceType: "Tax Litigation",
+        })}
+      />
+      <JsonLd
+        data={howToSchema({
+          name: "How GST litigation proceeds, from notice to tribunal",
+          description: "The stages a GST dispute typically moves through, from show-cause notice reply to GST Appellate Tribunal representation.",
+          steps: STAGES.map((s) => ({ name: s.stage, text: s.text })),
         })}
       />
       <Breadcrumbs items={[{ name: "GST Litigation", href: "/gst-litigation-chennai" }]} />
@@ -148,8 +155,8 @@ export default function GstLitigationPage() {
                 show-cause notice among Chennai SMEs and traders — usually
                 because a supplier filed their return late or incorrectly,
                 not because of anything the recipient business did wrong.
-                The fix is rarely "pay the demand" — it's proving the
-                mismatch sits with the supplier's filing, which requires
+                The fix is rarely &ldquo;pay the demand&rdquo; — it&apos;s proving the
+                mismatch sits with the supplier&apos;s filing, which requires
                 pulling GSTR-2B history and correspondence, not just
                 arguing the point.
               </p>

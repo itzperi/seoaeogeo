@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const ENTITIES = [
   { name: "Private Limited Company", href: "/private-limited-company-incorporation-chennai", text: "Limited liability, investor-ready structure with share capital." },
   { name: "Public Limited Company", href: "/contact", text: "For businesses planning to raise capital from the public, with statutory board and disclosure requirements." },
-  { name: "Limited Liability Partnership (LLP)", href: "/contact", text: "Limited liability with the flexibility of a partnership — popular for professional and services firms." },
+  { name: "Limited Liability Partnership (LLP)", href: "/llp-registration-chennai", text: "Limited liability with the flexibility of a partnership — popular for professional and services firms." },
   { name: "Partnership Firm", href: "/contact", text: "Deed drafting, registration, and compliance for traditional partnership businesses." },
   { name: "One Person Company (OPC)", href: "/contact", text: "Limited liability for solo founders who want a corporate structure without a co-founder." },
   { name: "Sole Proprietorship", href: "/contact", text: "A simple structure for a small, low-risk local business, with minimal registration formalities." },
@@ -97,20 +97,52 @@ export default function FormationPage() {
             ))}
           </div>
 
-          <div className="mt-16 rounded-cards bg-lilac-mist p-8">
-            <h2 className="text-xl font-medium text-obsidian">
-              Looking specifically for Private Limited Company registration?
-            </h2>
-            <p className="mt-3 text-slate">
-              We have a dedicated guide covering the full SPICe+ process, timelines,
-              fees, and a Private Ltd vs LLP vs OPC comparison.
-            </p>
-            <Link
-              href="/private-limited-company-incorporation-chennai"
-              className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
-            >
-              View Private Limited Incorporation Guide →
-            </Link>
+          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div className="rounded-cards bg-lilac-mist p-8">
+              <h2 className="text-xl font-medium text-obsidian">
+                Looking specifically for Private Limited Company registration?
+              </h2>
+              <p className="mt-3 text-slate">
+                We have a dedicated guide covering the full SPICe+ process, timelines,
+                fees, and a Private Ltd vs LLP vs OPC comparison.
+              </p>
+              <Link
+                href="/private-limited-company-incorporation-chennai"
+                className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
+              >
+                View Private Limited Incorporation Guide →
+              </Link>
+            </div>
+            <div className="rounded-cards bg-lilac-mist p-8">
+              <h2 className="text-xl font-medium text-obsidian">
+                Want the step-by-step registration process and timelines?
+              </h2>
+              <p className="mt-3 text-slate">
+                Our company registration guide covers DSC/DIN, name approval,
+                and SPICe+ filing in detail for Private Limited and LLP.
+              </p>
+              <Link
+                href="/company-registration-chennai"
+                className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
+              >
+                View Company Registration Guide →
+              </Link>
+            </div>
+            <div className="rounded-cards bg-lilac-mist p-8">
+              <h2 className="text-xl font-medium text-obsidian">
+                Set on a Limited Liability Partnership?
+              </h2>
+              <p className="mt-3 text-slate">
+                Our LLP registration guide covers DPIN, name reservation,
+                FiLLiP filing, and LLP Agreement drafting in detail.
+              </p>
+              <Link
+                href="/llp-registration-chennai"
+                className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
+              >
+                View LLP Registration Guide →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

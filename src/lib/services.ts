@@ -22,6 +22,18 @@ export const SERVICES: ServiceSummary[] = [
       "Choose and register the right structure — Private Limited, LLP, OPC, Partnership, or Proprietorship — with full legal compliance.",
   },
   {
+    slug: "llp-registration-chennai",
+    name: "LLP Registration",
+    shortDescription:
+      "Limited Liability Partnership registration in Chennai — DPIN, name reservation, FiLLiP filing, and LLP Agreement drafting.",
+  },
+  {
+    slug: "company-registration-chennai",
+    name: "Company Registration",
+    shortDescription:
+      "Fast-tracked Private Limited and LLP company registration in Chennai, from name approval to certificate of incorporation.",
+  },
+  {
     slug: "gst-litigation-chennai",
     name: "GST Litigation & Appeals",
     shortDescription:
@@ -34,16 +46,46 @@ export const SERVICES: ServiceSummary[] = [
       "GST registration, return filing, amendments, cancellations, notice replies, and LUT applications.",
   },
   {
+    slug: "gst-registration-chennai",
+    name: "GST Registration",
+    shortDescription:
+      "New GST registration for businesses and professionals in Chennai — documentation, ARN tracking, and certificate issuance.",
+  },
+  {
     slug: "audit-and-assurance",
     name: "Audit & Assurance",
     shortDescription:
       "Statutory, internal, tax, transfer pricing, forensic, and stock audits delivered with independence and rigour.",
   },
   {
+    slug: "statutory-audit-chennai",
+    name: "Statutory Audit",
+    shortDescription:
+      "Companies Act statutory audit for Chennai businesses — independent, evidence-based financial statement audit.",
+  },
+  {
+    slug: "tax-audit-chennai",
+    name: "Tax Audit",
+    shortDescription:
+      "Section 44AB tax audit for businesses and professionals in Chennai crossing prescribed turnover limits.",
+  },
+  {
     slug: "direct-tax",
     name: "Direct Tax",
     shortDescription:
       "Income tax planning, return filing, assessments, and representation before tax authorities.",
+  },
+  {
+    slug: "income-tax-return-filing-chennai",
+    name: "Income Tax Return Filing",
+    shortDescription:
+      "ITR filing for salaried individuals, professionals, and businesses in Chennai, with advance tax and refund tracking.",
+  },
+  {
+    slug: "msme-udyam-registration-chennai",
+    name: "MSME / Udyam Registration",
+    shortDescription:
+      "Udyam registration for small and medium enterprises in Chennai, unlocking collateral-free loans and government scheme benefits.",
   },
   {
     slug: "roc-compliances",
@@ -74,6 +116,12 @@ export const SERVICES: ServiceSummary[] = [
     name: "Trust & NGO Registration",
     shortDescription:
       "Formation and compliance for trusts, societies, and Section 8 companies, including 12A/80G registration support.",
+  },
+  {
+    slug: "ca-fees-chennai",
+    name: "CA Fees & Pricing",
+    shortDescription:
+      "Indicative pricing for company incorporation, GST, and audit services from a Chennai chartered accountancy firm.",
   },
 ];
 

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SERVICES } from "@/lib/services";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import Logo from "./Logo";
 import MobileNav from "./MobileNav";
 
 const NAV_LINKS = [
@@ -14,11 +15,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-ash bg-paper relative">
       <div className="container-page flex h-16 items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-royal-violet">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 20L20 4M20 4H9M20 4V15" stroke="#ffffff" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </span>
+          <Logo size={32} />
           <span className="font-display text-base text-obsidian">
             C S Rushil &amp; Co.
           </span>

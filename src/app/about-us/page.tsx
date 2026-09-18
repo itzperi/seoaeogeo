@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import { JsonLd, personSchema } from "@/lib/schema";
+import { AREAS } from "@/lib/areas";
 import { FOUNDER_CREDENTIALS, FOUNDER_NAME } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -21,6 +24,7 @@ const VALUES = [
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={personSchema()} />
       <Breadcrumbs items={[{ name: "About Us", href: "/about-us" }]} />
       <PageHero
         eyebrow="About the firm"
@@ -103,6 +107,17 @@ export default function AboutPage() {
             among other areas — wherever you&apos;re based in Chennai, our
             incorporation, GST, audit, and tax services are available to you.
           </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            {AREAS.map((area) => (
+              <Link
+                key={area.slug}
+                href={`/${area.slug}`}
+                className="rounded-navpills border border-ash bg-paper px-5 py-2.5 text-sm font-medium text-obsidian transition hover:bg-fog"
+              >
+                {area.name}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

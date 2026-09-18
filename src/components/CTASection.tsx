@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
 export default function CTASection({
   title = "Let's simplify your compliance.",
@@ -27,6 +27,14 @@ export default function CTASection({
               className="rounded-largecta border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10"
             >
               Call {PHONE_DISPLAY}
+            </a>
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-largecta border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10"
+            >
+              WhatsApp Us
             </a>
           </div>
         </div>

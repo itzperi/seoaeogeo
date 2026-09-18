@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     siteName: "C S Rushil & Co.",
     url: SITE_URL,
   },
+  twitter: {
+    card: "summary_large_image",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

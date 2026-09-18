@@ -1,7 +1,14 @@
 import type { MetadataRoute } from "next";
+import { AREAS } from "@/lib/areas";
 import { BLOG_INDEX } from "@/lib/blog";
 import { SERVICES } from "@/lib/services";
 import { SITE_URL } from "@/lib/site";
+
+// Bump this only when a genuine site-wide change ships (new page, major
+// content rewrite) — using `new Date()` here would stamp every page as
+// "modified today" on every build, which defeats lastModified as a
+// freshness signal to crawlers.
+const SITE_LAST_MODIFIED = new Date("2026-09-18");
 
 const STATIC_PATHS = [
   { path: "", priority: 1 },
@@ -12,16 +19,15 @@ const STATIC_PATHS = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const staticEntries = STATIC_PATHS.map(({ path, priority }) => ({
     url: `${SITE_URL}/${path}`,
-    lastModified: now,
+    lastModified: SITE_LAST_MODIFIED,
     priority,
   }));
 
   const serviceEntries = SERVICES.map((service) => ({
     url: `${SITE_URL}/${service.slug}`,
-    lastModified: now,
+    lastModified: SITE_LAST_MODIFIED,
     priority: 0.8,
   }));
 
@@ -31,5 +37,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticEntries, ...serviceEntries, ...blogEntries];
+  const areaEntries = AREAS.map((area) => ({
+    url: `${SITE_URL}/${area.slug}`,
+    lastModified: SITE_LAST_MODIFIED,
+    priority: 0.7,
+  }));
+
+  return [...staticEntries, ...serviceEntries, ...areaEntries, ...blogEntries];
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { AREAS } from "@/lib/areas";
 import { SERVICES } from "@/lib/services";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
@@ -131,6 +132,30 @@ export default function HomePage() {
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((service) => (
               <ServiceCard key={service.slug} service={service} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-paper py-20">
+        <div className="container-page">
+          <p className="eyebrow text-sm text-slate">Areas we serve</p>
+          <h2 className="mt-3 max-w-2xl text-3xl text-obsidian md:text-4xl">
+            Chartered accountant services across Chennai.
+          </h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            Our office is in Anna Nagar, and we work with clients across the
+            city — in person for those nearby, virtually for everyone else.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            {AREAS.map((area) => (
+              <Link
+                key={area.slug}
+                href={`/${area.slug}`}
+                className="rounded-navpills border border-ash bg-paper px-5 py-2.5 text-sm font-medium text-obsidian transition hover:bg-fog"
+              >
+                {area.name}
+              </Link>
             ))}
           </div>
         </div>

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import type { ServiceSummary } from "@/lib/services";
-import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
 export default function MobileNav({ services }: { services: ServiceSummary[] }) {
   const [open, setOpen] = useState(false);
@@ -14,7 +14,7 @@ export default function MobileNav({ services }: { services: ServiceSummary[] }) 
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="flex h-10 w-10 items-center justify-center rounded-lg border border-ash text-obsidian"
+        className="flex h-11 w-11 items-center justify-center rounded-lg border border-ash text-obsidian"
       >
         {open ? (
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -69,6 +69,14 @@ export default function MobileNav({ services }: { services: ServiceSummary[] }) 
               className="mt-6 block rounded-buttons bg-obsidian px-5 py-3 text-center text-sm font-medium text-white"
             >
               Call {PHONE_DISPLAY}
+            </a>
+            <a
+              href={WHATSAPP_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 block rounded-buttons border border-ash px-5 py-3 text-center text-sm font-medium text-obsidian"
+            >
+              Chat on WhatsApp
             </a>
           </div>
         </div>

@@ -87,20 +87,37 @@ export default function GstPage() {
             ))}
           </div>
 
-          <div className="mt-16 rounded-cards bg-lilac-mist p-8">
-            <h2 className="text-xl font-medium text-obsidian">
-              Received a GST show-cause notice or facing an appeal?
-            </h2>
-            <p className="mt-3 text-slate">
-              Notice replies, departmental audits, appeals, and GST Appellate Tribunal
-              representation are handled on our dedicated GST litigation page.
-            </p>
-            <Link
-              href="/gst-litigation-chennai"
-              className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
-            >
-              View GST Litigation Services →
-            </Link>
+          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            <div className="rounded-cards bg-lilac-mist p-8">
+              <h2 className="text-xl font-medium text-obsidian">
+                Just need to register for GST?
+              </h2>
+              <p className="mt-3 text-slate">
+                New registration, voluntary registration, and LUT applications
+                have their own dedicated, in-depth guide.
+              </p>
+              <Link
+                href="/gst-registration-chennai"
+                className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
+              >
+                View GST Registration Guide →
+              </Link>
+            </div>
+            <div className="rounded-cards bg-lilac-mist p-8">
+              <h2 className="text-xl font-medium text-obsidian">
+                Received a GST show-cause notice or facing an appeal?
+              </h2>
+              <p className="mt-3 text-slate">
+                Notice replies, departmental audits, appeals, and GST Appellate Tribunal
+                representation are handled on our dedicated GST litigation page.
+              </p>
+              <Link
+                href="/gst-litigation-chennai"
+                className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
+              >
+                View GST Litigation Services →
+              </Link>
+            </div>
           </div>
         </div>
       </section>

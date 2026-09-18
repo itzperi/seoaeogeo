@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Logo from "./Logo";
 import { SERVICES } from "@/lib/services";
 import { ADDRESS_FULL, ADDRESS_SHORT, EMAIL, GOOGLE_MAPS_EMBED_SRC, PHONE_DISPLAY, PHONE_TEL, SOCIALS } from "@/lib/site";
 
@@ -21,7 +22,10 @@ export default function Footer() {
       </div>
       <div className="container-page grid grid-cols-1 gap-10 py-16 md:grid-cols-4">
         <div>
-          <p className="font-display text-lg">C S Rushil &amp; Co.</p>
+          <div className="flex items-center gap-2">
+            <Logo size={28} />
+            <p className="font-display text-lg">C S Rushil &amp; Co.</p>
+          </div>
           <p className="mt-3 text-sm text-slate">
             Chartered Accountants based in {ADDRESS_FULL}, serving businesses
             across audit, tax, GST, and company compliance.

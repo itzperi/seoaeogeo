@@ -36,7 +36,7 @@ export default function Page() {
         { question: "How long does a statutory audit take?", answer: "For a small to mid-sized company, a statutory audit typically takes 2–4 weeks depending on the state of your books and responsiveness to audit queries." },
         { question: "Do you conduct audits outside Chennai?", answer: "Yes, we conduct audits for clients across Tamil Nadu and pan-India, with fieldwork scheduled around your business calendar." },
       ]}
-      relatedSlugs={["direct-tax", "roc-compliances", "virtual-cfo-services"]}
+      relatedSlugs={["statutory-audit-chennai", "tax-audit-chennai", "roc-compliances"]}
     />
   );
 }

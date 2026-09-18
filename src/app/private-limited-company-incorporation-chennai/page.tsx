@@ -25,32 +25,32 @@ const FAQS = [
   {
     question: "How long does private limited company incorporation take in Chennai?",
     answer:
-      "With documents in order, SPICe+ incorporation typically takes 7–12 working days, covering DSC/DIN issuance, name approval, and Certificate of Incorporation from the MCA. Delays usually come from name-availability rejections or incomplete KYC documents, both of which we vet before filing.",
+      "With documents in order, SPICe+ incorporation typically takes 7–12 working days, covering DSC/DIN issuance, name approval, and Certificate of Incorporation from the MCA. Delays usually come from name-availability rejections (the proposed name resembling an existing company or trademark) or incomplete KYC documents, both of which we vet against MCA and trademark databases before filing rather than discovering after a rejection resets the clock. Founders who have their director KYC, registered-office proof, and proposed name options ready upfront typically see the faster end of that range; those starting from scratch on documentation should budget closer to 3 weeks including document collection.",
   },
   {
     question: "What is the minimum capital and number of directors required?",
     answer:
-      "A Private Limited Company needs a minimum of 2 directors and 2 shareholders (they can be the same people), and there is no statutory minimum paid-up capital — you can start with as little as ₹1. At least one director must be an Indian resident.",
+      "A Private Limited Company needs a minimum of 2 directors and 2 shareholders (they can be the same people, and one person can hold both roles), with a maximum of 15 directors and 200 shareholders. There is no statutory minimum paid-up capital requirement — you can technically start with as little as ₹1, though most founders capitalise at a figure that realistically covers early operating expenses since raising it later requires a formal ROC filing. At least one director must be an Indian resident, meaning they stayed in India for 120 or more days in the previous financial year — this applies even if all shareholders are based abroad.",
   },
   {
     question: "What documents are required for Pvt Ltd registration?",
     answer:
-      "PAN and Aadhaar of all directors/shareholders, a recent passport-size photo, proof of registered office (rent agreement/EB bill/NOC from owner), and digital signatures (DSC) for the proposed directors. We provide a checklist tailored to resident vs. NRI/foreign directors.",
+      "PAN and Aadhaar of all directors and shareholders, a recent passport-size photo, proof of the registered office address (a rent agreement or electricity bill along with a No Objection Certificate from the property owner), and Class 3 digital signature certificates (DSC) for the proposed directors to sign the electronic MCA forms. NRI or foreign national directors need additional documents — a notarised or apostilled passport copy, proof of overseas address, and sometimes a Business Visa depending on their role. We provide a checklist tailored specifically to resident versus NRI/foreign director combinations before you start collecting paperwork, since this is the single biggest source of avoidable delay.",
   },
   {
     question: "What is the difference between government fees and professional fees?",
     answer:
-      "Government fees (MCA filing fees, stamp duty on authorised capital, DIN/DSC charges) are fixed by statute and paid directly to the government. Professional fees cover our drafting, filing, and advisory work. We separate both clearly in every quote — no bundled or hidden charges.",
+      "Government fees — MCA form fees, stamp duty on authorised share capital (which varies by state), and DIN/DSC issuance charges — are fixed by statute and paid directly to the government or the certifying authority; no CA or consultant can discount or waive these. Professional fees cover our actual work: drafting the MoA/AoA, verifying documents before submission to avoid rejection, and advisory time during the process. We separate both clearly as line items in every quote before you commit, specifically so you can see what portion is a fixed statutory cost versus what you're paying us for — no bundled or hidden charges either way.",
   },
   {
     question: "What compliance is required after incorporation?",
     answer:
-      "Within 180 days you must file a Commencement of Business declaration (INC-20A), open a current bank account, appoint an auditor within 30 days, and maintain statutory registers. We offer a post-incorporation compliance package covering all of this.",
+      "Within 180 days of incorporation you must file a Commencement of Business declaration (INC-20A) confirming subscribed capital has actually been received — skipping this can lead to the company being struck off. You must also open a current bank account in the company's name, appoint your first statutory auditor within 30 days of incorporation, issue share certificates to subscribers within 60 days, and maintain statutory registers (of members, directors, and charges) from day one, even before your first annual filing is due. We offer a post-incorporation compliance package that tracks all of these deadlines so nothing is missed in the first, most deadline-heavy 6 months.",
   },
   {
     question: "Can a Private Limited Company be converted from an existing proprietorship or partnership?",
     answer:
-      "Yes. We handle conversion of proprietorships and partnership firms into Private Limited Companies, including asset transfer, ROC filings, and re-registration of licenses (GST, MSME, bank accounts) in the new entity's name.",
+      "Yes. We handle conversion of proprietorships and partnership firms into Private Limited Companies, which involves incorporating the new company, transferring business assets and liabilities via a formal slump-sale or business-transfer agreement, and re-registering existing licenses — GST, MSME/Udyam, trade licenses, and bank accounts — in the new entity's name and PAN. This is a common step for businesses that outgrow the compliance simplicity of a proprietorship once they need to raise investment, limit personal liability, or work with clients who prefer contracting with a registered company rather than an individual.",
   },
 ];
 

@@ -36,7 +36,7 @@ export default function Page() {
         { question: "Do you help NRIs with Indian tax filing?", answer: "Yes, we assist NRIs with Indian-source income reporting, DTAA benefit claims, and repatriation-related tax compliance." },
         { question: "Can you help reduce my advance tax liability legally?", answer: "We review your income projections each quarter and structure eligible deductions and exemptions to minimise your advance tax outgo within the law." },
       ]}
-      relatedSlugs={["audit-and-assurance", "goods-and-services-tax", "gst-litigation-chennai"]}
+      relatedSlugs={["income-tax-return-filing-chennai", "audit-and-assurance", "goods-and-services-tax"]}
     />
   );
 }
