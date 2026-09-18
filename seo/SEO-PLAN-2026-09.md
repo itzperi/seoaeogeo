@@ -163,6 +163,49 @@ magnitude short of 3,000,000/month — reaching that scale nationally
 realistically takes 2–4 years of sustained investment, matching the
 trajectory of the national publishers cited in Section 4a.
 
+## Implementation status (added 2026-09-19)
+
+**Track A's site-side groundwork (Section 5, item 4, the code-doable half)
+is complete.** Confirmed shipped in this repository:
+
+- 18 dedicated service pages (up from the original 11), including every
+  Tier 1 keyword gap this plan and `RANKING-PLAN.md` identified: GST
+  registration, company registration, income tax return filing,
+  MSME/Udyam registration, CA fees, statutory audit, tax audit, and LLP
+  registration.
+- 5 locality landing pages (Anna Nagar, T Nagar, OMR/Sholinganallur,
+  Velachery, Adyar), each with genuinely distinct local content, linked
+  from the homepage, about-us, the persistent header nav, and the footer
+  on every page.
+- Full structured data: Organization, Person, Service (per page, with
+  locality-scoped `areaServed` on locality pages), FAQPage, BreadcrumbList,
+  and HowTo schema on process-driven pages (incorporation, GST
+  registration, GST litigation).
+- Technical fixes: security headers, `openingHoursSpecification`, a
+  corrected sitemap `lastModified` strategy, custom 404, web manifest,
+  WhatsApp click-to-chat, and FAQ answers widened toward the
+  citation-optimal length on the two flagship pages.
+- All of the above is committed and pushed to the `master` branch on
+  GitHub (`itzperi/seoaeogeo`).
+
+**What's still outstanding is exactly what this plan always said was
+outside SEO/code work** (Section 5, items 1–3 and the rest of item 4):
+
+- Confirming with the client which real goal (Section 2) this is actually
+  in service of — still worth a direct answer, since it changes whether
+  Track B is ever pursued.
+- Google Business Profile completion, directory citations (Sulekha,
+  Justdial, ICAI, RegisterKaro), and the review-request flow — all require
+  the firm's own Google/directory accounts; see `GBP-CHECKLIST.md` and
+  `GBP-CONTENT-PACKAGE-2026-09.md` for ready-to-paste content.
+- The Track B decision (a separate pan-India content/tools property) has
+  not been scoped further — it remains a distinct project decision, not
+  something folded into this rebuild.
+- **The rebuild itself is not yet deployed** — as of this update,
+  csrushil.com is still serving the old pre-rebuild site. None of the
+  above reaches real users, GBP, or Google's index until this repository
+  is deployed to replace it.
+
 ## Sources / assumptions
 
 - No paid keyword-volume tool (DataForSEO, Ahrefs, Google Keyword Planner)
