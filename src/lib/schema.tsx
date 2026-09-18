@@ -1,3 +1,5 @@
+import { AREAS } from "./areas";
+import { SERVICES } from "./services";
 import {
   ADDRESS,
   BUSINESS_HOURS,
@@ -66,11 +68,23 @@ export function organizationSchema() {
       latitude: GEO.latitude,
       longitude: GEO.longitude,
     },
-    areaServed: {
-      "@type": "City",
-      name: "Chennai",
-    },
+    areaServed: [
+      { "@type": "City", name: "Chennai" },
+      ...AREAS.map((area) => ({ "@type": "Place" as const, name: `${area.name}, Chennai` })),
+    ],
     openingHoursSpecification: openingHoursSpecification(),
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Services",
+      itemListElement: SERVICES.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.name,
+          url: `${SITE_URL}/${service.slug}`,
+        },
+      })),
+    },
     sameAs: [SOCIALS.linkedin, SOCIALS.instagram],
   };
 }

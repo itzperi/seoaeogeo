@@ -4,7 +4,7 @@ import { AREAS } from "@/lib/areas";
 import { SERVICES } from "@/lib/services";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
-import { JsonLd, faqSchema } from "@/lib/schema";
+import FAQSection from "@/components/FAQSection";
 import { ADDRESS_FULL, ADDRESS_SHORT, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -57,7 +57,6 @@ const QUICK_LINKS = [
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={faqSchema(HOME_FAQS)} />
       <section className="bg-royal-violet">
         <div className="container-page grid grid-cols-1 gap-12 py-20 md:grid-cols-2 md:py-28">
           <div>
@@ -205,6 +204,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <FAQSection items={HOME_FAQS} />
       <CTASection />
     </>
   );
