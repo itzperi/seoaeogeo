@@ -15,4 +15,9 @@ export const AREAS: AreaSummary[] = [
   { slug: "chartered-accountant-omr-sholinganallur-chennai", name: "OMR / Sholinganallur" },
   { slug: "chartered-accountant-velachery-chennai", name: "Velachery" },
   { slug: "chartered-accountant-adyar-chennai", name: "Adyar" },
+  { slug: "chartered-accountant-nungambakkam-chennai", name: "Nungambakkam" },
+  { slug: "chartered-accountant-guindy-chennai", name: "Guindy" },
+  { slug: "chartered-accountant-porur-chennai", name: "Porur" },
+  { slug: "chartered-accountant-tambaram-chennai", name: "Tambaram" },
+  { slug: "chartered-accountant-mylapore-chennai", name: "Mylapore" },
 ];
