@@ -120,7 +120,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "GST Show-Cause Notice: What to Do in the First 48 Hours",
     description:
       "Received a GST show-cause notice? Here's exactly what to check, gather, and do in the first 48 hours before your reply deadline.",
-    date: "2026-09-23",
+    date: "2026-09-19",
     excerpt:
       "The first 48 hours after a GST show-cause notice decide whether this becomes a quick reply or a years-long appeal. Here's the checklist.",
   },
@@ -129,7 +129,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "SPICe+ vs. the Old MCA Incorporation Process: What Changed",
     description:
       "How SPICe+ replaced the older multi-form MCA incorporation process, and what it means for Chennai founders registering a company today.",
-    date: "2026-10-07",
+    date: "2026-09-19",
     excerpt:
       "SPICe+ folded incorporation, PAN, TAN, EPFO, ESIC, and profession tax registration into a single form. Here's what actually changed.",
   },
@@ -138,7 +138,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Private Limited vs. LLP for Chennai Startups: A 2026 Comparison",
     description:
       "Choosing between a Private Limited Company and an LLP in Chennai? Compare liability, compliance cost, fundraising fit, and taxation.",
-    date: "2026-10-14",
+    date: "2026-09-19",
     excerpt:
       "Fundraising plans, compliance appetite, and taxation all point in different directions. Here's how Chennai founders should actually decide.",
   },
@@ -147,7 +147,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "GST Appellate Tribunal (GSTAT): What Chennai Businesses Need to Know",
     description:
       "GSTAT benches are becoming operational across states. Here's what Chennai businesses need to know about the new GST appeal process.",
-    date: "2026-10-21",
+    date: "2026-09-19",
     excerpt:
       "The GST Appellate Tribunal is the second appeal stage after the Appellate Authority — and it's newly operational. Here's what's changed.",
   },
@@ -156,7 +156,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "TDS Return Filing Deadlines for FY 2026-27",
     description:
       "Quarterly TDS return due dates, late filing penalties, and a practical filing calendar for FY 2026-27.",
-    date: "2026-10-28",
+    date: "2026-09-19",
     excerpt:
       "Every quarterly TDS deadline for FY 2026-27, plus the penalty math for missing one — bookmark this one.",
   },
@@ -165,7 +165,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "MSME (Udyam) Registration After Incorporation: A Founder's Checklist",
     description:
       "Should your newly incorporated company register under MSME/Udyam? Here's the eligibility, process, and benefits checklist.",
-    date: "2026-11-04",
+    date: "2026-09-19",
     excerpt:
       "Udyam registration unlocks delayed-payment protection, priority lending, and tender eligibility. Here's whether you qualify and how to apply.",
   },
@@ -174,7 +174,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Virtual CFO vs. Hiring a Full-Time CFO: A Cost Comparison for Chennai SMEs",
     description:
       "A real cost comparison between a Virtual CFO engagement and a full-time in-house CFO hire for growing Chennai businesses.",
-    date: "2026-11-11",
+    date: "2026-09-19",
     excerpt:
       "A full-time CFO in Chennai costs significantly more than most growth-stage businesses assume. Here's the actual math against a Virtual CFO engagement.",
   },
@@ -183,7 +183,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "RERA Compliance Calendar for Tamil Nadu Developers",
     description:
       "Every recurring RERA filing deadline Tamil Nadu developers need to track, from Quarterly Progress Reports to project extensions.",
-    date: "2026-11-18",
+    date: "2026-09-19",
     excerpt:
       "Quarterly Progress Reports, escrow certifications, and extension filings — the full TNRERA compliance calendar in one place.",
   },
@@ -192,7 +192,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "12A and 80G Registration: A Step-by-Step Guide for Chennai NGOs",
     description:
       "How Chennai trusts, societies, and Section 8 companies can register under 12A and 80G to unlock tax exemption and donor deductions.",
-    date: "2026-11-25",
+    date: "2026-09-19",
     excerpt:
       "12A exempts your NGO's income; 80G lets your donors claim a deduction. Most Chennai NGOs need both — here's the process.",
   },
@@ -201,7 +201,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Statutory Audit Checklist: What Auditors Actually Ask For",
     description:
       "The documents and records a statutory auditor will actually request — prepare your company for a faster, smoother audit.",
-    date: "2026-12-02",
+    date: "2026-09-19",
     excerpt:
       "Most audit delays come from documents nobody prepared in advance. Here's exactly what your auditor is going to ask for.",
   },
