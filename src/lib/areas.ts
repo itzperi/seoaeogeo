@@ -9,7 +9,9 @@ export type AreaSummary = {
 // We Serve" section and the sitemap.
 export const AREAS: AreaSummary[] = [
   { slug: "chartered-accountant-anna-nagar-chennai", name: "Anna Nagar" },
+  { slug: "chartered-accountant-kilpauk-chennai", name: "Kilpauk" },
   { slug: "chartered-accountant-t-nagar-chennai", name: "T Nagar" },
+  { slug: "chartered-accountant-ambattur-chennai", name: "Ambattur" },
   { slug: "chartered-accountant-omr-sholinganallur-chennai", name: "OMR / Sholinganallur" },
   { slug: "chartered-accountant-velachery-chennai", name: "Velachery" },
   { slug: "chartered-accountant-adyar-chennai", name: "Adyar" },

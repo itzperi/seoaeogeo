@@ -33,9 +33,17 @@ const DISPUTE_TYPES = [
 const STAGES = [
   { stage: "Show-Cause Notice (SCN) Reply", text: "We analyse the SCN, gather supporting documentation, and draft a legally grounded reply within the statutory timeline — typically 30 days." },
   { stage: "Departmental Audit & Assessment", text: "We represent you during GST audits (Section 65/66) and assessment proceedings, coordinating document production and officer queries." },
-  { stage: "Appeal before Appellate Authority", text: "If the order is adverse, we file a first appeal (Form GST APL-01) before the Joint/Additional Commissioner (Appeals) within 3 months." },
-  { stage: "GST Appellate Tribunal (GSTAT)", text: "For unresolved disputes, we represent you before the GST Appellate Tribunal — the next level of appeal after the Appellate Authority." },
+  { stage: "Appeal before Appellate Authority", text: "If the order is adverse, we file a first appeal (Form GST APL-01) before the Joint/Additional Commissioner (Appeals) within 3 months of the order, along with a certified copy of the order and the required 10% pre-deposit." },
+  { stage: "GST Appellate Tribunal (GSTAT)", text: "If the Appellate Authority's order is still adverse, we file a second appeal (Form GST APL-05) before the GST Appellate Tribunal within 3 months. GSTAT has a Principal Bench in New Delhi for matters involving place-of-supply disputes, and State Benches — including one for Tamil Nadu — for all other matters, so which bench hears your case depends on the nature of the dispute." },
   { stage: "ITC & Refund Dispute Defense", text: "We build the factual and documentary case to defend legitimate ITC claims and pursue refund entitlements through litigation where needed." },
+];
+
+const NOTICE_TYPES = [
+  { form: "DRC-01A", text: "An intimation of tax ascertained as payable, issued before a formal show-cause notice — responding here can sometimes resolve the matter without escalating to a full SCN." },
+  { form: "DRC-01", text: "The formal show-cause notice under Section 73 (non-fraud cases) or Section 74 (fraud/wilful misstatement cases) — the distinction matters, since Section 74 carries a much higher penalty exposure." },
+  { form: "ASMT-10", text: "Notice for discrepancies found during scrutiny of a filed return, typically the first sign of an ITC or turnover mismatch before it escalates further." },
+  { form: "REG-17", text: "Show-cause notice proposing cancellation of GST registration — usually for continuous non-filing, requires an urgent reply to avoid losing registration entirely." },
+  { form: "GST APL-01 / APL-05", text: "Not notices but the appeal forms themselves — APL-01 for the first appeal to the Appellate Authority, APL-05 for the second appeal to GSTAT." },
 ];
 
 const FAQS = [
@@ -119,6 +127,27 @@ export default function GstLitigationPage() {
                 the GST Appellate Tribunal — without requiring a separate advocate for
                 most proceedings.
               </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">
+                Notice forms you might actually receive
+              </h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                GST notices arrive under specific form numbers, and which one
+                you&apos;ve received changes both the urgency and the right response —
+                confusing a scrutiny notice with a formal show-cause notice, for
+                example, can mean missing a much shorter reply window than you think
+                you have.
+              </p>
+              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {NOTICE_TYPES.map((n) => (
+                  <div key={n.form} className="rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]">
+                    <p className="font-medium text-obsidian">Form {n.form}</p>
+                    <p className="mt-1 text-sm text-slate">{n.text}</p>
+                  </div>
+                ))}
+              </div>
             </div>
 
             <div>
