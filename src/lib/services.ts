@@ -70,6 +70,12 @@ export const SERVICES: ServiceSummary[] = [
       "Section 44AB tax audit for businesses and professionals in Chennai crossing prescribed turnover limits.",
   },
   {
+    slug: "transfer-pricing-audit",
+    name: "Transfer Pricing Audit",
+    shortDescription:
+      "Form 3CEB certification and arm's-length pricing documentation for related-party and cross-border transactions.",
+  },
+  {
     slug: "direct-tax",
     name: "Direct Tax",
     shortDescription:
