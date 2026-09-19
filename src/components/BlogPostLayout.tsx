@@ -41,6 +41,7 @@ export default function BlogPostLayout({
         <div className="container-page py-16 md:py-20">
           <p className="eyebrow text-sm text-lemon-zest">
             {new Date(date).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}
+            {" · "}Written by {FOUNDER_NAME}
           </p>
           <h1 className="mt-4 max-w-3xl text-4xl leading-[1.13] text-white md:text-5xl">{title}</h1>
           <p className="mt-6 max-w-2xl text-lg text-white/80">{description}</p>

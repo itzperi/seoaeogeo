@@ -3,7 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
-import { BLOG_INDEX } from "@/lib/blog";
+import { getPublishedPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "Tax & Compliance Insights Blog",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function BlogIndexPage() {
-  const posts = [...BLOG_INDEX].sort((a, b) => (a.date < b.date ? 1 : -1));
+  const posts = getPublishedPosts().sort((a, b) => (a.date < b.date ? 1 : -1));
 
   return (
     <>

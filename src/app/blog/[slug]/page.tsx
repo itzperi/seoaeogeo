@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { BLOG_INDEX, getPostLoader, getPostMeta } from "@/lib/blog";
+import { getPostLoader, getPostMeta, getPublishedPosts, isPublished } from "@/lib/blog";
 import BlogPostLayout from "@/components/BlogPostLayout";
 
 export function generateStaticParams() {
-  return BLOG_INDEX.map((p) => ({ slug: p.slug }));
+  return getPublishedPosts().map((p) => ({ slug: p.slug }));
 }
+
+// Future-dated posts aren't in generateStaticParams, but Next still allows
+// on-demand rendering of any dynamic path by default — this is the actual
+// gate that stops a not-yet-published post from being reachable if someone
+// requests its exact URL directly before its date.
+export const dynamicParams = false;
 
 export async function generateMetadata({
   params,
@@ -30,7 +36,7 @@ export default async function BlogPostPage({
   const { slug } = await params;
   const meta = getPostMeta(slug);
   const loader = getPostLoader(slug);
-  if (!meta || !loader) notFound();
+  if (!meta || !loader || !isPublished(meta.date)) notFound();
 
   const mod = await loader();
   const Body = mod.default;

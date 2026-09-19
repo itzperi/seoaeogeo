@@ -156,3 +156,18 @@ export function getPostLoader(slug: string) {
 export function getPostMeta(slug: string) {
   return BLOG_INDEX.find((p) => p.slug === slug);
 }
+
+// BLOG_INDEX doubles as a content calendar — most dates are intentionally in
+// the future (see CONTENT-CALENDAR.md's "steady drip, not a burst" guidance).
+// Since this is a statically-built site, every post would otherwise go live
+// simultaneously on deploy with a false past-tense "published" date. This
+// gates both the listing and the post route itself so a post genuinely
+// isn't reachable — and doesn't claim a datePublished — before its date.
+export function isPublished(date: string) {
+  const today = new Date().toISOString().slice(0, 10);
+  return date <= today;
+}
+
+export function getPublishedPosts() {
+  return BLOG_INDEX.filter((p) => isPublished(p.date));
+}

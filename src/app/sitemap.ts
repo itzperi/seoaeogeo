@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { AREAS } from "@/lib/areas";
-import { BLOG_INDEX } from "@/lib/blog";
+import { getPublishedPosts } from "@/lib/blog";
 import { SERVICES } from "@/lib/services";
 import { SITE_URL } from "@/lib/site";
 
@@ -31,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const blogEntries = BLOG_INDEX.map((post) => ({
+  const blogEntries = getPublishedPosts().map((post) => ({
     url: `${SITE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.date),
     priority: 0.6,

@@ -106,7 +106,11 @@ export default function IncorporationPage() {
               <p className="mt-4 leading-relaxed text-slate">
                 Private Limited Company incorporation is the legal process of registering
                 a business as a distinct corporate entity under the Companies Act, 2013,
-                through the Ministry of Corporate Affairs (MCA). It gives the business a
+                through the{" "}
+                <a href="https://www.mca.gov.in" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline underline-offset-2">
+                  Ministry of Corporate Affairs (MCA)
+                </a>
+                . It gives the business a
                 separate legal identity from its owners, limits shareholder liability to
                 their share capital, and is the structure most banks, investors, and
                 government tenders prefer to work with. For Chennai-based founders, the

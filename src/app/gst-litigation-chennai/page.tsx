@@ -100,8 +100,11 @@ export default function GstLitigationPage() {
                 What is GST litigation?
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
-                GST litigation covers every stage of a tax dispute with the GST
-                department — from replying to a show-cause notice, through
+                GST litigation covers every stage of a tax dispute with the{" "}
+                <a href="https://www.gst.gov.in" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline underline-offset-2">
+                  GST department
+                </a>{" "}
+                — from replying to a show-cause notice, through
                 departmental audit and assessment, to appeals before the Appellate
                 Authority and the GST Appellate Tribunal (GSTAT). Most GST-registered
                 businesses in Chennai will face at least one notice or mismatch query
