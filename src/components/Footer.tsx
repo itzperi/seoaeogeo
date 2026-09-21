@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { AREAS } from "@/lib/areas";
 import { SERVICES } from "@/lib/services";
@@ -22,11 +23,26 @@ export default function Footer() {
       </div>
       <div className="container-page grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-5">
         <div>
-          <p className="font-display text-lg">C S Rushil &amp; Co.</p>
+          <Image
+            src="/logo.png"
+            alt="C S Rushil & Co. — Chartered Accountants, Chennai"
+            width={140}
+            height={122}
+            className="h-10 w-auto"
+          />
           <p className="mt-3 text-sm text-slate">
             Chartered Accountants based in {ADDRESS_FULL}, serving businesses
             across audit, tax, GST, and company compliance.
           </p>
+          <div className="mt-4 flex items-center gap-3">
+            <Image
+              src="/images/chartered-accountant-badge.png"
+              alt="Chartered Accountancy practice"
+              width={512}
+              height={390}
+              className="h-8 w-auto"
+            />
+          </div>
           <div className="mt-4 flex gap-3 text-sm text-slate">
             <a href={SOCIALS.linkedin} className="hover:text-obsidian">LinkedIn</a>
             <a href={SOCIALS.instagram} className="hover:text-obsidian">Instagram</a>

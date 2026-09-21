@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { AREAS } from "@/lib/areas";
 import { SERVICES } from "@/lib/services";
@@ -15,9 +16,14 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-ash bg-paper relative">
       <div className="container-page flex h-16 items-center justify-between gap-6">
         <Link href="/" className="flex items-center gap-2 shrink-0">
-          <span className="font-display text-base text-obsidian">
-            C S Rushil &amp; Co.
-          </span>
+          <Image
+            src="/logo.png"
+            alt="C S Rushil & Co. — Chartered Accountants, Chennai"
+            width={140}
+            height={122}
+            className="h-11 w-auto"
+            priority
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1 text-sm font-medium text-slate">

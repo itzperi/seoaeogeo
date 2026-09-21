@@ -49,9 +49,8 @@ export function organizationSchema() {
     name: BUSINESS_NAME,
     legalName: BUSINESS_LEGAL_NAME,
     url: SITE_URL,
-    // No `logo`/`image` field until a real logo asset exists — a broken
-    // URL here would fail Google's Logo rich-result validation. Add once
-    // the firm's actual logo file is in public/.
+    logo: `${SITE_URL}/logo.png`,
+    image: `${SITE_URL}/logo.png`,
     telephone: PHONE_TEL,
     email: EMAIL,
     priceRange: "₹₹",
