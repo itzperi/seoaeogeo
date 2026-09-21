@@ -22,14 +22,15 @@ export default function BlogPostLayout({
 }) {
   const articleSchema = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": "BlogPosting",
     headline: title,
     description,
+    image: `${SITE_URL}/blog/${slug}/opengraph-image`,
     datePublished: date,
     dateModified: date,
-    author: { "@type": "Person", name: FOUNDER_NAME },
+    author: { "@type": "Person", name: FOUNDER_NAME, url: `${SITE_URL}/about-us` },
     publisher: { "@id": `${SITE_URL}/#organization` },
-    mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
+    mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${slug}` },
   };
 
   return (

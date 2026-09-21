@@ -54,6 +54,7 @@ export function organizationSchema() {
     // the firm's actual logo file is in public/.
     telephone: PHONE_TEL,
     email: EMAIL,
+    priceRange: "₹₹",
     founder: { "@id": `${SITE_URL}/#founder` },
     address: {
       "@type": "PostalAddress",
