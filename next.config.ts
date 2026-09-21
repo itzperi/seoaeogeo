@@ -9,6 +9,12 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Required for cPanel/Passenger Node.js App hosting (GoDaddy and similar):
+  // this makes `next build` emit a self-contained .next/standalone/server.js
+  // that Passenger can run directly, bundling only the node_modules the app
+  // actually needs rather than requiring `npm install` on the server. See
+  // .cpanel.yml and DEPLOYMENT.md for the full deploy flow.
+  output: "standalone",
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

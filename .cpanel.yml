@@ -1,0 +1,30 @@
+---
+# cPanel Git Version Control deployment script.
+#
+# BEFORE FIRST DEPLOY — edit the two variables below to match your actual
+# GoDaddy cPanel "Setup Node.js App" configuration:
+#
+#   DEPLOYPATH   = the app's "Application root", shown in cPanel's
+#                  Setup Node.js App screen (e.g. /home/csrushil/nodeapp).
+#   NODE_VENV    = the "Enter to the virtual environment" path shown on that
+#                  same screen (e.g.
+#                  /home/csrushil/nodevenv/nodeapp/20/bin/activate).
+#                  This is what puts `node`/`npm` on PATH — without it, the
+#                  build step below will fail with "npm: command not found".
+#
+# See DEPLOYMENT.md for the full step-by-step cPanel setup this pairs with.
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/REPLACE_ME/nodeapp
+    - export NODE_VENV=/home/REPLACE_ME/nodevenv/nodeapp/20/bin/activate
+    - source $NODE_VENV && npm ci
+    - source $NODE_VENV && npm run build
+    - /bin/mkdir -p $DEPLOYPATH
+    - /bin/cp -R .next/standalone/. $DEPLOYPATH/
+    - /bin/mkdir -p $DEPLOYPATH/.next
+    - /bin/cp -R .next/static $DEPLOYPATH/.next/static
+    - /bin/mkdir -p $DEPLOYPATH/public
+    - /bin/cp -R public/. $DEPLOYPATH/public/
+    - /bin/mkdir -p $DEPLOYPATH/tmp
+    - /bin/touch $DEPLOYPATH/tmp/restart.txt
