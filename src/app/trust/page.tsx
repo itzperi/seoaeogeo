@@ -21,6 +21,7 @@ export default function Page() {
       subhead="Formation and compliance for trusts, societies, and Section 8 companies — including 12A/80G registration to unlock tax-exempt status and donor benefits."
       introHeading="What is trust/NGO registration?"
       intro="Non-profit entities in India can be structured as a Trust, Society, or Section 8 Company, each with different governance and compliance requirements. Registering under Section 12A grants the entity income tax exemption, while 80G registration allows donors to claim a tax deduction on their contributions — both are essential for credible fundraising."
+      citation={{ label: "Income Tax Department — 12A/80G Registration", href: "https://www.incometax.gov.in/" }}
       subServicesHeading="Our trust & NGO services"
       subServices={[
         { name: "Trust Deed Drafting & Registration", text: "Drafting the trust deed and registering with the local Sub-Registrar." },
@@ -35,6 +36,11 @@ export default function Page() {
         { question: "What is the difference between 12A and 80G registration?", answer: "12A registration exempts the NGO's own income from tax; 80G registration allows donors to claim a tax deduction for their donations to the NGO. Most NGOs need both." },
         { question: "Do you help with FCRA registration for foreign donations?", answer: "We provide advisory on FCRA eligibility and compliance requirements; FCRA registration itself involves a separate government approval process we can guide you through." },
         { question: "Is annual audit mandatory for NGOs?", answer: "Yes — Trusts, Societies, and Section 8 Companies above prescribed income thresholds must have their accounts audited annually to retain exempt status." },
+      ]}
+      relatedQuestions={[
+        { question: "Should our NGO be a Trust, Society, or Section 8 Company?", href: "/formation-of-business-entity" },
+        { question: "How does 12A exemption affect our income tax filing?", href: "/direct-tax" },
+        { question: "Does a Section 8 Company have ROC filing requirements too?", href: "/roc-compliances" },
       ]}
       relatedSlugs={["formation-of-business-entity", "direct-tax", "roc-compliances"]}
     />

@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, serviceSchema } from "@/lib/schema";
+import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/goods-and-services-tax`;
@@ -59,6 +59,7 @@ export default function GstPage() {
           serviceType: "Tax Compliance",
         })}
       />
+      <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "Goods & Services Tax", href: "/goods-and-services-tax" }]} />
       <PageHero
         eyebrow="GST · Chennai"
@@ -69,13 +70,24 @@ export default function GstPage() {
       <section className="bg-paper py-16">
         <div className="container-page">
           <h2 className="text-2xl text-obsidian">What is GST?</h2>
-          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+          <p id="direct-answer" className="mt-4 max-w-2xl leading-relaxed text-slate">
             GST (Goods and Services Tax) is a comprehensive, indirect tax levied on the
             supply of goods and services in India, replacing multiple older taxes like
             VAT, service tax, and excise duty into one unified system. Tax is collected
             at every stage of the supply chain with credit available for tax paid on
             inputs, which simplifies compliance and improves ease of doing business —
             provided returns are filed accurately and on time.
+          </p>
+          <p className="mt-2 max-w-2xl text-sm text-slate">
+            Official reference:{" "}
+            <a
+              href="https://www.gst.gov.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-royal-violet underline underline-offset-2"
+            >
+              GST Portal (gst.gov.in)
+            </a>
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -123,6 +135,30 @@ export default function GstPage() {
       </section>
 
       <FAQSection items={FAQS} />
+
+      <section className="bg-paper py-12">
+        <div className="container-page">
+          <h2 className="text-xl text-obsidian">People also ask</h2>
+          <ul className="mt-4 space-y-2">
+            <li>
+              <Link href="/gst-registration-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                Who needs to register for GST?
+              </Link>
+            </li>
+            <li>
+              <Link href="/gst-litigation-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                What should I do if I get a GST show-cause notice?
+              </Link>
+            </li>
+            <li>
+              <Link href="/direct-tax" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                Do I need to file income tax separately from GST?
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <CTASection />
     </>
   );

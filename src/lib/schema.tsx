@@ -171,6 +171,17 @@ export function howToSchema(opts: {
   };
 }
 
+export function speakableSchema(cssSelector: string[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector,
+    },
+  };
+}
+
 export function JsonLd({ data }: { data: object }) {
   return (
     <script

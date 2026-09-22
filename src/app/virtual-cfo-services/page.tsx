@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, serviceSchema } from "@/lib/schema";
+import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/virtual-cfo-services`;
@@ -89,6 +89,7 @@ export default function VirtualCfoPage() {
           serviceType: "Financial Advisory",
         })}
       />
+      <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "Virtual CFO Services", href: "/virtual-cfo-services" }]} />
       <PageHero
         eyebrow="Virtual CFO · Chennai"
@@ -101,7 +102,7 @@ export default function VirtualCfoPage() {
           <div className="lg:col-span-2 space-y-12">
             <div>
               <h2 className="text-2xl text-obsidian">What is a Virtual CFO?</h2>
-              <p className="mt-4 leading-relaxed text-slate">
+              <p id="direct-answer" className="mt-4 leading-relaxed text-slate">
                 A Virtual CFO provides senior financial leadership — budgeting, cash
                 flow management, MIS reporting, and investor-facing financial
                 strategy — on a fractional, outsourced basis rather than as a
@@ -237,6 +238,30 @@ export default function VirtualCfoPage() {
       </section>
 
       <FAQSection items={FAQS} />
+
+      <section className="bg-paper py-12">
+        <div className="container-page">
+          <h2 className="text-xl text-obsidian">People also ask</h2>
+          <ul className="mt-4 space-y-2">
+            <li>
+              <Link href="/audit-and-assurance" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                Does a Virtual CFO also handle our statutory audit?
+              </Link>
+            </li>
+            <li>
+              <Link href="/management-consultancy" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                How is this different from management consultancy?
+              </Link>
+            </li>
+            <li>
+              <Link href="/direct-tax" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                Can a Virtual CFO help with tax planning too?
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <CTASection
         title="Ready for CFO-level financial clarity?"
         subtitle="Talk to us about what a Virtual CFO engagement would actually look like for your business."

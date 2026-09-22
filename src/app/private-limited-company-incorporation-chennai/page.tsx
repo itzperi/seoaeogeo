@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, howToSchema, serviceSchema } from "@/lib/schema";
+import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/private-limited-company-incorporation-chennai`;
@@ -89,6 +89,7 @@ export default function IncorporationPage() {
           steps: STEPS,
         })}
       />
+      <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "Private Limited Company Incorporation", href: "/private-limited-company-incorporation-chennai" }]} />
       <PageHero
         eyebrow="Company Registration · Chennai"
@@ -103,7 +104,7 @@ export default function IncorporationPage() {
               <h2 className="text-2xl text-obsidian">
                 What is Private Limited Company Incorporation?
               </h2>
-              <p className="mt-4 leading-relaxed text-slate">
+              <p id="direct-answer" className="mt-4 leading-relaxed text-slate">
                 Private Limited Company incorporation is the legal process of registering
                 a business as a distinct corporate entity under the Companies Act, 2013,
                 through the{" "}
@@ -193,6 +194,25 @@ export default function IncorporationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
+                How we handle your incorporation
+              </h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                We start with a name-availability and trademark check before you commit
+                to a name, since a rejection at Part A of SPICe+ is the single biggest
+                avoidable delay. In parallel, we cross-check every director&apos;s PAN
+                and Aadhaar details for the exact-match mismatches that cause most
+                resubmissions, draft the MoA/AoA around your actual business objects
+                rather than a generic template, and file SPICe+ Part B once DSCs and
+                documents are verified — not before. After the Certificate of
+                Incorporation is issued, we track the post-incorporation deadlines
+                (INC-20A, auditor appointment, share certificates) ourselves and flag
+                each one to you in writing, rather than leaving you to track a
+                first-180-days compliance calendar alone.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">
                 Government fees vs. professional fees
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
@@ -252,6 +272,30 @@ export default function IncorporationPage() {
       </section>
 
       <FAQSection items={FAQS} />
+
+      <section className="bg-paper py-12">
+        <div className="container-page">
+          <h2 className="text-xl text-obsidian">People also ask</h2>
+          <ul className="mt-4 space-y-2">
+            <li>
+              <Link href="/formation-of-business-entity" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                Should I choose Private Limited or a different entity type?
+              </Link>
+            </li>
+            <li>
+              <Link href="/roc-compliances" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                What ROC filings come due after incorporation?
+              </Link>
+            </li>
+            <li>
+              <Link href="/virtual-cfo-services" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                When should a new company bring in a Virtual CFO?
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <CTASection
         title="Ready to incorporate your company?"
         subtitle="Get a transparent, fixed-fee quote from a Chennai-based chartered accountancy firm."

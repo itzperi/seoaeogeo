@@ -3,11 +3,13 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, howToSchema, serviceSchema } from "@/lib/schema";
+import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { getService } from "@/lib/services";
 
 export type SubService = { name: string; text: string };
 export type HowToStep = { name: string; text: string };
+export type Citation = { label: string; href: string };
+export type RelatedQuestion = { question: string; href: string };
 
 export default function ServicePageTemplate({
   pageUrl,
@@ -19,10 +21,12 @@ export default function ServicePageTemplate({
   subhead,
   intro,
   introHeading,
+  citation,
   subServices,
   subServicesHeading,
   howTo,
   faqs,
+  relatedQuestions = [],
   relatedSlugs = [],
 }: {
   pageUrl: string;
@@ -34,10 +38,12 @@ export default function ServicePageTemplate({
   subhead: string;
   intro: string;
   introHeading: string;
+  citation?: Citation;
   subServices: SubService[];
   subServicesHeading: string;
   howTo?: { heading: string; steps: HowToStep[] };
   faqs: FAQItem[];
+  relatedQuestions?: RelatedQuestion[];
   relatedSlugs?: string[];
 }) {
   const related = relatedSlugs.map(getService).filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -60,13 +66,27 @@ export default function ServicePageTemplate({
           })}
         />
       )}
+      <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: crumbLabel, href: crumbHref }]} />
       <PageHero eyebrow={eyebrow} h1={h1} subhead={subhead} />
 
       <section className="bg-paper py-16">
         <div className="container-page">
           <h2 className="text-2xl text-obsidian">{introHeading}</h2>
-          <p className="mt-4 max-w-2xl leading-relaxed text-slate">{intro}</p>
+          <p id="direct-answer" className="mt-4 max-w-2xl leading-relaxed text-slate">{intro}</p>
+          {citation && (
+            <p className="mt-2 max-w-2xl text-sm text-slate">
+              Official reference:{" "}
+              <a
+                href={citation.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-royal-violet underline underline-offset-2"
+              >
+                {citation.label}
+              </a>
+            </p>
+          )}
 
           <h2 className="mt-14 text-2xl text-obsidian">
             {subServicesHeading}
@@ -123,6 +143,27 @@ export default function ServicePageTemplate({
       </section>
 
       <FAQSection items={faqs} />
+
+      {relatedQuestions.length > 0 && (
+        <section className="bg-paper py-12">
+          <div className="container-page">
+            <h2 className="text-xl text-obsidian">People also ask</h2>
+            <ul className="mt-4 space-y-2">
+              {relatedQuestions.map((q) => (
+                <li key={q.question}>
+                  <Link
+                    href={q.href}
+                    className="text-sm font-medium text-royal-violet underline underline-offset-2"
+                  >
+                    {q.question}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       <CTASection />
     </>
   );

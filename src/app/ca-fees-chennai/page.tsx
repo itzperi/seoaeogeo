@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, serviceSchema } from "@/lib/schema";
+import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/ca-fees-chennai`;
@@ -71,6 +72,7 @@ export default function CaFeesPage() {
           serviceType: "Pricing Guide",
         })}
       />
+      <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "CA Fees & Pricing", href: "/ca-fees-chennai" }]} />
       <PageHero
         eyebrow="Pricing · Chennai"
@@ -80,8 +82,8 @@ export default function CaFeesPage() {
 
       <section className="bg-paper py-16">
         <div className="container-page">
-          <h2 className="text-2xl text-obsidian">Indicative pricing by service</h2>
-          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+          <h2 className="text-2xl text-obsidian">How much do CA services cost in Chennai?</h2>
+          <p id="direct-answer" className="mt-4 max-w-2xl leading-relaxed text-slate">
             These are general starting ranges for the Chennai market, not a
             fixed quote — your exact fee depends on your specific
             transaction volume and complexity. We confirm a fixed, written
@@ -113,6 +115,30 @@ export default function CaFeesPage() {
       </section>
 
       <FAQSection items={FAQS} />
+
+      <section className="bg-paper py-12">
+        <div className="container-page">
+          <h2 className="text-xl text-obsidian">People also ask</h2>
+          <ul className="mt-4 space-y-2">
+            <li>
+              <Link href="/company-registration-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                What&apos;s included in the company registration fee?
+              </Link>
+            </li>
+            <li>
+              <Link href="/gst-registration-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                How much does GST registration cost?
+              </Link>
+            </li>
+            <li>
+              <Link href="/statutory-audit-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                What determines the statutory audit fee for my company?
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <CTASection />
     </>
   );

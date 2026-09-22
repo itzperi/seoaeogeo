@@ -81,6 +81,7 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-sm text-slate">
             <li><Link href="/about-us" className="hover:text-obsidian">About Us</Link></li>
             <li><Link href="/blog" className="hover:text-obsidian">Insights</Link></li>
+            <li><Link href="/faq" className="hover:text-obsidian">FAQ</Link></li>
             <li><Link href="/career" className="hover:text-obsidian">Careers</Link></li>
             <li><Link href="/contact" className="hover:text-obsidian">Contact</Link></li>
           </ul>

@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, howToSchema, serviceSchema } from "@/lib/schema";
+import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/gst-litigation-chennai`;
@@ -93,6 +93,7 @@ export default function GstLitigationPage() {
           steps: STAGES.map((s) => ({ name: s.stage, text: s.text })),
         })}
       />
+      <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "GST Litigation", href: "/gst-litigation-chennai" }]} />
       <PageHero
         eyebrow="GST Disputes · Chennai"
@@ -107,7 +108,7 @@ export default function GstLitigationPage() {
               <h2 className="text-2xl text-obsidian">
                 What is GST litigation?
               </h2>
-              <p className="mt-4 leading-relaxed text-slate">
+              <p id="direct-answer" className="mt-4 leading-relaxed text-slate">
                 GST litigation covers every stage of a tax dispute with the{" "}
                 <a href="https://www.gst.gov.in" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline underline-offset-2">
                   GST department
@@ -196,6 +197,25 @@ export default function GstLitigationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
+                How we work on a GST litigation matter
+              </h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                We start by reading the notice or order itself before touching your
+                books — the exact section cited (73 vs. 74, for instance) and the
+                specific allegation determine both the reply deadline and the
+                documents we pull first. From there we reconcile the disputed period
+                against your GSTR-2B, e-way bills, and underlying invoices to build a
+                factual position, draft the reply or appeal memorandum grounded in
+                that reconciliation, and represent you personally at hearings under
+                Section 116 of the CGST Act rather than handing the matter to a
+                separate advocate. Every deadline — the SCN reply window, the
+                3-month appeal limitation, the pre-deposit payment — is tracked and
+                flagged to you in writing, not left for you to calculate.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">
                 Why this matters for Chennai businesses
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
@@ -239,6 +259,30 @@ export default function GstLitigationPage() {
       </section>
 
       <FAQSection items={FAQS} />
+
+      <section className="bg-paper py-12">
+        <div className="container-page">
+          <h2 className="text-xl text-obsidian">People also ask</h2>
+          <ul className="mt-4 space-y-2">
+            <li>
+              <Link href="/goods-and-services-tax" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                What are the ongoing GST return filing requirements?
+              </Link>
+            </li>
+            <li>
+              <Link href="/audit-and-assurance" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                Could a GST dispute also trigger an income tax audit?
+              </Link>
+            </li>
+            <li>
+              <Link href="/direct-tax" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                Do GST notices affect my income tax filing too?
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <CTASection
         title="Facing a GST notice or audit?"
         subtitle="Get a chartered accountant's assessment of your case before your reply deadline passes."

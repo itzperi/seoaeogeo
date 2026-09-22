@@ -26,6 +26,7 @@ export default function Page() {
       subhead="Arm's-length pricing documentation and Form 3CEB compliance for businesses with related-party or cross-border transactions."
       introHeading="What is a transfer pricing audit?"
       intro="A transfer pricing audit examines transactions between related or associated enterprises — a parent company and subsidiary, sister concerns, or entities under common control — to confirm they're priced at arm's length, the same rate an unrelated third party would charge. Under the Income Tax Act, businesses with specified domestic transactions above prescribed thresholds, or any international transaction with an associated enterprise regardless of value, must obtain a transfer pricing report in Form 3CEB from a Chartered Accountant and maintain contemporaneous documentation justifying the pricing method used."
+      citation={{ label: "Income Tax Department — Transfer Pricing", href: "https://www.incometax.gov.in/" }}
       subServicesHeading="What's included"
       subServices={[
         { name: "Form 3CEB Certification", text: "Mandatory transfer pricing audit report and certification for international and specified domestic transactions." },
@@ -41,6 +42,11 @@ export default function Page() {
         { question: "What happens if transfer pricing documentation isn't maintained?", answer: "Failure to maintain proper documentation or furnish the required report can attract penalties under the Income Tax Act, and in an assessment, the tax authority can make its own adjustment to your reported income if it isn't satisfied the pricing was at arm's length — which can mean double taxation if the other jurisdiction doesn't grant a corresponding adjustment." },
         { question: "What counts as a 'related party' for transfer pricing purposes?", answer: "Associated enterprises include a parent-subsidiary relationship, entities under common control or common shareholding above prescribed thresholds, and entities where one has effective management or capital control over the other — the definition is specific and worth confirming for your actual group structure rather than assuming." },
         { question: "Do you handle transfer pricing for Indian subsidiaries of foreign companies?", answer: "Yes — this is one of the most common transfer pricing situations we handle: an Indian subsidiary transacting with its foreign parent or group companies for services, royalties, management fees, or goods." },
+      ]}
+      relatedQuestions={[
+        { question: "What other audits apply alongside transfer pricing?", href: "/audit-and-assurance" },
+        { question: "Is transfer pricing audit required in addition to statutory audit?", href: "/statutory-audit-chennai" },
+        { question: "How does related-party pricing affect my income tax return?", href: "/direct-tax" },
       ]}
       relatedSlugs={["audit-and-assurance", "statutory-audit-chennai", "direct-tax"]}
     />

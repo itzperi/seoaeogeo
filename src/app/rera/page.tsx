@@ -21,6 +21,7 @@ export default function Page() {
       subhead="Project registration, quarterly filings, and ongoing compliance advisory for real estate developers and agents under TNRERA."
       introHeading="What is RERA compliance?"
       intro="The Real Estate (Regulation and Development) Act, 2016 requires promoters of qualifying real estate projects to register with the state regulatory authority (TNRERA in Tamil Nadu) and file periodic disclosures on construction progress, funds utilisation, and project timelines. Non-compliance carries financial penalties and can freeze project sales."
+      citation={{ label: "Tamil Nadu RERA (TNRERA)", href: "https://www.tnrera.in/" }}
       subServicesHeading="Our RERA services"
       subServices={[
         { name: "Project Registration", text: "Preparation and filing of RERA project registration with required disclosures and documentation." },
@@ -35,6 +36,11 @@ export default function Page() {
         { question: "What is the 70% escrow account requirement?", answer: "Promoters must deposit 70% of amounts collected from buyers into a separate escrow account, to be used only for construction and land costs of that specific project." },
         { question: "How often must progress reports be filed?", answer: "Quarterly Progress Reports (QPRs) must be filed with TNRERA every quarter until the project receives its completion certificate." },
         { question: "Do real estate agents need separate RERA registration?", answer: "Yes, agents facilitating sale or purchase of RERA-registered projects must independently register as real estate agents under RERA." },
+      ]}
+      relatedQuestions={[
+        { question: "What entity structure should a real estate developer register as?", href: "/formation-of-business-entity" },
+        { question: "How is escrow account income taxed for a project?", href: "/direct-tax" },
+        { question: "Does a RERA-registered company still need ROC filings?", href: "/roc-compliances" },
       ]}
       relatedSlugs={["formation-of-business-entity", "direct-tax", "roc-compliances"]}
     />

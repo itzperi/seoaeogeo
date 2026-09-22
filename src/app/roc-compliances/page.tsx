@@ -21,6 +21,7 @@ export default function Page() {
       subhead="Proactive compliance management aligned with the evolving Companies Act landscape — stay ahead of deadlines and penalties."
       introHeading="What is ROC compliance?"
       intro="Every registered company and LLP must file periodic returns and maintain statutory records with the Registrar of Companies (ROC) under the Ministry of Corporate Affairs. Missing these deadlines attracts steep additional fees and can lead to director disqualification or company strike-off."
+      citation={{ label: "Ministry of Corporate Affairs (MCA)", href: "https://www.mca.gov.in/" }}
       subServicesHeading="Our ROC compliance services"
       subServices={[
         { name: "Annual Return Filing (MGT-7/AOC-4)", text: "Yearly filing of financial statements and annual return with the ROC." },
@@ -35,6 +36,11 @@ export default function Page() {
         { question: "Which ROC filings are mandatory every year?", answer: "At minimum, AOC-4 (financial statements), MGT-7/7A (annual return), and DIR-3 KYC for each director must be filed annually, alongside audited accounts." },
         { question: "Do LLPs also have ROC compliance requirements?", answer: "Yes — LLPs file Form 11 (Annual Return) and Form 8 (Statement of Accounts) annually, with different due dates from companies." },
         { question: "Can you fix past non-compliance?", answer: "Yes, we conduct a compliance health check, identify pending filings, and regularise them through the MCA's condonation and late-filing mechanisms where available." },
+      ]}
+      relatedQuestions={[
+        { question: "Which entity structure has the lightest ROC compliance burden?", href: "/formation-of-business-entity" },
+        { question: "What ROC filings follow right after incorporation?", href: "/private-limited-company-incorporation-chennai" },
+        { question: "Is statutory audit required before I can file my annual return?", href: "/audit-and-assurance" },
       ]}
       relatedSlugs={["formation-of-business-entity", "private-limited-company-incorporation-chennai", "audit-and-assurance"]}
     />

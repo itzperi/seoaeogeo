@@ -26,6 +26,7 @@ export default function Page() {
       subhead="Section 44AB tax audit for businesses and professionals crossing prescribed turnover limits — accurate, on-time, and structured to withstand scrutiny."
       introHeading="What is a tax audit under Section 44AB?"
       intro="A tax audit under Section 44AB of the Income Tax Act is an examination of a taxpayer's books of account by a Chartered Accountant, required once turnover or gross receipts cross prescribed thresholds — currently ₹1 crore for businesses (₹10 crore where cash receipts and payments are each under 5% of the total), and ₹50 lakh for professionals. The auditor issues Form 3CA/3CB along with Form 3CD, a detailed statement of particulars covering depreciation, disallowances, related-party transactions, and other items the Income Tax Department cross-checks during assessment. Missing the deadline attracts a penalty under Section 271B, in addition to losing the ability to defend certain claims that a clean tax audit report would have supported."
+      citation={{ label: "Income Tax Department — Section 44AB", href: "https://www.incometax.gov.in/" }}
       subServicesHeading="What's included"
       subServices={[
         { name: "Applicability Assessment", text: "Determining whether Section 44AB applies to your specific turnover, receipts, and cash-transaction mix for the year." },
@@ -41,6 +42,11 @@ export default function Page() {
         { question: "What happens if I miss the tax audit deadline?", answer: "A penalty under Section 271B applies — 0.5% of turnover/gross receipts, capped at ₹1.5 lakh — unless you can show reasonable cause for the delay. Beyond the penalty, a late or missing tax audit report also weakens your position if the return is later selected for scrutiny." },
         { question: "Can I avoid a tax audit through presumptive taxation?", answer: "Possibly. Businesses under Section 44AD (turnover up to ₹2 crore, or ₹3 crore with the cash-transaction condition) and professionals under Section 44ADA (gross receipts up to ₹50 lakh, or ₹75 lakh with the same condition) can opt for presumptive taxation and avoid a tax audit, provided they meet the eligibility conditions and haven't opted out in a way that triggers a mandatory audit in a later year." },
         { question: "Is tax audit the same as statutory audit?", answer: "No. Statutory audit (under the Companies Act) applies to every registered company regardless of turnover; tax audit (under the Income Tax Act) applies based on turnover/receipts thresholds and covers different reporting requirements. A company can require both in the same year, and we coordinate the two so documentation isn't duplicated." },
+      ]}
+      relatedQuestions={[
+        { question: "Does my company also need a statutory audit?", href: "/audit-and-assurance" },
+        { question: "How is tax audit different from statutory audit?", href: "/statutory-audit-chennai" },
+        { question: "Do you also file my income tax return after the audit?", href: "/income-tax-return-filing-chennai" },
       ]}
       relatedSlugs={["audit-and-assurance", "statutory-audit-chennai", "income-tax-return-filing-chennai"]}
     />

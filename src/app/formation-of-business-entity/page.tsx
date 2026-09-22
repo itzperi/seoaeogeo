@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, serviceSchema } from "@/lib/schema";
+import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/formation-of-business-entity`;
@@ -60,6 +60,7 @@ export default function FormationPage() {
           serviceType: "Business Formation",
         })}
       />
+      <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "Formation of Business Entity", href: "/formation-of-business-entity" }]} />
       <PageHero
         eyebrow="Business Registration · Chennai"
@@ -72,13 +73,24 @@ export default function FormationPage() {
           <h2 className="text-2xl text-obsidian">
             What is formation of a business entity?
           </h2>
-          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+          <p id="direct-answer" className="mt-4 max-w-2xl leading-relaxed text-slate">
             Formation of a business entity is the process of legally establishing a
             business structure under applicable law — selecting the right entity type,
             completing registration, documentation, and regulatory approvals. It gives
             your business a distinct legal identity, defines your liability exposure,
             and sets the tax and compliance framework you&apos;ll operate under going
             forward. Choosing correctly at this stage avoids costly conversions later.
+          </p>
+          <p className="mt-2 max-w-2xl text-sm text-slate">
+            Official reference:{" "}
+            <a
+              href="https://www.mca.gov.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-royal-violet underline underline-offset-2"
+            >
+              Ministry of Corporate Affairs (MCA)
+            </a>
           </p>
 
           <h2 className="mt-16 text-2xl text-obsidian">
@@ -148,6 +160,30 @@ export default function FormationPage() {
       </section>
 
       <FAQSection items={FAQS} />
+
+      <section className="bg-paper py-12">
+        <div className="container-page">
+          <h2 className="text-xl text-obsidian">People also ask</h2>
+          <ul className="mt-4 space-y-2">
+            <li>
+              <Link href="/private-limited-company-incorporation-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                What&apos;s involved specifically in Private Limited incorporation?
+              </Link>
+            </li>
+            <li>
+              <Link href="/llp-registration-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                Should I register an LLP instead of a company?
+              </Link>
+            </li>
+            <li>
+              <Link href="/roc-compliances" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                What ongoing ROC compliance follows registration?
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <CTASection />
     </>
   );

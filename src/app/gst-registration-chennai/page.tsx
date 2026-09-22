@@ -26,6 +26,7 @@ export default function Page() {
       subhead="Register for GST correctly the first time — document preparation, ARN tracking, and follow-up with the department, handled end-to-end."
       introHeading="Who needs to register for GST?"
       intro="GST registration is mandatory once your aggregate turnover crosses ₹40 lakh for goods (₹20 lakh in special-category states) or ₹20 lakh for services, or if you sell across state lines, sell on e-commerce marketplaces, or are otherwise required under the CGST Act regardless of turnover (e.g. casual taxable persons, e-commerce operators). Registering late attracts penalties and blocks Input Tax Credit for the pre-registration period, so getting the timing and documentation right at the outset matters."
+      citation={{ label: "GST Portal (gst.gov.in)", href: "https://www.gst.gov.in/" }}
       subServicesHeading="What's included"
       subServices={[
         { name: "New GST Registration", text: "Document preparation, application filing on the GST portal, and ARN tracking through to certificate issuance." },
@@ -51,6 +52,11 @@ export default function Page() {
         { question: "What documents are required for GST registration?", answer: "PAN, Aadhaar, photograph, proof of business constitution (partnership deed/incorporation certificate), address proof for the principal place of business, and bank account details. Additional documents apply for companies and LLPs." },
         { question: "Can I register for GST voluntarily even if I'm below the threshold?", answer: "Yes. Voluntary registration lets you claim Input Tax Credit and is often required by marketplaces (Amazon, Flipkart) and larger B2B customers who prefer to deal only with GST-registered vendors." },
         { question: "What if I need to fix a GST notice or dispute after registration?", answer: "Routine post-registration notices and amendments are handled here. For show-cause notices, appeals, or GST Appellate Tribunal matters, see our dedicated GST litigation service." },
+      ]}
+      relatedQuestions={[
+        { question: "What are the ongoing GST return filing requirements after registration?", href: "/goods-and-services-tax" },
+        { question: "What if I've already received a GST notice or demand?", href: "/gst-litigation-chennai" },
+        { question: "Should I register my company before or after GST registration?", href: "/company-registration-chennai" },
       ]}
       relatedSlugs={["goods-and-services-tax", "gst-litigation-chennai", "company-registration-chennai"]}
     />

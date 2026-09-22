@@ -91,6 +91,18 @@ export default function AboutPage() {
               incorporation, GST, and advisory work.
             </p>
           </div>
+          <p className="mt-4 max-w-xl text-sm text-slate">
+            Chartered Accountancy in India is regulated by the{" "}
+            <a
+              href="https://www.icai.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-royal-violet underline underline-offset-2"
+            >
+              Institute of Chartered Accountants of India (ICAI)
+            </a>
+            , the statutory body that certifies and governs every practising CA in the country.
+          </p>
           <p className="mt-4 max-w-2xl text-sm text-slate">
             Our full team includes 16 professionals across audit, tax, and
             GST — individual profiles for other partners and senior team

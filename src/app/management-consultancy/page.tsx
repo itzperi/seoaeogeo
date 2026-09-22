@@ -36,6 +36,11 @@ export default function Page() {
         { question: "Do you provide due diligence support for acquisitions?", answer: "Yes, we conduct financial and compliance due diligence for businesses evaluating an acquisition or investment." },
         { question: "How do I get started?", answer: "Book a free consultation — we'll scope the specific problem you're solving before proposing an engagement structure." },
       ]}
+      relatedQuestions={[
+        { question: "How is management consultancy different from Virtual CFO services?", href: "/virtual-cfo-services" },
+        { question: "Do you provide the audit work behind these recommendations?", href: "/audit-and-assurance" },
+        { question: "Can you also help choose the right entity structure?", href: "/formation-of-business-entity" },
+      ]}
       relatedSlugs={["virtual-cfo-services", "audit-and-assurance", "formation-of-business-entity"]}
     />
   );

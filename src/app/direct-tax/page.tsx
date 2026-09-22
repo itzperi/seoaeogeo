@@ -21,6 +21,7 @@ export default function Page() {
       subhead="Streamlining tax planning and compliance through precision and foresight — minimizing liability while maximizing operational confidence."
       introHeading="What is direct tax advisory?"
       intro="Direct tax covers income tax paid directly by individuals and businesses to the government. Effective planning within the law reduces avoidable liability, while accurate, timely filing and disciplined documentation protect you during assessment or scrutiny."
+      citation={{ label: "Income Tax Department (incometax.gov.in)", href: "https://www.incometax.gov.in/" }}
       subServicesHeading="Our direct tax services"
       subServices={[
         { name: "Income Tax Return Filing", text: "Accurate, on-time ITR filing for individuals, firms, and companies." },
@@ -35,6 +36,11 @@ export default function Page() {
         { question: "What happens if I receive an income tax scrutiny notice?", answer: "Respond within the stated deadline with supporting documentation. We review the notice, prepare your case file, and represent you before the Assessing Officer where required." },
         { question: "Do you help NRIs with Indian tax filing?", answer: "Yes, we assist NRIs with Indian-source income reporting, DTAA benefit claims, and repatriation-related tax compliance." },
         { question: "Can you help reduce my advance tax liability legally?", answer: "We review your income projections each quarter and structure eligible deductions and exemptions to minimise your advance tax outgo within the law." },
+      ]}
+      relatedQuestions={[
+        { question: "What's the deadline for filing my income tax return?", href: "/income-tax-return-filing-chennai" },
+        { question: "Does my business also need a statutory or tax audit?", href: "/audit-and-assurance" },
+        { question: "Do I need to register for GST as well?", href: "/goods-and-services-tax" },
       ]}
       relatedSlugs={["income-tax-return-filing-chennai", "audit-and-assurance", "goods-and-services-tax"]}
     />
