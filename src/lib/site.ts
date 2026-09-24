@@ -3,6 +3,10 @@ export const BUSINESS_NAME = "C S Rushil & Co.";
 export const BUSINESS_LEGAL_NAME = "C S Rushil & Co, Chartered Accountants";
 export const FOUNDER_NAME = "CA Rushil C S";
 export const FOUNDER_CREDENTIALS = "Certified FAFD, Start-up Mentor";
+export const ICAI_FRN = "270186";
+export const FOUNDER_ICAI_MEMBERSHIP_NO = "270186";
+export const YEAR_FOUNDED = 2024;
+export const GBP_URL = "https://maps.app.goo.gl/nsa7hM6BFKWiMN9g7";
 
 // NAP: standardized on the number used on the homepage/contact page (per SEO audit,
 // the site previously showed +91 7200149711 on some pages and +91 7449273374 on others).
@@ -32,7 +36,7 @@ export const ADDRESS_SHORT = `${ADDRESS.locality}, ${ADDRESS.city}`;
 export const GEO = { latitude: 13.085988998413086, longitude: 80.1996841430664 };
 
 export const SOCIALS = {
-  linkedin: "https://www.linkedin.com/company/csrushil-co/",
+  linkedin: "https://in.linkedin.com/company/csrushil-co",
   instagram: "https://www.instagram.com/carushil_c_s/",
   calendly: "https://calendly.com/",
 };

@@ -3,9 +3,24 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import Image from "next/image";
 import { JsonLd, personSchema } from "@/lib/schema";
 import { AREAS } from "@/lib/areas";
-import { FOUNDER_CREDENTIALS, FOUNDER_NAME } from "@/lib/site";
+import {
+  FOUNDER_CREDENTIALS,
+  FOUNDER_ICAI_MEMBERSHIP_NO,
+  FOUNDER_NAME,
+  ICAI_FRN,
+  YEAR_FOUNDED,
+} from "@/lib/site";
+
+const TEAM = [
+  { name: "Darsan Kanna", photo: "/images/team/darsan-kanna.webp" },
+  { name: "Harini", photo: "/images/team/harini.webp" },
+  { name: "Athulia", photo: "/images/team/athulia.webp" },
+  { name: "Ajay C", photo: "/images/team/ajay-c.webp" },
+  { name: "Omair Khan", photo: "/images/team/omair-khan.png" },
+];
 
 export const metadata: Metadata = {
   title: "About Us — Chartered Accountants in Chennai",
@@ -38,9 +53,9 @@ export default function AboutPage() {
             <div>
               <h2 className="text-2xl text-obsidian">Our story</h2>
               <p className="mt-4 leading-relaxed text-slate">
-                C S Rushil &amp; Co. is a dynamic, fast-growing chartered accountancy
-                firm based in Anna Nagar, Chennai. Founded by {FOUNDER_NAME} (
-                {FOUNDER_CREDENTIALS}), the firm is built on the principle of demystifying
+                C S Rushil &amp; Co. is a chartered accountancy
+                firm based in Anna Nagar, Chennai, founded in {YEAR_FOUNDED} by {FOUNDER_NAME} (
+                {FOUNDER_CREDENTIALS}). The firm is built on the principle of demystifying
                 financial complexity through precise audits and strategic insight — helping
                 clients strengthen compliance, mitigate risk, and grow with confidence.
               </p>
@@ -90,6 +105,9 @@ export default function AboutPage() {
               and compliance practice, and heads client engagements across
               incorporation, GST, and advisory work.
             </p>
+            <p className="mt-3 text-xs text-slate">
+              ICAI Membership No. {FOUNDER_ICAI_MEMBERSHIP_NO} · Firm Registration No. {ICAI_FRN}
+            </p>
           </div>
           <p className="mt-4 max-w-xl text-sm text-slate">
             Chartered Accountancy in India is regulated by the{" "}
@@ -103,10 +121,29 @@ export default function AboutPage() {
             </a>
             , the statutory body that certifies and governs every practising CA in the country.
           </p>
-          <p className="mt-4 max-w-2xl text-sm text-slate">
+          <h3 className="mt-10 text-lg font-medium text-obsidian">Our team</h3>
+          <p className="mt-3 max-w-2xl text-sm text-slate">
             Our full team includes 16 professionals across audit, tax, and
-            GST — individual profiles for other partners and senior team
-            members will be added here as they&apos;re finalised.
+            GST.
+          </p>
+          <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
+            {TEAM.map((member) => (
+              <div key={member.name} className="text-center">
+                <div className="relative mx-auto h-28 w-28 overflow-hidden rounded-full border border-ash bg-fog">
+                  <Image
+                    src={member.photo}
+                    alt={`${member.name}, team member at C S Rushil & Co.`}
+                    fill
+                    sizes="112px"
+                    className="object-cover"
+                  />
+                </div>
+                <p className="mt-3 text-sm font-medium text-obsidian">{member.name}</p>
+              </div>
+            ))}
+          </div>
+          <p className="mt-4 max-w-2xl text-sm text-slate">
+            Individual profiles for the remaining team members will be added here as they&apos;re finalised.
           </p>
 
           <h2 className="mt-16 text-2xl text-obsidian">Areas we serve</h2>
