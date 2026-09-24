@@ -5,6 +5,7 @@ export const FOUNDER_NAME = "CA Rushil C S";
 export const FOUNDER_CREDENTIALS = "Certified FAFD, Start-up Mentor";
 export const YEAR_FOUNDED = 2024;
 export const GBP_URL = "https://maps.app.goo.gl/nsa7hM6BFKWiMN9g7";
+export const LANGUAGES_SPOKEN = ["English", "Tamil", "Hindi"];
 
 // NAP: standardized on the number used on the homepage/contact page (per SEO audit,
 // the site previously showed +91 7200149711 on some pages and +91 7449273374 on others).

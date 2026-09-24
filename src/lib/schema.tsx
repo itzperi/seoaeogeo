@@ -10,6 +10,7 @@ import {
   FOUNDER_NAME,
   GBP_URL,
   GEO,
+  LANGUAGES_SPOKEN,
   PHONE_TEL,
   SITE_URL,
   SOCIALS,
@@ -57,6 +58,7 @@ export function organizationSchema() {
     email: EMAIL,
     priceRange: "₹₹",
     foundingDate: `${YEAR_FOUNDED}`,
+    knowsLanguage: LANGUAGES_SPOKEN,
     founder: { "@id": `${SITE_URL}/#founder` },
     address: {
       "@type": "PostalAddress",

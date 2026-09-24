@@ -147,6 +147,13 @@ export default function AboutPage() {
             among other areas — wherever you&apos;re based in Chennai, our
             incorporation, GST, audit, and tax services are available to you.
           </p>
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            We also work remotely with Non-Resident Indians and overseas
+            clients, including clients based in the United States, on Indian
+            tax filing, DTAA benefit claims, and compliance matters that
+            don&apos;t require an in-person visit. Our team communicates in
+            English, Tamil, and Hindi.
+          </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {AREAS.map((area) => (
               <Link
