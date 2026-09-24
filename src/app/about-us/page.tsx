@@ -6,13 +6,7 @@ import CTASection from "@/components/CTASection";
 import Image from "next/image";
 import { JsonLd, personSchema } from "@/lib/schema";
 import { AREAS } from "@/lib/areas";
-import {
-  FOUNDER_CREDENTIALS,
-  FOUNDER_ICAI_MEMBERSHIP_NO,
-  FOUNDER_NAME,
-  ICAI_FRN,
-  YEAR_FOUNDED,
-} from "@/lib/site";
+import { FOUNDER_CREDENTIALS, FOUNDER_NAME, YEAR_FOUNDED } from "@/lib/site";
 
 const TEAM = [
   { name: "Darsan Kanna", photo: "/images/team/darsan-kanna.webp" },
@@ -104,9 +98,6 @@ export default function AboutPage() {
               {FOUNDER_CREDENTIALS}. Leads the firm&apos;s audit, taxation,
               and compliance practice, and heads client engagements across
               incorporation, GST, and advisory work.
-            </p>
-            <p className="mt-3 text-xs text-slate">
-              ICAI Membership No. {FOUNDER_ICAI_MEMBERSHIP_NO} · Firm Registration No. {ICAI_FRN}
             </p>
           </div>
           <p className="mt-4 max-w-xl text-sm text-slate">

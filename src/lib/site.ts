@@ -3,8 +3,6 @@ export const BUSINESS_NAME = "C S Rushil & Co.";
 export const BUSINESS_LEGAL_NAME = "C S Rushil & Co, Chartered Accountants";
 export const FOUNDER_NAME = "CA Rushil C S";
 export const FOUNDER_CREDENTIALS = "Certified FAFD, Start-up Mentor";
-export const ICAI_FRN = "270186";
-export const FOUNDER_ICAI_MEMBERSHIP_NO = "270186";
 export const YEAR_FOUNDED = 2024;
 export const GBP_URL = "https://maps.app.goo.gl/nsa7hM6BFKWiMN9g7";
 

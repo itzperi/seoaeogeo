@@ -7,11 +7,9 @@ import {
   BUSINESS_NAME,
   EMAIL,
   FOUNDER_CREDENTIALS,
-  FOUNDER_ICAI_MEMBERSHIP_NO,
   FOUNDER_NAME,
   GBP_URL,
   GEO,
-  ICAI_FRN,
   PHONE_TEL,
   SITE_URL,
   SOCIALS,
@@ -59,11 +57,6 @@ export function organizationSchema() {
     email: EMAIL,
     priceRange: "₹₹",
     foundingDate: `${YEAR_FOUNDED}`,
-    identifier: {
-      "@type": "PropertyValue",
-      propertyID: "ICAI Firm Registration Number",
-      value: ICAI_FRN,
-    },
     founder: { "@id": `${SITE_URL}/#founder` },
     address: {
       "@type": "PostalAddress",
@@ -115,11 +108,6 @@ export function personSchema() {
       "@type": "Organization",
       name: "Institute of Chartered Accountants of India (ICAI)",
       url: "https://www.icai.org/",
-    },
-    identifier: {
-      "@type": "PropertyValue",
-      propertyID: "ICAI Membership Number",
-      value: FOUNDER_ICAI_MEMBERSHIP_NO,
     },
   };
 }
