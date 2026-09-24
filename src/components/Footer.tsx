@@ -23,13 +23,9 @@ export default function Footer() {
       </div>
       <div className="container-page grid grid-cols-1 gap-10 py-16 sm:grid-cols-2 lg:grid-cols-5">
         <div>
-          <Image
-            src="/logo.png"
-            alt="C S Rushil & Co. — Chartered Accountants, Chennai"
-            width={140}
-            height={122}
-            className="h-10 w-auto"
-          />
+          <p className="text-lg font-semibold tracking-tight text-obsidian">
+            C S Rushil &amp; Co.
+          </p>
           <p className="mt-3 text-sm text-slate">
             Chartered Accountants based in {ADDRESS_FULL}, serving businesses
             across audit, tax, GST, and company compliance.

@@ -91,14 +91,26 @@ export default function AboutPage() {
           </div>
 
           <h2 className="mt-16 text-2xl text-obsidian">Leadership</h2>
-          <div className="mt-6 max-w-xl rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
-            <h3 className="text-lg font-medium text-obsidian">{FOUNDER_NAME}</h3>
-            <p className="text-sm text-slate">Founder &amp; Managing Partner</p>
-            <p className="mt-3 text-sm leading-relaxed text-slate">
-              {FOUNDER_CREDENTIALS}. Leads the firm&apos;s audit, taxation,
-              and compliance practice, and heads client engagements across
-              incorporation, GST, and advisory work.
-            </p>
+          <div className="mt-6 flex max-w-xl gap-6 rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
+            <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-full border border-ash bg-fog">
+              <Image
+                src="/images/team/rushil-cs.webp"
+                alt={`${FOUNDER_NAME}, practising Chartered Accountant and founder of C S Rushil & Co.`}
+                fill
+                sizes="96px"
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div>
+              <h3 className="text-lg font-medium text-obsidian">{FOUNDER_NAME}</h3>
+              <p className="text-sm text-slate">Founder &amp; Managing Partner — Practising Chartered Accountant</p>
+              <p className="mt-3 text-sm leading-relaxed text-slate">
+                {FOUNDER_CREDENTIALS}. Leads the firm&apos;s audit, taxation,
+                and compliance practice, and heads client engagements across
+                incorporation, GST, and advisory work.
+              </p>
+            </div>
           </div>
           <p className="mt-4 max-w-xl text-sm text-slate">
             Chartered Accountancy in India is regulated by the{" "}
