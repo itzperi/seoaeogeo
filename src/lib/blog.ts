@@ -44,10 +44,16 @@ const modules = {
     import("@/content/blog/add-remove-director"),
   "advance-tax-deadlines": () =>
     import("@/content/blog/advance-tax-deadlines"),
+  "advance-tax-anna-nagar-shop-owners": () =>
+    import("@/content/blog/advance-tax-anna-nagar-shop-owners"),
   "after-gst-show-cause-reply": () =>
     import("@/content/blog/after-gst-show-cause-reply"),
+  "gst-notice-anna-nagar-traders": () =>
+    import("@/content/blog/gst-notice-anna-nagar-traders"),
   "annual-roc-filing-calendar": () =>
     import("@/content/blog/annual-roc-filing-calendar"),
+  "roc-compliance-anna-nagar-startups": () =>
+    import("@/content/blog/roc-compliance-anna-nagar-startups"),
   "audit-applicability-thresholds": () =>
     import("@/content/blog/audit-applicability-thresholds"),
   "capital-gains-tax-property-sale": () =>
@@ -66,6 +72,8 @@ const modules = {
     import("@/content/blog/form-3ceb-due-date-applicability"),
   "gst-freelancers-consultants": () =>
     import("@/content/blog/gst-freelancers-consultants"),
+  "management-consultancy-anna-nagar-business": () =>
+    import("@/content/blog/management-consultancy-anna-nagar-business"),
   "gst-registration-online-sellers-chennai": () =>
     import("@/content/blog/gst-registration-online-sellers-chennai"),
   "gstr9-annual-return-checklist": () =>
@@ -80,6 +88,8 @@ const modules = {
     import("@/content/blog/lut-for-exporters"),
   "msme-loan-schemes-tamil-nadu": () =>
     import("@/content/blog/msme-loan-schemes-tamil-nadu"),
+  "udyam-registration-anna-nagar-manufacturers": () =>
+    import("@/content/blog/udyam-registration-anna-nagar-manufacturers"),
   "nri-itr-filing": () =>
     import("@/content/blog/nri-itr-filing"),
   "old-vs-new-tax-regime": () =>
@@ -94,6 +104,10 @@ const modules = {
     import("@/content/blog/startup-india-registration"),
   "statutory-vs-tax-vs-internal-audit": () =>
     import("@/content/blog/statutory-vs-tax-vs-internal-audit"),
+  "statutory-audit-anna-nagar-companies": () =>
+    import("@/content/blog/statutory-audit-anna-nagar-companies"),
+  "tax-audit-threshold-anna-nagar": () =>
+    import("@/content/blog/tax-audit-threshold-anna-nagar"),
   "strike-off-vs-winding-up": () =>
     import("@/content/blog/strike-off-vs-winding-up"),
   "tds-on-rent": () =>
@@ -234,6 +248,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires...",
   },
   {
+    slug: "advance-tax-anna-nagar-shop-owners",
+    title: "Why Anna Nagar Shop Owners Get Advance Tax Wrong More Than Salaried Residents Do",
+    description:
+      "Salaried Anna Nagar residents rarely think about advance tax — it's deducted automatically. Business owners don't have that safety net, and it shows.",
+    date: "2026-09-26",
+    excerpt:
+      "Salaried residents rarely think about advance tax since it's deducted automatically. Business owners don't have that safety net, and it shows.",
+  },
+  {
     slug: "after-gst-show-cause-reply",
     title: "What Happens After You Reply to a GST Show Cause Notice",
     description:
@@ -243,6 +266,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",
   },
   {
+    slug: "gst-notice-anna-nagar-traders",
+    title: "Got a GST Notice as an Anna Nagar Trader? Here's What Actually Happens Next",
+    description:
+      "Anna Nagar's mix of retail, trading, and small manufacturing businesses tends to hit the same handful of GST notice triggers. Here's what to check first.",
+    date: "2026-09-26",
+    excerpt:
+      "Anna Nagar's mix of retail, trading, and small manufacturing tends to hit the same handful of GST notice triggers. Here's what to check first.",
+  },
+  {
     slug: "annual-roc-filing-calendar",
     title: "Annual ROC Filing Deadlines: A Calendar for Chennai Companies",
     description:
@@ -250,6 +282,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "Registrar of Companies filings follow a predictable annual cycle, but the specific forms and their deadlines are scattered enough across...",
+  },
+  {
+    slug: "roc-compliance-anna-nagar-startups",
+    title: "The ROC Filing Anna Nagar Founders Forget About in Year One",
+    description:
+      "Most Anna Nagar founders know about the annual return. The one they miss is the event-based filing that has nothing to do with the financial year end.",
+    date: "2026-09-26",
+    excerpt:
+      "Most founders know about the annual return. The one they miss is the event-based filing that has nothing to do with the financial year end.",
   },
   {
     slug: "audit-applicability-thresholds",
@@ -333,6 +374,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
   },
   {
+    slug: "management-consultancy-anna-nagar-business",
+    title: "When an Anna Nagar Business Has Outgrown Its Compliance-Only Relationship With Its CA",
+    description:
+      "Plenty of established Anna Nagar businesses have a CA for filing and audit, but nobody looking at whether the business itself is actually run efficiently.",
+    date: "2026-09-26",
+    excerpt:
+      "Plenty of established Anna Nagar businesses have a CA for filing and audit, but nobody looking at whether the business is run efficiently.",
+  },
+  {
     slug: "gst-registration-online-sellers-chennai",
     title: "GST Registration for Online Sellers in Chennai: What Is Different",
     description:
@@ -385,6 +435,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "If your Chennai business sells services or goods to clients outside India, a Letter of Undertaking (LUT) is one of the most valuable and...",
+  },
+  {
+    slug: "udyam-registration-anna-nagar-manufacturers",
+    title: "The Udyam Registration Mistake Anna Nagar Suppliers Keep Making",
+    description:
+      "Small manufacturers near Anna Nagar's industrial pockets often register on Udyam and then never use the one benefit that actually protects their cash flow.",
+    date: "2026-09-26",
+    excerpt:
+      "Small manufacturers near Anna Nagar's industrial pockets often register on Udyam and never use the one benefit that actually protects cash flow.",
   },
   {
     slug: "msme-loan-schemes-tamil-nadu",
@@ -457,6 +516,24 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "Business owners in Chennai often use the word audit as if it means one single thing, but statutory audit, tax audit, and internal audit are...",
+  },
+  {
+    slug: "statutory-audit-anna-nagar-companies",
+    title: "Your Anna Nagar Company's First Statutory Audit: What Actually Slows It Down",
+    description:
+      "It's rarely the audit itself that delays a first-time statutory audit for a new Anna Nagar company — it's three specific, avoidable gaps in the books.",
+    date: "2026-09-26",
+    excerpt:
+      "It's rarely the audit itself that delays a first-time statutory audit — it's three specific, avoidable gaps in the books we see repeatedly.",
+  },
+  {
+    slug: "tax-audit-threshold-anna-nagar",
+    title: "Crossed ₹1 Crore in Anna Nagar? Here's When That Actually Triggers a Tax Audit",
+    description:
+      "Plenty of Anna Nagar trading and manufacturing businesses cross the tax audit turnover threshold without realizing it, mid-year. Here's how to check.",
+    date: "2026-09-26",
+    excerpt:
+      "Plenty of Anna Nagar trading and manufacturing businesses cross the tax audit turnover threshold without realizing it. Here's how to check.",
   },
   {
     slug: "strike-off-vs-winding-up",

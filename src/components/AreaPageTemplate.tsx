@@ -16,6 +16,7 @@ export default function AreaPageTemplate({
   localContext,
   relevantServices,
   faqs,
+  furtherReading,
 }: {
   pageUrl: string;
   locality: string;
@@ -26,6 +27,7 @@ export default function AreaPageTemplate({
   localContext: string[];
   relevantServices: { slug: string; why: string }[];
   faqs: FAQItem[];
+  furtherReading?: { slug: string; title: string }[];
 }) {
   const services = relevantServices
     .map((r) => ({ ...getService(r.slug), why: r.why }))
@@ -75,6 +77,24 @@ export default function AreaPageTemplate({
               </Link>
             ))}
           </div>
+
+          {furtherReading && furtherReading.length > 0 && (
+            <>
+              <h2 className="mt-14 text-2xl text-obsidian">From our blog</h2>
+              <ul className="mt-4 space-y-2">
+                {furtherReading.map((post) => (
+                  <li key={post.slug}>
+                    <Link
+                      href={`/blog/${post.slug}`}
+                      className="text-sm font-medium text-royal-violet underline underline-offset-2"
+                    >
+                      {post.title}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
       </section>
 

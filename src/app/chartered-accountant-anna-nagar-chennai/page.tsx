@@ -43,6 +43,16 @@ export default function Page() {
         { question: "Can I walk in without an appointment?", answer: "We recommend booking a free consultation first so the right team member is available, but for Anna Nagar clients, same-day in-person meetings are usually possible given the short travel distance." },
         { question: "Do you only serve Anna Nagar, or the wider Chennai area too?", answer: "We serve businesses across Chennai — Anna Nagar is simply where our office is based, and it's the easiest locality for in-person visits. Clients elsewhere in the city work with us virtually just as easily." },
       ]}
+      furtherReading={[
+        { slug: "choosing-ca-firm-anna-nagar", title: "Choosing a CA Firm in Anna Nagar: What to Actually Look For" },
+        { slug: "gst-notice-anna-nagar-traders", title: "Got a GST Notice as an Anna Nagar Trader? Here's What Actually Happens Next" },
+        { slug: "statutory-audit-anna-nagar-companies", title: "Your Anna Nagar Company's First Statutory Audit: What Actually Slows It Down" },
+        { slug: "tax-audit-threshold-anna-nagar", title: "Crossed ₹1 Crore in Anna Nagar? Here's When That Actually Triggers a Tax Audit" },
+        { slug: "roc-compliance-anna-nagar-startups", title: "The ROC Filing Anna Nagar Founders Forget About in Year One" },
+        { slug: "management-consultancy-anna-nagar-business", title: "When an Anna Nagar Business Has Outgrown Its Compliance-Only Relationship With Its CA" },
+        { slug: "advance-tax-anna-nagar-shop-owners", title: "Why Anna Nagar Shop Owners Get Advance Tax Wrong More Than Salaried Residents Do" },
+        { slug: "udyam-registration-anna-nagar-manufacturers", title: "The Udyam Registration Mistake Anna Nagar Suppliers Keep Making" },
+      ]}
     />
   );
 }
