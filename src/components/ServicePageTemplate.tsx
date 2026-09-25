@@ -73,20 +73,23 @@ export default function ServicePageTemplate({
       <section className="bg-paper py-16">
         <div className="container-page">
           <h2 className="text-2xl text-obsidian">{introHeading}</h2>
-          <p id="direct-answer" className="mt-4 max-w-2xl leading-relaxed text-slate">{intro}</p>
-          {citation && (
-            <p className="mt-2 max-w-2xl text-sm text-slate">
-              Official reference:{" "}
-              <a
-                href={citation.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-medium text-royal-violet underline underline-offset-2"
-              >
-                {citation.label}
-              </a>
-            </p>
-          )}
+          <p id="direct-answer" className="mt-4 max-w-2xl leading-relaxed text-slate">
+            {intro}{" "}
+            {citation && (
+              <>
+                For current rules and procedures, see the{" "}
+                <a
+                  href={citation.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-royal-violet underline underline-offset-2"
+                >
+                  {citation.label}
+                </a>
+                .
+              </>
+            )}
+          </p>
 
           <h2 className="mt-14 text-2xl text-obsidian">
             {subServicesHeading}

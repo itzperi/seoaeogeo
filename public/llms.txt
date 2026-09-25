@@ -1,19 +1,41 @@
 # C S Rushil & Co.
-> Chartered accountancy firm in Anna Nagar, Chennai — company incorporation,
-> GST, audit, direct tax, ROC compliance, and virtual CFO services.
+> Chartered accountancy firm in Anna Nagar, Chennai, founded in 2024 by CA Rushil C S
+> (Certified FAFD, Start-up Mentor) with a 16-member team — company incorporation, GST,
+> audit, direct tax, ROC compliance, and virtual CFO services. Consultations in English,
+> Tamil, and Hindi. Remote service available for NRI and overseas clients.
 
-## Main sections
-- [GST Litigation Chennai](https://csrushil.com/gst-litigation-chennai): Show-cause notice replies, appeals, GSTAT representation
-- [Private Limited Company Incorporation Chennai](https://csrushil.com/private-limited-company-incorporation-chennai): Incorporation process, entity comparison, timelines
+## Services
+- [Private Limited Company Incorporation Chennai](https://csrushil.com/private-limited-company-incorporation-chennai): SPICe+ incorporation process, entity comparison, timelines
+- [Formation of Business Entity](https://csrushil.com/formation-of-business-entity): Choosing and registering the right structure (Pvt Ltd, LLP, OPC, Partnership, Proprietorship)
+- [LLP Registration Chennai](https://csrushil.com/llp-registration-chennai): FiLLiP filing, LLP Agreement drafting, conversion from partnership
+- [Company Registration Chennai](https://csrushil.com/company-registration-chennai): Private Limited, LLP, and OPC registration
+- [GST Litigation Chennai](https://csrushil.com/gst-litigation-chennai): Show-cause notice replies, appeals, GST Appellate Tribunal representation
+- [Goods & Services Tax](https://csrushil.com/goods-and-services-tax): GST registration, return filing, amendments, cancellations
 - [GST Registration Chennai](https://csrushil.com/gst-registration-chennai): New GST registration, amendments, LUT applications
-- [Company Registration Chennai](https://csrushil.com/company-registration-chennai): Private Limited, LLP, OPC, and Partnership registration
-- [Income Tax Return Filing Chennai](https://csrushil.com/income-tax-return-filing-chennai): ITR filing for individuals and businesses
-- [MSME/Udyam Registration Chennai](https://csrushil.com/msme-udyam-registration-chennai): Udyam registration process and benefits
-- [CA Fees in Chennai](https://csrushil.com/ca-fees-chennai): Indicative pricing for incorporation, GST, and audit services
-- [About Us](https://csrushil.com/about-us): Firm background, founder credentials, areas served
-- [Blog](https://csrushil.com/blog): GST, incorporation, and Chennai compliance guides
+- [Audit & Assurance](https://csrushil.com/audit-and-assurance): Statutory, internal, tax, transfer pricing, forensic, and stock audits
+- [Statutory Audit Chennai](https://csrushil.com/statutory-audit-chennai): Companies Act audit under Section 139
+- [Tax Audit Chennai](https://csrushil.com/tax-audit-chennai): Section 44AB tax audit, Form 3CA/3CB/3CD
+- [Transfer Pricing Audit](https://csrushil.com/transfer-pricing-audit): Form 3CEB, arm's-length pricing documentation
+- [Direct Tax](https://csrushil.com/direct-tax): Income tax planning, return filing, assessment representation
+- [Income Tax Return Filing Chennai](https://csrushil.com/income-tax-return-filing-chennai): ITR filing for individuals, professionals, NRIs, and businesses
+- [MSME / Udyam Registration Chennai](https://csrushil.com/msme-udyam-registration-chennai): Udyam registration process and MSMED Act benefits
+- [ROC Compliances](https://csrushil.com/roc-compliances): Annual filings, statutory registers, DIR-3 KYC
+- [Virtual CFO Services](https://csrushil.com/virtual-cfo-services): MIS reporting, budgeting, fundraising support
+- [Management Consultancy](https://csrushil.com/management-consultancy): Business process, risk, and growth advisory
+- [RERA Compliance](https://csrushil.com/rera): Project registration, QPR filings for Tamil Nadu developers
+- [Trust & NGO Registration](https://csrushil.com/trust): Trust deed, Society, Section 8 Company, 12A/80G registration
+- [CA Fees & Pricing](https://csrushil.com/ca-fees-chennai): Indicative pricing for incorporation, GST, and audit services
+
+## Areas served (Chennai)
+Anna Nagar, Kilpauk, T Nagar, Ambattur, OMR/Sholinganallur, Velachery, Adyar,
+Nungambakkam, Guindy, Porur, Tambaram, Mylapore — see [locality pages](https://csrushil.com/chartered-accountant-anna-nagar-chennai)
+
+## Other sections
+- [About Us](https://csrushil.com/about-us): Firm background, founder credentials, team
+- [FAQ](https://csrushil.com/faq): Common questions across all services
+- [Blog](https://csrushil.com/blog): GST, incorporation, audit, and Chennai compliance guides
 
 ## Contact
 - Phone: +91 72001 49711
 - Email: admin@csrushil.com
-- Address: Anna Nagar, Chennai 600040
+- Address: Old Door No. AP-890, New No. 18, J-Block, 1st Street, 13th Main Road, Anna Nagar, Chennai - 600040
