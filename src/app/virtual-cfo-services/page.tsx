@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
-import { SITE_URL } from "@/lib/site";
+import { SITE_URL, SOCIALS } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/virtual-cfo-services`;
 
@@ -213,6 +213,53 @@ export default function VirtualCfoPage() {
                 <Link href="/blog/virtual-cfo-vs-full-time-cfo-cost-comparison" className="text-royal-violet underline">
                   Virtual CFO vs. Hiring a Full-Time CFO: A Cost Comparison for Chennai SMEs
                 </Link>
+                .
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">Case study: ArivuLabs</h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                In September 2026, ArivuLabs — a Chennai-based startup building
+                accent-native voice AI and preparing for a pre-seed raise —
+                publicly announced C S Rushil &amp; Co. as their Virtual CFO,
+                covering financial planning, runway management, and compliance
+                as they scale.{" "}
+                <a
+                  href="https://lnkd.in/p/gz7AC2bK"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-royal-violet underline underline-offset-2"
+                >
+                  Read ArivuLabs&apos; announcement on LinkedIn
+                </a>
+                .
+              </p>
+              <p className="mt-4 text-sm text-slate">
+                Engagement led by{" "}
+                <a href="https://www.linkedin.com/in/rushil-cs" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline">
+                  CA Rushil C S
+                </a>
+                , with{" "}
+                <a href="https://www.linkedin.com/in/ajay-m-578a21232" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline">
+                  Ajay M
+                </a>
+                ,{" "}
+                <a href="https://www.linkedin.com/in/omairxkhan" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline">
+                  Omair Khan
+                </a>
+                ,{" "}
+                <a href="https://www.linkedin.com/in/monica-suresh-62a55b2b5" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline">
+                  Monica Suresh
+                </a>
+                , and{" "}
+                <a href="https://www.linkedin.com/in/darsan-kanna-v-684208253" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline">
+                  Darshan Kanna
+                </a>{" "}
+                from our team. Follow{" "}
+                <a href={SOCIALS.linkedin} target="_blank" rel="noopener noreferrer" className="text-royal-violet underline">
+                  C S Rushil &amp; Co. on LinkedIn
+                </a>
                 .
               </p>
             </div>

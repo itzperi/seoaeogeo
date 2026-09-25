@@ -62,6 +62,8 @@ const modules = {
     import("@/content/blog/documents-checklist-before-auditor-visit"),
   "fcra-registration": () =>
     import("@/content/blog/fcra-registration"),
+  "form-3ceb-due-date-applicability": () =>
+    import("@/content/blog/form-3ceb-due-date-applicability"),
   "gst-freelancers-consultants": () =>
     import("@/content/blog/gst-freelancers-consultants"),
   "gst-registration-online-sellers-chennai": () =>
@@ -72,6 +74,8 @@ const modules = {
     import("@/content/blog/itc-mismatch-notices"),
   "llp-vs-opc-vs-pvt-ltd": () =>
     import("@/content/blog/llp-vs-opc-vs-pvt-ltd"),
+  "llp-annual-filing-form8-form11": () =>
+    import("@/content/blog/llp-annual-filing-form8-form11"),
   "lut-for-exporters": () =>
     import("@/content/blog/lut-for-exporters"),
   "msme-loan-schemes-tamil-nadu": () =>
@@ -209,7 +213,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "add-remove-director",
     title: "How to Add or Remove a Director from Your Company",
     description:
-      "Founders in Chennai often need to add a co founder as a director, bring on an investor's nominee, or remove a director who is exiting the business, and...",
+      "Founders in Chennai often need to add a co founder, an investor's nominee, or remove a director who is exiting — each has a specific procedure to follow.",
     date: "2026-09-19",
     excerpt:
       "Founders in Chennai often need to add a co founder as a director, bring on an investor's nominee, or remove a director who is exiting the...",
@@ -218,7 +222,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "advance-tax-deadlines",
     title: "Advance Tax Deadlines for FY 2026 to 27: A Practical Guide",
     description:
-      "Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires estimating income and...",
+      "Advance tax catches consultants, freelancers, and small business owners in Chennai off guard — it means paying tax in installments through the year.",
     date: "2026-09-19",
     excerpt:
       "Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires...",
@@ -227,7 +231,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "after-gst-show-cause-reply",
     title: "What Happens After You Reply to a GST Show Cause Notice",
     description:
-      "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural next question...",
+      "Filed your reply to a GST show-cause notice already? Here's what happens next, and realistically how long you should expect the process to take.",
     date: "2026-09-19",
     excerpt:
       "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",
@@ -236,7 +240,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "annual-roc-filing-calendar",
     title: "Annual ROC Filing Deadlines: A Calendar for Chennai Companies",
     description:
-      "Registrar of Companies filings follow a predictable annual cycle, but the specific forms and their deadlines are scattered enough across the year that...",
+      "ROC filings follow a predictable annual cycle, but the forms and deadlines are scattered enough that even organized Chennai companies miss one.",
     date: "2026-09-19",
     excerpt:
       "Registrar of Companies filings follow a predictable annual cycle, but the specific forms and their deadlines are scattered enough across...",
@@ -254,7 +258,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "capital-gains-tax-property-sale",
     title: "Capital Gains Tax on Property Sale: What Chennai Sellers Need to Know",
     description:
-      "Selling a flat or plot in Chennai triggers a capital gains tax calculation that surprises a lot of first time sellers, mainly because the tax depends...",
+      "Selling a flat or plot in Chennai triggers a capital gains tax calculation that surprises first-time sellers — it depends heavily on holding period.",
     date: "2026-09-19",
     excerpt:
       "Selling a flat or plot in Chennai triggers a capital gains tax calculation that surprises a lot of first time sellers, mainly because the...",
@@ -263,7 +267,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "cash-flow-forecasting-framework",
     title: "A Simple Cash Flow Forecasting Framework for Small Businesses",
     description:
-      "Cash flow forecasting sounds like something only large companies need, but small and mid sized businesses in Chennai often run into far more serious cash...",
+      "Cash flow forecasting sounds like something only large companies need, but small Chennai businesses often run into cash problems for exactly that reason.",
     date: "2026-09-19",
     excerpt:
       "Cash flow forecasting sounds like something only large companies need, but small and mid sized businesses in Chennai often run into far...",
@@ -272,7 +276,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "choosing-ca-firm-anna-nagar",
     title: "Choosing a CA Firm in Anna Nagar: What to Actually Look For",
     description:
-      "Anna Nagar has no shortage of chartered accountants and CA firms, which makes choosing one feel harder rather than easier for a business owner who just...",
+      "Anna Nagar has no shortage of CA firms, which makes choosing one feel harder for a business owner who just wants someone reliable and responsive.",
     date: "2026-09-19",
     excerpt:
       "Anna Nagar has no shortage of chartered accountants and CA firms, which makes choosing one feel harder rather than easier for a business...",
@@ -281,7 +285,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "common-compliance-mistakes-chennai-startups",
     title: "Common Compliance Mistakes Chennai Startups Make in Their First Year",
     description:
-      "Founders launching a business in Chennai are usually focused on customers and product, which is exactly right, but it also means compliance mistakes tend...",
+      "Chennai founders focused on customers and product often let compliance mistakes pile up quietly until they surface as penalties or blocked fundraising.",
     date: "2026-09-19",
     excerpt:
       "Founders launching a business in Chennai are usually focused on customers and product, which is exactly right, but it also means compliance...",
@@ -290,7 +294,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "documents-checklist-before-auditor-visit",
     title: "Documents Checklist Before Your Auditor's Visit",
     description:
-      "A surprising amount of audit delay in Chennai businesses has nothing to do with the complexity of the books and everything to do with documents not being...",
+      "Most audit delay in Chennai businesses has nothing to do with book complexity and everything to do with documents not being ready when the auditor arrives.",
     date: "2026-09-19",
     excerpt:
       "A surprising amount of audit delay in Chennai businesses has nothing to do with the complexity of the books and everything to do with...",
@@ -299,10 +303,19 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "fcra-registration",
     title: "FCRA Registration: What Chennai NGOs Need to Know Before Accepting Foreign Funds",
     description:
-      "Any trust, society, or Section 8 company in Chennai that wants to receive donations or grants from a foreign source needs FCRA registration first, and the...",
+      "Any Chennai trust, society, or Section 8 company accepting foreign donations needs FCRA registration first — and the rules have tightened considerably.",
     date: "2026-09-19",
     excerpt:
       "Any trust, society, or Section 8 company in Chennai that wants to receive donations or grants from a foreign source needs FCRA registration...",
+  },
+  {
+    slug: "form-3ceb-due-date-applicability",
+    title: "Form 3CEB Due Date and Applicability: A Practical Guide",
+    description:
+      "Form 3CEB applies to any international transaction with an associated enterprise, regardless of value — here's who needs it and when it's due.",
+    date: "2026-09-25",
+    excerpt:
+      "Form 3CEB applies to any international transaction with an associated enterprise, regardless of value. Here's who needs it and when it's due.",
   },
   {
     slug: "gst-freelancers-consultants",
@@ -317,7 +330,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "gst-registration-online-sellers-chennai",
     title: "GST Registration for Online Sellers in Chennai: What Is Different",
     description:
-      "Selling on Amazon, Flipkart, Meesho, or your own website is not the same as running a regular shop when it comes to GST, and a lot of first time sellers...",
+      "Selling on Amazon, Flipkart, Meesho, or your own website isn't the same as running a regular shop under GST — many first-time sellers learn this the hard way.",
     date: "2026-09-19",
     excerpt:
       "Selling on Amazon, Flipkart, Meesho, or your own website is not the same as running a regular shop when it comes to GST, and a lot of first...",
@@ -326,7 +339,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "gstr9-annual-return-checklist",
     title: "GSTR 9 Annual Return: A Filing Checklist for Small Businesses",
     description:
-      "GSTR 9 is the annual return every regular GST registered business needs to file, summarizing an entire financial year of GSTR 1 and GSTR 3B filings into...",
+      "GSTR 9 is the annual return every regular GST registered business must file, summarizing a full year of GSTR-1 and GSTR-3B filings. A practical checklist.",
     date: "2026-09-19",
     excerpt:
       "GSTR 9 is the annual return every regular GST registered business needs to file, summarizing an entire financial year of GSTR 1 and GSTR 3B...",
@@ -335,7 +348,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "itc-mismatch-notices",
     title: "Input Tax Credit Mismatch Notices: Why They Happen and How to Respond",
     description:
-      "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to one simple...",
+      "An ITC mismatch notice is one of the most common GST notices Chennai businesses receive — usually because GSTR-3B and a supplier's GSTR-1 don't match.",
     date: "2026-09-19",
     excerpt:
       "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to...",
@@ -350,10 +363,19 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "Every founder starting a business in Chennai eventually faces the same decision: which legal structure to register under.",
   },
   {
+    slug: "llp-annual-filing-form8-form11",
+    title: "LLP Annual Filing: Form 8 and Form 11 Due Dates Explained",
+    description:
+      "Every LLP in Chennai must file Form 11 and Form 8 annually, regardless of turnover or activity — here's what each form covers and when they're due.",
+    date: "2026-09-25",
+    excerpt:
+      "Every LLP must file Form 11 and Form 8 annually regardless of turnover or activity — here's exactly what each form covers and when they're due.",
+  },
+  {
     slug: "lut-for-exporters",
     title: "LUT for Exporters: How to File and Why It Matters",
     description:
-      "If your Chennai business sells services or goods to clients outside India, a Letter of Undertaking (LUT) is one of the most valuable and most overlooked...",
+      "If your Chennai business exports services or goods, a Letter of Undertaking (LUT) is one of the most valuable and most overlooked GST filings you can make.",
     date: "2026-09-19",
     excerpt:
       "If your Chennai business sells services or goods to clients outside India, a Letter of Undertaking (LUT) is one of the most valuable and...",
@@ -362,7 +384,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "msme-loan-schemes-tamil-nadu",
     title: "MSME Loan Schemes Available to Small Businesses in Tamil Nadu",
     description:
-      "Small business owners in Chennai often assume bank loans are their only financing option, without realizing that registering as an MSME under Udyam opens...",
+      "Chennai small business owners often assume bank loans are their only option, without realizing Udyam/MSME registration unlocks better-terms loan schemes.",
     date: "2026-09-19",
     excerpt:
       "Small business owners in Chennai often assume bank loans are their only financing option, without realizing that registering as an MSME...",
@@ -371,7 +393,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "nri-itr-filing",
     title: "NRI Income Tax Return Filing: A Guide for Chennai Origin NRIs",
     description:
-      "Non resident Indians with family, property, or investments back in Chennai often have a genuine Indian tax filing obligation that gets overlooked simply...",
+      "NRIs with family, property, or investments in Chennai often have a genuine Indian tax filing obligation that gets overlooked simply by living abroad.",
     date: "2026-09-19",
     excerpt:
       "Non resident Indians with family, property, or investments back in Chennai often have a genuine Indian tax filing obligation that gets...",
@@ -380,7 +402,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "old-vs-new-tax-regime",
     title: "Old vs New Tax Regime for FY 2026 to 27: Which One Actually Saves You Money",
     description:
-      "Every year around this time, salaried professionals and small business owners in Chennai ask the same question: should I stick with the old tax regime or...",
+      "Salaried professionals and small business owners in Chennai ask this every year: old tax regime or new? The honest answer depends on your actual deductions.",
     date: "2026-09-19",
     excerpt:
       "Every year around this time, salaried professionals and small business owners in Chennai ask the same question: should I stick with the old...",
@@ -389,7 +411,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "outgrown-bookkeeping-signs",
     title: "Signs Your Chennai Business Has Outgrown Basic Bookkeeping",
     description:
-      "Bookkeeping keeps your transaction records accurate, but there is a point where a growing business needs more than accurate records, it needs someone...",
+      "Bookkeeping keeps your records accurate, but a growing business eventually needs someone actively interpreting the numbers, not just recording them.",
     date: "2026-09-19",
     excerpt:
       "Bookkeeping keeps your transaction records accurate, but there is a point where a growing business needs more than accurate records, it...",
@@ -398,7 +420,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "post-incorporation-compliance-checklist",
     title: "Post Incorporation Compliance Checklist for New Chennai Companies",
     description:
-      "Getting the incorporation certificate feels like the finish line, but for a newly registered company it is actually the starting point for a set of...",
+      "Getting the incorporation certificate feels like the finish line, but it's actually the start of compliance steps with specific windows and real penalties.",
     date: "2026-09-19",
     excerpt:
       "Getting the incorporation certificate feels like the finish line, but for a newly registered company it is actually the starting point for...",
@@ -407,7 +429,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "rera-registration-renewal",
     title: "RERA Registration Renewal Deadlines: What Chennai Developers Need to Track",
     description:
-      "Real estate developers and agents in Chennai working on projects that fall under the Real Estate Regulatory Authority need to track not just their initial...",
+      "Chennai real estate developers and agents need to track not just initial RERA registration but renewal deadlines and ongoing disclosure obligations.",
     date: "2026-09-19",
     excerpt:
       "Real estate developers and agents in Chennai working on projects that fall under the Real Estate Regulatory Authority need to track not...",
@@ -416,7 +438,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "startup-india-registration",
     title: "Startup India Registration: Is It Worth It for Your Chennai Business",
     description:
-      "Startup India recognition gets mentioned often by founders in Chennai, but there's genuine confusion about what it actually provides versus what people...",
+      "Startup India recognition gets mentioned often by Chennai founders, but there's genuine confusion about what it actually provides versus what people assume.",
     date: "2026-09-19",
     excerpt:
       "Startup India recognition gets mentioned often by founders in Chennai, but there's genuine confusion about what it actually provides versus...",
@@ -425,7 +447,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "statutory-vs-tax-vs-internal-audit",
     title: "Statutory Audit vs Tax Audit vs Internal Audit: What Is the Difference",
     description:
-      "Business owners in Chennai often use the word audit as if it means one single thing, but statutory audit, tax audit, and internal audit are three separate...",
+      "Chennai business owners often treat \"audit\" as one thing, but statutory, tax, and internal audit are three separate exercises with different triggers.",
     date: "2026-09-19",
     excerpt:
       "Business owners in Chennai often use the word audit as if it means one single thing, but statutory audit, tax audit, and internal audit are...",
@@ -434,7 +456,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "strike-off-vs-winding-up",
     title: "Company Strike Off vs Winding Up: What Is the Difference",
     description:
-      "When a Chennai business owner decides to shut down a company that never took off or has stopped operating, one of the first questions is whether to apply...",
+      "Shutting down a company that never took off? The first question is strike-off vs. formal winding up — genuinely different processes and costs.",
     date: "2026-09-19",
     excerpt:
       "When a Chennai business owner decides to shut down a company that never took off or has stopped operating, one of the first questions is...",
@@ -443,7 +465,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "tds-on-rent",
     title: "TDS on Rent: What Chennai Landlords and Tenants Both Need to Know",
     description:
-      "Tax deducted at source on rent payments trips up both sides of the transaction in Chennai, tenants who don't realize they need to deduct it and landlords...",
+      "TDS on rent trips up both sides in Chennai — tenants who don't realize they must deduct it, and landlords who forget to check it against their return.",
     date: "2026-09-19",
     excerpt:
       "Tax deducted at source on rent payments trips up both sides of the transaction in Chennai, tenants who don't realize they need to deduct it...",
@@ -452,7 +474,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "trust-vs-society-vs-section8",
     title: "Trust vs Society vs Section 8 Company: Choosing the Right NGO Structure",
     description:
-      "Anyone starting a charitable or nonprofit initiative in Chennai has to choose between three common structures, a trust, a society, or a Section 8 company,...",
+      "Starting a nonprofit in Chennai means choosing between a trust, a society, or a Section 8 company — the right choice depends on governance and funding plans.",
     date: "2026-09-19",
     excerpt:
       "Anyone starting a charitable or nonprofit initiative in Chennai has to choose between three common structures, a trust, a society, or a...",
@@ -461,7 +483,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "what-virtual-cfo-reviews-monthly",
     title: "What a Virtual CFO Actually Reviews Every Month",
     description:
-      "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense that it's more...",
+      "Business owners considering Virtual CFO support often aren't sure what it actually involves month to month. Here's what a genuine monthly review covers.",
     date: "2026-09-19",
     excerpt:
       "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense...",
