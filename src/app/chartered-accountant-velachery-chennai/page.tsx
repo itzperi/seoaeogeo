@@ -41,6 +41,9 @@ export default function Page() {
         { question: "Can you help if my Form 26AS or AIS doesn't match what I expected?", answer: "Yes, reconciling Form 26AS/AIS mismatches and, where needed, filing rectification requests is a routine part of our income tax service." },
         { question: "Do you also serve small businesses in Velachery, or only individuals?", answer: "Both — alongside individual tax filing, we handle GST registration, return filing, and audit support for shops, clinics, and small service businesses based in Velachery." },
       ]}
+      furtherReading={[
+        { slug: "form26as-mismatch-velachery", title: "Why Velachery's Salaried Professionals Keep Seeing Form 26AS and AIS Mismatches" },
+      ]}
     />
   );
 }

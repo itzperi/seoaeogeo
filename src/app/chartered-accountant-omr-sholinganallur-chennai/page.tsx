@@ -42,6 +42,10 @@ export default function Page() {
         { question: "Can everything be handled remotely, or do we need to meet in person?", answer: "Most OMR engagements are handled fully remotely — document sharing, video consultations, and digital filing — given the distance from our Anna Nagar office. In-person meetings can be scheduled when genuinely needed." },
         { question: "Do you help with LUT filing for export of IT services?", answer: "Yes — Letter of Undertaking filing so you can invoice international clients without upfront IGST payment is a routine part of our GST services for OMR-based IT and software companies." },
       ]}
+      furtherReading={[
+        { slug: "virtual-cfo-omr-startups", title: "Virtual CFO Support for OMR's Growth-Stage Startups" },
+        { slug: "transfer-pricing-omr-subsidiaries", title: "The Transfer Pricing Blind Spot for OMR's Indian Subsidiaries" },
+      ]}
     />
   );
 }

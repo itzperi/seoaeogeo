@@ -44,6 +44,11 @@ export default function Page() {
         { question: "Do you have an office in Nungambakkam?", answer: "No — we operate solely from Anna Nagar and serve Nungambakkam clients from that one office, in person given the short distance, or virtually." },
         { question: "Do you support established companies with ongoing CFO-level advisory, not just startups?", answer: "Yes — virtual CFO services for mid-sized, established businesses is a core part of our practice, not limited to early-stage startups." },
       ]}
+      furtherReading={[
+        { slug: "virtual-cfo-vs-accountant-nungambakkam", title: "When Does a Nungambakkam Business Need a Virtual CFO, Not Just an Accountant?" },
+        { slug: "statutory-audit-nungambakkam-established", title: "Statutory Audit for a Nungambakkam Company That's Past Its First Few Years" },
+        { slug: "llp-registration-nungambakkam-professional-firms", title: "Why Professional Services Firms Choose an LLP for a Nungambakkam Address" },
+      ]}
     />
   );
 }

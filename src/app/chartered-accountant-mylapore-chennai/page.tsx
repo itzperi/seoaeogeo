@@ -41,6 +41,10 @@ export default function Page() {
         { question: "Do you have an office in Mylapore?", answer: "No — we operate solely from Anna Nagar and serve Mylapore clients from that one office, mainly through virtual consultations given the distance." },
         { question: "Can a long-established family trading business in Mylapore get help transitioning to a formal company structure?", answer: "Yes — we assist with converting proprietorships and partnership firms into Private Limited Companies or LLPs, including asset transfer and re-registration of licenses, for businesses ready to formalise their structure." },
       ]}
+      furtherReading={[
+        { slug: "fcra-mylapore-cultural-institutions", title: "Mylapore's Cultural and Religious Institutions Face a Tighter FCRA Landscape Than They Realize" },
+        { slug: "direct-tax-mylapore-trading-families", title: "When a Mylapore Trading Family Business Passes to the Next Generation, the Tax Planning Changes Too" },
+      ]}
     />
   );
 }

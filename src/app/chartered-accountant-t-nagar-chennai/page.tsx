@@ -41,6 +41,10 @@ export default function Page() {
         { question: "Can you manage GST returns for a business with very high daily transaction volumes?", answer: "Yes, this is a routine part of serving T Nagar clients — we structure the return-filing process around your actual transaction volume and point-of-sale data rather than a generic monthly template." },
         { question: "Is a tax audit mandatory for my T Nagar retail business?", answer: "It depends on your turnover and the proportion of cash transactions — see our tax audit page for the current thresholds, or book a free consultation and we'll assess your specific position." },
       ]}
+      furtherReading={[
+        { slug: "gst-litigation-t-nagar-jewellery", title: "Why T Nagar's Jewellery and Textile Traders See More ITC Mismatch Notices Than Most" },
+        { slug: "tax-audit-t-nagar-traders", title: "T Nagar's Cash-Heavy Traders Hit the Lower Tax Audit Threshold" },
+      ]}
     />
   );
 }

@@ -41,6 +41,10 @@ export default function Page() {
         { question: "Do you handle income tax filing for property sales in Kilpauk?", answer: "Yes — capital gains reporting and exemption planning under Sections 54/54F/54EC for property transactions is a routine part of our individual tax filing service, relevant given Kilpauk's established property market." },
         { question: "Can you register a small clinic or shop in Kilpauk for GST?", answer: "Yes, GST registration and ongoing return filing for local retail, clinics, and small service businesses is something we handle regularly for clients in and around Kilpauk." },
       ]}
+      furtherReading={[
+        { slug: "tax-audit-kilpauk-doctors", title: "When a Kilpauk Doctor's Practice Crosses the Tax Audit Line" },
+        { slug: "capital-gains-kilpauk-property", title: "Selling Property in Kilpauk? The Holding Period Decides More Than You'd Think" },
+      ]}
     />
   );
 }

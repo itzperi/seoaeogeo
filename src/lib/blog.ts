@@ -122,6 +122,44 @@ const modules = {
     import("@/content/blog/virtual-cfo-guindy-corporate-offices"),
   "what-virtual-cfo-reviews-monthly": () =>
     import("@/content/blog/what-virtual-cfo-reviews-monthly"),
+  "tax-audit-kilpauk-doctors": () =>
+    import("@/content/blog/tax-audit-kilpauk-doctors"),
+  "capital-gains-kilpauk-property": () =>
+    import("@/content/blog/capital-gains-kilpauk-property"),
+  "gst-litigation-t-nagar-jewellery": () =>
+    import("@/content/blog/gst-litigation-t-nagar-jewellery"),
+  "tax-audit-t-nagar-traders": () =>
+    import("@/content/blog/tax-audit-t-nagar-traders"),
+  "statutory-audit-ambattur-manufacturers": () =>
+    import("@/content/blog/statutory-audit-ambattur-manufacturers"),
+  "roc-compliance-ambattur-manufacturers": () =>
+    import("@/content/blog/roc-compliance-ambattur-manufacturers"),
+  "transfer-pricing-omr-subsidiaries": () =>
+    import("@/content/blog/transfer-pricing-omr-subsidiaries"),
+  "form26as-mismatch-velachery": () =>
+    import("@/content/blog/form26as-mismatch-velachery"),
+  "12a-80g-adyar-institutions": () =>
+    import("@/content/blog/12a-80g-adyar-institutions"),
+  "statutory-audit-nungambakkam-established": () =>
+    import("@/content/blog/statutory-audit-nungambakkam-established"),
+  "llp-registration-nungambakkam-professional-firms": () =>
+    import("@/content/blog/llp-registration-nungambakkam-professional-firms"),
+  "gst-litigation-guindy-industrial": () =>
+    import("@/content/blog/gst-litigation-guindy-industrial"),
+  "roc-registered-office-change-guindy": () =>
+    import("@/content/blog/roc-registered-office-change-guindy"),
+  "llp-registration-porur-consultancies": () =>
+    import("@/content/blog/llp-registration-porur-consultancies"),
+  "gst-registration-porur-retail": () =>
+    import("@/content/blog/gst-registration-porur-retail"),
+  "msme-loan-tambaram-traders": () =>
+    import("@/content/blog/msme-loan-tambaram-traders"),
+  "first-gst-return-tambaram-shops": () =>
+    import("@/content/blog/first-gst-return-tambaram-shops"),
+  "fcra-mylapore-cultural-institutions": () =>
+    import("@/content/blog/fcra-mylapore-cultural-institutions"),
+  "direct-tax-mylapore-trading-families": () =>
+    import("@/content/blog/direct-tax-mylapore-trading-families"),
 } as const;
 
 export type BlogSlug = keyof typeof modules;
@@ -597,6 +635,177 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense...",
+  },
+  {
+    slug: "tax-audit-kilpauk-doctors",
+    title: "When a Kilpauk Doctor's Practice Crosses the Tax Audit Line",
+    description:
+      "Kilpauk's independent doctors and consultants often don't realize presumptive taxation has a ceiling, and that crossing it changes the filing entirely.",
+    date: "2026-09-26",
+    excerpt:
+      "Kilpauk's independent doctors and consultants often don't realize presumptive taxation has a ceiling, and crossing it changes the filing entirely.",
+  },
+  {
+    slug: "capital-gains-kilpauk-property",
+    title: "Selling Property in Kilpauk? The Holding Period Decides More Than You'd Think",
+    description:
+      "Kilpauk's older, high-value residential properties often trigger a bigger capital gains surprise than sellers expect, tied entirely to how long it was held.",
+    date: "2026-09-26",
+    excerpt:
+      "Kilpauk's older, high-value residential properties often trigger a bigger capital gains surprise, tied entirely to how long it was held.",
+  },
+  {
+    slug: "gst-litigation-t-nagar-jewellery",
+    title: "Why T Nagar's Jewellery and Textile Traders See More ITC Mismatch Notices Than Most",
+    description:
+      "High transaction volume and a chain of smaller suppliers make T Nagar's retail sector especially exposed to ITC mismatch notices. Here's the real pattern.",
+    date: "2026-09-26",
+    excerpt:
+      "High transaction volume and a chain of smaller suppliers make T Nagar's retail sector especially exposed to ITC mismatch notices.",
+  },
+  {
+    slug: "tax-audit-t-nagar-traders",
+    title: "T Nagar's Cash-Heavy Traders Hit the Lower Tax Audit Threshold — Here's Why That Matters",
+    description:
+      "The ₹10 crore tax audit threshold doesn't apply to T Nagar's more cash-heavy retail businesses. Most are still working off the ₹1 crore rule without realizing it.",
+    date: "2026-09-26",
+    excerpt:
+      "The ₹10 crore tax audit threshold doesn't apply to more cash-heavy retail businesses. Most T Nagar traders are still on the ₹1 crore rule.",
+  },
+  {
+    slug: "statutory-audit-ambattur-manufacturers",
+    title: "Why Statutory Audits Take Longer for Ambattur's Manufacturing Companies",
+    description:
+      "It's not the paperwork that slows down a manufacturing company's audit in Ambattur — it's inventory and fixed-asset verification specifically.",
+    date: "2026-09-26",
+    excerpt:
+      "It's not the paperwork that slows down a manufacturing company's audit in Ambattur — it's inventory and fixed-asset verification specifically.",
+  },
+  {
+    slug: "roc-compliance-ambattur-manufacturers",
+    title: "The ROC Compliance Gap in Ambattur's Long-Running Manufacturing Companies",
+    description:
+      "A manufacturing company that's been operating for a decade in Ambattur often has more ROC compliance gaps than a newer one — for a specific reason.",
+    date: "2026-09-26",
+    excerpt:
+      "A manufacturing company operating for a decade in Ambattur often has more ROC compliance gaps than a newer one, for a specific reason.",
+  },
+  {
+    slug: "transfer-pricing-omr-subsidiaries",
+    title: "The Transfer Pricing Blind Spot for OMR's Indian Subsidiaries",
+    description:
+      "IT subsidiaries along OMR paying management fees or royalties to a foreign parent often don't realize Form 3CEB applies from the very first transaction.",
+    date: "2026-09-26",
+    excerpt:
+      "IT subsidiaries paying management fees or royalties to a foreign parent often don't realize Form 3CEB applies from the very first transaction.",
+  },
+  {
+    slug: "form26as-mismatch-velachery",
+    title: "Why Velachery's Salaried Professionals Keep Seeing Form 26AS and AIS Mismatches",
+    description:
+      "Velachery's dense concentration of IT and finance professionals means a specific filing problem shows up more here than in most residential areas.",
+    date: "2026-09-26",
+    excerpt:
+      "Velachery's dense concentration of IT and finance professionals means a specific filing problem shows up more here than elsewhere.",
+  },
+  {
+    slug: "12a-80g-adyar-institutions",
+    title: "Adyar's Educational and Charitable Institutions Are Still Running on Old 12A/80G Norms",
+    description:
+      "A number of Adyar's long-established institutions registered under 12A and 80G years ago, under rules that have since tightened considerably.",
+    date: "2026-09-26",
+    excerpt:
+      "A number of Adyar's long-established institutions registered under 12A and 80G years ago, under rules that have since tightened considerably.",
+  },
+  {
+    slug: "statutory-audit-nungambakkam-established",
+    title: "Statutory Audit for a Nungambakkam Company That's Past Its First Few Years",
+    description:
+      "The audit questions change once a Nungambakkam company is established rather than newly incorporated — here's what shifts by year five or six.",
+    date: "2026-09-26",
+    excerpt:
+      "The audit questions change once a company is established rather than newly incorporated — here's what shifts by year five or six.",
+  },
+  {
+    slug: "llp-registration-nungambakkam-professional-firms",
+    title: "Why Professional Services Firms Choose an LLP for a Nungambakkam Address",
+    description:
+      "Two consultants forming a firm in Nungambakkam usually reach for Private Limited by default. An LLP is often the better fit — here's the actual reasoning.",
+    date: "2026-09-26",
+    excerpt:
+      "Two consultants forming a firm in Nungambakkam usually reach for Private Limited by default. An LLP is often the better fit.",
+  },
+  {
+    slug: "gst-litigation-guindy-industrial",
+    title: "GST Notices at Guindy's Industrial Estate Usually Trace Back to One Thing",
+    description:
+      "Guindy's manufacturing and engineering companies see a specific ITC mismatch pattern tied to how larger buyers structure their own GST filings.",
+    date: "2026-09-26",
+    excerpt:
+      "Guindy's manufacturing and engineering companies see a specific ITC mismatch pattern tied to how larger buyers structure their filings.",
+  },
+  {
+    slug: "roc-registered-office-change-guindy",
+    title: "Moving Your Registered Office to Guindy? The ROC Filing Has a Hidden Second Step",
+    description:
+      "Companies relocating to Guindy for its connectivity often file the address change and assume it's done — missing a second, easy-to-forget requirement.",
+    date: "2026-09-26",
+    excerpt:
+      "Companies relocating to Guindy for its connectivity often file the address change and assume it's done — missing a second requirement.",
+  },
+  {
+    slug: "llp-registration-porur-consultancies",
+    title: "Porur's New Consultancies Are Registering Locally Instead of Going Through a City-Centre Firm",
+    description:
+      "As Porur's own commercial footprint grows, more founders are registering their consultancies right there rather than commuting to a central Chennai intermediary.",
+    date: "2026-09-26",
+    excerpt:
+      "As Porur's own commercial footprint grows, more founders register their consultancies locally instead of commuting to a central Chennai intermediary.",
+  },
+  {
+    slug: "gst-registration-porur-retail",
+    title: "Porur's Growing Retail Footprint Is Creating a Wave of First-Time GST Registrations",
+    description:
+      "As Porur's local commercial stretches expand, a lot of business owners are registering for GST for the very first time — and getting the basics wrong.",
+    date: "2026-09-26",
+    excerpt:
+      "As Porur's commercial stretches expand, business owners are registering for GST for the first time — and getting a few basics wrong.",
+  },
+  {
+    slug: "msme-loan-tambaram-traders",
+    title: "Tambaram's Small Traders Are Leaving MSME Loan Benefits Unused",
+    description:
+      "A lot of small trading and service businesses in Tambaram register on Udyam and never actually apply for the collateral-free loan schemes it unlocks.",
+    date: "2026-09-26",
+    excerpt:
+      "A lot of small trading and service businesses in Tambaram register on Udyam and never actually apply for the loan schemes it unlocks.",
+  },
+  {
+    slug: "first-gst-return-tambaram-shops",
+    title: "Your First GST Return After Crossing the Threshold in Tambaram: What Actually Trips People Up",
+    description:
+      "Small Tambaram shop owners who just crossed the GST registration threshold usually struggle with one specific part of their first return, not the filing itself.",
+    date: "2026-09-26",
+    excerpt:
+      "Small shop owners who just crossed the GST threshold usually struggle with one specific part of their first return, not the filing itself.",
+  },
+  {
+    slug: "fcra-mylapore-cultural-institutions",
+    title: "Mylapore's Cultural and Religious Institutions Face a Tighter FCRA Landscape Than They Realize",
+    description:
+      "A number of Mylapore's long-established cultural and religious institutions receive support from abroad without current FCRA registration in place.",
+    date: "2026-09-26",
+    excerpt:
+      "A number of Mylapore's long-established cultural and religious institutions receive support from abroad without current FCRA registration in place.",
+  },
+  {
+    slug: "direct-tax-mylapore-trading-families",
+    title: "When a Mylapore Trading Family Business Passes to the Next Generation, the Tax Planning Changes Too",
+    description:
+      "Mylapore has a genuine base of long-established trading families. Handing the business to the next generation raises direct tax questions rarely planned for in advance.",
+    date: "2026-09-26",
+    excerpt:
+      "Mylapore has a genuine base of long-established trading families. Handing the business over raises direct tax questions rarely planned for in advance.",
   },
 ];
 

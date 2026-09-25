@@ -42,6 +42,10 @@ export default function Page() {
         { question: "Can you help with GST on job-work and inter-unit goods movement?", answer: "Yes, GST treatment of job-work transactions and e-way bill compliance for goods movement is something we regularly advise on for Ambattur-based manufacturing clients." },
         { question: "Do you help SIDCO estate units with MSME/Udyam registration?", answer: "Yes — Udyam registration and the resulting delayed-payment protection under the MSMED Act is particularly relevant for manufacturing units supplying larger buyers on extended credit terms, which is common in Ambattur's supplier base." },
       ]}
+      furtherReading={[
+        { slug: "statutory-audit-ambattur-manufacturers", title: "Why Statutory Audits Take Longer for Ambattur's Manufacturing Companies" },
+        { slug: "roc-compliance-ambattur-manufacturers", title: "The ROC Compliance Gap in Ambattur's Long-Running Manufacturing Companies" },
+      ]}
     />
   );
 }

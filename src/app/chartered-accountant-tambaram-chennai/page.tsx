@@ -41,6 +41,10 @@ export default function Page() {
         { question: "Do you have an office in Tambaram?", answer: "No — we operate solely from Anna Nagar and serve Tambaram clients from that one office, remotely by default." },
         { question: "Is Udyam registration worth it for a small Tambaram shop or service business?", answer: "Often yes — it's free, largely self-declaration based, and unlocks collateral-free lending and delayed-payment protection, which is genuinely useful for smaller local businesses. We can assess your specific eligibility during a free consultation." },
       ]}
+      furtherReading={[
+        { slug: "msme-loan-tambaram-traders", title: "Tambaram's Small Traders Are Leaving MSME Loan Benefits Unused" },
+        { slug: "first-gst-return-tambaram-shops", title: "Your First GST Return After Crossing the Threshold in Tambaram" },
+      ]}
     />
   );
 }

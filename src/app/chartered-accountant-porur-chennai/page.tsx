@@ -42,6 +42,10 @@ export default function Page() {
         { question: "Do you have a Porur office?", answer: "No — we are based solely in Anna Nagar and serve Porur clients from there, in person or virtually." },
         { question: "Can you register a new small business in Porur for GST?", answer: "Yes, GST registration and ongoing return filing for local retail and service businesses in Porur is something we handle regularly." },
       ]}
+      furtherReading={[
+        { slug: "llp-registration-porur-consultancies", title: "Porur's New Consultancies Are Registering Locally Instead of Going Through a City-Centre Firm" },
+        { slug: "gst-registration-porur-retail", title: "Porur's Growing Retail Footprint Is Creating a Wave of First-Time GST Registrations" },
+      ]}
     />
   );
 }

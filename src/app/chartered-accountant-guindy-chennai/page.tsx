@@ -43,6 +43,11 @@ export default function Page() {
         { question: "Do you have a Guindy office?", answer: "No — we are based solely in Anna Nagar and serve Guindy clients from there, with fieldwork scheduled as needed given Guindy's role as a transport hub." },
         { question: "Can you help with GST litigation for a Guindy-based manufacturing company?", answer: "Yes — GST show-cause notice replies, appeals, and GSTAT representation are core services we provide to businesses across Guindy's industrial base." },
       ]}
+      furtherReading={[
+        { slug: "virtual-cfo-guindy-corporate-offices", title: "What Guindy's Corporate Offices Should Expect From a Virtual CFO Engagement" },
+        { slug: "gst-litigation-guindy-industrial", title: "GST Notices at Guindy's Industrial Estate Usually Trace Back to One Thing" },
+        { slug: "roc-registered-office-change-guindy", title: "Moving Your Registered Office to Guindy? The ROC Filing Has a Hidden Second Step" },
+      ]}
     />
   );
 }

@@ -41,6 +41,9 @@ export default function Page() {
         { question: "I'm a doctor/consultant with a private practice in Adyar — do I need a tax audit?", answer: "It depends on your gross annual receipts — professionals crossing the Section 44ADA presumptive taxation threshold generally require a tax audit. Book a free consultation and we'll assess your specific position." },
         { question: "Do you serve individuals as well as institutions in Adyar?", answer: "Yes — alongside trust/NGO work, we handle individual income tax filing, advance tax planning, and audit services for Adyar's professionals and residents." },
       ]}
+      furtherReading={[
+        { slug: "12a-80g-adyar-institutions", title: "Adyar's Educational and Charitable Institutions Are Still Running on Old 12A/80G Norms" },
+      ]}
     />
   );
 }
