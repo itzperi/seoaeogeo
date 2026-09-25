@@ -35,6 +35,8 @@ export default function Page() {
         { slug: "private-limited-company-incorporation-chennai", why: "Incorporate your company with a CA firm you can visit in person, in the same neighbourhood." },
         { slug: "goods-and-services-tax", why: "GST registration and return filing for Anna Nagar's mix of retail, trading, and services businesses." },
         { slug: "statutory-audit-chennai", why: "Statutory audit for Anna Nagar-based companies, with fieldwork scheduled around your calendar." },
+        { slug: "roc-compliances", why: "Annual ROC filings and Companies Act compliance for Anna Nagar companies, from incorporation onward." },
+        { slug: "msme-udyam-registration-chennai", why: "Udyam registration for Anna Nagar's small manufacturers and trading businesses." },
       ]}
       faqs={[
         { question: "Is your office actually located in Anna Nagar?", answer: "Yes — Anna Nagar is our registered office and where our team works day-to-day, not a service-area claim. See our contact page for the exact address and a map." },
