@@ -10,9 +10,9 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/goods-and-services-tax`;
 
 export const metadata: Metadata = {
-  title: { absolute: "GST Registration & Return Filing in Chennai" },
+  title: { absolute: "GST Return Filing & Compliance in Chennai" },
   description:
-    "GST registration, return filing, amendments, cancellations, and notice replies for Chennai businesses. Facing a dispute? See our GST litigation service.",
+    "GST return filing, amendments, cancellations, and notice replies for Chennai businesses. New registration? See our dedicated GST registration guide.",
   alternates: { canonical: "/goods-and-services-tax" },
 };
 
@@ -58,8 +58,8 @@ export default function GstPage() {
     <>
       <JsonLd
         data={serviceSchema({
-          name: "Goods & Services Tax (GST) Services",
-          description: "GST registration, return filing, amendments, cancellations, notice replies, and LUT applications for Chennai businesses.",
+          name: "GST Return Filing & Compliance Services",
+          description: "GST return filing, amendments, cancellations, and notice replies for Chennai businesses.",
           url: PAGE_URL,
           serviceType: "Tax Compliance",
         })}
@@ -68,8 +68,8 @@ export default function GstPage() {
       <Breadcrumbs items={[{ name: "Goods & Services Tax", href: "/goods-and-services-tax" }]} />
       <PageHero
         eyebrow="GST · Chennai"
-        h1="Goods & Services Tax (GST) Services"
-        subhead="Registration, return filing, amendments, cancellations, and notice replies — GST compliance handled end-to-end so you stay penalty-free."
+        h1="GST Return Filing & Compliance in Chennai"
+        subhead="Return filing, amendments, cancellations, and notice replies — GST compliance handled end-to-end so you stay penalty-free."
       />
 
       <section className="bg-paper py-16">

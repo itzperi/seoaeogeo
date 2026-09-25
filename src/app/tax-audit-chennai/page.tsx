@@ -28,6 +28,16 @@ export default function Page() {
       introHeading="What is a tax audit under Section 44AB?"
       intro="A tax audit under Section 44AB of the Income Tax Act is an examination of a taxpayer's books of account by a Chartered Accountant, required once turnover or gross receipts cross prescribed thresholds — currently ₹1 crore for businesses (₹10 crore where cash receipts and payments are each under 5% of the total), and ₹50 lakh for professionals. The auditor issues Form 3CA/3CB along with Form 3CD, a detailed statement of particulars covering depreciation, disallowances, related-party transactions, and other items the Income Tax Department cross-checks during assessment. Missing the deadline attracts a penalty under Section 271B, in addition to losing the ability to defend certain claims that a clean tax audit report would have supported."
       citation={{ label: "Income Tax Department — Section 44AB", href: "https://www.incometax.gov.in/" }}
+      howTo={{
+        heading: "How a tax audit engagement proceeds",
+        steps: [
+          { name: "Applicability check", text: "We confirm whether Section 44AB applies based on your actual turnover, gross receipts, and cash-transaction mix for the year, and whether presumptive taxation could avoid the requirement instead." },
+          { name: "Books and documentation review", text: "We review the books of account, TDS compliance, and related-party disclosures ahead of drafting, flagging gaps before they become audit-day surprises." },
+          { name: "Form 3CD preparation", text: "The detailed statement of particulars — depreciation, disallowances, related-party transactions, and other scrutiny-relevant items — is prepared and cross-checked against the books." },
+          { name: "Form 3CA/3CB certification", text: "The audit report is certified and e-filed, ahead of the 30 September deadline for most taxpayers." },
+          { name: "Coordination with your ITR filing", text: "The audit report feeds directly into your income tax return, filed by the corresponding 31 October deadline." },
+        ],
+      }}
       subServicesHeading="What's included"
       subServices={[
         { name: "Applicability Assessment", text: "Determining whether Section 44AB applies to your specific turnover, receipts, and cash-transaction mix for the year." },
