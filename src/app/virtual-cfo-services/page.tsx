@@ -288,6 +288,14 @@ export default function VirtualCfoPage() {
                 <li><Link href="/direct-tax" className="text-royal-violet hover:underline">Direct Tax</Link></li>
               </ul>
             </div>
+            <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
+              <h3 className="eyebrow text-xs text-slate">By area</h3>
+              <ul className="mt-4 space-y-3 text-sm">
+                <li><Link href="/blog/virtual-cfo-omr-startups" className="text-royal-violet hover:underline">Virtual CFO for OMR startups</Link></li>
+                <li><Link href="/blog/virtual-cfo-vs-accountant-nungambakkam" className="text-royal-violet hover:underline">Virtual CFO vs. accountant — Nungambakkam</Link></li>
+                <li><Link href="/blog/virtual-cfo-guindy-corporate-offices" className="text-royal-violet hover:underline">Virtual CFO for Guindy offices</Link></li>
+              </ul>
+            </div>
           </aside>
         </div>
       </section>

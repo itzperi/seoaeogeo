@@ -100,6 +100,12 @@ const modules = {
     import("@/content/blog/tds-on-rent"),
   "trust-vs-society-vs-section8": () =>
     import("@/content/blog/trust-vs-society-vs-section8"),
+  "virtual-cfo-omr-startups": () =>
+    import("@/content/blog/virtual-cfo-omr-startups"),
+  "virtual-cfo-vs-accountant-nungambakkam": () =>
+    import("@/content/blog/virtual-cfo-vs-accountant-nungambakkam"),
+  "virtual-cfo-guindy-corporate-offices": () =>
+    import("@/content/blog/virtual-cfo-guindy-corporate-offices"),
   "what-virtual-cfo-reviews-monthly": () =>
     import("@/content/blog/what-virtual-cfo-reviews-monthly"),
 } as const;
@@ -478,6 +484,33 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "Anyone starting a charitable or nonprofit initiative in Chennai has to choose between three common structures, a trust, a society, or a...",
+  },
+  {
+    slug: "virtual-cfo-omr-startups",
+    title: "Virtual CFO Support for OMR's Growth-Stage Startups",
+    description:
+      "IT and startup businesses along Chennai's OMR corridor tend to need a Virtual CFO for a specific reason: getting fundraise-ready, not just filing taxes.",
+    date: "2026-09-26",
+    excerpt:
+      "IT and startup businesses along OMR tend to need a Virtual CFO for one specific reason: getting fundraise-ready, not just filing taxes on time.",
+  },
+  {
+    slug: "virtual-cfo-vs-accountant-nungambakkam",
+    title: "When Does a Nungambakkam Business Need a Virtual CFO, Not Just an Accountant?",
+    description:
+      "Nungambakkam has a real concentration of mid-sized, past-startup-stage companies. Here's the actual signal that it's time for CFO-level support.",
+    date: "2026-09-26",
+    excerpt:
+      "Nungambakkam has a real concentration of mid-sized companies past the early startup stage. Here's the actual signal it's time for CFO-level support.",
+  },
+  {
+    slug: "virtual-cfo-guindy-corporate-offices",
+    title: "What Guindy's Corporate Offices Should Expect From a Virtual CFO Engagement",
+    description:
+      "Guindy's mix of industrial-estate manufacturers and newer corporate offices need genuinely different things from a Virtual CFO. Here's what to expect.",
+    date: "2026-09-26",
+    excerpt:
+      "Guindy's mix of industrial-estate manufacturers and newer corporate offices need different things from a Virtual CFO engagement. Here's what to expect.",
   },
   {
     slug: "what-virtual-cfo-reviews-monthly",
