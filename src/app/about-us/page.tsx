@@ -6,14 +6,14 @@ import CTASection from "@/components/CTASection";
 import Image from "next/image";
 import { JsonLd, personSchema } from "@/lib/schema";
 import { AREAS } from "@/lib/areas";
-import { FOUNDER_CREDENTIALS, FOUNDER_NAME, YEAR_FOUNDED } from "@/lib/site";
+import { FOUNDER_CREDENTIALS, FOUNDER_NAME, SOCIALS, YEAR_FOUNDED } from "@/lib/site";
 
 const TEAM = [
-  { name: "Darsan Kanna", photo: "/images/team/darsan-kanna.webp" },
+  { name: "Darsan Kanna", photo: "/images/team/darsan-kanna.webp", linkedin: "https://www.linkedin.com/in/darsan-kanna-v-684208253" },
   { name: "Harini", photo: "/images/team/harini.webp" },
   { name: "Athulia", photo: "/images/team/athulia.webp" },
-  { name: "Ajay C", photo: "/images/team/ajay-c.webp" },
-  { name: "Omair Khan", photo: "/images/team/omair-khan.png" },
+  { name: "Ajay C", photo: "/images/team/ajay-c.webp", linkedin: "https://www.linkedin.com/in/ajay-m-578a21232" },
+  { name: "Omair Khan", photo: "/images/team/omair-khan.png", linkedin: "https://www.linkedin.com/in/omairxkhan" },
 ];
 
 export const metadata: Metadata = {
@@ -58,6 +58,14 @@ export default function AboutPage() {
                 risk, compliance, and management consulting services for businesses across
                 sectors — combining a technology-driven approach with hands-on experience.
               </p>
+              <a
+                href={SOCIALS.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block text-sm font-medium text-royal-violet underline underline-offset-2"
+              >
+                C S Rushil &amp; Co. on LinkedIn
+              </a>
             </div>
             <div>
               <h2 className="text-2xl text-obsidian">Our mission</h2>
@@ -98,7 +106,7 @@ export default function AboutPage() {
                 alt={`${FOUNDER_NAME}, practising Chartered Accountant and founder of C S Rushil & Co.`}
                 fill
                 sizes="96px"
-                className="object-cover"
+                className="object-cover object-top"
                 priority
               />
             </div>
@@ -110,6 +118,14 @@ export default function AboutPage() {
                 and compliance practice, and heads client engagements across
                 incorporation, GST, and advisory work.
               </p>
+              <a
+                href="https://www.linkedin.com/in/rushil-cs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-block text-sm font-medium text-royal-violet underline underline-offset-2"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
           <p className="mt-4 max-w-xl text-sm text-slate">
@@ -138,10 +154,20 @@ export default function AboutPage() {
                     alt={`${member.name}, team member at C S Rushil & Co.`}
                     fill
                     sizes="112px"
-                    className="object-cover"
+                    className="object-cover object-top"
                   />
                 </div>
                 <p className="mt-3 text-sm font-medium text-obsidian">{member.name}</p>
+                {member.linkedin && (
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-1 inline-block text-xs font-medium text-royal-violet underline underline-offset-2"
+                  >
+                    LinkedIn
+                  </a>
+                )}
               </div>
             ))}
           </div>
