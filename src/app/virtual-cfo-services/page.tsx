@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
+import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/virtual-cfo-services`;
@@ -88,6 +88,13 @@ export default function VirtualCfoPage() {
             "Outsourced financial leadership for Chennai startups and SMEs — MIS reporting, budgeting, fundraising support, and board-ready financials.",
           url: PAGE_URL,
           serviceType: "Financial Advisory",
+        })}
+      />
+      <JsonLd
+        data={howToSchema({
+          name: "How a Virtual CFO engagement works",
+          description: "The stages a Virtual CFO engagement typically moves through, from initial assessment to ongoing monthly reporting.",
+          steps: ENGAGEMENT_STEPS,
         })}
       />
       <JsonLd data={speakableSchema(["#direct-answer"])} />

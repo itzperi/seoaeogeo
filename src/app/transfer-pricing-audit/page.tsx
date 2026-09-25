@@ -28,6 +28,16 @@ export default function Page() {
       introHeading="What is a transfer pricing audit?"
       intro="A transfer pricing audit examines transactions between related or associated enterprises — a parent company and subsidiary, sister concerns, or entities under common control — to confirm they're priced at arm's length, the same rate an unrelated third party would charge. Under the Income Tax Act, businesses with specified domestic transactions above prescribed thresholds, or any international transaction with an associated enterprise regardless of value, must obtain a transfer pricing report in Form 3CEB from a Chartered Accountant and maintain contemporaneous documentation justifying the pricing method used."
       citation={{ label: "Income Tax Department — Transfer Pricing", href: "https://www.incometax.gov.in/" }}
+      howTo={{
+        heading: "How a transfer pricing audit engagement proceeds",
+        steps: [
+          { name: "Transaction identification", text: "We map every transaction with associated enterprises — management fees, royalties, loans, goods and services transfers — to identify what falls under transfer pricing rules." },
+          { name: "Method selection and benchmarking", text: "We select the appropriate pricing method (CUP, RPM, CPM, TNMM, or PSM) and benchmark your related-party pricing against comparable independent transactions." },
+          { name: "Documentation preparation", text: "Contemporaneous documentation justifying the arm's-length nature of each transaction is prepared and maintained as the Income Tax Act requires." },
+          { name: "Form 3CEB certification", text: "The transfer pricing audit report is certified and filed in Form 3CEB, ahead of your income tax return due date." },
+          { name: "Ongoing exposure review", text: "For recurring transactions, we periodically review whether an Advance Pricing Agreement is worth pursuing for longer-term pricing certainty." },
+        ],
+      }}
       subServicesHeading="What's included"
       subServices={[
         { name: "Form 3CEB Certification", text: "Mandatory transfer pricing audit report and certification for international and specified domestic transactions." },

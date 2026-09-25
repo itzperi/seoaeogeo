@@ -28,6 +28,16 @@ export default function Page() {
       introHeading="What is an LLP and who is it for?"
       intro="A Limited Liability Partnership (LLP) is a hybrid business structure, registered under the LLP Act, 2008, that combines the operational flexibility of a partnership with limited liability protection for its partners — no partner is personally liable for another partner's misconduct or the LLP's debts beyond their agreed contribution. This makes it a common choice for professional services firms, consultancies, and small partnerships that want liability protection without the higher compliance burden and share-capital structure of a Private Limited Company. LLPs cannot raise equity funding from investors the way a Private Limited Company can, which is the main reason startups planning to raise venture capital choose Private Limited instead."
       citation={{ label: "Ministry of Corporate Affairs (MCA)", href: "https://www.mca.gov.in/" }}
+      howTo={{
+        heading: "Step-by-step LLP registration process",
+        steps: [
+          { name: "DPIN and Digital Signature", text: "We obtain DPIN and Class 3 Digital Signature Certificates for all designated partners — required to sign the electronic MCA forms." },
+          { name: "Name reservation (RUN-LLP)", text: "We check name availability against the MCA and trademark databases and reserve your LLP's name." },
+          { name: "FiLLiP filing", text: "We file the integrated FiLLiP form with the Registrar, covering incorporation, PAN, and TAN in one submission." },
+          { name: "Certificate of Incorporation", text: "On approval, the Registrar issues the Certificate of Incorporation along with your LLP's PAN and TAN." },
+          { name: "LLP Agreement filing", text: "The LLP Agreement, defining profit-sharing and partner rights, is drafted and filed within 30 days of incorporation — a separate deadline from incorporation itself." },
+        ],
+      }}
       subServicesHeading="What's included"
       subServices={[
         { name: "Designated Partner Identification (DPIN/DIN)", text: "Obtaining DPIN and Class 3 Digital Signature Certificates for all designated partners." },
