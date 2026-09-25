@@ -22,6 +22,16 @@ export default function Page() {
       introHeading="What is ROC compliance?"
       intro="Every registered company and LLP must file periodic returns and maintain statutory records with the Registrar of Companies (ROC) under the Ministry of Corporate Affairs. Missing these deadlines attracts steep additional fees and can lead to director disqualification or company strike-off."
       citation={{ label: "Ministry of Corporate Affairs (MCA)", href: "https://www.mca.gov.in/" }}
+      howTo={{
+        heading: "Your annual ROC compliance cycle",
+        steps: [
+          { name: "Post-audit filing prep", text: "Once your statutory audit is signed off, we prepare AOC-4 (financial statements) and MGT-7/7A (annual return) for filing." },
+          { name: "Board and AGM documentation", text: "Notices, minutes, and resolutions for the Annual General Meeting and any board meetings held during the year are drafted and maintained." },
+          { name: "Annual ROC filings", text: "AOC-4 and MGT-7/7A are filed with the Registrar of Companies within the statutory timelines, along with DIR-3 KYC for each director." },
+          { name: "Statutory registers update", text: "Registers of members, directors, and charges are updated to reflect the year's changes." },
+          { name: "Event-based filings as they arise", text: "Any changes during the year — new directors, share capital changes, registered office moves — are filed with the ROC as they happen, not bundled into the annual cycle." },
+        ],
+      }}
       subServicesHeading="Our ROC compliance services"
       subServices={[
         { name: "Annual Return Filing (MGT-7/AOC-4)", text: "Yearly filing of financial statements and annual return with the ROC." },

@@ -28,6 +28,16 @@ export default function Page() {
       introHeading="What is a statutory audit?"
       intro="A statutory audit is the independent examination of a company's financial statements, mandated under Section 139 of the Companies Act, 2013, for every company registered in India regardless of turnover, profit, or size — including a company with zero transactions in the year. The auditor verifies that the financial statements give a true and fair view, checks compliance with applicable accounting standards, and reports directly to shareholders. Beyond the statutory obligation, a rigorous audit surfaces control gaps and gives lenders, investors, and the board an independently verified picture of the business."
       citation={{ label: "Ministry of Corporate Affairs — Companies Act, 2013", href: "https://www.mca.gov.in/" }}
+      howTo={{
+        heading: "How a statutory audit engagement proceeds",
+        steps: [
+          { name: "Auditor appointment", text: "The Board appoints the first auditor within 30 days of incorporation, or shareholders appoint/re-appoint the auditor at the AGM; the ADT-1 filing confirms the appointment with the ROC." },
+          { name: "Planning and books review", text: "We review the trial balance, ledgers, and prior-year workpapers to scope the audit and flag documentation gaps before fieldwork starts." },
+          { name: "Fieldwork and testing", text: "Verification of balance sheet items, profit & loss transactions, statutory dues, and compliance with applicable Accounting Standards or Ind AS." },
+          { name: "CARO and audit committee review", text: "Where applicable, reporting against the Companies (Auditor's Report) Order, and discussion of findings with the audit committee or board." },
+          { name: "Audit report and sign-off", text: "The signed audit report, along with the audited financial statements, is issued to shareholders and forms the basis for the company's AOC-4 and MGT-7 ROC filings." },
+        ],
+      }}
       subServicesHeading="What's covered"
       subServices={[
         { name: "First Statutory Audit (New Companies)", text: "Appointment of the first auditor within 30 days of incorporation and audit of the first financial year, however short." },
