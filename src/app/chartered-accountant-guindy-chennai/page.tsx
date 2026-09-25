@@ -35,6 +35,8 @@ export default function Page() {
         { slug: "statutory-audit-chennai", why: "Statutory audit for Guindy's established industrial estate and corporate office companies." },
         { slug: "roc-compliances", why: "Annual ROC filings and Companies Act compliance for registered companies based in Guindy." },
         { slug: "gst-litigation-chennai", why: "GST notice replies and appeals for businesses across Guindy's industrial and commercial base." },
+        { slug: "llp-registration-chennai", why: "LLP registration for professional services firms setting up in Guindy's newer corporate office space." },
+        { slug: "virtual-cfo-services", why: "Outsourced financial leadership for Guindy's newer corporate offices scaling past the early stage." },
       ]}
       faqs={[
         { question: "Do you audit both industrial and corporate-office companies in Guindy?", answer: "Yes — Guindy's mix of manufacturing/industrial estate businesses and modern corporate offices means we handle both statutory audit for established industrial companies and incorporation/compliance work for newer corporate entities." },

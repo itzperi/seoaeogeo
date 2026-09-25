@@ -37,6 +37,7 @@ export default function Page() {
         { slug: "goods-and-services-tax", why: "GST registration and return filing for professional services and commercial establishments." },
         { slug: "statutory-audit-chennai", why: "Recurring annual statutory audit for Nungambakkam's mid-sized companies past the early startup stage." },
         { slug: "management-consultancy", why: "Business process and growth advisory for established Nungambakkam businesses scaling past the early startup stage." },
+        { slug: "llp-registration-chennai", why: "LLP registration for professional services firms wanting a central Chennai address without a share-capital structure." },
       ]}
       faqs={[
         { question: "Can I use a Nungambakkam address for my registered office when incorporating?", answer: "Yes — the MCA has no location restriction on where your registered office is within India, so a Nungambakkam commercial address works fine for incorporation. We handle the documentation either way." },
