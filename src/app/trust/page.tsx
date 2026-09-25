@@ -22,6 +22,16 @@ export default function Page() {
       introHeading="What is trust/NGO registration?"
       intro="Non-profit entities in India can be structured as a Trust, Society, or Section 8 Company, each with different governance and compliance requirements. Registering under Section 12A grants the entity income tax exemption, while 80G registration allows donors to claim a tax deduction on their contributions — both are essential for credible fundraising."
       citation={{ label: "Income Tax Department — 12A/80G Registration", href: "https://www.incometax.gov.in/" }}
+      howTo={{
+        heading: "How 12A and 80G registration proceeds, once your Trust, Society, or Section 8 Company is formed",
+        steps: [
+          { name: "Entity formation first", text: "The Trust deed, Society, or Section 8 Company must already be registered — 12A/80G applications are filed against an existing, formed entity, not before." },
+          { name: "12A application", text: "An application is filed with the Income Tax Department for 12A registration, exempting the NGO's own income from tax, along with governing documents and activity details." },
+          { name: "80G application", text: "A separate application is filed for 80G registration, which lets donors claim a tax deduction on contributions — most NGOs apply for both together." },
+          { name: "Provisional vs regular registration", text: "New NGOs typically receive provisional registration first, valid for a limited period, before applying for regular registration once activities are underway." },
+          { name: "Periodic renewal", text: "Both 12A and 80G registration require renewal within the prescribed validity period — missing this lapses the exempt status rather than renewing automatically." },
+        ],
+      }}
       subServicesHeading="Our trust & NGO services"
       subServices={[
         { name: "Trust Deed Drafting & Registration", text: "Drafting the trust deed and registering with the local Sub-Registrar." },

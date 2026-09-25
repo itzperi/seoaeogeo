@@ -28,6 +28,16 @@ export default function Page() {
       introHeading="What does company registration involve?"
       intro="Registering a company in India means securing Digital Signature Certificates (DSC) and Director Identification Numbers (DIN) for promoters, reserving a unique name with the MCA, and filing the incorporation application (SPICe+ for companies, FiLLiP for LLPs) along with the Memorandum and Articles of Association. Done correctly, this also bundles PAN, TAN, and often GST and bank account setup into a single filing window, which is why document readiness upfront materially shortens the timeline."
       citation={{ label: "Ministry of Corporate Affairs (MCA)", href: "https://www.mca.gov.in/" }}
+      howTo={{
+        heading: "The company registration process, step by step",
+        steps: [
+          { name: "Digital Signature and DIN", text: "Class 3 Digital Signature Certificates and Director Identification Numbers are obtained for all proposed directors or designated partners — required to sign the electronic MCA forms." },
+          { name: "Name approval", text: "Availability is checked against the MCA and trademark databases, and the proposed name is reserved before the main incorporation filing." },
+          { name: "Incorporation filing", text: "SPICe+ is filed for a Private Limited Company or OPC, or FiLLiP for an LLP — the specific form differs by structure, but each bundles PAN and TAN into the same submission." },
+          { name: "Certificate of Incorporation", text: "On approval, the Registrar issues the Certificate of Incorporation along with PAN and TAN." },
+          { name: "Post-incorporation compliance", text: "First board meeting, statutory registers, bank account opening, and GST registration follow as the immediate next steps." },
+        ],
+      }}
       subServicesHeading="Structures we register"
       subServices={[
         { name: "Private Limited Company", text: "The most common structure for startups and growing businesses seeking investment — limited liability with a formal share-capital structure." },
