@@ -23,6 +23,11 @@ export const metadata: Metadata = {
 
 const FAQS = [
   {
+    question: "I'm a first-time founder — can you handle everything a startup needs, not just incorporation?",
+    answer:
+      "Yes. Beyond incorporation, we support startups with GST registration, MSME/Udyam registration, ongoing ROC compliance, and — once you're past the earliest stage — Virtual CFO support for budgeting and investor reporting. Most founders start with incorporation and add services as the business grows, rather than needing everything on day one.",
+  },
+  {
     question: "How long does private limited company incorporation take in Chennai?",
     answer:
       "With documents in order, SPICe+ incorporation typically takes 7–12 working days, covering DSC/DIN issuance, name approval, and Certificate of Incorporation from the MCA. Delays usually come from name-availability rejections (the proposed name resembling an existing company or trademark) or incomplete KYC documents, both of which we vet against MCA and trademark databases before filing rather than discovering after a rejection resets the clock. Founders who have their director KYC, registered-office proof, and proposed name options ready upfront typically see the faster end of that range; those starting from scratch on documentation should budget closer to 3 weeks including document collection.",

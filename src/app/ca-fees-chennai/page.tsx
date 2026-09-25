@@ -34,6 +34,16 @@ const PRICING = [
 
 const FAQS = [
   {
+    question: "How much does company registration cost in Chennai?",
+    answer:
+      "Professional fees for Private Limited Company registration typically start from ₹6,000–₹15,000, plus separate government/MCA fees that vary by authorised share capital. LLP registration starts from ₹5,000–₹12,000 professional fees plus government fees. See the table below for the full breakdown, or contact us for a fixed quote.",
+  },
+  {
+    question: "How much does GST registration cost in Chennai?",
+    answer:
+      "For a straightforward single-state GST registration, professional fees typically start from ₹1,500–₹4,000. Government portal fees for GST registration itself are nil — you're paying for document preparation, application filing, and follow-up with the department.",
+  },
+  {
     question: "Are these the exact fees you charge?",
     answer:
       "No — these are indicative starting ranges based on typical CA service pricing in Chennai, meant to help you budget before reaching out. Your actual fee depends on transaction volume, entity complexity, and the specific scope of work. We provide a fixed, written quote after a free initial consultation, before any engagement begins.",

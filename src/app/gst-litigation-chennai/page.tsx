@@ -12,7 +12,7 @@ const PAGE_URL = `${SITE_URL}/gst-litigation-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "GST Litigation in Chennai | Appeals & Notice Reply" },
   description:
-    "GST litigation support in Chennai — show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GSTAT representation by C S Rushil & Co.",
+    "Received a GST notice in Chennai? Get urgent show-cause notice reply support, departmental audit representation, and GSTAT appeals from C S Rushil & Co. — response within 24 hours.",
   alternates: { canonical: "/gst-litigation-chennai" },
   openGraph: {
     title: "GST Litigation in Chennai",
@@ -47,6 +47,11 @@ const NOTICE_TYPES = [
 ];
 
 const FAQS = [
+  {
+    question: "I need urgent help with a GST notice — can you respond quickly?",
+    answer:
+      "Yes. Send us the notice and we assess your reply deadline and options within 24 hours. GST reply windows are short and non-negotiable, so the priority on our end is confirming exactly what's being alleged and what evidence to gather first, not a lengthy onboarding process.",
+  },
   {
     question: "Can a Chartered Accountant represent me in GST litigation?",
     answer:

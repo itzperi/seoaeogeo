@@ -27,6 +27,11 @@ const SERVICES = [
 
 const FAQS = [
   {
+    question: "How do I cancel my GST registration in Chennai?",
+    answer:
+      "You can apply for voluntary cancellation on the GST portal if you've closed the business, fallen below the threshold, or changed structure — we handle the application, final return (GSTR-10) filing, and any pending compliance before the department approves cancellation. The department can also cancel a registration for continuous non-filing, which is why we track filing deadlines closely.",
+  },
+  {
     question: "What happens if I miss the GST return filing deadline?",
     answer:
       "Late filing attracts a late fee per day of delay (capped) plus interest at 18% per annum on the outstanding tax. Repeated defaults can also lead to registration suspension. We track your filing calendar to prevent this.",

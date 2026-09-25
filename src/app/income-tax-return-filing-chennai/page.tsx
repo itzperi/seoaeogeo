@@ -37,6 +37,7 @@ export default function Page() {
         { name: "Advance Tax & TDS Reconciliation", text: "Quarterly advance tax estimates and Form 26AS/AIS reconciliation to avoid mismatches and interest under Sections 234B/234C." },
       ]}
       faqs={[
+        { question: "Do you work with NRI clients based outside India, including in the US?", answer: "Yes. We work remotely with NRI and overseas clients, including clients based in the United States, on Indian-source income reporting, DTAA benefit claims, and repatriation-related compliance — no in-person visit required." },
         { question: "What is the due date for filing an income tax return?", answer: "For most individuals and non-audit taxpayers, 31 July of the assessment year; for businesses requiring a tax audit, typically 31 October. Exact dates are notified annually by the CBDT and occasionally extended." },
         { question: "Which ITR form should I use?", answer: "ITR-1 for salaried individuals with income up to ₹50 lakh and no capital gains; ITR-2 for individuals with capital gains or multiple properties; ITR-3 for business/professional income; ITR-4 for presumptive taxation. We confirm the correct form based on your income sources." },
         { question: "What happens if I file my return late?", answer: "A late fee under Section 234F applies (up to ₹5,000), interest accrues on any unpaid tax, and you lose the ability to carry forward certain losses to future years." },
