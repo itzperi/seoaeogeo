@@ -7,6 +7,7 @@ import MobileNav from "./MobileNav";
 const NAV_LINKS = [
   { href: "/about-us", label: "About" },
   { href: "/blog", label: "Insights" },
+  { href: "/videos", label: "Videos" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
