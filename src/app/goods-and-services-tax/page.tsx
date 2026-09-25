@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/goods-and-services-tax`;
 
 export const metadata: Metadata = {
-  title: "GST Registration & Return Filing in Chennai",
+  title: { absolute: "GST Registration & Return Filing in Chennai" },
   description:
     "GST registration, return filing, amendments, cancellations, and notice replies for businesses in Chennai. Facing a dispute? See our dedicated GST litigation service.",
   alternates: { canonical: "/goods-and-services-tax" },

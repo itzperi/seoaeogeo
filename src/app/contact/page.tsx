@@ -13,7 +13,7 @@ import {
 } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Chartered Accountants in Anna Nagar, Chennai",
+  title: "Contact Us | Anna Nagar, Chennai",
   description:
     "Visit or call C S Rushil & Co. at our Anna Nagar, Chennai office. Phone, email, business hours, and map directions for our chartered accountancy firm.",
   alternates: { canonical: "/contact" },

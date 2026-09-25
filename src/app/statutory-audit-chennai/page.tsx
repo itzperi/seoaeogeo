@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Statutory Audit in Chennai | Companies Act Audit",
+  title: { absolute: "Statutory Audit in Chennai | Companies Act Audit" },
   description:
     "Statutory audit for private limited companies and LLPs in Chennai — independent verification of financial statements under the Companies Act, delivered by C S Rushil & Co.",
   alternates: { canonical: "/statutory-audit-chennai" },

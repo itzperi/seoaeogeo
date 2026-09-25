@@ -17,7 +17,7 @@ const TEAM = [
 ];
 
 export const metadata: Metadata = {
-  title: "About Us — Chartered Accountants in Chennai",
+  title: "About Us | Anna Nagar, Chennai",
   description:
     "C S Rushil & Co. is led by CA Rushil C S (Certified FAFD, Start-up Mentor) with a 16-member team delivering audit, tax, GST, and compliance services from Anna Nagar, Chennai.",
   alternates: { canonical: "/about-us" },

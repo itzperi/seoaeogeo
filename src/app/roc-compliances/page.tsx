@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "ROC Compliance Services for Chennai Companies",
+  title: { absolute: "ROC Compliance Services for Chennai Companies" },
   description:
     "Annual filings, statutory registers, and Companies Act compliance to keep your Chennai company in good standing with the Registrar of Companies (MCA).",
   alternates: { canonical: "/roc-compliances" },

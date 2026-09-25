@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Audit & Assurance Services in Chennai",
+  title: { absolute: "Audit & Assurance Services in Chennai" },
   description:
     "Statutory, internal, tax, transfer pricing, forensic, and stock audits for businesses in Chennai — delivered with independence, rigour, and clear reporting.",
   alternates: { canonical: "/audit-and-assurance" },

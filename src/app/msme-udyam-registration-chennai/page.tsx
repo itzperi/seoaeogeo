@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "MSME / Udyam Registration in Chennai",
+  title: { absolute: "MSME / Udyam Registration in Chennai" },
   description:
     "Udyam (MSME) registration for small and medium enterprises in Chennai — unlock collateral-free loans, delayed-payment protection, and government scheme benefits.",
   alternates: { canonical: "/msme-udyam-registration-chennai" },

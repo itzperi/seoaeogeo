@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Income Tax Return Filing in Chennai | ITR for Individuals & Business",
+  title: { absolute: "Income Tax Return Filing in Chennai | ITR Filing" },
   description:
     "Income tax return filing in Chennai for salaried individuals, professionals, NRIs, and businesses — accurate ITR filing, refund tracking, and advance tax planning.",
   alternates: { canonical: "/income-tax-return-filing-chennai" },

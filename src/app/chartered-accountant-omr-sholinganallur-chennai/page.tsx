@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/chartered-accountant-omr-sholinganallur-chennai`;
 
 export const metadata: Metadata = {
-  title: "Chartered Accountant in OMR / Sholinganallur, Chennai",
+  title: { absolute: "Chartered Accountant in OMR / Sholinganallur, Chennai" },
   description:
     "Company incorporation, GST, payroll TDS, and virtual CFO services for IT and startup businesses along Chennai's OMR IT corridor and Sholinganallur.",
   alternates: { canonical: "/chartered-accountant-omr-sholinganallur-chennai" },

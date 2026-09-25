@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "LLP Registration in Chennai | Limited Liability Partnership",
+  title: { absolute: "LLP Registration in Chennai | Limited Liability Partnership" },
   description:
     "LLP registration in Chennai — DPIN/DSC, name reservation, FiLLiP filing, and LLP Agreement drafting for professional and services businesses, by C S Rushil & Co.",
   alternates: { canonical: "/llp-registration-chennai" },

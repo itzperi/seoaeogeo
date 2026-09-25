@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Trust & NGO Registration Services in Chennai",
+  title: { absolute: "Trust & NGO Registration Services in Chennai" },
   description:
     "Formation and compliance for trusts, societies, and Section 8 companies in Chennai, including 12A/80G registration support for tax-exempt status.",
   alternates: { canonical: "/trust" },

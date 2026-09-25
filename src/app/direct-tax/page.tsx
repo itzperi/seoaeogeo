@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Direct Tax & Income Tax Services in Chennai",
+  title: { absolute: "Direct Tax & Income Tax Services in Chennai" },
   description:
     "Income tax planning, return filing, assessments, and representation before tax authorities for individuals and businesses in Chennai.",
   alternates: { canonical: "/direct-tax" },

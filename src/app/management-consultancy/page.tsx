@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Management Consultancy Services in Chennai",
+  title: { absolute: "Management Consultancy Services in Chennai" },
   description:
     "Business process, risk, and strategy advisory for Chennai businesses — turning compliance data into operating decisions with expert-led consultancy.",
   alternates: { canonical: "/management-consultancy" },

@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Company Registration in Chennai | Private Limited & LLP",
+  title: { absolute: "Company Registration in Chennai | Private Limited & LLP" },
   description:
     "Company registration in Chennai — Private Limited Company, LLP, and OPC — name approval, MCA/SPICe+ filing, and certificate of incorporation by C S Rushil & Co.",
   alternates: { canonical: "/company-registration-chennai" },

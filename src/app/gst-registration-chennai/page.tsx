@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "GST Registration in Chennai | New Registration & LUT",
+  title: { absolute: "GST Registration in Chennai | New Registration & LUT" },
   description:
     "New GST registration for businesses and professionals in Chennai — document preparation, ARN tracking, amendments, and LUT applications by C S Rushil & Co.",
   alternates: { canonical: "/gst-registration-chennai" },

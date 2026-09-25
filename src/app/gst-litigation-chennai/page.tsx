@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/gst-litigation-chennai`;
 
 export const metadata: Metadata = {
-  title: "GST Litigation in Chennai | Appeals & Notice Reply",
+  title: { absolute: "GST Litigation in Chennai | Appeals & Notice Reply" },
   description:
     "GST litigation support in Chennai — show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GSTAT representation by C S Rushil & Co.",
   alternates: { canonical: "/gst-litigation-chennai" },

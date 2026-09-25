@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Transfer Pricing Audit in Chennai",
+  title: { absolute: "Transfer Pricing Audit in Chennai" },
   description:
     "Transfer pricing audit and documentation for related-party transactions — Form 3CEB, arm's-length pricing, and Income Tax Act compliance, from a Chennai chartered accountancy firm.",
   alternates: { canonical: "/transfer-pricing-audit" },

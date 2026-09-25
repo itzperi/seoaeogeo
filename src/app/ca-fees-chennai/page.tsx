@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/ca-fees-chennai`;
 
 export const metadata: Metadata = {
-  title: "CA Fees in Chennai | Indicative Pricing Guide",
+  title: { absolute: "CA Fees in Chennai | Indicative Pricing Guide" },
   description:
     "Indicative CA fees in Chennai for company registration, GST, income tax filing, and audit services — a transparent starting-point pricing guide from C S Rushil & Co.",
   alternates: { canonical: "/ca-fees-chennai" },

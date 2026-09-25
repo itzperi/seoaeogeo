@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "RERA Registration & Compliance in Chennai",
+  title: { absolute: "RERA Registration & Compliance in Chennai" },
   description:
     "RERA project registration, quarterly filings, and compliance advisory for real estate developers, promoters, and agents in Tamil Nadu.",
   alternates: { canonical: "/rera" },

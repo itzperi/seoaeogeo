@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/chartered-accountant-anna-nagar-chennai`;
 
 export const metadata: Metadata = {
-  title: "Chartered Accountant in Anna Nagar, Chennai",
+  title: { absolute: "Chartered Accountant in Anna Nagar, Chennai" },
   description:
     "C S Rushil & Co. is based in Anna Nagar, Chennai — company registration, GST, audit, and tax services from a CA firm headquartered in the neighbourhood.",
   alternates: { canonical: "/chartered-accountant-anna-nagar-chennai" },

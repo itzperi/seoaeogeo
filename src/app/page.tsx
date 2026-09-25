@@ -8,7 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import { ADDRESS_FULL, ADDRESS_SHORT, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Chartered Accountant Near Me in Chennai — Company Registration, GST & Audit",
+  title: "Chartered Accountant Near Me in Chennai",
   description:
     "C S Rushil & Co. is a Chennai chartered accountancy firm led by CA Rushil C S. Private limited company incorporation, GST litigation, audit, and tax services — Anna Nagar, Chennai.",
   alternates: { canonical: "/" },

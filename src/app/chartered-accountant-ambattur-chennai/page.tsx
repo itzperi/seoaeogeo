@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/chartered-accountant-ambattur-chennai`;
 
 export const metadata: Metadata = {
-  title: "Chartered Accountant in Ambattur, Chennai",
+  title: { absolute: "Chartered Accountant in Ambattur, Chennai" },
   description:
     "Statutory audit, ROC compliance, and GST services for Ambattur's manufacturing and engineering businesses, from a Chennai chartered accountancy firm based in Anna Nagar.",
   alternates: { canonical: "/chartered-accountant-ambattur-chennai" },

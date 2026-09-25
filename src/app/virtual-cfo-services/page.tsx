@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/virtual-cfo-services`;
 
 export const metadata: Metadata = {
-  title: "Virtual CFO Services in Chennai for Startups & SMEs",
+  title: { absolute: "Virtual CFO Services in Chennai for Startups & SMEs" },
   description:
     "Outsourced financial leadership for Chennai startups and SMEs — MIS reporting, budgeting, fundraising support, and board-ready financials without a full-time CFO.",
   alternates: { canonical: "/virtual-cfo-services" },

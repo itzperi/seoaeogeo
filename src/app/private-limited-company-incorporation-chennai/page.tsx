@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/private-limited-company-incorporation-chennai`;
 
 export const metadata: Metadata = {
-  title: "Private Limited Company Incorporation in Chennai",
+  title: { absolute: "Private Limited Company Incorporation in Chennai" },
   description:
     "Register your Private Limited Company in Chennai with SPICe+ filing, DIN/DSC, MoA/AoA drafting, and post-incorporation compliance — handled end-to-end by C S Rushil & Co.",
   alternates: { canonical: "/private-limited-company-incorporation-chennai" },

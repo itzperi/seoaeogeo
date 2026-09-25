@@ -22,7 +22,7 @@ export async function generateMetadata({
   const meta = getPostMeta(slug);
   if (!meta) return {};
   return {
-    title: meta.title,
+    title: { absolute: meta.title },
     description: meta.description,
     alternates: { canonical: `/blog/${slug}` },
   };
