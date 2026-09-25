@@ -5,9 +5,10 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Tax Audit in Chennai | Section 44AB Audit" },
   description:
-    "Tax audit under Section 44AB of the Income Tax Act for businesses and professionals in Chennai crossing prescribed turnover limits, handled end-to-end by C S Rushil & Co.",
+    "Tax audit under Section 44AB of the Income Tax Act for Chennai businesses and professionals crossing prescribed turnover limits, handled by C S Rushil & Co.",
   alternates: { canonical: "/tax-audit-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Tax Audit in Chennai",
     description: "Section 44AB tax audit for Chennai businesses and professionals.",
     url: "/tax-audit-chennai",

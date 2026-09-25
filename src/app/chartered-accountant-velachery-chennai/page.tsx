@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "Income tax return filing, GST, and audit services for Velachery's mix of salaried IT professionals and small businesses, from a Chennai CA firm.",
   alternates: { canonical: "/chartered-accountant-velachery-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Velachery, Chennai",
     description: "ITR filing, GST, and audit services for Velachery residents and small businesses.",
     url: "/chartered-accountant-velachery-chennai",

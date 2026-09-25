@@ -12,7 +12,7 @@ const PAGE_URL = `${SITE_URL}/formation-of-business-entity`;
 export const metadata: Metadata = {
   title: { absolute: "Company Registration in Chennai — All Business Structures" },
   description:
-    "Company registration in Chennai — Private Limited, LLP, OPC, Partnership, or Sole Proprietorship — with end-to-end documentation and compliance from C S Rushil & Co.",
+    "Company registration in Chennai — Private Limited, LLP, OPC, Partnership, or Sole Proprietorship — end-to-end documentation and compliance from C S Rushil & Co.",
   alternates: { canonical: "/formation-of-business-entity" },
 };
 

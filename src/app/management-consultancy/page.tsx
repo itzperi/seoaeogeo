@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Management Consultancy Services in Chennai" },
   description:
-    "Business process, risk, and strategy advisory for Chennai businesses and startups — turning compliance data into operating decisions with expert-led consultancy.",
+    "Business process, risk, and strategy advisory for Chennai businesses and startups — turning compliance data into operating decisions.",
   alternates: { canonical: "/management-consultancy" },
 };
 

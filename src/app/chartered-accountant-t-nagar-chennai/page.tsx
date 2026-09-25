@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "GST, tax, and audit services for T Nagar traders and retail businesses — from a Chennai chartered accountancy firm familiar with high-volume retail compliance.",
   alternates: { canonical: "/chartered-accountant-t-nagar-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in T Nagar, Chennai",
     description: "GST, tax, and audit services tailored to T Nagar's retail and trading businesses.",
     url: "/chartered-accountant-t-nagar-chennai",

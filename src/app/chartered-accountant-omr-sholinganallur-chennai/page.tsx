@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "Company incorporation, GST, payroll TDS, and virtual CFO services for IT and startup businesses along Chennai's OMR IT corridor and Sholinganallur.",
   alternates: { canonical: "/chartered-accountant-omr-sholinganallur-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in OMR / Sholinganallur, Chennai",
     description: "CA services for IT companies and startups along the OMR IT corridor.",
     url: "/chartered-accountant-omr-sholinganallur-chennai",

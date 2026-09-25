@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "Income tax filing, GST registration, and MSME/Udyam registration for Tambaram residents and small businesses, from a Chennai chartered accountancy firm.",
   alternates: { canonical: "/chartered-accountant-tambaram-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Tambaram, Chennai",
     description: "Income tax, GST, and MSME registration services for Tambaram residents and businesses.",
     url: "/chartered-accountant-tambaram-chennai",

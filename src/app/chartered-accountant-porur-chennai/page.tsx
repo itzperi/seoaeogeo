@@ -7,9 +7,10 @@ const PAGE_URL = `${SITE_URL}/chartered-accountant-porur-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "Chartered Accountant in Porur, Chennai" },
   description:
-    "Income tax filing, GST registration, and company incorporation for Porur's IT professionals and growing local businesses, from a Chennai chartered accountancy firm.",
+    "Income tax filing, GST registration, and company incorporation for Porur's IT professionals and growing local businesses, from a Chennai CA firm.",
   alternates: { canonical: "/chartered-accountant-porur-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Porur, Chennai",
     description: "Income tax filing, GST, and incorporation services for Porur residents and businesses.",
     url: "/chartered-accountant-porur-chennai",

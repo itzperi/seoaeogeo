@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "Company registration in Chennai — Private Limited Company, LLP, and OPC — name approval, MCA/SPICe+ filing, and certificate of incorporation by C S Rushil & Co.",
   alternates: { canonical: "/company-registration-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Company Registration in Chennai",
     description: "Private Limited, LLP, and OPC company registration for Chennai founders.",
     url: "/company-registration-chennai",

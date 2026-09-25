@@ -5,9 +5,10 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "LLP Registration in Chennai | Limited Liability Partnership" },
   description:
-    "LLP registration in Chennai — DPIN/DSC, name reservation, FiLLiP filing, and LLP Agreement drafting for professional and services businesses, by C S Rushil & Co.",
+    "LLP registration in Chennai — DPIN/DSC, name reservation, FiLLiP filing, and LLP Agreement drafting for professional businesses, by C S Rushil & Co.",
   alternates: { canonical: "/llp-registration-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "LLP Registration in Chennai",
     description: "End-to-end Limited Liability Partnership registration for Chennai founders.",
     url: "/llp-registration-chennai",

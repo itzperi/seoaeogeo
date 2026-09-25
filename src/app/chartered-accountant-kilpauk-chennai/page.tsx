@@ -7,9 +7,10 @@ const PAGE_URL = `${SITE_URL}/chartered-accountant-kilpauk-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "Chartered Accountant in Kilpauk, Chennai" },
   description:
-    "Company registration, GST, income tax, and audit services for Kilpauk residents and local businesses, from a Chennai chartered accountancy firm minutes away in Anna Nagar.",
+    "Company registration, GST, income tax, and audit services for Kilpauk residents and local businesses, from a Chennai CA firm minutes away in Anna Nagar.",
   alternates: { canonical: "/chartered-accountant-kilpauk-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Kilpauk, Chennai",
     description: "CA services for Kilpauk residents and local businesses, based nearby in Anna Nagar.",
     url: "/chartered-accountant-kilpauk-chennai",

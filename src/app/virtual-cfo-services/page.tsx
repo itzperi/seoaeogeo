@@ -12,9 +12,10 @@ const PAGE_URL = `${SITE_URL}/virtual-cfo-services`;
 export const metadata: Metadata = {
   title: { absolute: "Virtual CFO Services in Chennai for Startups & SMEs" },
   description:
-    "Outsourced financial leadership for Chennai startups and SMEs — MIS reporting, budgeting, fundraising support, and board-ready financials without a full-time CFO.",
+    "Outsourced financial leadership for Chennai startups and SMEs — MIS reporting, budgeting, and fundraising support without a full-time CFO.",
   alternates: { canonical: "/virtual-cfo-services" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Virtual CFO Services in Chennai",
     description: "Outsourced CFO-level financial leadership for growing Chennai businesses.",
     url: "/virtual-cfo-services",

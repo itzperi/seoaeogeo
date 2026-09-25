@@ -5,9 +5,10 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Transfer Pricing Audit in Chennai" },
   description:
-    "Transfer pricing audit and documentation for related-party transactions — Form 3CEB, arm's-length pricing, and Income Tax Act compliance, from a Chennai chartered accountancy firm.",
+    "Transfer pricing audit and documentation for related-party transactions — Form 3CEB, arm's-length pricing, from a Chennai CA firm.",
   alternates: { canonical: "/transfer-pricing-audit" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Transfer Pricing Audit in Chennai",
     description: "Transfer pricing documentation and Form 3CEB compliance for Chennai businesses with related-party transactions.",
     url: "/transfer-pricing-audit",

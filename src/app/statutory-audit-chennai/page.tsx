@@ -5,9 +5,10 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Statutory Audit in Chennai | Companies Act Audit" },
   description:
-    "Statutory audit for private limited companies and LLPs in Chennai — independent verification of financial statements under the Companies Act, delivered by C S Rushil & Co.",
+    "Statutory audit for private limited companies and LLPs in Chennai — independent verification of financial statements under the Companies Act.",
   alternates: { canonical: "/statutory-audit-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Statutory Audit in Chennai",
     description: "Companies Act statutory audit for Chennai businesses — independent, evidence-based reporting.",
     url: "/statutory-audit-chennai",

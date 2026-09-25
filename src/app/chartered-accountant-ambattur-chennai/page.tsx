@@ -7,9 +7,10 @@ const PAGE_URL = `${SITE_URL}/chartered-accountant-ambattur-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "Chartered Accountant in Ambattur, Chennai" },
   description:
-    "Statutory audit, ROC compliance, and GST services for Ambattur's manufacturing and engineering businesses, from a Chennai chartered accountancy firm based in Anna Nagar.",
+    "Statutory audit, ROC compliance, and GST services for Ambattur's manufacturing and engineering businesses, from a Chennai CA firm based in Anna Nagar.",
   alternates: { canonical: "/chartered-accountant-ambattur-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Ambattur, Chennai",
     description: "Statutory audit, ROC compliance, and GST services for Ambattur's manufacturing businesses.",
     url: "/chartered-accountant-ambattur-chennai",

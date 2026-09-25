@@ -12,9 +12,10 @@ const PAGE_URL = `${SITE_URL}/gst-litigation-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "GST Litigation in Chennai | Appeals & Notice Reply" },
   description:
-    "Received a GST notice in Chennai? Get urgent show-cause notice reply support, departmental audit representation, and GSTAT appeals from C S Rushil & Co. — response within 24 hours.",
+    "Received a GST notice in Chennai? Get urgent show-cause reply support and GSTAT appeal representation from C S Rushil & Co. — 24-hour response.",
   alternates: { canonical: "/gst-litigation-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "GST Litigation in Chennai",
     description: "Show-cause notice replies, appeals, and GSTAT representation by a Chennai chartered accountancy firm.",
     url: "/gst-litigation-chennai",

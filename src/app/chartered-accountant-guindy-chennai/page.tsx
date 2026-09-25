@@ -7,9 +7,10 @@ const PAGE_URL = `${SITE_URL}/chartered-accountant-guindy-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "Chartered Accountant in Guindy, Chennai" },
   description:
-    "Statutory audit, ROC compliance, and GST litigation support for Guindy's corporate offices and industrial estate businesses, from a Chennai chartered accountancy firm.",
+    "Statutory audit, ROC compliance, and GST litigation support for Guindy's corporate offices and industrial estate businesses, from a Chennai CA firm.",
   alternates: { canonical: "/chartered-accountant-guindy-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Guindy, Chennai",
     description: "Statutory audit, ROC compliance, and GST services for Guindy businesses.",
     url: "/chartered-accountant-guindy-chennai",

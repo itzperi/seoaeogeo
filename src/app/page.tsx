@@ -10,9 +10,10 @@ import { ADDRESS_FULL, ADDRESS_SHORT, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_D
 export const metadata: Metadata = {
   title: "Chartered Accountant Near Me in Chennai",
   description:
-    "C S Rushil & Co. is a Chennai chartered accountancy firm led by CA Rushil C S. Private limited company incorporation, GST litigation, audit, and tax services — Anna Nagar, Chennai.",
+    "C S Rushil & Co. is a Chennai CA firm led by CA Rushil C S. Company incorporation, GST litigation, audit, and tax services in Anna Nagar, Chennai.",
   alternates: { canonical: "/" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "C S Rushil & Co. — Chartered Accountants in Chennai",
     description:
       "Private limited company incorporation, GST litigation, audit, and tax services from a Chennai-based CA firm in Anna Nagar.",

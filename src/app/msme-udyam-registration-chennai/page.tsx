@@ -5,9 +5,10 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "MSME / Udyam Registration in Chennai" },
   description:
-    "Udyam (MSME) registration for small and medium enterprises in Chennai — unlock collateral-free loans, delayed-payment protection, and government scheme benefits.",
+    "Udyam (MSME) registration for small and medium enterprises in Chennai — unlock collateral-free loans, delayed-payment protection, and scheme benefits.",
   alternates: { canonical: "/msme-udyam-registration-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "MSME / Udyam Registration in Chennai",
     description: "Udyam registration process and benefits for Chennai small businesses.",
     url: "/msme-udyam-registration-chennai",

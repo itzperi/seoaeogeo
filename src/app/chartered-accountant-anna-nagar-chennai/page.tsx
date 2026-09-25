@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "C S Rushil & Co. is based in Anna Nagar, Chennai — company registration, GST, audit, and tax services from a CA firm headquartered in the neighbourhood.",
   alternates: { canonical: "/chartered-accountant-anna-nagar-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Anna Nagar, Chennai",
     description: "Company registration, GST, audit, and tax services from a CA firm based in Anna Nagar.",
     url: "/chartered-accountant-anna-nagar-chennai",

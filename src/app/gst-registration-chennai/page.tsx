@@ -8,6 +8,7 @@ export const metadata: Metadata = {
     "New GST registration for businesses and professionals in Chennai — document preparation, ARN tracking, amendments, and LUT applications by C S Rushil & Co.",
   alternates: { canonical: "/gst-registration-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "GST Registration in Chennai",
     description: "New GST registration, amendments, and LUT applications for Chennai businesses.",
     url: "/gst-registration-chennai",

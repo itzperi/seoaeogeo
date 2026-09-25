@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "Tax audit, income tax filing, and trust/NGO registration for Adyar's professionals, consultants, and long-established institutions, from a Chennai CA firm.",
   alternates: { canonical: "/chartered-accountant-adyar-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Adyar, Chennai",
     description: "CA services for Adyar's professionals, consultants, and institutions.",
     url: "/chartered-accountant-adyar-chennai",

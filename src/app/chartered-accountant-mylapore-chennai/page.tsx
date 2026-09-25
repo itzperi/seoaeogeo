@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     "Trust and NGO registration, income tax filing, and GST services for Mylapore's cultural institutions, professionals, and long-established traders in Chennai.",
   alternates: { canonical: "/chartered-accountant-mylapore-chennai" },
   openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Mylapore, Chennai",
     description: "Trust/NGO registration and tax services for Mylapore's institutions, professionals, and traders.",
     url: "/chartered-accountant-mylapore-chennai",
