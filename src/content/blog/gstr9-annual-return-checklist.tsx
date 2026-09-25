@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "gstr9-annual-return-checklist",
   title: "GSTR 9 Annual Return: A Filing Checklist for Small Businesses",
   description:
-    "GSTR 9 is the annual return every regular GST registered business needs to file, summarizing an entire financial year of GSTR 1 and GSTR 3B filings into...",
+    "GSTR 9 is the annual return every regular GST registered business must file, summarizing a full year of GSTR-1 and GSTR-3B filings. A practical checklist.",
   date: "2026-09-19",
   excerpt:
     "GSTR 9 is the annual return every regular GST registered business needs to file, summarizing an entire financial year of GSTR 1 and GSTR 3B...",

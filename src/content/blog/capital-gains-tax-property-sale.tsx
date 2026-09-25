@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "capital-gains-tax-property-sale",
   title: "Capital Gains Tax on Property Sale: What Chennai Sellers Need to Know",
   description:
-    "Selling a flat or plot in Chennai triggers a capital gains tax calculation that surprises a lot of first time sellers, mainly because the tax depends...",
+    "Selling a flat or plot in Chennai triggers a capital gains tax calculation that surprises first-time sellers — it depends heavily on holding period.",
   date: "2026-09-19",
   excerpt:
     "Selling a flat or plot in Chennai triggers a capital gains tax calculation that surprises a lot of first time sellers, mainly because the...",

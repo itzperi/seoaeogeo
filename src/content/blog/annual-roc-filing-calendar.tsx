@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "annual-roc-filing-calendar",
   title: "Annual ROC Filing Deadlines: A Calendar for Chennai Companies",
   description:
-    "Registrar of Companies filings follow a predictable annual cycle, but the specific forms and their deadlines are scattered enough across the year that...",
+    "ROC filings follow a predictable annual cycle, but the forms and deadlines are scattered enough that even organized Chennai companies miss one.",
   date: "2026-09-19",
   excerpt:
     "Registrar of Companies filings follow a predictable annual cycle, but the specific forms and their deadlines are scattered enough across...",

@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "msme-loan-schemes-tamil-nadu",
   title: "MSME Loan Schemes Available to Small Businesses in Tamil Nadu",
   description:
-    "Small business owners in Chennai often assume bank loans are their only financing option, without realizing that registering as an MSME under Udyam opens...",
+    "Chennai small business owners often assume bank loans are their only option, without realizing Udyam/MSME registration unlocks better-terms loan schemes.",
   date: "2026-09-19",
   excerpt:
     "Small business owners in Chennai often assume bank loans are their only financing option, without realizing that registering as an MSME...",

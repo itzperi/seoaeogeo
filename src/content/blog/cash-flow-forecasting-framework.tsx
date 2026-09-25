@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "cash-flow-forecasting-framework",
   title: "A Simple Cash Flow Forecasting Framework for Small Businesses",
   description:
-    "Cash flow forecasting sounds like something only large companies need, but small and mid sized businesses in Chennai often run into far more serious cash...",
+    "Cash flow forecasting sounds like something only large companies need, but small Chennai businesses often run into cash problems for exactly that reason.",
   date: "2026-09-19",
   excerpt:
     "Cash flow forecasting sounds like something only large companies need, but small and mid sized businesses in Chennai often run into far...",

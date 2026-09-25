@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "common-compliance-mistakes-chennai-startups",
   title: "Common Compliance Mistakes Chennai Startups Make in Their First Year",
   description:
-    "Founders launching a business in Chennai are usually focused on customers and product, which is exactly right, but it also means compliance mistakes tend...",
+    "Chennai founders focused on customers and product often let compliance mistakes pile up quietly until they surface as penalties or blocked fundraising.",
   date: "2026-09-19",
   excerpt:
     "Founders launching a business in Chennai are usually focused on customers and product, which is exactly right, but it also means compliance...",

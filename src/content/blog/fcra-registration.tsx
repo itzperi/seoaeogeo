@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "fcra-registration",
   title: "FCRA Registration: What Chennai NGOs Need to Know Before Accepting Foreign Funds",
   description:
-    "Any trust, society, or Section 8 company in Chennai that wants to receive donations or grants from a foreign source needs FCRA registration first, and the...",
+    "Any Chennai trust, society, or Section 8 company accepting foreign donations needs FCRA registration first — and the rules have tightened considerably.",
   date: "2026-09-19",
   excerpt:
     "Any trust, society, or Section 8 company in Chennai that wants to receive donations or grants from a foreign source needs FCRA registration...",

@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "advance-tax-deadlines",
   title: "Advance Tax Deadlines for FY 2026 to 27: A Practical Guide",
   description:
-    "Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires estimating income and...",
+    "Advance tax catches consultants, freelancers, and small business owners in Chennai off guard — it means paying tax in installments through the year.",
   date: "2026-09-19",
   excerpt:
     "Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires...",

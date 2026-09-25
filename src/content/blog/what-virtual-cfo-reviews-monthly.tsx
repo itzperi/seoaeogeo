@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "what-virtual-cfo-reviews-monthly",
   title: "What a Virtual CFO Actually Reviews Every Month",
   description:
-    "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense that it's more...",
+    "Business owners considering Virtual CFO support often aren't sure what it actually involves month to month. Here's what a genuine monthly review covers.",
   date: "2026-09-19",
   excerpt:
     "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense...",

@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "documents-checklist-before-auditor-visit",
   title: "Documents Checklist Before Your Auditor's Visit",
   description:
-    "A surprising amount of audit delay in Chennai businesses has nothing to do with the complexity of the books and everything to do with documents not being...",
+    "Most audit delay in Chennai businesses has nothing to do with book complexity and everything to do with documents not being ready when the auditor arrives.",
   date: "2026-09-19",
   excerpt:
     "A surprising amount of audit delay in Chennai businesses has nothing to do with the complexity of the books and everything to do with...",

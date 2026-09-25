@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "after-gst-show-cause-reply",
   title: "What Happens After You Reply to a GST Show Cause Notice",
   description:
-    "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural next question...",
+    "Filed your reply to a GST show-cause notice already? Here's what happens next, and realistically how long you should expect the process to take.",
   date: "2026-09-19",
   excerpt:
     "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",

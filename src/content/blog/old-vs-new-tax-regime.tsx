@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "old-vs-new-tax-regime",
   title: "Old vs New Tax Regime for FY 2026 to 27: Which One Actually Saves You Money",
   description:
-    "Every year around this time, salaried professionals and small business owners in Chennai ask the same question: should I stick with the old tax regime or...",
+    "Salaried professionals and small business owners in Chennai ask this every year: old tax regime or new? The honest answer depends on your actual deductions.",
   date: "2026-09-19",
   excerpt:
     "Every year around this time, salaried professionals and small business owners in Chennai ask the same question: should I stick with the old...",

@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "tds-on-rent",
   title: "TDS on Rent: What Chennai Landlords and Tenants Both Need to Know",
   description:
-    "Tax deducted at source on rent payments trips up both sides of the transaction in Chennai, tenants who don't realize they need to deduct it and landlords...",
+    "TDS on rent trips up both sides in Chennai — tenants who don't realize they must deduct it, and landlords who forget to check it against their return.",
   date: "2026-09-19",
   excerpt:
     "Tax deducted at source on rent payments trips up both sides of the transaction in Chennai, tenants who don't realize they need to deduct it...",

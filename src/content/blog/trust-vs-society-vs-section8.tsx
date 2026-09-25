@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "trust-vs-society-vs-section8",
   title: "Trust vs Society vs Section 8 Company: Choosing the Right NGO Structure",
   description:
-    "Anyone starting a charitable or nonprofit initiative in Chennai has to choose between three common structures, a trust, a society, or a Section 8 company,...",
+    "Starting a nonprofit in Chennai means choosing between a trust, a society, or a Section 8 company — the right choice depends on governance and funding plans.",
   date: "2026-09-19",
   excerpt:
     "Anyone starting a charitable or nonprofit initiative in Chennai has to choose between three common structures, a trust, a society, or a...",

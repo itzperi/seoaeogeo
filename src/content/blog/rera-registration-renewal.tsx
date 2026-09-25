@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "rera-registration-renewal",
   title: "RERA Registration Renewal Deadlines: What Chennai Developers Need to Track",
   description:
-    "Real estate developers and agents in Chennai working on projects that fall under the Real Estate Regulatory Authority need to track not just their initial...",
+    "Chennai real estate developers and agents need to track not just initial RERA registration but renewal deadlines and ongoing disclosure obligations.",
   date: "2026-09-19",
   excerpt:
     "Real estate developers and agents in Chennai working on projects that fall under the Real Estate Regulatory Authority need to track not...",

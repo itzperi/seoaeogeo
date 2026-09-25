@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "itc-mismatch-notices",
   title: "Input Tax Credit Mismatch Notices: Why They Happen and How to Respond",
   description:
-    "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to one simple...",
+    "An ITC mismatch notice is one of the most common GST notices Chennai businesses receive — usually because GSTR-3B and a supplier's GSTR-1 don't match.",
   date: "2026-09-19",
   excerpt:
     "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to...",

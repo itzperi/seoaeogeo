@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "statutory-vs-tax-vs-internal-audit",
   title: "Statutory Audit vs Tax Audit vs Internal Audit: What Is the Difference",
   description:
-    "Business owners in Chennai often use the word audit as if it means one single thing, but statutory audit, tax audit, and internal audit are three separate...",
+    "Chennai business owners often treat \"audit\" as one thing, but statutory, tax, and internal audit are three separate exercises with different triggers.",
   date: "2026-09-19",
   excerpt:
     "Business owners in Chennai often use the word audit as if it means one single thing, but statutory audit, tax audit, and internal audit are...",

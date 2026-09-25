@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "add-remove-director",
   title: "How to Add or Remove a Director from Your Company",
   description:
-    "Founders in Chennai often need to add a co founder as a director, bring on an investor's nominee, or remove a director who is exiting the business, and...",
+    "Founders in Chennai often need to add a co founder, an investor's nominee, or remove a director who is exiting — each has a specific procedure to follow.",
   date: "2026-09-19",
   excerpt:
     "Founders in Chennai often need to add a co founder as a director, bring on an investor's nominee, or remove a director who is exiting the...",

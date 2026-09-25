@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "gst-registration-online-sellers-chennai",
   title: "GST Registration for Online Sellers in Chennai: What Is Different",
   description:
-    "Selling on Amazon, Flipkart, Meesho, or your own website is not the same as running a regular shop when it comes to GST, and a lot of first time sellers...",
+    "Selling on Amazon, Flipkart, Meesho, or your own website isn't the same as running a regular shop under GST — many first-time sellers learn this the hard way.",
   date: "2026-09-19",
   excerpt:
     "Selling on Amazon, Flipkart, Meesho, or your own website is not the same as running a regular shop when it comes to GST, and a lot of first...",

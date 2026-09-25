@@ -85,7 +85,7 @@ export default function Body() {
           <tr>
             <td>Continuity risk</td>
             <td>Single point of failure if the individual leaves</td>
-            <td>Backed by a firm's broader team, not one individual</td>
+            <td>Backed by a firm&apos;s broader team, not one individual</td>
           </tr>
           <tr>
             <td>Best fit</td>

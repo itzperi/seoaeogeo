@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "post-incorporation-compliance-checklist",
   title: "Post Incorporation Compliance Checklist for New Chennai Companies",
   description:
-    "Getting the incorporation certificate feels like the finish line, but for a newly registered company it is actually the starting point for a set of...",
+    "Getting the incorporation certificate feels like the finish line, but it's actually the start of compliance steps with specific windows and real penalties.",
   date: "2026-09-19",
   excerpt:
     "Getting the incorporation certificate feels like the finish line, but for a newly registered company it is actually the starting point for...",

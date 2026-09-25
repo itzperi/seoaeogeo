@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "choosing-ca-firm-anna-nagar",
   title: "Choosing a CA Firm in Anna Nagar: What to Actually Look For",
   description:
-    "Anna Nagar has no shortage of chartered accountants and CA firms, which makes choosing one feel harder rather than easier for a business owner who just...",
+    "Anna Nagar has no shortage of CA firms, which makes choosing one feel harder for a business owner who just wants someone reliable and responsive.",
   date: "2026-09-19",
   excerpt:
     "Anna Nagar has no shortage of chartered accountants and CA firms, which makes choosing one feel harder rather than easier for a business...",

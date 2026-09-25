@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "startup-india-registration",
   title: "Startup India Registration: Is It Worth It for Your Chennai Business",
   description:
-    "Startup India recognition gets mentioned often by founders in Chennai, but there's genuine confusion about what it actually provides versus what people...",
+    "Startup India recognition gets mentioned often by Chennai founders, but there's genuine confusion about what it actually provides versus what people assume.",
   date: "2026-09-19",
   excerpt:
     "Startup India recognition gets mentioned often by founders in Chennai, but there's genuine confusion about what it actually provides versus...",

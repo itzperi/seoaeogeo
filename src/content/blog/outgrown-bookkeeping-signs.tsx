@@ -4,7 +4,7 @@ export const meta: BlogPostMeta = {
   slug: "outgrown-bookkeeping-signs",
   title: "Signs Your Chennai Business Has Outgrown Basic Bookkeeping",
   description:
-    "Bookkeeping keeps your transaction records accurate, but there is a point where a growing business needs more than accurate records, it needs someone...",
+    "Bookkeeping keeps your records accurate, but a growing business eventually needs someone actively interpreting the numbers, not just recording them.",
   date: "2026-09-19",
   excerpt:
     "Bookkeeping keeps your transaction records accurate, but there is a point where a growing business needs more than accurate records, it...",
