@@ -66,6 +66,7 @@ export default function MobileNav({ services }: { services: ServiceSummary[] }) 
               {[
                 ["About", "/about-us"],
                 ["Insights", "/blog"],
+                ["FAQ", "/faq"],
                 ["Contact", "/contact"],
               ].map(([label, href]) => (
                 <li key={href}>
