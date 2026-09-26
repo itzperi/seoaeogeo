@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { AREAS } from "@/lib/areas";
 import { SERVICES } from "@/lib/services";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
@@ -16,13 +17,22 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-ash bg-paper relative">
       <div className="container-page flex h-16 items-center justify-between gap-6">
-        <Link href="/" className="flex shrink-0 flex-col leading-tight">
-          <span className="text-xl font-semibold tracking-tight text-obsidian">
-            C S Rushil &amp; Co.
-          </span>
-          <span className="text-[11px] font-medium uppercase tracking-wider text-slate">
-            Chartered Accountants
-          </span>
+        <Link href="/" className="flex shrink-0 items-start gap-2">
+          <div className="flex flex-col leading-tight">
+            <span className="text-xl font-semibold tracking-tight text-obsidian">
+              C S Rushil &amp; Co.
+            </span>
+            <span className="text-[11px] font-medium uppercase tracking-wider text-slate">
+              Chartered Accountants
+            </span>
+          </div>
+          <Image
+            src="/images/ca-india-badge.png"
+            alt="CA India"
+            width={28}
+            height={28}
+            className="h-7 w-7 shrink-0"
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1 text-sm font-medium text-slate">

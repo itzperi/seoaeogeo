@@ -36,6 +36,7 @@ export default function Page() {
         { slug: "goods-and-services-tax", why: "GST registration and return filing for Porur's growing base of local retail and service businesses." },
         { slug: "private-limited-company-incorporation-chennai", why: "Company incorporation for first-time founders setting up locally in Porur." },
         { slug: "llp-registration-chennai", why: "LLP registration for consultancies and professional services firms setting up locally in Porur." },
+        { slug: "bookkeeping-services-chennai", why: "Cloud accounting setup for Porur's newly formed consultancies and growing local businesses." },
       ]}
       faqs={[
         { question: "I live in Porur but work in the OMR IT corridor — can you still help with my tax filing?", answer: "Yes — where you live and where you work don't need to match for us to handle your individual income tax return filing; this is a common situation for Porur residents." },

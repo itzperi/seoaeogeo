@@ -37,6 +37,8 @@ export default function Page() {
         { slug: "statutory-audit-chennai", why: "Statutory audit for Anna Nagar-based companies, with fieldwork scheduled around your calendar." },
         { slug: "roc-compliances", why: "Annual ROC filings and Companies Act compliance for Anna Nagar companies, from incorporation onward." },
         { slug: "msme-udyam-registration-chennai", why: "Udyam registration for Anna Nagar's small manufacturers and trading businesses." },
+        { slug: "bookkeeping-services-chennai", why: "Cloud accounting and monthly MIS reporting for Anna Nagar's manufacturers, traders, and services businesses." },
+        { slug: "payroll-services-chennai", why: "Payroll outsourcing with PF, ESI, and TDS compliance for Anna Nagar employers." },
       ]}
       faqs={[
         { question: "Is your office actually located in Anna Nagar?", answer: "Yes — Anna Nagar is our registered office and where our team works day-to-day, not a service-area claim. See our contact page for the exact address and a map." },
