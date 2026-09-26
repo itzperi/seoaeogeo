@@ -36,6 +36,8 @@ export default function Page() {
         { slug: "virtual-cfo-services", why: "MIS reporting, runway tracking, and investor-ready financials for growth-stage IT and startup businesses." },
         { slug: "goods-and-services-tax", why: "GST registration, export invoicing, and LUT applications for IT/software services companies." },
         { slug: "transfer-pricing-audit", why: "Form 3CEB and arm's-length pricing documentation for OMR-based IT subsidiaries transacting with a foreign parent or group companies." },
+        { slug: "bookkeeping-services-chennai", why: "Investor-ready MIS, foreign-subsidiary bookkeeping, and cloud accounting for OMR's IT and startup businesses." },
+        { slug: "payroll-services-chennai", why: "Payroll and ESOP taxation for OMR's growth-stage startups, including pre-entity payroll for foreign companies setting up here." },
       ]}
       faqs={[
         { question: "Do you work with IT and software services companies specifically?", answer: "Yes — we handle incorporation, GST (including export invoicing and LUT filings), payroll TDS, and virtual CFO support for IT services firms and startups along the OMR corridor." },

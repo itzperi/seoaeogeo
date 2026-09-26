@@ -35,6 +35,7 @@ export default function Page() {
         { slug: "statutory-audit-chennai", why: "Statutory audit for manufacturing and engineering companies, including inventory and fixed-asset verification." },
         { slug: "roc-compliances", why: "Annual ROC filings and Companies Act compliance for Ambattur's registered small and medium manufacturers." },
         { slug: "msme-udyam-registration-chennai", why: "Udyam registration and delayed-payment protection for manufacturing units supplying larger OEMs." },
+        { slug: "payroll-services-chennai", why: "PF, ESI, and labour law compliance for Ambattur's factory and manufacturing workforce." },
       ]}
       faqs={[
         { question: "Do you audit manufacturing and engineering companies specifically?", answer: "Yes — statutory audit for manufacturing units, including inventory valuation, fixed-asset verification, and job-work related documentation, is a regular part of our practice given Ambattur's industrial base." },

@@ -129,6 +129,18 @@ export const SERVICES: ServiceSummary[] = [
     shortDescription:
       "Indicative pricing for company incorporation, GST, and audit services from a Chennai chartered accountancy firm.",
   },
+  {
+    slug: "bookkeeping-services-chennai",
+    name: "Bookkeeping Services",
+    shortDescription:
+      "Cloud accounting, monthly books close, and MIS reporting on Zoho Books, Tally Prime, QuickBooks, or Xero for Chennai businesses.",
+  },
+  {
+    slug: "payroll-services-chennai",
+    name: "Payroll Services",
+    shortDescription:
+      "End-to-end payroll outsourcing with PF, ESI, Professional Tax, and TDS compliance for businesses across Chennai.",
+  },
 ];
 
 export function getService(slug: string) {

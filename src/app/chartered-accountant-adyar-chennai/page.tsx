@@ -35,6 +35,7 @@ export default function Page() {
         { slug: "trust", why: "Trust, society, and Section 8 company registration, including 12A/80G exemption support for Adyar's institutions and NGOs." },
         { slug: "tax-audit-chennai", why: "Section 44ADA tax audit assessment for independent professionals — doctors, consultants, and similar practices." },
         { slug: "income-tax-return-filing-chennai", why: "Individual income tax filing and advance tax planning for professionals and salaried residents." },
+        { slug: "bookkeeping-services-chennai", why: "Practice-specific bookkeeping for Adyar's independent doctors, clinics, and consulting practices." },
       ]}
       faqs={[
         { question: "Do you handle 12A/80G registration for trusts and NGOs in Adyar?", answer: "Yes — trust, society, and Section 8 company formation along with 12A/80G registration for tax-exempt status is a core part of our practice, and Adyar's concentration of educational and non-profit institutions makes this a recurring engagement for us in the area." },

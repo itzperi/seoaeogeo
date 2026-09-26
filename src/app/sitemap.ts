@@ -8,7 +8,7 @@ import { SITE_URL } from "@/lib/site";
 // content rewrite) — using `new Date()` here would stamp every page as
 // "modified today" on every build, which defeats lastModified as a
 // freshness signal to crawlers.
-const SITE_LAST_MODIFIED = new Date("2026-09-25");
+const SITE_LAST_MODIFIED = new Date("2026-09-26");
 
 const STATIC_PATHS = [
   { path: "", priority: 1 },
