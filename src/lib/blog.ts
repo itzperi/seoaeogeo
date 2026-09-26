@@ -160,6 +160,24 @@ const modules = {
     import("@/content/blog/fcra-mylapore-cultural-institutions"),
   "direct-tax-mylapore-trading-families": () =>
     import("@/content/blog/direct-tax-mylapore-trading-families"),
+  "business-personal-expenses-separate": () =>
+    import("@/content/blog/business-personal-expenses-separate"),
+  "safe-cash-deposit-limit": () =>
+    import("@/content/blog/safe-cash-deposit-limit"),
+  "why-income-tax-notices-issued": () =>
+    import("@/content/blog/why-income-tax-notices-issued"),
+  "gst-threshold-is-a-trigger": () =>
+    import("@/content/blog/gst-threshold-is-a-trigger"),
+  "cost-of-diy-gst-filing": () =>
+    import("@/content/blog/cost-of-diy-gst-filing"),
+  "cash-flow-not-profit-business-failure": () =>
+    import("@/content/blog/cash-flow-not-profit-business-failure"),
+  "bookkeeping-adyar-clinics": () =>
+    import("@/content/blog/bookkeeping-adyar-clinics"),
+  "payroll-omr-startup-esop": () =>
+    import("@/content/blog/payroll-omr-startup-esop"),
+  "payroll-ambattur-factory-workforce": () =>
+    import("@/content/blog/payroll-ambattur-factory-workforce"),
 } as const;
 
 export type BlogSlug = keyof typeof modules;
@@ -806,6 +824,87 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-26",
     excerpt:
       "Mylapore has a genuine base of long-established trading families. Handing the business over raises direct tax questions rarely planned for in advance.",
+  },
+  {
+    slug: "business-personal-expenses-separate",
+    title: "Mixing Business and Personal Expenses Is the Habit That Costs You the Most at Tax Time",
+    description:
+      "Paying a personal bill from the business account feels harmless in the moment. It's the single habit that creates the most avoidable tax and audit pain.",
+    date: "2026-09-26",
+    excerpt:
+      "Paying a personal bill from the business account feels harmless. It's the single habit that creates the most avoidable tax and audit pain.",
+  },
+  {
+    slug: "safe-cash-deposit-limit",
+    title: "How Much Cash Can You Actually Deposit Into Your Bank Account?",
+    description:
+      "There's no single legal cash deposit limit, but specific thresholds trigger automatic reporting to the Income Tax Department. Here's what those actually are.",
+    date: "2026-09-26",
+    excerpt:
+      "There's no single legal cash deposit limit, but specific thresholds trigger automatic reporting to the Income Tax Department.",
+  },
+  {
+    slug: "why-income-tax-notices-issued",
+    title: "Why Income Tax Notices Get Issued — the Actual Triggers, Not the Scary Stories",
+    description:
+      "An income tax notice usually means one specific, fixable data mismatch — not that you're in trouble. Here are the actual triggers behind most notices.",
+    date: "2026-09-26",
+    excerpt:
+      "An income tax notice usually means one specific, fixable data mismatch — not that you're in trouble. Here are the actual triggers.",
+  },
+  {
+    slug: "gst-threshold-is-a-trigger",
+    title: "The GST Threshold Isn't a Safe Zone — It's a Trigger",
+    description:
+      "Staying just under the GST registration threshold feels safe. In practice, it's the moment that starts a clock, not a permanent exemption.",
+    date: "2026-09-26",
+    excerpt:
+      "Staying just under the GST registration threshold feels safe. In practice, it's the moment that starts a clock, not a permanent exemption.",
+  },
+  {
+    slug: "cost-of-diy-gst-filing",
+    title: "What Actually Goes Wrong When You File GST Returns Yourself to Save a Few Thousand Rupees",
+    description:
+      "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely the amount you saved.",
+    date: "2026-09-26",
+    excerpt:
+      "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely small.",
+  },
+  {
+    slug: "cash-flow-not-profit-business-failure",
+    title: "Most Businesses Don't Fail From a Lack of Profit — They Fail From a Lack of Cash",
+    description:
+      "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
+    date: "2026-09-26",
+    excerpt:
+      "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
+  },
+  {
+    slug: "bookkeeping-adyar-clinics",
+    title: "Why Standard Bookkeeping Templates Don't Work for an Adyar Clinic",
+    description:
+      "A generic bookkeeping setup misses how a clinic actually earns and spends. Adyar's concentration of medical practices needs a genuinely different structure.",
+    date: "2026-09-26",
+    excerpt:
+      "A generic bookkeeping setup misses how a clinic actually earns and spends. Adyar's medical practices need a genuinely different structure.",
+  },
+  {
+    slug: "payroll-omr-startup-esop",
+    title: "Issuing ESOPs at Your OMR Startup? Payroll Has to Catch Up Before Exercise, Not After",
+    description:
+      "OMR's startups issue ESOPs early to attract talent, but perquisite tax at exercise catches payroll teams unprepared far more often than it should.",
+    date: "2026-09-26",
+    excerpt:
+      "OMR's startups issue ESOPs early to attract talent, but perquisite tax at exercise catches payroll teams unprepared more often than it should.",
+  },
+  {
+    slug: "payroll-ambattur-factory-workforce",
+    title: "The Payroll Compliance Gap That Shows Up Most in Ambattur's Factory Workforce",
+    description:
+      "Contract and casual labour arrangements common in Ambattur's manufacturing units create a specific PF and ESI compliance gap most factories don't notice.",
+    date: "2026-09-26",
+    excerpt:
+      "Contract and casual labour arrangements common in Ambattur's manufacturing units create a PF/ESI compliance gap most factories don't notice.",
   },
 ];
 

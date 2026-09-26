@@ -47,6 +47,7 @@ export default function Page() {
       furtherReading={[
         { slug: "virtual-cfo-omr-startups", title: "Virtual CFO Support for OMR's Growth-Stage Startups" },
         { slug: "transfer-pricing-omr-subsidiaries", title: "The Transfer Pricing Blind Spot for OMR's Indian Subsidiaries" },
+        { slug: "payroll-omr-startup-esop", title: "Issuing ESOPs at Your OMR Startup? Payroll Has to Catch Up Before Exercise, Not After" },
       ]}
     />
   );

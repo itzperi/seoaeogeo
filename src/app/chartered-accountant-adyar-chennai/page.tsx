@@ -44,6 +44,7 @@ export default function Page() {
       ]}
       furtherReading={[
         { slug: "12a-80g-adyar-institutions", title: "Adyar's Educational and Charitable Institutions Are Still Running on Old 12A/80G Norms" },
+        { slug: "bookkeeping-adyar-clinics", title: "Why Standard Bookkeeping Templates Don't Work for an Adyar Clinic" },
       ]}
     />
   );

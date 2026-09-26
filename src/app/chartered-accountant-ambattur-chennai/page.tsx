@@ -46,6 +46,7 @@ export default function Page() {
       furtherReading={[
         { slug: "statutory-audit-ambattur-manufacturers", title: "Why Statutory Audits Take Longer for Ambattur's Manufacturing Companies" },
         { slug: "roc-compliance-ambattur-manufacturers", title: "The ROC Compliance Gap in Ambattur's Long-Running Manufacturing Companies" },
+        { slug: "payroll-ambattur-factory-workforce", title: "The Payroll Compliance Gap That Shows Up Most in Ambattur's Factory Workforce" },
       ]}
     />
   );

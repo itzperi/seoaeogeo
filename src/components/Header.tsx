@@ -17,7 +17,14 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-ash bg-paper relative">
       <div className="container-page flex h-16 items-center justify-between gap-6">
-        <Link href="/" className="flex shrink-0 items-start gap-2">
+        <Link href="/" className="flex shrink-0 items-center gap-3">
+          <Image
+            src="/images/ca-india-badge.png"
+            alt="CA India"
+            width={44}
+            height={44}
+            className="h-11 w-11 shrink-0"
+          />
           <div className="flex flex-col leading-tight">
             <span className="text-xl font-semibold tracking-tight text-obsidian">
               C S Rushil &amp; Co.
@@ -26,13 +33,6 @@ export default function Header() {
               Chartered Accountants
             </span>
           </div>
-          <Image
-            src="/images/ca-india-badge.png"
-            alt="CA India"
-            width={28}
-            height={28}
-            className="h-7 w-7 shrink-0"
-          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1 text-sm font-medium text-slate">

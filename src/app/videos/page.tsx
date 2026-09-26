@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
@@ -15,26 +16,32 @@ const VIDEOS = [
   {
     id: "Ddtkk6AuFE2",
     topic: "Keep your business and personal expenses separate",
+    blogSlug: "business-personal-expenses-separate",
   },
   {
     id: "Ddq4Oprzv43",
     topic: "How much cash can you safely deposit into your bank account?",
+    blogSlug: "safe-cash-deposit-limit",
   },
   {
     id: "DW_lo3Kk_hd",
     topic: "Why income tax notices are commonly issued",
+    blogSlug: "why-income-tax-notices-issued",
   },
   {
     id: "DWeSksGE6DS",
     topic: "The GST threshold is not a safe zone — it's a trigger",
+    blogSlug: "gst-threshold-is-a-trigger",
   },
   {
     id: "DWRN8VAk-Oj",
     topic: "What can go wrong when you handle your own monthly GST filings",
+    blogSlug: "cost-of-diy-gst-filing",
   },
   {
     id: "DWEf3Nmk80W",
     topic: "Why businesses fail from lack of cash, not lack of profit",
+    blogSlug: "cash-flow-not-profit-business-failure",
   },
 ];
 
@@ -64,7 +71,15 @@ export default function VideosPage() {
                     title={video.topic}
                   />
                 </div>
-                <p className="p-4 text-sm text-slate">{video.topic}</p>
+                <div className="p-4">
+                  <p className="text-sm text-slate">{video.topic}</p>
+                  <Link
+                    href={`/blog/${video.blogSlug}`}
+                    className="mt-2 inline-block text-sm font-medium text-royal-violet underline underline-offset-2"
+                  >
+                    Read the full breakdown →
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
