@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
+import LeadForm from "@/components/LeadForm";
 import { JsonLd } from "@/lib/schema";
 import {
   ADDRESS_FULL,
+  BOOKING_EMBED_SRC,
   BUSINESS_HOURS,
   EMAIL,
   GOOGLE_MAPS_EMBED_SRC,
   PHONE_DISPLAY,
   PHONE_TEL,
   SITE_URL,
+  WHATSAPP_LINK,
 } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -38,18 +41,52 @@ export default function ContactPage() {
       />
 
       <section className="bg-paper py-16">
+        <div className="container-page">
+          <h2 className="text-2xl text-obsidian">Book a free consultation directly</h2>
+          <p className="mt-3 max-w-2xl text-slate">
+            Pick a time that works for you — this books directly onto our calendar, no back-and-forth over email.
+          </p>
+          <div className="mt-6 overflow-hidden rounded-cards border border-ash shadow-[var(--shadow-card)]">
+            <iframe
+              title="Book a free consultation with C S Rushil & Co."
+              src={BOOKING_EMBED_SRC}
+              width="100%"
+              height="600"
+              style={{ border: 0 }}
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-fog py-16">
         <div className="container-page grid grid-cols-1 gap-12 lg:grid-cols-2">
+          <div>
+            <h2 className="text-2xl text-obsidian">Prefer to tell us what you need first?</h2>
+            <p className="mt-3 text-slate">
+              Answer a few quick questions and we&apos;ll reach out to you — no need to pick a time slot upfront.
+            </p>
+            <div className="mt-6">
+              <LeadForm />
+            </div>
+          </div>
+
           <div className="space-y-6">
+            <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
+              <h2 className="text-lg font-medium text-obsidian">Talk to us right now</h2>
+              <div className="mt-3 flex flex-wrap gap-3">
+                <a href={`tel:${PHONE_TEL}`} className="rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90">
+                  Call {PHONE_DISPLAY}
+                </a>
+                <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="rounded-buttons border border-ash px-5 py-3 text-sm font-medium text-obsidian hover:bg-fog">
+                  WhatsApp Us
+                </a>
+              </div>
+            </div>
             <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
               <h2 className="text-lg font-medium text-obsidian">Office address</h2>
               <p className="mt-2 text-sm text-slate">{ADDRESS_FULL}</p>
-            </div>
-            <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
-              <h2 className="text-lg font-medium text-obsidian">Phone &amp; email</h2>
               <p className="mt-2 text-sm">
-                <a href={`tel:${PHONE_TEL}`} className="text-royal-violet hover:underline">{PHONE_DISPLAY}</a>
-              </p>
-              <p className="mt-1 text-sm">
                 <a href={`mailto:${EMAIL}`} className="text-royal-violet hover:underline">{EMAIL}</a>
               </p>
             </div>
@@ -64,18 +101,17 @@ export default function ContactPage() {
                 ))}
               </ul>
             </div>
-          </div>
-
-          <div className="overflow-hidden rounded-cards border border-ash shadow-[var(--shadow-card)]">
-            <iframe
-              title="C S Rushil & Co. office location"
-              src={GOOGLE_MAPS_EMBED_SRC}
-              width="100%"
-              height="100%"
-              style={{ border: 0, minHeight: 420 }}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            <div className="overflow-hidden rounded-cards border border-ash shadow-[var(--shadow-card)]">
+              <iframe
+                title="C S Rushil & Co. office location"
+                src={GOOGLE_MAPS_EMBED_SRC}
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: 300 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
         </div>
       </section>

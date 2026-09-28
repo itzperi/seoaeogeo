@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AREAS } from "@/lib/areas";
 import { SERVICES } from "@/lib/services";
-import { ADDRESS_FULL, ADDRESS_SHORT, EMAIL, GOOGLE_MAPS_EMBED_SRC, PHONE_DISPLAY, PHONE_TEL, SOCIALS } from "@/lib/site";
+import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, EMAIL, GOOGLE_MAPS_EMBED_SRC, PHONE_DISPLAY, PHONE_TEL, SOCIALS } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -42,7 +42,7 @@ export default function Footer() {
           <div className="mt-4 flex gap-3 text-sm text-slate">
             <a href={SOCIALS.linkedin} className="hover:text-obsidian">LinkedIn</a>
             <a href={SOCIALS.instagram} className="hover:text-obsidian">Instagram</a>
-            <a href={SOCIALS.calendly} className="hover:text-obsidian">Book a call</a>
+            <a href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-obsidian">Book a call</a>
           </div>
         </div>
 

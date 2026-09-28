@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
+import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
 export default function CTASection({
   title = "Let's simplify your compliance.",
@@ -16,12 +16,14 @@ export default function CTASection({
           <h2 className="mt-3 text-3xl text-white md:text-4xl">{title}</h2>
           <p className="mx-auto mt-4 max-w-xl text-white/80">{subtitle}</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <Link
-              href="/contact"
+            <a
+              href={BOOKING_LINK}
+              target="_blank"
+              rel="noopener noreferrer"
               className="rounded-largecta bg-white px-6 py-3 text-sm font-medium text-obsidian hover:bg-lilac-mist"
             >
-              Get Free Quote
-            </Link>
+              Book a Free Consultation
+            </a>
             <a
               href={`tel:${PHONE_TEL}`}
               className="rounded-largecta border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10"
@@ -36,6 +38,12 @@ export default function CTASection({
             >
               WhatsApp Us
             </a>
+            <Link
+              href="/contact"
+              className="rounded-largecta border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10"
+            >
+              Answer a Few Questions Instead
+            </Link>
           </div>
         </div>
       </div>

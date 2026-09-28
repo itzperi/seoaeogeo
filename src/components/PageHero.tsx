@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 export default function PageHero({
   eyebrow,
@@ -21,12 +20,14 @@ export default function PageHero({
           {subhead}
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
-          <Link
-            href="/contact"
+          <a
+            href={BOOKING_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
             className="rounded-buttons bg-white px-6 py-3 text-sm font-medium text-obsidian transition hover:bg-lilac-mist"
           >
             Book a Free Consultation
-          </Link>
+          </a>
           <a
             href={`tel:${PHONE_TEL}`}
             className="rounded-buttons border border-white/40 px-6 py-3 text-sm font-medium text-white transition hover:bg-white/10"

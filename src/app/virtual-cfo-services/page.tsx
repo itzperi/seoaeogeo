@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
-import { SITE_URL, SOCIALS } from "@/lib/site";
+import { BOOKING_LINK, SITE_URL, SOCIALS } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/virtual-cfo-services`;
 
@@ -273,12 +273,14 @@ export default function VirtualCfoPage() {
                 whether a Virtual CFO engagement — or just tighter bookkeeping —
                 is the right next step.
               </p>
-              <Link
-                href="/contact"
+              <a
+                href={BOOKING_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-5 inline-block w-full rounded-buttons bg-white px-5 py-3 text-center text-sm font-medium text-obsidian hover:bg-lilac-mist"
               >
                 Book Free Consultation
-              </Link>
+              </a>
             </div>
             <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
               <h3 className="eyebrow text-xs text-slate">Related services</h3>

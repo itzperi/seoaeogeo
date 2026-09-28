@@ -5,7 +5,7 @@ import { SERVICES } from "@/lib/services";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
-import { ADDRESS_FULL, ADDRESS_SHORT, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Chartered Accountant Near Me in Chennai",
@@ -76,12 +76,14 @@ export default function HomePage() {
               Chennai.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/contact"
+              <a
+                href={BOOKING_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-buttons bg-white px-6 py-3 text-sm font-medium text-obsidian hover:bg-lilac-mist"
               >
                 Get Free Consultation
-              </Link>
+              </a>
               <a
                 href={`tel:${PHONE_TEL}`}
                 className="rounded-buttons border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10"

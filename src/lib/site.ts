@@ -37,8 +37,18 @@ export const GEO = { latitude: 13.085988998413086, longitude: 80.1996841430664 }
 export const SOCIALS = {
   linkedin: "https://in.linkedin.com/company/csrushil-co",
   instagram: "https://www.instagram.com/carushil_c_s/",
-  calendly: "https://calendly.com/",
 };
+
+// Real Google Calendar appointment booking page — confirmed working with
+// live time slots. This replaces a placeholder Calendly link
+// ("https://calendly.com/", calendly's generic homepage, not a real booking
+// page) that every "Book a Free Consultation" CTA had been silently pointing
+// to — almost certainly the main cause of clicks not converting.
+export const BOOKING_LINK = "https://calendar.app.google/VqP53Njc7jDVepCGA";
+// The resolved calendar.google.com URL, for iframe embedding specifically
+// (the short calendar.app.google link redirects and won't render in a frame).
+export const BOOKING_EMBED_SRC =
+  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ2P-nNZKWs_vAZp272pbL4EvdaJe-rpWf8dPq7AfEymIwadyOMp6GiLlb74gd3vdRolaxEStCKW?gv=true";
 
 // wa.me expects the number with no "+" or spaces. Same NAP phone number as
 // everywhere else — do not point this at a different number.
