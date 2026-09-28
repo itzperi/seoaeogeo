@@ -141,6 +141,12 @@ export const SERVICES: ServiceSummary[] = [
     shortDescription:
       "End-to-end payroll outsourcing with PF, ESI, Professional Tax, and TDS compliance for businesses across Chennai.",
   },
+  {
+    slug: "nri-tax-services-usa-uk",
+    name: "NRI Tax Services — USA & UK",
+    shortDescription:
+      "Indian tax filing, DTAA benefit claims, and repatriation compliance for NRI clients in the United States and United Kingdom.",
+  },
 ];
 
 export function getService(slug: string) {
