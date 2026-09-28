@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
+import FooterLogoGesture from "./FooterLogoGesture";
 import { AREAS } from "@/lib/areas";
 import { SERVICES } from "@/lib/services";
 import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, EMAIL, GOOGLE_MAPS_EMBED_SRC, PHONE_DISPLAY, PHONE_TEL, SOCIALS } from "@/lib/site";
@@ -31,13 +31,7 @@ export default function Footer() {
             across audit, tax, GST, and company compliance.
           </p>
           <div className="mt-4 flex items-center gap-3">
-            <Image
-              src="/images/chartered-accountant-badge.png"
-              alt="Chartered Accountancy practice"
-              width={512}
-              height={390}
-              className="h-8 w-auto"
-            />
+            <FooterLogoGesture />
           </div>
           <div className="mt-4 flex gap-3 text-sm text-slate">
             <a href={SOCIALS.linkedin} className="hover:text-obsidian">LinkedIn</a>

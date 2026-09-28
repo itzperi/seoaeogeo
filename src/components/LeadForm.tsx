@@ -18,8 +18,22 @@ export default function LeadForm() {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e: React.FormEvent) {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+
+    // Store the lead server-side first (shows up in the admin dashboard),
+    // then fall back to a pre-filled email either way — so a lead is never
+    // silently lost if the store isn't configured yet.
+    try {
+      await fetch("/api/leads", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, phone, service, urgency, message }),
+      });
+    } catch {
+      // Ignore — the mailto fallback below still fires.
+    }
+
     const body = [
       `Name: ${name}`,
       `Phone: ${phone}`,
