@@ -3,9 +3,9 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Direct Tax & Income Tax Services in Chennai" },
+  title: { absolute: "Direct Tax Consultant in Chennai | Anna Nagar CA Firm" },
   description:
-    "Income tax planning, return filing, assessments, and representation before tax authorities for individuals and businesses in Chennai.",
+    "Direct tax and income tax services in Chennai — tax planning, return filing, scrutiny assessments, and representation before tax authorities, from our Anna Nagar office.",
   alternates: { canonical: "/direct-tax" },
 };
 
@@ -17,8 +17,8 @@ export default function Page() {
       crumbLabel="Direct Tax"
       crumbHref="/direct-tax"
       eyebrow="Direct Tax · Chennai"
-      h1="Direct Tax Services"
-      subhead="Streamlining tax planning and compliance through precision and foresight — minimizing liability while maximizing operational confidence."
+      h1="Direct Tax Services in Chennai"
+      subhead="Income tax planning, return filing, scrutiny assessments and appeals for companies, firms and individuals — from our Anna Nagar office."
       introHeading="What is direct tax advisory?"
       intro="Direct tax covers income tax paid directly by individuals and businesses to the government. Effective planning within the law reduces avoidable liability, while accurate, timely filing and disciplined documentation protect you during assessment or scrutiny."
       citation={{ label: "Income Tax Department (incometax.gov.in)", href: "https://www.incometax.gov.in/" }}

@@ -10,9 +10,9 @@ import { BOOKING_LINK, SITE_URL, SOCIALS } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/virtual-cfo-services`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Virtual CFO Services in Chennai for Startups & SMEs" },
+  title: { absolute: "Virtual & Fractional CFO Services in Chennai | Anna Nagar" },
   description:
-    "Outsourced financial leadership for Chennai startups and SMEs — MIS reporting, budgeting, and fundraising support without a full-time CFO.",
+    "Virtual and fractional CFO services for Chennai startups and SMEs — MIS reporting, budgeting, and fundraising support without a full-time CFO. Anna Nagar office.",
   alternates: { canonical: "/virtual-cfo-services" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -46,6 +46,16 @@ const COMPARISON = [
 ];
 
 const FAQS = [
+  {
+    question: "What is the difference between a fractional CFO and a virtual CFO?",
+    answer:
+      "In practice the two terms describe the same engagement: senior CFO-level work delivered part-time rather than through a full-time hire. \"Fractional\" emphasises the time commitment — a fraction of a full-time role, scoped by hours or days a month — while \"virtual\" emphasises that much of the work happens remotely from your existing systems. Our fractional CFO and virtual CFO services in Chennai cover the same scope: MIS, budgeting, cash flow, fundraising support and board reporting, with in-person review meetings at our Anna Nagar office or yours when needed.",
+  },
+  {
+    question: "How is a fractional CFO engagement priced and scoped?",
+    answer:
+      "A fractional CFO engagement is scoped by the work and time it actually needs — for example, a monthly MIS and cash-flow cycle, or a defined number of days during a fundraise — and agreed in writing after an initial assessment of your books and reporting. We don't quote a generic package, because the honest answer depends on your transaction volume, reporting needs and whether you're mid-raise.",
+  },
   {
     question: "Who actually needs a Virtual CFO?",
     answer:
@@ -100,7 +110,7 @@ export default function VirtualCfoPage() {
       <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "Virtual CFO Services", href: "/virtual-cfo-services" }]} />
       <PageHero
-        eyebrow="Virtual CFO · Chennai"
+        eyebrow="Virtual & Fractional CFO · Chennai"
         h1="Virtual CFO Services in Chennai"
         subhead="Outsourced financial leadership — MIS, budgeting, fundraising support, and board-ready reporting — for growing businesses that aren't ready for a full-time CFO."
       />
@@ -120,6 +130,27 @@ export default function VirtualCfoPage() {
                 role is forward-looking by design: where your accountant tells you
                 what happened last month, a Virtual CFO uses that same data to help
                 you decide what to do next month.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">Fractional CFO Services in Chennai</h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                A fractional CFO is a senior finance lead who works with your
+                business part-time — a defined number of hours or days a month —
+                instead of as a full-time employee. Our fractional CFO services
+                in Chennai suit funded startups preparing for their next round,
+                family-run SMEs moving to professional financial reporting, and
+                companies that need CFO-level judgment on pricing, cash flow or
+                a bank facility without adding a full-time salary.
+              </p>
+              <p className="mt-4 leading-relaxed text-slate">
+                The engagement is led by CA Rushil C S from our Anna Nagar
+                office, with monthly review meetings in person or online. Clients
+                across Anna Nagar, Mogappair, Ambattur, OMR and Guindy use the
+                same fractional model: a monthly MIS and cash-flow cycle as the
+                base, with extra time scoped in for fundraising, board meetings
+                or annual budgeting.
               </p>
             </div>
 

@@ -3,9 +3,9 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "RERA Registration & Compliance in Chennai" },
+  title: { absolute: "RERA Compliance in Chennai | TNRERA CA Certificates" },
   description:
-    "RERA project registration, quarterly filings, and compliance advisory for real estate developers, promoters, and agents in Tamil Nadu.",
+    "RERA compliance in Chennai — TNRERA project registration, quarterly filings, CA certificates for escrow withdrawals, and compliance audits for promoters and agents. Anna Nagar office.",
   alternates: { canonical: "/rera" },
 };
 
@@ -16,9 +16,9 @@ export default function Page() {
       serviceType="Real Estate Compliance"
       crumbLabel="RERA Compliance"
       crumbHref="/rera"
-      eyebrow="Real Estate · Tamil Nadu"
-      h1="RERA Compliance Services"
-      subhead="Project registration, quarterly filings, and ongoing compliance advisory for real estate developers and agents under TNRERA."
+      eyebrow="Real Estate · Chennai"
+      h1="RERA Compliance in Chennai"
+      subhead="Project registration, quarterly filings, CA certificates for escrow withdrawals, and ongoing compliance advisory for real estate developers and agents under TNRERA — from our Anna Nagar office."
       introHeading="What is RERA compliance?"
       intro="The Real Estate (Regulation and Development) Act, 2016 requires promoters of qualifying real estate projects to register with the state regulatory authority (TNRERA in Tamil Nadu) and file periodic disclosures on construction progress, funds utilisation, and project timelines. Non-compliance carries financial penalties and can freeze project sales."
       citation={{ label: "Tamil Nadu RERA (TNRERA)", href: "https://www.tnrera.in/" }}

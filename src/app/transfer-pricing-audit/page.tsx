@@ -24,7 +24,7 @@ export default function Page() {
       crumbHref="/transfer-pricing-audit"
       eyebrow="Transfer Pricing · Chennai"
       h1="Transfer Pricing Audit in Chennai"
-      subhead="Arm's-length pricing documentation and Form 3CEB compliance for businesses with related-party or cross-border transactions."
+      subhead="Arm's-length pricing documentation and Form 3CEB compliance for Chennai businesses with related-party or cross-border transactions — handled from our Anna Nagar office."
       introHeading="What is a transfer pricing audit?"
       intro="A transfer pricing audit examines transactions between related or associated enterprises — a parent company and subsidiary, sister concerns, or entities under common control — to confirm they're priced at arm's length, the same rate an unrelated third party would charge. Under the Income Tax Act, businesses with specified domestic transactions above prescribed thresholds, or any international transaction with an associated enterprise regardless of value, must obtain a transfer pricing report in Form 3CEB from a Chartered Accountant and maintain contemporaneous documentation justifying the pricing method used."
       citation={{ label: "Income Tax Department — Transfer Pricing", href: "https://www.incometax.gov.in/" }}

@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Tax Audit in Chennai | Section 44AB Audit" },
+  title: { absolute: "Tax Audit in Chennai & Anna Nagar | Section 44AB" },
   description:
     "Tax audit under Section 44AB of the Income Tax Act for Chennai businesses and professionals crossing prescribed turnover limits, handled by C S Rushil & Co.",
   alternates: { canonical: "/tax-audit-chennai" },
@@ -24,7 +24,7 @@ export default function Page() {
       crumbHref="/tax-audit-chennai"
       eyebrow="Tax Audit · Chennai"
       h1="Tax Audit in Chennai"
-      subhead="Section 44AB tax audit for businesses and professionals crossing prescribed turnover limits — accurate, on-time, and structured to withstand scrutiny."
+      subhead="Section 44AB tax audit for businesses and professionals in Chennai and Anna Nagar crossing prescribed turnover limits — accurate, on-time, and structured to withstand scrutiny."
       introHeading="What is a tax audit under Section 44AB?"
       intro="A tax audit under Section 44AB of the Income Tax Act is an examination of a taxpayer's books of account by a Chartered Accountant, required once turnover or gross receipts cross prescribed thresholds — currently ₹1 crore for businesses (₹10 crore where cash receipts and payments are each under 5% of the total), and ₹50 lakh for professionals. The auditor issues Form 3CA/3CB along with Form 3CD, a detailed statement of particulars covering depreciation, disallowances, related-party transactions, and other items the Income Tax Department cross-checks during assessment. Missing the deadline attracts a penalty under Section 271B, in addition to losing the ability to defend certain claims that a clean tax audit report would have supported."
       citation={{ label: "Income Tax Department — Section 44AB", href: "https://www.incometax.gov.in/" }}

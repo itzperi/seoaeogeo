@@ -10,7 +10,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/gst-litigation-chennai`;
 
 export const metadata: Metadata = {
-  title: { absolute: "GST Litigation in Chennai | Appeals & Notice Reply" },
+  title: { absolute: "GST Litigation and Appeals in Chennai | Anna Nagar" },
   description:
     "Received a GST notice in Chennai? Get urgent show-cause reply support and GSTAT appeal representation from C S Rushil & Co. — 24-hour response.",
   alternates: { canonical: "/gst-litigation-chennai" },
@@ -103,8 +103,8 @@ export default function GstLitigationPage() {
       <Breadcrumbs items={[{ name: "GST Litigation", href: "/gst-litigation-chennai" }]} />
       <PageHero
         eyebrow="GST Disputes · Chennai"
-        h1="GST Litigation in Chennai"
-        subhead="Show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal representation — handled by chartered accountants who can appear on your behalf under Section 116 of the CGST Act."
+        h1="GST Litigation and Appeals in Chennai"
+        subhead="Show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal representation — handled from our Anna Nagar office by chartered accountants who can appear on your behalf under Section 116 of the CGST Act."
       />
 
       <section className="bg-paper py-16">
