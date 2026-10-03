@@ -1,4 +1,7 @@
-export const SITE_URL = "https://csrushil.com";
+// Vercel serves the site on www (the bare domain 308-redirects there), so
+// canonicals, sitemap and schema must use www too — pointing them at the
+// redirecting bare domain sends Google conflicting signals.
+export const SITE_URL = "https://www.csrushil.com";
 export const BUSINESS_NAME = "C S Rushil & Co.";
 export const BUSINESS_LEGAL_NAME = "C S Rushil & Co, Chartered Accountants";
 export const FOUNDER_NAME = "CA Rushil C S";

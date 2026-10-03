@@ -5,6 +5,7 @@ import { SERVICES } from "@/lib/services";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
+import GoogleReviews from "@/components/GoogleReviews";
 import QualifyForm from "@/components/QualifyForm";
 import TrackedAnchor from "@/components/TrackedAnchor";
 import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
@@ -139,6 +140,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews />
 
       <section className="bg-paper py-20">
         <div className="container-page">

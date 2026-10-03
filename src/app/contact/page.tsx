@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
+import GoogleReviews from "@/components/GoogleReviews";
 import QualifyForm from "@/components/QualifyForm";
 import { JsonLd } from "@/lib/schema";
 import {
@@ -58,6 +59,8 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      <GoogleReviews heading="Clients who worked with us" />
 
       <section className="bg-fog py-16">
         <div className="container-page grid grid-cols-1 gap-12 lg:grid-cols-2">
