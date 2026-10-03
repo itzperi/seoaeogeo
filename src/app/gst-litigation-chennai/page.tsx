@@ -255,6 +255,7 @@ export default function GstLitigationPage() {
                 Related services
               </h3>
               <ul className="mt-4 space-y-3 text-sm">
+                <li><Link href="/gst-notice-reply-chennai" className="text-royal-violet hover:underline">GST Notice Reply (before it becomes an appeal)</Link></li>
                 <li><Link href="/goods-and-services-tax" className="text-royal-violet hover:underline">GST Registration &amp; Returns</Link></li>
                 <li><Link href="/audit-and-assurance" className="text-royal-violet hover:underline">Audit &amp; Assurance</Link></li>
                 <li><Link href="/direct-tax" className="text-royal-violet hover:underline">Direct Tax</Link></li>

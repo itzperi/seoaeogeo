@@ -59,7 +59,7 @@ export default function Page() {
         { question: "How do I choose the right business entity before registering?", href: "/formation-of-business-entity" },
         { question: "Do I need GST registration right after incorporation?", href: "/gst-registration-chennai" },
       ]}
-      relatedSlugs={["private-limited-company-incorporation-chennai", "formation-of-business-entity", "gst-registration-chennai"]}
+      relatedSlugs={["private-limited-company-incorporation-chennai", "company-registration-india-for-foreigners", "formation-of-business-entity"]}
     />
   );
 }

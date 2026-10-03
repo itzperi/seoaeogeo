@@ -42,7 +42,7 @@ export default function Page() {
         { question: "Does my business also need a statutory or tax audit?", href: "/audit-and-assurance" },
         { question: "Do I need to register for GST as well?", href: "/goods-and-services-tax" },
       ]}
-      relatedSlugs={["income-tax-return-filing-chennai", "audit-and-assurance", "goods-and-services-tax"]}
+      relatedSlugs={["income-tax-notice-reply-chennai", "income-tax-return-filing-chennai", "nri-tax-services"]}
     />
   );
 }

@@ -59,7 +59,7 @@ export default function Page() {
         { question: "Is transfer pricing audit required in addition to statutory audit?", href: "/statutory-audit-chennai" },
         { question: "How does related-party pricing affect my income tax return?", href: "/direct-tax" },
       ]}
-      relatedSlugs={["audit-and-assurance", "statutory-audit-chennai", "direct-tax"]}
+      relatedSlugs={["india-subsidiary-compliance-cfo", "statutory-audit-chennai", "direct-tax"]}
     />
   );
 }

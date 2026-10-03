@@ -1,14 +1,14 @@
 import type { MetadataRoute } from "next";
 import { AREAS } from "@/lib/areas";
 import { getPublishedPosts } from "@/lib/blog";
-import { SERVICES } from "@/lib/services";
+import { ALL_SERVICES } from "@/lib/services";
 import { SITE_URL } from "@/lib/site";
 
 // Bump this only when a genuine site-wide change ships (new page, major
 // content rewrite) — using `new Date()` here would stamp every page as
 // "modified today" on every build, which defeats lastModified as a
 // freshness signal to crawlers.
-const SITE_LAST_MODIFIED = new Date("2026-09-26");
+const SITE_LAST_MODIFIED = new Date("2026-10-03");
 
 const STATIC_PATHS = [
   { path: "", priority: 1 },
@@ -27,7 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority,
   }));
 
-  const serviceEntries = SERVICES.map((service) => ({
+  const serviceEntries = ALL_SERVICES.map((service) => ({
     url: `${SITE_URL}/${service.slug}`,
     lastModified: SITE_LAST_MODIFIED,
     priority: 0.8,

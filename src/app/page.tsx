@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AREAS } from "@/lib/areas";
-import { SERVICES } from "@/lib/services";
+import { SERVICES, SPECIALIST_SERVICES } from "@/lib/services";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
@@ -151,6 +151,24 @@ export default function HomePage() {
           </h2>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((service) => (
+              <ServiceCard key={service.slug} service={service} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-fog py-20">
+        <div className="container-page">
+          <p className="eyebrow text-sm text-slate">Specialist services</p>
+          <h2 className="mt-3 max-w-2xl text-3xl text-obsidian md:text-4xl">
+            For NRIs, overseas businesses and urgent notices.
+          </h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            Remote engagements for clients in the UAE, UK and USA, foreign companies setting up in Tamil Nadu,
+            overseas accounting firms, and anyone holding a GST or income tax notice.
+          </p>
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {SPECIALIST_SERVICES.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
           </div>

@@ -51,7 +51,7 @@ export default function Page() {
         { question: "How does bookkeeping connect to my statutory audit?", href: "/statutory-audit-chennai" },
         { question: "Can bookkeeping and Virtual CFO work be combined?", href: "/virtual-cfo-services" },
       ]}
-      relatedSlugs={["payroll-services-chennai", "statutory-audit-chennai", "virtual-cfo-services"]}
+      relatedSlugs={["outsourced-accounting-for-cpa-firms", "outsourced-accounting-for-uk-accountants", "virtual-cfo-services"]}
     />
   );
 }

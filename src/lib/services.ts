@@ -142,13 +142,77 @@ export const SERVICES: ServiceSummary[] = [
       "End-to-end payroll outsourcing with PF, ESI, Professional Tax, and TDS compliance for businesses across Chennai.",
   },
   {
-    slug: "nri-tax-services-usa-uk",
-    name: "NRI Tax Services — USA & UK",
+    slug: "nri-tax-services",
+    name: "NRI Tax Services",
     shortDescription:
-      "Indian tax filing, DTAA benefit claims, and repatriation compliance for NRI clients in the United States and United Kingdom.",
+      "Indian tax filing, DTAA claims, property-sale TDS and repatriation for NRIs in the UAE, UK, USA and elsewhere — handled remotely from Chennai.",
   },
 ];
 
+// Specialist pages for NRIs, overseas businesses and urgent notices. Kept
+// out of SERVICES so the homepage grid, header and footer stay focused on the
+// core practice; they get their own homepage section, sitemap entries and
+// related-service cards.
+export const SPECIALIST_SERVICES: ServiceSummary[] = [
+  {
+    slug: "gst-notice-reply-chennai",
+    name: "GST Notice Reply",
+    shortDescription: "Replies to ASMT-10, DRC-01A, DRC-01 and audit notices for Tamil Nadu businesses, before a dispute becomes an appeal.",
+  },
+  {
+    slug: "income-tax-notice-reply-chennai",
+    name: "Income Tax Notice Reply",
+    shortDescription: "Responses to intimations, defective-return, scrutiny and reassessment notices, including faceless assessment submissions.",
+  },
+  {
+    slug: "company-registration-india-for-foreigners",
+    name: "Company Setup in India for Foreign Businesses",
+    shortDescription: "Subsidiary, LLP or branch set-up for foreign companies and founders, with FDI reporting and Tamil Nadu location support.",
+  },
+  {
+    slug: "india-subsidiary-compliance-cfo",
+    name: "India Subsidiary Compliance & CFO",
+    shortDescription: "One retainer for audit, ROC, FEMA, transfer pricing, GST, payroll and group reporting for foreign-owned Indian companies.",
+  },
+  {
+    slug: "outsourced-accounting-for-cpa-firms",
+    name: "Outsourced Accounting for US CPA Firms",
+    shortDescription: "Bookkeeping, month-end close and tax-prep support prepared for US CPA review, with Section 7216-aware data handling.",
+  },
+  {
+    slug: "outsourced-accounting-for-uk-accountants",
+    name: "Outsourced Bookkeeping for UK Practices",
+    shortDescription: "Bookkeeping, MTD VAT returns and year-end accounts preparation for UK accountancy practices to review and file.",
+  },
+  {
+    slug: "nri-property-sale-tds-chennai",
+    name: "NRI Property Sale — TDS & Repatriation",
+    shortDescription: "Lower-deduction certificates, capital gains, Form 15CA/15CB and repatriation for NRIs selling property in Chennai.",
+  },
+];
+
+// Country NRI pages still being written. Added to SPECIALIST_SERVICES (and
+// the temporary redirects in next.config.ts removed) once the pages exist.
+export const PENDING_SERVICES: ServiceSummary[] = [
+  {
+    slug: "nri-tax-services-uae",
+    name: "NRI Tax Services — UAE",
+    shortDescription: "Indian ITR, DTAA claims and deemed-residency checks for NRIs living in Dubai, Abu Dhabi and the wider UAE.",
+  },
+  {
+    slug: "nri-tax-services-uk",
+    name: "NRI Tax Services — UK",
+    shortDescription: "Indian tax filing and India–UK DTAA support, with the figures your UK accountant needs for HMRC.",
+  },
+  {
+    slug: "nri-tax-services-usa",
+    name: "NRI Tax Services — USA",
+    shortDescription: "Indian tax filing and India–US DTAA support, with account data for your US CPA’s FBAR and FATCA reporting.",
+  },
+];
+
+export const ALL_SERVICES: ServiceSummary[] = [...SERVICES, ...SPECIALIST_SERVICES];
+
 export function getService(slug: string) {
-  return SERVICES.find((s) => s.slug === slug);
+  return ALL_SERVICES.find((s) => s.slug === slug);
 }

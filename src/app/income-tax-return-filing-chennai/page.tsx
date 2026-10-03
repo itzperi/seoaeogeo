@@ -50,7 +50,7 @@ export default function Page() {
         { question: "Does my business need a tax audit before I file?", href: "/audit-and-assurance" },
         { question: "Do I need GST registration in addition to filing income tax?", href: "/gst-registration-chennai" },
       ]}
-      relatedSlugs={["direct-tax", "audit-and-assurance", "gst-registration-chennai"]}
+      relatedSlugs={["income-tax-notice-reply-chennai", "nri-tax-services", "direct-tax"]}
     />
   );
 }

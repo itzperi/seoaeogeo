@@ -1,5 +1,5 @@
 import { AREAS } from "./areas";
-import { SERVICES } from "./services";
+import { ALL_SERVICES } from "./services";
 import {
   ADDRESS,
   BUSINESS_HOURS,
@@ -81,7 +81,7 @@ export function organizationSchema() {
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Services",
-      itemListElement: SERVICES.map((service) => ({
+      itemListElement: ALL_SERVICES.map((service) => ({
         "@type": "Offer",
         itemOffered: {
           "@type": "Service",
