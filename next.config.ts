@@ -22,10 +22,6 @@ const nextConfig: NextConfig = {
     return [
       // The combined USA & UK page became the NRI hub with separate country pages.
       { source: "/nri-tax-services-usa-uk", destination: "/nri-tax-services", permanent: true },
-      // Temporary until the country pages are published (see PENDING_SERVICES).
-      { source: "/nri-tax-services-uae", destination: "/nri-tax-services", permanent: false },
-      { source: "/nri-tax-services-uk", destination: "/nri-tax-services", permanent: false },
-      { source: "/nri-tax-services-usa", destination: "/nri-tax-services", permanent: false },
     ];
   },
 };

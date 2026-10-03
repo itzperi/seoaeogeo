@@ -189,11 +189,6 @@ export const SPECIALIST_SERVICES: ServiceSummary[] = [
     name: "NRI Property Sale — TDS & Repatriation",
     shortDescription: "Lower-deduction certificates, capital gains, Form 15CA/15CB and repatriation for NRIs selling property in Chennai.",
   },
-];
-
-// Country NRI pages still being written. Added to SPECIALIST_SERVICES (and
-// the temporary redirects in next.config.ts removed) once the pages exist.
-export const PENDING_SERVICES: ServiceSummary[] = [
   {
     slug: "nri-tax-services-uae",
     name: "NRI Tax Services — UAE",
