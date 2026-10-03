@@ -8,7 +8,8 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ ok: false }, { status: 401 });
   }
   const leads = await getLeads();
-  // Newest first.
-  leads.sort((a, b) => (a.submittedAt < b.submittedAt ? 1 : -1));
+  if (leads === null) {
+    return NextResponse.json({ ok: false, error: "SUPABASE_SECRET_KEY is not configured." }, { status: 503 });
+  }
   return NextResponse.json({ ok: true, leads });
 }

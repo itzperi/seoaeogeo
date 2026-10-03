@@ -5,7 +5,9 @@ import { SERVICES } from "@/lib/services";
 import ServiceCard from "@/components/ServiceCard";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
-import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import QualifyForm from "@/components/QualifyForm";
+import TrackedAnchor from "@/components/TrackedAnchor";
+import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Chartered Accountant Near Me in Chennai",
@@ -76,21 +78,46 @@ export default function HomePage() {
               Chennai.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a
+              <TrackedAnchor
+                action="book"
+                placement="home-hero"
                 href={BOOKING_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="rounded-buttons bg-white px-6 py-3 text-sm font-medium text-obsidian hover:bg-lilac-mist"
               >
-                Get Free Consultation
-              </a>
-              <a
+                Book a Free Consultation
+              </TrackedAnchor>
+              <TrackedAnchor
+                action="whatsapp"
+                placement="home-hero"
+                href={WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-buttons bg-[#25D366] px-6 py-3 text-sm font-medium text-white hover:opacity-90"
+              >
+                WhatsApp Us
+              </TrackedAnchor>
+              <TrackedAnchor
+                action="call"
+                placement="home-hero"
                 href={`tel:${PHONE_TEL}`}
                 className="rounded-buttons border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10"
               >
                 Call {PHONE_DISPLAY}
-              </a>
+              </TrackedAnchor>
             </div>
+            <p className="mt-6 text-sm text-white/70">
+              Most searched:{" "}
+              {QUICK_LINKS.map(([label, slug], i) => (
+                <span key={slug}>
+                  {i > 0 && " · "}
+                  <Link href={`/${slug}`} className="text-white underline-offset-2 hover:underline">
+                    {label}
+                  </Link>
+                </span>
+              ))}
+            </p>
             <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-white/20 pt-8">
               <div>
                 <dt className="text-2xl text-white" style={{ fontFamily: "var(--font-display)" }}>16</dt>
@@ -106,21 +133,9 @@ export default function HomePage() {
               </div>
             </dl>
           </div>
-          <div className="rounded-cards bg-white p-8">
-            <p className="eyebrow text-sm text-slate">Most searched</p>
-            <ul className="mt-4 space-y-3">
-              {QUICK_LINKS.map(([label, slug]) => (
-                <li key={slug}>
-                  <Link
-                    href={`/${slug}`}
-                    className="flex items-center justify-between rounded-xl bg-fog px-5 py-4 text-sm font-medium text-obsidian transition hover:bg-lilac-mist"
-                  >
-                    {label}
-                    <span aria-hidden>→</span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div id="get-started" className="scroll-mt-24">
+            <p className="eyebrow mb-3 text-sm text-lemon-zest">Free case review · under a minute</p>
+            <QualifyForm placement="home-hero" />
           </div>
         </div>
       </section>
@@ -208,7 +223,7 @@ export default function HomePage() {
       </section>
 
       <FAQSection items={HOME_FAQS} />
-      <CTASection />
+      <CTASection showForm={false} />
     </>
   );
 }

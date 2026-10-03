@@ -6,6 +6,25 @@ import CTASection from "@/components/CTASection";
 import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { getService } from "@/lib/services";
 
+// Pre-selects the form's first question from the page being viewed.
+const FORM_SERVICE_BY_PAGE: Record<string, string> = {
+  "/transfer-pricing-audit": "Transfer pricing audit",
+  "/tax-audit-chennai": "Tax audit / statutory audit",
+  "/statutory-audit-chennai": "Tax audit / statutory audit",
+  "/audit-and-assurance": "Tax audit / statutory audit",
+  "/direct-tax": "Income tax, notices or scrutiny",
+  "/income-tax-return-filing-chennai": "Income tax, notices or scrutiny",
+  "/rera": "RERA compliance",
+  "/company-registration-chennai": "Company / LLP registration (incl. foreign company in India)",
+  "/llp-registration-chennai": "Company / LLP registration (incl. foreign company in India)",
+  "/nri-tax-services-usa-uk": "NRI tax (UAE, UK, USA and others)",
+  "/bookkeeping-services-chennai": "Outsourced accounting / bookkeeping",
+  "/goods-and-services-tax": "GST notice, litigation or appeal",
+  "/roc-compliances": "ROC, payroll or other compliance",
+  "/payroll-services-chennai": "ROC, payroll or other compliance",
+  "/management-consultancy": "Virtual / Fractional CFO",
+};
+
 export type SubService = { name: string; text: string };
 export type HowToStep = { name: string; text: string };
 export type Citation = { label: string; href: string };
@@ -167,7 +186,7 @@ export default function ServicePageTemplate({
         </section>
       )}
 
-      <CTASection />
+      <CTASection formService={FORM_SERVICE_BY_PAGE[crumbHref]} />
     </>
   );
 }

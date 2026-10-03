@@ -3,6 +3,7 @@ import { Plus_Jakarta_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ContactBar from "@/components/ContactBar";
 import { JsonLd, organizationSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
@@ -47,6 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ContactBar />
       </body>
     </html>
   );

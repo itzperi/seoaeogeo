@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
 import { cookies } from "next/headers";
 import { isValidSession, SESSION_COOKIE } from "@/lib/auth";
-import { getLeads } from "@/lib/leads";
+import { getLeads, getRecentClicks } from "@/lib/leads";
 import AdminLogin from "./AdminLogin";
 import AdminDashboard from "./AdminDashboard";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: false },
 };
+
+export const dynamic = "force-dynamic";
 
 export default async function AdminPage() {
   const cookieStore = await cookies();
@@ -18,8 +20,7 @@ export default async function AdminPage() {
     return <AdminLogin />;
   }
 
-  const leads = await getLeads();
-  leads.sort((a, b) => (a.submittedAt < b.submittedAt ? 1 : -1));
+  const [leads, clicks] = await Promise.all([getLeads(), getRecentClicks(30)]);
 
-  return <AdminDashboard initialLeads={leads} />;
+  return <AdminDashboard initialLeads={leads} clicks={clicks} />;
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
-import LeadForm from "@/components/LeadForm";
+import QualifyForm from "@/components/QualifyForm";
 import { JsonLd } from "@/lib/schema";
 import {
   ADDRESS_FULL,
@@ -67,7 +67,7 @@ export default function ContactPage() {
               Answer a few quick questions and we&apos;ll reach out to you — no need to pick a time slot upfront.
             </p>
             <div className="mt-6">
-              <LeadForm />
+              <QualifyForm placement="contact-page" />
             </div>
           </div>
 
