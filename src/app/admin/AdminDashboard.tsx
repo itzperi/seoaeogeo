@@ -162,7 +162,7 @@ export default function AdminDashboard({
             <p className="font-medium">Leads are being saved, but this dashboard can&apos;t read them yet.</p>
             <p className="mt-1 text-slate">
               In Supabase open Project Settings → API Keys and copy the <strong>secret</strong> key. In Vercel open
-              Settings → Environment Variables, add <code>SUPABASE_SECRET_KEY</code> with that value, then redeploy.
+              Settings → Environment Variables, add <code>SUPABASE_SECRET_KEY</code> (or <code>SUPABASE_SERVICE_ROLE_KEY</code>) with that value, then redeploy.
             </p>
           </div>
         )}
