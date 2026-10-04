@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
+import GoogleProfileStrip from "@/components/GoogleProfileStrip";
 import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { getService } from "@/lib/services";
 
@@ -196,6 +197,7 @@ export default function ServicePageTemplate({
         </section>
       )}
 
+      <GoogleProfileStrip service={crumbLabel} />
       <CTASection formService={FORM_SERVICE_BY_PAGE[crumbHref]} />
     </>
   );

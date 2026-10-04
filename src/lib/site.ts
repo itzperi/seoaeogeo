@@ -7,7 +7,14 @@ export const BUSINESS_LEGAL_NAME = "C S Rushil & Co, Chartered Accountants";
 export const FOUNDER_NAME = "CA Rushil C S";
 export const FOUNDER_CREDENTIALS = "Certified FAFD, Start-up Mentor";
 export const YEAR_FOUNDED = 2024;
-export const GBP_URL = "https://maps.app.goo.gl/nsa7hM6BFKWiMN9g7";
+// The Business Profile's permanent CID link (from the profile's own edit
+// URLs). Used for schema sameAs/hasMap and every "view on Google" link, so
+// Google can tie the website to this exact listing. Prefer this over the
+// maps.app.goo.gl short link, which is only a redirect.
+export const GBP_CID = "9218487927688159679";
+export const GBP_URL = `https://maps.google.com/?cid=${GBP_CID}`;
+export const GBP_DIRECTIONS_URL =
+  "https://www.google.com/maps/dir/?api=1&destination=C+S+Rushil+%26+Co.%2C+13th+Main+Road%2C+J-Block%2C+Anna+Nagar%2C+Chennai+600040";
 export const LANGUAGES_SPOKEN = ["English", "Tamil", "Hindi"];
 
 // NAP: standardized on the number used on the homepage/contact page (per SEO audit,

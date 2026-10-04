@@ -90,6 +90,7 @@ export function organizationSchema() {
         },
       })),
     },
+    hasMap: GBP_URL,
     sameAs: [SOCIALS.linkedin, SOCIALS.instagram, GBP_URL],
   };
 }

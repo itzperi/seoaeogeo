@@ -3,6 +3,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
+import GoogleProfileStrip from "@/components/GoogleProfileStrip";
 import { JsonLd, serviceSchema } from "@/lib/schema";
 import { getService } from "@/lib/services";
 
@@ -99,6 +100,7 @@ export default function AreaPageTemplate({
       </section>
 
       <FAQSection items={faqs} />
+      <GoogleProfileStrip />
       <CTASection
         title={`Chartered accountant serving ${locality}, Chennai`}
         subtitle="Book a free consultation — in person at our Anna Nagar office, or virtually."
