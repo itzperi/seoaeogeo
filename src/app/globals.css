@@ -85,6 +85,12 @@
     scroll-behavior: smooth;
   }
 
+  html,
+  body {
+    /* clip (not hidden) keeps position: sticky working on the header. */
+    overflow-x: clip;
+  }
+
   body {
     background: var(--color-paper-white);
     color: var(--color-carbon);

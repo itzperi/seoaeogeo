@@ -85,7 +85,7 @@ export default function HomePage() {
                 href={BOOKING_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
+                className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
               >
                 Book a Free Consultation
               </TrackedAnchor>
@@ -95,7 +95,7 @@ export default function HomePage() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-mint-pop"
+                className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-mint-pop"
               >
                 WhatsApp Us
               </TrackedAnchor>
@@ -103,7 +103,7 @@ export default function HomePage() {
                 action="call"
                 placement="home-hero"
                 href={`tel:${PHONE_TEL}`}
-                className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-lavender"
+                className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-lavender"
               >
                 Call {PHONE_DISPLAY}
               </TrackedAnchor>
@@ -143,7 +143,7 @@ export default function HomePage() {
 
       <GoogleReviews />
 
-      <section className="bg-paper py-20">
+      <section className="bg-paper py-14 md:py-20">
         <div className="container-page">
           <p className="sticker-tag bg-lavender">Our services</p>
           <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
@@ -157,7 +157,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-fog py-20">
+      <section className="bg-fog py-14 md:py-20">
         <div className="container-page">
           <p className="sticker-tag bg-mint-pop">Specialist services</p>
           <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
@@ -175,7 +175,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-carbon bg-concrete-gray py-20">
+      <section className="border-y border-carbon bg-concrete-gray py-14 md:py-20">
         <div className="container-page">
           <p className="sticker-tag bg-white">Areas we serve</p>
           <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
@@ -199,7 +199,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-fog py-20">
+      <section className="bg-fog py-14 md:py-20">
         <div className="container-page grid grid-cols-1 gap-10 md:grid-cols-2 md:items-center">
           <div>
             <p className="sticker-tag bg-sunburst">About the firm</p>

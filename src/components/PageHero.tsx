@@ -31,7 +31,7 @@ export default function PageHero({
             href={BOOKING_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
+            className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
           >
             Book a Free Consultation
           </TrackedAnchor>
@@ -41,7 +41,7 @@ export default function PageHero({
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-mint-pop"
+            className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-mint-pop"
           >
             WhatsApp Us
           </TrackedAnchor>
@@ -49,7 +49,7 @@ export default function PageHero({
             action="call"
             placement="page-hero"
             href={`tel:${PHONE_TEL}`}
-            className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-lavender"
+            className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-lavender"
           >
             Call {PHONE_DISPLAY}
           </TrackedAnchor>

@@ -14,8 +14,10 @@ const NAV_LINKS = [
   { href: "/contact", label: "Contact" },
 ];
 
+// No display class here: each use adds its own (inline-flex / hidden …),
+// otherwise "inline-flex" overrides "hidden" and the pill shows on phones.
 const PILL =
-  "inline-flex min-h-[40px] items-center rounded-full border border-carbon bg-white px-3 text-[12px] font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-sky-wash";
+  "min-h-[40px] items-center rounded-full border border-carbon bg-white px-3 text-[12px] font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-sky-wash";
 
 export default function Header() {
   return (
@@ -35,7 +37,7 @@ export default function Header() {
 
         <nav className="hidden items-center gap-1 xl:flex" aria-label="Main">
           <div className="group relative">
-            <button className={PILL} aria-haspopup="true">
+            <button className={`inline-flex ${PILL}`} aria-haspopup="true">
               Services
             </button>
             <div className="invisible absolute left-0 top-full pt-2 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
@@ -66,7 +68,7 @@ export default function Header() {
             </div>
           </div>
           <div className="group relative">
-            <button className={PILL} aria-haspopup="true">
+            <button className={`inline-flex ${PILL}`} aria-haspopup="true">
               Locations
             </button>
             <div className="invisible absolute left-0 top-full pt-2 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
@@ -80,14 +82,14 @@ export default function Header() {
             </div>
           </div>
           {NAV_LINKS.map((link) => (
-            <Link key={link.href} href={link.href} className={PILL}>
+            <Link key={link.href} href={link.href} className={`inline-flex ${PILL}`}>
               {link.label}
             </Link>
           ))}
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
-          <a href={`tel:${PHONE_TEL}`} className={`${PILL} hidden 2xl:inline-flex`}>
+          <a href={`tel:${PHONE_TEL}`} className={`hidden 2xl:inline-flex ${PILL}`}>
             {PHONE_DISPLAY}
           </a>
           <TrackedAnchor
