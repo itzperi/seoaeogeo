@@ -2,6 +2,9 @@ import TrackedAnchor from "@/components/TrackedAnchor";
 import { GOOGLE_REVIEWS, SHOW_GOOGLE_REVIEWS } from "@/lib/reviews";
 import { BOOKING_LINK, GBP_URL } from "@/lib/site";
 
+// Sticker-palette fills for the review cards (black text passes AA on all).
+const CARD_FILLS = ["bg-lavender", "bg-sunburst", "bg-mint-pop"];
+
 function Stars({ rating }: { rating: number }) {
   return (
     <span className="flex gap-0.5" aria-label={`${rating} out of 5 stars`}>
@@ -9,7 +12,10 @@ function Stars({ rating }: { rating: number }) {
         <svg key={i} width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
           <path
             d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"
-            fill={i <= rating ? "#FBBC04" : "#E2E2E2"}
+            fill={i <= rating ? "#fb4903" : "#ffffff"}
+            stroke="#000"
+            strokeWidth="1.2"
+            strokeLinejoin="round"
           />
         </svg>
       ))}
@@ -44,10 +50,10 @@ export default function GoogleReviews({
       <div className="container-page">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <p className="eyebrow flex items-center gap-2 text-sm text-slate">
+            <p className="sticker-tag bg-white">
               <GoogleG /> Google reviews
             </p>
-            <h2 id="google-reviews-heading" className="mt-2 text-3xl text-obsidian">
+            <h2 id="google-reviews-heading" className="mt-3 text-5xl text-obsidian md:text-6xl">
               {heading}
             </h2>
           </div>
@@ -55,28 +61,28 @@ export default function GoogleReviews({
             href={GBP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-royal-violet underline underline-offset-4"
+            className="inline-flex min-h-[44px] items-center rounded-full border border-carbon bg-white px-5 text-[13px] font-bold uppercase tracking-[0.032em] text-carbon hover:bg-sky-wash"
           >
             Read all reviews on Google →
           </a>
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-3">
-          {GOOGLE_REVIEWS.map((review) => (
+          {GOOGLE_REVIEWS.map((review, i) => (
             <figure
               key={review.name}
-              className="flex flex-col rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]"
+              className={`flex flex-col rounded-cards border border-carbon p-6 ${CARD_FILLS[i % CARD_FILLS.length]} ${i % 2 ? "md:rotate-1" : "md:-rotate-1"}`}
             >
               <div className="flex items-center justify-between">
                 <Stars rating={review.rating} />
-                <span className="text-xs text-slate">{review.date}</span>
+                <span className="text-xs font-bold text-carbon">{review.date}</span>
               </div>
               <blockquote className="mt-4 flex-1 text-sm leading-relaxed text-obsidian">
                 “{review.text}”
               </blockquote>
-              <figcaption className="mt-5 border-t border-ash pt-4">
+              <figcaption className="mt-5 border-t border-carbon pt-4">
                 <p className="text-sm font-medium text-obsidian">{review.name}</p>
-                <p className="text-xs text-slate">{review.service} · posted on Google</p>
+                <p className="text-xs text-carbon">{review.service} · posted on Google</p>
               </figcaption>
             </figure>
           ))}
@@ -89,11 +95,11 @@ export default function GoogleReviews({
             href={BOOKING_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-buttons bg-royal-violet px-6 py-3 text-sm font-medium text-white hover:opacity-90"
+            className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white hover:opacity-85"
           >
-            Book a free consultation
+            Book a Free Consultation
           </TrackedAnchor>
-          <p className="text-sm text-slate">15 minutes with a chartered accountant · in person in Anna Nagar or online</p>
+          <p className="text-sm text-carbon">15 minutes with a chartered accountant · in person in Anna Nagar or online</p>
         </div>
       </div>
     </section>

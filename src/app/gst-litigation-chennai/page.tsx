@@ -237,7 +237,7 @@ export default function GstLitigationPage() {
           </div>
 
           <aside className="lg:sticky lg:top-24 h-fit space-y-6">
-            <div className="rounded-cards bg-royal-violet p-8">
+            <div className="rounded-cards border border-carbon bg-royal-violet p-8">
               <h3 className="text-lg font-medium text-white">Received a GST notice?</h3>
               <p className="mt-2 text-sm text-white/80">
                 Reply deadlines are strict and non-negotiable. Send us the notice and

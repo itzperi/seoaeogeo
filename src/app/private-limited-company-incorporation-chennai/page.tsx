@@ -248,7 +248,7 @@ export default function IncorporationPage() {
           </div>
 
           <aside className="lg:sticky lg:top-24 h-fit space-y-6">
-            <div className="rounded-cards bg-royal-violet p-8">
+            <div className="rounded-cards border border-carbon bg-royal-violet p-8">
               <h3 className="text-lg font-medium text-white">Get a fixed-fee quote</h3>
               <p className="mt-2 text-sm text-white/80">
                 Tell us your director count and authorised capital — we&apos;ll send an

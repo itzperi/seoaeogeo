@@ -115,7 +115,7 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
       <div ref={topRef} className="rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)] sm:p-8">
         {status === "done" ? (
           <>
-            <p className="eyebrow text-xs text-royal-violet">Details received</p>
+            <p className="sticker-tag bg-mint-pop">Details received</p>
             <h3 className="mt-2 text-xl text-obsidian">Thank you, {name.split(" ")[0]}. One last step.</h3>
             <p className="mt-2 text-sm text-slate">
               We&apos;ll reach you by {CONTACT_PHRASE[preferred] ?? "phone"} within one working day. To skip the wait, pick a time for a
@@ -136,7 +136,7 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track("book", `${placement}-thanks`)}
-            className="rounded-buttons bg-royal-violet px-5 py-3 text-center text-sm font-medium text-white hover:opacity-90"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-full border border-carbon bg-carbon px-5 text-center text-sm font-bold uppercase tracking-[0.032em] text-white hover:opacity-85"
           >
             Book a time slot
           </a>
@@ -145,14 +145,14 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => track("whatsapp", `${placement}-thanks`)}
-            className="rounded-buttons bg-[#25D366] px-5 py-3 text-center text-sm font-medium text-white hover:opacity-90"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-full border border-carbon bg-[#25D366] px-5 text-center text-sm font-bold uppercase tracking-[0.032em] text-carbon hover:opacity-90"
           >
             WhatsApp us
           </a>
           <a
             href={`tel:${PHONE_TEL}`}
             onClick={() => track("call", `${placement}-thanks`)}
-            className="rounded-buttons border border-ash px-5 py-3 text-center text-sm font-medium text-obsidian hover:bg-fog"
+            className="inline-flex min-h-[48px] items-center justify-center rounded-full border border-carbon bg-white px-5 text-center text-sm font-bold uppercase tracking-[0.032em] text-carbon hover:bg-sky-wash"
           >
             Call {PHONE_DISPLAY}
           </a>
@@ -175,9 +175,9 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
           </button>
         )}
       </div>
-      <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-fog">
+      <div className="mt-2 h-2 w-full overflow-hidden rounded-full border border-carbon bg-white">
         <div
-          className="h-full rounded-full bg-royal-violet transition-all"
+          className="h-full rounded-full bg-carbon transition-all"
           style={{ width: `${((step + 1) / TOTAL_STEPS) * 100}%` }}
         />
       </div>
@@ -194,10 +194,10 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
                   type="button"
                   onClick={() => choose(current.key, opt)}
                   aria-pressed={selected}
-                  className={`rounded-lg border px-4 py-3 text-left text-sm transition-colors ${
+                  className={`min-h-[48px] rounded-2xl border px-4 py-3 text-left text-sm font-bold transition-colors ${
                     selected
-                      ? "border-royal-violet bg-lilac-mist text-obsidian"
-                      : "border-ash text-obsidian hover:border-royal-violet hover:bg-fog"
+                      ? "border-carbon bg-lavender text-carbon"
+                      : "border-carbon bg-white text-carbon hover:bg-sky-wash"
                   }`}
                 >
                   {opt}
@@ -218,7 +218,7 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
                 autoComplete="name"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                className="mt-1 w-full rounded-lg border border-ash px-4 py-2.5 text-sm text-obsidian"
+                className="mt-1 w-full rounded-2xl border border-carbon bg-white px-4 py-3 text-sm text-carbon"
               />
             </div>
             <div>
@@ -233,7 +233,7 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
                 placeholder="+91 98765 43210"
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                className="mt-1 w-full rounded-lg border border-ash px-4 py-2.5 text-sm text-obsidian"
+                className="mt-1 w-full rounded-2xl border border-carbon bg-white px-4 py-3 text-sm text-carbon"
               />
             </div>
           </div>
@@ -247,7 +247,7 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
               autoComplete="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-1 w-full rounded-lg border border-ash px-4 py-2.5 text-sm text-obsidian"
+              className="mt-1 w-full rounded-2xl border border-carbon bg-white px-4 py-3 text-sm text-carbon"
             />
           </div>
           <fieldset>
@@ -259,8 +259,8 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
                   type="button"
                   onClick={() => setPreferred(opt)}
                   aria-pressed={preferred === opt}
-                  className={`rounded-full border px-4 py-2 text-sm ${
-                    preferred === opt ? "border-royal-violet bg-lilac-mist text-obsidian" : "border-ash text-slate hover:bg-fog"
+                  className={`min-h-[44px] rounded-full border px-4 py-2 text-sm font-bold ${
+                    preferred === opt ? "border-carbon bg-lavender text-carbon" : "border-carbon bg-white text-carbon hover:bg-sky-wash"
                   }`}
                 >
                   {opt}
@@ -278,7 +278,7 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
               placeholder="E.g. received a GST notice dated…, raising funds next quarter, selling a flat in Chennai…"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="mt-1 w-full rounded-lg border border-ash px-4 py-2.5 text-sm text-obsidian"
+              className="mt-1 w-full rounded-2xl border border-carbon bg-white px-4 py-3 text-sm text-carbon"
             />
           </div>
           {/* Honeypot — hidden from people, filled by bots. */}
@@ -288,11 +288,11 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
               <input tabIndex={-1} autoComplete="off" value={honeypot} onChange={(e) => setHoneypot(e.target.value)} />
             </label>
           </div>
-          {error && <p className="text-sm text-red-700">{error}</p>}
+          {error && <p className="text-sm font-bold text-[#b42318]">{error}</p>}
           <button
             type="submit"
             disabled={status === "sending"}
-            className="w-full rounded-buttons bg-royal-violet px-6 py-3 text-sm font-medium text-white hover:opacity-90 disabled:opacity-60"
+            className="min-h-[52px] w-full rounded-full border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white hover:opacity-85 disabled:opacity-60"
           >
             {status === "sending" ? "Sending…" : "Get a call back"}
           </button>

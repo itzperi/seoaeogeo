@@ -48,12 +48,12 @@ export default function ContactBar() {
       {/* Phone: fixed bottom bar with three equal buttons. */}
       <nav
         aria-label="Contact us"
-        className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-ash bg-paper/95 pb-[env(safe-area-inset-bottom)] shadow-[0_-4px_16px_rgba(0,0,0,0.08)] backdrop-blur md:hidden"
+        className="fixed inset-x-0 bottom-0 z-50 grid grid-cols-3 border-t border-carbon bg-white pb-[env(safe-area-inset-bottom)] md:hidden"
       >
         <a
           href={`tel:${PHONE_TEL}`}
           onClick={() => track("call", "mobile-bar")}
-          className="flex flex-col items-center justify-center gap-0.5 py-2.5 text-xs font-medium text-obsidian"
+          className="flex min-h-[56px] flex-col items-center justify-center gap-0.5 bg-white py-2.5 text-xs font-bold uppercase tracking-[0.032em] text-carbon"
         >
           <PhoneIcon />
           Call
@@ -63,7 +63,7 @@ export default function ContactBar() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("whatsapp", "mobile-bar")}
-          className="flex flex-col items-center justify-center gap-0.5 bg-[#25D366] py-2.5 text-xs font-medium text-white"
+          className="flex min-h-[56px] flex-col items-center justify-center gap-0.5 border-x border-carbon bg-[#25D366] py-2.5 text-xs font-bold uppercase tracking-[0.032em] text-carbon"
         >
           <WhatsAppIcon />
           WhatsApp
@@ -73,7 +73,7 @@ export default function ContactBar() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("book", "mobile-bar")}
-          className="flex flex-col items-center justify-center gap-0.5 bg-royal-violet py-2.5 text-xs font-medium text-white"
+          className="flex min-h-[56px] flex-col items-center justify-center gap-0.5 bg-carbon py-2.5 text-xs font-bold uppercase tracking-[0.032em] text-white"
         >
           <CalendarIcon />
           Book a call
@@ -89,7 +89,7 @@ export default function ContactBar() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("book", "desktop-float")}
-          className="flex items-center gap-2 rounded-full bg-royal-violet px-5 py-3 text-sm font-medium text-white shadow-lg hover:opacity-90"
+          className="flex min-h-[48px] items-center gap-2 rounded-full border border-carbon bg-carbon px-5 text-[13px] font-bold uppercase tracking-[0.032em] text-white hover:opacity-85"
         >
           <CalendarIcon />
           Book a free consultation
@@ -99,7 +99,7 @@ export default function ContactBar() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("whatsapp", "desktop-float")}
-          className="flex items-center gap-2 rounded-full bg-[#25D366] px-5 py-3 text-sm font-medium text-white shadow-lg hover:opacity-90"
+          className="flex min-h-[48px] items-center gap-2 rounded-full border border-carbon bg-[#25D366] px-5 text-[13px] font-bold uppercase tracking-[0.032em] text-carbon hover:opacity-90"
         >
           <WhatsAppIcon />
           WhatsApp us
@@ -107,7 +107,7 @@ export default function ContactBar() {
         <a
           href={`tel:${PHONE_TEL}`}
           onClick={() => track("call", "desktop-float")}
-          className="flex items-center gap-2 rounded-full border border-ash bg-paper px-5 py-3 text-sm font-medium text-obsidian shadow-lg hover:bg-fog"
+          className="flex min-h-[48px] items-center gap-2 rounded-full border border-carbon bg-white px-5 text-[13px] font-bold uppercase tracking-[0.032em] text-carbon hover:bg-sky-wash"
         >
           <PhoneIcon />
           {PHONE_DISPLAY}

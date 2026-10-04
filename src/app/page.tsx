@@ -8,6 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import GoogleReviews from "@/components/GoogleReviews";
 import QualifyForm from "@/components/QualifyForm";
 import TrackedAnchor from "@/components/TrackedAnchor";
+import { CalcSticker, CoinSticker, Ribbon, StarSticker } from "@/components/Stickers";
 import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -61,22 +62,21 @@ const QUICK_LINKS = [
 export default function HomePage() {
   return (
     <>
-      <section className="bg-royal-violet">
-        <div className="container-page grid grid-cols-1 gap-12 py-20 md:grid-cols-2 md:py-28">
+      <section className="relative overflow-hidden border-b border-carbon bg-sky-wash">
+        <Ribbon className="pointer-events-none absolute -bottom-10 left-0 h-44 w-full md:h-64" />
+        <CoinSticker className="pointer-events-none absolute left-[46%] top-8 hidden w-20 -rotate-12 lg:block" />
+        <CalcSticker className="pointer-events-none absolute bottom-28 left-[40%] hidden w-14 rotate-[14deg] lg:block" />
+        <StarSticker className="pointer-events-none absolute right-6 top-6 hidden w-14 rotate-12 md:block" />
+        <div className="container-page relative grid grid-cols-1 gap-10 pb-32 pt-12 md:pb-48 md:pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div>
-            <p className="eyebrow text-sm text-lemon-zest">
-              Chartered Accountant Near You · {ADDRESS_SHORT}
-            </p>
-            <h1 className="mt-4 text-4xl leading-[1.13] text-white md:text-5xl">
+            <p className="sticker-tag bg-sunburst">Chartered Accountant Near You · {ADDRESS_SHORT}</p>
+            <h1 className="mt-6 text-[52px] text-carbon sm:text-7xl lg:text-[104px]">
               Chennai&apos;s partner for company registration, GST, and audit.
             </h1>
-            <p className="mt-6 max-w-xl text-lg text-white/80">
-              Searching for a chartered accountant near you in Chennai? C S
-              Rushil &amp; Co. is based in {ADDRESS_SHORT}, led by{" "}
-              {FOUNDER_NAME} ({FOUNDER_CREDENTIALS}). Our 16-member team
-              handles private limited company incorporation, GST litigation,
-              statutory audit, and full ROC compliance for businesses across
-              Chennai.
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-carbon">
+              Searching for a chartered accountant near you in Chennai? C S Rushil &amp; Co. is based in {ADDRESS_SHORT},
+              led by {FOUNDER_NAME} ({FOUNDER_CREDENTIALS}). Our 16-member team handles private limited company
+              incorporation, GST litigation, statutory audit, and full ROC compliance for businesses across Chennai.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <TrackedAnchor
@@ -85,7 +85,7 @@ export default function HomePage() {
                 href={BOOKING_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-buttons bg-white px-6 py-3 text-sm font-medium text-obsidian hover:bg-lilac-mist"
+                className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
               >
                 Book a Free Consultation
               </TrackedAnchor>
@@ -95,7 +95,7 @@ export default function HomePage() {
                 href={WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-buttons bg-[#25D366] px-6 py-3 text-sm font-medium text-white hover:opacity-90"
+                className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-mint-pop"
               >
                 WhatsApp Us
               </TrackedAnchor>
@@ -103,39 +103,39 @@ export default function HomePage() {
                 action="call"
                 placement="home-hero"
                 href={`tel:${PHONE_TEL}`}
-                className="rounded-buttons border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10"
+                className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-lavender"
               >
                 Call {PHONE_DISPLAY}
               </TrackedAnchor>
             </div>
-            <p className="mt-6 text-sm text-white/70">
-              Most searched:{" "}
+            <div className="mt-6 flex flex-wrap gap-2">
               {QUICK_LINKS.map(([label, slug], i) => (
-                <span key={slug}>
-                  {i > 0 && " · "}
-                  <Link href={`/${slug}`} className="text-white underline-offset-2 hover:underline">
-                    {label}
-                  </Link>
-                </span>
+                <Link
+                  key={slug}
+                  href={`/${slug}`}
+                  className={`sticker-tag transition-transform hover:-rotate-2 ${["bg-lavender", "bg-mint-pop", "bg-white", "bg-sunburst"][i % 4]}`}
+                >
+                  {label}
+                </Link>
               ))}
-            </p>
-            <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-white/20 pt-8">
-              <div>
-                <dt className="text-2xl text-white" style={{ fontFamily: "var(--font-display)" }}>16</dt>
-                <dd className="text-xs uppercase tracking-wide text-white/60">Professionals</dd>
-              </div>
-              <div>
-                <dt className="text-2xl text-white" style={{ fontFamily: "var(--font-display)" }}>8+</dt>
-                <dd className="text-xs uppercase tracking-wide text-white/60">Service lines</dd>
-              </div>
-              <div>
-                <dt className="text-2xl text-white" style={{ fontFamily: "var(--font-display)" }}>Chennai</dt>
-                <dd className="text-xs uppercase tracking-wide text-white/60">Anna Nagar office</dd>
-              </div>
+            </div>
+            <dl className="mt-10 grid max-w-md grid-cols-3 gap-3">
+              {[
+                ["16", "Professionals", "bg-white"],
+                ["8+", "Service lines", "bg-lavender"],
+                ["Anna Nagar", "Chennai office", "bg-mint-pop"],
+              ].map(([value, label, bg]) => (
+                <div key={label} className={`rounded-[20px] border border-carbon p-4 ${bg}`}>
+                  <dt className="text-3xl uppercase leading-none text-carbon" style={{ fontFamily: "var(--font-display)" }}>
+                    {value}
+                  </dt>
+                  <dd className="mt-1 text-[11px] font-bold uppercase tracking-[0.032em] text-carbon">{label}</dd>
+                </div>
+              ))}
             </dl>
           </div>
-          <div id="get-started" className="scroll-mt-24">
-            <p className="eyebrow mb-3 text-sm text-lemon-zest">Free case review · under a minute</p>
+          <div id="get-started" className="relative scroll-mt-24">
+            <p className="sticker-tag mb-3 bg-white">Free case review · under a minute</p>
             <QualifyForm placement="home-hero" />
           </div>
         </div>
@@ -145,8 +145,8 @@ export default function HomePage() {
 
       <section className="bg-paper py-20">
         <div className="container-page">
-          <p className="eyebrow text-sm text-slate">Our services</p>
-          <h2 className="mt-3 max-w-2xl text-3xl text-obsidian md:text-4xl">
+          <p className="sticker-tag bg-lavender">Our services</p>
+          <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
             Full compliance lifecycle, one firm.
           </h2>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -159,8 +159,8 @@ export default function HomePage() {
 
       <section className="bg-fog py-20">
         <div className="container-page">
-          <p className="eyebrow text-sm text-slate">Specialist services</p>
-          <h2 className="mt-3 max-w-2xl text-3xl text-obsidian md:text-4xl">
+          <p className="sticker-tag bg-mint-pop">Specialist services</p>
+          <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
             For NRIs, overseas businesses and urgent notices.
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
@@ -175,10 +175,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="bg-paper py-20">
+      <section className="border-y border-carbon bg-concrete-gray py-20">
         <div className="container-page">
-          <p className="eyebrow text-sm text-slate">Areas we serve</p>
-          <h2 className="mt-3 max-w-2xl text-3xl text-obsidian md:text-4xl">
+          <p className="sticker-tag bg-white">Areas we serve</p>
+          <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
             Chartered accountant services across Chennai.
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
@@ -202,7 +202,7 @@ export default function HomePage() {
       <section className="bg-fog py-20">
         <div className="container-page grid grid-cols-1 gap-10 md:grid-cols-2 md:items-center">
           <div>
-            <p className="eyebrow text-sm text-slate">About the firm</p>
+            <p className="sticker-tag bg-sunburst">About the firm</p>
             <h2 className="mt-3 text-3xl text-obsidian">
               Founded by {FOUNDER_NAME}
             </h2>

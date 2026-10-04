@@ -1,31 +1,65 @@
 @import "tailwindcss";
 
+/*
+ * "Slush" sticker-on-pastel system: pastel paper bands, black 1px
+ * hand-cut outlines, pill controls, black-filled CTAs, chunky condensed
+ * display type, vivid sticker accents. No shadows, no gradients.
+ *
+ * The legacy token names (royal-violet, obsidian, fog, ash…) are kept so
+ * every existing page picks up the new look; their values now map to the
+ * Slush palette.
+ */
 :root {
-  --color-royal-violet: #5423e7;
-  --color-electric-iris: #7047eb;
-  --color-lemon-zest: #ffc233;
-  --color-orchid: #cf75ff;
-  --color-lilac-mist: #e5b5fe;
-  --color-obsidian: #121217;
+  /* Slush palette */
+  --color-carbon: #000000;
+  --color-paper-white: #ffffff;
+  --color-sky-wash: #dceeff;
+  --color-concrete-gray: #cccccc;
+  --color-soft-mist: #e9e9e9;
+  --color-electric-blue: #4da2ff;
+  --color-mint-pop: #55db9c;
+  --color-lavender: #e9ccff;
+  --color-ember: #fb4903;
+  --color-sunburst: #ffd731;
+  --color-voltage-violet: #5c4ade;
+
+  /* Legacy names → Slush values */
+  --color-royal-violet: #5c4ade; /* voltage violet: links, sticker cards */
+  --color-electric-iris: #4da2ff;
+  --color-lemon-zest: #ffd731;
+  --color-orchid: #e9ccff;
+  --color-lilac-mist: #e9ccff;
+  --color-obsidian: #000000;
   --color-paper: #ffffff;
-  --color-fog: #f7f7f8;
-  --color-slate: #6c6c89;
-  --color-ash: #d1d1db;
+  --color-fog: #dceeff; /* sky wash: alternate section band */
+  --color-slate: #3f3f46; /* secondary text, 9:1 on white */
+  --color-ash: #000000; /* every outline is black */
 
-  --font-display: "Circularpro Book", "Plus Jakarta Sans", ui-sans-serif, sans-serif;
-  --font-body: "Inter", ui-sans-serif, sans-serif;
+  --font-display: var(--font-anton), "Antonio", "Bowlby One", Impact, ui-sans-serif, sans-serif;
+  --font-body: var(--font-inter), "Satoshi", ui-sans-serif, system-ui, sans-serif;
 
-  --radius-cards: 48px;
-  --radius-input: 8px;
-  --radius-buttons: 8px;
-  --radius-largecta: 32px;
-  --radius-navpills: 40px;
+  --radius-cards: 24px;
+  --radius-cards-elevated: 40px;
+  --radius-input: 14px;
+  --radius-buttons: 1600px;
+  --radius-largecta: 1600px;
+  --radius-navpills: 1600px;
 
-  --shadow-card: 0 4px 24px rgba(18, 18, 23, 0.06);
-  --shadow-button: 0 1px 2px rgba(18, 18, 23, 0.08);
+  --shadow-card: none;
+  --shadow-button: none;
 }
 
 @theme inline {
+  --color-carbon: var(--color-carbon);
+  --color-sky-wash: var(--color-sky-wash);
+  --color-concrete-gray: var(--color-concrete-gray);
+  --color-soft-mist: var(--color-soft-mist);
+  --color-electric-blue: var(--color-electric-blue);
+  --color-mint-pop: var(--color-mint-pop);
+  --color-lavender: var(--color-lavender);
+  --color-ember: var(--color-ember);
+  --color-sunburst: var(--color-sunburst);
+  --color-voltage-violet: var(--color-voltage-violet);
   --color-royal-violet: var(--color-royal-violet);
   --color-electric-iris: var(--color-electric-iris);
   --color-lemon-zest: var(--color-lemon-zest);
@@ -39,43 +73,123 @@
   --font-display: var(--font-display);
   --font-body: var(--font-body);
   --radius-cards: var(--radius-cards);
+  --radius-cards-elevated: var(--radius-cards-elevated);
   --radius-input: var(--radius-input);
   --radius-buttons: var(--radius-buttons);
   --radius-largecta: var(--radius-largecta);
   --radius-navpills: var(--radius-navpills);
 }
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-paper-white);
+    color: var(--color-carbon);
+    font-family: var(--font-body);
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    font-feature-settings: "tnum";
+  }
+
+  /* Display type: condensed, uppercase, crushed leading. */
+  h1,
+  h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 0.92;
+    letter-spacing: 0.005em;
+  }
+
+  /* Subheads stay in the UI face, bold. */
+  h3,
+  h4 {
+    font-family: var(--font-body);
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+
+  ::selection {
+    background: var(--color-sunburst);
+    color: var(--color-carbon);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-carbon);
+    outline-offset: 3px;
+  }
+
+  input,
+  select,
+  textarea {
+    background: var(--color-paper-white);
+  }
 }
 
-body {
-  background: var(--color-fog);
-  color: var(--color-obsidian);
-  font-family: var(--font-body);
-}
-
-h1, h2, h3, h4 {
-  font-family: var(--font-display);
-  font-weight: 400;
-  letter-spacing: -0.04em;
+/* Every card gets the hand-cut black outline, even where a page didn't
+   add a border class. Layered so explicit utilities still win. */
+@layer components {
+  .rounded-cards {
+    border: 1px solid var(--color-carbon);
+  }
 }
 
 .eyebrow {
   font-family: var(--font-body);
-  font-weight: 500;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.143em;
+  letter-spacing: 0.032em;
 }
 
 .container-page {
-  max-width: 1200px;
+  max-width: 1280px;
   margin-inline: auto;
-  padding-inline: 24px;
+  padding-inline: 20px;
 }
 
 @media (min-width: 768px) {
   .container-page {
     padding-inline: 40px;
+  }
+}
+
+/* Sticker tag: pill label with black outline. */
+.sticker-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border: 1px solid var(--color-carbon);
+  border-radius: 1600px;
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.032em;
+  text-transform: uppercase;
+  color: var(--color-carbon);
+}
+
+/* Marquee strip */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee 40s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
   }
 }

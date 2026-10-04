@@ -38,19 +38,19 @@ export default function BlogPostLayout({
       <JsonLd data={articleSchema} />
       <Breadcrumbs items={[{ name: "Insights", href: "/blog" }, { name: title, href: `/blog/${slug}` }]} />
 
-      <section className="bg-royal-violet">
-        <div className="container-page py-16 md:py-20">
-          <p className="eyebrow text-sm text-lemon-zest">
+      <section className="border-b border-carbon bg-sky-wash">
+        <div className="container-page py-14 md:py-20">
+          <p className="sticker-tag bg-sunburst">
             {new Date(date).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}
             {" · "}Written by {FOUNDER_NAME}
           </p>
-          <h1 className="mt-4 max-w-3xl text-4xl leading-[1.13] text-white md:text-5xl">{title}</h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/80">{description}</p>
+          <h1 className="mt-6 max-w-4xl text-5xl text-carbon md:text-7xl">{title}</h1>
+          <p className="mt-6 max-w-2xl text-lg text-carbon">{description}</p>
         </div>
       </section>
 
       <article className="bg-paper py-16">
-        <div className="container-page max-w-3xl space-y-8 [&_h2]:mt-10 [&_h2]:text-2xl [&_h2]:text-obsidian [&_p]:leading-relaxed [&_p]:text-slate [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5 [&_ul]:text-slate [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:pl-5 [&_ol]:text-slate [&_table]:w-full [&_table]:border-collapse [&_table]:text-sm [&_th]:border-b [&_th]:border-ash [&_th]:bg-fog [&_th]:p-3 [&_th]:text-left [&_th]:font-medium [&_th]:text-obsidian [&_td]:border-b [&_td]:border-ash [&_td]:p-3 [&_td]:text-slate [&_a]:text-royal-violet [&_a]:underline">
+        <div className="container-page max-w-3xl space-y-8 [&_h2]:mt-12 [&_h2]:text-4xl [&_h2]:leading-[0.95] [&_h3]:text-xl [&_h2]:text-obsidian [&_p]:leading-relaxed [&_p]:text-slate [&_ul]:list-disc [&_ul]:space-y-2 [&_ul]:pl-5 [&_ul]:text-slate [&_ol]:list-decimal [&_ol]:space-y-2 [&_ol]:pl-5 [&_ol]:text-slate [&_table]:w-full [&_table]:border-collapse [&_table]:text-sm [&_th]:border-b [&_th]:border-ash [&_th]:bg-fog [&_th]:p-3 [&_th]:text-left [&_th]:font-medium [&_th]:text-obsidian [&_td]:border-b [&_td]:border-ash [&_td]:p-3 [&_td]:text-slate [&_a]:text-royal-violet [&_a]:underline">
           {children}
         </div>
       </article>

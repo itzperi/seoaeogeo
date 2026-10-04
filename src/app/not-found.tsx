@@ -32,7 +32,7 @@ export default function NotFound() {
         </div>
         <Link
           href="/"
-          className="mt-8 inline-block rounded-buttons bg-royal-violet px-6 py-3 text-sm font-medium text-white"
+          className="mt-8 inline-block rounded-full border border-carbon bg-carbon px-6 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white"
         >
           Back to homepage
         </Link>

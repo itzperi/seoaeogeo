@@ -1,23 +1,25 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Anton, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactBar from "@/components/ContactBar";
+import Marquee from "@/components/Marquee";
 import { JsonLd, organizationSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
-// Substitute for Circularpro Book (display headings) per the style reference.
-const plusJakarta = Plus_Jakarta_Sans({
-  variable: "--font-display",
+// Anton stands in for the condensed 800-weight display face of the Slush
+// style reference; Inter stands in for Aeonik Pro (UI and body).
+const anton = Anton({
+  variable: "--font-anton",
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: "400",
 });
 
 const inter = Inter({
-  variable: "--font-body",
+  variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "700"],
 });
 
 export const metadata: Metadata = {
@@ -42,9 +44,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${plusJakarta.variable} ${inter.variable} h-full antialiased`}>
+    <html lang="en" className={`${anton.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <JsonLd data={organizationSchema()} />
+        <Marquee />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

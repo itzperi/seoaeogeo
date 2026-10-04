@@ -15,7 +15,7 @@ export default function MobileNav({ services }: { services: ServiceSummary[] }) 
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         onClick={() => setOpen((v) => !v)}
-        className="flex h-11 w-11 items-center justify-center rounded-lg border border-ash text-obsidian"
+        className="flex h-11 w-11 items-center justify-center rounded-full border border-carbon bg-white text-carbon"
       >
         {open ? (
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -29,7 +29,7 @@ export default function MobileNav({ services }: { services: ServiceSummary[] }) 
       </button>
 
       {open && (
-        <div className="absolute inset-x-0 top-16 z-40 max-h-[calc(100vh-4rem)] overflow-y-auto border-t border-ash bg-paper shadow-[var(--shadow-card)]">
+        <div className="absolute inset-x-0 top-[72px] z-40 max-h-[calc(100vh-72px)] overflow-y-auto border-y border-carbon bg-white">
           <div className="container-page py-6">
             <p className="eyebrow text-xs text-slate">Services</p>
             <ul className="mt-3 space-y-1">
