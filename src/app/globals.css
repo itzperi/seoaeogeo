@@ -144,6 +144,16 @@
   letter-spacing: 0.032em;
 }
 
+/* Laptop/desktop: render at 90% — the same as one step of browser zoom-out.
+   CSS zoom scales the px-based sizes too (display type, pills, icons),
+   unlike changing the root font-size. Phones/tablets stay at 100% so text
+   and touch targets keep their full size. */
+@media (min-width: 1024px) {
+  html {
+    zoom: 0.9;
+  }
+}
+
 .container-page {
   max-width: 1280px;
   margin-inline: auto;
