@@ -6,6 +6,7 @@ import QualifyForm from "@/components/QualifyForm";
 import { JsonLd } from "@/lib/schema";
 import {
   ADDRESS_FULL,
+  PLUS_CODE,
   BOOKING_EMBED_SRC,
   BUSINESS_HOURS,
   EMAIL,
@@ -89,6 +90,7 @@ export default function ContactPage() {
             <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
               <h2 className="text-lg font-medium text-obsidian">Office address</h2>
               <p className="mt-2 text-sm text-slate">{ADDRESS_FULL}</p>
+              <p className="mt-1 text-sm text-slate">Plus code: {PLUS_CODE}</p>
               <p className="mt-2 text-sm">
                 <a href={`mailto:${EMAIL}`} className="text-royal-violet hover:underline">{EMAIL}</a>
               </p>

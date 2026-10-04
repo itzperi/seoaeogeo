@@ -13,8 +13,11 @@ export const YEAR_FOUNDED = 2024;
 // maps.app.goo.gl short link, which is only a redirect.
 export const GBP_CID = "9218487927688159679";
 export const GBP_URL = `https://maps.google.com/?cid=${GBP_CID}`;
+// Directions go to the office's exact coordinates (not a name search), so
+// visitors reach the right building even while the profile's map pin is
+// being corrected.
 export const GBP_DIRECTIONS_URL =
-  "https://www.google.com/maps/dir/?api=1&destination=C+S+Rushil+%26+Co.%2C+13th+Main+Road%2C+J-Block%2C+Anna+Nagar%2C+Chennai+600040";
+  "https://www.google.com/maps/dir/?api=1&destination=13.085989%2C80.199684";
 export const LANGUAGES_SPOKEN = ["English", "Tamil", "Hindi"];
 
 // NAP: standardized on the number used on the homepage/contact page (per SEO audit,
@@ -42,7 +45,9 @@ export const ADDRESS_FULL = `${ADDRESS.street}, ${ADDRESS.locality}, ${ADDRESS.c
 export const ADDRESS_SHORT = `${ADDRESS.locality}, ${ADDRESS.city}`;
 
 // Confirmed coordinates for the Anna Nagar office.
-export const GEO = { latitude: 13.085988998413086, longitude: 80.1996841430664 };
+export const GEO = { latitude: 13.085989, longitude: 80.199684 };
+// Google plus code for the same point — shown next to the address.
+export const PLUS_CODE = "35PX+9V Chennai, Tamil Nadu";
 
 export const SOCIALS = {
   linkedin: "https://in.linkedin.com/company/csrushil-co",

@@ -7,6 +7,7 @@ import {
   GBP_URL,
   PHONE_DISPLAY,
   PHONE_TEL,
+  PLUS_CODE,
 } from "@/lib/site";
 
 // Visible name / address / phone / hours that match the Google Business
@@ -27,6 +28,8 @@ export default function GoogleProfileStrip({ service }: { service?: string }) {
             <strong>{BUSINESS_NAME}</strong>
             <br />
             {ADDRESS_FULL}
+            <br />
+            Plus code: {PLUS_CODE}
             <br />
             <a href={`tel:${PHONE_TEL}`} className="underline underline-offset-2">
               {PHONE_DISPLAY}
