@@ -52,7 +52,7 @@ export default function ContactPage() {
               title="Book a free consultation with C S Rushil & Co."
               src={BOOKING_EMBED_SRC}
               width="100%"
-              height="600"
+              height="720"
               style={{ border: 0 }}
               loading="lazy"
             />

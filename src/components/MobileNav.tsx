@@ -10,7 +10,7 @@ export default function MobileNav({ services }: { services: ServiceSummary[] }) 
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="lg:hidden">
+    <div className="xl:hidden">
       <button
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}

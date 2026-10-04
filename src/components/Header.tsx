@@ -9,12 +9,13 @@ import MobileNav from "./MobileNav";
 const NAV_LINKS = [
   { href: "/about-us", label: "About" },
   { href: "/blog", label: "Insights" },
+  { href: "/videos", label: "Videos" },
   { href: "/faq", label: "FAQ" },
   { href: "/contact", label: "Contact" },
 ];
 
 const PILL =
-  "inline-flex min-h-[40px] items-center rounded-full border border-carbon bg-white px-4 text-[13px] font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-sky-wash";
+  "inline-flex min-h-[40px] items-center rounded-full border border-carbon bg-white px-3 text-[12px] font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-sky-wash";
 
 export default function Header() {
   return (
@@ -32,7 +33,7 @@ export default function Header() {
           </span>
         </Link>
 
-        <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
+        <nav className="hidden items-center gap-1 xl:flex" aria-label="Main">
           <div className="group relative">
             <button className={PILL} aria-haspopup="true">
               Services
@@ -86,7 +87,7 @@ export default function Header() {
         </nav>
 
         <div className="flex shrink-0 items-center gap-2">
-          <a href={`tel:${PHONE_TEL}`} className={`${PILL} hidden xl:inline-flex`}>
+          <a href={`tel:${PHONE_TEL}`} className={`${PILL} hidden 2xl:inline-flex`}>
             {PHONE_DISPLAY}
           </a>
           <TrackedAnchor

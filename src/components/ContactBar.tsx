@@ -82,36 +82,30 @@ export default function ContactBar() {
       {/* Keeps the footer's last lines from hiding behind the bar. */}
       <div className="h-16 md:hidden" aria-hidden="true" />
 
-      {/* Desktop: floating stack, bottom-right. */}
+      {/* Desktop: compact round icon buttons, bottom-right. The label slides
+          out on hover/focus so the stack never covers page content. */}
       <div className="fixed bottom-6 right-6 z-50 hidden flex-col items-end gap-2 md:flex">
-        <a
-          href={BOOKING_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => track("book", "desktop-float")}
-          className="flex min-h-[48px] items-center gap-2 rounded-full border border-carbon bg-carbon px-5 text-[13px] font-bold uppercase tracking-[0.032em] text-white hover:opacity-85"
-        >
-          <CalendarIcon />
-          Book a free consultation
-        </a>
-        <a
-          href={WHATSAPP_HREF}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={() => track("whatsapp", "desktop-float")}
-          className="flex min-h-[48px] items-center gap-2 rounded-full border border-carbon bg-[#25D366] px-5 text-[13px] font-bold uppercase tracking-[0.032em] text-carbon hover:opacity-90"
-        >
-          <WhatsAppIcon />
-          WhatsApp us
-        </a>
-        <a
-          href={`tel:${PHONE_TEL}`}
-          onClick={() => track("call", "desktop-float")}
-          className="flex min-h-[48px] items-center gap-2 rounded-full border border-carbon bg-white px-5 text-[13px] font-bold uppercase tracking-[0.032em] text-carbon hover:bg-sky-wash"
-        >
-          <PhoneIcon />
-          {PHONE_DISPLAY}
-        </a>
+        {[
+          { action: "book" as const, href: BOOKING_LINK, label: "Book a free consultation", icon: <CalendarIcon />, style: "bg-carbon text-white", external: true },
+          { action: "whatsapp" as const, href: WHATSAPP_HREF, label: "WhatsApp us", icon: <WhatsAppIcon />, style: "bg-[#25D366] text-carbon", external: true },
+          { action: "call" as const, href: `tel:${PHONE_TEL}`, label: `Call ${PHONE_DISPLAY}`, icon: <PhoneIcon />, style: "bg-white text-carbon", external: false },
+        ].map((b) => (
+          <a
+            key={b.action}
+            href={b.href}
+            {...(b.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            onClick={() => track(b.action, "desktop-float")}
+            aria-label={b.label}
+            className="group relative flex h-12 w-12 items-center justify-center"
+          >
+            <span className="pointer-events-none absolute right-14 whitespace-nowrap rounded-full border border-carbon bg-white px-3 py-1.5 text-[12px] font-bold uppercase tracking-[0.032em] text-carbon opacity-0 transition-opacity group-hover:opacity-100 group-focus-visible:opacity-100">
+              {b.label}
+            </span>
+            <span className={`flex h-12 w-12 items-center justify-center rounded-full border border-carbon transition-transform group-hover:scale-105 ${b.style}`}>
+              {b.icon}
+            </span>
+          </a>
+        ))}
       </div>
     </>
   );
