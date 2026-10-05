@@ -124,12 +124,6 @@ export const SERVICES: ServiceSummary[] = [
       "Formation and compliance for trusts, societies, and Section 8 companies, including 12A/80G registration support.",
   },
   {
-    slug: "ca-fees-chennai",
-    name: "CA Fees & Pricing",
-    shortDescription:
-      "Indicative pricing for company incorporation, GST, and audit services from a Chennai chartered accountancy firm.",
-  },
-  {
     slug: "bookkeeping-services-chennai",
     name: "Bookkeeping Services",
     shortDescription:

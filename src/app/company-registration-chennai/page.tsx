@@ -52,7 +52,7 @@ export default function Page() {
         { question: "What's the difference between Private Limited, LLP, and OPC?", answer: "A Private Limited Company suits businesses planning to raise equity investment and needs at least two directors/shareholders. An LLP suits professional and services businesses wanting partnership flexibility with liability protection. An OPC suits a single founder wanting a corporate structure without a co-founder." },
         { question: "What is SPICe+ and do I need a separate application for PAN/TAN?", answer: "SPICe+ (INC-32) is the MCA's integrated incorporation form — PAN and TAN are auto-generated as part of the same filing, so no separate application is needed for a new company." },
         { question: "Can I register a company from outside Chennai and still work with you?", answer: "Yes. MCA filings are fully online; we coordinate document collection, DSC issuance, and filing remotely for founders anywhere, with the registered office typically set up in Chennai or wherever your operations are based." },
-        { question: "Do you offer a fixed quote for company registration?", answer: "Yes — see our CA fees page for indicative pricing, or contact us for a fixed quote based on your specific structure and number of directors." },
+        { question: "Do you offer a fixed quote for company registration?", answer: "Yes — contact us for a fixed quote based on your specific structure and number of directors." },
       ]}
       relatedQuestions={[
         { question: "What's involved specifically in Private Limited incorporation?", href: "/private-limited-company-incorporation-chennai" },

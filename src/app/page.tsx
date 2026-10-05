@@ -42,11 +42,6 @@ const HOME_FAQS = [
       "Yes. We represent clients in GST show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal (GSTAT) proceedings. See our dedicated GST litigation page for details.",
   },
   {
-    question: "How much does private limited company incorporation cost in Chennai?",
-    answer:
-      "Incorporation cost depends on authorised capital, number of directors, and add-ons like DSC and stamp duty. We provide a transparent, itemised quote — government fees separated from professional fees — during your free consultation.",
-  },
-  {
     question: "Where is your office located?",
     answer: `Our office is in ${ADDRESS_FULL}. Walk-ins are welcome during business hours, or book a free consultation call.`,
   },

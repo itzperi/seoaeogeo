@@ -22,6 +22,8 @@ const nextConfig: NextConfig = {
     return [
       // The combined USA & UK page became the NRI hub with separate country pages.
       { source: "/nri-tax-services-usa-uk", destination: "/nri-tax-services", permanent: true },
+      // The pricing page was removed; send old links to the contact page.
+      { source: "/ca-fees-chennai", destination: "/contact", permanent: true },
     ];
   },
 };
