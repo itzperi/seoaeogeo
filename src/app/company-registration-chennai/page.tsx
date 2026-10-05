@@ -25,11 +25,11 @@ export default function Page() {
       eyebrow="Company Registration · Chennai"
       h1="Company Registration in Chennai"
       subhead="Register your company the right way the first time — name approval, MCA filing, and post-incorporation compliance handled end-to-end."
-      introHeading="What does company registration involve?"
+      introHeading="What does company registration in Chennai involve?"
       intro="Registering a company in India means securing Digital Signature Certificates (DSC) and Director Identification Numbers (DIN) for promoters, reserving a unique name with the MCA, and filing the incorporation application (SPICe+ for companies, FiLLiP for LLPs) along with the Memorandum and Articles of Association. Done correctly, this also bundles PAN, TAN, and often GST and bank account setup into a single filing window, which is why document readiness upfront materially shortens the timeline."
-      citation={{ label: "Ministry of Corporate Affairs (MCA)", href: "https://www.mca.gov.in/" }}
+      citation={{ label: "Ministry of Corporate Affairs (MCA): SPICe+ & linked filings FAQs", href: "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/spiceplus-linked-filings.html" }}
       howTo={{
-        heading: "The company registration process, step by step",
+        heading: "How do you register a company in Chennai, step by step?",
         steps: [
           { name: "Digital Signature and DIN", text: "Class 3 Digital Signature Certificates and Director Identification Numbers are obtained for all proposed directors or designated partners — required to sign the electronic MCA forms." },
           { name: "Name approval", text: "Availability is checked against the MCA and trademark databases, and the proposed name is reserved before the main incorporation filing." },
@@ -38,7 +38,7 @@ export default function Page() {
           { name: "Post-incorporation compliance", text: "First board meeting, statutory registers, bank account opening, and GST registration follow as the immediate next steps." },
         ],
       }}
-      subServicesHeading="Structures we register"
+      subServicesHeading="Which company structures can you register in Chennai?"
       subServices={[
         { name: "Private Limited Company", text: "The most common structure for startups and growing businesses seeking investment — limited liability with a formal share-capital structure." },
         { name: "Limited Liability Partnership (LLP)", text: "Limited liability with partnership-style flexibility — popular for professional services and small partnerships." },
@@ -52,7 +52,6 @@ export default function Page() {
         { question: "What's the difference between Private Limited, LLP, and OPC?", answer: "A Private Limited Company suits businesses planning to raise equity investment and needs at least two directors/shareholders. An LLP suits professional and services businesses wanting partnership flexibility with liability protection. An OPC suits a single founder wanting a corporate structure without a co-founder." },
         { question: "What is SPICe+ and do I need a separate application for PAN/TAN?", answer: "SPICe+ (INC-32) is the MCA's integrated incorporation form — PAN and TAN are auto-generated as part of the same filing, so no separate application is needed for a new company." },
         { question: "Can I register a company from outside Chennai and still work with you?", answer: "Yes. MCA filings are fully online; we coordinate document collection, DSC issuance, and filing remotely for founders anywhere, with the registered office typically set up in Chennai or wherever your operations are based." },
-        { question: "Do you offer a fixed quote for company registration?", answer: "Yes — contact us for a fixed quote based on your specific structure and number of directors." },
       ]}
       relatedQuestions={[
         { question: "What's involved specifically in Private Limited incorporation?", href: "/private-limited-company-incorporation-chennai" },

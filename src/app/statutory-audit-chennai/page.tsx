@@ -25,11 +25,11 @@ export default function Page() {
       eyebrow="Statutory Audit · Chennai"
       h1="Statutory Audit in Chennai"
       subhead="Independent, evidence-based audit of your financial statements — mandatory under the Companies Act, and a genuine trust signal for lenders and investors when done well."
-      introHeading="What is a statutory audit?"
+      introHeading="What is a statutory audit and which companies need one?"
       intro="A statutory audit is the independent examination of a company's financial statements, mandated under Section 139 of the Companies Act, 2013, for every company registered in India regardless of turnover, profit, or size — including a company with zero transactions in the year. The auditor verifies that the financial statements give a true and fair view, checks compliance with applicable accounting standards, and reports directly to shareholders. Beyond the statutory obligation, a rigorous audit surfaces control gaps and gives lenders, investors, and the board an independently verified picture of the business."
-      citation={{ label: "Ministry of Corporate Affairs — Companies Act, 2013", href: "https://www.mca.gov.in/" }}
+      citation={{ label: "Ministry of Corporate Affairs: Form ADT-1, appointment of auditor (Section 139, Companies Act, 2013)", href: "https://www.mca.gov.in/content/mca/global/en/mca/e-filing/complianceServices/ADT-1.html" }}
       howTo={{
-        heading: "How a statutory audit engagement proceeds",
+        heading: "How does a statutory audit engagement proceed?",
         steps: [
           { name: "Auditor appointment", text: "The Board appoints the first auditor within 30 days of incorporation, or shareholders appoint/re-appoint the auditor at the AGM; the ADT-1 filing confirms the appointment with the ROC." },
           { name: "Planning and books review", text: "We review the trial balance, ledgers, and prior-year workpapers to scope the audit and flag documentation gaps before fieldwork starts." },
@@ -38,7 +38,7 @@ export default function Page() {
           { name: "Audit report and sign-off", text: "The signed audit report, along with the audited financial statements, is issued to shareholders and forms the basis for the company's AOC-4 and MGT-7 ROC filings." },
         ],
       }}
-      subServicesHeading="What's covered"
+      subServicesHeading="What does a statutory audit cover?"
       subServices={[
         { name: "First Statutory Audit (New Companies)", text: "Appointment of the first auditor within 30 days of incorporation and audit of the first financial year, however short." },
         { name: "Annual Statutory Audit", text: "Full-scope audit of the balance sheet, profit & loss statement, and cash flow statement in line with Indian Accounting Standards (Ind AS) or AS as applicable." },
@@ -51,7 +51,7 @@ export default function Page() {
         { question: "Is statutory audit mandatory even for a company with no business activity?", answer: "Yes. Every company registered under the Companies Act must have its financial statements audited annually regardless of turnover, profit, or business activity — a dormant or zero-transaction company is not exempt. Skipping this exposes directors to penalties under the Act, not just a compliance gap." },
         { question: "Who can be appointed as a statutory auditor?", answer: "Only a practising Chartered Accountant or a firm of Chartered Accountants, appointed by the shareholders (or the Board for the first auditor) and not disqualified under Section 141 of the Companies Act — for instance, an auditor cannot hold shares in the company being audited." },
         { question: "How long does a statutory audit take for a small or mid-sized company?", answer: "Typically 2–4 weeks from the start of fieldwork, depending on how organised the books are and how quickly queries are answered. Companies with clean, reconciled books month-to-month see the faster end of that range; those doing a full year's reconciliation at audit time should budget longer." },
-        { question: "What happens if my company misses the statutory audit deadline?", answer: "Late or missed statutory audits can trigger penalties on the company and officers in default under the Companies Act, and unaudited financials block your annual ROC filings (AOC-4, MGT-7), which carry their own separate late fees that compound daily." },
+        { question: "What happens if my company misses the statutory audit deadline?", answer: "Late or missed statutory audits can trigger penalties on the company and officers in default under the Companies Act, and unaudited financials block your annual ROC filings (AOC-4, MGT-7), which carry their own additional fee of ₹100 per day of delay for each form, with no upper cap." },
         { question: "Do you conduct statutory audits outside Chennai?", answer: "Yes — for clients across Tamil Nadu and pan-India, with fieldwork (in-person or remote, depending on your systems) scheduled around your business calendar rather than ours." },
       ]}
       relatedQuestions={[

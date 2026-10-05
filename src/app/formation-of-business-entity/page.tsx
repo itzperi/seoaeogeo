@@ -30,7 +30,7 @@ const FAQS = [
   {
     question: "How do I decide which business structure is suitable for me?",
     answer:
-      "It depends on liability protection, funding plans, and compliance appetite. Solo founders wanting simplicity often start as a Sole Proprietorship or OPC; businesses planning to raise investment should register as a Private Limited Company. We assess your specific situation during a free consultation.",
+      "It depends on liability protection, funding plans, and compliance appetite. Solo founders wanting simplicity often start as a Sole Proprietorship or OPC; businesses planning to raise investment should register as a Private Limited Company. We assess your specific situation during an initial consultation.",
   },
   {
     question: "What documents are needed for business entity registration?",
@@ -63,6 +63,7 @@ export default function FormationPage() {
       <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "Formation of Business Entity", href: "/formation-of-business-entity" }]} />
       <PageHero
+        reviewedPath="/formation-of-business-entity"
         eyebrow="Business Registration · Chennai"
         h1="Company Registration in Chennai — All Business Structures"
         subhead="Strategic guidance and entity structuring — from Private Limited Company incorporation to Sole Proprietorship — with compliance built in from day one."
@@ -84,17 +85,17 @@ export default function FormationPage() {
           <p className="mt-2 max-w-2xl text-sm text-slate">
             Official reference:{" "}
             <a
-              href="https://www.mca.gov.in/"
+              href="https://www.mca.gov.in/content/mca/global/en/mca/e-filing/incorporation-change-services.html"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-royal-violet underline underline-offset-2"
             >
-              Ministry of Corporate Affairs (MCA)
+              Ministry of Corporate Affairs (MCA): Incorporation &amp; Change services
             </a>
           </p>
 
           <h2 className="mt-16 text-2xl text-obsidian">
-            Structures we register
+            Which business structures can you register in Chennai?
           </h2>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {ENTITIES.map((entity) => (
@@ -116,7 +117,7 @@ export default function FormationPage() {
               </h2>
               <p className="mt-3 text-slate">
                 We have a dedicated guide covering the full SPICe+ process, timelines,
-                fees, and a Private Ltd vs LLP vs OPC comparison.
+                and a Private Ltd vs LLP vs OPC comparison.
               </p>
               <Link
                 href="/private-limited-company-incorporation-chennai"

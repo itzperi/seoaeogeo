@@ -31,27 +31,27 @@ const FAQS = [
   {
     question: "How long does private limited company registration take in Chennai?",
     answer:
-      "Private limited company registration in Chennai takes 7–12 working days once documents are ready. That covers DSC and DIN, name approval and the Certificate of Incorporation from the MCA. Allow about 3 weeks if you are collecting documents from scratch. In detail: SPICe+ incorporation typically takes 7–12 working days, covering DSC/DIN issuance, name approval, and Certificate of Incorporation from the MCA. Delays usually come from name-availability rejections (the proposed name resembling an existing company or trademark) or incomplete KYC documents, both of which we vet against MCA and trademark databases before filing rather than discovering after a rejection resets the clock. Founders who have their director KYC, registered-office proof, and proposed name options ready upfront typically see the faster end of that range; those starting from scratch on documentation should budget closer to 3 weeks including document collection.",
+      "Private limited company registration in Chennai takes 7–12 working days once documents are ready. That covers DSC and DIN issuance, name approval and the Certificate of Incorporation from the MCA through SPICe+. Allow about 3 weeks, including document collection, if you are starting from scratch. Delays usually come from name-availability rejections (the proposed name resembling an existing company or trademark) or incomplete KYC documents, both of which we vet against MCA and trademark databases before filing rather than discovering after a rejection resets the clock. Founders who have their director KYC, registered-office proof, and proposed name options ready upfront typically see the faster end of that range.",
   },
   {
     question: "What is the minimum capital and number of directors required?",
     answer:
-      "A Private Limited Company needs a minimum of 2 directors and 2 shareholders (they can be the same people, and one person can hold both roles), with a maximum of 15 directors and 200 shareholders. There is no statutory minimum paid-up capital requirement — you can technically start with as little as ₹1, though most founders capitalise at a figure that realistically covers early operating expenses since raising it later requires a formal ROC filing. At least one director must be resident in India, meaning they stayed in India for at least 182 days during the financial year (Section 149(3) of the Companies Act, 2013) — this applies even if all shareholders are based abroad.",
+      "A Private Limited Company needs at least 2 directors and 2 shareholders, who can be the same people, and there is no statutory minimum paid-up capital. It can have up to 15 directors and 200 shareholders, and at least one director must be resident in India. One person can hold both the director and shareholder roles. You can technically start with as little as ₹1 of capital, though most founders capitalise at a figure that realistically covers early operating expenses, since raising it later requires a formal ROC filing. The resident director must have stayed in India for at least 182 days during the financial year (Section 149(3) of the Companies Act, 2013) — this applies even if all shareholders are based abroad.",
   },
   {
     question: "What documents are required for private limited company registration?",
     answer:
-      "For each director and shareholder: PAN, Aadhaar, a photo and a DSC; for the company: registered office proof with an owner NOC. In detail: PAN and Aadhaar of all directors and shareholders, a recent passport-size photo, proof of the registered office address (a rent agreement or electricity bill along with a No Objection Certificate from the property owner), and Class 3 digital signature certificates (DSC) for the proposed directors to sign the electronic MCA forms. NRI or foreign national directors need additional documents — a notarised or apostilled passport copy, proof of overseas address, and sometimes a Business Visa depending on their role. We provide a checklist tailored specifically to resident versus NRI/foreign director combinations before you start collecting paperwork, since this is the single biggest source of avoidable delay.",
+      "Every director and shareholder needs PAN, Aadhaar and a recent passport-size photo, and each proposed director needs a Class 3 digital signature certificate (DSC) to sign the electronic MCA forms. For the company, you need proof of the registered office address, such as a rent agreement or electricity bill, with a No Objection Certificate from the property owner. NRI or foreign national directors need additional documents — a notarised or apostilled passport copy, proof of overseas address, and sometimes a Business Visa depending on their role. We provide a checklist tailored specifically to resident versus NRI/foreign director combinations before you start collecting paperwork, since this is the single biggest source of avoidable delay.",
   },
   {
     question: "What compliance is required after incorporation?",
     answer:
-      "Within 180 days of incorporation you must file a Commencement of Business declaration (INC-20A) confirming subscribed capital has actually been received — skipping this can lead to the company being struck off. You must also open a current bank account in the company's name, appoint your first statutory auditor within 30 days of incorporation, issue share certificates to subscribers within 60 days, and maintain statutory registers (of members, directors, and charges) from day one, even before your first annual filing is due. We offer a post-incorporation compliance package that tracks all of these deadlines so nothing is missed in the first, most deadline-heavy 6 months.",
+      "After incorporation, a private limited company must file INC-20A within 180 days, appoint its first statutory auditor within 30 days, issue share certificates to subscribers within 60 days, open a current bank account in the company's name, and maintain statutory registers from day one. INC-20A is the Commencement of Business declaration confirming subscribed capital has actually been received — skipping it can lead to the company being struck off. The statutory registers (of members, directors, and charges) must be kept even before your first annual filing is due. Our post-incorporation compliance support tracks all of these deadlines so nothing is missed in the first, most deadline-heavy 6 months.",
   },
   {
     question: "Can a Private Limited Company be converted from an existing proprietorship or partnership?",
     answer:
-      "Yes. We handle conversion of proprietorships and partnership firms into Private Limited Companies, which involves incorporating the new company, transferring business assets and liabilities via a formal slump-sale or business-transfer agreement, and re-registering existing licenses — GST, MSME/Udyam, trade licenses, and bank accounts — in the new entity's name and PAN. This is a common step for businesses that outgrow the compliance simplicity of a proprietorship once they need to raise investment, limit personal liability, or work with clients who prefer contracting with a registered company rather than an individual.",
+      "Yes. A proprietorship or partnership firm is converted by incorporating a new Private Limited Company, transferring the business assets and liabilities through a formal slump-sale or business-transfer agreement, and re-registering existing licences — GST, MSME/Udyam, trade licences and bank accounts — in the new entity's name and PAN. We handle each of these steps. This is a common step for businesses that outgrow the compliance simplicity of a proprietorship once they need to raise investment, limit personal liability, or work with clients who prefer contracting with a registered company rather than an individual.",
   },
 ];
 
@@ -93,6 +93,7 @@ export default function IncorporationPage() {
       <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "Private Limited Company Registration", href: "/private-limited-company-incorporation-chennai" }]} />
       <PageHero
+        reviewedPath="/private-limited-company-incorporation-chennai"
         eyebrow="Company Registration · Chennai"
         h1="Private Limited Company Registration in Chennai"
         subhead="End-to-end private limited company registration through SPICe+ — DSC, DIN, name approval, MoA/AoA drafting and post-incorporation compliance — handled by a chartered accountant firm in Anna Nagar, Chennai."
@@ -109,7 +110,7 @@ export default function IncorporationPage() {
                 Private Limited Company incorporation is the legal process of registering
                 a business as a distinct corporate entity under the Companies Act, 2013,
                 through the{" "}
-                <a href="https://www.mca.gov.in" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline underline-offset-2">
+                <a href="https://www.mca.gov.in/content/dam/mca/pdf/mca-services/company-e-filing/incorporation-change-services/Incorporating%20a%20Private%20Limited%20Company%20in%20India.pdf" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline underline-offset-2">
                   Ministry of Corporate Affairs (MCA)
                 </a>
                 . It gives the business a
@@ -124,7 +125,7 @@ export default function IncorporationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                Eligibility &amp; requirements
+                Who can register a private limited company?
               </h2>
               <ul className="mt-4 space-y-3 text-slate">
                 <li>• Minimum 2 directors and 2 shareholders (can be the same individuals), maximum 15 directors.</li>
@@ -146,7 +147,7 @@ export default function IncorporationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                How to register a private limited company in Chennai (step by step)
+                How do you register a private limited company in Chennai?
               </h2>
               <ol className="mt-4 space-y-4">
                 {STEPS.map((step, i) => (
@@ -165,7 +166,7 @@ export default function IncorporationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                Private Ltd vs LLP vs OPC vs Sole Proprietorship
+                How does a Private Ltd compare with an LLP, OPC or Sole Proprietorship?
               </h2>
               <div className="mt-4 overflow-x-auto rounded-cards border border-ash">
                 <table className="w-full min-w-[640px] border-collapse text-sm">
@@ -195,7 +196,7 @@ export default function IncorporationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                How we handle your incorporation
+                How do we handle your incorporation?
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
                 We start with a name-availability and trademark check before you commit
@@ -240,7 +241,7 @@ export default function IncorporationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                Post-incorporation compliance checklist
+                What is the post-incorporation compliance checklist?
               </h2>
               <ul className="mt-4 space-y-3 text-slate">
                 <li>• File INC-20A (Commencement of Business) within 180 days of incorporation.</li>

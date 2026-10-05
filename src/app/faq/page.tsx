@@ -51,7 +51,7 @@ const HUB_FAQS = [
   {
     question: "What turnover triggers a tax audit under Section 44AB?",
     answer:
-      "₹1 crore for businesses generally (₹10 crore if cash receipts and payments are each within 5% of total transactions), and ₹50 lakh in gross receipts for professionals. These thresholds are set by the Finance Act and can change year to year.",
+      "₹1 crore for businesses generally (₹10 crore if cash receipts and payments are each within 5% of total transactions), and ₹50 lakh in gross receipts for professionals. These thresholds are set by the Finance Act and can change year to year; from tax year 2026-27 the equivalent provision is Section 63 of the Income-tax Act, 2025.",
     href: "/tax-audit-chennai",
     linkLabel: "Full tax audit guide",
   },
@@ -72,7 +72,7 @@ const HUB_FAQS = [
   {
     question: "What happens if I miss an ROC filing deadline?",
     answer:
-      "Late filing attracts an additional fee that can run up to several times the normal fee depending on the delay, and prolonged non-compliance can lead to director disqualification or the company being struck off by the ROC.",
+      "A late AOC-4 or MGT-7/7A attracts an additional fee of ₹100 per day of delay for each form, with no upper cap, and prolonged non-compliance can lead to director disqualification or the company being struck off by the ROC.",
     href: "/roc-compliances",
     linkLabel: "Full ROC compliance guide",
   },
