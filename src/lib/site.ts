@@ -17,7 +17,7 @@ export const GBP_URL = `https://maps.google.com/?cid=${GBP_CID}`;
 // visitors reach the right building even while the profile's map pin is
 // being corrected.
 export const GBP_DIRECTIONS_URL =
-  "https://www.google.com/maps/dir/?api=1&destination=13.085989%2C80.199684";
+  "https://www.google.com/maps/dir/?api=1&destination=13.0859694%2C80.1997378";
 export const LANGUAGES_SPOKEN = ["English", "Tamil", "Hindi"];
 
 // NAP: standardized on the number used on the homepage/contact page (per SEO audit,
@@ -26,11 +26,11 @@ export const PHONE_DISPLAY = "+91 72001 49711";
 export const PHONE_TEL = "+917200149711";
 export const EMAIL = "admin@csrushil.com";
 
-// Confirmed 2026-09-15. This exact string must match the Google Business
+// Confirmed 2026-10-05 against the corrected profile. This exact string must match the Google Business
 // Profile address character-for-character — that identical-NAP match is a
 // direct local ranking factor, so don't reformat it "for style" later.
 export const ADDRESS = {
-  street: "Old Door No. AP-890, New No. 18, J-Block, 1st Street, 13th Main Road",
+  street: "Old Door No. AP-890, New No. 18, J-Block, 1st Street, 13th Main Rd",
   locality: "Anna Nagar",
   city: "Chennai",
   region: "Tamil Nadu",
@@ -44,8 +44,8 @@ export const ADDRESS_FULL = `${ADDRESS.street}, ${ADDRESS.locality}, ${ADDRESS.c
 // street address would overflow — never use this for schema/NAP fields.
 export const ADDRESS_SHORT = `${ADDRESS.locality}, ${ADDRESS.city}`;
 
-// Confirmed coordinates for the Anna Nagar office.
-export const GEO = { latitude: 13.085989, longitude: 80.199684 };
+// Coordinates of the Google Business Profile pin (corrected 2026-10-05).
+export const GEO = { latitude: 13.0859694, longitude: 80.1997378 };
 // Google plus code for the same point — shown next to the address.
 export const PLUS_CODE = "35PX+9V Chennai, Tamil Nadu";
 

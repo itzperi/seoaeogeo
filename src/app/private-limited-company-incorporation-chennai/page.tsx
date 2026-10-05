@@ -218,7 +218,7 @@ export default function IncorporationPage() {
                 Private limited company registration in Anna Nagar
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
-                Our office is at J-Block, 1st Street, 13th Main Road, Anna Nagar,
+                Our office is at J-Block, 1st Street, 13th Main Rd, Anna Nagar,
                 Chennai 600040, so founders in Anna Nagar, Anna Nagar West,
                 Shenoy Nagar, Thirumangalam, Koyambedu, Mogappair and Aminjikarai can
                 register a private limited company with a chartered accountant they

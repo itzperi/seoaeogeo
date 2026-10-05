@@ -7,7 +7,7 @@ const PAGE_URL = `${SITE_URL}/chartered-accountant-anna-nagar-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "CA Firm in Anna Nagar, Chennai | C S Rushil & Co." },
   description:
-    "C S Rushil & Co. is a CA firm in Anna Nagar, Chennai (J-Block, 13th Main Road): private limited company registration, GST, audit and tax from chartered accountants you can meet in person.",
+    "C S Rushil & Co. is a CA firm in Anna Nagar, Chennai (J-Block, 13th Main Rd): private limited company registration, GST, audit and tax from chartered accountants you can meet in person.",
   alternates: { canonical: "/chartered-accountant-anna-nagar-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -24,9 +24,9 @@ export default function Page() {
       locality="Anna Nagar"
       crumbHref="/chartered-accountant-anna-nagar-chennai"
       h1="CA Firm in Anna Nagar, Chennai"
-      subhead="C S Rushil & Co. is a chartered accountant firm headquartered in Anna Nagar, at J-Block, 1st Street, 13th Main Road — led by CA Rushil C S with a 16-member team handling company registration, GST, audit and tax."
+      subhead="C S Rushil & Co. is a chartered accountant firm headquartered in Anna Nagar, at J-Block, 1st Street, 13th Main Rd — led by CA Rushil C S with a 16-member team handling company registration, GST, audit and tax."
       distanceNote="This is our home base. Our office is located within Anna Nagar itself — walk-ins are welcome during business hours, and this is the fastest locality for an in-person consultation without travel time across the city."
-      directAnswer="Yes. C S Rushil & Co. is a chartered accountant firm headquartered in Anna Nagar, at J-Block, 1st Street, 13th Main Road, Anna Nagar, Chennai 600040. The firm handles company registration, GST, audit and income tax, and Anna Nagar clients can meet the team in person at the office or work with the firm online."
+      directAnswer="Yes. C S Rushil & Co. is a chartered accountant firm headquartered in Anna Nagar, at J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai 600040. The firm handles company registration, GST, audit and income tax, and Anna Nagar clients can meet the team in person at the office or work with the firm online."
       localContext={[
         "Anna Nagar is one of Chennai's original planned townships, laid out on a grid road system that's unusual for the city — a legacy of its development as a model residential-commercial district. That planning has aged into one of Chennai's more business-friendly neighbourhoods: wide roads, established commercial stretches, and a mix of long-standing local businesses alongside newer offices.",
         "The area sits close to several employment and industrial hubs — the Ambattur Industrial Estate, Padi industrial area, SIDCO Industrial Estate, and IT parks including Ambit IT Park and Prince Info Park — which means our Anna Nagar client base spans small manufacturers and traders through to IT and services businesses, not one single industry type.",
@@ -42,10 +42,10 @@ export default function Page() {
         { slug: "payroll-services-chennai", why: "Payroll outsourcing with PF, ESI, and TDS compliance for Anna Nagar employers." },
       ]}
       faqs={[
-        { question: "Is your office actually located in Anna Nagar?", answer: "Yes. Our registered office is at J-Block, 1st Street, 13th Main Road, Anna Nagar, Chennai 600040, and it is where our team works day-to-day, not a service-area claim. See our contact page for a map and directions." },
+        { question: "Is your office actually located in Anna Nagar?", answer: "Yes. Our registered office is at J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai 600040, and it is where our team works day-to-day, not a service-area claim. See our contact page for a map and directions." },
         { question: "Can I walk in without an appointment?", answer: "We recommend booking a free consultation first so the right team member is available, but for Anna Nagar clients, same-day in-person meetings are usually possible given the short travel distance." },
         { question: "How do I choose a CA firm in Anna Nagar?", answer: "Check four things: the partner's ICAI membership (verifiable on the ICAI website), whether the firm handles your specific work such as company registration, GST notices or audit, who on the team will actually do your filings, and how quickly they respond. Meeting the team at their office before you sign up is the simplest test." },
-        { question: "Can you register a private limited company for an Anna Nagar business?", answer: "Yes. We handle private limited company registration end to end — DSC, DIN, name approval, MoA/AoA and SPICe+ filing — usually in 7–12 working days once documents are ready. Anna Nagar founders can drop off documents at our 13th Main Road office in one visit." },
+        { question: "Can you register a private limited company for an Anna Nagar business?", answer: "Yes. We handle private limited company registration end to end — DSC, DIN, name approval, MoA/AoA and SPICe+ filing — usually in 7–12 working days once documents are ready. Anna Nagar founders can drop off documents at our 13th Main Rd office in one visit." },
         { question: "Do you only serve Anna Nagar, or the wider Chennai area too?", answer: "We serve businesses across Chennai — Anna Nagar is simply where our office is based, and it's the easiest locality for in-person visits. Clients elsewhere in the city work with us virtually just as easily." },
       ]}
       furtherReading={[
