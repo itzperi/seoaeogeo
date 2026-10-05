@@ -21,8 +21,8 @@ export default function Page() {
       subhead="Income tax planning, return filing, scrutiny assessments and appeals for companies, firms and individuals — from our Anna Nagar office."
       introHeading="What is direct tax advisory?"
       intro="Direct tax covers income tax paid directly by individuals and businesses to the government. Effective planning within the law reduces avoidable liability, while accurate, timely filing and disciplined documentation protect you during assessment or scrutiny."
-      citation={{ label: "Income Tax Department (incometax.gov.in)", href: "https://www.incometax.gov.in/" }}
-      subServicesHeading="Our direct tax services"
+      citation={{ label: "Income Tax Department: Objective and scope of the Income-tax Act, 2025 (incometax.gov.in)", href: "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act" }}
+      subServicesHeading="Which direct tax services do we offer in Chennai?"
       subServices={[
         { name: "Income Tax Return Filing", text: "Accurate, on-time ITR filing for individuals, firms, and companies." },
         { name: "Tax Planning & Advisory", text: "Legitimate structuring of income, investments, and deductions to optimise tax outgo." },
@@ -32,7 +32,7 @@ export default function Page() {
         { name: "Capital Gains Advisory", text: "Tax planning for property, securities, and business asset transactions." },
       ]}
       faqs={[
-        { question: "When is the income tax return filing deadline?", answer: "For most individuals and non-audit taxpayers, the due date is 31 July of the assessment year; for businesses requiring audit, it typically extends to 31 October — dates are notified annually by the CBDT." },
+        { question: "When is the income tax return filing deadline?", answer: "For most individuals without business income, the due date is 31 July of the assessment year. Individuals and firms with business or professional income whose accounts do not require a tax audit have until 31 August, and businesses requiring audit typically have until 31 October. The CBDT occasionally extends these dates." },
         { question: "What happens if I receive an income tax scrutiny notice?", answer: "Respond within the stated deadline with supporting documentation. We review the notice, prepare your case file, and represent you before the Assessing Officer where required." },
         { question: "Do you help NRIs with Indian tax filing?", answer: "Yes, we assist NRIs with Indian-source income reporting, DTAA benefit claims, and repatriation-related tax compliance." },
         { question: "Can you help reduce my advance tax liability legally?", answer: "We review your income projections each quarter and structure eligible deductions and exemptions to minimise your advance tax outgo within the law." },

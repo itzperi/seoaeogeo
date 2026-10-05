@@ -26,6 +26,7 @@ export default function Page() {
       h1="Chartered Accountant in Guindy, Chennai"
       subhead="Statutory audit, ROC compliance, and GST support for Guindy's mix of corporate offices and one of Chennai's oldest industrial estates."
       distanceNote="Guindy is a straightforward commute from our Anna Nagar office for scheduled meetings and audit fieldwork. We are based solely in Anna Nagar and serve Guindy clients from that one office — not a separate branch."
+      directAnswer="C S Rushil & Co. is a chartered accountant firm serving Guindy from its office in Anna Nagar (J-Block, 1st Street, 13th Main Road); it has no separate Guindy branch. The firm handles company registration, GST, audit and income tax, and clients there can meet in person at the Anna Nagar office or work with the firm online."
       localContext={[
         "Guindy holds a distinct position in Chennai as both a major transport and commercial gateway and the site of one of the city's oldest industrial estates, alongside corporate offices, IT parks, and the well-known Guindy National Park. This dual character — established industry plus modern corporate presence — makes it one of Chennai's more diverse business localities.",
         "That mix brings genuinely varied CA work: statutory audit and ROC compliance for the industrial estate's manufacturing and engineering companies, alongside company incorporation and GST registration for the newer corporate offices and IT-adjacent businesses that have located in and around Guindy given its connectivity.",

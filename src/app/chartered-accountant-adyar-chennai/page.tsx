@@ -26,6 +26,7 @@ export default function Page() {
       h1="Chartered Accountant in Adyar, Chennai"
       subhead="Tax audit, individual filing, and trust/NGO registration support for Adyar's professionals, consultants, and long-established institutions."
       distanceNote="Adyar is around 14-16 km from our Anna Nagar office. We serve Adyar clients through a mix of scheduled in-person meetings and virtual consultations."
+      directAnswer="C S Rushil & Co. is a chartered accountant firm serving Adyar from its office in Anna Nagar (J-Block, 1st Street, 13th Main Road); it has no separate Adyar branch. The firm handles company registration, GST, audit and income tax, and clients there can meet in person at the Anna Nagar office or work with the firm online."
       localContext={[
         "Adyar is one of Chennai's more established, upscale residential neighbourhoods, known for its tree-lined streets and proximity to the Adyar River, and it sits within reach of major employment hubs including Guindy Industrial Estate, Tharamani, and the RMZ Millennia SEZ — while remaining primarily residential and institutional in character rather than a commercial district in its own right.",
         "Adyar is also home to a number of long-established educational, cultural, and non-profit institutions, which brings a specific and recurring need: trust and NGO registration and compliance, including 12A/80G registration for tax-exempt status. This is a genuine area of depth for us, alongside individual tax work for the area's concentration of doctors, consultants, and other independent professionals.",
@@ -39,7 +40,7 @@ export default function Page() {
       ]}
       faqs={[
         { question: "Do you handle 12A/80G registration for trusts and NGOs in Adyar?", answer: "Yes — trust, society, and Section 8 company formation along with 12A/80G registration for tax-exempt status is a core part of our practice, and Adyar's concentration of educational and non-profit institutions makes this a recurring engagement for us in the area." },
-        { question: "I'm a doctor/consultant with a private practice in Adyar — do I need a tax audit?", answer: "It depends on your gross annual receipts — professionals crossing the Section 44ADA presumptive taxation threshold generally require a tax audit. Book a free consultation and we'll assess your specific position." },
+        { question: "I'm a doctor/consultant with a private practice in Adyar — do I need a tax audit?", answer: "It depends on your gross annual receipts. A tax audit under Section 44AB is generally required if your professional receipts cross the audit limit, or if you declare profit below the Section 44ADA presumptive rate while your income exceeds the basic exemption limit. Book a free consultation and we'll assess your specific position." },
         { question: "Do you serve individuals as well as institutions in Adyar?", answer: "Yes — alongside trust/NGO work, we handle individual income tax filing, advance tax planning, and audit services for Adyar's professionals and residents." },
       ]}
       furtherReading={[

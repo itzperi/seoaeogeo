@@ -98,7 +98,7 @@ export default function ServicePageTemplate({
       )}
       <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: crumbLabel, href: crumbHref }]} />
-      <PageHero eyebrow={eyebrow} h1={h1} subhead={subhead} />
+      <PageHero eyebrow={eyebrow} h1={h1} subhead={subhead} reviewedPath={crumbHref} />
 
       <section className="bg-paper py-16">
         <div className="container-page">

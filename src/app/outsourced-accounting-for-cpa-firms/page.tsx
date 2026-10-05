@@ -28,7 +28,7 @@ export default function Page() {
       introHeading="How does a US CPA firm outsource accounting and tax preparation to India?"
       intro="A US CPA firm outsources by giving an offshore team controlled access to its own accounting and tax software, where the team prepares bookkeeping, reconciliations and draft returns that the firm's CPAs then review and sign. The US firm keeps responsibility for the engagement and the client relationship. Before client tax information is shared with a preparer outside the US, IRS rules under Section 7216 generally require the taxpayer's written consent, and the arrangement should follow the safeguards in IRS Publication 4557."
       citation={{ label: "IRS Publication 4557, Safeguarding Taxpayer Data (irs.gov)", href: "https://www.irs.gov/pub/irs-pdf/p4557.pdf" }}
-      subServicesHeading="What we prepare for US CPA firms"
+      subServicesHeading="What accounting and tax work can US CPA firms outsource to India?"
       subServices={[
         { name: "Bookkeeping in QuickBooks Online and Xero", text: "Transaction coding, bank and credit card reconciliations, accounts payable and receivable upkeep, and clean-up of backlogged files for your business clients." },
         { name: "Month-End Close", text: "Accruals, prepaid and depreciation schedules, balance sheet reconciliations and a close checklist, delivered by an agreed working day each month." },
@@ -38,7 +38,7 @@ export default function Page() {
         { name: "Workpapers and Review-Ready Files", text: "Organised workpapers, tie-outs and a summary of assumptions and questions, so your reviewer can sign off efficiently. The US CPA signs and remains responsible." },
       ]}
       howTo={{
-        heading: "How an engagement with our team starts",
+        heading: "How does an outsourced accounting engagement with a US CPA firm start?",
         steps: [
           { name: "Scoping call", text: "We discuss the work types, software, volumes, seasonality and turnaround your firm needs, and whether a dedicated or hourly model fits better." },
           { name: "Agreements and consent", text: "We sign an NDA and engagement letter, and your firm obtains Section 7216 taxpayer consent where client tax information will be disclosed to us." },

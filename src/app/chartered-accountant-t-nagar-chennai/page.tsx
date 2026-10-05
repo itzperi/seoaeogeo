@@ -26,6 +26,7 @@ export default function Page() {
       h1="Chartered Accountant in T Nagar, Chennai"
       subhead="Retail and trading-focused compliance support for one of India's busiest commercial shopping districts."
       distanceNote="T Nagar is roughly 8-9 km from our Anna Nagar office — a short drive for in-person meetings, with most T Nagar engagements also handled efficiently over calls and document sharing given the area's business pace."
+      directAnswer="C S Rushil & Co. is a chartered accountant firm serving T Nagar from its office in Anna Nagar (J-Block, 1st Street, 13th Main Road); it has no separate T Nagar branch. The firm handles company registration, GST, audit and income tax, and clients there can meet in person at the Anna Nagar office or work with the firm online."
       localContext={[
         "T Nagar is one of India's busiest commercial shopping districts, built around Ranganathan Street, Usman Road, and Pondy Bazaar — a dense concentration of silk saree stores, gold jewellery showrooms, textile traders, and everyday retail that draws shoppers from across Tamil Nadu and beyond.",
         "That retail density brings a specific compliance profile: high daily transaction volumes, significant cash and card mix, seasonal spikes around festivals and wedding season, and GST considerations specific to jewellery (with its own valuation and ITC rules) and textiles. Traders here often need GST return filing that keeps pace with genuinely high transaction counts, not a once-a-month afterthought.",
@@ -39,7 +40,7 @@ export default function Page() {
       faqs={[
         { question: "Do you handle GST for jewellery and textile retailers specifically?", answer: "Yes — we work with T Nagar retail and trading businesses across jewellery, textiles, and general retail, including the specific valuation and Input Tax Credit considerations that apply to high-value goods like gold." },
         { question: "Can you manage GST returns for a business with very high daily transaction volumes?", answer: "Yes, this is a routine part of serving T Nagar clients — we structure the return-filing process around your actual transaction volume and point-of-sale data rather than a generic monthly template." },
-        { question: "Is a tax audit mandatory for my T Nagar retail business?", answer: "It depends on your turnover and the proportion of cash transactions — see our tax audit page for the current thresholds, or book a free consultation and we'll assess your specific position." },
+        { question: "Is a tax audit mandatory for my T Nagar retail business?", answer: "It depends on your turnover and the proportion of cash transactions. A tax audit becomes mandatory once your business turnover crosses the Income Tax Act threshold, and that threshold is higher when cash receipts and payments are only a small share of your business. See our tax audit page for the current limits, or book a free consultation and we'll assess your specific position." },
       ]}
       furtherReading={[
         { slug: "gst-litigation-t-nagar-jewellery", title: "Why T Nagar's Jewellery and Textile Traders See More ITC Mismatch Notices Than Most" },

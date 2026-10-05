@@ -27,8 +27,8 @@ export default function Page() {
       subhead="Indian tax returns, DTAA claims, property-sale TDS and repatriation for non-resident Indians, with separate guidance for the UAE, the UK and the USA. Handled remotely from our Anna Nagar office in Chennai."
       introHeading="Do NRIs need to file an income tax return in India?"
       intro="Yes, if they earn income in India above the basic exemption limit, or have tax deducted they want refunded. Rent from a Chennai flat, interest on an NRO account, capital gains on shares or property, and dividends are all taxable in India even when you live abroad. What changes by country is how that income is treated where you live: the UAE has no personal income tax, the UK taxes residents on worldwide income, and the US taxes citizens wherever they live. Each country page below explains the difference."
-      citation={{ label: "Income Tax Department — Non-resident individuals", href: "https://www.incometax.gov.in/" }}
-      subServicesHeading="Choose the guidance for where you live"
+      citation={{ label: "Income Tax Department — Non-resident individuals", href: "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0" }}
+      subServicesHeading="Which NRI tax services apply to where you live?"
       subServices={[
         { name: "NRIs in the UAE", text: "No UAE income tax on salary, so the questions are different: India–UAE DTAA claims with a Tax Residency Certificate, and the deemed-residency rule for Indian citizens with Indian income above ₹15 lakh." },
         { name: "NRIs in the UK", text: "Indian rent, interest and gains also go on your UK Self Assessment. We prepare the Indian return and the tax-paid evidence your UK accountant needs to claim credit under the India–UK DTAA." },
@@ -38,7 +38,7 @@ export default function Page() {
         { name: "Returning to India", text: "Moving back changes your residential status over the following years. We plan the RNOR (resident but not ordinarily resident) window so foreign income and accounts are handled correctly in the transition years." },
       ]}
       howTo={{
-        heading: "How an NRI engagement works, start to finish",
+        heading: "How do NRIs file an Indian income tax return remotely?",
         steps: [
           { name: "Status check", text: "We confirm your residential status for the year from your days in India, citizenship and Indian income — this decides what India can tax." },
           { name: "Document collection", text: "You upload Form 26AS, AIS, bank and NRO statements, rent agreements or sale deeds to a shared folder; nothing needs to be couriered." },

@@ -77,18 +77,6 @@ export function organizationSchema() {
       ...AREAS.map((area) => ({ "@type": "Place" as const, name: `${area.name}, Chennai` })),
     ],
     openingHoursSpecification: openingHoursSpecification(),
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Services",
-      itemListElement: ALL_SERVICES.map((service) => ({
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: service.name,
-          url: `${SITE_URL}/${service.slug}`,
-        },
-      })),
-    },
     hasMap: GBP_URL,
     sameAs: [SOCIALS.linkedin, SOCIALS.instagram, GBP_URL],
   };
@@ -178,6 +166,57 @@ export function howToSchema(opts: {
       name: step.name,
       text: step.text,
     })),
+  };
+}
+
+// The 33-service catalog, emitted on the homepage only (it merges into the
+// organization node via the shared @id); repeating it on every page added
+// weight without adding signal.
+export function serviceCatalogSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "AccountingService",
+    "@id": `${SITE_URL}/#organization`,
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Services",
+      itemListElement: ALL_SERVICES.map((service) => ({
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: service.name,
+          url: `${SITE_URL}/${service.slug}`,
+        },
+      })),
+    },
+  };
+}
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    url: SITE_URL,
+    name: BUSINESS_NAME,
+    inLanguage: "en-IN",
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  };
+}
+
+// Who reviewed a page and when: E-E-A-T signal for search and AI engines.
+export function webPageReviewSchema(path: string, name: string, date: string) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${SITE_URL}${path}#webpage`,
+    url: `${SITE_URL}${path}`,
+    name,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#organization` },
+    reviewedBy: { "@id": `${SITE_URL}/#founder` },
+    lastReviewed: date,
+    dateModified: date,
   };
 }
 

@@ -4,7 +4,7 @@ import PageHero from "@/components/PageHero";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
-import { JsonLd, serviceSchema } from "@/lib/schema";
+import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
 import { getService } from "@/lib/services";
 
 export default function AreaPageTemplate({
@@ -18,6 +18,7 @@ export default function AreaPageTemplate({
   relevantServices,
   faqs,
   furtherReading,
+  directAnswer,
 }: {
   pageUrl: string;
   locality: string;
@@ -29,6 +30,8 @@ export default function AreaPageTemplate({
   relevantServices: { slug: string; why: string }[];
   faqs: FAQItem[];
   furtherReading?: { slug: string; title: string }[];
+  /** 40–60 word answer to "Is there a CA firm near <locality>?" — the passage snippets and AI answers quote. */
+  directAnswer?: string;
 }) {
   const services = relevantServices
     .map((r) => ({ ...getService(r.slug), why: r.why }))
@@ -45,11 +48,17 @@ export default function AreaPageTemplate({
           areaServedName: `${locality}, Chennai`,
         })}
       />
+      {directAnswer && <JsonLd data={speakableSchema(["#direct-answer"])} />}
       <Breadcrumbs items={[{ name: `Chartered Accountant — ${locality}`, href: crumbHref }]} />
-      <PageHero eyebrow={`Chartered Accountant · ${locality}, Chennai`} h1={h1} subhead={subhead} />
+      <PageHero eyebrow={`Chartered Accountant · ${locality}, Chennai`} h1={h1} subhead={subhead} reviewedPath={crumbHref} />
 
       <section className="bg-paper py-16">
         <div className="container-page">
+          {directAnswer && (
+            <p id="direct-answer" className="mb-6 max-w-2xl text-lg leading-relaxed text-carbon">
+              {directAnswer}
+            </p>
+          )}
           <p className="rounded-cards border border-royal-violet/20 bg-lilac-mist p-5 text-sm leading-relaxed text-obsidian">
             {distanceNote}
           </p>

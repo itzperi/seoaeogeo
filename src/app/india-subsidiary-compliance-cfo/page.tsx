@@ -27,8 +27,8 @@ export default function Page() {
       subhead="A single retainer covering the Indian statutory calendar and the reporting your parent company expects: ROC and FEMA filings, transfer pricing, GST, TDS, payroll, statutory audit coordination and monthly MIS, for foreign-owned subsidiaries and global capability centres in Chennai."
       introHeading="What compliance does a foreign-owned Indian subsidiary have each year?"
       intro="A foreign-owned Indian subsidiary must hold at least four board meetings a year, get its accounts audited, file AOC-4 and MGT-7 with the Registrar, file the FLA return with the RBI by 15 July, and file Form 3CEB transfer pricing reports for transactions with its foreign parent. Alongside these sit monthly GST and TDS returns, PF, ESI and Tamil Nadu professional tax, and the annual income tax return. Most foreign parents also need monthly management accounts in IFRS or US GAAP for group consolidation."
-      citation={{ label: "Reserve Bank of India, FEMA and FDI reporting (rbi.org.in)", href: "https://www.rbi.org.in/" }}
-      subServicesHeading="What the subsidiary retainer covers"
+      citation={{ label: "Reserve Bank of India — FLA return FAQs (rbi.org.in)", href: "https://www.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=1171" }}
+      subServicesHeading="What does an India subsidiary compliance and CFO retainer cover?"
       subServices={[
         { name: "Statutory Audit and Year-End Close", text: "We prepare Indian GAAP or Ind AS financial statements, coordinate the statutory audit, and align the year-end timetable with your group reporting deadlines." },
         { name: "ROC and Board Compliance", text: "AOC-4, MGT-7 and DPT-3 filings, plus agendas and minutes for at least four board meetings a year, with no more than 120 days between two meetings." },
@@ -38,7 +38,7 @@ export default function Page() {
         { name: "MIS and Group Reporting Packs", text: "Monthly management accounts, cash flow and variance commentary, with IFRS or US GAAP adjustments mapped to your parent's chart of accounts and reporting calendar." },
       ]}
       howTo={{
-        heading: "How we onboard an Indian subsidiary",
+        heading: "How is an Indian subsidiary onboarded for compliance and CFO support?",
         steps: [
           { name: "Compliance health check", text: "We review past ROC, FEMA, tax and payroll filings to find gaps, late filings or pending FC-GPR and FLA submissions, and agree how to regularise them." },
           { name: "Build the statutory calendar", text: "We prepare a 12-month calendar of every Indian due date for your entity and share it with your parent finance team and resident director." },

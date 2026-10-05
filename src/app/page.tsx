@@ -8,6 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import GoogleReviews from "@/components/GoogleReviews";
 import QualifyForm from "@/components/QualifyForm";
 import TrackedAnchor from "@/components/TrackedAnchor";
+import { JsonLd, serviceCatalogSchema } from "@/lib/schema";
 import { CalcSticker, CoinSticker, Ribbon, StarSticker } from "@/components/Stickers";
 import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
@@ -57,6 +58,7 @@ const QUICK_LINKS = [
 export default function HomePage() {
   return (
     <>
+      <JsonLd data={serviceCatalogSchema()} />
       <section className="relative overflow-hidden border-b border-carbon bg-sky-wash">
         <Ribbon className="pointer-events-none absolute -bottom-10 left-0 h-44 w-full md:h-64" />
         <CoinSticker className="pointer-events-none absolute left-[46%] top-8 hidden w-20 -rotate-12 lg:block" />

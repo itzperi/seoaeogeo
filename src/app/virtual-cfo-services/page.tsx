@@ -49,7 +49,7 @@ const FAQS = [
   {
     question: "What is the difference between a fractional CFO and a virtual CFO?",
     answer:
-      "In practice the two terms describe the same engagement: senior CFO-level work delivered part-time rather than through a full-time hire. \"Fractional\" emphasises the time commitment — a fraction of a full-time role, scoped by hours or days a month — while \"virtual\" emphasises that much of the work happens remotely from your existing systems. Our fractional CFO and virtual CFO services in Chennai cover the same scope: MIS, budgeting, cash flow, fundraising support and board reporting, with in-person review meetings at our Anna Nagar office or yours when needed.",
+      "There is no real difference in scope: both terms describe senior CFO-level work delivered part-time instead of through a full-time hire. \"Fractional\" emphasises the time commitment, a fraction of a full-time role scoped by hours or days a month, while \"virtual\" emphasises that much of the work happens remotely from your existing systems. Our fractional CFO and virtual CFO services in Chennai cover the same scope: MIS, budgeting, cash flow, fundraising support and board reporting, with in-person review meetings at our Anna Nagar office or yours when needed.",
   },
   {
     question: "How is a fractional CFO engagement priced and scoped?",
@@ -59,27 +59,27 @@ const FAQS = [
   {
     question: "Who actually needs a Virtual CFO?",
     answer:
-      "Startups past seed funding managing investor reporting for the first time, and SMEs scaling revenue to a point where the founder can no longer track cash flow, margins, and budgets in their head or a spreadsheet, benefit most. If you're making pricing, hiring, or fundraising decisions without confidence in the underlying numbers, that's usually the actual trigger — not a specific revenue threshold. A Virtual CFO gives you senior financial judgment at a fraction of what a full-time hire costs, which is why it's the common bridge stage between founder-run finances and an in-house finance team.",
+      "Startups past seed funding managing investor reporting for the first time, and SMEs whose revenue has grown to the point where the founder can no longer track cash flow, margins and budgets in their head or a spreadsheet, benefit most. The usual trigger is making pricing, hiring or fundraising decisions without confidence in the underlying numbers. It's rarely a specific revenue threshold. A Virtual CFO gives you senior financial judgment at a fraction of what a full-time hire costs, which is why it's the common bridge stage between founder-run finances and an in-house finance team.",
   },
   {
     question: "How is a Virtual CFO different from my current accountant?",
     answer:
-      "An accountant (or bookkeeper) records what already happened — transactions, statutory filings, compliance. A Virtual CFO uses that same data to answer forward-looking questions: what happens to cash flow if we hire three more people, is this new pricing model actually more profitable, what does an investor need to see before writing a term sheet. Many clients keep their existing accountant for day-to-day bookkeeping and compliance, and add Virtual CFO support specifically for the decisions the accountant's scope was never meant to cover.",
+      "An accountant or bookkeeper records what has already happened: transactions, statutory filings and compliance. A Virtual CFO uses that same data to answer forward-looking questions about cash flow, pricing, hiring and fundraising, so many businesses keep their existing accountant for day-to-day bookkeeping and compliance and add Virtual CFO support for the decisions outside that scope. Typical questions: what happens to cash flow if we hire three more people, is this new pricing model actually more profitable, and what does an investor need to see before writing a term sheet?",
   },
   {
     question: "How many hours per month does a Virtual CFO engagement actually involve?",
     answer:
-      "This varies by business complexity and what's in scope — a straightforward monthly MIS-and-cash-flow engagement might run a few hours a week, while active fundraising support or a board reporting cycle can mean several days in a given month. We scope this explicitly during the initial financial health assessment rather than quoting a generic number, since the honest answer depends entirely on your transaction volume, reporting needs, and whether you're mid-raise.",
+      "It depends on complexity and scope: a straightforward monthly MIS-and-cash-flow engagement might run a few hours a week, while active fundraising support or a board reporting cycle can mean several days in a given month. We set the hours explicitly during the initial financial health assessment. We don't quote a generic number, since the honest answer depends entirely on your transaction volume, reporting needs, and whether you're mid-raise.",
   },
   {
     question: "Can a Virtual CFO actually help close a funding round?",
     answer:
-      "Yes, within its real scope: preparing the financial model investors will scrutinise, cleaning up historical financials so due diligence doesn't surface avoidable red flags, and structuring investor reporting once the round is live. A Virtual CFO doesn't source investors or negotiate term sheets — that's a fundraising advisor's or the founder's job — but a founder walking into investor meetings with clean, defensible numbers consistently has an easier process than one improvising financials under pressure.",
+      "Yes, within its real scope: preparing the financial model investors will scrutinise, cleaning up historical financials so due diligence doesn't surface avoidable red flags, and structuring investor reporting once the round is live. A Virtual CFO doesn't source investors or negotiate term sheets; that's a fundraising advisor's or the founder's job. A founder walking into investor meetings with clean, defensible numbers consistently has an easier process than one improvising financials under pressure.",
   },
   {
     question: "Do I need to switch accounting software or change how we currently do bookkeeping?",
     answer:
-      "Usually no — a Virtual CFO engagement works from whatever accounting software and processes you already have, connecting to existing bank feeds and ledgers rather than requiring a parallel system. If your current setup genuinely can't support the reporting you need (for example, no cost-centre tracking when you need margin analysis by product line), we'll flag that specifically rather than assume a wholesale system change is required.",
+      "Usually no: a Virtual CFO engagement works from whatever accounting software and processes you already have, connecting to existing bank feeds and ledgers rather than requiring a parallel system, and we only flag a change if your setup genuinely can't support the reporting you need. For example, if there's no cost-centre tracking when you need margin analysis by product line, we'll flag that specifically rather than assume a wholesale system change is required.",
   },
   {
     question: "What happens in the first month of an engagement?",
@@ -110,6 +110,7 @@ export default function VirtualCfoPage() {
       <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "Virtual CFO Services", href: "/virtual-cfo-services" }]} />
       <PageHero
+        reviewedPath="/virtual-cfo-services"
         eyebrow="Virtual & Fractional CFO · Chennai"
         h1="Virtual CFO Services in Chennai"
         subhead="Outsourced financial leadership — MIS, budgeting, fundraising support, and board-ready reporting — for growing businesses that aren't ready for a full-time CFO."
@@ -119,7 +120,7 @@ export default function VirtualCfoPage() {
         <div className="container-page grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-12">
             <div>
-              <h2 className="text-2xl text-obsidian">What is a Virtual CFO?</h2>
+              <h2 className="text-2xl text-obsidian">What does a virtual CFO do for a Chennai business?</h2>
               <p id="direct-answer" className="mt-4 leading-relaxed text-slate">
                 A Virtual CFO provides senior financial leadership — budgeting, cash
                 flow management, MIS reporting, and investor-facing financial
@@ -134,7 +135,7 @@ export default function VirtualCfoPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl text-obsidian">Fractional CFO Services in Chennai</h2>
+              <h2 className="text-2xl text-obsidian">What are fractional CFO services in Chennai?</h2>
               <p className="mt-4 leading-relaxed text-slate">
                 A fractional CFO is a senior finance lead who works with your
                 business part-time — a defined number of hours or days a month —
@@ -155,7 +156,7 @@ export default function VirtualCfoPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl text-obsidian">Signs you&apos;ve outgrown basic bookkeeping</h2>
+              <h2 className="text-2xl text-obsidian">When has a Chennai business outgrown basic bookkeeping?</h2>
               <p className="mt-4 leading-relaxed text-slate">
                 The trigger for Virtual CFO support is rarely a specific revenue
                 number — it&apos;s usually a recurring pattern: cash flow surprises
@@ -174,7 +175,7 @@ export default function VirtualCfoPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl text-obsidian">What our Virtual CFO service covers</h2>
+              <h2 className="text-2xl text-obsidian">What does our virtual CFO service cover?</h2>
               <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
                 {SCOPE.map((s) => (
                   <div key={s.name} className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
@@ -193,7 +194,7 @@ export default function VirtualCfoPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl text-obsidian">How an engagement actually works</h2>
+              <h2 className="text-2xl text-obsidian">How does a virtual CFO engagement work?</h2>
               <ol className="mt-4 space-y-4">
                 {ENGAGEMENT_STEPS.map((step, i) => (
                   <li key={step.name} className="flex gap-4 rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]">
@@ -210,7 +211,7 @@ export default function VirtualCfoPage() {
             </div>
 
             <div>
-              <h2 className="text-2xl text-obsidian">Bookkeeper vs. Virtual CFO vs. Full-Time CFO</h2>
+              <h2 className="text-2xl text-obsidian">How is a virtual CFO different from a bookkeeper or full-time CFO?</h2>
               <p className="mt-4 leading-relaxed text-slate">
                 These three roles get confused often enough that it&apos;s worth
                 being explicit about where each one&apos;s scope actually starts and

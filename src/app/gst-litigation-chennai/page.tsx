@@ -12,7 +12,7 @@ const PAGE_URL = `${SITE_URL}/gst-litigation-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "GST Litigation and Appeals in Chennai | Anna Nagar" },
   description:
-    "Received a GST notice in Chennai? Get urgent show-cause reply support and GSTAT appeal representation from C S Rushil & Co. — 24-hour response.",
+    "Received a GST notice in Chennai? Get urgent show-cause reply support and GSTAT appeal representation from C S Rushil & Co., Chartered Accountants, Anna Nagar.",
   alternates: { canonical: "/gst-litigation-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -34,7 +34,7 @@ const DISPUTE_TYPES = [
 const STAGES = [
   { stage: "Show-Cause Notice (SCN) Reply", text: "We analyse the SCN, gather supporting documentation, and draft a legally grounded reply within the statutory timeline — typically 30 days." },
   { stage: "Departmental Audit & Assessment", text: "We represent you during GST audits (Section 65/66) and assessment proceedings, coordinating document production and officer queries." },
-  { stage: "Appeal before Appellate Authority", text: "If the order is adverse, we file a first appeal (Form GST APL-01) before the Joint/Additional Commissioner (Appeals) within 3 months of the order, along with a certified copy of the order and the required 10% pre-deposit." },
+  { stage: "Appeal before Appellate Authority", text: "If the order is adverse, we file a first appeal (Form GST APL-01) before the Joint/Additional Commissioner (Appeals) within 3 months of the order, along with the required 10% pre-deposit. A self-certified copy of the order is needed only where the order was not uploaded on the GST portal, and must then be submitted within 7 days of filing." },
   { stage: "GST Appellate Tribunal (GSTAT)", text: "If the Appellate Authority's order is still adverse, we file a second appeal (Form GST APL-05) before the GST Appellate Tribunal within 3 months. GSTAT has a Principal Bench in New Delhi for matters involving place-of-supply disputes, and State Benches — including one for Tamil Nadu — for all other matters, so which bench hears your case depends on the nature of the dispute." },
   { stage: "ITC & Refund Dispute Defense", text: "We build the factual and documentary case to defend legitimate ITC claims and pursue refund entitlements through litigation where needed." },
 ];
@@ -56,27 +56,27 @@ const FAQS = [
   {
     question: "Can a Chartered Accountant represent me in GST litigation?",
     answer:
-      "Yes. Under Section 116 of the CGST Act, a Chartered Accountant is a recognised 'authorised representative' and can independently represent taxpayers before GST officers, the Appellate Authority, and the GST Appellate Tribunal (GSTAT) — you do not need a separate advocate for most GST proceedings. This includes drafting and filing replies, appearing at personal hearings, and arguing the case on the merits of the tax and accounting position. Businesses often prefer a CA for GST disputes specifically because the same professional who handled the underlying returns, reconciliations, and books of account can defend them, rather than briefing an advocate from scratch on the transaction history. Advocates remain necessary for writ petitions before the High Court or Supreme Court, which fall outside a CA's representation rights.",
+      "Yes, under Section 116 of the CGST Act a Chartered Accountant is a recognised 'authorised representative' and can independently represent taxpayers before GST officers, the Appellate Authority, and the GST Appellate Tribunal (GSTAT), so you do not need a separate advocate for most GST proceedings. This includes drafting and filing replies, appearing at personal hearings, and arguing the case on the merits of the tax and accounting position. Businesses often prefer a CA for GST disputes specifically because the same professional who handled the underlying returns, reconciliations, and books of account can defend them, rather than briefing an advocate from scratch on the transaction history. Advocates remain necessary for writ petitions before the High Court or Supreme Court, which fall outside a CA's representation rights.",
   },
   {
     question: "What should I do if I receive a GST show-cause notice?",
     answer:
-      "Do not ignore it. Note the response deadline stated on the notice (usually 30 days, though it can vary), and immediately start gathering the related invoices, e-way bills, GSTR filings, and any correspondence referenced in the notice. A poorly drafted or missed reply can lead to an ex-parte order confirming the entire demand, interest, and penalty — after which your only recourse is a costlier appeal with a mandatory pre-deposit. The first 48 hours matter most: identifying exactly which allegation (classification, valuation, ITC mismatch, or procedural lapse) the notice raises determines what documentation to prioritise before drafting begins.",
+      "Note the response deadline stated on the show-cause notice (usually 30 days, though it can vary) and immediately start gathering the related invoices, e-way bills, GSTR filings, and any correspondence the notice refers to. Do not ignore it: a poorly drafted or missed reply can lead to an ex-parte order confirming the entire demand, interest, and penalty, after which your only recourse is an appeal with a mandatory pre-deposit. The first 48 hours matter most: identifying exactly which allegation (classification, valuation, ITC mismatch, or procedural lapse) the notice raises determines what documentation to prioritise before drafting begins.",
   },
   {
     question: "How long does a GST appeal take?",
     answer:
-      "A first appeal before the Appellate Authority typically takes 6–18 months depending on the jurisdiction's case backlog and how many hearings the officer schedules before passing an order. GSTAT (second appeal) timelines vary further since the tribunal benches are still being operationalised in several states, and a genuinely new tribunal bench can mean a longer wait simply due to case volume rather than the merits of your matter. We advise clients realistically at each stage — including what evidence to prepare while waiting — rather than promising a fixed timeline no lawyer or CA can actually guarantee given how tribunal scheduling works.",
+      "A first GST appeal before the Appellate Authority typically takes 6–18 months, depending on the jurisdiction's case backlog and how many hearings the officer schedules before passing an order. Second appeals before the GST Appellate Tribunal (GSTAT) vary further, because its benches were operationalised in phases, with the Chennai bench beginning work only in 2026. A new tribunal bench can mean a longer wait simply due to case volume rather than the merits of your matter. We advise clients realistically at each stage — including what evidence to prepare while waiting — rather than promising a fixed timeline no lawyer or CA can actually guarantee given how tribunal scheduling works.",
   },
   {
     question: "Is there a pre-deposit required to file a GST appeal?",
     answer:
-      "Yes. To file a first appeal before the Appellate Authority you must pre-deposit 10% of the disputed tax amount (subject to a statutory cap), and a further 10% of the remaining disputed amount to file a second appeal to GSTAT. This pre-deposit is refundable with interest if you ultimately win, but it must be paid upfront before the appeal is even admitted for hearing — it is not optional or negotiable. We factor this into your litigation strategy and cash-flow planning at the outset, since businesses are sometimes caught off guard by having to fund a pre-deposit on top of ongoing operating expenses mid-dispute.",
+      "Yes, to file a first GST appeal before the Appellate Authority you must pay any admitted tax in full and pre-deposit 10% of the disputed tax amount (subject to a statutory cap), and a further 10% of the remaining disputed amount to file a second appeal to GSTAT. This pre-deposit is refundable with interest if you ultimately win, but it must be paid upfront before the appeal is even admitted for hearing — it is not optional or negotiable. We factor this into your litigation strategy and cash-flow planning at the outset, since businesses are sometimes caught off guard by having to fund a pre-deposit on top of ongoing operating expenses mid-dispute.",
   },
   {
     question: "Do you handle GST litigation for businesses outside Chennai?",
     answer:
-      "Our core practice is Chennai and Tamil Nadu jurisdiction, where we have direct familiarity with local GST officers, the Appellate Authority benches, and how specific commissionerates tend to interpret disputed provisions — that local knowledge often shapes how a reply or appeal is framed. That said, we also support clients with pan-India GST notices through documentation review, reply drafting, and coordinating with local representation where a personal hearing requires it. If your registered office and the jurisdictional GST officer are both outside Tamil Nadu, we'll be upfront about where our direct involvement is most effective versus where a locally-based representative may serve you better.",
+      "Yes, we support clients with pan-India GST notices through documentation review, reply drafting, and coordinating with local representation where a personal hearing requires it, though our core practice is Chennai and Tamil Nadu jurisdiction, where we have direct familiarity with local GST officers and the Appellate Authority benches. Knowing how specific commissionerates tend to interpret disputed provisions often shapes how a reply or appeal is framed. If your registered office and the jurisdictional GST officer are both outside Tamil Nadu, we'll be upfront about where our direct involvement is most effective versus where a locally-based representative may serve you better.",
   },
 ];
 
@@ -102,6 +102,7 @@ export default function GstLitigationPage() {
       <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "GST Litigation", href: "/gst-litigation-chennai" }]} />
       <PageHero
+        reviewedPath="/gst-litigation-chennai"
         eyebrow="GST Disputes · Chennai"
         h1="GST Litigation and Appeals in Chennai"
         subhead="Show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal representation — handled from our Anna Nagar office by chartered accountants who can appear on your behalf under Section 116 of the CGST Act."
@@ -127,6 +128,17 @@ export default function GstLitigationPage() {
                 often determines whether the matter is resolved quickly or escalates
                 into years of appeal.
               </p>
+              <p className="mt-2 text-sm text-slate">
+                Official reference:{" "}
+                <a
+                  href="https://tutorial.gst.gov.in/userguide/appeal/appeal_manual.htm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-medium text-royal-violet underline underline-offset-2"
+                >
+                  GST Portal user guide: Filing an Appeal against a Demand Order (tutorial.gst.gov.in)
+                </a>
+              </p>
               <p className="mt-4 rounded-cards border border-royal-violet/20 bg-lilac-mist p-6 text-sm leading-relaxed text-obsidian">
                 Under Section 116 of the CGST Act, a practising Chartered Accountant is
                 a statutorily recognised authorised representative and can appear and
@@ -138,7 +150,7 @@ export default function GstLitigationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                Notice forms you might actually receive
+                Which GST notice forms might you receive?
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
                 GST notices arrive under specific form numbers, and which one
@@ -159,7 +171,7 @@ export default function GstLitigationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                Litigation stages we handle
+                What are the stages of GST litigation?
               </h2>
               <ol className="mt-4 space-y-4">
                 {STAGES.map((s, i) => (
@@ -178,7 +190,7 @@ export default function GstLitigationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                Types of GST disputes we handle
+                What types of GST disputes do we handle?
               </h2>
               <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {DISPUTE_TYPES.map((d) => (
@@ -203,7 +215,7 @@ export default function GstLitigationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                How we work on a GST litigation matter
+                How do we work on a GST litigation matter?
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
                 We start by reading the notice or order itself before touching your
@@ -222,16 +234,14 @@ export default function GstLitigationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                Why this matters for Chennai businesses
+                Why does a Chennai-based CA matter in GST litigation?
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
-                Much of the visible online content on GST litigation is written by
-                national law firms targeting a broad audience. A Chennai-based CA firm
-                that understands local jurisdictional officers, filing practices at the
-                Chennai GST Commissionerate, and the practical realities of appearing
-                before Tamil Nadu&apos;s appellate benches offers a genuinely different,
-                more accessible option for local businesses — without the overhead of
-                a full litigation law firm.
+                Much of the visible online content on GST litigation is written for a
+                national audience. A Chennai-based CA firm works with the procedures of
+                the Chennai GST Commissionerate and the Tamil Nadu appellate authorities
+                regularly, and is close enough to meet you in person while a reply or
+                appeal is being prepared.
               </p>
             </div>
           </div>

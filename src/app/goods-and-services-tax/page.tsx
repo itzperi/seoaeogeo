@@ -49,7 +49,7 @@ const FAQS = [
   {
     question: "How can I get started with your GST services?",
     answer:
-      "Book a free consultation — we'll review your current GST status, identify any compliance gaps, and propose a filing and advisory plan.",
+      "Book a consultation — we'll review your current GST status, identify any compliance gaps, and propose a filing and advisory plan.",
   },
 ];
 
@@ -67,9 +67,10 @@ export default function GstPage() {
       <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[{ name: "Goods & Services Tax", href: "/goods-and-services-tax" }]} />
       <PageHero
+        reviewedPath="/goods-and-services-tax"
         eyebrow="GST · Chennai"
         h1="GST Return Filing & Compliance in Chennai"
-        subhead="Return filing, amendments, cancellations, and notice replies — GST compliance handled end-to-end so you stay penalty-free."
+        subhead="Return filing, amendments, cancellations, and notice replies — GST compliance handled end-to-end, with every due date tracked."
       />
 
       <section className="bg-paper py-16">
@@ -86,12 +87,12 @@ export default function GstPage() {
           <p className="mt-2 max-w-2xl text-sm text-slate">
             Official reference:{" "}
             <a
-              href="https://www.gst.gov.in/"
+              href="https://tutorial.gst.gov.in/userguide/returns/GSTR3B.htm"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-royal-violet underline underline-offset-2"
             >
-              GST Portal (gst.gov.in)
+              GST Portal user guide: Form GSTR-3B FAQs (tutorial.gst.gov.in)
             </a>
           </p>
 

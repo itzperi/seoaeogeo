@@ -25,10 +25,10 @@ export default function Page() {
       eyebrow="Bookkeeping · Chennai"
       h1="Bookkeeping Services in Chennai"
       subhead="Cloud accounting, monthly books close, and MIS reporting on the software you already use — from routine bookkeeping to backlog clean-up before an audit or raise."
-      introHeading="What does bookkeeping actually cover?"
+      introHeading="What do bookkeeping services in Chennai cover?"
       intro="Bookkeeping is the ongoing recording and reconciliation of a business's financial transactions — sales, purchases, bank movements, and payroll entries — kept accurate and current enough that the resulting financial statements are actually reliable. Done well, it's the foundation everything else (tax filing, audit, investor reporting) is built on; done inconsistently, it creates the kind of backlog that turns a routine audit or funding round into a scramble."
-      citation={{ label: "ICAI — Accounting Standards", href: "https://www.icai.org/" }}
-      subServicesHeading="Bookkeeping services we provide"
+      citation={{ label: "ICAI — Accounting Standards", href: "https://www.icai.org/post/accounting-standards" }}
+      subServicesHeading="What bookkeeping services do we offer in Chennai?"
       subServices={[
         { name: "Cloud Accounting on Zoho Books / Tally Prime / QuickBooks / Xero", text: "Setup, data migration, and ongoing bookkeeping on the platform you already use — no forced switch to a different system." },
         { name: "Monthly Books Close & MIS Reporting", text: "Books closed by a fixed date every month, with P&L, cash flow, and budget-versus-actual reporting delivered on schedule." },
@@ -41,7 +41,7 @@ export default function Page() {
       ]}
       faqs={[
         { question: "Do I need to switch accounting software to work with you?", answer: "No — we work on whatever platform you already use, whether that's Zoho Books, Tally Prime, QuickBooks, or Xero. If you're not on any of these yet, we can help you choose and migrate, but it's never a requirement to start." },
-        { question: "How quickly can you clean up backlog bookkeeping before an audit?", answer: "It depends on how far behind the books are and how organised the underlying documents (invoices, bank statements) are — a few months of backlog with clean source documents can often be caught up in one to two weeks; a full year with disorganised records takes longer. We'll give you a realistic timeline after a first look." },
+        { question: "How quickly can you clean up backlog bookkeeping before an audit?", answer: "A few months of backlog with clean source documents can often be caught up in one to two weeks; a full year with disorganised records takes longer. The timeline depends on how far behind the books are and how organised the underlying invoices and bank statements are, and we'll give you a realistic estimate after a first look." },
         { question: "Can you maintain books in US GAAP or IFRS format for our Indian subsidiary?", answer: "Yes — this is a specific service we provide for wholly-owned subsidiaries of overseas parent companies, including reporting in the parent's format alongside standard Indian statutory books, and coordination on FEMA/FC-GPR filings." },
         { question: "Do you handle reconciliation for Amazon or Flipkart sellers?", answer: "Yes — reconciling marketplace settlement reports against your books, tracking TCS deducted under GST, and inventory accounting is a routine part of our e-commerce bookkeeping service." },
         { question: "What's included in monthly MIS reporting?", answer: "A closed profit and loss statement, cash flow position, and a comparison against your budget where one exists — delivered on a fixed date every month, not whenever time allows." },

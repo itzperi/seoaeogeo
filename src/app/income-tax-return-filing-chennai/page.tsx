@@ -27,8 +27,8 @@ export default function Page() {
       subhead="Accurate, on-time ITR filing for salaried individuals, professionals, NRIs, and businesses — with refund tracking and advance tax planning built in."
       introHeading="Who needs to file an income tax return?"
       intro="Filing is mandatory if your gross total income exceeds the basic exemption limit, if you hold foreign assets or signing authority in a foreign account, if you've deposited over ₹1 crore in current accounts (or ₹50 lakh in savings) in a year, or if you want to claim a refund or carry forward a loss. Choosing the correct ITR form and reporting all income heads accurately — salary, house property, capital gains, business income, and other sources — avoids notices and processing delays."
-      citation={{ label: "Income Tax Department (incometax.gov.in)", href: "https://www.incometax.gov.in/" }}
-      subServicesHeading="Our income tax return services"
+      citation={{ label: "Income Tax Department: ITR forms applicable to individuals (incometax.gov.in)", href: "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1" }}
+      subServicesHeading="Which income tax return filing services do we offer?"
       subServices={[
         { name: "Salaried Individual ITR (ITR-1/2)", text: "Return filing for salaried employees, including Form 16 reconciliation and deduction optimisation under the old and new tax regimes." },
         { name: "Professional & Business ITR (ITR-3/4)", text: "Return filing for freelancers, consultants, and businesses, including presumptive taxation under Sections 44AD/44ADA where applicable." },
@@ -39,8 +39,8 @@ export default function Page() {
       ]}
       faqs={[
         { question: "Do you work with NRI clients based outside India, including in the US?", answer: "Yes. We work remotely with NRI and overseas clients, including clients based in the United States, on Indian-source income reporting, DTAA benefit claims, and repatriation-related compliance — no in-person visit required." },
-        { question: "What is the due date for filing an income tax return?", answer: "For most individuals and non-audit taxpayers, 31 July of the assessment year; for businesses requiring a tax audit, typically 31 October. Exact dates are notified annually by the CBDT and occasionally extended." },
-        { question: "Which ITR form should I use?", answer: "ITR-1 for salaried individuals with income up to ₹50 lakh and no capital gains; ITR-2 for individuals with capital gains or multiple properties; ITR-3 for business/professional income; ITR-4 for presumptive taxation. We confirm the correct form based on your income sources." },
+        { question: "What is the due date for filing an income tax return?", answer: "For most individuals without business income, the due date is 31 July of the assessment year. Individuals and firms with business or professional income whose accounts do not require a tax audit have until 31 August, and taxpayers requiring a tax audit typically have until 31 October. The CBDT occasionally extends these dates." },
+        { question: "Which ITR form should I use?", answer: "ITR-1 is for resident salaried individuals with income up to ₹50 lakh, one house property and no capital gains other than long-term gains under Section 112A of up to ₹1.25 lakh; ITR-2 for individuals with other capital gains or more than one house property; ITR-3 for business/professional income; ITR-4 for presumptive taxation. We confirm the correct form based on your income sources." },
         { question: "What happens if I file my return late?", answer: "A late fee under Section 234F applies (up to ₹5,000), interest accrues on any unpaid tax, and you lose the ability to carry forward certain losses to future years." },
         { question: "Can you help if I haven't filed returns for previous years?", answer: "Yes, we assist with filing belated and updated returns (ITR-U) where the window is still open, and advise on any applicable penalties or interest." },
         { question: "Do you help with GST as well as income tax?", answer: "Yes — GST registration and return filing are handled on our dedicated GST services page; many clients use both together for complete compliance coverage." },

@@ -25,10 +25,10 @@ export default function Page() {
       eyebrow="Payroll · Chennai"
       h1="Payroll Services in Chennai"
       subhead="End-to-end payroll outsourcing with PF, ESI, Professional Tax, and TDS compliance handled as part of the same engagement — not a separate filing exercise."
-      introHeading="What does payroll outsourcing actually include?"
+      introHeading="What does payroll outsourcing in Chennai include?"
       intro="Payroll outsourcing covers monthly salary processing and the statutory compliance that comes with employing staff in India — Provident Fund (PF) and Employee State Insurance (ESI) contributions, Professional Tax, and Tax Deducted at Source on salaries. Treating these as one integrated process, rather than payroll processing and statutory filing as separate exercises handled by different people, is what actually keeps a business compliant month to month rather than catching up after a notice."
-      citation={{ label: "Employees' Provident Fund Organisation (EPFO)", href: "https://www.epfindia.gov.in/" }}
-      subServicesHeading="Payroll services we provide"
+      citation={{ label: "EPFO — Employer forms, guidance notes and FAQs", href: "https://www.epfo.gov.in/employer-documents/" }}
+      subServicesHeading="What payroll services do we offer in Chennai?"
       subServices={[
         { name: "Payroll Outsourcing with PF, ESI, PT & TDS Compliance", text: "End-to-end payroll processing with statutory filings — PF, ESI, Professional Tax, and TDS — handled as part of the same engagement." },
         { name: "Payroll for Foreign Companies Setting Up in India", text: "Payroll guidance during the pre-entity phase, including Employer of Record arrangements, transitioning to full compliant payroll once your Indian entity is registered." },

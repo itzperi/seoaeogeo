@@ -27,9 +27,9 @@ export default function Page() {
       subhead="Arm's-length pricing documentation and Form 3CEB compliance for Chennai businesses with related-party or cross-border transactions — handled from our Anna Nagar office."
       introHeading="What is a transfer pricing audit?"
       intro="A transfer pricing audit examines transactions between related or associated enterprises — a parent company and subsidiary, sister concerns, or entities under common control — to confirm they're priced at arm's length, the same rate an unrelated third party would charge. Under the Income Tax Act, businesses with specified domestic transactions above prescribed thresholds, or any international transaction with an associated enterprise regardless of value, must obtain a transfer pricing report in Form 3CEB from a Chartered Accountant and maintain contemporaneous documentation justifying the pricing method used."
-      citation={{ label: "Income Tax Department — Transfer Pricing", href: "https://www.incometax.gov.in/" }}
+      citation={{ label: "Income Tax Department: Transfer Pricing Audit Report in Form 3CEB", href: "https://www.incometax.gov.in/iec/foportal/help/all-topics/videos/transfer-pricing-audit-report-form-3ceb" }}
       howTo={{
-        heading: "How a transfer pricing audit engagement proceeds",
+        heading: "How does a transfer pricing audit engagement proceed?",
         steps: [
           { name: "Transaction identification", text: "We map every transaction with associated enterprises — management fees, royalties, loans, goods and services transfers — to identify what falls under transfer pricing rules." },
           { name: "Method selection and benchmarking", text: "We select the appropriate pricing method (CUP, RPM, CPM, TNMM, or PSM) and benchmark your related-party pricing against comparable independent transactions." },
@@ -38,7 +38,7 @@ export default function Page() {
           { name: "Ongoing exposure review", text: "For recurring transactions, we periodically review whether an Advance Pricing Agreement is worth pursuing for longer-term pricing certainty." },
         ],
       }}
-      subServicesHeading="What's included"
+      subServicesHeading="What does a transfer pricing audit include?"
       subServices={[
         { name: "Form 3CEB Certification", text: "Mandatory transfer pricing audit report and certification for international and specified domestic transactions." },
         { name: "Transfer Pricing Documentation", text: "Contemporaneous documentation justifying the arm's-length nature of related-party pricing, maintained as the law requires." },

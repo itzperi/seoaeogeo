@@ -26,9 +26,9 @@ export default function Page() {
       h1="GST Registration in Chennai"
       subhead="Register for GST correctly the first time — document preparation, ARN tracking, and follow-up with the department, handled end-to-end."
       introHeading="Who needs to register for GST?"
-      intro="GST registration is mandatory once your aggregate turnover crosses ₹40 lakh for goods (₹20 lakh in special-category states) or ₹20 lakh for services, or if you sell across state lines, sell on e-commerce marketplaces, or are otherwise required under the CGST Act regardless of turnover (e.g. casual taxable persons, e-commerce operators). Registering late attracts penalties and blocks Input Tax Credit for the pre-registration period, so getting the timing and documentation right at the outset matters."
-      citation={{ label: "GST Portal (gst.gov.in)", href: "https://www.gst.gov.in/" }}
-      subServicesHeading="What's included"
+      intro="GST registration is mandatory once your aggregate turnover crosses ₹40 lakh for goods or ₹20 lakh for services in Tamil Nadu and most other states (lower limits of ₹10–20 lakh apply in certain states, mainly special-category states), or if you make inter-state supplies of goods, sell goods through e-commerce marketplaces, or are otherwise required under the CGST Act regardless of turnover (e.g. casual taxable persons, e-commerce operators). Since 1 October 2023, small sellers supplying goods only within their state through e-commerce marketplaces can obtain an enrolment number instead of registering. Registering late attracts penalties and blocks Input Tax Credit for the pre-registration period, so getting the timing and documentation right at the outset matters."
+      citation={{ label: "GST Portal user guide: Apply for Registration as a Normal Taxpayer (tutorial.gst.gov.in)", href: "https://tutorial.gst.gov.in/userguide/registration/Apply_for_Registration_Normal_Taxpayer.htm" }}
+      subServicesHeading="What does our GST registration service include?"
       subServices={[
         { name: "New GST Registration", text: "Document preparation, application filing on the GST portal, and ARN tracking through to certificate issuance." },
         { name: "Voluntary Registration", text: "For businesses below the threshold who want to register anyway — to claim ITC or sell on marketplaces requiring GSTIN." },
@@ -38,7 +38,7 @@ export default function Page() {
         { name: "Post-Registration Setup", text: "Guidance on invoicing format, e-way bill applicability, and your first return-filing calendar." },
       ]}
       howTo={{
-        heading: "Step-by-step GST registration process",
+        heading: "How does the GST registration process work, step by step?",
         steps: [
           { name: "Applicability check", text: "We confirm whether registration is mandatory for your turnover/business type, or worth doing voluntarily." },
           { name: "Document preparation", text: "PAN, Aadhaar, business constitution proof, address proof, and bank details are collected and verified before filing." },
@@ -48,8 +48,8 @@ export default function Page() {
         ],
       }}
       faqs={[
-        { question: "What is the turnover limit for mandatory GST registration?", answer: "₹40 lakh for suppliers of goods (₹20 lakh in special-category states) and ₹20 lakh for suppliers of services. Certain categories — inter-state suppliers, e-commerce sellers, casual taxable persons — must register regardless of turnover." },
-        { question: "How long does GST registration take?", answer: "Typically 3–7 working days from application if documents are in order and there's no departmental query; it can extend to 15–20 days if a physical verification or additional clarification is required." },
+        { question: "What is the turnover limit for mandatory GST registration?", answer: "Mandatory GST registration applies once aggregate turnover crosses ₹40 lakh for suppliers of goods and ₹20 lakh for suppliers of services in Tamil Nadu and most other states. Lower limits of ₹10–20 lakh apply in certain states, mainly special-category states. Certain categories — inter-state suppliers of goods, e-commerce sellers, casual taxable persons — must register regardless of turnover, though small sellers supplying goods only within their state through marketplaces can obtain an enrolment number instead." },
+        { question: "How long does GST registration take?", answer: "Typically 3–7 working days from application if documents are in order and there's no departmental query; the law allows up to 30 days where the officer carries out physical verification of the business premises or Aadhaar authentication is not completed, and a clarification request (REG-03) adds further time." },
         { question: "What documents are required for GST registration?", answer: "PAN, Aadhaar, photograph, proof of business constitution (partnership deed/incorporation certificate), address proof for the principal place of business, and bank account details. Additional documents apply for companies and LLPs." },
         { question: "Can I register for GST voluntarily even if I'm below the threshold?", answer: "Yes. Voluntary registration lets you claim Input Tax Credit and is often required by marketplaces (Amazon, Flipkart) and larger B2B customers who prefer to deal only with GST-registered vendors." },
         { question: "What if I need to fix a GST notice or dispute after registration?", answer: "Routine post-registration notices and amendments are handled here. For show-cause notices, appeals, or GST Appellate Tribunal matters, see our dedicated GST litigation service." },

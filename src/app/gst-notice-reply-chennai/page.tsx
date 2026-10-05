@@ -27,8 +27,8 @@ export default function Page() {
       subhead="Point-by-point written replies to GST scrutiny notices, pre-show-cause intimations, show cause notices, audit communications and refund rejection notices, for businesses registered under the Tamil Nadu Commercial Taxes Department or a CBIC Chennai commissionerate."
       introHeading="How do you reply to a GST notice in Chennai?"
       intro="You reply to a GST notice by filing a written response on the GST portal in the form the notice specifies, within the time it allows, backed by reconciliations and documents that answer each discrepancy raised. An ASMT-10 is answered in ASMT-11, a DRC-01 show cause notice in DRC-06, and a DRC-01A intimation in Part B of DRC-01A. First identify whether your officer sits in the Tamil Nadu Commercial Taxes Department or a CBIC Chennai commissionerate, then reconcile GSTR-1, GSTR-3B and GSTR-2B for the period before drafting anything."
-      citation={{ label: "CBIC GST portal (cbic-gst.gov.in)", href: "https://cbic-gst.gov.in/" }}
-      subServicesHeading="GST notice types we reply to"
+      citation={{ label: "GST Portal user guide: View Notices and Demand Orders (tutorial.gst.gov.in)", href: "https://tutorial.gst.gov.in/userguide/taxpayersdashboard/View_Notices_and_Demand_Orders.htm" }}
+      subServicesHeading="Which GST notices do we reply to?"
       subServices={[
         { name: "ASMT-10: Scrutiny of Returns", text: "The proper officer has found discrepancies in your returns, often GSTR-3B versus GSTR-1 or GSTR-2B. We reconcile the figures, explain or accept each item, and file the reply in Form ASMT-11." },
         { name: "DRC-01A: Pre-Show-Cause Intimation", text: "An intimation of tax the officer believes is payable before a formal notice is issued. We assess whether to pay with interest or object in Part B, since a well-reasoned objection can settle the issue at this stage." },
@@ -38,7 +38,7 @@ export default function Page() {
         { name: "REG-03 and REG-17: Registration Notices", text: "REG-03 seeks clarification on a new registration application; REG-17 proposes cancellation of an existing GSTIN. We file the REG-04 or REG-18 reply so that registration is granted or kept active." },
       ]}
       howTo={{
-        heading: "Our process after you receive a GST notice",
+        heading: "What happens after you receive a GST notice?",
         steps: [
           { name: "Read the notice and fix the deadline", text: "We confirm the notice type, the section invoked, the tax period, the reply form and the date by which the reply must be filed, and identify the issuing officer and jurisdiction." },
           { name: "Reconcile the returns", text: "We reconcile GSTR-1, GSTR-3B, GSTR-2B and the books for the period, and isolate exactly which figures the officer is questioning and why." },

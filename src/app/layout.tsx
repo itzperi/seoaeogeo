@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ContactBar from "@/components/ContactBar";
 import Marquee from "@/components/Marquee";
-import { JsonLd, organizationSchema, personSchema } from "@/lib/schema";
+import { JsonLd, organizationSchema, personSchema, websiteSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 // Anton stands in for the condensed 800-weight display face of the Slush
@@ -48,6 +48,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <JsonLd data={organizationSchema()} />
         <JsonLd data={personSchema()} />
+        <JsonLd data={websiteSchema()} />
         <Marquee />
         <Header />
         <main className="flex-1">{children}</main>

@@ -19,9 +19,10 @@ export default function Page() {
       eyebrow="Consultancy · Chennai"
       h1="Management Consultancy Services"
       subhead="Transforming challenges into opportunities through expert business consulting — aligning your goals with actionable strategies."
-      introHeading="What is management consultancy?"
+      introHeading="What does management consultancy do for a Chennai business?"
       intro="Management consultancy applies financial and operational expertise to solve specific business problems — improving processes, managing risk, and guiding strategic decisions. Because our consultants also handle your audit and compliance work, our advice is grounded in your actual numbers, not generic frameworks."
-      subServicesHeading="Areas we advise on"
+      citation={{ label: "ICAI — Internal Audit Standards Board", href: "https://www.icai.org/post/internal-audit-standards-board" }}
+      subServicesHeading="Which areas does our management consultancy cover?"
       subServices={[
         { name: "Business Process Improvement", text: "Identifying inefficiencies in financial and operational workflows." },
         { name: "Risk Advisory", text: "Structured risk assessment and mitigation planning aligned to your sector." },

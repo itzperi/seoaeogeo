@@ -2,13 +2,15 @@ import type { MetadataRoute } from "next";
 import { AREAS } from "@/lib/areas";
 import { getPublishedPosts } from "@/lib/blog";
 import { ALL_SERVICES } from "@/lib/services";
+import { PAGE_DATES } from "@/lib/page-dates";
 import { SITE_URL } from "@/lib/site";
 
-// Bump this only when a genuine site-wide change ships (new page, major
-// content rewrite) — using `new Date()` here would stamp every page as
-// "modified today" on every build, which defeats lastModified as a
-// freshness signal to crawlers.
-const SITE_LAST_MODIFIED = new Date("2026-10-03");
+// Each page's lastModified is the date its content last changed in git
+// (src/lib/page-dates.ts, regenerated with `npm run page-dates`). Never use
+// `new Date()` here: stamping every page "modified today" on every build
+// defeats lastModified as a freshness signal to crawlers.
+const FALLBACK_DATE = "2026-10-03";
+const lastModified = (path: string) => new Date(PAGE_DATES[path] ?? FALLBACK_DATE);
 
 const STATIC_PATHS = [
   { path: "", priority: 1 },
@@ -23,13 +25,13 @@ const STATIC_PATHS = [
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries = STATIC_PATHS.map(({ path, priority }) => ({
     url: `${SITE_URL}/${path}`,
-    lastModified: SITE_LAST_MODIFIED,
+    lastModified: lastModified(path ? `/${path}` : "/"),
     priority,
   }));
 
   const serviceEntries = ALL_SERVICES.map((service) => ({
     url: `${SITE_URL}/${service.slug}`,
-    lastModified: SITE_LAST_MODIFIED,
+    lastModified: lastModified(`/${service.slug}`),
     priority: 0.8,
   }));
 
@@ -41,7 +43,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const areaEntries = AREAS.map((area) => ({
     url: `${SITE_URL}/${area.slug}`,
-    lastModified: SITE_LAST_MODIFIED,
+    lastModified: lastModified(`/${area.slug}`),
     priority: 0.7,
   }));
 

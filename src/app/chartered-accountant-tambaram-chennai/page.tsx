@@ -26,6 +26,7 @@ export default function Page() {
       h1="Chartered Accountant in Tambaram, Chennai"
       subhead="Income tax filing, GST registration, and MSME/Udyam registration for Tambaram's residents and growing base of small businesses."
       distanceNote="Tambaram is on the southern edge of Chennai, further from our Anna Nagar office than our more central service areas. We serve Tambaram clients primarily virtually — document sharing, video consultations, and digital filing — with in-person meetings scheduled when genuinely needed. We do not operate a separate Tambaram office."
+      directAnswer="C S Rushil & Co. is a chartered accountant firm serving Tambaram from its office in Anna Nagar (J-Block, 1st Street, 13th Main Road); it has no separate Tambaram branch. The firm handles company registration, GST, audit and income tax, and clients there can meet in person at the Anna Nagar office or work with the firm online."
       localContext={[
         "Tambaram is a south Chennai residential suburb that has seen steady growth along the Tambaram–Vandalur corridor, with an expanding mix of independent houses, apartment developments, and a genuine local retail and small-business base serving the area's growing population.",
         "As a primarily residential suburb some distance from Chennai's central business districts, Tambaram clients most often need individual income tax return filing and straightforward GST registration for local shops and service businesses, rather than large-scale corporate compliance work.",
