@@ -12,7 +12,7 @@ import { CalcSticker, CoinSticker, Ribbon, StarSticker } from "@/components/Stic
 import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Chartered Accountant Near Me in Chennai",
+  title: { absolute: "CA Firm in Chennai & Anna Nagar | C S Rushil & Co." },
   description:
     "C S Rushil & Co. is a Chennai CA firm led by CA Rushil C S. Company incorporation, GST litigation, audit, and tax services in Anna Nagar, Chennai.",
   alternates: { canonical: "/" },
@@ -64,14 +64,14 @@ export default function HomePage() {
         <StarSticker className="pointer-events-none absolute right-6 top-6 hidden w-14 rotate-12 md:block" />
         <div className="container-page relative grid grid-cols-1 gap-10 pb-32 pt-12 md:pb-48 md:pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div>
-            <p className="sticker-tag bg-sunburst">Chartered Accountant Near You · {ADDRESS_SHORT}</p>
+            <p className="sticker-tag bg-sunburst">CA Firm in {ADDRESS_SHORT}</p>
             <h1 className="mt-6 text-[52px] text-carbon sm:text-7xl lg:text-[104px]">
-              Chennai&apos;s partner for company registration, GST, and audit.
+              CA firm in Chennai for company registration, GST, and audit.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-carbon">
-              Searching for a chartered accountant near you in Chennai? C S Rushil &amp; Co. is based in {ADDRESS_SHORT},
+              C S Rushil &amp; Co. is a chartered accountant firm in {ADDRESS_SHORT},
               led by {FOUNDER_NAME} ({FOUNDER_CREDENTIALS}). Our 16-member team handles private limited company
-              incorporation, GST litigation, statutory audit, and full ROC compliance for businesses across Chennai.
+              registration, GST litigation, statutory audit, and full ROC compliance for businesses across Chennai.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <TrackedAnchor

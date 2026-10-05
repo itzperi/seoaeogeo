@@ -10,14 +10,14 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/private-limited-company-incorporation-chennai`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Private Limited Company Incorporation in Chennai" },
+  title: { absolute: "Private Limited Company Registration in Chennai | C S Rushil & Co." },
   description:
-    "Register your Private Limited Company in Chennai with SPICe+ filing, DIN/DSC, MoA/AoA drafting, and post-incorporation compliance, handled by C S Rushil & Co.",
+    "Private limited company registration in Chennai and Anna Nagar: SPICe+ filing, DSC/DIN, MoA/AoA drafting and post-incorporation compliance by C S Rushil & Co., Chartered Accountants.",
   alternates: { canonical: "/private-limited-company-incorporation-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "Private Limited Company Incorporation in Chennai",
-    description: "End-to-end SPICe+ incorporation handled by a Chennai-based chartered accountancy firm.",
+    title: "Private Limited Company Registration in Chennai",
+    description: "End-to-end private limited company registration (SPICe+) by a CA firm in Anna Nagar, Chennai.",
     url: "/private-limited-company-incorporation-chennai",
   },
 };
@@ -29,24 +29,19 @@ const FAQS = [
       "Yes. Beyond incorporation, we support startups with GST registration, MSME/Udyam registration, ongoing ROC compliance, and — once you're past the earliest stage — Virtual CFO support for budgeting and investor reporting. Most founders start with incorporation and add services as the business grows, rather than needing everything on day one.",
   },
   {
-    question: "How long does private limited company incorporation take in Chennai?",
+    question: "How long does private limited company registration take in Chennai?",
     answer:
-      "With documents in order, SPICe+ incorporation typically takes 7–12 working days, covering DSC/DIN issuance, name approval, and Certificate of Incorporation from the MCA. Delays usually come from name-availability rejections (the proposed name resembling an existing company or trademark) or incomplete KYC documents, both of which we vet against MCA and trademark databases before filing rather than discovering after a rejection resets the clock. Founders who have their director KYC, registered-office proof, and proposed name options ready upfront typically see the faster end of that range; those starting from scratch on documentation should budget closer to 3 weeks including document collection.",
+      "Private limited company registration in Chennai takes 7–12 working days once documents are ready. That covers DSC and DIN, name approval and the Certificate of Incorporation from the MCA. Allow about 3 weeks if you are collecting documents from scratch. In detail: SPICe+ incorporation typically takes 7–12 working days, covering DSC/DIN issuance, name approval, and Certificate of Incorporation from the MCA. Delays usually come from name-availability rejections (the proposed name resembling an existing company or trademark) or incomplete KYC documents, both of which we vet against MCA and trademark databases before filing rather than discovering after a rejection resets the clock. Founders who have their director KYC, registered-office proof, and proposed name options ready upfront typically see the faster end of that range; those starting from scratch on documentation should budget closer to 3 weeks including document collection.",
   },
   {
     question: "What is the minimum capital and number of directors required?",
     answer:
-      "A Private Limited Company needs a minimum of 2 directors and 2 shareholders (they can be the same people, and one person can hold both roles), with a maximum of 15 directors and 200 shareholders. There is no statutory minimum paid-up capital requirement — you can technically start with as little as ₹1, though most founders capitalise at a figure that realistically covers early operating expenses since raising it later requires a formal ROC filing. At least one director must be an Indian resident, meaning they stayed in India for 120 or more days in the previous financial year — this applies even if all shareholders are based abroad.",
+      "A Private Limited Company needs a minimum of 2 directors and 2 shareholders (they can be the same people, and one person can hold both roles), with a maximum of 15 directors and 200 shareholders. There is no statutory minimum paid-up capital requirement — you can technically start with as little as ₹1, though most founders capitalise at a figure that realistically covers early operating expenses since raising it later requires a formal ROC filing. At least one director must be resident in India, meaning they stayed in India for at least 182 days during the financial year (Section 149(3) of the Companies Act, 2013) — this applies even if all shareholders are based abroad.",
   },
   {
-    question: "What documents are required for Pvt Ltd registration?",
+    question: "What documents are required for private limited company registration?",
     answer:
-      "PAN and Aadhaar of all directors and shareholders, a recent passport-size photo, proof of the registered office address (a rent agreement or electricity bill along with a No Objection Certificate from the property owner), and Class 3 digital signature certificates (DSC) for the proposed directors to sign the electronic MCA forms. NRI or foreign national directors need additional documents — a notarised or apostilled passport copy, proof of overseas address, and sometimes a Business Visa depending on their role. We provide a checklist tailored specifically to resident versus NRI/foreign director combinations before you start collecting paperwork, since this is the single biggest source of avoidable delay.",
-  },
-  {
-    question: "What is the difference between government fees and professional fees?",
-    answer:
-      "Government fees — MCA form fees, stamp duty on authorised share capital (which varies by state), and DIN/DSC issuance charges — are fixed by statute and paid directly to the government or the certifying authority; no CA or consultant can discount or waive these. Professional fees cover our actual work: drafting the MoA/AoA, verifying documents before submission to avoid rejection, and advisory time during the process. We separate both clearly as line items in every quote before you commit, specifically so you can see what portion is a fixed statutory cost versus what you're paying us for — no bundled or hidden charges either way.",
+      "For each director and shareholder: PAN, Aadhaar, a photo and a DSC; for the company: registered office proof with an owner NOC. In detail: PAN and Aadhaar of all directors and shareholders, a recent passport-size photo, proof of the registered office address (a rent agreement or electricity bill along with a No Objection Certificate from the property owner), and Class 3 digital signature certificates (DSC) for the proposed directors to sign the electronic MCA forms. NRI or foreign national directors need additional documents — a notarised or apostilled passport copy, proof of overseas address, and sometimes a Business Visa depending on their role. We provide a checklist tailored specifically to resident versus NRI/foreign director combinations before you start collecting paperwork, since this is the single biggest source of avoidable delay.",
   },
   {
     question: "What compliance is required after incorporation?",
@@ -81,26 +76,26 @@ export default function IncorporationPage() {
     <>
       <JsonLd
         data={serviceSchema({
-          name: "Private Limited Company Incorporation in Chennai",
+          name: "Private Limited Company Registration in Chennai",
           description:
-            "End-to-end SPICe+ incorporation of Private Limited Companies for businesses in Chennai, including DSC, DIN, name approval, and post-incorporation compliance.",
+            "End-to-end SPICe+ registration of Private Limited Companies for businesses in Chennai, including DSC, DIN, name approval, and post-incorporation compliance.",
           url: PAGE_URL,
           serviceType: "Business Incorporation",
         })}
       />
       <JsonLd
         data={howToSchema({
-          name: "How to incorporate a Private Limited Company in Chennai",
+          name: "How to register a Private Limited Company in Chennai",
           description: "Step-by-step process for registering a Private Limited Company through the MCA's SPICe+ form.",
           steps: STEPS,
         })}
       />
       <JsonLd data={speakableSchema(["#direct-answer"])} />
-      <Breadcrumbs items={[{ name: "Private Limited Company Incorporation", href: "/private-limited-company-incorporation-chennai" }]} />
+      <Breadcrumbs items={[{ name: "Private Limited Company Registration", href: "/private-limited-company-incorporation-chennai" }]} />
       <PageHero
         eyebrow="Company Registration · Chennai"
-        h1="Private Limited Company Incorporation in Chennai"
-        subhead="End-to-end SPICe+ incorporation — DSC, DIN, name approval, MoA/AoA drafting, and post-incorporation compliance — managed by a Chennai-based chartered accountancy firm."
+        h1="Private Limited Company Registration in Chennai"
+        subhead="End-to-end private limited company registration through SPICe+ — DSC, DIN, name approval, MoA/AoA drafting and post-incorporation compliance — handled by a chartered accountant firm in Anna Nagar, Chennai."
       />
 
       <section className="bg-paper py-16">
@@ -133,7 +128,7 @@ export default function IncorporationPage() {
               </h2>
               <ul className="mt-4 space-y-3 text-slate">
                 <li>• Minimum 2 directors and 2 shareholders (can be the same individuals), maximum 15 directors.</li>
-                <li>• At least one director must be a resident of India (stayed in India for 120+ days in the previous financial year).</li>
+                <li>• At least one director must be resident in India — stayed in India for at least 182 days during the financial year (Section 149(3), Companies Act, 2013).</li>
                 <li>• No minimum paid-up capital requirement.</li>
                 <li>• A registered office address in India with proof of ownership/rental and a No Objection Certificate.</li>
                 <li>• Valid PAN, Aadhaar, and a functional email/mobile number for each director for OTP verification.</li>
@@ -151,7 +146,7 @@ export default function IncorporationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                Step-by-step MCA incorporation process
+                How to register a private limited company in Chennai (step by step)
               </h2>
               <ol className="mt-4 space-y-4">
                 {STEPS.map((step, i) => (
@@ -217,18 +212,29 @@ export default function IncorporationPage() {
               </p>
             </div>
 
-            <div>
+            <div id="anna-nagar">
               <h2 className="text-2xl text-obsidian">
-                Government fees vs. professional fees
+                Private limited company registration in Anna Nagar
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
-                Government fees include MCA form fees, stamp duty on authorised share
-                capital (varies by state), and DIN/DSC issuance charges — these are fixed
-                by statute and paid directly to the government or issuing authority.
-                Professional fees cover our drafting of MoA/AoA, filing accuracy checks,
-                and advisory time. We provide a single itemised quote during your free
-                consultation so you know exactly what is a government charge and what is
-                our fee — nothing bundled, nothing hidden.
+                Our office is at J-Block, 1st Street, 13th Main Road, Anna Nagar,
+                Chennai 600040, so founders in Anna Nagar, Anna Nagar West,
+                Shenoy Nagar, Thirumangalam, Koyambedu, Mogappair and Aminjikarai can
+                register a private limited company with a chartered accountant they
+                can meet in person. You can drop off KYC documents, sign the
+                registered-office NOC and finish DSC verification at our office in
+                one visit, and the SPICe+ filing itself is online, so the 7–12
+                working-day timeline is the same as anywhere in Chennai.
+              </p>
+              <p className="mt-4 leading-relaxed text-slate">
+                An Anna Nagar home or rented office can be your registered office:
+                you need a recent electricity bill or property tax receipt for the
+                address, plus a rent agreement and NOC from the owner if the premises
+                are rented. See our{" "}
+                <Link href="/chartered-accountant-anna-nagar-chennai" className="text-royal-violet underline underline-offset-2">
+                  CA firm in Anna Nagar
+                </Link>{" "}
+                page for the other services we handle for local businesses.
               </p>
             </div>
 
@@ -249,11 +255,10 @@ export default function IncorporationPage() {
 
           <aside className="lg:sticky lg:top-24 h-fit space-y-6">
             <div className="rounded-cards border border-carbon bg-royal-violet p-8">
-              <h3 className="text-lg font-medium text-white">Get a fixed-fee quote</h3>
+              <h3 className="text-lg font-medium text-white">Talk to a CA about your registration</h3>
               <p className="mt-2 text-sm text-white/80">
-                Tell us your director count and authorised capital — we&apos;ll send an
-                itemised quote separating government and professional fees within one
-                business day.
+                Tell us your directors, shareholders and business activity — we&apos;ll
+                confirm the documents you need and the timeline within one business day.
               </p>
               <Link
                 href="/contact"
@@ -305,7 +310,7 @@ export default function IncorporationPage() {
       <CTASection
         formService="Company / LLP registration (incl. foreign company in India)"
         title="Ready to incorporate your company?"
-        subtitle="Get a transparent, fixed-fee quote from a Chennai-based chartered accountancy firm."
+        subtitle="Speak to a chartered accountant in Anna Nagar about registering your private limited company."
       />
     </>
   );

@@ -8,6 +8,23 @@ export const meta: BlogPostMeta = {
   date: "2026-09-19",
   excerpt:
     "Anna Nagar has no shortage of chartered accountants and CA firms, which makes choosing one feel harder rather than easier for a business...",
+  faqs: [
+    {
+      question: "How do I check that a CA firm in Anna Nagar is genuine?",
+      answer:
+        "Ask for the partner's ICAI membership number and the firm's registration number, then verify them on the ICAI website. A practising chartered accountant shares these readily. Also confirm the office address on Google Maps matches the address on their letterhead.",
+    },
+    {
+      question: "What should I ask a CA firm before hiring them?",
+      answer:
+        "Ask who on the team will handle your work day to day, which services they do most often (company registration, GST, audit, tax), how they track your deadlines, and how quickly they reply to queries. Meeting at their office is the easiest way to judge this.",
+    },
+    {
+      question: "Is it better to choose a CA firm close to my business in Anna Nagar?",
+      answer:
+        "Most filings are online, so distance is not essential, but a nearby firm makes document drop-offs, DSC verification and urgent meetings during notices or audits much easier. For first-time founders registering a company, an in-person meeting usually saves time.",
+    },
+  ],
 };
 
 export default function Body() {

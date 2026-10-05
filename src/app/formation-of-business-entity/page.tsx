@@ -10,9 +10,9 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/formation-of-business-entity`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Company Registration in Chennai — All Business Structures" },
+  title: { absolute: "Business Structures in Chennai: Pvt Ltd vs LLP vs OPC | C S Rushil & Co." },
   description:
-    "Company registration in Chennai — Private Limited, LLP, OPC, Partnership, or Sole Proprietorship — end-to-end documentation and compliance from C S Rushil & Co.",
+    "Choosing a business structure in Chennai? Compare Private Limited, LLP, OPC, Partnership and Sole Proprietorship, then register with C S Rushil & Co., Anna Nagar.",
   alternates: { canonical: "/formation-of-business-entity" },
 };
 
@@ -40,7 +40,7 @@ const FAQS = [
   {
     question: "How long does the registration process take?",
     answer:
-      "A Sole Proprietorship can be set up within days. LLPs and Private Limited Companies typically take 7–15 working days depending on document readiness and MCA processing times.",
+      "A Sole Proprietorship can be set up within days. Private Limited Companies typically take 7–12 working days and LLPs 10–15 depending on document readiness and MCA processing times.",
   },
   {
     question: "Do you offer post-registration support?",

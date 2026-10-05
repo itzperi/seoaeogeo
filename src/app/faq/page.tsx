@@ -16,7 +16,7 @@ const HUB_FAQS = [
   {
     question: "How long does company registration take in Chennai?",
     answer:
-      "With documents ready, Private Limited and LLP registration typically completes in 7–15 working days through the MCA's SPICe+ / FiLLiP forms, depending on processing times and whether the name-approval step needs a resubmission.",
+      "With documents ready, a Private Limited Company is typically registered in 7–12 working days and an LLP in 10–15 working days through the MCA's SPICe+ / FiLLiP forms, depending on processing times and whether the name-approval step needs a resubmission.",
     href: "/company-registration-chennai",
     linkLabel: "Full company registration guide",
   },

@@ -4,7 +4,6 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import Image from "next/image";
-import { JsonLd, personSchema } from "@/lib/schema";
 import { AREAS } from "@/lib/areas";
 import { FOUNDER_CREDENTIALS, FOUNDER_NAME, SOCIALS, YEAR_FOUNDED } from "@/lib/site";
 
@@ -33,7 +32,6 @@ const VALUES = [
 export default function AboutPage() {
   return (
     <>
-      <JsonLd data={personSchema()} />
       <Breadcrumbs items={[{ name: "About Us", href: "/about-us" }]} />
       <PageHero
         eyebrow="About the firm"
