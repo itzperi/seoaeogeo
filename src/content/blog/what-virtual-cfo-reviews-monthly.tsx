@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "what-virtual-cfo-reviews-monthly",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        Business owners considering virtual CFO support often aren&apos;t sure what the service actually involves month to month, beyond a vague sense that it&apos;s more strategic than bookkeeping. Here is what a genuine monthly review typically covers.
+        Business owners considering virtual CFO support often aren&apos;t sure what the service actually involves month to month, beyond a vague sense that it&apos;s more strategic than <Link href="/bookkeeping-services-chennai">bookkeeping</Link>. Here is what a genuine monthly review typically covers.
       </p>
 
       <h2>Profit and loss trends, not just the current month</h2>
@@ -57,7 +58,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you want this kind of monthly financial oversight for your Chennai business without hiring a full time CFO, C S Rushil &amp; Co. provides virtual CFO services structured around exactly this rhythm. Book a free consultation to see how it would work for you.
+        If you want this kind of monthly financial oversight for your Chennai business without hiring a full time CFO, C S Rushil &amp; Co. provides <Link href="/virtual-cfo-services">virtual CFO services</Link> structured around exactly this rhythm. Book a free consultation to see how it would work for you.
       </p>
     </>
   );

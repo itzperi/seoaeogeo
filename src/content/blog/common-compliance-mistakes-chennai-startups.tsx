@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "common-compliance-mistakes-chennai-startups",
-  title: "Common Compliance Mistakes Chennai Startups Make in Their First Year",
+  title: "First-Year Compliance Mistakes Chennai Startups Make",
   description:
     "Chennai founders focused on customers and product often let compliance mistakes pile up quietly until they surface as penalties or blocked fundraising.",
   date: "2026-09-19",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>Delaying GST registration until it feels urgent</h2>
 
       <p>
-        Many founders wait until they&apos;re clearly over the turnover threshold before registering for GST, missing that certain types of supply, like interstate sales or specific service categories, can trigger mandatory registration well before the general threshold applies. Registering late means backdated liability and penalty exposure that a slightly earlier registration would have avoided entirely.
+        Many founders wait until they&apos;re clearly over the turnover threshold before registering for GST, missing that certain types of supply, like interstate sales or specific service categories, can trigger mandatory <Link href="/gst-registration-chennai">GST registration</Link> well before the general threshold applies (see the <a href="https://www.gst.gov.in/help/registration" target="_blank" rel="noopener noreferrer">GST portal registration help</a>). Registering late means backdated liability and penalty exposure that a slightly earlier registration would have avoided entirely.
       </p>
 
       <h2>Mixing personal and business finances</h2>
@@ -32,13 +33,13 @@ export default function Body() {
       <h2>Ignoring TDS obligations as an employer or payer</h2>
 
       <p>
-        Once a startup starts paying salaries above the exemption limit, or making payments to vendors and professionals above specified thresholds, TDS deduction and deposit obligations kick in immediately. A lot of early stage founders don&apos;t realize this applies to them until a vendor or ex employee raises the issue, by which point interest has already accrued.
+        Once a startup starts paying salaries above the exemption limit, or making payments to vendors and professionals above specified thresholds, TDS deduction, deposit and <Link href="/tds-return-filing-chennai">TDS return filing</Link> obligations kick in immediately (see the <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tds-compliance" target="_blank" rel="noopener noreferrer">income tax portal guide to TDS compliance</a>). A lot of early stage founders don&apos;t realize this applies to them until a vendor or ex employee raises the issue, by which point interest has already accrued.
       </p>
 
       <h2>Treating annual ROC filings as optional for inactive companies</h2>
 
       <p>
-        Founders who incorporate early and then pause operations often assume ROC filings can wait until the business is actually active again. Annual filing obligations apply regardless of activity level, and penalties accumulate daily, making a genuinely dormant company far more expensive to maintain than founders expect.
+        Founders who incorporate early and then pause operations often assume <Link href="/roc-compliances">annual ROC filings</Link> can wait until the business is actually active again. Annual filing obligations apply regardless of activity level, and penalties accumulate daily, making a genuinely dormant company far more expensive to maintain than founders expect.
       </p>
 
       <h2>Not budgeting for compliance costs from day one</h2>

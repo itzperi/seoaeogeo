@@ -48,11 +48,11 @@ export default function Page() {
         { question: "Can you fix past non-compliance?", answer: "Yes, we conduct a compliance health check, identify pending filings, and regularise them through the MCA's condonation and late-filing mechanisms where available." },
       ]}
       relatedQuestions={[
-        { question: "Which entity structure has the lightest ROC compliance burden?", href: "/formation-of-business-entity" },
+        { question: "Which entity structure has the lightest ROC compliance burden?", href: "/company-registration-chennai" },
         { question: "What ROC filings follow right after incorporation?", href: "/private-limited-company-incorporation-chennai" },
         { question: "Is statutory audit required before I can file my annual return?", href: "/audit-and-assurance" },
       ]}
-      relatedSlugs={["formation-of-business-entity", "private-limited-company-incorporation-chennai", "audit-and-assurance"]}
+      relatedSlugs={["company-registration-chennai", "private-limited-company-incorporation-chennai", "audit-and-assurance"]}
     />
   );
 }

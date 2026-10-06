@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "advance-tax-deadlines",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires estimating income and paying tax in installments throughout the year rather than in one lump sum at filing time.
+        Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires estimating income and paying tax in installments throughout the year rather than in one lump sum at the time of <Link href="/income-tax-return-filing-chennai">income tax return filing</Link>.
       </p>
 
       <h2>Who actually needs to pay it</h2>
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>The installment schedule</h2>
 
       <p>
-        Advance tax is paid in four installments across the financial year, with cumulative percentages of the estimated total tax liability due by each deadline, roughly fifteen percent by mid June, forty five percent by mid September, seventy five percent by mid December, and the full hundred percent by mid March. Missing an installment or underpaying against these cumulative percentages triggers interest under Sections 234B and 234C.
+        Advance tax is paid in four installments across the financial year, with cumulative percentages of the estimated total tax liability due by each deadline, roughly fifteen percent by mid June, forty five percent by mid September, seventy five percent by mid December, and the full hundred percent by mid March (see <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tax-payments" target="_blank" rel="noopener noreferrer">advance tax payment on the income tax portal</a>). Missing an installment or underpaying against these cumulative percentages triggers interest under Sections 234B and 234C.
       </p>
 
       <h2>Why estimating income is the hard part</h2>
@@ -51,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If estimating and paying advance tax correctly every quarter feels like guesswork, C S Rushil &amp; Co. in Anna Nagar helps clients project income and calculate each installment accurately. Book a free consultation before your next deadline.
+        If estimating and paying advance tax correctly every quarter feels like guesswork, C S Rushil &amp; Co. in Anna Nagar helps clients project income and calculate each installment accurately as part of our <Link href="/direct-tax">direct tax services</Link>. Book a free consultation before your next deadline.
       </p>
     </>
   );

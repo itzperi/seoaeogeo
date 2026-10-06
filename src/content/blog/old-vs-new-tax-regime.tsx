@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "old-vs-new-tax-regime",
-  title: "Old vs New Tax Regime for FY 2026 to 27: Which One Actually Saves You Money",
+  title: "Old vs New Tax Regime FY 2026-27: Which Saves More Tax?",
   description:
     "Salaried professionals and small business owners in Chennai ask this every year: old tax regime or new? The honest answer depends on your actual deductions.",
   date: "2026-09-19",
@@ -38,20 +39,20 @@ export default function Body() {
       <h2>A few things people get wrong</h2>
 
       <p>
-        Assuming last year&apos;s choice is automatically still the better one this year is a common mistake, especially if your income or deduction pattern changed. Salaried individuals can also switch between regimes every year when filing, while those with business income face more restrictions on switching back and forth, which is worth knowing before you commit.
+        Assuming last year&apos;s choice is automatically still the better one this year is a common mistake, especially if your income or deduction pattern changed. Salaried individuals can also switch between regimes every year when <Link href="/income-tax-return-filing-chennai">filing their income tax return</Link>, while those with business income face more restrictions on switching back and forth, which is worth knowing before you commit.
       </p>
 
       <h2>A quick way to think about it</h2>
 
       <ul>
         <li>List every deduction you can genuinely claim: 80C, 80D, home loan interest, HRA</li>
-        <li>Add them up and compare your net tax liability under both regimes using current slab rates</li>
+        <li>Add them up and compare your net tax liability under both regimes using <a href="https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1" target="_blank" rel="noopener noreferrer">current slab rates</a></li>
         <li>If deductions total more than roughly three to four lakh rupees, the old regime often wins</li>
         <li>If deductions are minimal, the new regime usually wins</li>
       </ul>
 
       <p>
-        If you want an actual side by side calculation using your real income and deductions rather than a generic comparison, C S Rushil &amp; Co. in Anna Nagar can run both scenarios for you before you file. Book a free consultation to find out which regime fits your situation this year.
+        If you want an actual side by side calculation using your real income and deductions rather than a generic comparison, the <Link href="/direct-tax">direct tax</Link> team at C S Rushil &amp; Co. in Anna Nagar can run both scenarios for you before you file. Book a free consultation to find out which regime fits your situation this year.
       </p>
     </>
   );

@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "msme-loan-schemes-tamil-nadu",
-  title: "MSME Loan Schemes Available to Small Businesses in Tamil Nadu",
+  title: "MSME Loan Schemes for Small Businesses in Tamil Nadu",
   description:
     "Chennai small business owners often assume bank loans are their only option, without realizing Udyam/MSME registration unlocks better-terms loan schemes.",
   date: "2026-09-19",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        Small business owners in Chennai often assume bank loans are their only financing option, without realizing that registering as an MSME under Udyam opens access to several government backed loan schemes with better terms than standard commercial lending.
+        Small business owners in Chennai often assume bank loans are their only financing option, without realizing that <Link href="/msme-udyam-registration-chennai">registering as an MSME under Udyam</Link> opens access to several government backed loan schemes with better terms than standard commercial lending.
       </p>
 
       <h2>Why Udyam registration comes first</h2>
@@ -53,7 +54,7 @@ export default function Body() {
         <li>Complete Udyam registration if you haven&apos;t already, it&apos;s free and takes minutes online</li>
         <li>Identify whether your business fits micro, small, or medium classification based on current thresholds</li>
         <li>Check current central and Tamil Nadu state schemes relevant to your sector and loan purpose</li>
-        <li>Prepare financial statements and projections since most schemes still require basic documentation despite being collateral free</li>
+        <li>Prepare financial statements and projections (a <Link href="/virtual-cfo-services">virtual CFO</Link> can help here) since most schemes still require basic documentation despite being collateral free</li>
       </ul>
 
       <p>

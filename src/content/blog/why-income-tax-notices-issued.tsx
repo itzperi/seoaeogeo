@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "why-income-tax-notices-issued",
-  title: "Why Income Tax Notices Get Issued — the Actual Triggers, Not the Scary Stories",
+  title: "Why Income Tax Notices Get Issued: The Actual Triggers",
   description:
     "An income tax notice usually means one specific, fixable data mismatch — not that you're in trouble. Here are the actual triggers behind most notices.",
   date: "2026-09-26",
@@ -30,7 +31,7 @@ export default function Body() {
       <h2>Income reported doesn&apos;t match Form 26AS or AIS</h2>
 
       <p>
-        This is the most common trigger by far. Your employer, bank, or mutual fund house reports your income and TDS to the department, and the system automatically cross-checks this against what you declared in your return. A forgotten interest credit or an unreported capital gain shows up as a mismatch, generating a notice.
+        This is the most common trigger by far. Your employer, bank, or mutual fund house reports your income and TDS to the department, and the system automatically cross-checks this against what you declared in your return (the portal&apos;s <a href="https://www.incometax.gov.in/iec/foportal/help/e-filing-manage-tax-credit-mismatch-faq" target="_blank" rel="noopener noreferrer">tax credit mismatch FAQs</a> explain how these differences surface). A forgotten interest credit or an unreported capital gain shows up as a mismatch, generating a notice.
       </p>
 
       <h2>High-value transactions without a matching income profile</h2>
@@ -42,7 +43,7 @@ export default function Body() {
       <h2>Non-filing despite reportable transactions</h2>
 
       <p>
-        If TDS was deducted on your income, or you had transactions that appear in the department&apos;s data, but no return was filed at all, that gap itself is a common trigger — the system flags the absence of a filing as readily as it flags an inconsistency within one.
+        If TDS was deducted on your income, or you had transactions that appear in the department&apos;s data, but no <Link href="/income-tax-return-filing-chennai">income tax return</Link> was filed at all, that gap itself is a common trigger — the system flags the absence of a filing as readily as it flags an inconsistency within one.
       </p>
 
       <h2>Random scrutiny selection, less common than assumed</h2>
@@ -52,7 +53,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you&apos;ve received a notice and aren&apos;t sure which of these it actually is, C S Rushil &amp; Co. can identify the real trigger and draft the correct response. Book a free consultation.
+        If you&apos;ve received a notice and aren&apos;t sure which of these it actually is, C S Rushil &amp; Co. can identify the real trigger and draft the correct <Link href="/income-tax-notice-reply-chennai">income tax notice reply</Link>. Book a free consultation.
       </p>
     </>
   );

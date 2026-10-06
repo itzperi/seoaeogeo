@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "msme-loan-tambaram-traders",
-  title: "Tambaram's Small Traders Are Leaving MSME Loan Benefits Unused",
+  title: "Tambaram Traders Are Leaving MSME Loan Benefits Unused",
   description:
     "A lot of small trading and service businesses in Tambaram register on Udyam and never actually apply for the collateral-free loan schemes it unlocks.",
   date: "2026-09-26",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>Udyam registration unlocks specific loan products, not just a certificate</h2>
 
       <p>
-        Registered MSMEs get access to collateral-free lending schemes, priority-sector lending status with most banks, and typically faster processing than a standard commercial loan application &mdash; benefits that exist specifically because the registration exists, not something that requires a separate application process on top of it.
+        <Link href="/msme-udyam-registration-chennai">Udyam-registered MSMEs</Link> get access to collateral-free lending schemes, priority-sector lending status with most banks, and typically faster processing than a standard commercial loan application &mdash; benefits that exist specifically because the registration exists, not something that requires a separate application process on top of it.
       </p>
 
       <h2>Why Tambaram&apos;s growing trading and service base fits this exactly</h2>
@@ -32,7 +33,7 @@ export default function Body() {
       <h2>The gap is usually awareness, not eligibility</h2>
 
       <p>
-        Most Tambaram business owners who&apos;ve registered on Udyam are already eligible for these schemes &mdash; the registration itself is most of the qualifying work. What&apos;s missing is knowing which specific scheme fits a given financing need and actually applying through the right channel rather than defaulting to a standard loan application.
+        Most Tambaram business owners who&apos;ve registered on Udyam are already eligible for these schemes &mdash; the registration itself is most of the qualifying work. What&apos;s missing is knowing which specific scheme fits a given financing need and actually applying through the right channel rather than defaulting to a standard loan application. Keeping accounts current through regular <Link href="/bookkeeping-services-chennai">bookkeeping</Link> also means the financial statements a lender asks for are ready when the need arises.
       </p>
 
       <p>

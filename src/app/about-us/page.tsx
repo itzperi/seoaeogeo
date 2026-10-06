@@ -5,7 +5,23 @@ import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import Image from "next/image";
 import { AREAS } from "@/lib/areas";
-import { FOUNDER_CREDENTIALS, FOUNDER_NAME, SOCIALS, YEAR_FOUNDED } from "@/lib/site";
+import {
+  FIRM_REGISTRATION_NO,
+  FOUNDER_CREDENTIALS,
+  FOUNDER_NAME,
+  ICAI_MEMBERSHIP_NO,
+  SOCIALS,
+  YEAR_FOUNDED,
+  YEAR_QUALIFIED,
+} from "@/lib/site";
+
+// Regulatory details for the founder, rendered only when the firm has
+// supplied the real value in src/lib/site.ts (never a placeholder).
+const FOUNDER_REG_DETAILS = [
+  ICAI_MEMBERSHIP_NO ? { label: "ICAI membership no.", value: ICAI_MEMBERSHIP_NO } : null,
+  YEAR_QUALIFIED ? { label: "Qualified as a Chartered Accountant", value: YEAR_QUALIFIED } : null,
+  FIRM_REGISTRATION_NO ? { label: "Firm registration no. (FRN)", value: FIRM_REGISTRATION_NO } : null,
+].filter((d): d is { label: string; value: string } => d !== null);
 
 const TEAM = [
   { name: "Darsan Kanna", photo: "/images/team/darsan-kanna.webp", linkedin: "https://www.linkedin.com/in/darsan-kanna-v-684208253" },
@@ -116,6 +132,16 @@ export default function AboutPage() {
                 and compliance practice, and heads client engagements across
                 incorporation, GST, and advisory work.
               </p>
+              {FOUNDER_REG_DETAILS.length > 0 && (
+                <dl className="mt-3 space-y-1 text-sm text-slate">
+                  {FOUNDER_REG_DETAILS.map((d) => (
+                    <div key={d.label} className="flex flex-wrap gap-x-2">
+                      <dt className="font-medium text-obsidian">{d.label}:</dt>
+                      <dd>{d.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
               <a
                 href="https://www.linkedin.com/in/rushil-cs"
                 target="_blank"
@@ -136,12 +162,20 @@ export default function AboutPage() {
             >
               Institute of Chartered Accountants of India (ICAI)
             </a>
-            , the statutory body that certifies and governs every practising CA in the country.
+            , the statutory body that certifies and governs every practising CA in the country. You can
+            verify any CA&apos;s membership on the ICAI website — one of the checks in our guide on{" "}
+            <Link
+              href="/blog/how-to-choose-a-chartered-accountant-in-chennai"
+              className="font-medium text-royal-violet underline underline-offset-2"
+            >
+              how to choose a CA firm in Chennai
+            </Link>
+            .
           </p>
           <h3 className="mt-10 text-lg font-medium text-obsidian">Our team</h3>
           <p className="mt-3 max-w-2xl text-sm text-slate">
-            Our full team includes 16 professionals across audit, tax, and
-            GST.
+            {FOUNDER_NAME} leads a 16-member team working across audit, tax,
+            GST and compliance. Some of the people you may work with:
           </p>
           <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
             {TEAM.map((member) => (
@@ -169,9 +203,6 @@ export default function AboutPage() {
               </div>
             ))}
           </div>
-          <p className="mt-4 max-w-2xl text-sm text-slate">
-            Individual profiles for the remaining team members will be added here as they&apos;re finalised.
-          </p>
 
           <h2 className="mt-16 text-2xl text-obsidian">Areas we serve</h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">

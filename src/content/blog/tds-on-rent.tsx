@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "tds-on-rent",
-  title: "TDS on Rent: What Chennai Landlords and Tenants Both Need to Know",
+  title: "TDS on Rent: What Chennai Landlords and Tenants Should Know",
   description:
     "TDS on rent trips up both sides in Chennai — tenants who don't realize they must deduct it, and landlords who forget to check it against their return.",
   date: "2026-09-19",
@@ -32,13 +33,13 @@ export default function Body() {
       <h2>What tenants need to do once TDS applies</h2>
 
       <p>
-        The tenant deducts the TDS, deposits it with the government within the prescribed time, and issues a TDS certificate to the landlord. Under Section 194 IB specifically, the deduction and deposit can be a one time annual event rather than a monthly cycle, which is easy to miss if you&apos;re used to standard monthly TDS compliance.
+        The tenant deducts the TDS, deposits it with the government within the prescribed time (see the <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tds-compliance" target="_blank" rel="noopener noreferrer">income tax portal guidance on TDS compliance</a>), and issues a TDS certificate to the landlord. Under Section 194 IB specifically, the deduction and deposit can be a one time annual event rather than a monthly cycle, which is easy to miss if you&apos;re used to standard monthly TDS compliance and <Link href="/tds-return-filing-chennai">quarterly TDS return filing</Link>.
       </p>
 
       <h2>What landlords should check</h2>
 
       <p>
-        Landlords should verify that TDS deducted by the tenant actually appears in their Form 26AS before filing their own return. A mismatch between what the tenant claims to have deducted and what shows up in the landlord&apos;s TDS credit is a common and avoidable notice trigger, usually caused by the tenant depositing the amount under the wrong PAN or missing the deposit deadline entirely.
+        Landlords should verify that TDS deducted by the tenant actually appears in their <a href="https://www.incometax.gov.in/iec/foportal/help/e-filing-manage-tax-credit-mismatch-faq" target="_blank" rel="noopener noreferrer">Form 26AS tax credit</a> before filing their own <Link href="/income-tax-return-filing-chennai">income tax return</Link>. A mismatch between what the tenant claims to have deducted and what shows up in the landlord&apos;s TDS credit is a common and avoidable notice trigger, usually caused by the tenant depositing the amount under the wrong PAN or missing the deposit deadline entirely.
       </p>
 
       <h2>A practical checklist</h2>

@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "cost-of-diy-gst-filing",
-  title: "What Actually Goes Wrong When You File GST Returns Yourself to Save a Few Thousand Rupees",
+  title: "What Goes Wrong When You File GST Returns Yourself",
   description:
     "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely the amount you saved.",
   date: "2026-09-26",
@@ -30,7 +31,7 @@ export default function Body() {
       <h2>The portal tells you what to enter, not whether it&apos;s correct</h2>
 
       <p>
-        GSTR-1 and GSTR-3B filing interfaces are built to accept whatever numbers you input — they don&apos;t flag that an invoice was classified under the wrong HSN code, that Input Tax Credit was claimed on an ineligible expense, or that a supplier&apos;s late filing has already created a mismatch that will surface as a notice next quarter. A business owner filing without that context finds out about these errors only once a notice arrives, often many months later.
+        GSTR-1 and GSTR-3B filing interfaces (see the <a href="https://www.gst.gov.in/help/returns" target="_blank" rel="noopener noreferrer">GST portal returns help</a>) are built to accept whatever numbers you input — they don&apos;t flag that an invoice was classified under the wrong HSN code, that Input Tax Credit was claimed on an ineligible expense, or that a supplier&apos;s late filing has already created a mismatch that will surface as a notice next quarter. A business owner filing without that context finds out about these errors only once a notice arrives, often many months later.
       </p>
 
       <h2>Small monthly errors compound into a real problem</h2>
@@ -42,7 +43,7 @@ export default function Body() {
       <h2>Weighing the actual trade-off honestly</h2>
 
       <p>
-        The professional fee for GST filing is a known, fixed monthly cost. The cost of a notice reply, an ITC reversal, or interest on a delayed correction is unknown until it happens — and by the nature of how these compound, it&apos;s rarely smaller than what was saved over the months leading up to it.
+        The professional fee for <Link href="/gst-return-filing-chennai">GST return filing</Link> is a known, fixed monthly cost. The cost of a <Link href="/gst-notice-reply-chennai">GST notice reply</Link>, an ITC reversal, or interest on a delayed correction is unknown until it happens — and by the nature of how these compound, it&apos;s rarely smaller than what was saved over the months leading up to it.
       </p>
 
       <p>

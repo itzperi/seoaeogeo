@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "llp-registration-nungambakkam-professional-firms",
-  title: "Why Professional Services Firms Choose an LLP for a Nungambakkam Address",
+  title: "Why Nungambakkam Professional Firms Choose an LLP",
   description:
     "Two consultants forming a firm in Nungambakkam usually reach for Private Limited by default. An LLP is often the better fit — here's the actual reasoning.",
   date: "2026-09-26",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        Two consultants setting up a professional services firm with a Nungambakkam office asked us to help register a Private Limited Company &mdash; the default choice they&apos;d assumed without really weighing it against the alternative. Once we walked through what they actually needed, an LLP was the better fit, and it usually is for this exact profile.
+        Two consultants setting up a professional services firm with a Nungambakkam office asked us to help register a <Link href="/private-limited-company-incorporation-chennai">Private Limited Company</Link> &mdash; the default choice they&apos;d assumed without really weighing it against the alternative. Once we walked through what they actually needed, an LLP was the better fit, and it usually is for this exact profile.
       </p>
 
       <h2>The default assumption isn&apos;t always the right one</h2>
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>What an LLP gets a professional services firm specifically</h2>
 
       <p>
-        An LLP gives the same limited liability protection &mdash; no partner is personally liable for the LLP&apos;s debts or another partner&apos;s misconduct &mdash; without the share-capital structure, and without mandatory statutory audit unless turnover exceeds ₹40 lakh or capital contribution exceeds ₹25 lakh. For two or three professionals sharing a Nungambakkam office and splitting revenue by agreement, that&apos;s meaningfully lighter to run.
+        <Link href="/llp-registration-chennai">LLP registration</Link> gives the same limited liability protection &mdash; no partner is personally liable for the LLP&apos;s debts or another partner&apos;s misconduct &mdash; without the share-capital structure, and without mandatory statutory audit unless turnover exceeds ₹40 lakh or capital contribution exceeds ₹25 lakh. For two or three professionals sharing a Nungambakkam office and splitting revenue by agreement, that&apos;s meaningfully lighter to run.
       </p>
 
       <h2>The one real trade-off to weigh honestly</h2>

@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "after-gst-show-cause-reply",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural next question is what happens now, and how long you should expect to wait.
+        If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your <Link href="/gst-notice-reply-chennai">GST notice reply</Link>, the natural next question is what happens now, and how long you should expect to wait.
       </p>
 
       <h2>The department&apos;s options once your reply is in</h2>
@@ -32,19 +33,19 @@ export default function Body() {
       <h2>If a demand order is passed against you</h2>
 
       <p>
-        A demand order is not the end of the road. You have the right to appeal before the Appellate Authority within the prescribed time limit (generally three months from the date of the order, extendable in limited circumstances). Missing this window makes the order final and considerably harder to challenge later, so tracking the date the order is communicated to you matters.
+        A demand order is not the end of the road. You have the right to appeal before the Appellate Authority within the prescribed time limit (generally three months from the date of the order, extendable in limited circumstances, under the <a href="https://cbic-gst.gov.in/gst-acts.html" target="_blank" rel="noopener noreferrer">CGST Act appeal provisions</a>). Missing this window makes the order final and considerably harder to challenge later, so tracking the date the order is communicated to you matters.
       </p>
 
       <h2>The appeal process, briefly</h2>
 
       <p>
-        An appeal requires filing Form GST APL 01 along with a mandatory pre deposit, generally a percentage of the disputed tax amount, before the Appellate Authority will hear the matter. From there, if the outcome still goes against you, the next level is the GST Appellate Tribunal (GSTAT).
+        An appeal requires filing Form GST APL 01 along with a mandatory pre deposit, generally a percentage of the disputed tax amount, before the Appellate Authority will hear the matter. From there, if the outcome still goes against you, the next level is the GST Appellate Tribunal (GSTAT), where <Link href="/gst-litigation-chennai">GST litigation support in Chennai</Link> becomes essential.
       </p>
 
       <h2>What to do while you wait</h2>
 
       <p>
-        Keep every piece of correspondence with the department organized chronologically, continue filing your regular returns without interruption (a pending dispute does not pause your ongoing compliance obligations), and avoid making any admissions in casual communication that could be used against you later.
+        Keep every piece of correspondence with the department organized chronologically, continue <Link href="/gst-return-filing-chennai">filing your regular GST returns</Link> without interruption (a pending dispute does not pause your ongoing compliance obligations), and avoid making any admissions in casual communication that could be used against you later.
       </p>
 
       <p>

@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "tax-audit-kilpauk-doctors",
@@ -26,17 +27,17 @@ export default function Body() {
       <h2>What changes once you cross it</h2>
 
       <p>
-        Above the threshold, a tax audit under Section 44AB becomes mandatory, which means proper books of account, a Form 3CD statement of particulars, and a Chartered Accountant&apos;s certification &mdash; a meaningfully different filing than the one-line presumptive declaration. Practices that discover this at filing time, rather than mid-year, end up reconstructing a year of transactions from scratch.
+        Above the threshold, a <Link href="/tax-audit-chennai">tax audit</Link> under Section 44AB becomes mandatory, which means proper books of account, a <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/videos/tax-audit-report-form-3ca-3cd" target="_blank" rel="noopener noreferrer">Form 3CD statement of particulars</a>, and a Chartered Accountant&apos;s certification &mdash; a meaningfully different filing than the one-line presumptive declaration. Practices that discover this at filing time, rather than mid-year, end up reconstructing a year of transactions from scratch.
       </p>
 
       <h2>The fix is checking receipts at mid-year, not April</h2>
 
       <p>
-        If your practice&apos;s receipts are approaching ₹50 lakh, checking the actual number in September or October &mdash; not waiting until the return is due &mdash; gives enough time to set up proper books before the audit becomes unavoidable.
+        If your practice&apos;s receipts are approaching ₹50 lakh, checking the actual number in September or October &mdash; not waiting until the return is due &mdash; gives enough time to set up proper books (with <Link href="/bookkeeping-services-chennai">bookkeeping support in Chennai</Link> if needed) before the audit becomes unavoidable.
       </p>
 
       <p>
-        If your Kilpauk practice is close to the presumptive taxation ceiling and you&apos;re not sure what that means for this year&apos;s filing, C S Rushil &amp; Co. can check your actual numbers against the threshold. Book a free consultation.
+        If your Kilpauk practice is close to the presumptive taxation ceiling and you&apos;re not sure what that means for this year&apos;s filing, C S Rushil &amp; Co. can check your actual numbers against the threshold and handle your <Link href="/income-tax-return-filing-chennai">income tax return filing</Link>. Book a free consultation.
       </p>
     </>
   );

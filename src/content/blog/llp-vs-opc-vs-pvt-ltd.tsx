@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "llp-vs-opc-vs-pvt-ltd",
-  title: "LLP vs OPC vs Private Limited: Choosing the Right Structure in Chennai",
+  title: "LLP vs OPC vs Private Limited: Choosing a Chennai Structure",
   description:
     "Every founder starting a business in Chennai eventually faces the same decision: which legal structure to register under.",
   date: "2026-09-19",
@@ -20,19 +21,19 @@ export default function Body() {
       <h2>Limited Liability Partnership</h2>
 
       <p>
-        An LLP suits professional services firms, consultancies, and businesses with two or more partners who want limited liability without the compliance burden of a full company structure. Compliance is lighter, there is no requirement for a minimum capital, and profit sharing between partners is flexible. The tradeoff is that LLPs cannot raise equity funding from investors, which rules them out for anyone planning to bring in venture capital or angel investment later.
+        <Link href="/llp-registration-chennai">LLP registration</Link> suits professional services firms, consultancies, and businesses with two or more partners who want limited liability without the compliance burden of a full company structure. Compliance is lighter, there is no requirement for a minimum capital, and profit sharing between partners is flexible. The tradeoff is that LLPs cannot raise equity funding from investors, which rules them out for anyone planning to bring in venture capital or angel investment later.
       </p>
 
       <h2>One Person Company</h2>
 
       <p>
-        An OPC works well for a solo founder who wants the limited liability protection of a company structure without needing a second shareholder, which a Private Limited Company requires. It carries more compliance than a sole proprietorship but less than a full private company in some respects. The catch is that an OPC has restrictions on paid up capital and turnover, beyond which it must convert into a private or public company, and it cannot have more than one member by design, which limits it if you plan to bring in a co founder soon.
+        <Link href="/opc-registration-chennai">OPC registration</Link> works well for a solo founder who wants the limited liability protection of a company structure without needing a second shareholder, which a Private Limited Company requires. It carries more compliance than a sole proprietorship but less than a full private company in some respects. The catch is that an OPC cannot have more than one member by design, which limits it if you plan to bring in a co founder soon (the MCA&apos;s <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/one-person-company.html" target="_blank" rel="noopener noreferrer">OPC FAQs</a> cover the conversion rules).
       </p>
 
       <h2>Private Limited Company</h2>
 
       <p>
-        A Private Limited Company is the structure most investors, venture funds, and larger clients expect to see, and it is the only one of the three that can issue different classes of shares and raise equity funding in the way most growth focused startups eventually need. It comes with the heaviest compliance load of the three: mandatory board meetings, statutory audit regardless of size, and more extensive ROC filings.
+        A <Link href="/private-limited-company-incorporation-chennai">Private Limited Company</Link> is the structure most investors, venture funds, and larger clients expect to see, and it is the only one of the three that can issue different classes of shares and raise equity funding in the way most growth focused startups eventually need. It comes with the heaviest compliance load of the three: mandatory board meetings, statutory audit regardless of size, and more extensive ROC filings.
       </p>
 
       <h2>How to actually decide</h2>

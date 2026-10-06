@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "12a-80g-adyar-institutions",
-  title: "Adyar's Educational and Charitable Institutions Are Still Running on Old 12A/80G Norms",
+  title: "Adyar's Charitable Institutions and Outdated 12A/80G Norms",
   description:
     "A number of Adyar's long-established institutions registered under 12A and 80G years ago, under rules that have since tightened considerably.",
   date: "2026-09-26",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>12A and 80G registration is no longer a one-time event</h2>
 
       <p>
-        Under the current rules, both 12A and 80G registration require periodic renewal within a prescribed validity window, rather than lasting indefinitely once granted. An institution registered before this shift needed to re-register under the revised provisions, and one that hasn&apos;t tracked its renewal date risks its exemption lapsing without anyone noticing until a donor or auditor raises the question.
+        Under the current rules, both 12A and 80G registration require periodic renewal within a prescribed validity window, rather than lasting indefinitely once granted. An institution registered before this shift needed to re-register under the revised provisions (through the <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/income-tax-forms" target="_blank" rel="noopener noreferrer">registration forms on the income tax e-filing portal</a>), and one that hasn&apos;t tracked its renewal date risks its exemption lapsing without anyone noticing until a donor or auditor raises the question.
       </p>
 
       <h2>Why Adyar specifically has more of these than average</h2>
@@ -32,11 +33,11 @@ export default function Body() {
       <h2>What to actually check</h2>
 
       <p>
-        The institution&apos;s current 12A and 80G registration certificates will show a validity period. If that period has passed, or is approaching, re-registration needs to happen before the current status lapses &mdash; not after, since a lapsed exemption affects both the institution&apos;s own tax position and its donors&apos; ability to claim deductions on contributions made during the gap.
+        The institution&apos;s current 12A and 80G registration certificates will show a validity period. If that period has passed, or is approaching, re-registration needs to happen before the current status lapses &mdash; not after, since a lapsed exemption affects both the institution&apos;s own <Link href="/direct-tax">direct tax position</Link> and its donors&apos; ability to claim deductions on contributions made during the gap.
       </p>
 
       <p>
-        If your Adyar institution isn&apos;t certain when its 12A/80G registration is due for renewal, C S Rushil &amp; Co. can check the current status and handle the re-registration. Book a free consultation.
+        If your Adyar institution isn&apos;t certain when its 12A/80G registration is due for renewal, C S Rushil &amp; Co. can check the current status and handle the <Link href="/trust">12A and 80G re-registration for your trust</Link>. Book a free consultation.
       </p>
     </>
   );

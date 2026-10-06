@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "itc-mismatch-notices",
-  title: "Input Tax Credit Mismatch Notices: Why They Happen and How to Respond",
+  title: "ITC Mismatch Notices: Why They Happen and How to Respond",
   description:
     "An ITC mismatch notice is one of the most common GST notices Chennai businesses receive — usually because GSTR-3B and a supplier's GSTR-1 don't match.",
   date: "2026-09-19",
@@ -20,18 +21,18 @@ export default function Body() {
       <h2>Why the mismatch happens in the first place</h2>
 
       <p>
-        Your ITC claim depends entirely on your supplier filing their return correctly and on time. If a supplier delays their GSTR 1, files it with wrong figures, or simply stops filing altogether, the credit you claimed will not appear in your GSTR 2B, and the system flags the gap automatically. You did nothing wrong on your end, but you are still the one who gets the notice.
+        Your ITC claim depends entirely on your supplier filing their return correctly and on time. If a supplier delays their GSTR 1, files it with wrong figures, or simply stops filing altogether, the credit you claimed will not appear in your GSTR 2B (see the GST portal&apos;s <a href="https://www.gst.gov.in/help/returns" target="_blank" rel="noopener noreferrer">returns help</a>), and the system flags the gap automatically. You did nothing wrong on your end, but you are still the one who gets the notice.
       </p>
 
       <h2>The most common causes, in order of frequency</h2>
 
-      <p>
-        1. Supplier has not filed their GSTR 1 for the relevant period yet
-2. Supplier filed the invoice under the wrong GSTIN
-3. Invoice value or tax amount entered incorrectly by the supplier
-4. You claimed credit on an invoice that was later amended or cancelled
-5. Genuine duplicate claim on your own books
-      </p>
+      <ol>
+        <li>Supplier has not filed their GSTR 1 for the relevant period yet</li>
+        <li>Supplier filed the invoice under the wrong GSTIN</li>
+        <li>Invoice value or tax amount entered incorrectly by the supplier</li>
+        <li>You claimed credit on an invoice that was later amended or cancelled</li>
+        <li>Genuine duplicate claim on your own books</li>
+      </ol>
 
       <h2>How to respond once you receive the notice</h2>
 
@@ -48,11 +49,11 @@ export default function Body() {
       <h2>What happens if you ignore it</h2>
 
       <p>
-        An unanswered ITC mismatch notice typically escalates into a formal show cause notice with interest and penalty proposed. Responding within the given window, even with a partial explanation and a plan for the remainder, is always better than silence.
+        An unanswered ITC mismatch notice typically escalates into a formal show cause notice with interest and penalty proposed, and potentially into <Link href="/gst-litigation-chennai">GST litigation</Link>. Responding within the given window, even with a partial explanation and a plan for the remainder, is always better than silence.
       </p>
 
       <p>
-        If you have received a GST mismatch notice and are not sure how much of it is genuinely your liability versus a supplier filing delay, C S Rushil &amp; Co. reviews the reconciliation and drafts the response on your behalf. Reach out for a free consultation before the reply deadline passes.
+        If you have received a GST mismatch notice and are not sure how much of it is genuinely your liability versus a supplier filing delay, C S Rushil &amp; Co. reviews the reconciliation and drafts the <Link href="/gst-notice-reply-chennai">GST notice reply</Link> on your behalf. Reach out for a free consultation before the reply deadline passes.
       </p>
     </>
   );

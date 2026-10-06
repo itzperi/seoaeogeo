@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "gstr9-annual-return-checklist",
-  title: "GSTR 9 Annual Return: A Filing Checklist for Small Businesses",
+  title: "GSTR-9 Annual Return: Filing Checklist for Small Businesses",
   description:
     "GSTR 9 is the annual return every regular GST registered business must file, summarizing a full year of GSTR-1 and GSTR-3B filings. A practical checklist.",
   date: "2026-09-19",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>Who needs to file it</h2>
 
       <p>
-        Any business registered under regular GST scheme with turnover above the notified threshold for the financial year needs to file GSTR 9. Businesses under the composition scheme file a separate, simpler return (GSTR 9A), and very small taxpayers below the exemption threshold are given relief from filing in some years, so it is worth confirming your specific obligation each year rather than assuming last year&apos;s rule still applies.
+        Any business registered under regular GST scheme with turnover above the notified threshold for the financial year needs to file GSTR 9 (the GST portal&apos;s <a href="https://tutorial.gst.gov.in/userguide/returns/FAQs_gstr9.htm" target="_blank" rel="noopener noreferrer">GSTR-9 FAQs</a> set out the current rules). Businesses under the composition scheme file a separate, simpler return (GSTR 9A), and very small taxpayers below the exemption threshold are given relief from filing in some years, so it is worth confirming your specific obligation each year rather than assuming last year&apos;s rule still applies.
       </p>
 
       <h2>What actually goes into it</h2>
@@ -32,7 +33,7 @@ export default function Body() {
       <h2>Common problems that surface at annual return time</h2>
 
       <p>
-        Input tax credit claimed in GSTR 3B that does not match GSTR 2B for the year, sales reported in GSTR 1 that do not match your books, and credit notes or debit notes that were never properly reflected during the year are the three issues that come up most often. Each of these needs to be reconciled and, where necessary, corrected or explained before filing.
+        Input tax credit claimed in GSTR 3B that does not match GSTR 2B for the year, sales reported in GSTR 1 that do not match your books (a common result of irregular <Link href="/bookkeeping-services-chennai">bookkeeping</Link>), and credit notes or debit notes that were never properly reflected during the year are the three issues that come up most often. Each of these needs to be reconciled and, where necessary, corrected or explained before filing.
       </p>
 
       <h2>A practical filing checklist</h2>
@@ -52,7 +53,7 @@ export default function Body() {
       </p>
 
       <p>
-        If preparing your annual GST return feels like untangling twelve months of small inconsistencies, C S Rushil &amp; Co. in Anna Nagar handles the full reconciliation and filing for small and mid sized Chennai businesses. Book a free consultation before your filing window closes.
+        If preparing your annual GST return feels like untangling twelve months of small inconsistencies, C S Rushil &amp; Co. in Anna Nagar handles the full reconciliation and <Link href="/gst-return-filing-chennai">GST return filing</Link> for small and mid sized Chennai businesses. Book a free consultation before your filing window closes.
       </p>
     </>
   );

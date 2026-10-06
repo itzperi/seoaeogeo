@@ -6,6 +6,11 @@ export const BUSINESS_NAME = "C S Rushil & Co.";
 export const BUSINESS_LEGAL_NAME = "C S Rushil & Co, Chartered Accountants";
 export const FOUNDER_NAME = "CA Rushil C S";
 export const FOUNDER_CREDENTIALS = "Certified FAFD, Start-up Mentor";
+// Regulatory identifiers. Leave null until the firm supplies the real value:
+// components render these only when set, so no placeholder ever goes live.
+export const ICAI_MEMBERSHIP_NO: string | null = null;
+export const FIRM_REGISTRATION_NO: string | null = null; // ICAI FRN
+export const YEAR_QUALIFIED: string | null = null;
 export const YEAR_FOUNDED = 2024;
 // The Business Profile's permanent CID link (from the profile's own edit
 // URLs). Used for schema sameAs/hasMap and every "view on Google" link, so
@@ -49,6 +54,9 @@ export const GEO = { latitude: 13.0859694, longitude: 80.1997378 };
 // Google plus code for the same point — shown next to the address.
 export const PLUS_CODE = "35PX+9V Chennai, Tamil Nadu";
 
+// CA Rushil C S's personal LinkedIn (Person schema sameAs).
+export const FOUNDER_LINKEDIN = "https://in.linkedin.com/in/rushil-cs";
+
 export const SOCIALS = {
   linkedin: "https://in.linkedin.com/company/csrushil-co",
   instagram: "https://www.instagram.com/carushil_c_s/",
@@ -67,7 +75,11 @@ export const WHATSAPP_LINK = `https://wa.me/${PHONE_TEL.replace(/\D/g, "")}`;
 
 // Precise pin (lat/long) rather than an address-text search, so the embed
 // points at the exact office rather than a general Anna Nagar location.
-export const GOOGLE_MAPS_EMBED_SRC = `https://www.google.com/maps?q=${GEO.latitude},${GEO.longitude}&z=17&hl=en&output=embed`;
+// Google's own "Embed a map" code for the Business Profile listing (Maps →
+// Share → Embed), so the embed shows the named place with its reviews rather
+// than a bare coordinate pin. Regenerate from the listing if the place moves.
+export const GOOGLE_MAPS_EMBED_SRC =
+  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2084858389876!2d80.1997378!3d13.0859694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526731d0017acd%3A0x7feea5edb81461bf!2sC%20S%20Rushil%20%26%20Co.!5e0!3m2!1sen!2sin!4v1791275708840!5m2!1sen!2sin";
 
 export const BUSINESS_HOURS = [
   { days: "Monday – Saturday", hours: "9:30 AM – 6:30 PM" },

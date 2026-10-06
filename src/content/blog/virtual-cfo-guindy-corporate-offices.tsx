@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "virtual-cfo-guindy-corporate-offices",
-  title: "What Guindy's Corporate Offices Should Expect From a Virtual CFO Engagement",
+  title: "Virtual CFO for Guindy Corporate Offices: What to Expect",
   description:
     "Guindy's mix of industrial-estate manufacturers and newer corporate offices need genuinely different things from a Virtual CFO. Here's what to expect.",
   date: "2026-09-26",
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>For newer corporate offices and services businesses</h2>
 
       <p>
-        For a company that&apos;s incorporated more recently and is still building out its finance function, the engagement usually starts with getting basic MIS reporting in place &mdash; a monthly view of revenue, margin, and cash that doesn&apos;t currently exist in a usable form &mdash; before moving into the forward-looking budgeting and forecasting work.
+        For a company that&apos;s incorporated more recently and is still building out its finance function, the engagement usually starts with getting basic MIS reporting in place (often alongside <Link href="/accounting-outsourcing-chennai">outsourced accounting</Link> for the day-to-day books) &mdash; a monthly view of revenue, margin, and cash that doesn&apos;t currently exist in a usable form &mdash; before moving into the forward-looking budgeting and forecasting work.
       </p>
 
       <h2>Why this distinction matters before you start</h2>
@@ -36,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you run a business in Guindy and aren&apos;t sure which of these you actually need, C S Rushil &amp; Co. starts every Virtual CFO engagement with an assessment of your current reporting and the specific decisions you&apos;re struggling to make. Book a free consultation to talk through your situation.
+        If you run a business in Guindy and aren&apos;t sure which of these you actually need, C S Rushil &amp; Co. starts every <Link href="/virtual-cfo-services">Virtual CFO engagement</Link> with an assessment of your current reporting and the specific decisions you&apos;re struggling to make. Book a free consultation to talk through your situation.
       </p>
     </>
   );

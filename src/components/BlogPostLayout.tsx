@@ -10,6 +10,7 @@ export default function BlogPostLayout({
   title,
   description,
   date,
+  updated,
   faqs,
   children,
 }: {
@@ -17,6 +18,8 @@ export default function BlogPostLayout({
   title: string;
   description: string;
   date: string;
+  /** Last substantive revision (YYYY-MM-DD); defaults to the publish date. */
+  updated?: string;
   faqs?: FAQItem[];
   children: ReactNode;
 }) {
@@ -27,8 +30,8 @@ export default function BlogPostLayout({
     description,
     image: `${SITE_URL}/blog/${slug}/opengraph-image`,
     datePublished: date,
-    dateModified: date,
-    author: { "@type": "Person", name: FOUNDER_NAME, url: `${SITE_URL}/about-us` },
+    dateModified: updated ?? date,
+    author: { "@type": "Person", "@id": `${SITE_URL}/#founder`, name: FOUNDER_NAME, url: `${SITE_URL}/about-us` },
     publisher: { "@id": `${SITE_URL}/#organization` },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${slug}` },
   };
@@ -42,6 +45,12 @@ export default function BlogPostLayout({
         <div className="container-page py-14 md:py-20">
           <p className="sticker-tag bg-sunburst">
             {new Date(date).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}
+            {updated && updated !== date && (
+              <>
+                {" · "}Updated{" "}
+                {new Date(updated).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}
+              </>
+            )}
             {" · "}Written by {FOUNDER_NAME}
           </p>
           <h1 className="mt-6 max-w-4xl text-5xl text-carbon md:text-7xl">{title}</h1>

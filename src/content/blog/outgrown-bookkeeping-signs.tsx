@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "outgrown-bookkeeping-signs",
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>Cash feels tight even though sales look fine</h2>
 
       <p>
-        A common pattern in growing Chennai businesses is healthy looking revenue alongside a persistently tight cash position, usually because of poor receivables management, unplanned inventory buildup, or payment terms that don&apos;t match between what you pay suppliers and what customers pay you. A bookkeeper records these transactions; a virtual CFO identifies the pattern and fixes the structural cause.
+        A common pattern in growing Chennai businesses is healthy looking revenue alongside a persistently tight cash position, usually because of poor receivables management, unplanned inventory buildup, or payment terms that don&apos;t match between what you pay suppliers and what customers pay you. A bookkeeper records these transactions; a <Link href="/virtual-cfo-services">virtual CFO</Link> identifies the pattern and fixes the structural cause.
       </p>
 
       <h2>You&apos;re preparing for funding or a loan and don&apos;t have clean projections</h2>
@@ -51,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If several of these feel uncomfortably true, it might be time to add virtual CFO support alongside your existing bookkeeping. C S Rushil &amp; Co. offers virtual CFO services for growing Chennai businesses. Book a free consultation to see what that would look like for you.
+        If several of these feel uncomfortably true, it might be time to add virtual CFO support alongside your existing <Link href="/bookkeeping-services-chennai">bookkeeping</Link>. C S Rushil &amp; Co. offers virtual CFO services for growing Chennai businesses. Book a free consultation to see what that would look like for you.
       </p>
     </>
   );

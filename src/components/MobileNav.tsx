@@ -3,10 +3,10 @@
 import { useState } from "react";
 import Link from "next/link";
 import { AREAS } from "@/lib/areas";
-import type { ServiceSummary } from "@/lib/services";
+import { SERVICE_GROUPS, getService } from "@/lib/services";
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
-export default function MobileNav({ services }: { services: ServiceSummary[] }) {
+export default function MobileNav() {
   const [open, setOpen] = useState(false);
 
   return (
@@ -31,20 +31,27 @@ export default function MobileNav({ services }: { services: ServiceSummary[] }) 
       {open && (
         <div className="absolute inset-x-0 top-[72px] z-40 max-h-[calc(100vh-72px)] overflow-y-auto border-y border-carbon bg-white">
           <div className="container-page py-6">
-            <p className="eyebrow text-xs text-slate">Services</p>
-            <ul className="mt-3 space-y-1">
-              {services.map((service) => (
-                <li key={service.slug}>
-                  <Link
-                    href={`/${service.slug}`}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
-                  >
-                    {service.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {SERVICE_GROUPS.map((group, gi) => (
+              <div key={group.label} className={gi > 0 ? "mt-5" : undefined}>
+                <p className="eyebrow text-xs text-slate">{group.label}</p>
+                <ul className="mt-2 space-y-1">
+                  {group.slugs.map(getService).map(
+                    (service) =>
+                      service && (
+                        <li key={service.slug}>
+                          <Link
+                            href={`/${service.slug}`}
+                            onClick={() => setOpen(false)}
+                            className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
+                          >
+                            {service.name}
+                          </Link>
+                        </li>
+                      ),
+                  )}
+                </ul>
+              </div>
+            ))}
 
             <p className="eyebrow mt-6 text-xs text-slate">Locations</p>
             <ul className="mt-3 space-y-1">

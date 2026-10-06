@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "statutory-audit-ambattur-manufacturers",
-  title: "Why Statutory Audits Take Longer for Ambattur's Manufacturing Companies",
+  title: "Why Statutory Audits Take Longer for Ambattur Manufacturers",
   description:
     "It's not the paperwork that slows down a manufacturing company's audit in Ambattur — it's inventory and fixed-asset verification specifically.",
   date: "2026-09-26",
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>Fixed assets need a genuine paper trail, not just a list</h2>
 
       <p>
-        Machinery, equipment, and factory infrastructure need to be verified against purchase invoices, and depreciation needs to be tracked correctly from each asset&apos;s actual purchase date &mdash; not a lump estimate. Ambattur manufacturers who&apos;ve added or retired equipment over the years without updating a proper fixed asset register end up spending audit time reconstructing that history instead of just confirming it.
+        Machinery, equipment, and factory infrastructure need to be verified against purchase invoices, and depreciation needs to be tracked correctly from each asset&apos;s actual purchase date &mdash; not a lump estimate. Ambattur manufacturers who&apos;ve added or retired equipment over the years without updating a proper fixed asset register (often a gap that <Link href="/accounting-outsourcing-chennai">outsourced accounting</Link> support can close) end up spending audit time reconstructing that history instead of just confirming it.
       </p>
 
       <h2>What actually shortens this timeline</h2>
@@ -36,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your Ambattur manufacturing business has a statutory audit coming up, C S Rushil &amp; Co. can do a pre-audit inventory and asset review to flag gaps before the auditor arrives on-site. Book a free consultation.
+        If your Ambattur manufacturing business has a <Link href="/statutory-audit-chennai">statutory audit</Link> coming up, C S Rushil &amp; Co. can do a pre-audit inventory and asset review to flag gaps before the auditor arrives on-site. Book a free consultation.
       </p>
     </>
   );

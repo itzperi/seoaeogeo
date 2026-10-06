@@ -90,7 +90,7 @@ export default function QualifyForm({ placement = "form", defaultService }: { pl
         }),
       });
       if (!res.ok) throw new Error();
-      track("form_submit", placement);
+      track("form_submit", placement, answers.service);
       setStatus("done");
     } catch {
       setStatus("error");

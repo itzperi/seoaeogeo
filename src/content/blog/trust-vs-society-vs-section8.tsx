@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "trust-vs-society-vs-section8",
-  title: "Trust vs Society vs Section 8 Company: Choosing the Right NGO Structure",
+  title: "Trust vs Society vs Section 8: Choosing an NGO Structure",
   description:
     "Starting a nonprofit in Chennai means choosing between a trust, a society, or a Section 8 company — the right choice depends on governance and funding plans.",
   date: "2026-09-19",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>Trust</h2>
 
       <p>
-        A trust is created through a trust deed and is generally the simplest and fastest structure to set up, well suited to family run charitable initiatives or smaller organizations with a small, stable group of trustees. Governance tends to be less formal, and trustees typically continue for life or long terms rather than through periodic elections, which can be an advantage for stability or a limitation if you want broader participation over time.
+        A <Link href="/trust">trust</Link> is created through a trust deed and is generally the simplest and fastest structure to set up, well suited to family run charitable initiatives or smaller organizations with a small, stable group of trustees. Governance tends to be less formal, and trustees typically continue for life or long terms rather than through periodic elections, which can be an advantage for stability or a limitation if you want broader participation over time.
       </p>
 
       <h2>Society</h2>
@@ -32,7 +33,7 @@ export default function Body() {
       <h2>Section 8 company</h2>
 
       <p>
-        A Section 8 company is registered under the Companies Act specifically for promoting charitable objectives, and it carries the most formal governance and compliance structure of the three, similar in many ways to a regular private company but without the ability to distribute profits to members. Larger NGOs, and especially those seeking substantial institutional or foreign funding, often prefer this structure because it signals a higher level of governance rigor to funders and regulators.
+        A <Link href="/section-8-company-registration-chennai">Section 8 company</Link> is registered under the Companies Act specifically for promoting charitable objectives, and it carries the most formal governance and compliance structure of the three, similar in many ways to a regular private company but without the ability to distribute profits to members. Larger NGOs, and especially those seeking substantial institutional or foreign funding, often prefer this structure because it signals a higher level of governance rigor to funders and regulators.
       </p>
 
       <h2>What actually drives the decision</h2>

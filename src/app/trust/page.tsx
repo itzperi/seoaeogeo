@@ -48,11 +48,11 @@ export default function Page() {
         { question: "Is annual audit mandatory for NGOs?", answer: "Yes, in most cases. A Section 8 Company must have its accounts audited every year under the Companies Act, whatever its income. A Trust or Society registered for income tax exemption must have its accounts audited by a Chartered Accountant when its total income, before claiming the exemption, exceeds the maximum amount not chargeable to tax." },
       ]}
       relatedQuestions={[
-        { question: "Should our NGO be a Trust, Society, or Section 8 Company?", href: "/formation-of-business-entity" },
+        { question: "Should our NGO be a Trust, Society, or Section 8 Company?", href: "/company-registration-chennai" },
         { question: "How does 12A exemption affect our income tax filing?", href: "/direct-tax" },
         { question: "Does a Section 8 Company have ROC filing requirements too?", href: "/roc-compliances" },
       ]}
-      relatedSlugs={["formation-of-business-entity", "direct-tax", "roc-compliances"]}
+      relatedSlugs={["company-registration-chennai", "direct-tax", "roc-compliances"]}
     />
   );
 }

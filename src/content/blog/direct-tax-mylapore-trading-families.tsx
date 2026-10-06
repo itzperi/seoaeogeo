@@ -1,10 +1,11 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "direct-tax-mylapore-trading-families",
-  title: "When a Mylapore Trading Family Business Passes to the Next Generation, the Tax Planning Changes Too",
+  title: "Mylapore Family Business Succession and Direct Tax Planning",
   description:
-    "Mylapore has a genuine base of long-established trading families. Handing the business to the next generation raises direct tax questions rarely planned for in advance.",
+    "Handing a long-established Mylapore trading family business to the next generation raises direct tax questions that are rarely planned for in advance.",
   date: "2026-09-26",
   excerpt:
     "Mylapore has a genuine base of long-established trading families. Handing the business over raises direct tax questions rarely planned for in advance.",
@@ -32,11 +33,11 @@ export default function Body() {
       <h2>Advance tax obligations shift with the ownership change</h2>
 
       <p>
-        Once income formally shifts to the next generation, their own advance tax obligations begin, often for the first time if they haven&apos;t previously filed as the primary earner. Getting this timeline right avoids the interest charges that come with underestimating a first year of direct business income.
+        Once income formally shifts to the next generation, their own advance tax obligations (see <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tax-payments" target="_blank" rel="noopener noreferrer">advance tax payment on the income tax portal</a>) begin, often for the first time if they haven&apos;t previously <Link href="/income-tax-return-filing-chennai">filed an income tax return</Link> as the primary earner. Getting this timeline right avoids the interest charges that come with underestimating a first year of direct business income.
       </p>
 
       <p>
-        If your Mylapore family business is going through a generational transition, C S Rushil &amp; Co. can help plan the direct tax side of it properly. Book a free consultation.
+        If your Mylapore family business is going through a generational transition, C S Rushil &amp; Co. can help plan the <Link href="/direct-tax">direct tax side of it</Link> properly. Book a free consultation.
       </p>
     </>
   );

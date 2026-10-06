@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "cash-flow-not-profit-business-failure",
-  title: "Most Businesses Don't Fail From a Lack of Profit — They Fail From a Lack of Cash",
+  title: "Businesses Fail From a Lack of Cash, Not a Lack of Profit",
   description:
     "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
   date: "2026-09-26",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        A business can show a healthy profit and loss statement and still not have enough cash in the bank to pay its own suppliers or payroll on time. This isn&apos;t a contradiction — it&apos;s the single most common reason genuinely profitable businesses run into serious trouble, and it comes down to timing, not performance.
+        A business can show a healthy <Link href="/bookkeeping-services-chennai">profit and loss statement in its books</Link> and still not have enough cash in the bank to pay its own suppliers or payroll on time. This isn&apos;t a contradiction — it&apos;s the single most common reason genuinely profitable businesses run into serious trouble, and it comes down to timing, not performance.
       </p>
 
       <div className="mx-auto max-w-xs">
@@ -46,7 +47,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your business is profitable on paper but cash feels perpetually tight, C S Rushil &amp; Co. can build a proper cash flow forecast to show you exactly where the gap is coming from. Book a free consultation.
+        If your business is profitable on paper but cash feels perpetually tight, C S Rushil &amp; Co. can build a proper cash flow forecast through our <Link href="/virtual-cfo-services">virtual CFO services</Link> to show you exactly where the gap is coming from. Book a free consultation.
       </p>
     </>
   );

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Anton, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,6 +8,9 @@ import ContactBar from "@/components/ContactBar";
 import Marquee from "@/components/Marquee";
 import { JsonLd, organizationSchema, personSchema, websiteSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
+
+// GA4 loads only when a measurement ID is configured (Vercel env var).
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 // Anton stands in for the condensed 800-weight display face of the Slush
 // style reference; Inter stands in for Aeonik Pro (UI and body).
@@ -46,6 +50,14 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${anton.variable} ${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
+        {GA_ID && (
+          <>
+            <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+            <Script id="ga4" strategy="afterInteractive">
+              {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
+            </Script>
+          </>
+        )}
         <JsonLd data={organizationSchema()} />
         <JsonLd data={personSchema()} />
         <JsonLd data={websiteSchema()} />

@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "rera-compliance-calendar-tamil-nadu",
@@ -82,7 +83,8 @@ export default function Body() {
         dedicated project escrow account, usable only for construction and
         land costs of that specific project — not for other projects, general
         working capital, or unrelated expenses. TNRERA requires periodic
-        certification (typically by a chartered accountant) confirming this
+        certification (typically by a chartered accountant, as part of{" "}
+        <Link href="/audit-and-assurance">audit and assurance</Link> work) confirming this
         segregation is actually being maintained, not just declared.
       </p>
 

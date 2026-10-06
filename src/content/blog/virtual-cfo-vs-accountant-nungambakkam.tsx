@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "virtual-cfo-vs-accountant-nungambakkam",
-  title: "When Does a Nungambakkam Business Need a Virtual CFO, Not Just an Accountant?",
+  title: "Nungambakkam Business: Virtual CFO or Just an Accountant?",
   description:
     "Nungambakkam has a real concentration of mid-sized, past-startup-stage companies. Here's the actual signal that it's time for CFO-level support.",
   date: "2026-09-26",
@@ -32,7 +33,7 @@ export default function Body() {
       <h2>This doesn&apos;t replace your existing accountant</h2>
 
       <p>
-        Most businesses at this stage keep their existing accountant for day-to-day bookkeeping and statutory filing, and add Virtual CFO support specifically for the decisions that scope was never meant to cover &mdash; budgeting, cash flow forecasting, and board or investor-facing reporting. The two roles work alongside each other rather than one replacing the other.
+        Most businesses at this stage keep their existing accountant (or <Link href="/bookkeeping-services-chennai">bookkeeping service</Link>) for day-to-day bookkeeping and statutory filing, and add <Link href="/virtual-cfo-services">Virtual CFO support</Link> specifically for the decisions that scope was never meant to cover &mdash; budgeting, cash flow forecasting, and board or investor-facing reporting. The two roles work alongside each other rather than one replacing the other.
       </p>
 
       <p>

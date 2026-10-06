@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import TrackedAnchor from "@/components/TrackedAnchor";
 import { AREAS } from "@/lib/areas";
-import { SERVICES, SPECIALIST_SERVICES } from "@/lib/services";
+import { SERVICE_GROUPS, getService } from "@/lib/services";
 import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import MobileNav from "./MobileNav";
 
@@ -40,29 +40,24 @@ export default function Header() {
             <button className={`inline-flex ${PILL}`} aria-haspopup="true">
               Services
             </button>
-            <div className="invisible absolute left-0 top-full pt-2 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-              <div className="grid w-[640px] grid-cols-2 gap-1 rounded-[20px] border border-carbon bg-white p-3">
-                <p className="col-span-2 px-3 pb-1 pt-1 text-[11px] font-bold uppercase tracking-[0.06em] text-slate">Core services</p>
-                {SERVICES.map((service) => (
-                  <Link
-                    key={service.slug}
-                    href={`/${service.slug}`}
-                    className="rounded-xl px-3 py-2 text-sm text-carbon hover:bg-sky-wash"
-                  >
-                    {service.name}
-                  </Link>
-                ))}
-                <p className="col-span-2 mt-2 border-t border-carbon px-3 pb-1 pt-3 text-[11px] font-bold uppercase tracking-[0.06em] text-slate">
-                  NRIs &amp; overseas businesses
-                </p>
-                {SPECIALIST_SERVICES.map((service) => (
-                  <Link
-                    key={service.slug}
-                    href={`/${service.slug}`}
-                    className="rounded-xl px-3 py-2 text-sm text-carbon hover:bg-lavender"
-                  >
-                    {service.name}
-                  </Link>
+            <div className="invisible fixed left-1/2 top-[56px] -translate-x-1/2 pt-4 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
+              <div className="grid w-[min(92vw,1040px)] grid-cols-4 gap-x-4 gap-y-3 rounded-[20px] border border-carbon bg-white p-4">
+                {SERVICE_GROUPS.map((group) => (
+                  <div key={group.label}>
+                    <p className="px-2 pb-1 text-[11px] font-bold uppercase tracking-[0.06em] text-slate">{group.label}</p>
+                    {group.slugs.map(getService).map(
+                      (service) =>
+                        service && (
+                          <Link
+                            key={service.slug}
+                            href={`/${service.slug}`}
+                            className="block rounded-xl px-2 py-1.5 text-sm text-carbon hover:bg-sky-wash"
+                          >
+                            {service.name}
+                          </Link>
+                        ),
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
@@ -102,7 +97,7 @@ export default function Header() {
           >
             Book Free Consultation
           </TrackedAnchor>
-          <MobileNav services={SERVICES} />
+          <MobileNav />
         </div>
       </div>
     </header>

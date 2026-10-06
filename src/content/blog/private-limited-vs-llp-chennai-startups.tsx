@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "private-limited-vs-llp-chennai-startups",
-  title: "Private Limited vs. LLP for Chennai Startups: A 2026 Comparison",
+  title: "Private Limited vs LLP for Chennai Startups: 2026 Comparison",
   description:
     "Choosing between a Private Limited Company and an LLP in Chennai? Compare liability, compliance cost, fundraising fit, and taxation.",
   date: "2026-10-14",
@@ -69,17 +70,17 @@ export default function Body() {
           </tr>
           <tr>
             <td>Statutory audit</td>
-            <td>Mandatory every year, regardless of turnover</td>
+            <td>Mandatory <Link href="/statutory-audit-chennai">statutory audit</Link> every year, regardless of turnover</td>
             <td>Only above ₹40 lakh turnover or ₹25 lakh contribution</td>
           </tr>
           <tr>
             <td>Annual compliance</td>
             <td>AOC-4, MGT-7/7A, board meetings, statutory registers</td>
-            <td>Form 8, Form 11 — comparatively lighter</td>
+            <td><a href="https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-8.html" target="_blank" rel="noopener noreferrer">Form 8</a>, <a href="https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-11.html" target="_blank" rel="noopener noreferrer">Form 11</a> — comparatively lighter</td>
           </tr>
           <tr>
             <td>Taxation</td>
-            <td>25–30% corporate tax depending on turnover/regime, plus dividend distribution considerations</td>
+            <td>25–30% corporate tax depending on turnover, or a concessional 22% (plus surcharge and cess) if the company opts for Section 200 of the Income-tax Act, 2025 (earlier Section 115BAA) and forgoes most deductions; dividends are taxed again in shareholders&apos; hands</td>
             <td>30% flat, no separate dividend distribution tax layer</td>
           </tr>
           <tr>
@@ -109,7 +110,10 @@ export default function Body() {
         <a href="/private-limited-company-incorporation-chennai">
           Private Limited Company Incorporation in Chennai
         </a>{" "}
-        covers the exact process, timeline, and fee breakdown.
+        covers the exact process, timeline, and fee breakdown. If an LLP
+        fits better, see our{" "}
+        <Link href="/llp-registration-chennai">LLP registration in Chennai</Link>{" "}
+        service.
       </p>
     </>
   );

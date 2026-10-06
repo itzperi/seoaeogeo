@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "virtual-cfo-omr-startups",
@@ -32,11 +33,11 @@ export default function Body() {
       <h2>Export invoicing and GST add a layer most non-IT businesses don&apos;t deal with</h2>
 
       <p>
-        IT and software services companies along OMR frequently invoice international clients, which brings LUT filings and export-invoicing GST treatment into the same conversation as the CFO work &mdash; the compliance side and the financial-strategy side aren&apos;t actually separate for this client profile, even though they&apos;re often treated as separate services elsewhere.
+        IT and software services companies along OMR frequently invoice international clients, which brings <a href="https://tutorial.gst.gov.in/userguide/refund/Furnishing_of_Letter_of_Undertaking.htm" target="_blank" rel="noopener noreferrer">LUT filings</a> and export-invoicing <Link href="/goods-and-services-tax">GST treatment</Link> into the same conversation as the CFO work &mdash; the compliance side and the financial-strategy side aren&apos;t actually separate for this client profile, even though they&apos;re often treated as separate services elsewhere.
       </p>
 
       <p>
-        If you&apos;re a founder or finance lead along the OMR corridor getting ready for a raise or trying to get a genuine handle on runway, C S Rushil &amp; Co. provides Virtual CFO support built around exactly this profile. Book a free consultation to see what it would look like for your stage.
+        If you&apos;re a founder or finance lead along the OMR corridor getting ready for a raise or trying to get a genuine handle on runway, C S Rushil &amp; Co. provides <Link href="/virtual-cfo-services">Virtual CFO support</Link> built around exactly this profile. Book a free consultation to see what it would look like for your stage.
       </p>
     </>
   );

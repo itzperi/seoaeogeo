@@ -8,48 +8,90 @@ import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/goods-and-services-tax`;
+const title = "GST Consultants in Chennai | Registration, Returns, Notices";
+const description =
+  "GST consultants in Chennai for registration, GSTR-1 and 3B returns, GSTR-9/9C, ITC reconciliation, LUT for exporters, notice replies, appeals and cancellation.";
 
 export const metadata: Metadata = {
-  title: { absolute: "GST Return Filing & Compliance in Chennai" },
-  description:
-    "GST return filing, amendments, cancellations, and notice replies for Chennai businesses. New registration? See our dedicated GST registration guide.",
+  title: { absolute: title },
+  description,
   alternates: { canonical: "/goods-and-services-tax" },
+  openGraph: {
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+    title,
+    description,
+    url: "/goods-and-services-tax",
+  },
 };
 
-const SERVICES = [
-  { name: "GST Registration", text: "End-to-end registration with document preparation, ARN tracking, and follow-up with the department." },
-  { name: "GST Return Filing", text: "Monthly, quarterly, and annual returns (GSTR-1, 3B, 9/9C) filed accurately and on time." },
-  { name: "GST Cancellation", text: "Complete assistance for voluntary or department-initiated cancellation, including final return filing." },
-  { name: "GST Registration Amendment", text: "Updates to business address, contact details, or ownership structure on your GST registration." },
-  { name: "GST Notice Reply", text: "Analysis and drafting of replies to departmental notices and queries." },
-  { name: "LUT Application", text: "Letter of Undertaking filing for exporters to supply without upfront IGST payment." },
+const linkClass = "font-medium text-royal-violet underline underline-offset-2";
+
+const KEY_FACTS = [
+  { label: "Registration threshold", value: "₹40 lakh for goods and ₹20 lakh for services in Tamil Nadu, with compulsory registration for some businesses regardless of turnover" },
+  { label: "Regular returns", value: "GSTR-1 by the 11th and GSTR-3B by the 20th of the following month, or quarterly under QRMP up to ₹5 crore turnover" },
+  { label: "Annual return", value: "GSTR-9 by 31 December; GSTR-9C as well above ₹5 crore turnover" },
+  { label: "Portal", value: "GST common portal (gst.gov.in)" },
+  { label: "Late filing", value: "Late fee per day under Section 47, capped by turnover, plus 18% annual interest on tax paid late" },
+];
+
+const HUB = [
+  {
+    name: "GST registration in Chennai",
+    href: "/gst-registration-chennai",
+    text: "New registration in REG-01, voluntary registration, amendments and casual taxable person registration, with ARN tracking until the GSTIN is issued.",
+  },
+  {
+    name: "GST return filing in Chennai",
+    href: "/gst-return-filing-chennai",
+    text: "Monthly or quarterly GSTR-1 and GSTR-3B, QRMP and IFF, CMP-08 and GSTR-4 for composition dealers, and the annual GSTR-9 and 9C.",
+  },
+  {
+    name: "GST notice reply in Chennai",
+    href: "/gst-notice-reply-chennai",
+    text: "Replies to scrutiny notices (ASMT-10), pre-demand intimations (DRC-01A), mismatch queries and registration show-cause notices, filed with reconciliations.",
+  },
+  {
+    name: "GST litigation in Chennai",
+    href: "/gst-litigation-chennai",
+    text: "Show-cause notices under Sections 73 and 74, adjudication, appeals to the Appellate Authority and the GST Appellate Tribunal.",
+  },
 ];
 
 const FAQS = [
   {
+    question: "What does a GST consultant in Chennai do?",
+    answer:
+      "A GST consultant registers your business, files GSTR-1, GSTR-3B and the annual GSTR-9, reconciles input tax credit with GSTR-2B, files LUTs for exporters, and replies to notices. We also handle cancellation and revocation of registration, and represent you in appeals when a demand is raised.",
+  },
+  {
+    question: "Who has to file GSTR-9 and GSTR-9C?",
+    answer:
+      "GSTR-9 is the annual return for regular taxpayers, due by 31 December after the financial year. Businesses with aggregate turnover up to ₹2 crore are exempt from FY 2024-25 onwards. GSTR-9C, a self-certified reconciliation statement, is also required once aggregate turnover exceeds ₹5 crore.",
+  },
+  {
+    question: "Can I claim input tax credit on every purchase invoice?",
+    answer:
+      "No. Under Rule 36(4) of the CGST Rules, credit is allowed only on invoices your supplier has reported in GSTR-1 and that appear in your GSTR-2B. The goods or services must be used for business, you must hold a valid invoice, and the claim must be made by 30 November after the year or the annual return date, whichever is earlier.",
+  },
+  {
+    question: "Do exporters have to pay IGST on exports?",
+    answer:
+      "Not if they furnish a Letter of Undertaking (LUT) in Form GST RFD-11 on the GST portal. An LUT lets you export goods or services without paying IGST upfront and claim a refund of unused input tax credit instead. It is furnished for each financial year, so it must be renewed before 1 April.",
+  },
+  {
     question: "How do I cancel my GST registration in Chennai?",
     answer:
-      "You can apply for voluntary cancellation on the GST portal if you've closed the business, fallen below the threshold, or changed structure — we handle the application, final return (GSTR-10) filing, and any pending compliance before the department approves cancellation. The department can also cancel a registration for continuous non-filing, which is why we track filing deadlines closely.",
+      "Apply for voluntary cancellation on the GST portal in Form REG-16 if the business has closed, been transferred, or no longer needs registration. Pending returns must be filed, and a final return in GSTR-10 is due within three months of cancellation. Input tax credit on closing stock and capital goods is paid back.",
   },
   {
-    question: "What happens if I miss the GST return filing deadline?",
+    question: "My GST registration was cancelled for non-filing. Can it be restored?",
     answer:
-      "Late filing attracts a late fee per day of delay (capped) plus interest at 18% per annum on the outstanding tax. Repeated defaults can also lead to registration suspension. We track your filing calendar to prevent this.",
+      "Yes. Apply for revocation in Form REG-21 within 90 days of the cancellation order; the officer can extend this by up to 180 days for sufficient cause. Before applying, file every pending return and pay the tax, interest and late fees due. The officer decides within 30 days of the application.",
   },
   {
-    question: "Can I claim Input Tax Credit (ITC)?",
+    question: "What is the late fee for filing GST returns late?",
     answer:
-      "Yes, provided the supplier has filed their return and the invoice reflects in your GSTR-2B, the goods/services are used for business purposes, and you hold a valid tax invoice. We reconcile your purchase register against GSTR-2B every filing cycle.",
-  },
-  {
-    question: "Do you help with GST notice replies and audits?",
-    answer:
-      "Yes, for routine notices and queries we draft and file replies here. For show-cause notices, appeals, and GST Appellate Tribunal matters, see our dedicated GST litigation service for Chennai businesses.",
-  },
-  {
-    question: "How can I get started with your GST services?",
-    answer:
-      "Book a consultation — we'll review your current GST status, identify any compliance gaps, and propose a filing and advisory plan.",
+      "For GSTR-1 and GSTR-3B, the late fee is ₹50 a day (₹20 for nil returns), capped between ₹500 and ₹10,000 per return depending on turnover. Interest at 18% a year applies separately on tax paid late. Our GST return filing page has the full table, including GSTR-9.",
   },
 ];
 
@@ -58,85 +100,117 @@ export default function GstPage() {
     <>
       <JsonLd
         data={serviceSchema({
-          name: "GST Return Filing & Compliance Services",
-          description: "GST return filing, amendments, cancellations, and notice replies for Chennai businesses.",
+          name: "GST Consultants in Chennai",
+          description: "GST registration, return filing, annual returns, ITC reconciliation, LUT, notice replies and litigation for Chennai businesses.",
           url: PAGE_URL,
-          serviceType: "Tax Compliance",
+          serviceType: "GST Compliance and Advisory",
         })}
       />
       <JsonLd data={speakableSchema(["#direct-answer"])} />
-      <Breadcrumbs items={[{ name: "Goods & Services Tax", href: "/goods-and-services-tax" }]} />
+      <Breadcrumbs items={[{ name: "GST Consultants", href: "/goods-and-services-tax" }]} />
       <PageHero
         reviewedPath="/goods-and-services-tax"
         eyebrow="GST · Chennai"
-        h1="GST Return Filing & Compliance in Chennai"
-        subhead="Return filing, amendments, cancellations, and notice replies — GST compliance handled end-to-end, with every due date tracked."
+        h1="GST Consultants in Chennai"
+        subhead="Registration, monthly and annual returns, input tax credit reconciliation, LUTs, notices and appeals, handled by one GST team from our Anna Nagar office."
       />
 
       <section className="bg-paper py-16">
         <div className="container-page">
-          <h2 className="text-2xl text-obsidian">What is GST?</h2>
+          <div className="mb-12 max-w-3xl overflow-hidden rounded-cards border border-carbon">
+            <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">Key facts</h2>
+            <dl className="divide-y divide-ash bg-paper">
+              {KEY_FACTS.map((f) => (
+                <div key={f.label} className="grid grid-cols-1 gap-1 px-5 py-3 sm:grid-cols-[200px_1fr] sm:gap-4">
+                  <dt className="text-sm font-medium text-obsidian">{f.label}</dt>
+                  <dd className="text-sm text-slate">{f.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+
+          <h2 className="text-2xl text-obsidian">What do our GST consultants in Chennai handle?</h2>
           <p id="direct-answer" className="mt-4 max-w-2xl leading-relaxed text-slate">
-            GST (Goods and Services Tax) is a comprehensive, indirect tax levied on the
-            supply of goods and services in India, replacing multiple older taxes like
-            VAT, service tax, and excise duty into one unified system. Tax is collected
-            at every stage of the supply chain with credit available for tax paid on
-            inputs, which simplifies compliance and improves ease of doing business —
-            provided returns are filed accurately and on time.
-          </p>
-          <p className="mt-2 max-w-2xl text-sm text-slate">
-            Official reference:{" "}
+            As GST consultants in Chennai, we register businesses, file GSTR-1 and GSTR-3B every month or quarter, prepare
+            the annual GSTR-9 and 9C, reconcile input tax credit with GSTR-2B, file LUTs for exporters, and reply to
+            notices. When a demand is raised, we take the matter through adjudication and appeal. For the annual return
+            rules, see{" "}
             <a
-              href="https://tutorial.gst.gov.in/userguide/returns/GSTR3B.htm"
+              href="https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter8/rule80_v1.00.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-royal-violet underline underline-offset-2"
+              className={linkClass}
             >
-              GST Portal user guide: Form GSTR-3B FAQs (tutorial.gst.gov.in)
+              CBIC: Rule 80 of the CGST Rules, annual return (taxinformation.cbic.gov.in)
             </a>
+            .
           </p>
 
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map((s) => (
-              <div key={s.name} className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
+          <h2 className="mt-14 text-2xl text-obsidian">Our GST services in Chennai</h2>
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+            {HUB.map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)] transition hover:-translate-y-0.5"
+              >
                 <h3 className="font-medium text-obsidian">{s.name}</h3>
                 <p className="mt-2 text-sm text-slate">{s.text}</p>
-              </div>
+                <span className="mt-3 inline-block text-sm font-medium text-royal-violet">Learn more →</span>
+              </Link>
             ))}
           </div>
 
-          <div className="mt-16 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <div className="rounded-cards bg-lilac-mist p-8">
-              <h2 className="text-xl font-medium text-obsidian">
-                Just need to register for GST?
-              </h2>
-              <p className="mt-3 text-slate">
-                New registration, voluntary registration, and LUT applications
-                have their own dedicated, in-depth guide.
-              </p>
-              <Link
-                href="/gst-registration-chennai"
-                className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
-              >
-                View GST Registration Guide →
-              </Link>
-            </div>
-            <div className="rounded-cards bg-lilac-mist p-8">
-              <h2 className="text-xl font-medium text-obsidian">
-                Received a GST show-cause notice or facing an appeal?
-              </h2>
-              <p className="mt-3 text-slate">
-                Notice replies, departmental audits, appeals, and GST Appellate Tribunal
-                representation are handled on our dedicated GST litigation page.
-              </p>
-              <Link
-                href="/gst-litigation-chennai"
-                className="mt-4 inline-block rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90"
-              >
-                View GST Litigation Services →
-              </Link>
-            </div>
-          </div>
+          <h2 className="mt-14 text-2xl text-obsidian">GSTR-9 and GSTR-9C: the annual return</h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            GSTR-9 brings together the year&apos;s GSTR-1 and GSTR-3B filings and is due by 31 December after the
+            financial year. Businesses with aggregate turnover up to ₹2 crore are exempt from FY 2024-25 onwards. Above ₹5
+            crore, GSTR-9C, a self-certified reconciliation of the GST returns with the audited financial statements, is
+            filed with it. The annual return is a chance to report missed sales and pay the tax through DRC-03, but input
+            tax credit not claimed by the cut-off cannot be added. Our{" "}
+            <Link href="/blog/gstr9-annual-return-checklist" className={linkClass}>
+              GSTR-9 annual return checklist
+            </Link>{" "}
+            lists what to reconcile first.
+          </p>
+
+          <h2 className="mt-14 text-2xl text-obsidian">ITC reconciliation with GSTR-2B</h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            GSTR-2B is the monthly statement of input tax credit available to you, built from what your suppliers report.
+            Under Rule 36(4), credit can be claimed only on invoices that appear in it. We match your purchase register with
+            GSTR-2B every month, list missing invoices by supplier, and track credit that must be reversed, for example when
+            a supplier is not paid within 180 days. Unreconciled differences between GSTR-3B and GSTR-2B are a common reason
+            for ASMT-10 and DRC-01C notices; our guide to{" "}
+            <Link href="/blog/itc-mismatch-notices" className={linkClass}>
+              input tax credit mismatch notices
+            </Link>{" "}
+            explains how they are answered.
+          </p>
+
+          <h2 className="mt-14 text-2xl text-obsidian">LUT for exporters</h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            Exporters of goods and services, including software and consulting firms billing overseas clients, can supply
+            without paying IGST by furnishing a Letter of Undertaking in Form GST RFD-11. The LUT is valid for a financial
+            year, so it is renewed each year before 1 April. Without it, IGST must be paid on each export and claimed back
+            as a refund. See{" "}
+            <Link href="/blog/lut-for-exporters" className={linkClass}>
+              LUT for exporters: how to file and why it matters
+            </Link>
+            .
+          </p>
+
+          <h2 className="mt-14 text-2xl text-obsidian">Cancellation and revocation of GST registration</h2>
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            A business that closes or no longer needs registration applies for cancellation in Form REG-16 and files a final
+            return in GSTR-10 within three months of cancellation. The department can also cancel a registration, most often
+            for continued non-filing. In that case, revocation is sought in Form REG-21 within 90 days of the cancellation
+            order (extendable by up to 180 days), after filing all pending returns and paying the dues. If the revocation is
+            rejected or a demand follows, our{" "}
+            <Link href="/gst-litigation-chennai" className={linkClass}>
+              GST litigation team
+            </Link>{" "}
+            takes over.
+          </p>
         </div>
       </section>
 
@@ -147,17 +221,27 @@ export default function GstPage() {
           <h2 className="text-xl text-obsidian">People also ask</h2>
           <ul className="mt-4 space-y-2">
             <li>
-              <Link href="/gst-registration-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
-                Who needs to register for GST?
+              <Link href="/gst-registration-chennai" className={linkClass}>
+                Who needs to register for GST in Chennai?
               </Link>
             </li>
             <li>
-              <Link href="/gst-litigation-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
-                What should I do if I get a GST show-cause notice?
+              <Link href="/gst-return-filing-chennai" className={linkClass}>
+                What are the GST return due dates and late fees?
               </Link>
             </li>
             <li>
-              <Link href="/direct-tax" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+              <Link href="/gst-notice-reply-chennai" className={linkClass}>
+                How do I reply to a GST notice?
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/gst-show-cause-notice-first-48-hours" className={linkClass}>
+                What should I do in the first 48 hours after a GST show-cause notice?
+              </Link>
+            </li>
+            <li>
+              <Link href="/direct-tax" className={linkClass}>
                 Do I need to file income tax separately from GST?
               </Link>
             </li>

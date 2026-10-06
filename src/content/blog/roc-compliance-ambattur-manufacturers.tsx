@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "roc-compliance-ambattur-manufacturers",
-  title: "The ROC Compliance Gap in Ambattur's Long-Running Manufacturing Companies",
+  title: "ROC Compliance Gaps in Ambattur's Long-Running Manufacturers",
   description:
     "A manufacturing company that's been operating for a decade in Ambattur often has more ROC compliance gaps than a newer one — for a specific reason.",
   date: "2026-09-26",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>Long-running companies accumulate gaps that new ones don&apos;t have yet</h2>
 
       <p>
-        A newer company has fewer years for something to slip through. A manufacturing business that&apos;s been operating for ten or fifteen years in Ambattur has had far more opportunities for a director to change, a bank charge to be created and satisfied, or an address to shift &mdash; and each of those carries its own filing that&apos;s easy to miss when the annual return is the only thing anyone&apos;s actively tracking.
+        A newer company has fewer years for something to slip through. A manufacturing business that&apos;s been operating for ten or fifteen years in Ambattur has had far more opportunities for a <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/din-related-forms.html" target="_blank" rel="noopener noreferrer">director to change</a>, a bank charge to be created and satisfied, or an address to shift &mdash; and each of those carries its own filing that&apos;s easy to miss when the annual return is the only thing anyone&apos;s actively tracking.
       </p>
 
       <h2>Why this matters more for an established company, not less</h2>
@@ -32,11 +33,11 @@ export default function Body() {
       <h2>A compliance health check settles this in one pass</h2>
 
       <p>
-        Rather than assuming the record is clean because the annual return has always been filed, a one-time review of the company&apos;s full ROC filing history against what actually happened over the years &mdash; director changes, capital changes, charges &mdash; catches gaps before a bank or buyer does.
+        Rather than assuming the record is clean because the annual return has always been filed, a one-time review of the company&apos;s full ROC filing history against what actually happened over the years &mdash; director changes, capital changes, charges &mdash; catches gaps before a bank or buyer does. Moving to an <Link href="/annual-compliance-package">annual compliance package</Link> afterwards keeps event-based filings tracked alongside the annual return.
       </p>
 
       <p>
-        If your Ambattur manufacturing company has been operating for years without a full compliance review, C S Rushil &amp; Co. can run that check and regularise any gaps found. Book a free consultation.
+        If your Ambattur manufacturing company has been operating for years without a full compliance review, C S Rushil &amp; Co. can run that <Link href="/roc-compliances">ROC compliance</Link> check and regularise any gaps found. Book a free consultation.
       </p>
     </>
   );

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AREAS } from "@/lib/areas";
-import { SERVICES, SPECIALIST_SERVICES } from "@/lib/services";
-import ServiceCard from "@/components/ServiceCard";
+import { SERVICE_GROUPS, getService, type ServiceSummary } from "@/lib/services";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
 import GoogleReviews from "@/components/GoogleReviews";
@@ -10,12 +9,25 @@ import QualifyForm from "@/components/QualifyForm";
 import TrackedAnchor from "@/components/TrackedAnchor";
 import { JsonLd, serviceCatalogSchema } from "@/lib/schema";
 import { CalcSticker, CoinSticker, Ribbon, StarSticker } from "@/components/Stickers";
-import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, FOUNDER_CREDENTIALS, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
+import {
+  ADDRESS_FULL,
+  ADDRESS_SHORT,
+  BOOKING_LINK,
+  BUSINESS_NAME,
+  FIRM_REGISTRATION_NO,
+  FOUNDER_CREDENTIALS,
+  FOUNDER_NAME,
+  ICAI_MEMBERSHIP_NO,
+  PHONE_DISPLAY,
+  PHONE_TEL,
+  WHATSAPP_LINK,
+  YEAR_FOUNDED,
+} from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "CA Firm in Chennai & Anna Nagar | C S Rushil & Co." },
+  title: { absolute: "CA Firm in Chennai | Chartered Accountants | C S Rushil & Co." },
   description:
-    "C S Rushil & Co. is a Chennai CA firm led by CA Rushil C S. Company incorporation, GST litigation, audit, and tax services in Anna Nagar, Chennai.",
+    "CA firm in Anna Nagar, Chennai for company and LLP registration, GST, income tax, audit and virtual CFO services. Book a free consultation with our team.",
   alternates: { canonical: "/" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -44,9 +56,60 @@ const HOME_FAQS = [
   },
   {
     question: "Where is your office located?",
-    answer: `Our office is in ${ADDRESS_FULL}. Walk-ins are welcome during business hours, or book a free consultation call.`,
+    answer: `Our office is at ${ADDRESS_FULL}, open Monday to Saturday, 9:30 AM to 6:30 PM. Book a free consultation first so the right team member is available; same-day visits are often possible.`,
   },
 ];
+
+// Neutral checklist for choosing any CA firm. Each item states a firm fact
+// only where it is verifiably true — no response-time or fee commitments.
+const CHOOSING_CRITERIA: { title: string; text: string; firmFact?: string }[] = [
+  {
+    title: "ICAI membership you can verify",
+    text: "Every practising chartered accountant holds an ICAI membership number, and every CA firm has a firm registration number (FRN). Ask for both and check them on icai.org before you sign up.",
+    firmFact:
+      ICAI_MEMBERSHIP_NO && FIRM_REGISTRATION_NO
+        ? `${FOUNDER_NAME}: ICAI membership no. ${ICAI_MEMBERSHIP_NO}. Firm registration no. ${FIRM_REGISTRATION_NO}.`
+        : ICAI_MEMBERSHIP_NO
+          ? `${FOUNDER_NAME}: ICAI membership no. ${ICAI_MEMBERSHIP_NO}.`
+          : FIRM_REGISTRATION_NO
+            ? `Firm registration no. ${FIRM_REGISTRATION_NO}.`
+            : undefined,
+  },
+  {
+    title: "An itemised quote",
+    text: "A clear quote separates government fees (MCA filing fees, stamp duty, DSC charges) from the firm's professional fees, so you can see exactly what you are paying for.",
+  },
+  {
+    title: "A physical office you can visit",
+    text: "Being able to meet the team, drop off documents and sign papers in person makes registrations and notices easier to manage.",
+    firmFact: `Our office is at ${ADDRESS_FULL}.`,
+  },
+  {
+    title: "Clear response times",
+    text: "Ask every firm you are considering: how quickly will you reply to a query, and who will be my point of contact for filings and notices?",
+  },
+  {
+    title: "Online service across Tamil Nadu",
+    text: "Most GST, income tax and ROC work is filed online, so the firm should be able to work with you without repeated office visits.",
+    firmFact: "We serve clients online across Tamil Nadu, and NRIs abroad, as well as in person in Chennai.",
+  },
+];
+
+function GroupServiceCard({ service }: { service: ServiceSummary }) {
+  // Same visual style as ServiceCard, minus the generic "Learn more" label —
+  // the link's text is the service name itself (descriptive anchor).
+  return (
+    <Link
+      href={`/${service.slug}`}
+      className="group flex flex-col rounded-cards border border-carbon bg-white p-7 transition hover:-rotate-1 hover:bg-lavender"
+    >
+      <h4 className="text-[28px] uppercase leading-[0.95] text-carbon" style={{ fontFamily: "var(--font-display)", fontWeight: 400 }}>
+        {service.name}
+      </h4>
+      <p className="mt-3 flex-1 text-sm leading-relaxed text-carbon">{service.shortDescription}</p>
+    </Link>
+  );
+}
 
 const QUICK_LINKS = [
   ["Private Limited Company Incorporation", "private-limited-company-incorporation-chennai"],
@@ -68,12 +131,13 @@ export default function HomePage() {
           <div>
             <p className="sticker-tag bg-sunburst">CA Firm in {ADDRESS_SHORT}</p>
             <h1 className="mt-6 text-[52px] text-carbon sm:text-7xl lg:text-[104px]">
-              CA firm in Chennai for company registration, GST, and audit.
+              CA firm in Chennai for company registration, GST, tax and audit
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-carbon">
-              C S Rushil &amp; Co. is a chartered accountant firm in {ADDRESS_SHORT},
-              led by {FOUNDER_NAME} ({FOUNDER_CREDENTIALS}). Our 16-member team handles private limited company
-              registration, GST litigation, statutory audit, and full ROC compliance for businesses across Chennai.
+              {BUSINESS_NAME} is a chartered accountancy firm in {ADDRESS_SHORT}, founded in {YEAR_FOUNDED} and
+              led by {FOUNDER_NAME}. Our 16-member team handles company and LLP registration, GST, income tax,
+              statutory and tax audit, ROC compliance, bookkeeping and virtual CFO services for businesses,
+              professionals and NRIs across Chennai.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <TrackedAnchor
@@ -138,6 +202,23 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section aria-label="Credentials" className="border-b border-carbon bg-white py-4">
+        <ul className="container-page flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] font-bold uppercase tracking-[0.032em] text-carbon">
+          {[
+            `Established ${YEAR_FOUNDED}`,
+            "16-member team",
+            `Led by ${FOUNDER_NAME} (${FOUNDER_CREDENTIALS})`,
+            ...(ICAI_MEMBERSHIP_NO ? [`ICAI membership no. ${ICAI_MEMBERSHIP_NO}`] : []),
+            ...(FIRM_REGISTRATION_NO ? [`Firm registration no. ${FIRM_REGISTRATION_NO}`] : []),
+          ].map((item, i) => (
+            <li key={item} className="flex items-center gap-3">
+              {i > 0 && <span aria-hidden="true">·</span>}
+              {item}
+            </li>
+          ))}
+        </ul>
+      </section>
+
       <GoogleReviews />
 
       <section className="bg-paper py-14 md:py-20">
@@ -146,29 +227,60 @@ export default function HomePage() {
           <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
             Full compliance lifecycle, one firm.
           </h2>
-          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map((service) => (
-              <ServiceCard key={service.slug} service={service} />
-            ))}
-          </div>
+          <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+            From registering your company to filing its returns, audits and notices — in person in Chennai, or
+            remotely for NRIs and overseas businesses.
+          </p>
+          {SERVICE_GROUPS.map((group) => {
+            const services = group.slugs
+              .map((slug) => getService(slug))
+              .filter((s): s is ServiceSummary => Boolean(s));
+            if (services.length === 0) return null;
+            return (
+              <div key={group.label} className="mt-12">
+                <h3 className="text-2xl text-obsidian md:text-3xl">{group.label}</h3>
+                <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {services.map((service) => (
+                    <GroupServiceCard key={service.slug} service={service} />
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 
       <section className="bg-fog py-14 md:py-20">
         <div className="container-page">
-          <p className="sticker-tag bg-mint-pop">Specialist services</p>
+          <p className="sticker-tag bg-mint-pop">Choosing a CA firm</p>
           <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
-            For NRIs, overseas businesses and urgent notices.
+            What to look for in a CA firm
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-            Remote engagements for clients in the UAE, UK and USA, foreign companies setting up in Tamil Nadu,
-            overseas accounting firms, and anyone holding a GST or income tax notice.
+            Whichever firm you choose, these are the checks worth making first. Where it applies, we have noted
+            how {BUSINESS_NAME} measures up.
           </p>
           <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {SPECIALIST_SERVICES.map((service) => (
-              <ServiceCard key={service.slug} service={service} />
+            {CHOOSING_CRITERIA.map((c) => (
+              <div key={c.title} className="flex flex-col rounded-cards border border-carbon bg-white p-7">
+                <h3 className="text-lg font-medium text-obsidian">{c.title}</h3>
+                <p className="mt-3 flex-1 text-sm leading-relaxed text-carbon">{c.text}</p>
+                {c.firmFact && (
+                  <p className="mt-4 border-t border-ash pt-3 text-sm font-medium text-obsidian">{c.firmFact}</p>
+                )}
+              </div>
             ))}
           </div>
+          <p className="mt-8 max-w-2xl leading-relaxed text-slate">
+            For a fuller checklist, read our guide on{" "}
+            <Link
+              href="/blog/how-to-choose-a-chartered-accountant-in-chennai"
+              className="font-medium text-royal-violet underline underline-offset-4"
+            >
+              how to choose a CA firm in Chennai
+            </Link>
+            .
+          </p>
         </div>
       </section>
 

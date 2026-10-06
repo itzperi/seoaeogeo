@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "nri-itr-filing",
-  title: "NRI Income Tax Return Filing: A Guide for Chennai Origin NRIs",
+  title: "NRI Income Tax Return Filing: A Guide for Chennai NRIs",
   description:
     "NRIs with family, property, or investments in Chennai often have a genuine Indian tax filing obligation that gets overlooked simply by living abroad.",
   date: "2026-09-19",
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>What income is taxable in India for an NRI</h2>
 
       <p>
-        Income that arises or is received in India remains taxable regardless of residential status. This typically includes rental income from property in India, capital gains from selling Indian property or investments, and interest earned on Indian bank accounts and fixed deposits. Foreign salary and foreign investment income generally stays outside the scope of Indian tax for a genuine NRI.
+        Income that arises or is received in India remains taxable regardless of residential status. This typically includes rental income from property in India, capital gains from <Link href="/nri-property-sale-tds-chennai">selling Indian property</Link> or investments, and interest earned on Indian bank accounts and fixed deposits. Foreign salary and foreign investment income generally stays outside the scope of Indian tax for a genuine NRI.
       </p>
 
       <h2>The NRO versus NRE account distinction</h2>
@@ -38,7 +39,7 @@ export default function Body() {
       <h2>Filing obligations and refunds</h2>
 
       <p>
-        Even where TDS has already been deducted on Indian income, filing a return is often necessary to claim a refund if the TDS rate applied is higher than the NRI&apos;s actual tax liability, or to report capital gains correctly. A Double Taxation Avoidance Agreement between India and the NRI&apos;s country of residence may also allow credit for Indian tax paid against tax owed abroad, but this needs to be claimed properly on both sides.
+        Even where TDS has already been deducted on Indian income, <Link href="/income-tax-return-filing-chennai">filing an income tax return</Link> is often necessary to claim a refund if the TDS rate applied is higher than the NRI&apos;s actual tax liability, or to report capital gains correctly (see the Income Tax Department&apos;s <a href="https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-0" target="_blank" rel="noopener noreferrer">return guidance for non-resident individuals</a>). A Double Taxation Avoidance Agreement between India and the NRI&apos;s country of residence may also allow credit for Indian tax paid against tax owed abroad, but this needs to be claimed properly on both sides.
       </p>
 
       <h2>A quick checklist for NRIs with Indian ties</h2>
@@ -51,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you are an NRI with property, investments, or family financial matters in Chennai and are unsure about your Indian filing obligation, C S Rushil &amp; Co. handles NRI tax filing and can review your specific situation remotely. Reach out for a free consultation.
+        If you are an NRI with property, investments, or family financial matters in Chennai and are unsure about your Indian filing obligation, C S Rushil &amp; Co. handles <Link href="/nri-tax-services">NRI tax filing</Link> and can review your specific situation remotely. Reach out for a free consultation.
       </p>
     </>
   );

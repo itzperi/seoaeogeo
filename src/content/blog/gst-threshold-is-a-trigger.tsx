@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "gst-threshold-is-a-trigger",
@@ -30,13 +31,13 @@ export default function Body() {
       <h2>The threshold is checked on a rolling basis, not once a year</h2>
 
       <p>
-        Aggregate turnover for GST threshold purposes is tracked on a continuous, financial-year basis, not just at year-end. A business that crosses the threshold in month seven is liable to register from that point, not from the following April. Businesses that only check their turnover once a year, at filing time, often discover they crossed the line months earlier than they registered.
+        Aggregate turnover for GST threshold purposes is tracked on a continuous, financial-year basis, not just at year-end. A business that crosses the threshold in month seven is liable to apply for <Link href="/gst-registration-chennai">GST registration</Link> from that point, not from the following April. Businesses that only check their turnover once a year, at filing time, often discover they crossed the line months earlier than they registered.
       </p>
 
       <h2>Certain triggers apply regardless of turnover</h2>
 
       <p>
-        Inter-state supply, specific agency arrangements, and e-commerce sales through certain platforms can require GST registration even for a business well under the standard threshold. &quot;I&apos;m too small for GST&quot; is only true if none of these specific triggers apply to how the business actually operates — not simply based on revenue.
+        Inter-state supply of goods (inter-state supply of services alone is exempt from registration below the threshold), specific agency arrangements, and e-commerce sales through certain platforms can require GST registration even for a business well under the standard threshold (the GST portal&apos;s <a href="https://www.gst.gov.in/help/registration" target="_blank" rel="noopener noreferrer">registration help</a> covers the categories). &quot;I&apos;m too small for GST&quot; is only true if none of these specific triggers apply to how the business actually operates — not simply based on revenue.
       </p>
 
       <h2>What happens if registration is delayed past the trigger point</h2>
@@ -46,7 +47,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you&apos;re close to the GST threshold or unsure whether a specific trigger already applies to your business, C S Rushil &amp; Co. can check your actual position. Book a free consultation.
+        If you&apos;re close to the GST threshold or unsure whether a specific trigger already applies to your business, C S Rushil &amp; Co. can check your actual position as part of our <Link href="/goods-and-services-tax">GST services</Link>. Book a free consultation.
       </p>
     </>
   );

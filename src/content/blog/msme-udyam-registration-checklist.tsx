@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "msme-udyam-registration-checklist",
-  title: "MSME (Udyam) Registration After Incorporation: A Founder's Checklist",
+  title: "MSME Udyam Registration After Incorporation: A Checklist",
   description:
     "Should your newly incorporated company register under MSME/Udyam? Here's the eligibility, process, and benefits checklist.",
   date: "2026-11-04",
@@ -31,7 +32,7 @@ export default function Body() {
   return (
     <>
       <p>
-        Udyam registration is one of the easiest, highest-leverage things a
+        <Link href="/msme-udyam-registration-chennai">Udyam registration</Link> is one of the easiest, highest-leverage things a
         newly incorporated business can do — it&apos;s free, mostly instant,
         and unlocks real protections that most founders don&apos;t realise
         exist until they need them.
@@ -40,7 +41,8 @@ export default function Body() {
       <h2>Are you eligible?</h2>
       <p>
         Eligibility is based on investment in plant/machinery or equipment, and
-        annual turnover, classified into three tiers:
+        annual turnover, classified into three tiers (revised limits in force
+        from 1 April 2025):
       </p>
       <table>
         <thead>
@@ -53,18 +55,18 @@ export default function Body() {
         <tbody>
           <tr>
             <td>Micro</td>
-            <td>Up to ₹1 crore</td>
-            <td>Up to ₹5 crore</td>
+            <td>Up to ₹2.5 crore</td>
+            <td>Up to ₹10 crore</td>
           </tr>
           <tr>
             <td>Small</td>
-            <td>Up to ₹10 crore</td>
-            <td>Up to ₹50 crore</td>
+            <td>Up to ₹25 crore</td>
+            <td>Up to ₹100 crore</td>
           </tr>
           <tr>
             <td>Medium</td>
-            <td>Up to ₹50 crore</td>
-            <td>Up to ₹250 crore</td>
+            <td>Up to ₹125 crore</td>
+            <td>Up to ₹500 crore</td>
           </tr>
         </tbody>
       </table>

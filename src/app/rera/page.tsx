@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "RERA Compliance in Chennai | TNRERA CA Certificates" },
   description:
-    "RERA compliance in Chennai — TNRERA project registration, quarterly filings, CA certificates for escrow withdrawals, and compliance audits for promoters and agents. Anna Nagar office.",
+    "RERA compliance in Chennai for Tamil Nadu developers and agents: project registration, quarterly progress reports, CA certificates and annual audits.",
   alternates: { canonical: "/rera" },
 };
 
@@ -49,11 +49,11 @@ export default function Page() {
         { question: "Do I need a CA certificate every time I withdraw from the RERA escrow account?", answer: "Yes. Every withdrawal from the project's separate RERA account must be certified by a practising Chartered Accountant, along with an engineer and an architect, confirming the amount withdrawn is in proportion to the percentage of project completion. It is a recurring requirement for each withdrawal, not a one-time certificate at account opening — and one of the most overlooked parts of RERA compliance." },
       ]}
       relatedQuestions={[
-        { question: "What entity structure should a real estate developer register as?", href: "/formation-of-business-entity" },
+        { question: "What entity structure should a real estate developer register as?", href: "/company-registration-chennai" },
         { question: "How is escrow account income taxed for a project?", href: "/direct-tax" },
         { question: "Does a RERA-registered company still need ROC filings?", href: "/roc-compliances" },
       ]}
-      relatedSlugs={["formation-of-business-entity", "direct-tax", "roc-compliances"]}
+      relatedSlugs={["company-registration-chennai", "direct-tax", "roc-compliances"]}
     />
   );
 }

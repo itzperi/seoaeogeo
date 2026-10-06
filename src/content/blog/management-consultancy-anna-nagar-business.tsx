@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "management-consultancy-anna-nagar-business",
-  title: "When an Anna Nagar Business Has Outgrown Its Compliance-Only Relationship With Its CA",
+  title: "Beyond Compliance: Management Consultancy in Anna Nagar",
   description:
     "Plenty of established Anna Nagar businesses have a CA for filing and audit, but nobody looking at whether the business itself is actually run efficiently.",
   date: "2026-09-26",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>Compliance and business efficiency are two separate jobs</h2>
 
       <p>
-        Filing GST returns, closing the books, and getting through a statutory audit all confirm that a business is compliant. None of them ask whether the business is spending money in the right places, whether a particular product line is actually profitable once overhead is allocated properly, or whether a process that&apos;s always been done a certain way still makes sense at the current scale. That&apos;s a distinct kind of review, and it&apos;s the one most established Anna Nagar businesses have never actually had.
+        <Link href="/gst-return-filing-chennai">Filing GST returns</Link>, closing the books, and getting through a <Link href="/statutory-audit-chennai">statutory audit</Link> all confirm that a business is compliant. None of them ask whether the business is spending money in the right places, whether a particular product line is actually profitable once overhead is allocated properly, or whether a process that&apos;s always been done a certain way still makes sense at the current scale. That&apos;s a distinct kind of review, and it&apos;s the one most established Anna Nagar businesses have never actually had.
       </p>
 
       <h2>The businesses that tend to need this</h2>
@@ -36,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your Anna Nagar business has solid compliance but no one looking at operational efficiency, C S Rushil &amp; Co. provides management consultancy alongside our audit and tax practice. Book a free consultation to talk through what that would look like for your business.
+        If your Anna Nagar business has solid compliance but no one looking at operational efficiency, C S Rushil &amp; Co. provides <Link href="/management-consultancy">management consultancy</Link> alongside our audit and tax practice. Book a free consultation to talk through what that would look like for your business.
       </p>
     </>
   );

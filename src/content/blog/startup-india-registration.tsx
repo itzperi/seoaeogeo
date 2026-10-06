@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "startup-india-registration",
-  title: "Startup India Registration: Is It Worth It for Your Chennai Business",
+  title: "Startup India Registration: Is It Worth It in Chennai?",
   description:
     "Startup India recognition gets mentioned often by Chennai founders, but there's genuine confusion about what it actually provides versus what people assume.",
   date: "2026-09-19",
@@ -20,13 +21,13 @@ export default function Body() {
       <h2>What Startup India recognition actually requires</h2>
 
       <p>
-        To qualify, a business generally needs to be incorporated as a private limited company, LLP, or registered partnership within a specified number of years, have turnover below a specified threshold, and be working on innovation, development, or improvement of products, processes, or services with scalability and employment potential, rather than simply being a routine trading or services business.
+        To qualify, a business generally needs to be incorporated as a <Link href="/private-limited-company-incorporation-chennai">private limited company</Link>, <Link href="/llp-registration-chennai">LLP</Link>, or registered partnership within a specified number of years, have turnover below a specified threshold, and be working on innovation, development, or improvement of products, processes, or services with scalability and employment potential, rather than simply being a routine trading or services business.
       </p>
 
       <h2>The benefits that are genuinely useful</h2>
 
       <p>
-        Recognized startups can access income tax exemption on profits for a specified number of years within their first ten years (subject to conditions and a separate approval process, not automatic), exemption from certain provisions related to valuation of shares issued to investors, easier compliance under labor and environmental laws through self certification, and eligibility for government tenders that otherwise require prior turnover or experience most startups don&apos;t have yet.
+        Recognized startups can access income tax exemption on profits for a specified number of years within their first ten years (subject to conditions and a separate approval process, not automatic), easier compliance under labor and environmental laws through self certification, and eligibility for government tenders that otherwise require prior turnover or experience most startups don&apos;t have yet. Exemption from the so-called angel tax used to be a headline benefit too, but that provision (Section 56(2)(viib)) was abolished from assessment year 2025-26, so angel tax no longer applies to share issues by any company, recognised or not.
       </p>
 
       <h2>What it does not automatically give you</h2>
@@ -51,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you&apos;re unsure whether your Chennai startup would actually qualify for Startup India recognition and whether it&apos;s worth pursuing, C S Rushil &amp; Co. can assess your eligibility honestly before you spend time on the application. Book a free consultation.
+        If you&apos;re unsure whether your Chennai startup would actually qualify for <Link href="/startup-india-registration-chennai">Startup India recognition</Link> and whether it&apos;s worth pursuing, C S Rushil &amp; Co. can assess your eligibility honestly before you spend time on the application. Book a free consultation.
       </p>
     </>
   );

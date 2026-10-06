@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "business-personal-expenses-separate",
-  title: "Mixing Business and Personal Expenses Is the Habit That Costs You the Most at Tax Time",
+  title: "Mixing Business and Personal Expenses Costs You at Tax Time",
   description:
     "Paying a personal bill from the business account feels harmless in the moment. It's the single habit that creates the most avoidable tax and audit pain.",
   date: "2026-09-26",
@@ -30,13 +31,13 @@ export default function Body() {
       <h2>Why this isn&apos;t just an accounting technicality</h2>
 
       <p>
-        Every expense claimed as a business deduction needs to genuinely be a business expense — that&apos;s not a formality, it&apos;s a requirement under the Income Tax Act. A personal expense run through the business books, even a small one, undermines the legitimacy of every other deduction on that return if it&apos;s ever questioned. It also distorts your actual business profitability, which matters the moment you need real numbers for a loan application or an investor.
+        Every expense claimed as a business deduction needs to genuinely be a business expense — that&apos;s not a formality, it&apos;s a requirement under the Income Tax Act. A personal expense run through the business books, even a small one, undermines the legitimacy of every other deduction on that return if it&apos;s ever questioned. It also distorts your actual business profitability, which matters at <Link href="/income-tax-return-filing-chennai">income tax return filing</Link> time and the moment you need real numbers for a loan application or an investor.
       </p>
 
       <h2>Where this becomes a genuine audit problem</h2>
 
       <p>
-        During a statutory or tax audit, unexplained withdrawals or personal-looking expenses in the business books force the auditor to investigate and document them — which slows down the audit and can trigger deeper scrutiny of other transactions that would otherwise have gone unquestioned. What started as convenience becomes the reason your audit takes three weeks instead of one.
+        During a statutory or <Link href="/tax-audit-chennai">tax audit</Link>, unexplained withdrawals or personal-looking expenses in the business books force the auditor to investigate and document them — which slows down the audit and can trigger deeper scrutiny of other transactions that would otherwise have gone unquestioned. What started as convenience becomes the reason your audit takes three weeks instead of one.
       </p>
 
       <h2>The fix is a habit, not a system overhaul</h2>
@@ -46,7 +47,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your books have accumulated a mix of personal and business transactions and you&apos;re not sure how to untangle them before your next filing, C S Rushil &amp; Co. can help sort this out properly. Book a free consultation.
+        If your books have accumulated a mix of personal and business transactions and you&apos;re not sure how to untangle them before your next filing, C S Rushil &amp; Co. can help sort this out properly through our <Link href="/bookkeeping-services-chennai">bookkeeping services in Chennai</Link>. Book a free consultation.
       </p>
     </>
   );

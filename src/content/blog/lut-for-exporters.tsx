@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "lut-for-exporters",
@@ -26,19 +27,19 @@ export default function Body() {
       <h2>Who this benefits the most</h2>
 
       <p>
-        IT consultants and freelancers serving overseas clients, garment and textile exporters, and any Chennai business invoicing in foreign currency all benefit directly. Without an LUT, you are either paying tax you should not have to pay upfront, or filing repeated refund claims that tie up cash for months.
+        IT consultants and freelancers serving overseas clients, garment and textile exporters, and any Chennai business invoicing in foreign currency all benefit directly. Exporters also need <Link href="/gst-registration-chennai">GST registration</Link> in place to file an LUT at all. Without an LUT, you are either paying tax you should not have to pay upfront, or filing repeated refund claims that tie up cash for months.
       </p>
 
       <h2>The filing process, in practice</h2>
 
       <p>
-        LUT is filed online through the GST portal using Form GST RFD 11, valid for one financial year at a time, meaning it needs to be renewed every year before your first export invoice of that year. The form itself is short, but it requires you to furnish details of two independent witnesses and confirm you have not been prosecuted for tax evasion above a certain threshold.
+        LUT is filed online through the GST portal using <a href="https://tutorial.gst.gov.in/userguide/refund/Furnishing_of_Letter_of_Undertaking.htm" target="_blank" rel="noopener noreferrer">Form GST RFD 11</a>, valid for one financial year at a time, meaning it needs to be renewed every year before your first export invoice of that year. The form itself is short, but it requires you to furnish details of two independent witnesses and confirm you have not been prosecuted for tax evasion above a certain threshold.
       </p>
 
       <h2>What happens if you forget to renew it</h2>
 
       <p>
-        If your LUT lapses and you continue invoicing exports without one, technically you should be charging and paying IGST on those invoices, which most businesses discover only when preparing their annual return, at which point interest may apply on the delayed tax payment. Setting a calendar reminder at the start of every financial year avoids this entirely.
+        If your LUT lapses and you continue invoicing exports without one, technically you should be charging and paying IGST on those invoices, which most businesses discover only when preparing their annual return through <Link href="/gst-return-filing-chennai">GST return filing</Link>, at which point interest may apply on the delayed tax payment. Setting a calendar reminder at the start of every financial year avoids this entirely.
       </p>
 
       <h2>A short checklist for exporters</h2>

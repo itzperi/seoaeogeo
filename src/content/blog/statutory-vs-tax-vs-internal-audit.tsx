@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "statutory-vs-tax-vs-internal-audit",
-  title: "Statutory Audit vs Tax Audit vs Internal Audit: What Is the Difference",
+  title: "Statutory Audit vs Tax Audit vs Internal Audit Explained",
   description:
     "Chennai business owners often treat \"audit\" as one thing, but statutory, tax, and internal audit are three separate exercises with different triggers.",
   date: "2026-09-19",
@@ -20,19 +21,19 @@ export default function Body() {
       <h2>Statutory audit</h2>
 
       <p>
-        A statutory audit is required under company law for every registered company regardless of size or turnover, and it examines whether the financial statements present a true and fair view of the company&apos;s financial position. It is conducted by an independent chartered accountant appointed as the statutory auditor and results in an audit report that gets filed with the annual accounts. LLPs above a certain turnover or contribution threshold also require this.
+        A <Link href="/statutory-audit-chennai">statutory audit</Link> is required under company law for every registered company regardless of size or turnover, and it examines whether the financial statements present a true and fair view of the company&apos;s financial position. It is conducted by an independent chartered accountant appointed as the statutory auditor and results in an audit report that gets filed with the annual accounts. LLPs above a certain turnover or contribution threshold also require this.
       </p>
 
       <h2>Tax audit</h2>
 
       <p>
-        A tax audit is required under the Income Tax Act once a business or professional&apos;s turnover or gross receipts cross a specified threshold, and its purpose is narrower: verifying that the accounts comply with income tax provisions and that reported figures used for computing tax are accurate. It results in a tax audit report filed along with the income tax return, and is a completely separate requirement from statutory audit, even though the same chartered accountant is often engaged for both.
+        A <Link href="/tax-audit-chennai">tax audit</Link> is required under the Income Tax Act once a business or professional&apos;s turnover or gross receipts cross a specified threshold, and its purpose is narrower: verifying that the accounts comply with income tax provisions and that reported figures used for computing tax are accurate. It results in a <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/videos/tax-audit-report-form-3ca-3cd" target="_blank" rel="noopener noreferrer">tax audit report (Form 3CA/3CB-3CD)</a> filed along with the income tax return, and is a completely separate requirement from statutory audit, even though the same chartered accountant is often engaged for both.
       </p>
 
       <h2>Internal audit</h2>
 
       <p>
-        Internal audit is not primarily about statutory compliance but about evaluating a company&apos;s internal controls, risk management, and operational efficiency. Certain classes of companies are legally required to have an internal audit function under company law, but many businesses without that legal obligation still choose to have one because it genuinely helps catch inefficiencies, fraud risk, and process gaps before they become bigger problems.
+        <Link href="/audit-and-assurance">Internal audit</Link> is not primarily about statutory compliance but about evaluating a company&apos;s internal controls, risk management, and operational efficiency. Certain classes of companies are legally required to have an internal audit function under company law, but many businesses without that legal obligation still choose to have one because it genuinely helps catch inefficiencies, fraud risk, and process gaps before they become bigger problems.
       </p>
 
       <h2>Why the distinction actually matters to you</h2>

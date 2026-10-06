@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "fcra-mylapore-cultural-institutions",
-  title: "Mylapore's Cultural and Religious Institutions Face a Tighter FCRA Landscape Than They Realize",
+  title: "FCRA Rules for Mylapore Cultural and Religious Institutions",
   description:
     "A number of Mylapore's long-established cultural and religious institutions receive support from abroad without current FCRA registration in place.",
   date: "2026-09-26",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>The rules have tightened considerably in recent years</h2>
 
       <p>
-        Any trust, society, or Section 8 company wanting to receive donations or grants from a foreign source needs FCRA registration, and the compliance requirements around this &mdash; reporting, a dedicated bank account, restrictions on fund usage &mdash; have become significantly stricter than they were when many of Mylapore&apos;s older institutions were first established.
+        Any trust, society, or <Link href="/section-8-company-registration-chennai">Section 8 company</Link> wanting to receive donations or grants from a foreign source needs FCRA registration, and the compliance requirements around this &mdash; reporting, a dedicated bank account, restrictions on fund usage &mdash; have become significantly stricter than they were when many of Mylapore&apos;s older institutions were first established.
       </p>
 
       <h2>Why Mylapore specifically carries this exposure</h2>
@@ -36,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your Mylapore institution has received or expects to receive support from abroad, C S Rushil &amp; Co. can assess your current FCRA position and what needs to happen next. Book a free consultation.
+        If your Mylapore institution has received or expects to receive support from abroad, C S Rushil &amp; Co. can assess your current FCRA position and what needs to happen next, including <Link href="/trust">FCRA registration for your trust or society</Link>. Book a free consultation.
       </p>
     </>
   );

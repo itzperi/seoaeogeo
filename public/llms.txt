@@ -1,42 +1,71 @@
 # C S Rushil & Co.
-> Chartered accountancy firm in Anna Nagar, Chennai, founded in 2024 by CA Rushil C S
-> (Certified FAFD, Start-up Mentor) with a 16-member team — company incorporation, GST,
-> audit, direct tax, ROC compliance, and virtual CFO services. Consultations in English,
-> Tamil, and Hindi. Remote service available for NRI and overseas clients.
+> C S Rushil & Co. (legal name: C S Rushil & Co, Chartered Accountants) is a chartered accountancy firm
+> at Old Door No. AP-890, New No. 18, J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai 600040,
+> founded in 2024 and led by CA Rushil C S (Certified FAFD, Start-up Mentor) with a 16-member team.
+> Services: company, LLP, OPC, partnership and Section 8 registration; GST; income tax and NRI tax;
+> statutory, tax and internal audit; ROC, FEMA and annual compliance; accounting outsourcing; virtual CFO.
+> Consultations in English, Tamil and Hindi; walk-in office in Anna Nagar and online service across India.
 
-## Services
-- [Private Limited Company Incorporation Chennai](https://www.csrushil.com/private-limited-company-incorporation-chennai): SPICe+ incorporation process, entity comparison, timelines
-- [Formation of Business Entity](https://www.csrushil.com/formation-of-business-entity): Choosing and registering the right structure (Pvt Ltd, LLP, OPC, Partnership, Proprietorship)
-- [LLP Registration Chennai](https://www.csrushil.com/llp-registration-chennai): FiLLiP filing, LLP Agreement drafting, conversion from partnership
-- [Company Registration Chennai](https://www.csrushil.com/company-registration-chennai): Private Limited, LLP, and OPC registration
-- [GST Litigation Chennai](https://www.csrushil.com/gst-litigation-chennai): Show-cause notice replies, appeals, GST Appellate Tribunal representation
-- [Goods & Services Tax](https://www.csrushil.com/goods-and-services-tax): GST registration, return filing, amendments, cancellations
-- [GST Registration Chennai](https://www.csrushil.com/gst-registration-chennai): New GST registration, amendments, LUT applications
-- [Audit & Assurance](https://www.csrushil.com/audit-and-assurance): Statutory, internal, tax, transfer pricing, forensic, and stock audits
-- [Statutory Audit Chennai](https://www.csrushil.com/statutory-audit-chennai): Companies Act audit under Section 139
-- [Tax Audit Chennai](https://www.csrushil.com/tax-audit-chennai): Section 44AB tax audit, Form 3CA/3CB/3CD
-- [Transfer Pricing Audit](https://www.csrushil.com/transfer-pricing-audit): Form 3CEB, arm's-length pricing documentation
-- [Direct Tax](https://www.csrushil.com/direct-tax): Income tax planning, return filing, assessment representation
-- [Income Tax Return Filing Chennai](https://www.csrushil.com/income-tax-return-filing-chennai): ITR filing for individuals, professionals, NRIs, and businesses
-- [MSME / Udyam Registration Chennai](https://www.csrushil.com/msme-udyam-registration-chennai): Udyam registration process and MSMED Act benefits
-- [ROC Compliances](https://www.csrushil.com/roc-compliances): Annual filings, statutory registers, DIR-3 KYC
-- [Virtual CFO Services](https://www.csrushil.com/virtual-cfo-services): MIS reporting, budgeting, fundraising support
-- [Management Consultancy](https://www.csrushil.com/management-consultancy): Business process, risk, and growth advisory
-- [RERA Compliance](https://www.csrushil.com/rera): Project registration, QPR filings for Tamil Nadu developers
-- [Trust & NGO Registration](https://www.csrushil.com/trust): Trust deed, Society, Section 8 Company, 12A/80G registration
+## Company & LLP registration
+- [Company Registration](https://www.csrushil.com/company-registration-chennai): Fast-tracked Private Limited and LLP company registration in Chennai, from name approval to certificate of incorporation.
+- [Private Limited Company Incorporation](https://www.csrushil.com/private-limited-company-incorporation-chennai): End-to-end SPICe+ incorporation for Private Limited Companies in Chennai — documentation, MCA filing, and post-incorporation compliance.
+- [LLP Registration](https://www.csrushil.com/llp-registration-chennai): Limited Liability Partnership registration in Chennai — DPIN, name reservation, FiLLiP filing, and LLP Agreement drafting.
+- [OPC Registration](https://www.csrushil.com/opc-registration-chennai): One Person Company registration for solo founders: SPICe+ filing, nominee consent (INC-3), NRI eligibility and later conversion to Pvt Ltd.
+- [Partnership Firm Registration](https://www.csrushil.com/partnership-firm-registration-chennai): Partnership deed drafting and stamping, registration with the Tamil Nadu Registrar of Firms on tnreginet, firm PAN, GST and deed changes.
+- [Proprietorship Registration](https://www.csrushil.com/proprietorship-registration-chennai): GST, Udyam, Tamil Nadu Shops and Establishments and trade licence for sole proprietors, plus documents for a current account.
+- [Section 8 Company Registration](https://www.csrushil.com/section-8-company-registration-chennai): Not-for-profit company registration with the Section 8 licence through SPICe+, objects drafting and 12A/80G (Form 105) next steps.
+- [Company Setup in India for Foreign Businesses](https://www.csrushil.com/company-registration-india-for-foreigners): Subsidiary, LLP or branch set-up for foreign companies and founders, with FDI reporting and Tamil Nadu location support.
 
-## Specialist services (NRIs, overseas businesses, notices)
-- [NRI Tax Services](https://www.csrushil.com/nri-tax-services): Hub for Indian tax, DTAA and repatriation for NRIs
-- [NRI Tax Services — UAE](https://www.csrushil.com/nri-tax-services-uae): India–UAE DTAA, TRC, deemed-residency rule, NRE/NRO
-- [NRI Tax Services — UK](https://www.csrushil.com/nri-tax-services-uk): India–UK DTAA, figures for HMRC Self Assessment
-- [NRI Tax Services — USA](https://www.csrushil.com/nri-tax-services-usa): India–US DTAA, data for foreign tax credit, FBAR/FATCA
-- [NRI Property Sale TDS (Chennai)](https://www.csrushil.com/nri-property-sale-tds-chennai): Lower-deduction certificate, capital gains, Form 15CA/15CB, repatriation
-- [GST Notice Reply Chennai](https://www.csrushil.com/gst-notice-reply-chennai): ASMT-10, DRC-01A, DRC-01, ADT-01 and RFD-08 replies
-- [Income Tax Notice Reply Chennai](https://www.csrushil.com/income-tax-notice-reply-chennai): Intimations, defective returns, scrutiny and reassessment
-- [Company Registration in India for Foreigners](https://www.csrushil.com/company-registration-india-for-foreigners): Subsidiary, LLP or branch; FDI route, FC-GPR, resident director rule
-- [India Subsidiary Compliance & CFO](https://www.csrushil.com/india-subsidiary-compliance-cfo): Audit, ROC, FEMA, transfer pricing, GST, payroll and group reporting
-- [Outsourced Accounting for US CPA Firms](https://www.csrushil.com/outsourced-accounting-for-cpa-firms): Bookkeeping and tax-prep support for CPA review, Section 7216-aware
-- [Outsourced Bookkeeping for UK Practices](https://www.csrushil.com/outsourced-accounting-for-uk-accountants): Bookkeeping, MTD VAT and year-end accounts for practice review
+## Business licences
+- [Startup India (DPIIT) Recognition](https://www.csrushil.com/startup-india-registration-chennai): DPIIT startup recognition through NSWS for companies, LLPs and registered partnerships, plus the Section 140 tax holiday application.
+- [MSME / Udyam Registration](https://www.csrushil.com/msme-udyam-registration-chennai): Udyam registration for small and medium enterprises in Chennai, unlocking collateral-free loans and government scheme benefits.
+- [Digital Signature Certificate (DSC)](https://www.csrushil.com/digital-signature-certificate-chennai): Class 3 DSC for MCA, GST, income tax, DGFT and e-tenders, issued through licensed Certifying Authorities with Aadhaar eKYC or video verification.
+- [Trademark Registration](https://www.csrushil.com/trademark-registration-chennai): Trademark search, Nice class selection, TM-A documentation, objection support and renewal tracking for Chennai brands and startups.
+- [IEC Registration](https://www.csrushil.com/iec-registration-chennai): Import Export Code from DGFT for Chennai importers and exporters, with annual April–June updation, modification and GST LUT support.
+- [FSSAI Licence & Registration](https://www.csrushil.com/fssai-license-chennai): FSSAI basic registration, state and central licences on FoSCoS under the April 2026 turnover limits, plus modifications and annual returns.
+
+## GST
+- [Goods & Services Tax (GST)](https://www.csrushil.com/goods-and-services-tax): GST registration, return filing, amendments, cancellations, notice replies, and LUT applications.
+- [GST Registration](https://www.csrushil.com/gst-registration-chennai): New GST registration for businesses and professionals in Chennai — documentation, ARN tracking, and certificate issuance.
+- [GST Return Filing](https://www.csrushil.com/gst-return-filing-chennai): Monthly and quarterly GSTR-1 and GSTR-3B, QRMP, CMP-08, GSTR-4 and annual GSTR-9/9C, with GSTR-2B reconciliation before every filing.
+- [GST Notice Reply](https://www.csrushil.com/gst-notice-reply-chennai): Replies to ASMT-10, DRC-01A, DRC-01 and audit notices for Tamil Nadu businesses, before a dispute becomes an appeal.
+- [GST Litigation & Appeals](https://www.csrushil.com/gst-litigation-chennai): Representation for GST show-cause notices, departmental audits, appeals, and GSTAT proceedings for Chennai businesses.
+
+## Income tax & NRI
+- [Direct Tax](https://www.csrushil.com/direct-tax): Income tax planning, return filing, assessments, and representation before tax authorities.
+- [Income Tax Return Filing](https://www.csrushil.com/income-tax-return-filing-chennai): ITR filing for salaried individuals, professionals, and businesses in Chennai, with advance tax and refund tracking.
+- [Income Tax Notice Reply](https://www.csrushil.com/income-tax-notice-reply-chennai): Responses to intimations, defective-return, scrutiny and reassessment notices, including faceless assessment submissions.
+- [Income Tax Assessment & Appeals](https://www.csrushil.com/income-tax-assessment-appeals-chennai): Scrutiny and reassessment proceedings, appeals to the CIT(A) and the ITAT, and applications for stay of demand.
+- [TDS Return Filing](https://www.csrushil.com/tds-return-filing-chennai): Quarterly TDS statements in Forms 138, 140 and 144 (earlier 24Q, 26Q, 27Q), Form 16/16A certificates, corrections and TDS on rent and property.
+- [NRI Tax Services](https://www.csrushil.com/nri-tax-services): Indian tax filing, DTAA claims, property-sale TDS and repatriation for NRIs in the UAE, UK, USA and elsewhere — handled remotely from Chennai.
+- [NRI Tax Services — UAE](https://www.csrushil.com/nri-tax-services-uae): Indian ITR, DTAA claims and deemed-residency checks for NRIs living in Dubai, Abu Dhabi and the wider UAE.
+- [NRI Tax Services — UK](https://www.csrushil.com/nri-tax-services-uk): Indian tax filing and India–UK DTAA support, with the figures your UK accountant needs for HMRC.
+- [NRI Tax Services — USA](https://www.csrushil.com/nri-tax-services-usa): Indian tax filing and India–US DTAA support, with account data for your US CPA’s FBAR and FATCA reporting.
+- [NRI Property Sale — TDS & Repatriation](https://www.csrushil.com/nri-property-sale-tds-chennai): Lower-deduction certificates, capital gains, Form 15CA/15CB and repatriation for NRIs selling property in Chennai.
+- [Form 15CA & 15CB](https://www.csrushil.com/form-15ca-15cb-chennai): CA certificate and remitter's declaration (now Forms 146 and 145) for payments to non-residents, NRO repatriation and property-sale proceeds.
+
+## Audit
+- [Audit & Assurance](https://www.csrushil.com/audit-and-assurance): Statutory, internal, tax, transfer pricing, forensic, and stock audits delivered with independence and rigour.
+- [Statutory Audit](https://www.csrushil.com/statutory-audit-chennai): Companies Act statutory audit for Chennai businesses — independent, evidence-based financial statement audit.
+- [Tax Audit](https://www.csrushil.com/tax-audit-chennai): Section 44AB tax audit for businesses and professionals in Chennai crossing prescribed turnover limits.
+- [Transfer Pricing Audit](https://www.csrushil.com/transfer-pricing-audit): Form 3CEB certification and arm's-length pricing documentation for related-party and cross-border transactions.
+
+## Compliance & accounting
+- [ROC Compliances](https://www.csrushil.com/roc-compliances): Annual filings, statutory registers, and Companies Act compliance to keep your company in good standing with the MCA.
+- [Annual Compliance Package](https://www.csrushil.com/annual-compliance-package): Bookkeeping, statutory audit, ROC filings, DIR-3 KYC, ITR, GST and TDS returns for companies and LLPs on one calendar.
+- [Accounting Outsourcing](https://www.csrushil.com/accounting-outsourcing-chennai): Outsource your whole finance back office in Chennai: bookkeeping, payroll, GST, TDS, PF and ESI filings, monthly MIS and Tally or Zoho Books setup.
+- [Bookkeeping Services](https://www.csrushil.com/bookkeeping-services-chennai): Cloud accounting, monthly books close, and MIS reporting on Zoho Books, Tally Prime, QuickBooks, or Xero for Chennai businesses.
+- [Payroll Services](https://www.csrushil.com/payroll-services-chennai): End-to-end payroll outsourcing with PF, ESI, Professional Tax, and TDS compliance for businesses across Chennai.
+- [FEMA & RBI Compliance](https://www.csrushil.com/fema-rbi-compliance): FC-GPR, FC-TRS, annual FLA return, ODI and APR filings, and late submission fee regularisation for foreign-invested companies.
+- [RERA Compliance](https://www.csrushil.com/rera): RERA project registration, quarterly filings, and compliance advisory for real estate developers and agents in Tamil Nadu.
+- [Trust & NGO Registration](https://www.csrushil.com/trust): Formation and compliance for trusts, societies, and Section 8 companies, including 12A/80G registration support.
+- [Outsourced Accounting for US CPA Firms](https://www.csrushil.com/outsourced-accounting-for-cpa-firms): Bookkeeping, month-end close and tax-prep support prepared for US CPA review, with Section 7216-aware data handling.
+- [Outsourced Bookkeeping for UK Practices](https://www.csrushil.com/outsourced-accounting-for-uk-accountants): Bookkeeping, MTD VAT returns and year-end accounts preparation for UK accountancy practices to review and file.
+
+## Advisory
+- [Virtual CFO Services](https://www.csrushil.com/virtual-cfo-services): Outsourced financial leadership — MIS, budgeting, fundraising support, and board-ready reporting for growing businesses.
+- [Management Consultancy](https://www.csrushil.com/management-consultancy): Business process, risk, and strategy advisory that turns compliance data into operating decisions.
+- [India Subsidiary Compliance & CFO](https://www.csrushil.com/india-subsidiary-compliance-cfo): One retainer for audit, ROC, FEMA, transfer pricing, GST, payroll and group reporting for foreign-owned Indian companies.
 
 ## Areas served (Chennai)
 Anna Nagar, Kilpauk, T Nagar, Ambattur, OMR/Sholinganallur, Velachery, Adyar,

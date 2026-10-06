@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "roc-compliance-anna-nagar-startups",
@@ -14,13 +15,13 @@ export default function Body() {
   return (
     <>
       <p>
-        Founders who&apos;ve incorporated their company locally in Anna Nagar generally know they need to file an annual return with the ROC. What trips people up isn&apos;t that filing &mdash; it&apos;s the event-based ones, which don&apos;t run on a yearly calendar at all and are easy to forget precisely because nothing reminds you.
+        Founders who&apos;ve <Link href="/private-limited-company-incorporation-chennai">incorporated their private limited company</Link> locally in Anna Nagar generally know they need to file an annual return with the ROC. What trips people up isn&apos;t that filing &mdash; it&apos;s the event-based ones, which don&apos;t run on a yearly calendar at all and are easy to forget precisely because nothing reminds you.
       </p>
 
       <h2>An event-based filing is triggered by something happening, not a date</h2>
 
       <p>
-        Adding a director, changing your registered office address, altering your authorised share capital, or creating a charge against a company asset &mdash; each of these has its own ROC form with its own deadline counted from the date of the event, usually 30 days. Nobody sends a reminder for this the way tax software reminds you about a filing date; it&apos;s on the company to know it happened and act on it.
+        Adding a director, <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/change-services.html" target="_blank" rel="noopener noreferrer">changing your registered office address</a>, altering your authorised share capital, or creating a charge against a company asset &mdash; each of these has its own ROC form with its own deadline counted from the date of the event, usually 30 days. Nobody sends a reminder for this the way tax software reminds you about a filing date; it&apos;s on the company to know it happened and act on it.
       </p>
 
       <h2>Why this specifically catches first-year companies</h2>
@@ -36,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your Anna Nagar company has had a director change, address move, or new charge in the last few months, it&apos;s worth checking whether the filing actually happened. C S Rushil &amp; Co. runs a quick compliance check for exactly this. Book a free consultation.
+        If your Anna Nagar company has had a director change, address move, or new charge in the last few months, it&apos;s worth checking whether the filing actually happened. C S Rushil &amp; Co. runs a quick <Link href="/roc-compliances">ROC compliance</Link> check for exactly this. Book a free consultation.
       </p>
     </>
   );

@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "spice-plus-incorporation-explained",
@@ -42,7 +43,8 @@ export default function Body() {
       <h2>What SPICe+ actually is</h2>
       <p>
         SPICe+ (Simplified Proforma for Incorporating a Company Electronically
-        Plus) is a single web-based form split into two parts. Part A handles
+        Plus) is a single web-based form split into two parts (see the{" "}
+        <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation.html" target="_blank" rel="noopener noreferrer">MCA&apos;s SPICe+ incorporation FAQs</a>). Part A handles
         name reservation. Part B handles the incorporation application itself,
         along with linked forms for PAN, TAN, EPFO registration, ESIC
         registration, Profession Tax registration (in applicable states), and
@@ -90,7 +92,7 @@ export default function Body() {
 
       <h2>What hasn&apos;t changed</h2>
       <ul>
-        <li>You still need Digital Signature Certificates (DSC) for all proposed directors before filing.</li>
+        <li>You still need <Link href="/digital-signature-certificate-chennai">Digital Signature Certificates (DSC)</Link> for all proposed directors before filing.</li>
         <li>Name availability rules are the same — no conflict with existing companies, trademarks, or prohibited words.</li>
         <li>Drafting the Memorandum and Articles of Association (MoA/AoA) is still required, now submitted as e-MoA/e-AoA within the same form.</li>
       </ul>

@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "12a-80g-registration-guide-chennai-ngos",
-  title: "12A and 80G Registration: A Step-by-Step Guide for Chennai NGOs",
+  title: "12A and 80G Registration: Step-by-Step for Chennai NGOs",
   description:
     "How Chennai trusts, societies, and Section 8 companies can register under 12A and 80G to unlock tax exemption and donor deductions.",
   date: "2026-11-25",
@@ -57,10 +58,10 @@ export default function Body() {
 
       <h2>Step-by-step process</h2>
       <ol>
-        <li>Complete formation of the entity (Trust deed registration, Society registration, or Section 8 Company incorporation).</li>
-        <li>Apply for provisional 12A registration via Form 10A on the income tax e-filing portal — this is typically fast for newly formed entities.</li>
+        <li>Complete formation of the entity (Trust deed registration, Society registration, or <Link href="/section-8-company-registration-chennai">Section 8 company incorporation in Chennai</Link>).</li>
+        <li>Apply for provisional 12A registration via Form 10A on the income tax e-filing portal (see the <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/income-tax-forms" target="_blank" rel="noopener noreferrer">income tax statutory forms</a>) — this is typically fast for newly formed entities.</li>
         <li>Apply for provisional 80G registration (also Form 10A), usually alongside 12A.</li>
-        <li>Operate for the provisional period (commonly 3 years) while maintaining proper books, activity records, and donation receipts.</li>
+        <li>Operate for the provisional period (commonly 3 years) while maintaining <Link href="/bookkeeping-services-chennai">proper books of account</Link>, activity records, and donation receipts.</li>
         <li>Apply for regular registration via Form 10AB before the provisional period expires, supported by evidence of actual charitable activity.</li>
         <li>Renew regular registration before each validity period (typically 5 years) lapses.</li>
       </ol>

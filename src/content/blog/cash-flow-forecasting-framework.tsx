@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "cash-flow-forecasting-framework",
-  title: "A Simple Cash Flow Forecasting Framework for Small Businesses",
+  title: "Simple Cash Flow Forecasting Framework for Small Businesses",
   description:
     "Cash flow forecasting sounds like something only large companies need, but small Chennai businesses often run into cash problems for exactly that reason.",
   date: "2026-09-19",
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>Build a rolling thirteen week view</h2>
 
       <p>
-        Rather than a vague annual budget, a rolling thirteen week cash flow forecast, updated weekly, gives you enough forward visibility to catch problems while there is still time to act, without the inaccuracy that comes from projecting too far ahead. Each week, add a new week to the end and refine the near term weeks with actual data as it comes in.
+        Rather than a vague annual budget, a rolling thirteen week cash flow forecast, updated weekly, gives you enough forward visibility to catch problems while there is still time to act, without the inaccuracy that comes from projecting too far ahead. Each week, add a new week to the end and refine the near term weeks with actual data from <Link href="/bookkeeping-services-chennai">up-to-date bookkeeping</Link> as it comes in.
       </p>
 
       <h2>Separate predictable from unpredictable cash flows</h2>
@@ -51,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If building and maintaining a cash flow forecast isn&apos;t something you have time to do properly alongside running the business, C S Rushil &amp; Co. offers this as part of virtual CFO support for Chennai businesses. Reach out for a free consultation.
+        If building and maintaining a cash flow forecast isn&apos;t something you have time to do properly alongside running the business, C S Rushil &amp; Co. offers this as part of <Link href="/virtual-cfo-services">virtual CFO support</Link> for Chennai businesses. Reach out for a free consultation.
       </p>
     </>
   );

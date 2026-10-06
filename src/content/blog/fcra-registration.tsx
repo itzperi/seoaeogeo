@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "fcra-registration",
-  title: "FCRA Registration: What Chennai NGOs Need to Know Before Accepting Foreign Funds",
+  title: "FCRA Registration for Chennai NGOs Accepting Foreign Funds",
   description:
     "Any Chennai trust, society, or Section 8 company accepting foreign donations needs FCRA registration first — and the rules have tightened considerably.",
   date: "2026-09-19",
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>Eligibility conditions before applying</h2>
 
       <p>
-        An organization generally needs to have existed and been active for a minimum number of years, have spent a minimum amount on its core charitable activities during that period, and be registered under the relevant law (as a trust, society, or Section 8 company) with clean compliance history before FCRA registration will be granted. Organizations without this track record can sometimes apply for prior permission for a specific foreign contribution instead of full registration.
+        An organization generally needs to have existed and been active for a minimum number of years, have spent a minimum amount on its core charitable activities during that period, and be registered under the relevant law (as a <Link href="/trust">registered trust or society</Link>, or as a <Link href="/section-8-company-registration-chennai">Section 8 company</Link>) with clean compliance history before FCRA registration will be granted. Organizations without this track record can sometimes apply for prior permission for a specific foreign contribution instead of full registration.
       </p>
 
       <h2>The mandatory FCRA bank account requirement</h2>

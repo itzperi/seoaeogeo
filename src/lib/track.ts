@@ -3,8 +3,20 @@
 
 export type TrackAction = "call" | "whatsapp" | "book" | "form_start" | "form_submit";
 
-export function track(action: TrackAction, placement: string) {
+// GA4 event names for each funnel action (sent only when GA4 is loaded,
+// i.e. NEXT_PUBLIC_GA_ID is set — see layout.tsx).
+const GA4_EVENT: Record<TrackAction, string> = {
+  call: "click_call",
+  whatsapp: "click_whatsapp",
+  book: "click_calendly",
+  form_start: "form_start",
+  form_submit: "form_submit",
+};
+
+export function track(action: TrackAction, placement: string, service?: string) {
   if (typeof window === "undefined") return;
+  const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+  gtag?.("event", GA4_EVENT[action], { placement, page: window.location.pathname, ...(service && { service }) });
   const payload = JSON.stringify({
     action,
     placement,

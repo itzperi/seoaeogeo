@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "virtual-cfo-vs-full-time-cfo-cost-comparison",
-  title: "Virtual CFO vs. Hiring a Full-Time CFO: A Cost Comparison for Chennai SMEs",
+  title: "Virtual CFO vs Full-Time CFO: A Cost Comparison for Chennai",
   description:
     "A real cost comparison between a Virtual CFO engagement and a full-time in-house CFO hire for growing Chennai businesses.",
   date: "2026-11-11",
@@ -53,7 +54,8 @@ export default function Body() {
         retainer sized to your actual reporting cadence and complexity, rather
         than a fixed full-time salary. For most growth-stage SMEs, this comes
         out to a fraction of the fully-loaded cost of a full-time hire, while
-        still covering the core deliverables: monthly MIS, budgeting,
+        still covering the core deliverables: monthly MIS (built on clean{" "}
+        <Link href="/accounting-outsourcing-chennai">outsourced accounting</Link>), budgeting,
         cash-flow monitoring, and investor/board reporting.
       </p>
 

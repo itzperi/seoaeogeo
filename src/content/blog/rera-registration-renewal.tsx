@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "rera-registration-renewal",
-  title: "RERA Registration Renewal Deadlines: What Chennai Developers Need to Track",
+  title: "RERA Registration Renewal Deadlines for Chennai Developers",
   description:
     "Chennai real estate developers and agents need to track not just initial RERA registration but renewal deadlines and ongoing disclosure obligations.",
   date: "2026-09-19",
@@ -46,13 +47,13 @@ export default function Body() {
       <ul>
         <li>Note the exact declared completion date at the time of initial project registration</li>
         <li>Apply for renewal or extension well before that date, not after it lapses</li>
-        <li>Maintain the designated project bank account with correct fund allocation percentages</li>
+        <li>Maintain the designated project bank account with correct fund allocation percentages, backed by project-wise <Link href="/bookkeeping-services-chennai">bookkeeping</Link></li>
         <li>Keep the RERA project page updated with progress and any material changes</li>
         <li>Confirm agent registration renewal dates are tracked separately from project registration</li>
       </ul>
 
       <p>
-        If you&apos;re developing or selling real estate in Chennai and want to make sure your RERA registration, renewals, and disclosures stay on track, C S Rushil &amp; Co. can help manage the compliance calendar. Reach out for a free consultation.
+        If you&apos;re developing or selling real estate in Chennai and want to make sure your RERA registration, renewals, and disclosures stay on track, C S Rushil &amp; Co. can help manage the <Link href="/rera">RERA compliance</Link> calendar. Reach out for a free consultation.
       </p>
     </>
   );

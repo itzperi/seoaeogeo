@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "first-gst-return-tambaram-shops",
-  title: "Your First GST Return After Crossing the Threshold in Tambaram: What Actually Trips People Up",
+  title: "First GST Return After Registration in Tambaram: Pitfalls",
   description:
     "Small Tambaram shop owners who just crossed the GST registration threshold usually struggle with one specific part of their first return, not the filing itself.",
   date: "2026-09-26",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        A local shop owner in Tambaram had recently crossed the ₹40 lakh turnover threshold and registered for GST. His first return wasn&apos;t held up by the filing process itself &mdash; it was held up by not having a clean opening stock valuation to start from, which is the single most common snag for a business filing its very first return.
+        A local shop owner in Tambaram had recently crossed the ₹40 lakh <a href="https://www.gst.gov.in/help/registration" target="_blank" rel="noopener noreferrer">GST registration threshold</a> and completed his <Link href="/gst-registration-chennai">GST registration</Link>. His first return wasn&apos;t held up by the filing process itself &mdash; it was held up by not having a clean opening stock valuation to start from, which is the single most common snag for a business filing its very first return.
       </p>
 
       <h2>Opening stock needs a defensible value, not a guess</h2>
@@ -36,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you&apos;ve recently registered for GST in Tambaram and are approaching your first return, C S Rushil &amp; Co. can help set up the opening position correctly. Book a free consultation.
+        If you&apos;ve recently registered for GST in Tambaram and are approaching your first return, our <Link href="/gst-return-filing-chennai">GST return filing service</Link> covers exactly this, and C S Rushil &amp; Co. can help set up the opening position correctly. Book a free consultation.
       </p>
     </>
   );

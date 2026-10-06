@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "safe-cash-deposit-limit",
-  title: "How Much Cash Can You Actually Deposit Into Your Bank Account?",
+  title: "How Much Cash Can You Deposit in Your Bank Account?",
   description:
     "There's no single legal cash deposit limit, but specific thresholds trigger automatic reporting to the Income Tax Department. Here's what those actually are.",
   date: "2026-09-26",
@@ -30,13 +31,13 @@ export default function Body() {
       <h2>Banks report specific cash transactions automatically</h2>
 
       <p>
-        Cash deposits aggregating ₹10 lakh or more in a savings account in a financial year get reported to the Income Tax Department through the Annual Information Statement framework, regardless of who deposited it or why. For current accounts used by businesses, the reporting threshold is ₹50 lakh. This isn&apos;t a penalty trigger by itself — it&apos;s a reporting trigger, which is a different thing.
+        Cash deposits aggregating ₹10 lakh or more in a savings account in a financial year get reported to the Income Tax Department through the <a href="https://www.incometax.gov.in/iec/foportal/help/e-filing-manage-tax-credit-mismatch-faq" target="_blank" rel="noopener noreferrer">Annual Information Statement</a> framework, regardless of who deposited it or why. For current accounts used by businesses, the reporting threshold is ₹50 lakh. This isn&apos;t a penalty trigger by itself — it&apos;s a reporting trigger, which is a different thing.
       </p>
 
       <h2>The problem isn&apos;t the deposit — it&apos;s the unexplained source</h2>
 
       <p>
-        Once a large cash deposit is reported, the department may ask you to explain its source as part of your return processing or a scrutiny notice. A legitimate business owner with genuine cash sales, clear books, and consistent past filings can explain this without difficulty. Someone depositing cash with no documented source — an inheritance never declared, savings accumulated informally over years — faces a genuinely harder conversation.
+        Once a large cash deposit is reported, the department may ask you to explain its source as part of your return processing or a scrutiny notice, which then needs a documented <Link href="/income-tax-notice-reply-chennai">income tax notice reply</Link>. A legitimate business owner with genuine cash sales, clear books maintained through regular <Link href="/bookkeeping-services-chennai">bookkeeping</Link>, and consistent past filings can explain this without difficulty. Someone depositing cash with no documented source — an inheritance never declared, savings accumulated informally over years — faces a genuinely harder conversation.
       </p>
 
       <h2>Section 269ST adds a separate restriction worth knowing</h2>

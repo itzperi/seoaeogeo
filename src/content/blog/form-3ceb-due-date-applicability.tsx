@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "form-3ceb-due-date-applicability",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        Form 3CEB is the transfer pricing audit report a Chartered Accountant must certify for businesses with related-party transactions, and one of the most common mistakes founders make is assuming it only applies once a company reaches a certain size. It doesn&apos;t — for international transactions with an associated enterprise, there is no minimum value threshold at all.
+        Form 3CEB is the <Link href="/transfer-pricing-audit">transfer pricing audit</Link> report a Chartered Accountant must certify for businesses with related-party transactions, and one of the most common mistakes founders make is assuming it only applies once a company reaches a certain size. It doesn&apos;t — for international transactions with an associated enterprise, there is no minimum value threshold at all.
       </p>
 
       <h2>Who actually needs to file Form 3CEB</h2>
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>When Form 3CEB is due</h2>
 
       <p>
-        Form 3CEB must be filed by 31st October following the end of the relevant financial year — the same extended due date that applies to companies requiring a tax audit or transfer pricing audit, one month after the standard 30th September return-filing deadline for most other taxpayers. The report has to be filed before the income tax return itself, since the ITR filing utility checks for it.
+        Form 3CEB must be filed by 31st October following the end of the relevant financial year — one month before the 30th November income tax return due date that applies to taxpayers required to furnish a transfer pricing report. The form itself is filed on the e-filing portal (see the <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/income-tax-forms" target="_blank" rel="noopener noreferrer">income tax statutory forms help</a>). The report has to be filed before the income tax return itself, since the ITR filing utility checks for it.
       </p>
 
       <h2>What counts as an &quot;associated enterprise&quot;</h2>
@@ -38,7 +39,7 @@ export default function Body() {
       <h2>The cost of getting this wrong</h2>
 
       <p>
-        Failing to file Form 3CEB when required, or filing it with inadequate documentation, exposes a company to penalties under the Income Tax Act and, more significantly, to the tax authority making its own adjustment to reported income during assessment if it isn&apos;t satisfied the pricing was at arm&apos;s length. If the other jurisdiction doesn&apos;t grant a corresponding adjustment, this can mean the same income gets taxed twice — once in each country.
+        Failing to file Form 3CEB when required, or filing it with inadequate documentation, exposes a company to penalties under the Income Tax Act and, more significantly, to the tax authority making its own adjustment to reported income during <Link href="/income-tax-assessment-appeals-chennai">income tax assessment</Link> if it isn&apos;t satisfied the pricing was at arm&apos;s length. If the other jurisdiction doesn&apos;t grant a corresponding adjustment, this can mean the same income gets taxed twice — once in each country.
       </p>
 
       <h2>A practical starting checklist</h2>

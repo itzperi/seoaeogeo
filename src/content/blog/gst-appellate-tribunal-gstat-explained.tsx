@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "gst-appellate-tribunal-gstat-explained",
-  title: "GST Appellate Tribunal (GSTAT): What Chennai Businesses Need to Know",
+  title: "GST Appellate Tribunal (GSTAT) for Chennai Businesses",
   description:
     "GSTAT benches are becoming operational across states. Here's what Chennai businesses need to know about the new GST appeal process.",
   date: "2026-10-21",
@@ -40,7 +41,7 @@ export default function Body() {
 
       <h2>Where GSTAT fits in the appeal chain</h2>
       <ol>
-        <li>Show-cause notice reply to the GST department</li>
+        <li><Link href="/gst-notice-reply-chennai">Show-cause notice reply</Link> to the GST department</li>
         <li>Departmental order (if the reply doesn&apos;t resolve the matter)</li>
         <li>First appeal to the Appellate Authority (Joint/Additional Commissioner)</li>
         <li><strong>GST Appellate Tribunal (GSTAT)</strong> — second appeal, if the first appeal is unsuccessful</li>
@@ -75,7 +76,7 @@ export default function Body() {
           </tr>
           <tr>
             <td>Representation</td>
-            <td>Chartered Accountants, advocates, and other authorised representatives under Section 116 CGST Act</td>
+            <td>Chartered Accountants, advocates, and other authorised representatives under Section 116 of the <a href="https://cbic-gst.gov.in/gst-acts.html" target="_blank" rel="noopener noreferrer">CGST Act</a></td>
           </tr>
           <tr>
             <td>Bench structure</td>

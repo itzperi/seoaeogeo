@@ -24,6 +24,8 @@ const nextConfig: NextConfig = {
       { source: "/nri-tax-services-usa-uk", destination: "/nri-tax-services", permanent: true },
       // The pricing page was removed; send old links to the contact page.
       { source: "/ca-fees-chennai", destination: "/contact", permanent: true },
+      // Merged into the company registration hub (it competed for the same searches).
+      { source: "/formation-of-business-entity", destination: "/company-registration-chennai", permanent: true },
     ];
   },
 };

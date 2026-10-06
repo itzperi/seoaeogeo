@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "gst-notice-anna-nagar-traders",
-  title: "Got a GST Notice as an Anna Nagar Trader? Here's What Actually Happens Next",
+  title: "GST Notice for Anna Nagar Traders: What Happens Next",
   description:
     "Anna Nagar's mix of retail, trading, and small manufacturing businesses tends to hit the same handful of GST notice triggers. Here's what to check first.",
   date: "2026-09-26",
@@ -26,13 +27,13 @@ export default function Body() {
       <h2>What to actually check before you panic</h2>
 
       <p>
-        Pull up your GSTR-2B for the period the notice mentions and compare it line by line against what you claimed in GSTR-3B. Most mismatches trace back to a supplier who filed late or filed incorrectly &mdash; not to anything you did. That distinction matters, because the reply is completely different depending on whether the error is yours or theirs.
+        Pull up your GSTR-2B for the period the notice mentions and compare it line by line against what you claimed in GSTR-3B (the GST portal&apos;s <a href="https://www.gst.gov.in/help/returns" target="_blank" rel="noopener noreferrer">returns help</a> explains both). Consistent <Link href="/gst-return-filing-chennai">GST return filing</Link> and monthly reconciliation make this check much quicker. Most mismatches trace back to a supplier who filed late or filed incorrectly &mdash; not to anything you did. That distinction matters, because the <Link href="/gst-notice-reply-chennai">GST notice reply</Link> is completely different depending on whether the error is yours or theirs.
       </p>
 
       <h2>Why the deadline matters more than the notice text</h2>
 
       <p>
-        Every GST notice carries a reply window, usually 15 or 30 days depending on the form. Missing it doesn&apos;t make the notice go away &mdash; it escalates to a best-judgment assessment, where the department decides the outcome without your input. That&apos;s the actual risk here, far more than the underlying discrepancy itself.
+        Every GST notice carries a reply window, usually 15 or 30 days depending on the form. Missing it doesn&apos;t make the notice go away &mdash; with an ASMT-10, an unanswered or unsatisfactory reply lets the officer move to an audit (Section 65), a special audit (Section 66), an inspection (Section 67), or a formal demand under Section 73 or 74 (Section 74A for FY 2024-25 onward), and the matter then proceeds without your explanation on record. That&apos;s the actual risk here, far more than the underlying discrepancy itself.
       </p>
 
       <p>

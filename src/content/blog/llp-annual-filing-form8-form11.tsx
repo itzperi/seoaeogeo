@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "llp-annual-filing-form8-form11",
@@ -20,13 +21,13 @@ export default function Body() {
       <h2>Form 11: Annual Return</h2>
 
       <p>
-        Form 11 is the LLP&apos;s annual return, filed with the Registrar of Companies within 60 days of the close of the financial year — for most LLPs, this means a due date of 30th May. It records the LLP&apos;s partners, their contribution, and any changes to the partnership during the year. Form 11 must be filed even if the LLP had zero transactions in the financial year; there is no turnover-based exemption.
+        <a href="https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-11.html" target="_blank" rel="noopener noreferrer">Form 11</a> is the LLP&apos;s annual return, filed with the Registrar of Companies within 60 days of the close of the financial year — for most LLPs, this means a due date of 30th May. It records the LLP&apos;s partners, their contribution, and any changes to the partnership during the year. Form 11 must be filed even if the LLP had zero transactions in the financial year; there is no turnover-based exemption.
       </p>
 
       <h2>Form 8: Statement of Account and Solvency</h2>
 
       <p>
-        Form 8 is the LLP&apos;s financial statement filing, due within 30 days of the end of six months from the close of the financial year — for most LLPs, this means a due date of 30th October. It requires a statement of the LLP&apos;s assets and liabilities and a solvency declaration signed by the designated partners. Unlike a company&apos;s AOC-4, Form 8 doesn&apos;t require audited financials unless the LLP&apos;s turnover exceeds ₹40 lakh or its capital contribution exceeds ₹25 lakh — below both thresholds, self-certified figures are sufficient.
+        <a href="https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Form-8.html" target="_blank" rel="noopener noreferrer">Form 8</a> is the LLP&apos;s financial statement filing, due within 30 days of the end of six months from the close of the financial year — for most LLPs, this means a due date of 30th October. It requires a statement of the LLP&apos;s assets and liabilities and a solvency declaration signed by the designated partners. Unlike a company&apos;s AOC-4, Form 8 doesn&apos;t require audited financials unless the LLP&apos;s turnover exceeds ₹40 lakh or its capital contribution exceeds ₹25 lakh — below both thresholds, self-certified figures are sufficient.
       </p>
 
       <h2>Why LLPs treat these deadlines as less urgent than they are</h2>
@@ -46,7 +47,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If your LLP has missed a filing in a prior year, this is recoverable — the Registrar allows late filing with the accumulated fee, and getting current is usually more straightforward than founders expect once someone actually starts the process. C S Rushil &amp; Co. handles LLP registration and the ongoing Form 8/Form 11 filing calendar for LLPs across Chennai. Reach out for a free consultation.
+        If your LLP has missed a filing in a prior year, this is recoverable — the Registrar allows late filing with the accumulated fee, and getting current is usually more straightforward than founders expect once someone actually starts the process. C S Rushil &amp; Co. handles <Link href="/llp-registration-chennai">LLP registration in Chennai</Link> and the ongoing Form 8/Form 11 filing calendar as part of our <Link href="/roc-compliances">ROC compliance</Link> work for LLPs across Chennai. Reach out for a free consultation.
       </p>
     </>
   );

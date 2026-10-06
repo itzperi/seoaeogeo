@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "statutory-audit-nungambakkam-established",
-  title: "Statutory Audit for a Nungambakkam Company That's Past Its First Few Years",
+  title: "Statutory Audit for an Established Nungambakkam Company",
   description:
     "The audit questions change once a Nungambakkam company is established rather than newly incorporated — here's what shifts by year five or six.",
   date: "2026-09-26",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>An established company&apos;s audit isn&apos;t just a repeat of the first one</h2>
 
       <p>
-        Nungambakkam has a real concentration of mid-sized companies past their early startup stage &mdash; not first-time incorporations, but businesses with a genuine operating history. As a company accumulates years of contracts, related-party arrangements, and employee benefit obligations, the statutory audit scope expands to cover things that simply didn&apos;t exist in year one.
+        Nungambakkam has a real concentration of mid-sized companies past their early startup stage &mdash; not first-time incorporations, but businesses with a genuine operating history. As a company accumulates years of contracts, related-party arrangements, and employee benefit obligations, the <Link href="/statutory-audit-chennai">statutory audit</Link> scope expands to cover things that simply didn&apos;t exist in year one.
       </p>
 
       <h2>Related-party transactions get real scrutiny</h2>
@@ -36,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your Nungambakkam business is past its early years and audits feel like they keep raising new questions, C S Rushil &amp; Co. can help formalise the policies that would make each audit more predictable. Book a free consultation.
+        If your Nungambakkam business is past its early years and audits feel like they keep raising new questions, C S Rushil &amp; Co. can help formalise the policies (often through our <Link href="/virtual-cfo-services">virtual CFO services</Link>) that would make each audit more predictable. Book a free consultation.
       </p>
     </>
   );

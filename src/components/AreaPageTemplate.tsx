@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
@@ -19,6 +20,7 @@ export default function AreaPageTemplate({
   faqs,
   furtherReading,
   directAnswer,
+  sections = [],
 }: {
   pageUrl: string;
   locality: string;
@@ -32,6 +34,8 @@ export default function AreaPageTemplate({
   furtherReading?: { slug: string; title: string }[];
   /** 40–60 word answer to "Is there a CA firm near <locality>?" — the passage snippets and AI answers quote. */
   directAnswer?: string;
+  /** Extra H2 sections with rich body (inline links), rendered after the local context. */
+  sections?: { heading: string; body: ReactNode }[];
 }) {
   const services = relevantServices
     .map((r) => ({ ...getService(r.slug), why: r.why }))
@@ -71,6 +75,13 @@ export default function AreaPageTemplate({
               <p key={i}>{para}</p>
             ))}
           </div>
+
+          {sections.map((sec) => (
+            <div key={sec.heading}>
+              <h2 className="mt-12 text-2xl text-obsidian">{sec.heading}</h2>
+              <div className="mt-4 max-w-2xl leading-relaxed text-slate">{sec.body}</div>
+            </div>
+          ))}
 
           <h2 className="mt-14 text-2xl text-obsidian">
             Services most relevant to {locality} businesses

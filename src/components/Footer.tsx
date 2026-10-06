@@ -1,8 +1,8 @@
 import Link from "next/link";
 import FooterLogoGesture from "./FooterLogoGesture";
 import { AREAS } from "@/lib/areas";
-import { SERVICES } from "@/lib/services";
-import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, EMAIL, GOOGLE_MAPS_EMBED_SRC, PHONE_DISPLAY, PHONE_TEL, SOCIALS } from "@/lib/site";
+import { SERVICE_GROUPS, getService } from "@/lib/services";
+import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, EMAIL, FIRM_REGISTRATION_NO, GBP_URL, GOOGLE_MAPS_EMBED_SRC, ICAI_MEMBERSHIP_NO, PHONE_DISPLAY, PHONE_TEL, SOCIALS } from "@/lib/site";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -43,13 +43,18 @@ export default function Footer() {
         <div>
           <p className="eyebrow text-xs text-slate">Services</p>
           <ul className="mt-4 space-y-2 text-sm text-slate">
-            {SERVICES.slice(0, 6).map((s) => (
-              <li key={s.slug}>
-                <Link href={`/${s.slug}`} className="hover:text-obsidian">
-                  {s.name}
-                </Link>
-              </li>
-            ))}
+            {SERVICE_GROUPS.map((group) => {
+              const hub = getService(group.slugs[0]);
+              return (
+                hub && (
+                  <li key={group.label}>
+                    <Link href={`/${hub.slug}`} className="hover:text-obsidian">
+                      {group.label}
+                    </Link>
+                  </li>
+                )
+              );
+            })}
           </ul>
         </div>
 
@@ -84,13 +89,39 @@ export default function Footer() {
             <li>{ADDRESS_FULL}</li>
             <li><a href={`tel:${PHONE_TEL}`} className="hover:text-obsidian">{PHONE_DISPLAY}</a></li>
             <li><a href={`mailto:${EMAIL}`} className="hover:text-obsidian">{EMAIL}</a></li>
+            <li><a href={GBP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-obsidian">Find us on Google Maps</a></li>
           </ul>
         </div>
       </div>
+      <nav aria-label="All services" className="border-t border-ash">
+        <div className="container-page grid grid-cols-2 gap-x-6 gap-y-8 py-12 sm:grid-cols-3 lg:grid-cols-7">
+          {SERVICE_GROUPS.map((group) => (
+            <div key={group.label}>
+              <p className="eyebrow text-xs text-slate">{group.label}</p>
+              <ul className="mt-3 space-y-1.5 text-xs text-slate">
+                {group.slugs.map(getService).map(
+                  (s) =>
+                    s && (
+                      <li key={s.slug}>
+                        <Link href={`/${s.slug}`} className="hover:text-obsidian">
+                          {s.name}
+                        </Link>
+                      </li>
+                    ),
+                )}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </nav>
       <div className="border-t border-ash">
         <div className="container-page flex flex-col gap-2 py-6 text-xs text-slate md:flex-row md:items-center md:justify-between">
           <p>© {year} C S Rushil &amp; Co. All rights reserved.</p>
-          <p>Chartered Accountants · {ADDRESS_SHORT}</p>
+          <p>
+            Chartered Accountants · {ADDRESS_SHORT}
+            {FIRM_REGISTRATION_NO && <> · ICAI FRN {FIRM_REGISTRATION_NO}</>}
+            {ICAI_MEMBERSHIP_NO && <> · M. No. {ICAI_MEMBERSHIP_NO}</>}
+          </p>
         </div>
       </div>
     </footer>

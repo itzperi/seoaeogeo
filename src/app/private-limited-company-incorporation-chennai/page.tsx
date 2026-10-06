@@ -5,14 +5,15 @@ import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
+import { getPostMeta, isPublished } from "@/lib/blog";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/private-limited-company-incorporation-chennai`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Private Limited Company Registration in Chennai | C S Rushil & Co." },
+  title: { absolute: "Private Limited Company Registration in Chennai" },
   description:
-    "Private limited company registration in Chennai and Anna Nagar: SPICe+ filing, DSC/DIN, MoA/AoA drafting and post-incorporation compliance by C S Rushil & Co., Chartered Accountants.",
+    "Private limited company registration in Chennai and Anna Nagar: SPICe+ filing, DSC, DIN, MoA/AoA and post-incorporation compliance by a CA firm.",
   alternates: { canonical: "/private-limited-company-incorporation-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -58,10 +59,27 @@ const FAQS = [
 const STEPS = [
   { name: "Digital Signature Certificate (DSC)", text: "We obtain Class 3 DSCs for all proposed directors — required to sign electronic MCA forms." },
   { name: "Name reservation", text: "We check name availability against the MCA and trademark database and reserve your company name via Part A of SPICe+." },
-  { name: "Drafting MoA & AoA", text: "We draft the Memorandum and Articles of Association defining your company's objects, share structure, and internal rules." },
-  { name: "SPICe+ filing", text: "We file the integrated SPICe+ (Part B) form with the Registrar of Companies, covering incorporation, PAN, TAN, EPFO, ESIC, and profession tax registration in one submission." },
+  { name: "Drafting e-MoA and e-AoA", text: "We draft the Memorandum (INC-33) and Articles (INC-34) around your actual business, with ESOP-ready Articles that already allow for an employee stock option scheme, share classes and investor rights." },
+  { name: "SPICe+ Part B and AGILE-PRO-S", text: "We file SPICe+ Part B with the Registrar of Companies, covering incorporation, DIN for new directors, PAN and TAN. The linked AGILE-PRO-S form registers the company with EPFO and ESIC, requests the bank account and, if you choose, applies for GST. Tamil Nadu professional tax is registered separately with the local body." },
   { name: "Certificate of Incorporation", text: "On approval, the ROC issues the Certificate of Incorporation along with your Corporate Identification Number (CIN), PAN, and TAN." },
   { name: "Post-incorporation compliance", text: "We assist with opening your current bank account, filing INC-20A (commencement of business), and appointing your first statutory auditor within 30 days." },
+];
+
+const KEY_FACTS = [
+  { label: "Typical time", value: "7–12 working days once documents are ready; about 3 weeks if you are collecting documents from scratch." },
+  { label: "Government form", value: "SPICe+ Part A (name) and Part B (incorporation) with AGILE-PRO-S, e-MoA (INC-33) and e-AoA (INC-34) on the MCA V3 portal." },
+  { label: "Minimum members", value: "2 directors and 2 shareholders (can be the same people); maximum 200 members. No minimum paid-up capital." },
+  { label: "Resident director", value: "At least one director who stayed in India for 182 days or more in the financial year (Section 149(3), Companies Act, 2013)." },
+  { label: "Who it suits", value: "Founders planning to raise equity, issue ESOPs, bid for larger contracts or scale beyond a partnership." },
+  { label: "Key deadlines", value: "First auditor within 30 days, share certificates within 60 days, INC-20A (commencement of business) within 180 days." },
+];
+
+const RELATED_POSTS = [
+  "spice-plus-incorporation-explained",
+  "private-limited-vs-llp-chennai-startups",
+  "post-incorporation-compliance-checklist",
+  "common-compliance-mistakes-chennai-startups",
+  "payroll-omr-startup-esop",
 ];
 
 const COMPARISON = [
@@ -72,6 +90,9 @@ const COMPARISON = [
 ];
 
 export default function IncorporationPage() {
+  const guides = RELATED_POSTS.map(getPostMeta).filter(
+    (p): p is NonNullable<typeof p> => Boolean(p) && isPublished(p!.date),
+  );
   return (
     <>
       <JsonLd
@@ -91,7 +112,12 @@ export default function IncorporationPage() {
         })}
       />
       <JsonLd data={speakableSchema(["#direct-answer"])} />
-      <Breadcrumbs items={[{ name: "Private Limited Company Registration", href: "/private-limited-company-incorporation-chennai" }]} />
+      <Breadcrumbs
+        items={[
+          { name: "Company Registration", href: "/company-registration-chennai" },
+          { name: "Private Limited Company Registration", href: "/private-limited-company-incorporation-chennai" },
+        ]}
+      />
       <PageHero
         reviewedPath="/private-limited-company-incorporation-chennai"
         eyebrow="Company Registration · Chennai"
@@ -102,6 +128,18 @@ export default function IncorporationPage() {
       <section className="bg-paper py-16">
         <div className="container-page grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-12">
+            <div className="overflow-hidden rounded-cards border border-carbon">
+              <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">Key facts</h2>
+              <dl className="divide-y divide-ash bg-paper">
+                {KEY_FACTS.map((f) => (
+                  <div key={f.label} className="grid grid-cols-1 gap-1 px-5 py-3 sm:grid-cols-[200px_1fr] sm:gap-4">
+                    <dt className="text-sm font-medium text-obsidian">{f.label}</dt>
+                    <dd className="text-sm text-slate">{f.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+
             <div>
               <h2 className="text-2xl text-obsidian">
                 What is Private Limited Company Incorporation?
@@ -120,6 +158,13 @@ export default function IncorporationPage() {
                 registered office can be your home address, a co-working space, or a
                 commercial address in areas like Anna Nagar, T. Nagar, Guindy, or OMR —
                 the MCA has no location restriction within India.
+              </p>
+              <p className="mt-4 leading-relaxed text-slate">
+                Not sure a private limited company is the right fit? Our{" "}
+                <Link href="/company-registration-chennai" className="text-royal-violet underline underline-offset-2">
+                  company registration in Chennai
+                </Link>{" "}
+                guide compares it with an LLP, OPC, partnership, proprietorship and Section 8 company.
               </p>
             </div>
 
@@ -213,6 +258,26 @@ export default function IncorporationPage() {
               </p>
             </div>
 
+            <div>
+              <h2 className="text-2xl text-obsidian">
+                Can you set up ESOPs and convert an existing business?
+              </h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                <strong className="text-obsidian">ESOP-ready Articles.</strong> If you expect to hire with stock options
+                or raise from angels, we draft Articles that already provide for an employee stock option scheme,
+                different share classes and standard investor rights. That saves a shareholder resolution and a fresh
+                MCA filing to amend the Articles just as your first round is closing.
+              </p>
+              <p className="mt-4 leading-relaxed text-slate">
+                <strong className="text-obsidian">Conversion from a proprietorship, partnership or LLP.</strong> A
+                proprietorship has no legal conversion route, so a new company is incorporated and takes over the
+                business through a business transfer agreement. A partnership firm or an LLP can register as a company
+                under Section 366 of the Companies Act, 2013, by filing URC-1 with SPICe+, so the same business
+                continues with partners becoming shareholders. In each case we move GST, Udyam, licences and bank
+                accounts to the company&apos;s PAN.
+              </p>
+            </div>
+
             <div id="anna-nagar">
               <h2 className="text-2xl text-obsidian">
                 Private limited company registration in Anna Nagar
@@ -273,7 +338,10 @@ export default function IncorporationPage() {
                 Related services
               </h3>
               <ul className="mt-4 space-y-3 text-sm">
-                <li><Link href="/formation-of-business-entity" className="text-royal-violet hover:underline">Formation of Business Entity (all structures)</Link></li>
+                <li><Link href="/company-registration-chennai" className="text-royal-violet hover:underline">Company Registration (all structures)</Link></li>
+                <li><Link href="/llp-registration-chennai" className="text-royal-violet hover:underline">LLP Registration</Link></li>
+                <li><Link href="/opc-registration-chennai" className="text-royal-violet hover:underline">OPC Registration</Link></li>
+                <li><Link href="/startup-india-registration-chennai" className="text-royal-violet hover:underline">Startup India (DPIIT) Recognition</Link></li>
                 <li><Link href="/roc-compliances" className="text-royal-violet hover:underline">ROC Compliances</Link></li>
                 <li><Link href="/goods-and-services-tax" className="text-royal-violet hover:underline">GST Registration</Link></li>
                 <li><Link href="/virtual-cfo-services" className="text-royal-violet hover:underline">Virtual CFO Services</Link></li>
@@ -283,6 +351,23 @@ export default function IncorporationPage() {
         </div>
       </section>
 
+      {guides.length > 0 && (
+        <section className="bg-paper pb-12">
+          <div className="container-page">
+            <h2 className="text-2xl text-obsidian">Related guides</h2>
+            <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
+              {guides.map((g) => (
+                <li key={g.slug}>
+                  <Link href={`/blog/${g.slug}`} className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                    {g.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
+
       <FAQSection items={FAQS} />
 
       <section className="bg-paper py-12">
@@ -290,7 +375,7 @@ export default function IncorporationPage() {
           <h2 className="text-xl text-obsidian">People also ask</h2>
           <ul className="mt-4 space-y-2">
             <li>
-              <Link href="/formation-of-business-entity" className="text-sm font-medium text-royal-violet underline underline-offset-2">
+              <Link href="/company-registration-chennai" className="text-sm font-medium text-royal-violet underline underline-offset-2">
                 Should I choose Private Limited or a different entity type?
               </Link>
             </li>

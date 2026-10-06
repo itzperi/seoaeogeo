@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "post-incorporation-compliance-checklist",
-  title: "Post Incorporation Compliance Checklist for New Chennai Companies",
+  title: "Post-Incorporation Compliance Checklist for Chennai Firms",
   description:
     "Getting the incorporation certificate feels like the finish line, but it's actually the start of compliance steps with specific windows and real penalties.",
   date: "2026-09-19",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>Opening the bank account and capital infusion</h2>
 
       <p>
-        A current account needs to be opened in the company&apos;s name, and subscribers to the memorandum need to bring in their subscribed share capital within the prescribed period. This has to be reflected properly and reported to the Registrar of Companies through a declaration of commencement of business before the company can legally begin operations in most cases.
+        A current account needs to be opened in the company&apos;s name, and subscribers to the memorandum need to bring in their subscribed share capital within the prescribed period. This has to be reflected properly and reported to the Registrar of Companies (part of routine <Link href="/roc-compliances">ROC compliance</Link>) through a declaration of commencement of business before the company can legally begin operations in most cases.
       </p>
 
       <h2>Statutory registers and first board meeting</h2>
@@ -32,13 +33,13 @@ export default function Body() {
       <h2>Tax and regulatory registrations</h2>
 
       <p>
-        Beyond the certificate of incorporation, a new company usually needs a PAN and TAN (often issued alongside incorporation now), GST registration if turnover or activity requires it, Shops and Establishment registration for the Chennai location, and Professional Tax registration for the state, each with its own timeline and department.
+        Beyond the certificate of incorporation, a new company usually needs a PAN and TAN (often issued alongside incorporation now), <Link href="/gst-registration-chennai">GST registration</Link> if turnover or activity requires it, Shops and Establishment registration for the Chennai location, and Professional Tax registration for the state, each with its own timeline and department.
       </p>
 
       <h2>Ongoing filings that start immediately</h2>
 
       <p>
-        Even in the very first year, a new company has filing obligations: income tax return, annual filings with the Registrar of Companies once the financial year closes, and TDS returns if the company has employees or makes payments subject to deduction. None of these wait for the company to become profitable or active.
+        Even in the very first year, a new company has filing obligations: income tax return, <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/aoc-4-and-linked-filings.html" target="_blank" rel="noopener noreferrer">annual filings with the Registrar of Companies</a> once the financial year closes, and TDS returns if the company has employees or makes payments subject to deduction. None of these wait for the company to become profitable or active.
       </p>
 
       <h2>A practical checklist for the first ninety days</h2>
@@ -48,7 +49,7 @@ export default function Body() {
         <li>File the declaration of commencement of business within the deadline</li>
         <li>Hold the first board meeting and formally appoint statutory auditors</li>
         <li>Complete PAN, TAN, GST, Shops and Establishment, and Professional Tax registrations as applicable</li>
-        <li>Set up a compliance calendar covering the full first financial year</li>
+        <li>Set up a compliance calendar covering the full first financial year (an <Link href="/annual-compliance-package">annual compliance package</Link> bundles these filings)</li>
       </ul>
 
       <p>

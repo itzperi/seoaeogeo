@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "payroll-ambattur-factory-workforce",
-  title: "The Payroll Compliance Gap That Shows Up Most in Ambattur's Factory Workforce",
+  title: "Payroll Compliance Gap in Ambattur's Factory Workforce",
   description:
     "Contract and casual labour arrangements common in Ambattur's manufacturing units create a specific PF and ESI compliance gap most factories don't notice.",
   date: "2026-09-26",
@@ -32,11 +33,11 @@ export default function Body() {
       <h2>Where this actually gets caught</h2>
 
       <p>
-        A labour inspection or an EPFO/ESIC compliance audit is where this gap typically surfaces, well after the exposure has accumulated across multiple production cycles — considerably more costly to resolve retroactively than building the check into contractor onboarding from the start.
+        A labour inspection or an <a href="https://www.epfo.gov.in/" target="_blank" rel="noopener noreferrer">EPFO</a>/ESIC compliance audit is where this gap typically surfaces, well after the exposure has accumulated across multiple production cycles — considerably more costly to resolve retroactively than building the check into contractor onboarding from the start. For companies, the annual <Link href="/statutory-audit-chennai">statutory audit</Link> is another point where irregular PF and ESI deposits can be flagged.
       </p>
 
       <p>
-        If your Ambattur manufacturing unit uses contract or casual labour and you&apos;re not certain the PF/ESI position is fully compliant, C S Rushil &amp; Co. can review your actual exposure. Book a free consultation.
+        If your Ambattur manufacturing unit uses contract or casual labour and you&apos;re not certain the PF/ESI position is fully compliant, C S Rushil &amp; Co.&apos;s <Link href="/payroll-services-chennai">payroll compliance</Link> team can review your actual exposure. Book a free consultation.
       </p>
     </>
   );

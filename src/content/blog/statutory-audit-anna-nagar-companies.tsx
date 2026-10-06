@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "statutory-audit-anna-nagar-companies",
-  title: "Your Anna Nagar Company's First Statutory Audit: What Actually Slows It Down",
+  title: "First Statutory Audit in Anna Nagar: What Slows It Down",
   description:
     "It's rarely the audit itself that delays a first-time statutory audit for a new Anna Nagar company — it's three specific, avoidable gaps in the books.",
   date: "2026-09-26",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        We handle a steady stream of first-time statutory audits for companies incorporated locally in Anna Nagar &mdash; often small manufacturers or trading businesses that registered as a private limited company a year or two ago and are now facing their first audit. The pattern that slows these down is almost always the same three things, and none of them are actually about the audit.
+        We handle a steady stream of first-time statutory audits for companies incorporated locally in Anna Nagar &mdash; often small manufacturers or trading businesses that registered as a <Link href="/private-limited-company-incorporation-chennai">private limited company</Link> a year or two ago and are now facing their first audit. The pattern that slows these down is almost always the same three things, and none of them are actually about the audit.
       </p>
 
       <h2>Fixed assets without a register</h2>
@@ -38,11 +39,11 @@ export default function Body() {
       <h2>None of this is complicated to fix in advance</h2>
 
       <p>
-        A fixed asset register, documented director transactions, and monthly reconciliation are not sophisticated accounting &mdash; they&apos;re basic hygiene that most first-time founders simply haven&apos;t been told matters until the audit is already underway. Getting these three things in order before your auditor arrives is the single biggest lever you have over how smooth the process is.
+        A fixed asset register, documented director transactions, and monthly reconciliation are not sophisticated accounting &mdash; they&apos;re basic hygiene (the kind regular <Link href="/bookkeeping-services-chennai">bookkeeping services in Chennai</Link> cover) that most first-time founders simply haven&apos;t been told matters until the audit is already underway. Getting these three things in order before your auditor arrives is the single biggest lever you have over how smooth the process is.
       </p>
 
       <p>
-        If your Anna Nagar company is approaching its first statutory audit, C S Rushil &amp; Co. can do a quick pre-audit review to flag these gaps before fieldwork starts, not during it. Book a free consultation.
+        If your Anna Nagar company is approaching its first statutory audit, C S Rushil &amp; Co. can do a quick pre-audit review as part of our <Link href="/statutory-audit-chennai">statutory audit service in Chennai</Link> to flag these gaps before fieldwork starts, not during it. Book a free consultation.
       </p>
     </>
   );

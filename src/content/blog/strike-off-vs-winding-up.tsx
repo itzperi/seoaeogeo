@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "strike-off-vs-winding-up",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>What strike off actually means</h2>
 
       <p>
-        Strike off is a simplified route available to a company that has no assets, no liabilities, and has not carried on business or has been inactive for the period specified under the Companies Act. The company applies to the Registrar of Companies directly, and once approved, the company&apos;s name is removed from the register, effectively closing it. This is faster and considerably cheaper than winding up.
+        Strike off is a simplified route available to a company that has no assets, no liabilities, and has not carried on business or has been inactive for the period specified under the Companies Act. The company applies to the Registrar of Companies directly (see the <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/compliance-filing.html" target="_blank" rel="noopener noreferrer">MCA FAQs on compliance filings, including strike-off forms</a>), and once approved, the company&apos;s name is removed from the register, effectively closing it. This is faster and considerably cheaper than winding up.
       </p>
 
       <h2>What winding up involves</h2>
@@ -38,7 +39,7 @@ export default function Body() {
       <h2>What needs to be cleared before either process</h2>
 
       <p>
-        Regardless of which route applies, outstanding statutory filings, pending tax returns, and unpaid dues generally need to be regularized before the Registrar or tribunal will process the closure. A company with years of pending annual filings cannot simply skip straight to strike off without first addressing that backlog in most cases.
+        Regardless of which route applies, outstanding statutory filings (see our <Link href="/roc-compliances">ROC compliance services</Link>), pending tax returns, and unpaid dues generally need to be regularized before the Registrar or tribunal will process the closure. A company with years of pending <Link href="/annual-compliance-package">annual compliance filings</Link> cannot simply skip straight to strike off without first addressing that backlog in most cases.
       </p>
 
       <h2>A short decision checklist</h2>

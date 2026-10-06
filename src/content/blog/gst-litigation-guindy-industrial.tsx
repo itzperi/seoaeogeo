@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "gst-litigation-guindy-industrial",
-  title: "GST Notices at Guindy's Industrial Estate Usually Trace Back to One Thing",
+  title: "GST Notices in Guindy Industrial Estate: The ITC Pattern",
   description:
     "Guindy's manufacturing and engineering companies see a specific ITC mismatch pattern tied to how larger buyers structure their own GST filings.",
   date: "2026-09-26",
@@ -32,11 +33,11 @@ export default function Body() {
       <h2>Why identifying which pattern applies matters</h2>
 
       <p>
-        A manufacturing-side ITC mismatch and a services-side reverse charge question call for genuinely different documentation in the reply. Knowing which type of business you actually are &mdash; not just responding generically &mdash; determines whether the first reply resolves it or triggers a second round of correspondence.
+        A manufacturing-side ITC mismatch and a services-side reverse charge question call for genuinely different documentation in the reply. Knowing which type of business you actually are &mdash; not just responding generically &mdash; determines whether the first reply resolves it or triggers a second round of correspondence that can eventually lead to <Link href="/gst-litigation-chennai">GST litigation</Link>.
       </p>
 
       <p>
-        If your Guindy business has received a GST notice and you&apos;re not sure which pattern it fits, C S Rushil &amp; Co. can trace the actual source before your reply deadline. Book a free consultation.
+        If your Guindy business has received a GST notice and you&apos;re not sure which pattern it fits, C S Rushil &amp; Co. can trace the actual source and prepare your <Link href="/gst-notice-reply-chennai">GST notice reply</Link> before the deadline. Book a free consultation.
       </p>
     </>
   );

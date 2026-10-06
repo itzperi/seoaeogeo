@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "statutory-audit-checklist",
@@ -31,7 +32,7 @@ export default function Body() {
   return (
     <>
       <p>
-        Most statutory audit delays don&apos;t come from complex accounting
+        Most <Link href="/statutory-audit-chennai">statutory audit</Link> delays don&apos;t come from complex accounting
         issues — they come from documents nobody prepared in advance. Here is
         the actual checklist auditors work through, so you can have everything
         ready before fieldwork begins.
@@ -49,7 +50,7 @@ export default function Body() {
       <h2>Statutory and compliance documents</h2>
       <ul>
         <li>Previous year&apos;s audited financial statements and audit report</li>
-        <li>GST returns filed during the year, reconciled against books</li>
+        <li>GST returns filed during the year, reconciled against books (see our <Link href="/gst-return-filing-chennai">GST return filing service</Link> if these are behind)</li>
         <li>TDS returns and challans</li>
         <li>Board meeting minutes and resolutions passed during the year</li>
         <li>Statutory registers (members, directors, charges)</li>

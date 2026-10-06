@@ -7,14 +7,17 @@ import {
   BUSINESS_NAME,
   EMAIL,
   FOUNDER_CREDENTIALS,
+  FOUNDER_LINKEDIN,
   FOUNDER_NAME,
   GBP_URL,
   GEO,
+  ICAI_MEMBERSHIP_NO,
   LANGUAGES_SPOKEN,
   PHONE_TEL,
   SITE_URL,
   SOCIALS,
   YEAR_FOUNDED,
+  YEAR_QUALIFIED,
 } from "./site";
 
 const DAY_MAP: Record<string, string[]> = {
@@ -77,6 +80,18 @@ export function organizationSchema() {
       ...AREAS.map((area) => ({ "@type": "Place" as const, name: `${area.name}, Chennai` })),
     ],
     openingHoursSpecification: openingHoursSpecification(),
+    knowsAbout: [
+      "Company registration",
+      "LLP registration",
+      "Goods and Services Tax (GST)",
+      "Income tax",
+      "Statutory audit",
+      "Tax audit",
+      "Transfer pricing",
+      "FEMA and RBI compliance",
+      "NRI taxation",
+      "ROC compliance",
+    ],
     hasMap: GBP_URL,
     sameAs: [SOCIALS.linkedin, SOCIALS.instagram, GBP_URL],
   };
@@ -94,11 +109,22 @@ export function personSchema() {
     jobTitle: "Founder & Managing Partner, Chartered Accountant",
     description: FOUNDER_CREDENTIALS,
     worksFor: { "@id": `${SITE_URL}/#organization` },
+    sameAs: [FOUNDER_LINKEDIN],
     memberOf: {
       "@type": "Organization",
-      name: "Institute of Chartered Accountants of India (ICAI)",
+      name: "The Institute of Chartered Accountants of India",
       url: "https://www.icai.org/",
     },
+    hasCredential: {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "Professional qualification",
+      name: "Chartered Accountant",
+      recognizedBy: { "@type": "Organization", name: "The Institute of Chartered Accountants of India", url: "https://www.icai.org/" },
+      ...(YEAR_QUALIFIED && { dateCreated: YEAR_QUALIFIED }),
+    },
+    ...(ICAI_MEMBERSHIP_NO && {
+      identifier: { "@type": "PropertyValue", propertyID: "ICAI membership number", value: ICAI_MEMBERSHIP_NO },
+    }),
   };
 }
 

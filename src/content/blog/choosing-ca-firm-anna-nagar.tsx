@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "choosing-ca-firm-anna-nagar",
@@ -37,7 +38,7 @@ export default function Body() {
       <h2>Look at what they actually specialize in, not just general practice</h2>
 
       <p>
-        Many CA firms describe themselves broadly as full service, but ask specifically about their experience with your situation, whether that&apos;s GST litigation, company incorporation, NRI taxation, or virtual CFO support. A firm that handles your exact type of work regularly will move faster and catch issues a generalist might miss.
+        Many CA firms describe themselves broadly as full service, but ask specifically about their experience with your situation, whether that&apos;s <Link href="/gst-litigation-chennai">GST litigation</Link>, <Link href="/company-registration-chennai">company incorporation</Link>, NRI taxation, or virtual CFO support. A firm that handles your exact type of work regularly will move faster and catch issues a generalist might miss.
       </p>
 
       <h2>Responsiveness matters more than most people initially weigh it</h2>
@@ -61,7 +62,7 @@ export default function Body() {
       <h2>Ask about their track record with notices and disputes</h2>
 
       <p>
-        Anyone can file a straightforward return. What separates firms is how they handle things going wrong, a GST notice, a mismatch, an audit query. Ask directly about their experience representing clients through disputes, not just routine filing, since this is where the value of an experienced firm shows up most clearly.
+        Anyone can file a straightforward return. What separates firms is how they handle things going wrong, a <Link href="/gst-notice-reply-chennai">GST notice</Link>, a mismatch, an audit query. Ask directly about their experience representing clients through disputes, not just routine filing, since this is where the value of an experienced firm shows up most clearly.
       </p>
 
       <h2>A practical checklist when evaluating firms</h2>

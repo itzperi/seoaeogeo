@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "annual-roc-filing-calendar",
-  title: "Annual ROC Filing Deadlines: A Calendar for Chennai Companies",
+  title: "Annual ROC Filing Deadlines: Calendar for Chennai Companies",
   description:
     "ROC filings follow a predictable annual cycle, but the forms and deadlines are scattered enough that even organized Chennai companies miss one.",
   date: "2026-09-19",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>The filings that happen every year without exception</h2>
 
       <p>
-        Every company needs to file its financial statements and annual return with the Registrar after the annual general meeting is held, and hold that annual general meeting within the timeline prescribed after the financial year closes. These two filings are the backbone of annual ROC compliance and apply regardless of whether the company did any business during the year.
+        Every company needs to file its financial statements (<a href="https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/aoc-4-and-linked-filings.html" target="_blank" rel="noopener noreferrer">AOC-4</a>) and annual return (<a href="https://www.mca.gov.in/content/mca/global/en/help-faq/annual-filing/mgt-7-and-mgt-7a.html" target="_blank" rel="noopener noreferrer">MGT-7 or MGT-7A</a>) with the Registrar after the annual general meeting is held, and hold that annual general meeting within the timeline prescribed after the financial year closes. These two filings are the backbone of annual <Link href="/roc-compliances">ROC compliance</Link> and apply regardless of whether the company did any business during the year.
       </p>
 
       <h2>Filings that depend on specific events</h2>
@@ -32,7 +33,7 @@ export default function Body() {
       <h2>Auditor related filings</h2>
 
       <p>
-        Appointment or reappointment of the statutory auditor also needs to be reported to the Registrar within a set window after the annual general meeting, a filing that is easy to overlook since it feels like an internal decision rather than something requiring a separate ROC form.
+        Appointment or reappointment of the <Link href="/statutory-audit-chennai">statutory auditor</Link> also needs to be reported to the Registrar within a set window after the annual general meeting, a filing that is easy to overlook since it feels like an internal decision rather than something requiring a separate ROC form.
       </p>
 
       <h2>Why small companies underestimate this</h2>
@@ -51,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If keeping track of ROC deadlines across the year feels like more than your team can manage internally, C S Rushil &amp; Co. maintains a compliance calendar for client companies in Chennai and files everything on time. Reach out for a free consultation.
+        If keeping track of ROC deadlines across the year feels like more than your team can manage internally, C S Rushil &amp; Co. maintains a compliance calendar for client companies in Chennai through our <Link href="/annual-compliance-package">annual compliance package</Link> and files everything on time. Reach out for a free consultation.
       </p>
     </>
   );

@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "documents-checklist-before-auditor-visit",
@@ -26,13 +27,13 @@ export default function Body() {
       <h2>Sales and purchase documentation</h2>
 
       <p>
-        All sales invoices and purchase bills for the year, organized chronologically or by month, along with any credit or debit notes issued. If you are GST registered, having your GSTR 1, GSTR 3B, and GSTR 2B for the full year ready allows the auditor to reconcile revenue and input credit against your books quickly rather than requesting it midway through fieldwork.
+        All sales invoices and purchase bills for the year, organized chronologically or by month, along with any credit or debit notes issued. If you are GST registered, having your <Link href="/gst-return-filing-chennai">GST returns</Link> (GSTR 1, GSTR 3B, and GSTR 2B) for the full year ready allows the auditor to reconcile revenue and input credit against your books quickly rather than requesting it midway through fieldwork.
       </p>
 
       <h2>Payroll and statutory compliance records</h2>
 
       <p>
-        Salary registers, TDS deducted on salaries and payments to vendors, along with proof of TDS deposited and returns filed, PF and ESI records if applicable, and Professional Tax payment records. Auditors specifically check whether statutory dues were deducted and deposited on time, so having this organized avoids repeated follow up requests.
+        <Link href="/payroll-services-chennai">Salary registers</Link>, TDS deducted on salaries and payments to vendors, along with proof of TDS deposited and returns filed (see the <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/tds-compliance" target="_blank" rel="noopener noreferrer">income tax portal guide to TDS compliance</a>), PF and ESI records if applicable, and Professional Tax payment records. Auditors specifically check whether statutory dues were deducted and deposited on time, so having this organized avoids repeated follow up requests.
       </p>
 
       <h2>Fixed assets and loans</h2>
@@ -52,7 +53,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If preparing for your annual audit feels overwhelming or you are not sure what your auditor will actually ask for, C S Rushil &amp; Co. in Anna Nagar can walk you through exactly what to organize before the visit. Book a free consultation.
+        If preparing for your annual <Link href="/statutory-audit-chennai">statutory audit</Link> feels overwhelming or you are not sure what your auditor will actually ask for, C S Rushil &amp; Co. in Anna Nagar can walk you through exactly what to organize before the visit. Book a free consultation.
       </p>
     </>
   );

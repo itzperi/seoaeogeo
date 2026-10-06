@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "bookkeeping-adyar-clinics",
-  title: "Why Standard Bookkeeping Templates Don't Work for an Adyar Clinic",
+  title: "Why Standard Bookkeeping Doesn't Fit an Adyar Clinic",
   description:
     "A generic bookkeeping setup misses how a clinic actually earns and spends. Adyar's concentration of medical practices needs a genuinely different structure.",
   date: "2026-09-26",
@@ -26,7 +27,7 @@ export default function Body() {
       <h2>Adyar&apos;s concentration of practices makes this a recurring pattern</h2>
 
       <p>
-        Adyar has a genuine density of independent doctors, consultants, and clinics, which means this specific bookkeeping mismatch shows up repeatedly rather than being a one-off. A practice management system alone often isn&apos;t built for proper financial reporting, and a standard business bookkeeping setup isn&apos;t built for a clinic&apos;s revenue structure — the gap sits between the two.
+        Adyar has a genuine density of independent doctors, consultants, and clinics, which means this specific bookkeeping mismatch shows up repeatedly rather than being a one-off. A practice management system alone often isn&apos;t built for <Link href="/accounting-outsourcing-chennai">proper financial reporting</Link>, and a standard business bookkeeping setup isn&apos;t built for a clinic&apos;s revenue structure — the gap sits between the two.
       </p>
 
       <h2>What a properly structured setup actually shows</h2>
@@ -36,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you run a clinic or medical practice in Adyar and your current bookkeeping doesn&apos;t break down revenue this way, C S Rushil &amp; Co. can set up a structure that actually fits how a practice earns. Book a free consultation.
+        If you run a clinic or medical practice in Adyar and your current bookkeeping doesn&apos;t break down revenue this way, C S Rushil &amp; Co. can set up a <Link href="/bookkeeping-services-chennai">bookkeeping structure</Link> that actually fits how a practice earns. Book a free consultation.
       </p>
     </>
   );

@@ -43,7 +43,7 @@ export default async function BlogPostPage({
   const faqs = mod.meta.faqs;
 
   return (
-    <BlogPostLayout slug={slug} title={meta.title} description={meta.description} date={meta.date} faqs={faqs}>
+    <BlogPostLayout slug={slug} title={meta.title} description={meta.description} date={meta.date} updated={meta.updated} faqs={faqs}>
       <Body />
     </BlogPostLayout>
   );

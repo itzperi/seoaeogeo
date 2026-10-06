@@ -1,4 +1,5 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "add-remove-director",
@@ -20,7 +21,7 @@ export default function Body() {
       <h2>Adding a new director</h2>
 
       <p>
-        Adding a director requires the consent of the person being appointed, a board resolution approving the appointment, and filing the appropriate form with the Registrar of Companies within the prescribed time limit after the resolution is passed. The new director also needs a Director Identification Number if they don&apos;t already hold one, which itself requires identity and address proof along with a digital signature certificate.
+        Adding a director requires the consent of the person being appointed, a board resolution approving the appointment, and filing the appropriate form (see the <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/e-filing-help-kits/company-efilings/din-related-forms.html" target="_blank" rel="noopener noreferrer">MCA help kit on DIR forms</a>) with the Registrar of Companies within the prescribed time limit after the resolution is passed. The new director also needs a Director Identification Number if they don&apos;t already hold one, which itself requires identity and address proof along with a <Link href="/digital-signature-certificate-chennai">digital signature certificate</Link>.
       </p>
 
       <h2>Removing a director</h2>
@@ -32,7 +33,7 @@ export default function Body() {
       <h2>Why timing and paperwork both matter</h2>
 
       <p>
-        Filing the required ROC form late attracts additional fees that increase the longer the delay continues, and in some cases significant delay can raise compliance flags on the company more broadly. Beyond the ROC filing, the change also needs to be reflected in board minutes, the register of directors, and any related agreements like a shareholders agreement that names specific individuals as directors.
+        Filing the required <Link href="/roc-compliances">ROC compliance form</Link> late attracts additional fees that increase the longer the delay continues, and in some cases significant delay can raise compliance flags on the company more broadly. Beyond the ROC filing, the change also needs to be reflected in board minutes, the register of directors, and any related agreements like a shareholders agreement that names specific individuals as directors.
       </p>
 
       <h2>Common mistakes companies make</h2>

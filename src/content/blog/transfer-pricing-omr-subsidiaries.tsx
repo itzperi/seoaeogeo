@@ -1,8 +1,9 @@
 import type { BlogPostMeta } from "@/lib/blog";
+import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "transfer-pricing-omr-subsidiaries",
-  title: "The Transfer Pricing Blind Spot for OMR's Indian Subsidiaries",
+  title: "Transfer Pricing Blind Spot for OMR's Indian Subsidiaries",
   description:
     "IT subsidiaries along OMR paying management fees or royalties to a foreign parent often don't realize Form 3CEB applies from the very first transaction.",
   date: "2026-09-26",
@@ -14,7 +15,7 @@ export default function Body() {
   return (
     <>
       <p>
-        An IT services subsidiary along OMR, set up two years ago as the Indian arm of a US-based parent, had never filed Form 3CEB. The finance team assumed transfer pricing rules only mattered once the company hit a certain revenue scale &mdash; it doesn&apos;t work that way for international transactions.
+        An IT services subsidiary along OMR, set up two years ago as the Indian arm of a US-based parent, had never filed <a href="https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/income-tax-forms" target="_blank" rel="noopener noreferrer">Form 3CEB</a>. The finance team assumed <Link href="/transfer-pricing-audit">transfer pricing</Link> rules only mattered once the company hit a certain revenue scale &mdash; it doesn&apos;t work that way for international transactions.
       </p>
 
       <h2>There&apos;s no minimum value for an international transaction</h2>
@@ -36,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your OMR-based subsidiary has intercompany transactions with a foreign parent and hasn&apos;t filed Form 3CEB, C S Rushil &amp; Co. can assess your actual exposure and get documentation in place. Book a free consultation.
+        If your OMR-based subsidiary has intercompany transactions with a foreign parent and hasn&apos;t filed Form 3CEB, C S Rushil &amp; Co. can assess your actual exposure and get documentation in place as part of our <Link href="/india-subsidiary-compliance-cfo">India subsidiary compliance support</Link>. Book a free consultation.
       </p>
     </>
   );
