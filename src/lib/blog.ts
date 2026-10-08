@@ -19,6 +19,66 @@ export type BlogPostModule = {
 // Static registry — Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
+  "private-limited-company-registration-documents": () =>
+    import("@/content/blog/private-limited-company-registration-documents"),
+  "company-name-rejection-reasons": () =>
+    import("@/content/blog/company-name-rejection-reasons"),
+  "tamil-nadu-stamp-duty-company-incorporation": () =>
+    import("@/content/blog/tamil-nadu-stamp-duty-company-incorporation"),
+  "government-fees-company-registration": () =>
+    import("@/content/blog/government-fees-company-registration"),
+  "nri-director-private-limited-company": () =>
+    import("@/content/blog/nri-director-private-limited-company"),
+  "foreign-national-director-indian-company": () =>
+    import("@/content/blog/foreign-national-director-indian-company"),
+  "registered-office-at-home-company": () =>
+    import("@/content/blog/registered-office-at-home-company"),
+  "company-registration-timeline-day-by-day": () =>
+    import("@/content/blog/company-registration-timeline-day-by-day"),
+  "din-and-dsc-for-company-directors": () =>
+    import("@/content/blog/din-and-dsc-for-company-directors"),
+  "moa-objects-clause-drafting": () =>
+    import("@/content/blog/moa-objects-clause-drafting"),
+  "authorised-vs-paid-up-capital": () =>
+    import("@/content/blog/authorised-vs-paid-up-capital"),
+  "inc-20a-commencement-of-business": () =>
+    import("@/content/blog/inc-20a-commencement-of-business"),
+  "first-board-meeting-checklist": () =>
+    import("@/content/blog/first-board-meeting-checklist"),
+  "first-auditor-appointment-adt-1": () =>
+    import("@/content/blog/first-auditor-appointment-adt-1"),
+  "opening-current-account-new-company": () =>
+    import("@/content/blog/opening-current-account-new-company"),
+  "convert-proprietorship-to-private-limited": () =>
+    import("@/content/blog/convert-proprietorship-to-private-limited"),
+  "convert-partnership-firm-to-llp": () =>
+    import("@/content/blog/convert-partnership-firm-to-llp"),
+  "convert-llp-to-private-limited": () =>
+    import("@/content/blog/convert-llp-to-private-limited"),
+  "opc-to-private-limited-conversion": () =>
+    import("@/content/blog/opc-to-private-limited-conversion"),
+  "private-limited-company-for-ecommerce-sellers": () =>
+    import("@/content/blog/private-limited-company-for-ecommerce-sellers"),
+  "company-registration-for-it-startups-chennai": () =>
+    import("@/content/blog/company-registration-for-it-startups-chennai"),
+  "company-registration-for-manufacturers-tamil-nadu": () =>
+    import("@/content/blog/company-registration-for-manufacturers-tamil-nadu"),
+  "share-allotment-after-incorporation": () =>
+    import("@/content/blog/share-allotment-after-incorporation"),
+  "esop-ready-articles-for-startups": () =>
+    import("@/content/blog/esop-ready-articles-for-startups"),
+  "shareholders-agreement-founders": () =>
+    import("@/content/blog/shareholders-agreement-founders"),
+  "company-registration-mistakes-founders-make": () =>
+    import("@/content/blog/company-registration-mistakes-founders-make"),
+  "gst-registration-after-company-incorporation": () =>
+    import("@/content/blog/gst-registration-after-company-incorporation"),
+  "agile-pro-s-pan-tan-epfo-esic": () =>
+    import("@/content/blog/agile-pro-s-pan-tan-epfo-esic"),
+  "private-limited-company-penalties-non-compliance": () =>
+    import("@/content/blog/private-limited-company-penalties-non-compliance"),
+  "section-140-startup-tax-holiday": () =>
+    import("@/content/blog/section-140-startup-tax-holiday"),
   "how-to-choose-a-chartered-accountant-in-chennai": () =>
     import("@/content/blog/how-to-choose-a-chartered-accountant-in-chennai"),
   "gst-show-cause-notice-first-48-hours": () =>
@@ -125,6 +185,276 @@ export type BlogSlug = keyof typeof modules;
 // export by convention; duplicated here (rather than importing every module
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
+  {
+    slug: "private-limited-company-registration-documents",
+    title: "Private Limited Company Registration: Documents Checklist",
+    description:
+      "Documents needed to register a private limited company: resident and NRI directors, foreign subscribers, registered office proof, and common name mismatches.",
+    date: "2026-10-08",
+    excerpt:
+      "A practical SPICe+ document checklist: director KYC, attestation for foreign subscribers, registered office proof, and the mismatches behind rejections.",
+  },
+  {
+    slug: "company-name-rejection-reasons",
+    title: "Why the MCA Rejects Company Names (and How to Avoid It)",
+    description:
+      "Why company names get rejected in SPICe+ Part A: identical names, trademark conflicts, restricted words and naming rules, plus how to pick two strong options.",
+    date: "2026-10-13",
+    excerpt:
+      "Identical names, trademark clashes, restricted words and generic descriptive names: why SPICe+ Part A name applications fail, and how to avoid it.",
+  },
+  {
+    slug: "tamil-nadu-stamp-duty-company-incorporation",
+    title: "Stamp Duty on Company Incorporation in Tamil Nadu",
+    description:
+      "How stamp duty on the MoA and AoA works for companies registered in Tamil Nadu, how SPICe+ computes and collects it, and how authorised capital affects it.",
+    date: "2026-10-16",
+    excerpt:
+      "Stamp duty on the MoA and AoA is a state levy. Here is how it works for a Tamil Nadu company, how SPICe+ collects it, and why authorised capital matters.",
+  },
+  {
+    slug: "government-fees-company-registration",
+    title: "Government Fees for Company Registration in India",
+    description:
+      "The statutory costs of registering a company: MCA filing fees, the zero-fee band, name reservation, PAN and TAN, stamp duty and DSC. Government charges only.",
+    date: "2026-10-20",
+    excerpt:
+      "A breakdown of the statutory, government-side costs of incorporating a company: MCA filing fee, name reservation, PAN, TAN, stamp duty and DSC.",
+  },
+  {
+    slug: "nri-director-private-limited-company",
+    title: "NRI as Director of an Indian Private Limited Company",
+    description:
+      "How NRIs can be directors and shareholders of an Indian private limited company: DIN, attested documents, the 182-day resident director rule and FDI reporting.",
+    date: "2026-10-23",
+    excerpt:
+      "NRIs can be directors and shareholders of an Indian company. Here is how DIN, document attestation, the resident director rule and FDI reporting work.",
+  },
+  {
+    slug: "foreign-national-director-indian-company",
+    title: "Foreign Nationals as Directors of an Indian Company",
+    description:
+      "How foreign nationals can be directors of an Indian company: apostille vs consular attestation, business visa, DIN, FDI routes and land-border country rules.",
+    date: "2026-10-27",
+    excerpt:
+      "Foreign nationals can be directors and shareholders of Indian companies. Here is how attestation, business visas, FDI routes and Press Note 3 rules apply.",
+  },
+  {
+    slug: "registered-office-at-home-company",
+    title: "Can Your Home Be a Company's Registered Office?",
+    description:
+      "Using a home, rented flat or co-working space as a company's registered office: the NOC, utility bill and rent agreement MCA expects, and when INC-22 applies.",
+    date: "2026-10-30",
+    excerpt:
+      "A home, rented flat or co-working desk can serve as a registered office. Here is the proof MCA expects, when INC-22 applies, and the mistakes to avoid.",
+  },
+  {
+    slug: "company-registration-timeline-day-by-day",
+    title: "Company Registration Timeline: A Day-by-Day Guide",
+    description:
+      "A realistic 7 to 12 working day timeline for registering a private limited company through SPICe+, step by step, and the common issues that cause delays.",
+    date: "2026-11-03",
+    excerpt:
+      "How long does company registration really take? A step-by-step 7 to 12 working day timeline for SPICe+, plus the delays founders can control.",
+  },
+  {
+    slug: "din-and-dsc-for-company-directors",
+    title: "DIN and DSC for Company Directors: A Practical Guide",
+    description:
+      "What a Director Identification Number and a Class 3 Digital Signature Certificate are, how to get them, validity, and the new three-yearly DIR-3 KYC cycle.",
+    date: "2026-11-06",
+    excerpt:
+      "Every director needs a DIN and a DSC. Here is how each works, how long they last, and how the revised DIR-3 KYC cycle affects directors from 2026.",
+  },
+  {
+    slug: "moa-objects-clause-drafting",
+    title: "Drafting the MoA Objects Clause: A Founder's Guide",
+    description:
+      "How to write the main objects in a company's MoA, why vague objects cause trouble with banks, GST and licences, and how to alter the objects clause later.",
+    date: "2026-11-10",
+    excerpt:
+      "The objects clause decides what your company can do. Here is how to draft main objects that satisfy the MCA, banks, GST and licensing authorities.",
+  },
+  {
+    slug: "authorised-vs-paid-up-capital",
+    title: "Authorised vs Paid-Up Capital: What Founders Should Know",
+    description:
+      "Authorised vs paid-up capital explained: why there is no minimum capital, how capital affects MCA fees and stamp duty, and how to increase it using form SH-7.",
+    date: "2026-11-13",
+    excerpt:
+      "Authorised capital is the ceiling; paid-up capital is what shareholders have actually paid. Here is how to set both, and how to increase capital later.",
+  },
+  {
+    slug: "inc-20a-commencement-of-business",
+    title: "INC-20A: Declaration for Commencement of Business",
+    description:
+      "INC-20A explained: the 180-day deadline under section 10A, documents and photos needed, who certifies it, penalties for missing it and the strike-off risk.",
+    date: "2026-11-17",
+    excerpt:
+      "A new company cannot start business or borrow until it files INC-20A. Here is the 180-day deadline, what the form needs, and what happens if you miss it.",
+  },
+  {
+    slug: "first-board-meeting-checklist",
+    title: "First Board Meeting Checklist for a New Company",
+    description:
+      "What to cover at a new company's first board meeting: the 30-day deadline, agenda items, director disclosures, statutory registers and share certificates.",
+    date: "2026-11-20",
+    excerpt:
+      "A new company must hold its first board meeting within 30 days of incorporation. Here is a practical agenda, the registers to open, and what to file next.",
+  },
+  {
+    slug: "first-auditor-appointment-adt-1",
+    title: "Appointing a Company's First Auditor: Rules and ADT-1",
+    description:
+      "How the first auditor of a company is appointed under section 139(6), the 30-day board deadline, whether ADT-1 must be filed, and what to do if it is missed.",
+    date: "2026-11-24",
+    excerpt:
+      "The board must appoint the first auditor within 30 days of incorporation. How the rule works, the ADT-1 position, and the fix if the deadline is missed.",
+  },
+  {
+    slug: "opening-current-account-new-company",
+    title: "Opening a Current Account for a New Company",
+    description:
+      "How a new company opens its current account: the AGILE-PRO-S request in SPICe+, the KYC documents banks must collect under RBI rules, and tips to avoid delays.",
+    date: "2026-11-27",
+    excerpt:
+      "Every new company applies for a bank account through AGILE-PRO-S. Here is how that works, which KYC documents banks ask for, and how to avoid delays.",
+  },
+  {
+    slug: "convert-proprietorship-to-private-limited",
+    title: "Convert a Proprietorship to a Private Limited Company",
+    description:
+      "How a sole proprietorship moves into a private limited company: incorporation, business transfer, GST and licence changes, bank accounts and tax conditions.",
+    date: "2026-12-01",
+    excerpt:
+      "There is no one-click conversion. You incorporate a company, transfer the business into it and re-register GST, licences and bank accounts. Here is how.",
+  },
+  {
+    slug: "convert-partnership-firm-to-llp",
+    title: "Convert a Partnership Firm to an LLP: Form 17 Guide",
+    description:
+      "How a partnership firm converts into an LLP under the Second Schedule of the LLP Act: Form 17, eligibility, Form 14, and what happens to contracts and licences.",
+    date: "2026-12-04",
+    excerpt:
+      "A firm can convert into an LLP if every partner becomes a partner of the LLP. Here is how Form 17 works and what carries over automatically.",
+  },
+  {
+    slug: "convert-llp-to-private-limited",
+    title: "Convert an LLP to a Private Limited Company (URC-1)",
+    description:
+      "How an LLP becomes a private limited company under section 366 of the Companies Act: URC-1, newspaper notice, creditor consent, tax conditions and next steps.",
+    date: "2026-12-08",
+    excerpt:
+      "LLPs that want equity investors or ESOPs often move to a company. Here is how the section 366 route, URC-2 notice and URC-1 filing work in practice.",
+  },
+  {
+    slug: "opc-to-private-limited-conversion",
+    title: "OPC to Private Limited Conversion: INC-6 Process",
+    description:
+      "How a One Person Company converts into a private limited company using Form INC-6, why conversion is now voluntary, and what changes in compliance afterwards.",
+    date: "2026-12-11",
+    excerpt:
+      "Since 2021 an OPC no longer has to convert when it crosses capital or turnover limits. When you choose to convert, here is how INC-6 works.",
+  },
+  {
+    slug: "private-limited-company-for-ecommerce-sellers",
+    title: "Private Limited Company for E-commerce Sellers",
+    description:
+      "When online sellers should incorporate, how GST registration works for marketplace sales, the enrolment option for small sellers, and TCS at 0.5% explained.",
+    date: "2026-12-15",
+    excerpt:
+      "Selling on Amazon, Flipkart or your own site? When to move to a private limited company, and how GST, enrolment numbers and marketplace TCS work.",
+  },
+  {
+    slug: "company-registration-for-it-startups-chennai",
+    title: "Company Registration for IT and SaaS Startups in Chennai",
+    description:
+      "Structure choices for Chennai software and SaaS founders: private limited vs LLP, ESOPs, foreign client billing with LUT and inward remittances, and DPIIT.",
+    date: "2026-12-18",
+    excerpt:
+      "Software and SaaS founders face specific questions: which structure investors expect, how ESOPs work, and how to bill foreign clients without paying IGST.",
+  },
+  {
+    slug: "company-registration-for-manufacturers-tamil-nadu",
+    title: "Company Registration for Manufacturers in Tamil Nadu",
+    description:
+      "Why manufacturers in Tamil Nadu often choose a private limited company, and the registrations that follow: Udyam, GST, pollution consent and factory licensing.",
+    date: "2026-12-22",
+    excerpt:
+      "Setting up a manufacturing unit in Tamil Nadu? Why a private limited company helps with bank finance, and the registrations to plan alongside it.",
+  },
+  {
+    slug: "share-allotment-after-incorporation",
+    title: "Share Allotment After Incorporation: A Founder's Guide",
+    description:
+      "What founders must do with shares after incorporation: subscription money, INC-20A, share certificates within 60 days, PAS-3 for new issues and FC-GPR.",
+    date: "2026-12-25",
+    excerpt:
+      "Subscriber shares, share certificates, INC-20A, PAS-3 and FC-GPR: the share-related steps a new private limited company must get right in year one.",
+  },
+  {
+    slug: "esop-ready-articles-for-startups",
+    title: "ESOP-Ready Articles of Association for Startups",
+    description:
+      "How to draft startup articles that support ESOPs: Rule 12 eligibility, capital headroom, transfer and leaver clauses, ESOP trusts and DPIIT flexibilities.",
+    date: "2026-12-29",
+    excerpt:
+      "An ESOP plan is only as good as the articles behind it. What to build into your AoA so options can be granted, exercised and bought back cleanly.",
+  },
+  {
+    slug: "shareholders-agreement-founders",
+    title: "Shareholders' Agreement for Founders: What to Cover",
+    description:
+      "Why co-founders need a shareholders' or founders' agreement: vesting, transfer restrictions, deadlock, exits, and how it must align with the articles.",
+    date: "2027-01-01",
+    excerpt:
+      "Co-founders agree on everything at the start. A founders' agreement records what happens when they don't: vesting, exits, transfers and deadlock.",
+  },
+  {
+    slug: "company-registration-mistakes-founders-make",
+    title: "10 Company Registration Mistakes Founders Make",
+    description:
+      "Ten practical mistakes founders make when registering a private limited company, from vague objects and wrong capital to missed INC-20A and mixed funds.",
+    date: "2027-01-05",
+    excerpt:
+      "Vague objects, inflated capital, a missed INC-20A, personal money mixed with company money: ten avoidable mistakes in a company's first year.",
+  },
+  {
+    slug: "gst-registration-after-company-incorporation",
+    title: "GST Registration After Company Incorporation",
+    description:
+      "When a new company needs GST registration, the AGILE-PRO-S option at incorporation, Tamil Nadu thresholds, compulsory cases, documents and the process.",
+    date: "2027-01-08",
+    excerpt:
+      "Your company is incorporated. Does it need GST now, later or never? Thresholds, compulsory cases, the AGILE-PRO-S option and the documents to keep ready.",
+  },
+  {
+    slug: "agile-pro-s-pan-tan-epfo-esic",
+    title: "AGILE-PRO-S Explained: EPFO, ESIC, GSTIN and Bank",
+    description:
+      "What the AGILE-PRO-S form filed with SPICe+ covers: mandatory EPFO, ESIC and bank account, optional GSTIN, and why Tamil Nadu profession tax stays separate.",
+    date: "2027-01-12",
+    excerpt:
+      "AGILE-PRO-S rides along with every SPICe+ incorporation. What it registers automatically, what is optional, and what Chennai companies still do separately.",
+  },
+  {
+    slug: "private-limited-company-penalties-non-compliance",
+    title: "Private Limited Company Penalties for Non-Compliance",
+    description:
+      "What a private limited company risks when filings slip: ₹100 per day late fees on AOC-4 and MGT-7, penalties, director disqualification and strike-off.",
+    date: "2027-01-15",
+    excerpt:
+      "Missed annual filings cost more than late fees. How additional fees, penalties, section 164(2) disqualification and strike-off build up, and how to fix it.",
+  },
+  {
+    slug: "section-140-startup-tax-holiday",
+    title: "Section 140 Startup Tax Holiday: Eligibility Guide",
+    description:
+      "The startup tax holiday under section 140 of the Income-tax Act, 2025 (formerly 80-IAC): eligibility, IMB certificate, ₹100 crore turnover cap, 3 of 10 years.",
+    date: "2027-01-19",
+    excerpt:
+      "Section 140 of the Income-tax Act, 2025 carries forward the 80-IAC startup tax holiday. Who qualifies, what changed, and how to claim it properly.",
+  },
   {
     slug: "how-to-choose-a-chartered-accountant-in-chennai",
     title: "How to Choose a CA Firm in Chennai: 9 Checks Before You Hire",

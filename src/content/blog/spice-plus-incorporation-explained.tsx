@@ -8,7 +8,7 @@ export const meta: BlogPostMeta = {
     "How SPICe+ replaced the older multi-form MCA incorporation process, and what it means for Chennai founders registering a company today.",
   date: "2026-10-07",
   excerpt:
-    "SPICe+ folded incorporation, PAN, TAN, EPFO, ESIC, and profession tax registration into a single form. Here's what actually changed.",
+    "SPICe+ folded incorporation, PAN, TAN, EPFO, ESIC and the bank account request into a single filing. Here's what actually changed.",
   faqs: [
     {
       question: "Is SPICe+ mandatory for all company incorporations?",
@@ -47,7 +47,8 @@ export default function Body() {
         <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation.html" target="_blank" rel="noopener noreferrer">MCA&apos;s SPICe+ incorporation FAQs</a>). Part A handles
         name reservation. Part B handles the incorporation application itself,
         along with linked forms for PAN, TAN, EPFO registration, ESIC
-        registration, Profession Tax registration (in applicable states), and
+        registration, Profession Tax registration (only for companies in
+        Maharashtra, Karnataka and West Bengal, so not for Tamil Nadu), and
         opening a bank account — all submitted together rather than as separate,
         sequential applications.
       </p>
