@@ -4,6 +4,7 @@ import { getPublishedPosts } from "@/lib/blog";
 import { ALL_SERVICES } from "@/lib/services";
 import { PAGE_DATES } from "@/lib/page-dates";
 import { SITE_URL } from "@/lib/site";
+import { TN_CITY_PAGES } from "@/lib/tn-cities";
 
 // Each page's lastModified is the date its content last changed in git
 // (src/lib/page-dates.ts, regenerated with `npm run page-dates`). Never use
@@ -21,6 +22,9 @@ const STATIC_PATHS = [
   { path: "videos", priority: 0.5 },
   { path: "faq", priority: 0.7 },
 ];
+
+// Re-validate daily so scheduled posts appear on their publish date.
+export const revalidate = 86400;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticEntries = STATIC_PATHS.map(({ path, priority }) => ({
@@ -47,5 +51,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticEntries, ...serviceEntries, ...areaEntries, ...blogEntries];
+  const cityEntries = TN_CITY_PAGES.map((c) => ({
+    url: `${SITE_URL}/${c.slug}`,
+    lastModified: lastModified(`/${c.slug}`),
+    priority: 0.7,
+  }));
+
+  return [...staticEntries, ...serviceEntries, ...areaEntries, ...cityEntries, ...blogEntries];
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { TN_CITY_PAGES } from "@/lib/tn-cities";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { ADDRESS_FULL, BUSINESS_HOURS, PHONE_DISPLAY, PHONE_TEL, SITE_URL } from "@/lib/site";
 
@@ -297,6 +298,15 @@ export default function Page() {
         it does not have to be in Chennai. We share a checklist on day one, review documents before anything is filed, and update you
         in writing at each stage.
       </p>
+      <ul className="mt-6 flex max-w-3xl flex-wrap gap-2">
+        {TN_CITY_PAGES.map((c) => (
+          <li key={c.slug}>
+            <Link href={`/${c.slug}`} className="inline-block rounded-full border border-carbon bg-white px-3 py-1.5 text-sm text-carbon hover:bg-sky-wash">
+              Company registration in {c.city}
+            </Link>
+          </li>
+        ))}
+      </ul>
 
       <h2 className="mt-14 text-2xl text-obsidian">Visit us in Anna Nagar</h2>
       <div className="mt-6 max-w-3xl rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
