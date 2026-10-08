@@ -43,8 +43,8 @@ export default function Page() {
         { question: "Is a tax audit mandatory for my T Nagar retail business?", answer: "It depends on your turnover and the proportion of cash transactions. A tax audit becomes mandatory once your business turnover crosses the Income Tax Act threshold, and that threshold is higher when cash receipts and payments are only a small share of your business. See our tax audit page for the current limits, or book a free consultation and we'll assess your specific position." },
       ]}
       furtherReading={[
-        { slug: "gst-litigation-t-nagar-jewellery", title: "Why T Nagar's Jewellery and Textile Traders See More ITC Mismatch Notices Than Most" },
-        { slug: "tax-audit-t-nagar-traders", title: "T Nagar's Cash-Heavy Traders Hit the Lower Tax Audit Threshold" },
+        { slug: "gst-litigation-t-nagar-jewellery", title: "Why T Nagar Jewellery and Textile Traders Get ITC Notices" },
+        { slug: "audit-applicability-thresholds", title: "Audit Applicability Thresholds for Chennai Businesses" },
       ]}
     />
   );

@@ -81,7 +81,7 @@ export default function Page() {
         { question: "Can a reporting delay stop future foreign investment?", answer: "A pending reporting delay can hold up later filings and bank processing, and unreported transactions can lead to compounding under FEMA. Paying the late submission fee and completing the delayed report closes the gap, so we clear old defaults before the next funding round or transfer." },
       ]}
       relatedSlugs={["company-registration-india-for-foreigners", "india-subsidiary-compliance-cfo", "transfer-pricing-audit"]}
-      relatedPosts={["transfer-pricing-omr-subsidiaries", "form-3ceb-due-date-applicability", "post-incorporation-compliance-checklist", "annual-roc-filing-calendar"]}
+      relatedPosts={["form-3ceb-due-date-applicability", "post-incorporation-compliance-checklist", "annual-roc-filing-calendar"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">FEMA reporting calendar</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

@@ -43,8 +43,8 @@ export default function Page() {
         { question: "Is Udyam registration worth it for a small Tambaram shop or service business?", answer: "Often yes — it's free, largely self-declaration based, and unlocks collateral-free lending and delayed-payment protection, which is genuinely useful for smaller local businesses. We can assess your specific eligibility during a free consultation." },
       ]}
       furtherReading={[
-        { slug: "msme-loan-tambaram-traders", title: "Tambaram's Small Traders Are Leaving MSME Loan Benefits Unused" },
-        { slug: "first-gst-return-tambaram-shops", title: "Your First GST Return After Crossing the Threshold in Tambaram" },
+        { slug: "msme-loan-schemes-tamil-nadu", title: "MSME Loan Schemes for Small Businesses in Tamil Nadu" },
+        { slug: "gst-threshold-is-a-trigger", title: "The GST Threshold Isn't a Safe Zone — It's a Trigger" },
       ]}
     />
   );

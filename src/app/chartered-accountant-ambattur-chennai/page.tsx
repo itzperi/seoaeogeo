@@ -45,9 +45,9 @@ export default function Page() {
         { question: "Do you help SIDCO estate units with MSME/Udyam registration?", answer: "Yes — Udyam registration and the resulting delayed-payment protection under the MSMED Act is particularly relevant for manufacturing units supplying larger buyers on extended credit terms, which is common in Ambattur's supplier base." },
       ]}
       furtherReading={[
-        { slug: "statutory-audit-ambattur-manufacturers", title: "Why Statutory Audits Take Longer for Ambattur's Manufacturing Companies" },
-        { slug: "roc-compliance-ambattur-manufacturers", title: "The ROC Compliance Gap in Ambattur's Long-Running Manufacturing Companies" },
-        { slug: "payroll-ambattur-factory-workforce", title: "The Payroll Compliance Gap That Shows Up Most in Ambattur's Factory Workforce" },
+        { slug: "statutory-audit-checklist", title: "Statutory Audit Checklist: What Auditors Actually Ask For" },
+        { slug: "annual-roc-filing-calendar", title: "Annual ROC Filing Deadlines: Calendar for Chennai Companies" },
+        { slug: "common-compliance-mistakes-chennai-startups", title: "First-Year Compliance Mistakes Chennai Startups Make" },
       ]}
     />
   );

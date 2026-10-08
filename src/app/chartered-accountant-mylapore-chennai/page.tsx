@@ -43,8 +43,8 @@ export default function Page() {
         { question: "Can a long-established family trading business in Mylapore get help transitioning to a formal company structure?", answer: "Yes — we assist with converting proprietorships and partnership firms into Private Limited Companies or LLPs, including asset transfer and re-registration of licenses, for businesses ready to formalise their structure." },
       ]}
       furtherReading={[
-        { slug: "fcra-mylapore-cultural-institutions", title: "Mylapore's Cultural and Religious Institutions Face a Tighter FCRA Landscape Than They Realize" },
-        { slug: "direct-tax-mylapore-trading-families", title: "When a Mylapore Trading Family Business Passes to the Next Generation, the Tax Planning Changes Too" },
+        { slug: "fcra-registration", title: "FCRA Registration for Chennai NGOs Accepting Foreign Funds" },
+        { slug: "old-vs-new-tax-regime", title: "Old vs New Tax Regime FY 2026-27: Which Saves More Tax?" },
       ]}
     />
   );

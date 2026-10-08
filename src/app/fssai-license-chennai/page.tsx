@@ -77,9 +77,7 @@ export default function Page() {
       relatedPosts={[
         "msme-udyam-registration-checklist",
         "gst-threshold-is-a-trigger",
-        "gst-registration-porur-retail",
-        "first-gst-return-tambaram-shops",
-      ]}
+        ]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">FSSAI registration vs state licence vs central licence</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

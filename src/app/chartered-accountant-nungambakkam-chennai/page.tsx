@@ -48,9 +48,9 @@ export default function Page() {
         { question: "Do you support established companies with ongoing CFO-level advisory, not just startups?", answer: "Yes — virtual CFO services for mid-sized, established businesses is a core part of our practice, not limited to early-stage startups." },
       ]}
       furtherReading={[
-        { slug: "virtual-cfo-vs-accountant-nungambakkam", title: "When Does a Nungambakkam Business Need a Virtual CFO, Not Just an Accountant?" },
-        { slug: "statutory-audit-nungambakkam-established", title: "Statutory Audit for a Nungambakkam Company That's Past Its First Few Years" },
-        { slug: "llp-registration-nungambakkam-professional-firms", title: "Why Professional Services Firms Choose an LLP for a Nungambakkam Address" },
+        { slug: "virtual-cfo-vs-full-time-cfo-cost-comparison", title: "Virtual CFO vs Full-Time CFO: A Cost Comparison for Chennai" },
+        { slug: "statutory-vs-tax-vs-internal-audit", title: "Statutory Audit vs Tax Audit vs Internal Audit Explained" },
+        { slug: "llp-annual-filing-form8-form11", title: "LLP Annual Filing: Form 8 and Form 11 Due Dates Explained" },
       ]}
     />
   );

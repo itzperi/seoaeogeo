@@ -45,8 +45,8 @@ export default function Page() {
         { question: "Can you register a new small business in Porur for GST?", answer: "Yes, GST registration and ongoing return filing for local retail and service businesses in Porur is something we handle regularly." },
       ]}
       furtherReading={[
-        { slug: "llp-registration-porur-consultancies", title: "Porur's New Consultancies Are Registering Locally Instead of Going Through a City-Centre Firm" },
-        { slug: "gst-registration-porur-retail", title: "Porur's Growing Retail Footprint Is Creating a Wave of First-Time GST Registrations" },
+        { slug: "llp-vs-opc-vs-pvt-ltd", title: "LLP vs OPC vs Private Limited: Choosing a Chennai Structure" },
+        { slug: "gst-threshold-is-a-trigger", title: "The GST Threshold Isn't a Safe Zone — It's a Trigger" },
       ]}
     />
   );

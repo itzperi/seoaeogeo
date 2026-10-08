@@ -87,7 +87,7 @@ export default function Page() {
         { question: "Can the ITAT stop recovery while my appeal is pending?", answer: "Yes. The Tribunal can stay recovery for up to 180 days if you deposit at least 20% of the amount payable or furnish equal security. The stay can be extended up to 365 days in total if the delay is not your fault, after which it lapses automatically." },
       ]}
       relatedSlugs={["income-tax-notice-reply-chennai", "direct-tax", "tax-audit-chennai"]}
-      relatedPosts={["why-income-tax-notices-issued", "form26as-mismatch-velachery", "capital-gains-tax-property-sale", "safe-cash-deposit-limit"]}
+      relatedPosts={["why-income-tax-notices-issued", "capital-gains-tax-property-sale", "safe-cash-deposit-limit"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Old and new section numbers for assessments and appeals</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

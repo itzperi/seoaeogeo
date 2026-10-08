@@ -100,6 +100,11 @@ export default function Page() {
           answer:
             "Yes. An LLP can register as a company under Section 366 of the Companies Act, 2013, by filing URC-1 along with SPICe+. Founders usually do this when an investor wants to buy equity, which an LLP cannot issue. The partners become shareholders, and the business, assets and liabilities continue in the company. We plan the conversion so licences and contracts move across with minimal disruption.",
         },
+        {
+          question: "What should partners have ready before filing FiLLiP?",
+          answer:
+            "Have DSCs and identity documents ready for every designated partner, along with registered office proof, before filing begins. That means a Class 3 DSC, PAN and address proof for each partner who will sign, and for the office, a rent agreement or ownership document, a recent utility bill and a no-objection letter from the owner. Sorting these out upfront avoids FiLLiP being sent back for resubmission. Agree the contribution and profit-sharing terms at the same time, since they feed into both FiLLiP and the Form 3 agreement due within 30 days. For a new consultancy, recording the registered office correctly from day one also keeps the address consistent across the bank account, GST registration and later MCA filings.",
+        },
       ]}
       relatedQuestions={[
         { question: "Which business structure should I choose before registering?", href: "/company-registration-chennai" },
@@ -111,8 +116,7 @@ export default function Page() {
         "llp-vs-opc-vs-pvt-ltd",
         "llp-annual-filing-form8-form11",
         "private-limited-vs-llp-chennai-startups",
-        "llp-registration-nungambakkam-professional-firms",
-        "llp-registration-porur-consultancies",
+        "post-incorporation-compliance-checklist",
       ]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Why do professionals choose an LLP?</h2>
@@ -121,6 +125,12 @@ export default function Page() {
         problem with a traditional partnership firm: one partner&apos;s mistake or a firm debt reaching every partner&apos;s personal
         assets. Partners are not liable for another partner&apos;s wrongful acts, and the LLP continues even when partners change.
         Regulated professions should check their own institute&apos;s rules on practising through an LLP before registering.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Two or three consultants setting up together often register a Private Limited Company by default, simply because it is the
+        familiar choice. Unless outside equity investment is genuinely planned, that buys a mandatory annual audit, share-capital
+        formalities and board compliance for nothing: a professional partnership usually grows by adding partners and clients, not by
+        selling shares, which is exactly the case an LLP is built for. If investors do come in later, the LLP can convert into a company.
       </p>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">
         Compliance stays light: two annual MCA forms, an income tax return, and an audit only above the turnover or contribution limits.

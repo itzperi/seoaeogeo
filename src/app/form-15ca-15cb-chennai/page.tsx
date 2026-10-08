@@ -81,7 +81,7 @@ export default function Page() {
         { question: "Is Form 145 needed for every payment abroad?", answer: "No. Payments on the exempt list in Rule 220(3), such as certain personal and trade-related remittances, need no form. For other payments that are not taxable in India, only Part D is filed. Your bank will tell you if it needs the acknowledgement." },
       ]}
       relatedSlugs={["nri-tax-services", "nri-property-sale-tds-chennai", "nri-tax-services-uae"]}
-      relatedPosts={["nri-itr-filing", "capital-gains-tax-property-sale", "capital-gains-kilpauk-property", "tds-return-filing-deadlines"]}
+      relatedPosts={["nri-itr-filing", "capital-gains-tax-property-sale", "tds-return-filing-deadlines"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">The four parts of Form 145</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

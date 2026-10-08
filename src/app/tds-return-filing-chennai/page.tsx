@@ -90,7 +90,7 @@ export default function Page() {
         { question: "Why does TDS on payments to NRIs need separate handling?", answer: "Payments to non-residents fall under Section 393(2) (earlier Section 195), where the rate depends on the type of income and any tax treaty. They are reported quarterly in Form 144, not Form 140. Before remitting abroad, Form 145 and, above ₹5 lakh, a CA certificate in Form 146 may also be needed." },
       ]}
       relatedSlugs={["direct-tax", "payroll-services-chennai", "nri-property-sale-tds-chennai"]}
-      relatedPosts={["tds-return-filing-deadlines", "tds-on-rent", "form26as-mismatch-velachery", "advance-tax-deadlines"]}
+      relatedPosts={["tds-return-filing-deadlines", "tds-on-rent", "advance-tax-deadlines"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">New TDS forms under the Income-tax Act, 2025</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

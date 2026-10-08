@@ -77,10 +77,11 @@ export default function Page() {
         { question: "How do you help a startup get funding-ready?", answer: "We bring books, ROC and tax filings up to date, reconcile the cap table with company records, build a financial model, and prepare a data room with the documents investors request in due diligence. Gaps found early, such as unfiled forms or unreconciled GST, are much cheaper to fix before a term sheet." },
         { question: "Is management consultancy a one-time or ongoing engagement?", answer: "Both are available. A focused project, such as a process review or budget, typically runs four to eight weeks and ends with a report and action list. An ongoing advisory arrangement adds monthly or quarterly reviews of budgets, controls and action items, which suits businesses going through rapid change." },
         { question: "Will the consultancy affect our statutory audit?", answer: "It can make the audit smoother, because reconciled books and documented controls reduce audit queries. Independence rules matter, though: under the Companies Act, a company's statutory auditor cannot provide certain services, including internal audit and management services, to that company. We confirm the position before accepting any engagement." },
+        { question: "Our books and filings are in order. Why would we need management consultancy?", answer: "Because compliance and efficiency are separate questions. Filed GST returns, closed books and a clean statutory audit confirm the paperwork is correct; none of them ask whether money is spent in the right places, whether a product line is profitable once overhead is allocated, or whether a long-standing process still makes sense at today's scale. The businesses that need this are usually stable rather than struggling: a family trading concern handing over to a second generation, or a manufacturer that has outgrown informal, gut-feel decisions. The work is a specific review of cost structure, process bottlenecks and decisions made once and never revisited, ending in concrete recommendations rather than a report restating what management already knows." },
       ]}
       relatedSlugs={["virtual-cfo-services", "india-subsidiary-compliance-cfo", "audit-and-assurance"]}
       relatedPosts={[
-        "management-consultancy-anna-nagar-business",
+        "business-personal-expenses-separate",
         "cash-flow-forecasting-framework",
         "cash-flow-not-profit-business-failure",
         "what-virtual-cfo-reviews-monthly",

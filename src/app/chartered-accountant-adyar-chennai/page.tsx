@@ -44,8 +44,8 @@ export default function Page() {
         { question: "Do you serve individuals as well as institutions in Adyar?", answer: "Yes — alongside trust/NGO work, we handle individual income tax filing, advance tax planning, and audit services for Adyar's professionals and residents." },
       ]}
       furtherReading={[
-        { slug: "12a-80g-adyar-institutions", title: "Adyar's Educational and Charitable Institutions Are Still Running on Old 12A/80G Norms" },
-        { slug: "bookkeeping-adyar-clinics", title: "Why Standard Bookkeeping Templates Don't Work for an Adyar Clinic" },
+        { slug: "fcra-registration", title: "FCRA Registration for Chennai NGOs Accepting Foreign Funds" },
+        { slug: "outgrown-bookkeeping-signs", title: "Signs Your Chennai Business Has Outgrown Basic Bookkeeping" },
       ]}
     />
   );

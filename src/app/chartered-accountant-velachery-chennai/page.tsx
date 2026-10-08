@@ -43,7 +43,7 @@ export default function Page() {
         { question: "Do you also serve small businesses in Velachery, or only individuals?", answer: "Both — alongside individual tax filing, we handle GST registration, return filing, and audit support for shops, clinics, and small service businesses based in Velachery." },
       ]}
       furtherReading={[
-        { slug: "form26as-mismatch-velachery", title: "Why Velachery's Salaried Professionals Keep Seeing Form 26AS and AIS Mismatches" },
+        { slug: "why-income-tax-notices-issued", title: "Why Income Tax Notices Get Issued: The Actual Triggers" },
       ]}
     />
   );

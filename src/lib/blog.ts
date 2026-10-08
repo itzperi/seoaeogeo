@@ -45,24 +45,16 @@ const modules = {
     import("@/content/blog/add-remove-director"),
   "advance-tax-deadlines": () =>
     import("@/content/blog/advance-tax-deadlines"),
-  "advance-tax-anna-nagar-shop-owners": () =>
-    import("@/content/blog/advance-tax-anna-nagar-shop-owners"),
   "after-gst-show-cause-reply": () =>
     import("@/content/blog/after-gst-show-cause-reply"),
-  "gst-notice-anna-nagar-traders": () =>
-    import("@/content/blog/gst-notice-anna-nagar-traders"),
   "annual-roc-filing-calendar": () =>
     import("@/content/blog/annual-roc-filing-calendar"),
-  "roc-compliance-anna-nagar-startups": () =>
-    import("@/content/blog/roc-compliance-anna-nagar-startups"),
   "audit-applicability-thresholds": () =>
     import("@/content/blog/audit-applicability-thresholds"),
   "capital-gains-tax-property-sale": () =>
     import("@/content/blog/capital-gains-tax-property-sale"),
   "cash-flow-forecasting-framework": () =>
     import("@/content/blog/cash-flow-forecasting-framework"),
-  "choosing-ca-firm-anna-nagar": () =>
-    import("@/content/blog/choosing-ca-firm-anna-nagar"),
   "common-compliance-mistakes-chennai-startups": () =>
     import("@/content/blog/common-compliance-mistakes-chennai-startups"),
   "documents-checklist-before-auditor-visit": () =>
@@ -73,8 +65,6 @@ const modules = {
     import("@/content/blog/form-3ceb-due-date-applicability"),
   "gst-freelancers-consultants": () =>
     import("@/content/blog/gst-freelancers-consultants"),
-  "management-consultancy-anna-nagar-business": () =>
-    import("@/content/blog/management-consultancy-anna-nagar-business"),
   "gst-registration-online-sellers-chennai": () =>
     import("@/content/blog/gst-registration-online-sellers-chennai"),
   "gstr9-annual-return-checklist": () =>
@@ -89,8 +79,6 @@ const modules = {
     import("@/content/blog/lut-for-exporters"),
   "msme-loan-schemes-tamil-nadu": () =>
     import("@/content/blog/msme-loan-schemes-tamil-nadu"),
-  "udyam-registration-anna-nagar-manufacturers": () =>
-    import("@/content/blog/udyam-registration-anna-nagar-manufacturers"),
   "nri-itr-filing": () =>
     import("@/content/blog/nri-itr-filing"),
   "old-vs-new-tax-regime": () =>
@@ -105,10 +93,6 @@ const modules = {
     import("@/content/blog/startup-india-registration"),
   "statutory-vs-tax-vs-internal-audit": () =>
     import("@/content/blog/statutory-vs-tax-vs-internal-audit"),
-  "statutory-audit-anna-nagar-companies": () =>
-    import("@/content/blog/statutory-audit-anna-nagar-companies"),
-  "tax-audit-threshold-anna-nagar": () =>
-    import("@/content/blog/tax-audit-threshold-anna-nagar"),
   "strike-off-vs-winding-up": () =>
     import("@/content/blog/strike-off-vs-winding-up"),
   "tds-on-rent": () =>
@@ -117,50 +101,10 @@ const modules = {
     import("@/content/blog/trust-vs-society-vs-section8"),
   "virtual-cfo-omr-startups": () =>
     import("@/content/blog/virtual-cfo-omr-startups"),
-  "virtual-cfo-vs-accountant-nungambakkam": () =>
-    import("@/content/blog/virtual-cfo-vs-accountant-nungambakkam"),
-  "virtual-cfo-guindy-corporate-offices": () =>
-    import("@/content/blog/virtual-cfo-guindy-corporate-offices"),
   "what-virtual-cfo-reviews-monthly": () =>
     import("@/content/blog/what-virtual-cfo-reviews-monthly"),
-  "tax-audit-kilpauk-doctors": () =>
-    import("@/content/blog/tax-audit-kilpauk-doctors"),
-  "capital-gains-kilpauk-property": () =>
-    import("@/content/blog/capital-gains-kilpauk-property"),
   "gst-litigation-t-nagar-jewellery": () =>
     import("@/content/blog/gst-litigation-t-nagar-jewellery"),
-  "tax-audit-t-nagar-traders": () =>
-    import("@/content/blog/tax-audit-t-nagar-traders"),
-  "statutory-audit-ambattur-manufacturers": () =>
-    import("@/content/blog/statutory-audit-ambattur-manufacturers"),
-  "roc-compliance-ambattur-manufacturers": () =>
-    import("@/content/blog/roc-compliance-ambattur-manufacturers"),
-  "transfer-pricing-omr-subsidiaries": () =>
-    import("@/content/blog/transfer-pricing-omr-subsidiaries"),
-  "form26as-mismatch-velachery": () =>
-    import("@/content/blog/form26as-mismatch-velachery"),
-  "12a-80g-adyar-institutions": () =>
-    import("@/content/blog/12a-80g-adyar-institutions"),
-  "statutory-audit-nungambakkam-established": () =>
-    import("@/content/blog/statutory-audit-nungambakkam-established"),
-  "llp-registration-nungambakkam-professional-firms": () =>
-    import("@/content/blog/llp-registration-nungambakkam-professional-firms"),
-  "gst-litigation-guindy-industrial": () =>
-    import("@/content/blog/gst-litigation-guindy-industrial"),
-  "roc-registered-office-change-guindy": () =>
-    import("@/content/blog/roc-registered-office-change-guindy"),
-  "llp-registration-porur-consultancies": () =>
-    import("@/content/blog/llp-registration-porur-consultancies"),
-  "gst-registration-porur-retail": () =>
-    import("@/content/blog/gst-registration-porur-retail"),
-  "msme-loan-tambaram-traders": () =>
-    import("@/content/blog/msme-loan-tambaram-traders"),
-  "first-gst-return-tambaram-shops": () =>
-    import("@/content/blog/first-gst-return-tambaram-shops"),
-  "fcra-mylapore-cultural-institutions": () =>
-    import("@/content/blog/fcra-mylapore-cultural-institutions"),
-  "direct-tax-mylapore-trading-families": () =>
-    import("@/content/blog/direct-tax-mylapore-trading-families"),
   "business-personal-expenses-separate": () =>
     import("@/content/blog/business-personal-expenses-separate"),
   "safe-cash-deposit-limit": () =>
@@ -173,12 +117,6 @@ const modules = {
     import("@/content/blog/cost-of-diy-gst-filing"),
   "cash-flow-not-profit-business-failure": () =>
     import("@/content/blog/cash-flow-not-profit-business-failure"),
-  "bookkeeping-adyar-clinics": () =>
-    import("@/content/blog/bookkeeping-adyar-clinics"),
-  "payroll-omr-startup-esop": () =>
-    import("@/content/blog/payroll-omr-startup-esop"),
-  "payroll-ambattur-factory-workforce": () =>
-    import("@/content/blog/payroll-ambattur-factory-workforce"),
 } as const;
 
 export type BlogSlug = keyof typeof modules;
@@ -306,15 +244,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires...",
   },
   {
-    slug: "advance-tax-anna-nagar-shop-owners",
-    title: "Advance Tax Mistakes Anna Nagar Shop Owners Make",
-    description:
-      "Salaried Anna Nagar residents rarely think about advance tax — it's deducted automatically. Business owners don't have that safety net, and it shows.",
-    date: "2026-09-26",
-    excerpt:
-      "Salaried residents rarely think about advance tax since it's deducted automatically. Business owners don't have that safety net, and it shows.",
-  },
-  {
     slug: "after-gst-show-cause-reply",
     title: "What Happens After You Reply to a GST Show Cause Notice",
     description:
@@ -324,15 +253,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",
   },
   {
-    slug: "gst-notice-anna-nagar-traders",
-    title: "GST Notice for Anna Nagar Traders: What Happens Next",
-    description:
-      "Anna Nagar's mix of retail, trading, and small manufacturing businesses tends to hit the same handful of GST notice triggers. Here's what to check first.",
-    date: "2026-09-26",
-    excerpt:
-      "Anna Nagar's mix of retail, trading, and small manufacturing tends to hit the same handful of GST notice triggers. Here's what to check first.",
-  },
-  {
     slug: "annual-roc-filing-calendar",
     title: "Annual ROC Filing Deadlines: Calendar for Chennai Companies",
     description:
@@ -340,15 +260,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "Registrar of Companies filings follow a predictable annual cycle, but the specific forms and their deadlines are scattered enough across...",
-  },
-  {
-    slug: "roc-compliance-anna-nagar-startups",
-    title: "The ROC Filing Anna Nagar Founders Forget About in Year One",
-    description:
-      "Most Anna Nagar founders know about the annual return. The one they miss is the event-based filing that has nothing to do with the financial year end.",
-    date: "2026-09-26",
-    excerpt:
-      "Most founders know about the annual return. The one they miss is the event-based filing that has nothing to do with the financial year end.",
   },
   {
     slug: "audit-applicability-thresholds",
@@ -376,15 +287,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "Cash flow forecasting sounds like something only large companies need, but small and mid sized businesses in Chennai often run into far...",
-  },
-  {
-    slug: "choosing-ca-firm-anna-nagar",
-    title: "Choosing a CA Firm in Anna Nagar: What to Actually Look For",
-    description:
-      "Anna Nagar has no shortage of CA firms, which makes choosing one feel harder for a business owner who just wants someone reliable and responsive.",
-    date: "2026-09-19",
-    excerpt:
-      "Anna Nagar has no shortage of chartered accountants and CA firms, which makes choosing one feel harder rather than easier for a business...",
   },
   {
     slug: "common-compliance-mistakes-chennai-startups",
@@ -430,15 +332,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
-  },
-  {
-    slug: "management-consultancy-anna-nagar-business",
-    title: "Beyond Compliance: Management Consultancy in Anna Nagar",
-    description:
-      "Plenty of established Anna Nagar businesses have a CA for filing and audit, but nobody looking at whether the business itself is actually run efficiently.",
-    date: "2026-09-26",
-    excerpt:
-      "Plenty of established Anna Nagar businesses have a CA for filing and audit, but nobody looking at whether the business is run efficiently.",
   },
   {
     slug: "gst-registration-online-sellers-chennai",
@@ -493,15 +386,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "If your Chennai business sells services or goods to clients outside India, a Letter of Undertaking (LUT) is one of the most valuable and...",
-  },
-  {
-    slug: "udyam-registration-anna-nagar-manufacturers",
-    title: "The Udyam Registration Mistake Anna Nagar Suppliers Make",
-    description:
-      "Small manufacturers near Anna Nagar's industrial pockets often register on Udyam and then never use the one benefit that actually protects their cash flow.",
-    date: "2026-09-26",
-    excerpt:
-      "Small manufacturers near Anna Nagar's industrial pockets often register on Udyam and never use the one benefit that actually protects cash flow.",
   },
   {
     slug: "msme-loan-schemes-tamil-nadu",
@@ -576,24 +460,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "Business owners in Chennai often use the word audit as if it means one single thing, but statutory audit, tax audit, and internal audit are...",
   },
   {
-    slug: "statutory-audit-anna-nagar-companies",
-    title: "First Statutory Audit in Anna Nagar: What Slows It Down",
-    description:
-      "It's rarely the audit itself that delays a first-time statutory audit for a new Anna Nagar company — it's three specific, avoidable gaps in the books.",
-    date: "2026-09-26",
-    excerpt:
-      "It's rarely the audit itself that delays a first-time statutory audit — it's three specific, avoidable gaps in the books we see repeatedly.",
-  },
-  {
-    slug: "tax-audit-threshold-anna-nagar",
-    title: "Crossed ₹1 Crore in Anna Nagar? When a Tax Audit Applies",
-    description:
-      "Plenty of Anna Nagar trading and manufacturing businesses cross the tax audit turnover threshold without realizing it, mid-year. Here's how to check.",
-    date: "2026-09-26",
-    excerpt:
-      "Plenty of Anna Nagar trading and manufacturing businesses cross the tax audit turnover threshold without realizing it. Here's how to check.",
-  },
-  {
     slug: "strike-off-vs-winding-up",
     title: "Company Strike Off vs Winding Up: What Is the Difference",
     description:
@@ -630,24 +496,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "IT and startup businesses along OMR tend to need a Virtual CFO for one specific reason: getting fundraise-ready, not just filing taxes on time.",
   },
   {
-    slug: "virtual-cfo-vs-accountant-nungambakkam",
-    title: "Nungambakkam Business: Virtual CFO or Just an Accountant?",
-    description:
-      "Nungambakkam has a real concentration of mid-sized, past-startup-stage companies. Here's the actual signal that it's time for CFO-level support.",
-    date: "2026-09-26",
-    excerpt:
-      "Nungambakkam has a real concentration of mid-sized companies past the early startup stage. Here's the actual signal it's time for CFO-level support.",
-  },
-  {
-    slug: "virtual-cfo-guindy-corporate-offices",
-    title: "Virtual CFO for Guindy Corporate Offices: What to Expect",
-    description:
-      "Guindy's mix of industrial-estate manufacturers and newer corporate offices need genuinely different things from a Virtual CFO. Here's what to expect.",
-    date: "2026-09-26",
-    excerpt:
-      "Guindy's mix of industrial-estate manufacturers and newer corporate offices need different things from a Virtual CFO engagement. Here's what to expect.",
-  },
-  {
     slug: "what-virtual-cfo-reviews-monthly",
     title: "What a Virtual CFO Actually Reviews Every Month",
     description:
@@ -657,24 +505,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense...",
   },
   {
-    slug: "tax-audit-kilpauk-doctors",
-    title: "When a Kilpauk Doctor's Practice Crosses the Tax Audit Line",
-    description:
-      "Kilpauk's independent doctors and consultants often don't realize presumptive taxation has a ceiling, and that crossing it changes the filing entirely.",
-    date: "2026-09-26",
-    excerpt:
-      "Kilpauk's independent doctors and consultants often don't realize presumptive taxation has a ceiling, and crossing it changes the filing entirely.",
-  },
-  {
-    slug: "capital-gains-kilpauk-property",
-    title: "Selling Property in Kilpauk? How Holding Period Affects Tax",
-    description:
-      "Kilpauk's older, high-value residential properties often trigger a bigger capital gains surprise than sellers expect, tied entirely to how long it was held.",
-    date: "2026-09-26",
-    excerpt:
-      "Kilpauk's older, high-value residential properties often trigger a bigger capital gains surprise, tied entirely to how long it was held.",
-  },
-  {
     slug: "gst-litigation-t-nagar-jewellery",
     title: "Why T Nagar Jewellery and Textile Traders Get ITC Notices",
     description:
@@ -682,150 +512,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-26",
     excerpt:
       "High transaction volume and a chain of smaller suppliers make T Nagar's retail sector especially exposed to ITC mismatch notices.",
-  },
-  {
-    slug: "tax-audit-t-nagar-traders",
-    title: "T Nagar Cash-Heavy Traders and the ₹1 Crore Tax Audit Limit",
-    description:
-      "The ₹10 crore tax audit threshold doesn't apply to T Nagar's cash-heavy retail businesses. Most still fall under the ₹1 crore rule without realizing it.",
-    date: "2026-09-26",
-    excerpt:
-      "The ₹10 crore tax audit threshold doesn't apply to more cash-heavy retail businesses. Most T Nagar traders are still on the ₹1 crore rule.",
-  },
-  {
-    slug: "statutory-audit-ambattur-manufacturers",
-    title: "Why Statutory Audits Take Longer for Ambattur Manufacturers",
-    description:
-      "It's not the paperwork that slows down a manufacturing company's audit in Ambattur — it's inventory and fixed-asset verification specifically.",
-    date: "2026-09-26",
-    excerpt:
-      "It's not the paperwork that slows down a manufacturing company's audit in Ambattur — it's inventory and fixed-asset verification specifically.",
-  },
-  {
-    slug: "roc-compliance-ambattur-manufacturers",
-    title: "ROC Compliance Gaps in Ambattur's Long-Running Manufacturers",
-    description:
-      "A manufacturing company that's been operating for a decade in Ambattur often has more ROC compliance gaps than a newer one — for a specific reason.",
-    date: "2026-09-26",
-    excerpt:
-      "A manufacturing company operating for a decade in Ambattur often has more ROC compliance gaps than a newer one, for a specific reason.",
-  },
-  {
-    slug: "transfer-pricing-omr-subsidiaries",
-    title: "Transfer Pricing Blind Spot for OMR's Indian Subsidiaries",
-    description:
-      "IT subsidiaries along OMR paying management fees or royalties to a foreign parent often don't realize Form 3CEB applies from the very first transaction.",
-    date: "2026-09-26",
-    excerpt:
-      "IT subsidiaries paying management fees or royalties to a foreign parent often don't realize Form 3CEB applies from the very first transaction.",
-  },
-  {
-    slug: "form26as-mismatch-velachery",
-    title: "Form 26AS and AIS Mismatches for Velachery Professionals",
-    description:
-      "Velachery's dense concentration of IT and finance professionals means a specific filing problem shows up more here than in most residential areas.",
-    date: "2026-09-26",
-    excerpt:
-      "Velachery's dense concentration of IT and finance professionals means a specific filing problem shows up more here than elsewhere.",
-  },
-  {
-    slug: "12a-80g-adyar-institutions",
-    title: "Adyar's Charitable Institutions and Outdated 12A/80G Norms",
-    description:
-      "A number of Adyar's long-established institutions registered under 12A and 80G years ago, under rules that have since tightened considerably.",
-    date: "2026-09-26",
-    excerpt:
-      "A number of Adyar's long-established institutions registered under 12A and 80G years ago, under rules that have since tightened considerably.",
-  },
-  {
-    slug: "statutory-audit-nungambakkam-established",
-    title: "Statutory Audit for an Established Nungambakkam Company",
-    description:
-      "The audit questions change once a Nungambakkam company is established rather than newly incorporated — here's what shifts by year five or six.",
-    date: "2026-09-26",
-    excerpt:
-      "The audit questions change once a company is established rather than newly incorporated — here's what shifts by year five or six.",
-  },
-  {
-    slug: "llp-registration-nungambakkam-professional-firms",
-    title: "Why Nungambakkam Professional Firms Choose an LLP",
-    description:
-      "Two consultants forming a firm in Nungambakkam usually reach for Private Limited by default. An LLP is often the better fit — here's the actual reasoning.",
-    date: "2026-09-26",
-    excerpt:
-      "Two consultants forming a firm in Nungambakkam usually reach for Private Limited by default. An LLP is often the better fit.",
-  },
-  {
-    slug: "gst-litigation-guindy-industrial",
-    title: "GST Notices in Guindy Industrial Estate: The ITC Pattern",
-    description:
-      "Guindy's manufacturing and engineering companies see a specific ITC mismatch pattern tied to how larger buyers structure their own GST filings.",
-    date: "2026-09-26",
-    excerpt:
-      "Guindy's manufacturing and engineering companies see a specific ITC mismatch pattern tied to how larger buyers structure their filings.",
-  },
-  {
-    slug: "roc-registered-office-change-guindy",
-    title: "Registered Office Move to Guindy: The Hidden Second Filing",
-    description:
-      "Companies relocating to Guindy for its connectivity often file the address change and assume it's done — missing a second, easy-to-forget requirement.",
-    date: "2026-09-26",
-    excerpt:
-      "Companies relocating to Guindy for its connectivity often file the address change and assume it's done — missing a second requirement.",
-  },
-  {
-    slug: "llp-registration-porur-consultancies",
-    title: "LLP Registration for New Consultancies in Porur",
-    description:
-      "As Porur's commercial footprint grows, more founders are registering their consultancies locally rather than through a central Chennai intermediary.",
-    date: "2026-09-26",
-    excerpt:
-      "As Porur's own commercial footprint grows, more founders register their consultancies locally instead of commuting to a central Chennai intermediary.",
-  },
-  {
-    slug: "gst-registration-porur-retail",
-    title: "First-Time GST Registration for Porur Retail Businesses",
-    description:
-      "As Porur's local commercial stretches expand, a lot of business owners are registering for GST for the very first time — and getting the basics wrong.",
-    date: "2026-09-26",
-    excerpt:
-      "As Porur's commercial stretches expand, business owners are registering for GST for the first time — and getting a few basics wrong.",
-  },
-  {
-    slug: "msme-loan-tambaram-traders",
-    title: "Tambaram Traders Are Leaving MSME Loan Benefits Unused",
-    description:
-      "A lot of small trading and service businesses in Tambaram register on Udyam and never actually apply for the collateral-free loan schemes it unlocks.",
-    date: "2026-09-26",
-    excerpt:
-      "A lot of small trading and service businesses in Tambaram register on Udyam and never actually apply for the loan schemes it unlocks.",
-  },
-  {
-    slug: "first-gst-return-tambaram-shops",
-    title: "First GST Return After Registration in Tambaram: Pitfalls",
-    description:
-      "Small Tambaram shop owners who just crossed the GST registration threshold usually struggle with one specific part of their first return, not the filing itself.",
-    date: "2026-09-26",
-    excerpt:
-      "Small shop owners who just crossed the GST threshold usually struggle with one specific part of their first return, not the filing itself.",
-  },
-  {
-    slug: "fcra-mylapore-cultural-institutions",
-    title: "FCRA Rules for Mylapore Cultural and Religious Institutions",
-    description:
-      "A number of Mylapore's long-established cultural and religious institutions receive support from abroad without current FCRA registration in place.",
-    date: "2026-09-26",
-    excerpt:
-      "A number of Mylapore's long-established cultural and religious institutions receive support from abroad without current FCRA registration in place.",
-  },
-  {
-    slug: "direct-tax-mylapore-trading-families",
-    title: "Mylapore Family Business Succession and Direct Tax Planning",
-    description:
-      "Handing a long-established Mylapore trading family business to the next generation raises direct tax questions that are rarely planned for in advance.",
-    date: "2026-09-26",
-    excerpt:
-      "Mylapore has a genuine base of long-established trading families. Handing the business over raises direct tax questions rarely planned for in advance.",
   },
   {
     slug: "business-personal-expenses-separate",
@@ -880,33 +566,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-26",
     excerpt:
       "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
-  },
-  {
-    slug: "bookkeeping-adyar-clinics",
-    title: "Why Standard Bookkeeping Doesn't Fit an Adyar Clinic",
-    description:
-      "A generic bookkeeping setup misses how a clinic actually earns and spends. Adyar's concentration of medical practices needs a genuinely different structure.",
-    date: "2026-09-26",
-    excerpt:
-      "A generic bookkeeping setup misses how a clinic actually earns and spends. Adyar's medical practices need a genuinely different structure.",
-  },
-  {
-    slug: "payroll-omr-startup-esop",
-    title: "ESOPs at Your OMR Startup: Set Up Payroll Before Exercise",
-    description:
-      "OMR's startups issue ESOPs early to attract talent, but perquisite tax at exercise catches payroll teams unprepared far more often than it should.",
-    date: "2026-09-26",
-    excerpt:
-      "OMR's startups issue ESOPs early to attract talent, but perquisite tax at exercise catches payroll teams unprepared more often than it should.",
-  },
-  {
-    slug: "payroll-ambattur-factory-workforce",
-    title: "Payroll Compliance Gap in Ambattur's Factory Workforce",
-    description:
-      "Contract and casual labour arrangements common in Ambattur's manufacturing units create a specific PF and ESI compliance gap most factories don't notice.",
-    date: "2026-09-26",
-    excerpt:
-      "Contract and casual labour arrangements common in Ambattur's manufacturing units create a PF/ESI compliance gap most factories don't notice.",
   },
 ];
 

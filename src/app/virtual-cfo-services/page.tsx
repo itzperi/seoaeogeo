@@ -86,6 +86,11 @@ const FAQS = [
     answer:
       "The first month is typically a calibration cycle, not a finished deliverable: we're setting up access to your systems, producing a first-draft MIS report, and refining which KPIs and formats are actually useful for your specific decisions versus a generic template. Most clients see the reporting sharpen noticeably by month two or three once we understand which numbers you actually act on.",
   },
+  {
+    question: "Does a Virtual CFO engagement look different for a manufacturer and a newer services company?",
+    answer:
+      "Yes, considerably. For an established manufacturer, the work usually centres on working capital: inventory financing, receivables from large buyers who pay on extended terms, and cost tracking by product line as input costs shift, protecting margin in a business that already has revenue. For a newer corporate office or services company, it usually starts with getting basic monthly MIS on revenue, margin and cash in place before moving to budgets and forecasts. Areas with both profiles, such as Guindy's industrial estate and its newer offices, show why the scope should be set after an assessment rather than from a generic template.",
+  },
 ];
 
 export default function VirtualCfoPage() {
@@ -164,7 +169,11 @@ export default function VirtualCfoPage() {
                 feel because nobody has actually run the margin numbers by product
                 line, a board or investor asking for reporting your current setup
                 can&apos;t produce, or a founder spending hours each month
-                reconciling numbers instead of running the business. If more than
+                reconciling numbers instead of running the business. In
+                established mid-sized companies, the clearest sign is management
+                meetings that keep returning to the same unanswered question about
+                margins, cash or one business line, with nobody owning the answer.
+                If more than
                 one of these sounds familiar, that&apos;s the actual signal — not a
                 specific headcount or turnover threshold. See our full breakdown in{" "}
                 <Link href="/blog/outgrown-bookkeeping-signs" className="text-royal-violet underline">
@@ -326,8 +335,6 @@ export default function VirtualCfoPage() {
               <h3 className="eyebrow text-xs text-slate">By area</h3>
               <ul className="mt-4 space-y-3 text-sm">
                 <li><Link href="/blog/virtual-cfo-omr-startups" className="text-royal-violet hover:underline">Virtual CFO for OMR startups</Link></li>
-                <li><Link href="/blog/virtual-cfo-vs-accountant-nungambakkam" className="text-royal-violet hover:underline">Virtual CFO vs. accountant — Nungambakkam</Link></li>
-                <li><Link href="/blog/virtual-cfo-guindy-corporate-offices" className="text-royal-violet hover:underline">Virtual CFO for Guindy offices</Link></li>
               </ul>
             </div>
           </aside>

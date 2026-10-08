@@ -79,8 +79,7 @@ const RELATED_POSTS = [
   "private-limited-vs-llp-chennai-startups",
   "post-incorporation-compliance-checklist",
   "common-compliance-mistakes-chennai-startups",
-  "payroll-omr-startup-esop",
-];
+  ];
 
 const COMPARISON = [
   { type: "Private Limited Company", liability: "Limited", compliance: "High", ownership: "Shares (max 200 shareholders)", bestFor: "Startups raising funding, scaling businesses" },

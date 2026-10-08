@@ -107,17 +107,17 @@ export default function Page() {
         { question: "How do I book an appointment?", answer: "Book a free consultation through the booking button on this page, call +91 72001 49711, or message us on WhatsApp. Tell us what you need help with so we can schedule the right person." },
         { question: "Which services are best handled in person?", answer: "Company and LLP registration, where documents are checked and signed; first meetings for a statutory or tax audit; and replies to GST or income tax notices, where it helps to go through your records together. Routine return filing and bookkeeping usually do not need a visit." },
         { question: "How do I choose a CA firm in Anna Nagar?", answer: "Check four things: the partner's ICAI membership (verifiable on the ICAI website), whether the firm handles your specific work such as company registration, GST notices or audit, who on the team will actually do your filings, and how quickly they respond. Meeting the team at their office before you sign up is the simplest test." },
+        { question: "What should I ask a CA firm before hiring them?", answer: "Ask how the firm communicates through the year, not just at filing time, and how quickly it replies to simple questions. Ask whether it regularly handles your type of work, and how it has dealt with GST or income tax notices, audit queries and disputes. Routine filing is easy to compare; handling problems is where firms differ. Also notice whether the partner can explain why a structure, deduction or filing approach applies to you in plain language rather than processing paperwork silently. If you leave the first conversation more confused than when you arrived, take that into account before committing to an ongoing relationship." },
       ]}
       furtherReading={[
-        { slug: "how-to-choose-a-chartered-accountant-in-chennai", title: "How to choose a CA firm in Chennai" },
-        { slug: "choosing-ca-firm-anna-nagar", title: "Choosing a CA Firm in Anna Nagar: What to Actually Look For" },
-        { slug: "gst-notice-anna-nagar-traders", title: "Got a GST Notice as an Anna Nagar Trader? Here's What Actually Happens Next" },
-        { slug: "statutory-audit-anna-nagar-companies", title: "Your Anna Nagar Company's First Statutory Audit: What Actually Slows It Down" },
-        { slug: "tax-audit-threshold-anna-nagar", title: "Crossed ₹1 Crore in Anna Nagar? Here's When That Actually Triggers a Tax Audit" },
-        { slug: "roc-compliance-anna-nagar-startups", title: "The ROC Filing Anna Nagar Founders Forget About in Year One" },
-        { slug: "management-consultancy-anna-nagar-business", title: "When an Anna Nagar Business Has Outgrown Its Compliance-Only Relationship With Its CA" },
-        { slug: "advance-tax-anna-nagar-shop-owners", title: "Why Anna Nagar Shop Owners Get Advance Tax Wrong More Than Salaried Residents Do" },
-        { slug: "udyam-registration-anna-nagar-manufacturers", title: "The Udyam Registration Mistake Anna Nagar Suppliers Keep Making" },
+        { slug: "how-to-choose-a-chartered-accountant-in-chennai", title: "How to Choose a CA Firm in Chennai: 9 Checks Before You Hire" },
+        { slug: "itc-mismatch-notices", title: "ITC Mismatch Notices: Why They Happen and How to Respond" },
+        { slug: "documents-checklist-before-auditor-visit", title: "Documents Checklist Before Your Auditor's Visit" },
+        { slug: "audit-applicability-thresholds", title: "Audit Applicability Thresholds for Chennai Businesses" },
+        { slug: "post-incorporation-compliance-checklist", title: "Post-Incorporation Compliance Checklist for Chennai Firms" },
+        { slug: "outgrown-bookkeeping-signs", title: "Signs Your Chennai Business Has Outgrown Basic Bookkeeping" },
+        { slug: "advance-tax-deadlines", title: "Advance Tax Deadlines for FY 2026 to 27: A Practical Guide" },
+        { slug: "msme-udyam-registration-checklist", title: "MSME Udyam Registration After Incorporation: A Checklist" },
       ]}
     />
   );

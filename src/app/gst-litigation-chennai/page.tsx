@@ -74,6 +74,11 @@ const FAQS = [
       "Yes, to file a first GST appeal before the Appellate Authority you must pay any admitted tax in full and pre-deposit 10% of the disputed tax amount (subject to a statutory cap), and a further 10% of the remaining disputed amount to file a second appeal to GSTAT. This pre-deposit is refundable with interest if you ultimately win, but it must be paid upfront before the appeal is even admitted for hearing — it is not optional or negotiable. We factor this into your litigation strategy and cash-flow planning at the outset, since businesses are sometimes caught off guard by having to fund a pre-deposit on top of ongoing operating expenses mid-dispute.",
   },
   {
+    question: "Why do manufacturers with a few large suppliers face bigger ITC disputes?",
+    answer:
+      "Because each supplier carries a larger share of the credit. A manufacturer or engineering unit, such as those in Guindy's industrial estate, typically buys from a small number of large, recurring suppliers, so one supplier's filing error or amendment can affect a large part of the period's input tax credit. The mismatch can even start from the buyer's own delayed amendment to an earlier return, not the supplier's filing. Tracing the actual source first decides what the reply needs. Services businesses and corporate offices more often face reverse charge or classification questions on what they procure, which call for different documentation. A reply that fits the wrong pattern tends to trigger a second round of correspondence, and sometimes a show-cause notice.",
+  },
+  {
     question: "Do you handle GST litigation for businesses outside Chennai?",
     answer:
       "Yes, we support clients with pan-India GST notices through documentation review, reply drafting, and coordinating with local representation where a personal hearing requires it, though our core practice is Chennai and Tamil Nadu jurisdiction, where we have direct familiarity with local GST officers and the Appellate Authority benches. Knowing how specific commissionerates tend to interpret disputed provisions often shapes how a reply or appeal is framed. If your registered office and the jurisdictional GST officer are both outside Tamil Nadu, we'll be upfront about where our direct involvement is most effective versus where a locally-based representative may serve you better.",

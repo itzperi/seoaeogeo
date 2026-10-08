@@ -112,7 +112,7 @@ export default function Page() {
         { question: "What audit does a not-for-profit company need?", href: "/audit-and-assurance" },
       ]}
       relatedSlugs={["trust", "company-registration-chennai", "audit-and-assurance", "roc-compliances", "digital-signature-certificate-chennai", "annual-compliance-package"]}
-      relatedPosts={["trust-vs-society-vs-section8", "12a-80g-registration-guide-chennai-ngos", "fcra-registration", "12a-80g-adyar-institutions"]}
+      relatedPosts={["trust-vs-society-vs-section8", "12a-80g-registration-guide-chennai-ngos", "fcra-registration"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Who is eligible to register a Section 8 company?</h2>
       <ul className="mt-4 max-w-3xl space-y-3 text-slate">

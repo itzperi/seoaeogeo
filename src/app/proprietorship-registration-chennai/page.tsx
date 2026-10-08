@@ -109,7 +109,7 @@ export default function Page() {
         { question: "When does a proprietor need GST registration?", href: "/gst-registration-chennai" },
       ]}
       relatedSlugs={["gst-registration-chennai", "msme-udyam-registration-chennai", "opc-registration-chennai", "bookkeeping-services-chennai", "income-tax-return-filing-chennai", "company-registration-chennai"]}
-      relatedPosts={["gst-threshold-is-a-trigger", "msme-udyam-registration-checklist", "gst-freelancers-consultants", "business-personal-expenses-separate", "advance-tax-anna-nagar-shop-owners"]}
+      relatedPosts={["gst-threshold-is-a-trigger", "msme-udyam-registration-checklist", "gst-freelancers-consultants", "business-personal-expenses-separate"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Which registrations does a proprietorship need?</h2>
       <div className="mt-6 overflow-x-auto rounded-cards border border-ash">
