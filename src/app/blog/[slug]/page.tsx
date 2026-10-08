@@ -7,11 +7,11 @@ export function generateStaticParams() {
   return getPublishedPosts().map((p) => ({ slug: p.slug }));
 }
 
-// Future-dated posts aren't in generateStaticParams, but Next still allows
-// on-demand rendering of any dynamic path by default — this is the actual
-// gate that stops a not-yet-published post from being reachable if someone
-// requests its exact URL directly before its date.
-export const dynamicParams = false;
+// Scheduled posts go live on their date without a redeploy: unknown slugs are
+// rendered on demand (dynamicParams) and the isPublished() check in the page
+// returns 404 until the post's date; pages re-validate daily.
+export const dynamicParams = true;
+export const revalidate = 86400;
 
 export async function generateMetadata({
   params,

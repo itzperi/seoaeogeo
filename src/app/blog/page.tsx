@@ -5,6 +5,9 @@ import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import { getPublishedPosts } from "@/lib/blog";
 
+// Re-validate daily so scheduled posts appear on their publish date.
+export const revalidate = 86400;
+
 export const metadata: Metadata = {
   title: "Tax & Compliance Insights Blog",
   description:

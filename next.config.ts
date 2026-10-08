@@ -26,6 +26,8 @@ const nextConfig: NextConfig = {
       { source: "/ca-fees-chennai", destination: "/contact", permanent: true },
       // Merged into the company registration hub (it competed for the same searches).
       { source: "/formation-of-business-entity", destination: "/company-registration-chennai", permanent: true },
+      // Short link for review requests (WhatsApp, QR code on the office desk).
+      { source: "/review", destination: "https://search.google.com/local/writereview?placeid=ChIJzXoB0DFnUjoRv2EUuO2l7n8", permanent: false },
     ];
   },
 };

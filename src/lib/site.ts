@@ -18,6 +18,9 @@ export const YEAR_FOUNDED = 2024;
 // maps.app.goo.gl short link, which is only a redirect.
 export const GBP_CID = "9218487927688159679";
 export const GBP_URL = `https://maps.google.com/?cid=${GBP_CID}`;
+// Google Place ID of the profile; opens the "Write a review" dialog directly.
+export const GBP_PLACE_ID = "ChIJzXoB0DFnUjoRv2EUuO2l7n8";
+export const GBP_REVIEW_URL = `https://search.google.com/local/writereview?placeid=${GBP_PLACE_ID}`;
 // Directions go to the office's exact coordinates (not a name search), so
 // visitors reach the right building even while the profile's map pin is
 // being corrected.
