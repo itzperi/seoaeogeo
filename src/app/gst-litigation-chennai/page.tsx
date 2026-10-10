@@ -306,7 +306,7 @@ export default function GstLitigationPage() {
       </section>
 
       <CTASection
-        formService="GST notice, litigation or appeal"
+        service="GST Litigation & Appeals"
         title="Facing a GST notice or audit?"
         subtitle="Get a chartered accountant's assessment of your case before your reply deadline passes."
       />

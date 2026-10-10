@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { insertRow } from "@/lib/supabase";
 
-const ACTIONS = new Set(["call", "whatsapp", "book", "form_start", "form_submit"]);
+const ACTIONS = new Set(["call", "whatsapp", "book", "form_start", "form_submit", "enquiry_open"]);
 
 export async function POST(req: NextRequest) {
   // sendBeacon posts text/plain, so parse the raw body ourselves.

@@ -1,9 +1,10 @@
 import TrackedAnchor from "@/components/TrackedAnchor";
+import { EnquireButton } from "@/components/WhatsAppEnquiry";
 import { CheckSticker, CoinSticker, DocSticker, Ribbon } from "@/components/Stickers";
 import Link from "next/link";
 import { PAGE_DATES } from "@/lib/page-dates";
 import { JsonLd, webPageReviewSchema } from "@/lib/schema";
-import { BOOKING_LINK, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
+import { BOOKING_LINK, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 // Sky-wash poster hero: sticker tag, crushed condensed headline with the
 // blue ribbon behind it, stickers around the edges, black-filled Book CTA.
@@ -12,12 +13,15 @@ export default function PageHero({
   h1,
   subhead,
   reviewedPath,
+  service,
 }: {
   eyebrow: string;
   h1: string;
   subhead: string;
   /** Route of a service/area page; shows "Reviewed by … · Updated …" from its git date. */
   reviewedPath?: string;
+  /** Service named in the pre-typed WhatsApp enquiry (defaults to the H1). */
+  service?: string;
 }) {
   const updated = reviewedPath ? PAGE_DATES[reviewedPath] : undefined;
   return (
@@ -46,25 +50,22 @@ export default function PageHero({
           </p>
         )}
         <div className="mt-8 flex flex-wrap gap-3">
+          <EnquireButton
+            service={service ?? h1}
+            placement="page-hero"
+            className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-[#25D366] px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-opacity hover:opacity-85"
+          >
+            Enquire on WhatsApp
+          </EnquireButton>
           <TrackedAnchor
             action="book"
             placement="page-hero"
             href={BOOKING_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
+            className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-lavender"
           >
-            Book a Free Consultation
-          </TrackedAnchor>
-          <TrackedAnchor
-            action="whatsapp"
-            placement="page-hero"
-            href={WHATSAPP_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-mint-pop"
-          >
-            WhatsApp Us
+            Book a Video Call
           </TrackedAnchor>
           <TrackedAnchor
             action="call"

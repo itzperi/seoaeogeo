@@ -5,7 +5,8 @@ import { SERVICE_GROUPS, getService, type ServiceSummary } from "@/lib/services"
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
 import GoogleReviews from "@/components/GoogleReviews";
-import QualifyForm from "@/components/QualifyForm";
+import EnquiryCard from "@/components/EnquiryCard";
+import { EnquireButton } from "@/components/WhatsAppEnquiry";
 import TrackedAnchor from "@/components/TrackedAnchor";
 import { JsonLd, serviceCatalogSchema } from "@/lib/schema";
 import { CalcSticker, CoinSticker, Ribbon, StarSticker } from "@/components/Stickers";
@@ -99,15 +100,21 @@ function GroupServiceCard({ service }: { service: ServiceSummary }) {
   // Same visual style as ServiceCard, minus the generic "Learn more" label —
   // the link's text is the service name itself (descriptive anchor).
   return (
-    <Link
-      href={`/${service.slug}`}
-      className="group flex flex-col rounded-cards border border-carbon bg-white p-7 transition hover:-rotate-1 hover:bg-lavender"
-    >
-      <h4 className="text-[28px] uppercase leading-[0.95] text-carbon" style={{ fontFamily: "var(--font-display)", fontWeight: 400 }}>
-        {service.name}
-      </h4>
-      <p className="mt-3 flex-1 text-sm leading-relaxed text-carbon">{service.shortDescription}</p>
-    </Link>
+    <div className="flex flex-col rounded-cards border border-carbon bg-white p-7 transition hover:-rotate-1 hover:bg-lavender">
+      <Link href={`/${service.slug}`} className="group flex flex-1 flex-col">
+        <h4 className="text-[28px] uppercase leading-[0.95] text-carbon" style={{ fontFamily: "var(--font-display)", fontWeight: 400 }}>
+          {service.name}
+        </h4>
+        <p className="mt-3 flex-1 text-sm leading-relaxed text-carbon">{service.shortDescription}</p>
+      </Link>
+      <EnquireButton
+        service={service.name}
+        placement="home-service-card"
+        className="mt-5 inline-flex min-h-[44px] items-center justify-center self-start rounded-full border border-carbon bg-[#25D366] px-4 text-xs font-bold uppercase tracking-[0.032em] text-carbon"
+      >
+        Enquire on WhatsApp
+      </EnquireButton>
+    </div>
   );
 }
 
@@ -196,8 +203,8 @@ export default function HomePage() {
             </dl>
           </div>
           <div id="get-started" className="relative scroll-mt-24">
-            <p className="sticker-tag mb-3 bg-white">Free case review · under a minute</p>
-            <QualifyForm placement="home-hero" />
+            <p className="sticker-tag mb-3 bg-white">Tap a topic · reply on WhatsApp</p>
+            <EnquiryCard placement="home-hero" />
           </div>
         </div>
       </section>

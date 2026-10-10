@@ -47,6 +47,26 @@ function to24h(time: string) {
   return `${String(hour).padStart(2, "0")}:${minute}`;
 }
 
+// Countries the firm serves remotely (NRIs, foreign-owned companies,
+// overseas accounting firms).
+export const SERVED_COUNTRIES = ["India", "United Arab Emirates", "United States", "United Kingdom"];
+
+// Service pages whose buyers are mostly outside India, keyed by route.
+export const INTERNATIONAL_AREAS: Record<string, string[]> = {
+  "/company-registration-india-for-foreigners": SERVED_COUNTRIES,
+  "/india-subsidiary-compliance-cfo": SERVED_COUNTRIES,
+  "/fema-rbi-compliance": SERVED_COUNTRIES,
+  "/transfer-pricing-audit": SERVED_COUNTRIES,
+  "/nri-tax-services": SERVED_COUNTRIES,
+  "/nri-tax-services-uae": ["United Arab Emirates", "India"],
+  "/nri-tax-services-uk": ["United Kingdom", "India"],
+  "/nri-tax-services-usa": ["United States", "India"],
+  "/nri-property-sale-tds-chennai": SERVED_COUNTRIES,
+  "/form-15ca-15cb-chennai": SERVED_COUNTRIES,
+  "/outsourced-accounting-for-cpa-firms": ["United States"],
+  "/outsourced-accounting-for-uk-accountants": ["United Kingdom"],
+};
+
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
@@ -78,6 +98,8 @@ export function organizationSchema() {
     areaServed: [
       { "@type": "City", name: "Chennai" },
       ...AREAS.map((area) => ({ "@type": "Place" as const, name: `${area.name}, Chennai` })),
+      { "@type": "State", name: "Tamil Nadu" },
+      ...SERVED_COUNTRIES.map((name) => ({ "@type": "Country" as const, name })),
     ],
     openingHoursSpecification: openingHoursSpecification(),
     knowsAbout: [
@@ -162,6 +184,8 @@ export function serviceSchema(opts: {
   url: string;
   serviceType: string;
   areaServedName?: string;
+  /** Countries for remote/international services (overrides the Chennai default). */
+  areaServedCountries?: string[];
 }) {
   return {
     "@context": "https://schema.org",
@@ -171,9 +195,11 @@ export function serviceSchema(opts: {
     description: opts.description,
     url: opts.url,
     provider: { "@id": `${SITE_URL}/#organization` },
-    areaServed: opts.areaServedName
-      ? { "@type": "Place", name: opts.areaServedName }
-      : { "@type": "City", name: "Chennai" },
+    areaServed: opts.areaServedCountries?.length
+      ? opts.areaServedCountries.map((name) => ({ "@type": "Country", name }))
+      : opts.areaServedName
+        ? { "@type": "Place", name: opts.areaServedName }
+        : { "@type": "City", name: "Chennai" },
   };
 }
 

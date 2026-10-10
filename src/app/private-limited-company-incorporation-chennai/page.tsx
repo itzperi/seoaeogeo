@@ -393,7 +393,7 @@ export default function IncorporationPage() {
       </section>
 
       <CTASection
-        formService="Company / LLP registration (incl. foreign company in India)"
+        service="Private Limited Company Registration"
         title="Ready to incorporate your company?"
         subtitle="Speak to a chartered accountant in Anna Nagar about registering your private limited company."
       />

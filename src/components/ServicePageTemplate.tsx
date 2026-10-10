@@ -5,64 +5,9 @@ import PageHero from "@/components/PageHero";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
-import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
+import { INTERNATIONAL_AREAS, JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { getPostMeta, isPublished } from "@/lib/blog";
 import { getService } from "@/lib/services";
-
-// Pre-selects the form's first question from the page being viewed.
-const FORM_SERVICE_BY_PAGE: Record<string, string> = {
-  "/transfer-pricing-audit": "Transfer pricing audit",
-  "/tax-audit-chennai": "Tax audit / statutory audit",
-  "/statutory-audit-chennai": "Tax audit / statutory audit",
-  "/audit-and-assurance": "Tax audit / statutory audit",
-  "/direct-tax": "Income tax, notices or scrutiny",
-  "/income-tax-return-filing-chennai": "Income tax, notices or scrutiny",
-  "/rera": "RERA compliance",
-  "/company-registration-chennai": "Company / LLP registration (incl. foreign company in India)",
-  "/llp-registration-chennai": "Company / LLP registration (incl. foreign company in India)",
-  "/nri-tax-services": "NRI tax (UAE, UK, USA and others)",
-  "/nri-tax-services-uae": "NRI tax (UAE, UK, USA and others)",
-  "/nri-tax-services-uk": "NRI tax (UAE, UK, USA and others)",
-  "/nri-tax-services-usa": "NRI tax (UAE, UK, USA and others)",
-  "/nri-property-sale-tds-chennai": "NRI tax (UAE, UK, USA and others)",
-  "/gst-notice-reply-chennai": "GST notice, litigation or appeal",
-  "/income-tax-notice-reply-chennai": "Income tax, notices or scrutiny",
-  "/company-registration-india-for-foreigners": "Company / LLP registration (incl. foreign company in India)",
-  "/india-subsidiary-compliance-cfo": "Virtual / Fractional CFO",
-  "/outsourced-accounting-for-cpa-firms": "Outsourced accounting / bookkeeping",
-  "/outsourced-accounting-for-uk-accountants": "Outsourced accounting / bookkeeping",
-  "/bookkeeping-services-chennai": "Outsourced accounting / bookkeeping",
-  "/goods-and-services-tax": "GST notice, litigation or appeal",
-  "/roc-compliances": "ROC, payroll or other compliance",
-  "/payroll-services-chennai": "ROC, payroll or other compliance",
-  "/management-consultancy": "Virtual / Fractional CFO",
-  "/company-registration-coimbatore": "Company / LLP registration (incl. foreign company in India)",
-  "/company-registration-madurai": "Company / LLP registration (incl. foreign company in India)",
-  "/company-registration-tiruchirappalli": "Company / LLP registration (incl. foreign company in India)",
-  "/company-registration-salem": "Company / LLP registration (incl. foreign company in India)",
-  "/company-registration-tiruppur": "Company / LLP registration (incl. foreign company in India)",
-  "/company-registration-hosur": "Company / LLP registration (incl. foreign company in India)",
-  "/company-registration-vellore": "Company / LLP registration (incl. foreign company in India)",
-  "/company-registration-erode": "Company / LLP registration (incl. foreign company in India)",
-  "/company-registration-tirunelveli": "Company / LLP registration (incl. foreign company in India)",
-  "/company-registration-thoothukudi": "Company / LLP registration (incl. foreign company in India)",
-  "/opc-registration-chennai": "Company / LLP registration (incl. foreign company in India)",
-  "/partnership-firm-registration-chennai": "Company / LLP registration (incl. foreign company in India)",
-  "/proprietorship-registration-chennai": "Company / LLP registration (incl. foreign company in India)",
-  "/section-8-company-registration-chennai": "Company / LLP registration (incl. foreign company in India)",
-  "/startup-india-registration-chennai": "Company / LLP registration (incl. foreign company in India)",
-  "/gst-return-filing-chennai": "ROC, payroll or other compliance",
-  "/tds-return-filing-chennai": "ROC, payroll or other compliance",
-  "/income-tax-assessment-appeals-chennai": "Income tax, notices or scrutiny",
-  "/form-15ca-15cb-chennai": "NRI tax (UAE, UK, USA and others)",
-  "/fema-rbi-compliance": "ROC, payroll or other compliance",
-  "/annual-compliance-package": "ROC, payroll or other compliance",
-  "/accounting-outsourcing-chennai": "Outsourced accounting / bookkeeping",
-  "/digital-signature-certificate-chennai": "ROC, payroll or other compliance",
-  "/trademark-registration-chennai": "Something else",
-  "/iec-registration-chennai": "ROC, payroll or other compliance",
-  "/fssai-license-chennai": "ROC, payroll or other compliance",
-};
 
 export type SubService = { name: string; text: string };
 export type HowToStep = { name: string; text: string };
@@ -129,6 +74,7 @@ export default function ServicePageTemplate({
           description: subhead,
           url: pageUrl,
           serviceType,
+          areaServedCountries: INTERNATIONAL_AREAS[crumbHref],
         })}
       />
       {howTo && (
@@ -142,7 +88,7 @@ export default function ServicePageTemplate({
       )}
       <JsonLd data={speakableSchema(["#direct-answer"])} />
       <Breadcrumbs items={[...(parentCrumb ? [parentCrumb] : []), { name: crumbLabel, href: crumbHref }]} />
-      <PageHero eyebrow={eyebrow} h1={h1} subhead={subhead} reviewedPath={crumbHref} />
+      <PageHero eyebrow={eyebrow} h1={h1} subhead={subhead} reviewedPath={crumbHref} service={crumbLabel} />
 
       <section className="bg-paper py-16">
         <div className="container-page">
@@ -274,7 +220,7 @@ export default function ServicePageTemplate({
       )}
 
       <GoogleProfileStrip service={crumbLabel} />
-      <CTASection formService={FORM_SERVICE_BY_PAGE[crumbHref]} />
+      <CTASection service={crumbLabel} />
     </>
   );
 }

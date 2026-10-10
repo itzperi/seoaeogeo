@@ -1,10 +1,11 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
+import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { serviceForPath } from "@/lib/service-for-path";
 import { track } from "@/lib/track";
+import { enquiryMessage, openEnquiry, whatsappHref } from "@/components/WhatsAppEnquiry";
 
-const WHATSAPP_HREF = `${WHATSAPP_LINK}?text=${encodeURIComponent("Hi C S Rushil & Co., I'd like to speak to a chartered accountant about ")}`;
 
 function PhoneIcon() {
   return (
@@ -42,6 +43,14 @@ function CalendarIcon() {
 export default function ContactBar() {
   const pathname = usePathname();
   if (pathname?.startsWith("/admin")) return null;
+  const service = serviceForPath(pathname || "/");
+  // Plain link works without JavaScript; with it, the click opens the
+  // pre-typed enquiry so the visitor can review the message first.
+  const waHref = whatsappHref(enquiryMessage(service, pathname || "/"));
+  const onWhatsApp = (placement: string) => (e: React.MouseEvent) => {
+    e.preventDefault();
+    openEnquiry(placement, service);
+  };
 
   return (
     <>
@@ -59,10 +68,10 @@ export default function ContactBar() {
           Call
         </a>
         <a
-          href={WHATSAPP_HREF}
+          href={waHref}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => track("whatsapp", "mobile-bar")}
+          onClick={onWhatsApp("mobile-bar")}
           className="flex min-h-[56px] flex-col items-center justify-center gap-0.5 border-x border-carbon bg-[#25D366] py-2.5 text-xs font-bold uppercase tracking-[0.032em] text-carbon"
         >
           <WhatsAppIcon />
@@ -87,14 +96,14 @@ export default function ContactBar() {
       <div className="fixed bottom-6 right-6 z-50 hidden flex-col items-end gap-2 md:flex">
         {[
           { action: "book" as const, href: BOOKING_LINK, label: "Book a free consultation", icon: <CalendarIcon />, style: "bg-carbon text-white", external: true },
-          { action: "whatsapp" as const, href: WHATSAPP_HREF, label: "WhatsApp us", icon: <WhatsAppIcon />, style: "bg-[#25D366] text-carbon", external: true },
+          { action: "whatsapp" as const, href: waHref, label: "WhatsApp us", icon: <WhatsAppIcon />, style: "bg-[#25D366] text-carbon", external: true },
           { action: "call" as const, href: `tel:${PHONE_TEL}`, label: `Call ${PHONE_DISPLAY}`, icon: <PhoneIcon />, style: "bg-white text-carbon", external: false },
         ].map((b) => (
           <a
             key={b.action}
             href={b.href}
             {...(b.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            onClick={() => track(b.action, "desktop-float")}
+            onClick={b.action === "whatsapp" ? onWhatsApp("desktop-float") : () => track(b.action, "desktop-float")}
             aria-label={b.label}
             className="group relative flex h-12 w-12 items-center justify-center"
           >

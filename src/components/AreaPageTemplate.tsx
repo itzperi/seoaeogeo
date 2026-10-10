@@ -54,7 +54,7 @@ export default function AreaPageTemplate({
       />
       {directAnswer && <JsonLd data={speakableSchema(["#direct-answer"])} />}
       <Breadcrumbs items={[{ name: `Chartered Accountant — ${locality}`, href: crumbHref }]} />
-      <PageHero eyebrow={`Chartered Accountant · ${locality}, Chennai`} h1={h1} subhead={subhead} reviewedPath={crumbHref} />
+      <PageHero eyebrow={`Chartered Accountant · ${locality}, Chennai`} h1={h1} subhead={subhead} reviewedPath={crumbHref} service={`CA services in ${locality}`} />
 
       <section className="bg-paper py-16">
         <div className="container-page">
@@ -123,7 +123,8 @@ export default function AreaPageTemplate({
       <GoogleProfileStrip />
       <CTASection
         title={`Chartered accountant serving ${locality}, Chennai`}
-        subtitle="Book a free consultation — in person at our Anna Nagar office, or virtually."
+        subtitle="Message us on WhatsApp, call, or visit our Anna Nagar office."
+        service={`CA services in ${locality}`}
       />
     </>
   );

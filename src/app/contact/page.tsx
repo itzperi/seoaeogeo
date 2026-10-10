@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import GoogleReviews from "@/components/GoogleReviews";
-import QualifyForm from "@/components/QualifyForm";
+import EnquiryCard from "@/components/EnquiryCard";
 import { JsonLd } from "@/lib/schema";
 import {
   ADDRESS_FULL,
@@ -66,12 +66,12 @@ export default function ContactPage() {
       <section className="bg-fog py-16">
         <div className="container-page grid grid-cols-1 gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="text-2xl text-obsidian">Prefer to tell us what you need first?</h2>
+            <h2 className="text-2xl text-obsidian">Prefer to message us first?</h2>
             <p className="mt-3 text-slate">
-              Answer a few quick questions and we&apos;ll reach out to you — no need to pick a time slot upfront.
+              Pick a topic and WhatsApp opens with your message ready — no forms, no waiting for a call-back slot.
             </p>
             <div className="mt-6">
-              <QualifyForm placement="contact-page" />
+              <EnquiryCard placement="contact-page" />
             </div>
           </div>
 

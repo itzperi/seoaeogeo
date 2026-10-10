@@ -1,20 +1,22 @@
 import GoogleReviews from "@/components/GoogleReviews";
-import QualifyForm from "@/components/QualifyForm";
+import EnquiryCard from "@/components/EnquiryCard";
 import { CheckSticker, CoinSticker } from "@/components/Stickers";
 import TrackedAnchor from "@/components/TrackedAnchor";
-import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
+import { EnquireButton } from "@/components/WhatsAppEnquiry";
+import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 export default function CTASection({
   title = "Let's simplify your compliance.",
   subtitle = "Talk to a chartered accountant in Chennai today — no obligation, no jargon.",
   showForm = true,
-  formService,
+  service,
 }: {
   title?: string;
   subtitle?: string;
+  /** Show the WhatsApp enquiry card (no form fields). */
   showForm?: boolean;
-  // Pre-selects the first qualifying question on service pages.
-  formService?: string;
+  /** Service the pre-typed WhatsApp message is about. */
+  service?: string;
 }) {
   return (
     <>
@@ -30,13 +32,6 @@ export default function CTASection({
                 <p className="sticker-tag bg-sunburst">Get started</p>
                 <h2 className="mt-4 text-5xl text-carbon md:text-7xl">{title}</h2>
                 <p className={`mt-4 max-w-xl text-lg text-carbon ${showForm ? "" : "mx-auto"}`}>{subtitle}</p>
-                {showForm && (
-                  <ul className="mt-6 space-y-2 text-[15px] font-bold text-carbon">
-                    <li>✓ Answer 6 quick questions — under a minute</li>
-                    <li>✓ A chartered accountant reviews your case, not a call centre</li>
-                    <li>✓ We reach you by WhatsApp, call or email within one working day</li>
-                  </ul>
-                )}
                 <div className={`mt-8 flex flex-wrap gap-3 ${showForm ? "" : "justify-center"}`}>
                   <TrackedAnchor
                     action="book"
@@ -56,19 +51,16 @@ export default function CTASection({
                   >
                     Call {PHONE_DISPLAY}
                   </TrackedAnchor>
-                  <TrackedAnchor
-                    action="whatsapp"
+                  <EnquireButton
+                    service={service}
                     placement="cta-section"
-                    href={WHATSAPP_LINK}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-mint-pop"
+                    className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-[#25D366] px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-opacity hover:opacity-85"
                   >
                     WhatsApp Us
-                  </TrackedAnchor>
+                  </EnquireButton>
                 </div>
               </div>
-              {showForm && <QualifyForm placement="cta-section" defaultService={formService} />}
+              {showForm && <EnquiryCard service={service} placement="cta-section" />}
             </div>
           </div>
         </div>
