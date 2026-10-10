@@ -63,6 +63,10 @@ export const INTERNATIONAL_AREAS: Record<string, string[]> = {
   "/nri-tax-services-usa": ["United States", "India"],
   "/nri-property-sale-tds-chennai": SERVED_COUNTRIES,
   "/form-15ca-15cb-chennai": SERVED_COUNTRIES,
+  "/eor-vs-subsidiary-india": SERVED_COUNTRIES,
+  "/india-subsidiary-for-us-companies": ["United States", "India"],
+  "/india-subsidiary-for-uk-companies": ["United Kingdom", "India"],
+  "/india-subsidiary-for-uae-companies": ["United Arab Emirates", "India"],
   "/outsourced-accounting-for-cpa-firms": ["United States"],
   "/outsourced-accounting-for-uk-accountants": ["United Kingdom"],
 };

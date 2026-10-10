@@ -94,7 +94,7 @@ export default function Footer() {
         </div>
       </div>
       <nav aria-label="All services" className="border-t border-ash">
-        <div className="container-page grid grid-cols-2 gap-x-6 gap-y-8 py-12 sm:grid-cols-3 lg:grid-cols-7">
+        <div className="container-page grid grid-cols-2 gap-x-6 gap-y-8 py-12 sm:grid-cols-4 lg:grid-cols-8">
           {SERVICE_GROUPS.map((group) => (
             <div key={group.label}>
               <p className="eyebrow text-xs text-slate">{group.label}</p>

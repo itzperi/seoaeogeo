@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
@@ -14,6 +15,60 @@ export const metadata: Metadata = {
     url: "/company-registration-india-for-foreigners",
   },
 };
+
+const linkClass = "font-medium text-royal-violet underline underline-offset-2";
+
+function DataTable({ head, rows }: { head: string[]; rows: string[][] }) {
+  return (
+    <div className="mt-6 max-w-4xl overflow-x-auto rounded-cards border border-ash">
+      <table className="w-full text-left text-sm">
+        <thead className="bg-carbon text-white">
+          <tr>
+            {head.map((h) => (
+              <th key={h} className="px-4 py-3 font-medium">
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-ash bg-paper">
+          {rows.map((r) => (
+            <tr key={r[0]}>
+              {r.map((c, i) => (
+                <td key={i} className={`px-4 py-3 align-top ${i === 0 ? "font-medium text-obsidian" : "text-slate"}`}>
+                  {c}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+const TIMELINE = [
+  ["Document legalisation abroad", "1 to 4 weeks", "Notarisation and apostille, or consularisation in non-Convention countries; often the longest step and done in parallel with the next one."],
+  ["DSC and DIN", "Under 1 week", "Digital signature certificates for directors once identity documents are ready; DINs are allotted through SPICe+."],
+  ["Name approval (SPICe+ Part A)", "About 1 week", "Longer if the Registrar asks for a different name and the application is resubmitted."],
+  ["Incorporation (SPICe+ Part B)", "1 to 3 weeks", "Filed with MOA and AOA; the certificate of incorporation, PAN and TAN are issued on approval."],
+  ["Bank account opening", "1 to 4 weeks", "Bank KYC for the company and its foreign shareholders; some banks need originals or video verification."],
+  ["Capital remittance and share allotment", "1 to 2 weeks", "Shares must be issued within 60 days of receiving the money from the foreign shareholder."],
+  ["FC-GPR filing", "Within 30 days of allotment", "Filed on the RBI FIRMS portal through the authorised dealer bank, with the valuation certificate and remittance details."],
+];
+
+const LEGALISATION = [
+  ["United States", "Party", "Apostille from the Secretary of State of the issuing or notarising state, or the US Department of State for federal documents."],
+  ["United Kingdom", "Party", "Apostille from the FCDO Legalisation Office; private documents are first certified by a notary or solicitor."],
+  ["Canada", "Party (from January 2024)", "Apostille from the competent Canadian authority."],
+  ["Germany, Netherlands", "Party", "Apostille from the competent authority in the issuing country."],
+  ["Australia", "Party", "Apostille from the Department of Foreign Affairs and Trade."],
+  ["Singapore", "Party (from September 2021)", "Apostille from the Singapore Academy of Law."],
+  ["Japan", "Party", "Apostille from the Ministry of Foreign Affairs."],
+  ["Saudi Arabia", "Party (from December 2022)", "Apostille from the competent Saudi authority."],
+  ["United Arab Emirates", "Not listed", "Notarisation, attestation by the UAE Ministry of Foreign Affairs, then attestation by the Embassy of India in Abu Dhabi or Consulate General in Dubai."],
+  ["Qatar, Kuwait", "Not listed", "Consularisation: attestation by the country's foreign ministry, then by the Indian embassy there."],
+];
 
 export default function Page() {
   return (
@@ -63,6 +118,44 @@ export default function Page() {
         { question: "Is an LLP a better choice than a private limited company?", href: "/llp-registration-chennai" },
       ]}
       relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "llp-registration-chennai"]}
-    />
+    >
+      <h2 className="mt-14 text-2xl text-obsidian">How long does each stage of setting up an Indian subsidiary take?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        The durations below are indicative ranges based on typical cases, not commitments; they depend on how quickly
+        documents are legalised abroad, MCA processing, bank onboarding and whether any resubmission is needed. The FC-GPR
+        and share allotment deadlines are statutory.
+      </p>
+      <DataTable head={["Stage", "Typical duration", "Notes"]} rows={TIMELINE} />
+
+      <h2 className="mt-14 text-2xl text-obsidian">How are documents legalised in different countries?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        India is a party to the Hague Apostille Convention, so documents from other Convention countries need only an
+        apostille from the issuing country. Documents from countries that are not parties are consularised: attested by that
+        country&apos;s foreign ministry and then by the Indian embassy or consulate there. The status below is taken from the
+        HCCH status table; confirm the current position before signing.
+      </p>
+      <DataTable head={["Parent country", "Apostille Convention", "How documents are legalised for India"]} rows={LEGALISATION} />
+
+      <h2 className="mt-14 text-2xl text-obsidian">Where can you find country-specific guidance?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Our country guides explain documents, treaty points and the working model for parents in the{" "}
+        <Link href="/india-subsidiary-for-us-companies" className={linkClass}>
+          United States
+        </Link>
+        ,{" "}
+        <Link href="/india-subsidiary-for-uk-companies" className={linkClass}>
+          United Kingdom
+        </Link>{" "}
+        and{" "}
+        <Link href="/india-subsidiary-for-uae-companies" className={linkClass}>
+          United Arab Emirates
+        </Link>
+        . If you want to hire in India before the company is ready, compare an{" "}
+        <Link href="/eor-vs-subsidiary-india" className={linkClass}>
+          Employer of Record with a subsidiary
+        </Link>
+        .
+      </p>
+    </ServicePageTemplate>
   );
 }

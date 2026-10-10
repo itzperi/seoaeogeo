@@ -231,6 +231,30 @@ export const SERVICES: ServiceSummary[] = [
     shortDescription:
       "FSSAI basic registration, state and central licences on FoSCoS under the April 2026 turnover limits, plus modifications and annual returns.",
   },
+  {
+    slug: "eor-vs-subsidiary-india",
+    name: "EOR vs Subsidiary in India",
+    shortDescription:
+      "Compare an Employer of Record with your own Indian subsidiary on control, speed, PE risk, IP and compliance, and plan the move to an entity.",
+  },
+  {
+    slug: "india-subsidiary-for-us-companies",
+    name: "India Subsidiary for US Companies",
+    shortDescription:
+      "Indian subsidiary set-up for US parents: apostilled documents, resident director, FDI route, FC-GPR, transfer pricing and US CPA coordination.",
+  },
+  {
+    slug: "india-subsidiary-for-uk-companies",
+    name: "India Subsidiary for UK Companies",
+    shortDescription:
+      "Indian subsidiary set-up for UK parents: FCDO apostille, resident director, FDI route, FC-GPR, India–UK tax treaty and CETA points.",
+  },
+  {
+    slug: "india-subsidiary-for-uae-companies",
+    name: "India Subsidiary for UAE Companies",
+    shortDescription:
+      "Indian subsidiary set-up for UAE mainland and free-zone parents and NRI founders: MOFA attestation, FDI route, FC-GPR and India–UAE treaties.",
+  },
 ];
 
 // Specialist pages for NRIs, overseas businesses and urgent notices. Kept
@@ -304,7 +328,18 @@ export const SERVICE_GROUPS: { label: string; slugs: string[] }[] = [
       "partnership-firm-registration-chennai",
       "proprietorship-registration-chennai",
       "section-8-company-registration-chennai",
+    ],
+  },
+  {
+    label: "India entry (foreign companies)",
+    slugs: [
       "company-registration-india-for-foreigners",
+      "india-subsidiary-for-us-companies",
+      "india-subsidiary-for-uk-companies",
+      "india-subsidiary-for-uae-companies",
+      "eor-vs-subsidiary-india",
+      "india-subsidiary-compliance-cfo",
+      "fema-rbi-compliance",
     ],
   },
   {
@@ -356,7 +391,6 @@ export const SERVICE_GROUPS: { label: string; slugs: string[] }[] = [
       "accounting-outsourcing-chennai",
       "bookkeeping-services-chennai",
       "payroll-services-chennai",
-      "fema-rbi-compliance",
       "rera",
       "trust",
       "outsourced-accounting-for-cpa-firms",
@@ -365,7 +399,7 @@ export const SERVICE_GROUPS: { label: string; slugs: string[] }[] = [
   },
   {
     label: "Advisory",
-    slugs: ["virtual-cfo-services", "management-consultancy", "india-subsidiary-compliance-cfo"],
+    slugs: ["virtual-cfo-services", "management-consultancy"],
   },
 ];
 
