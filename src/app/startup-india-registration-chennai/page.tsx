@@ -111,7 +111,7 @@ export default function Page() {
         { question: "When should a startup bring in a Virtual CFO?", href: "/virtual-cfo-services" },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "company-registration-chennai", "llp-registration-chennai", "virtual-cfo-services", "roc-compliances", "trademark-registration-chennai"]}
-      relatedPosts={["startup-india-registration", "private-limited-vs-llp-chennai-startups", "spice-plus-incorporation-explained", "common-compliance-mistakes-chennai-startups", "virtual-cfo-omr-startups"]}
+      relatedPosts={["private-limited-vs-llp-chennai-startups", "startup-india-registration", "spice-plus-incorporation-explained", "common-compliance-mistakes-chennai-startups", "virtual-cfo-omr-startups"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Who is eligible for DPIIT recognition?</h2>
       <div className="mt-6 overflow-x-auto rounded-cards border border-ash">

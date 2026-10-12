@@ -88,7 +88,7 @@ const DOCUMENTS = [
 const CALENDAR = [
   ["15 June 2026", "First advance tax instalment for tax year 2026-27. Resident senior citizens (60 and above) without business income are not required to pay advance tax."],
   ["15 September 2026", "Second instalment (45% cumulative) for ancillary owners and NRIs whose tax is not fully covered by TDS."],
-  ["31 October 2026", "Return due for financial year 2025-26 for ancillary units and partners whose accounts are audited."],
+  ["21 November 2026", "Return due for financial year 2025-26 for ancillary units and partners whose accounts are audited (extended from 31 October by CBDT Circular No. 7/2026; audit report by 21 October 2026)."],
   ["15 December 2026", "Third instalment (75% cumulative)."],
   ["15 March 2027", "Final instalment (100%). An NRI who sold property in the year should check whether TDS already covers the tax."],
   ["31 July 2027", "Return due for tax year 2026-27 for pensioners, salaried people and most NRIs."],

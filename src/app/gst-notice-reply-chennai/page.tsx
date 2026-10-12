@@ -63,6 +63,7 @@ export default function Page() {
         { question: "How do I keep my monthly GST returns reconciled to avoid notices?", href: "/goods-and-services-tax" },
         { question: "I have received an income tax notice as well. Can you help?", href: "/income-tax-notice-reply-chennai" },
       ]}
+      relatedPosts={["section-74a-gst-notice"]}
       relatedSlugs={["gst-litigation-chennai", "goods-and-services-tax", "income-tax-notice-reply-chennai"]}
     />
   );

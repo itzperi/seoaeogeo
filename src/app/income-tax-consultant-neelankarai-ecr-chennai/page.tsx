@@ -165,6 +165,7 @@ export default function Page() {
         { question: "Do I have to travel to Anna Nagar to work with you?", answer: "No. ECR is a long drive from our only office in Anna Nagar, so most ECR clients work with us fully online, by video call and secure document sharing. You can visit Anna Nagar by appointment for a large transaction. We have no office on ECR, in Neelankarai or anywhere else." },
       ]}
       furtherReading={[
+        { slug: "rnor-status-returning-nri", title: "RNOR status for NRIs returning to Chennai" },
         { slug: "capital-gains-tax-property-sale", title: "Capital Gains Tax on Property Sale for Chennai Sellers" },
       ]}
     />

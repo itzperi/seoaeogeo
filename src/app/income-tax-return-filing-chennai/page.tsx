@@ -83,7 +83,7 @@ const REGIMES = [
 
 const LATE_OPTIONS = [
   ["Belated return", "Missed the due date", "By 31 December after the year; late fee of ₹5,000 (₹1,000 if total income is up to ₹5 lakh); interest on unpaid tax; most losses cannot be carried forward; the old regime cannot be chosen by those without business income"],
-  ["Revised return", "Found an error or omission in a return already filed", "Within the revision window (31 March 2027 for FY 2025-26); can be filed more than once, and can increase a refund or reduce tax; a fee may apply to late revisions, so check the current rule before filing"],
+  ["Revised return", "Found an error or omission in a return already filed", "Within the revision window (31 March 2027 for FY 2025-26); can be filed more than once, and can increase a refund or reduce tax; a revision filed after 31 December 2026 is reported to attract a fee of ₹1,000 (income up to ₹5 lakh) or ₹5,000 under the Finance Act, 2026, so confirm before filing"],
   ["Updated return (ITR-U)", "Income was missed and the revision window has closed", "Within 48 months; only to pay more tax, not to claim or increase a refund or a loss; additional tax of 25%, 50%, 60% or 70% of the tax and interest depending on how late; not available once a search, survey or assessment has begun for that year"],
   ["Rectification", "The department's processing made a mistake apparent from the record", "Request filed online against the intimation (Section 154 for 1961 Act years), for example where TDS credit or relief was not allowed"],
 ];
@@ -144,7 +144,7 @@ export default function Page() {
         { question: "Do I need GST registration in addition to filing income tax?", href: "/gst-registration-chennai" },
       ]}
       relatedSlugs={["income-tax-consultant-for-hni-chennai", "income-tax-notice-reply-chennai", "nri-tax-services", "direct-tax"]}
-      relatedPosts={["old-vs-new-tax-regime", "advance-tax-deadlines", "capital-gains-tax-property-sale", "nri-itr-filing"]}
+      relatedPosts={["capital-gains-tax-property-sale", "old-vs-new-tax-regime", "advance-tax-deadlines", "nri-itr-filing"]}
     >
       <h2 className={h2Class}>How does the change to the Income-tax Act, 2025 affect your return?</h2>
       <p className={pClass}>
@@ -176,7 +176,7 @@ export default function Page() {
       <p className={pClass}>
         The Finance Act, 2026 moved the due date for business and professional income without an audit to 31 August, and
         extended the window for revising a return to 31 March, twelve months from the end of the year. For FY 2025-26,
-        the CBDT extended the dates for audit cases in September 2026; non-audit dates were not extended.
+        the CBDT extended the dates for audit cases on 28 September 2026 (Circular No. 7/2026); non-audit and transfer pricing dates were not extended.
       </p>
       <Table head={["Return", "FY 2025-26 (filed in 2026)", "Tax year 2026-27 (filed in 2027)"]} rows={DUE_DATES} />
       <p className={pClass}>

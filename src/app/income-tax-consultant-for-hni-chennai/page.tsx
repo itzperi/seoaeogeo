@@ -110,7 +110,7 @@ const CALENDAR = [
   ["By 31 July 2026", "Return for FY 2025-26 for individuals without business income, with Schedule FA for calendar year 2025 and Schedule AL if income exceeds ₹1 crore"],
   ["31 August 2026", "Return for FY 2025-26 where you have business or professional income without a tax audit"],
   ["15 September 2026", "Second instalment: 45% cumulatively; re-estimate after any large sale, RSU vest or bonus"],
-  ["21 November 2026", "Return for FY 2025-26 for audit cases, including partners of audited firms (extended from 31 October by the CBDT)"],
+  ["21 November 2026", "Return for FY 2025-26 for audit cases, including partners of audited firms (extended from 31 October by CBDT Circular No. 7/2026)"],
   ["15 December 2026", "Third instalment: 75% cumulatively"],
   ["31 December 2026", "Belated return for FY 2025-26; last date for declarations under FAST-DS 2026 for eligible undisclosed foreign assets; calendar year closes for Schedule FA reporting"],
   ["January–February 2027", "Review realised and unrealised gains, set-off of losses, gifts within the family, and reinvestment deadlines falling in the next few months"],
@@ -184,7 +184,7 @@ export default function Page() {
         { question: "What happens in a scrutiny or reassessment proceeding?", href: "/income-tax-assessment-appeals-chennai" },
       ]}
       relatedSlugs={["income-tax-return-filing-chennai", "nri-tax-services", "income-tax-assessment-appeals-chennai"]}
-      relatedPosts={["capital-gains-tax-property-sale", "advance-tax-deadlines", "old-vs-new-tax-regime", "nri-itr-filing"]}
+      relatedPosts={["foreign-rsu-tax-schedule-fa-chennai", "joint-development-agreement-tax-chennai", "rnor-status-returning-nri", "capital-gains-tax-property-sale", "advance-tax-deadlines", "old-vs-new-tax-regime", "nri-itr-filing"]}
     >
       <h2 className={h2Class}>Who counts as an HNI for tax purposes, and how does surcharge work?</h2>
       <p className={pClass}>
@@ -357,7 +357,7 @@ export default function Page() {
         Banks, registrars, fund houses and card issuers report high-value transactions to the department through
         statements of financial transactions (SFT), which appear in your Annual Information Statement (AIS). Returns are
         matched against the AIS by software, so an unreported redemption or a property purchase that the return does not
-        explain produces a query, a scrutiny notice under Section 270(8) (earlier Section 143(2)) or, for older years, a
+        explain produces a query, a scrutiny notice (Section 143(2) under the 1961 Act, carried into the scrutiny provisions of the 2025 Act) or, for older years, a
         reassessment show-cause notice under Section 281 (earlier Section 148A). Reassessment can go back four years and
         three months from the end of the tax year, or six years and three months where escaped income is ₹50 lakh or
         more.

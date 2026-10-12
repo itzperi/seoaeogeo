@@ -95,7 +95,7 @@ export default function Page() {
         },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
-      relatedPosts={["llp-vs-opc-vs-pvt-ltd", "spice-plus-incorporation-explained", "msme-loan-schemes-tamil-nadu", "common-compliance-mistakes-chennai-startups"]}
+      relatedPosts={["roc-chennai-vs-roc-coimbatore", "llp-vs-opc-vs-pvt-ltd", "spice-plus-incorporation-explained", "msme-loan-schemes-tamil-nadu", "common-compliance-mistakes-chennai-startups"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Which Madurai businesses typically incorporate?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">

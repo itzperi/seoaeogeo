@@ -196,7 +196,7 @@ export default function Page() {
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Long-term gains on land and buildings, held for more than 24 months, are taxed at 12.5% without indexation for
         transfers on or after 23 July 2024; resident individuals and HUFs may choose 20% with indexation for property
-        acquired before that date. Short-term gains are taxed at slab rates. Surcharge on capital gains is capped at 15%,
+        acquired before that date. Short-term gains are taxed at slab rates. Surcharge on these long-term gains is capped at 15%,
         plus 4% cess.
       </p>
 

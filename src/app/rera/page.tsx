@@ -53,6 +53,7 @@ export default function Page() {
         { question: "How is escrow account income taxed for a project?", href: "/direct-tax" },
         { question: "Does a RERA-registered company still need ROC filings?", href: "/roc-compliances" },
       ]}
+      relatedPosts={["rera-registration-renewal", "rera-compliance-calendar-tamil-nadu"]}
       relatedSlugs={["company-registration-chennai", "direct-tax", "roc-compliances"]}
     />
   );

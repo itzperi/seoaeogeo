@@ -112,7 +112,7 @@ export default function Page() {
         { question: "What do I register if I stay a sole proprietor?", href: "/proprietorship-registration-chennai" },
       ]}
       relatedSlugs={["company-registration-chennai", "private-limited-company-incorporation-chennai", "proprietorship-registration-chennai", "digital-signature-certificate-chennai", "annual-compliance-package", "gst-registration-chennai"]}
-      relatedPosts={["llp-vs-opc-vs-pvt-ltd", "spice-plus-incorporation-explained", "post-incorporation-compliance-checklist", "add-remove-director"]}
+      relatedPosts={["spice-plus-incorporation-explained", "llp-vs-opc-vs-pvt-ltd", "post-incorporation-compliance-checklist", "add-remove-director"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Who is eligible for OPC registration in Chennai?</h2>
       <ul className="mt-4 max-w-3xl space-y-3 text-slate">

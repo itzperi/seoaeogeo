@@ -80,7 +80,7 @@ const DOCUMENTS = [
 const CALENDAR = [
   ["15 June 2026", "First advance tax instalment for tax year 2026-27 (15% of estimated tax). Industrialists with lumpy firm or dividend income should estimate early."],
   ["15 September 2026", "Second instalment (45% cumulative)."],
-  ["31 October 2026", "Return due for financial year 2025-26 under the Income-tax Act, 1961 for audited firms and companies, and for partners of audited firms."],
+  ["21 November 2026", "Return due for financial year 2025-26 under the Income-tax Act, 1961 for audited firms and companies, and for partners of audited firms (extended from 31 October by CBDT Circular No. 7/2026; audit report by 21 October 2026)."],
   ["15 December 2026", "Third instalment (75% cumulative). Include any land sale already concluded in the year."],
   ["15 March 2027", "Final instalment (100%). Capital gains arising after an instalment date can be covered in the next instalment without interest."],
   ["31 July 2027", "Return due for tax year 2026-27 for individuals and HUFs without audited business income."],

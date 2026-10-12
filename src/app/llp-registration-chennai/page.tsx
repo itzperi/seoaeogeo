@@ -112,12 +112,7 @@ export default function Page() {
         { question: "How do I register a partnership firm instead?", href: "/partnership-firm-registration-chennai" },
       ]}
       relatedSlugs={["company-registration-chennai", "private-limited-company-incorporation-chennai", "partnership-firm-registration-chennai", "annual-compliance-package", "gst-registration-chennai", "digital-signature-certificate-chennai"]}
-      relatedPosts={[
-        "llp-vs-opc-vs-pvt-ltd",
-        "llp-annual-filing-form8-form11",
-        "private-limited-vs-llp-chennai-startups",
-        "post-incorporation-compliance-checklist",
-      ]}
+      relatedPosts={["private-limited-vs-llp-chennai-startups", "llp-vs-opc-vs-pvt-ltd", "llp-annual-filing-form8-form11", "post-incorporation-compliance-checklist"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Why do professionals choose an LLP?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">

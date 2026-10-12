@@ -149,7 +149,7 @@ export default function Page() {
         },
       ]}
       relatedSlugs={["gst-notice-reply-chennai", "goods-and-services-tax", "gst-return-filing-chennai"]}
-      relatedPosts={["gst-show-cause-notice-first-48-hours", "itc-mismatch-notices", "gst-appellate-tribunal-gstat-explained"]}
+      relatedPosts={["eway-bill-detention-section-129-appeal", "gst-show-cause-notice-first-48-hours", "itc-mismatch-notices", "gst-appellate-tribunal-gstat-explained"]}
     >
       <h2 className={H2}>What does an e-way bill detention look like from start to appeal?</h2>
       <p className={P}>

@@ -147,7 +147,7 @@ export default function Page() {
         },
       ]}
       relatedSlugs={["gst-notice-reply-chennai", "goods-and-services-tax", "iec-registration-chennai"]}
-      relatedPosts={["lut-for-exporters", "itc-mismatch-notices", "gst-appellate-tribunal-gstat-explained"]}
+      relatedPosts={["tiruppur-export-refund-rejection", "lut-for-exporters", "itc-mismatch-notices", "gst-appellate-tribunal-gstat-explained"]}
     >
       <h2 className={H2}>Which refund and demand disputes come up in Tiruppur?</h2>
       <p className={P}>

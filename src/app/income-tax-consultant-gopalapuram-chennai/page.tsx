@@ -163,6 +163,7 @@ export default function Page() {
         { question: "Can we meet in person to discuss an inheritance?", answer: "Yes. Gopalapuram is fairly close to our Anna Nagar office, and many families prefer one meeting in person to go through wills, deeds and family records. Book a time and visit us at Anna Nagar; we have no branch in Gopalapuram, Poes Garden or anywhere else." },
       ]}
       furtherReading={[
+        { slug: "joint-development-agreement-tax-chennai", title: "Joint development agreement tax for Chennai landowners" },
         { slug: "capital-gains-tax-property-sale", title: "Capital Gains Tax on Property Sale for Chennai Sellers" },
       ]}
     />

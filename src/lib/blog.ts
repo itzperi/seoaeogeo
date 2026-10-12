@@ -19,6 +19,20 @@ export type BlogPostModule = {
 // Static registry — Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
+  "foreign-rsu-tax-schedule-fa-chennai": () =>
+    import("@/content/blog/foreign-rsu-tax-schedule-fa-chennai"),
+  "rnor-status-returning-nri": () =>
+    import("@/content/blog/rnor-status-returning-nri"),
+  "joint-development-agreement-tax-chennai": () =>
+    import("@/content/blog/joint-development-agreement-tax-chennai"),
+  "section-74a-gst-notice": () =>
+    import("@/content/blog/section-74a-gst-notice"),
+  "tiruppur-export-refund-rejection": () =>
+    import("@/content/blog/tiruppur-export-refund-rejection"),
+  "eway-bill-detention-section-129-appeal": () =>
+    import("@/content/blog/eway-bill-detention-section-129-appeal"),
+  "roc-chennai-vs-roc-coimbatore": () =>
+    import("@/content/blog/roc-chennai-vs-roc-coimbatore"),
   "private-limited-company-registration-documents": () =>
     import("@/content/blog/private-limited-company-registration-documents"),
   "company-name-rejection-reasons": () =>
@@ -185,6 +199,69 @@ export type BlogSlug = keyof typeof modules;
 // export by convention; duplicated here (rather than importing every module
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
+  {
+    slug: "foreign-rsu-tax-schedule-fa-chennai",
+    title: "Foreign RSU and ESPP Tax and Schedule FA for Chennai Staff",
+    description:
+      "How RSUs and ESPP shares from a foreign parent are taxed for Chennai employees: perquisite at vest, capital gains on sale, foreign tax credit and Schedule FA.",
+    date: "2026-10-12",
+    excerpt:
+      "RSUs and ESPP shares from a US or other foreign parent are taxed at vest and again on sale, and must be reported in Schedule FA every year. A walk-through for Chennai employees.",
+  },
+  {
+    slug: "rnor-status-returning-nri",
+    title: "RNOR Status for NRIs Returning to Chennai: Tax Guide",
+    description:
+      "Returning to Chennai from abroad? How RNOR status works under the Income-tax Act, 2025, what income is taxed, NRE and FCNR accounts, foreign retirement funds.",
+    date: "2026-10-12",
+    excerpt:
+      "Most NRIs moving back to Chennai get a transition period as resident but not ordinarily resident (RNOR). Here is how the tests work and what to do in your first three years back.",
+  },
+  {
+    slug: "joint-development-agreement-tax-chennai",
+    title: "Joint Development Agreement Tax for Chennai Landowners",
+    description:
+      "Redeveloping your Chennai bungalow with a builder? When capital gains arise under a JDA, GST on the flats you receive, 10% TDS on cash, and a worked example.",
+    date: "2026-10-12",
+    excerpt:
+      "Bungalow-to-apartment redevelopment is common in R A Puram, Mylapore and Adyar. Here is how a landowner is taxed under a joint development agreement, step by step.",
+  },
+  {
+    slug: "section-74a-gst-notice",
+    title: "Section 74A GST Notice: Time Limits, Penalty and Reply",
+    description:
+      "Section 74A GST notices for FY 2024-25 onwards: how it replaces Sections 73 and 74, the 42-month and 12-month limits, fraud vs non-fraud penalty, and replies.",
+    date: "2026-10-12",
+    excerpt:
+      "From FY 2024-25, GST demands are raised under a single Section 74A. Here is how its time limits and penalties differ from Sections 73 and 74, and how to reply.",
+  },
+  {
+    slug: "tiruppur-export-refund-rejection",
+    title: "Export Refund Rejected? A Guide for Tiruppur Exporters",
+    description:
+      "Why IGST and LUT export refunds of Tiruppur knitwear exporters are held or rejected: shipping bill mismatches, ICEGATE errors, RFD-03 memos and appeal routes.",
+    date: "2026-10-12",
+    excerpt:
+      "Shipping bill mismatches, ICEGATE error codes, inverted duty formula cuts and deficiency memos: the usual reasons Tiruppur export refunds stall, and how each is fixed.",
+  },
+  {
+    slug: "eway-bill-detention-section-129-appeal",
+    title: "E-Way Bill Detention Under Section 129: Release and Appeal",
+    description:
+      "Goods detained under Section 129 in Tamil Nadu: the MOV forms, current penalty amounts, paying for release vs contesting, and the appeal with a 10% pre-deposit.",
+    date: "2026-10-12",
+    excerpt:
+      "A vehicle stopped for an e-way bill lapse: what each MOV form means, how the Section 129 penalty is worked out, whether to pay or contest, and how to appeal.",
+  },
+  {
+    slug: "roc-chennai-vs-roc-coimbatore",
+    title: "ROC Chennai vs ROC Coimbatore: Which ROC Is Yours?",
+    description:
+      "Which Registrar of Companies handles your Tamil Nadu company? District-wise ROC Chennai and ROC Coimbatore list, what it changes in practice, and Puducherry.",
+    date: "2026-10-12",
+    excerpt:
+      "Tamil Nadu has two Registrars of Companies. A district-by-district table, what the ROC actually decides for your company, and where Puducherry fits.",
+  },
   {
     slug: "private-limited-company-registration-documents",
     title: "Private Limited Company Registration: Documents Checklist",
@@ -476,30 +553,33 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "spice-plus-incorporation-explained",
-    title: "SPICe+ vs. the Old MCA Incorporation Process: What Changed",
+    title: "SPICe+ Step by Step (2026): Part A, Part B and AGILE-PRO-S",
     description:
-      "How SPICe+ replaced the older multi-form MCA incorporation process, and what it means for Chennai founders registering a company today.",
+      "SPICe+ step by step for 2026: Part A name reservation, Part B filing, e-MoA and e-AoA, AGILE-PRO-S, DSC and DIN, resubmission and common rejection reasons.",
     date: "2026-09-19",
+    updated: "2026-10-12",
     excerpt:
-      "SPICe+ folded incorporation, PAN, TAN, EPFO, ESIC, and profession tax registration into a single form. Here's what actually changed.",
+      "How a Tamil Nadu company is incorporated on MCA V3 today: Part A, Part B, the linked forms, what AGILE-PRO-S makes mandatory, and why filings come back.",
   },
   {
     slug: "private-limited-vs-llp-chennai-startups",
-    title: "Private Limited vs LLP for Chennai Startups: 2026 Comparison",
+    title: "Pvt Ltd vs LLP for Chennai Founders Raising Funds or Hiring",
     description:
-      "Choosing between a Private Limited Company and an LLP in Chennai? Compare liability, compliance cost, fundraising fit, and taxation.",
+      "Planning to raise funding or hire in Chennai? How a private limited company and an LLP differ on equity, ESOPs, foreign investment, payroll and compliance.",
     date: "2026-09-19",
+    updated: "2026-10-12",
     excerpt:
-      "Fundraising plans, compliance appetite, and taxation all point in different directions. Here's how Chennai founders should actually decide.",
+      "For Chennai founders who expect investors or employees soon: why share capital, ESOPs and investor paperwork usually point to a private limited company.",
   },
   {
     slug: "gst-appellate-tribunal-gstat-explained",
-    title: "GST Appellate Tribunal (GSTAT) for Chennai Businesses",
+    title: "How to File a GSTAT Appeal in Tamil Nadu: Step by Step",
     description:
-      "GSTAT benches are becoming operational across states. Here's what Chennai businesses need to know about the new GST appeal process.",
+      "How to file a GST Appellate Tribunal appeal in Tamil Nadu: eligibility, the 3-month limit, the further 10% pre-deposit, Form APL-05, documents and TN benches.",
     date: "2026-09-19",
+    updated: "2026-10-12",
     excerpt:
-      "The GST Appellate Tribunal is the second appeal stage after the Appellate Authority — and it's newly operational. Here's what's changed.",
+      "A step-by-step guide to a GSTAT second appeal from Tamil Nadu: who can file, time limits, pre-deposit, APL-05 on the e-filing portal, documents, benches and what follows.",
   },
   {
     slug: "tds-return-filing-deadlines",
@@ -602,12 +682,13 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "capital-gains-tax-property-sale",
-    title: "Capital Gains Tax on Property Sale for Chennai Sellers",
+    title: "Capital Gains Tax on Selling Property in Chennai: 2026 Guide",
     description:
-      "Selling a flat or plot in Chennai triggers a capital gains tax calculation that surprises first-time sellers — it depends heavily on holding period.",
+      "How capital gains on a Chennai flat, house or plot are taxed in 2026: 12.5% vs 20% indexed, guideline value, reinvestment exemptions, TDS and joint owners.",
     date: "2026-09-19",
+    updated: "2026-10-12",
     excerpt:
-      "Selling a flat or plot in Chennai triggers a capital gains tax calculation that surprises a lot of first time sellers, mainly because the...",
+      "A worked guide to capital gains on selling a Chennai house, flat or plot: the 12.5% or 20% indexed choice, guideline value, reinvestment exemptions, TDS and co-owners.",
   },
   {
     slug: "cash-flow-forecasting-framework",
@@ -755,12 +836,13 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "post-incorporation-compliance-checklist",
-    title: "Post-Incorporation Compliance Checklist for Chennai Firms",
+    title: "First-Year Compliance Calendar for New Companies (2026-27)",
     description:
-      "Getting the incorporation certificate feels like the finish line, but it's actually the start of compliance steps with specific windows and real penalties.",
+      "A dated first-year compliance calendar for a company incorporated in 2026-27: first auditor, board meeting, share certificates, INC-20A, AGM, AOC-4 and MGT-7.",
     date: "2026-09-19",
+    updated: "2026-10-12",
     excerpt:
-      "Getting the incorporation certificate feels like the finish line, but for a newly registered company it is actually the starting point for...",
+      "Month by month, what a newly incorporated Tamil Nadu company must do in its first year, worked through for a company incorporated on 15 June 2026.",
   },
   {
     slug: "rera-registration-renewal",

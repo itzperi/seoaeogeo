@@ -196,7 +196,11 @@ export default function GstPage() {
             <Link href="/blog/lut-for-exporters" className={linkClass}>
               LUT for exporters: how to file and why it matters
             </Link>
-            .
+            . If a refund is held back, our guide to{" "}
+            <Link href="/blog/tiruppur-export-refund-rejection" className={linkClass}>
+              export refund rejections
+            </Link>{" "}
+            covers the usual causes and fixes.
           </p>
 
           <h2 className="mt-14 text-2xl text-obsidian">Cancellation and revocation of GST registration</h2>

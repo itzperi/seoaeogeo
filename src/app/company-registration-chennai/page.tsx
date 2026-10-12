@@ -180,13 +180,7 @@ export default function Page() {
         "annual-compliance-package",
         "startup-india-registration-chennai",
       ]}
-      relatedPosts={[
-        "spice-plus-incorporation-explained",
-        "private-limited-vs-llp-chennai-startups",
-        "llp-vs-opc-vs-pvt-ltd",
-        "post-incorporation-compliance-checklist",
-        "common-compliance-mistakes-chennai-startups",
-      ]}
+      relatedPosts={["spice-plus-incorporation-explained", "private-limited-vs-llp-chennai-startups", "llp-vs-opc-vs-pvt-ltd", "post-incorporation-compliance-checklist", "common-compliance-mistakes-chennai-startups"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">How do Pvt Ltd, LLP, OPC, partnership, proprietorship and Section 8 compare?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">

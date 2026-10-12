@@ -66,7 +66,7 @@ const STAGES = [
   { stage: "Show-Cause Notice (SCN) Reply", text: "We analyse the SCN, gather supporting documentation, and draft a legally grounded reply within the time allowed in the notice, typically 30 days." },
   { stage: "Departmental Audit & Assessment", text: "We represent you during GST audits (Section 65/66) and assessment proceedings, coordinating document production and officer queries." },
   { stage: "Appeal before Appellate Authority", text: "If the order is adverse, we file a first appeal in Form GST APL-01 on the GST portal before the Appellate Authority (Additional or Joint Commissioner (Appeals), or Commissioner (Appeals), depending on the rank of the officer who passed the order) within 3 months of communication of the order, with the admitted amount paid in full and a 10% pre-deposit of the disputed tax. A self-certified copy of the order is needed only where the order was not uploaded on the GST portal, and must then be submitted within 7 days of filing." },
-  { stage: "GST Appellate Tribunal (GSTAT)", text: "If the Appellate Authority's order is still adverse, we file a second appeal in Form GST APL-05 on the GSTAT e-filing portal within 3 months, with a further 10% pre-deposit. GSTAT has a Principal Bench in New Delhi for matters involving place-of-supply disputes, and State Benches, including Chennai, Coimbatore and Madurai for Tamil Nadu, for other matters." },
+  { stage: "GST Appellate Tribunal (GSTAT)", text: "If the Appellate Authority's order is still adverse, we file a second appeal in Form GST APL-05 on the GSTAT e-filing portal within 3 months, with a further 10% pre-deposit. GSTAT has a Principal Bench in New Delhi for matters involving place-of-supply disputes, and State Benches, which for Tamil Nadu sit at Chennai, Coimbatore and Madurai, for other matters." },
   { stage: "ITC & Refund Dispute Defense", text: "We build the factual and documentary case to defend legitimate ITC claims and pursue refund entitlements through litigation where needed." },
 ];
 
@@ -144,7 +144,7 @@ const FAQS = [
   {
     question: "Which GSTAT bench will hear my Tamil Nadu appeal?",
     answer:
-      "Tamil Nadu has GSTAT State Benches at Chennai, Coimbatore and Madurai, and Puducherry has its own bench. Place-of-supply disputes go to the Principal Bench in New Delhi. The GSTAT e-filing portal assigns the bench when you file, so confirm it there rather than assuming the nearest city.",
+      "Tamil Nadu's GSTAT State Benches sit at Chennai, Coimbatore and Madurai, with a circuit sitting at Puducherry. Place-of-supply disputes go to the Principal Bench in New Delhi. The GSTAT e-filing portal assigns the bench when you file, so confirm it there rather than assuming the nearest city.",
   },
   {
     question: "What is Section 74A and does it apply to my notice?",
@@ -327,8 +327,8 @@ export default function GstLitigationPage() {
                 Where does GSTAT sit in Tamil Nadu?
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
-                The GSTAT website lists three State Benches for Tamil Nadu, at
-                Chennai, Coimbatore and Madurai, and a separate bench location for
+                The GSTAT notification constitutes two State Benches for Tamil Nadu,
+                sitting at Chennai, Coimbatore and Madurai, with a circuit sitting at
                 Puducherry. According to GSTAT Office Order No. 4/GSTAT/PB/2026 dated
                 29 July 2026, as reported, the roster from 1 August 2026 is:
               </p>
@@ -379,7 +379,13 @@ export default function GstLitigationPage() {
                 pulling GSTR-2B history and correspondence, not just
                 arguing the point. Our guide to{" "}
                 <Link href="/blog/itc-mismatch-notices" className={LINK}>ITC mismatch notices</Link>{" "}
-                explains the reconciliation.
+                explains the reconciliation.{" "}For demands raised from FY 2024-25, see{" "}
+                <Link href="/blog/section-74a-gst-notice" className={LINK}>how Section 74A time limits and penalties work</Link>
+                , and for goods stopped in transit,{" "}
+                <Link href="/blog/eway-bill-detention-section-129-appeal" className={LINK}>
+                  goods detained under Section 129: release and appeal
+                </Link>
+                .
               </p>
             </div>
 

@@ -162,6 +162,7 @@ export default function Page() {
         { question: "Can I work with you without travelling to Anna Nagar?", answer: "Yes. Kotturpuram clients usually share statements securely and speak with us by video call, which suits stock award and foreign asset work well. If you would rather meet, you can visit our Anna Nagar office by appointment. We do not have an office in Kotturpuram or anywhere else." },
       ]}
       furtherReading={[
+        { slug: "foreign-rsu-tax-schedule-fa-chennai", title: "Foreign RSU and ESPP tax and Schedule FA" },
         { slug: "old-vs-new-tax-regime", title: "Old vs New Tax Regime FY 2026-27: Which Saves More Tax?" },
         { slug: "advance-tax-deadlines", title: "Advance Tax Deadlines for FY 2026 to 27: A Practical Guide" },
       ]}

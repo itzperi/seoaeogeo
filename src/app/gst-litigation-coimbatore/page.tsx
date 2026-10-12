@@ -84,7 +84,7 @@ export default function Page() {
       citation={{ label: "GSTAT list of State Benches (gstat.gov.in)", href: "https://www.gstat.gov.in/state-bench" }}
       keyFacts={[
         { label: "Where we work from", value: "Our only office is in Anna Nagar, Chennai. We have no office in Coimbatore; filings are online and hearings are by video where permitted, or attended by arrangement." },
-        { label: "GSTAT bench", value: "Coimbatore is one of three Tamil Nadu State Benches listed by GSTAT. Under the reported roster from 1 August 2026, it hears Category I and II matters on Thursdays. Confirm your bench on the GSTAT portal." },
+        { label: "GSTAT bench", value: "Coimbatore is one of the sitting locations of the Tamil Nadu State Benches notified for GSTAT. Under the reported roster from 1 August 2026, it hears Category I and II matters on Thursdays. Confirm your bench on the GSTAT portal." },
         { label: "First appeal deadline", value: "3 months from communication of the order (APL-01), extendable by 1 month on sufficient cause." },
         { label: "Pre-deposit", value: "10% of disputed tax for the first appeal and a further 10% at GSTAT, each capped at ₹20 crore CGST and ₹20 crore SGST." },
         { label: "Typical disputes", value: "Classification of pumps, motors and parts; tooling and mould valuation; job work; ITC on metal scrap purchases; export refunds." },
@@ -113,7 +113,7 @@ export default function Page() {
         {
           question: "Which GSTAT bench will hear an appeal from Coimbatore?",
           answer:
-            "Usually a Tamil Nadu State Bench, and Coimbatore is one of them, sitting on Thursdays under the roster reported from 1 August 2026. The GSTAT e-filing portal assigns the bench, and place-of-supply disputes go to the Principal Bench in New Delhi, so confirm the assignment on the portal before planning attendance.",
+            "Usually a Tamil Nadu State Bench, and the Tamil Nadu benches sit in Coimbatore on Thursdays under the roster reported from 1 August 2026. The GSTAT e-filing portal assigns the bench, and place-of-supply disputes go to the Principal Bench in New Delhi, so confirm the assignment on the portal before planning attendance.",
         },
         {
           question: "Do I need to travel to Chennai to work with you?",

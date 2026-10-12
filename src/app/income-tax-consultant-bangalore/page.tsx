@@ -137,6 +137,7 @@ export default function Page() {
         { question: "I received an income tax notice. What should I do?", href: "/income-tax-notice-reply-chennai" },
         { question: "I moved abroad after working in Bengaluru. How are NRIs taxed?", href: "/nri-tax-services" },
       ]}
+      relatedPosts={["foreign-rsu-tax-schedule-fa-chennai"]}
       relatedSlugs={["income-tax-consultant-for-hni-chennai", "income-tax-return-filing-chennai", "income-tax-notice-reply-chennai", "nri-tax-services"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Who do we work with in Bengaluru?</h2>

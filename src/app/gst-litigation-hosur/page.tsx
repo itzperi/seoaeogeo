@@ -147,7 +147,7 @@ export default function Page() {
         },
       ]}
       relatedSlugs={["gst-notice-reply-chennai", "goods-and-services-tax", "gst-return-filing-chennai"]}
-      relatedPosts={["gst-appellate-tribunal-gstat-explained", "gst-show-cause-notice-first-48-hours", "itc-mismatch-notices"]}
+      relatedPosts={["eway-bill-detention-section-129-appeal", "gst-appellate-tribunal-gstat-explained", "gst-show-cause-notice-first-48-hours", "itc-mismatch-notices"]}
     >
       <h2 className={H2}>Which GST disputes are typical for Hosur&apos;s auto and electronics units?</h2>
       <p className={P}>

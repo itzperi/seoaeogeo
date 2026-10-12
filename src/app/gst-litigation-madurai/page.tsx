@@ -80,11 +80,11 @@ export default function Page() {
       h1="GST Litigation and Appeals in Madurai"
       subhead="Show-cause notice replies, first appeals and GST Appellate Tribunal appeals for traders, granite units and agri-linked businesses in Madurai and southern Tamil Nadu. We work from our only office in Anna Nagar, Chennai, file online and attend hearings by video where allowed, or in person by arrangement."
       introHeading="How does GST litigation work for a Madurai business?"
-      intro="A Madurai GST dispute starts with a reply to the show-cause notice, moves to a first appeal in Form APL-01 within three months of the order, and then to the GST Appellate Tribunal, which lists Madurai among its three Tamil Nadu benches. High Court matters from the area go to the Madurai Bench of the Madras High Court."
+      intro="A Madurai GST dispute starts with a reply to the show-cause notice, moves to a first appeal in Form APL-01 within three months of the order, and then to the GST Appellate Tribunal, which lists Madurai among its Tamil Nadu bench locations. High Court matters from the area go to the Madurai Bench of the Madras High Court."
       citation={{ label: "GSTAT list of State Benches (gstat.gov.in)", href: "https://www.gstat.gov.in/state-bench" }}
       keyFacts={[
         { label: "Where we work from", value: "Our only office is in Anna Nagar, Chennai. We have no office in Madurai; filings are online and hearings are by video where permitted, or attended by arrangement." },
-        { label: "GSTAT bench", value: "Madurai is a Tamil Nadu State Bench. Under the reported roster from 1 August 2026, it hears Category I and II matters on the first, second and third Fridays of each month. Confirm your bench on the GSTAT portal." },
+        { label: "GSTAT bench", value: "Madurai is a sitting location of the Tamil Nadu State Benches. Under the reported roster from 1 August 2026, it hears Category I and II matters on the first, second and third Fridays of each month. Confirm your bench on the GSTAT portal." },
         { label: "High Court", value: "The Madurai Bench of the Madras High Court hears writs and appeals from Madurai and other southern districts." },
         { label: "First appeal deadline", value: "3 months from communication of the order (APL-01), extendable by 1 month on sufficient cause." },
         { label: "Typical disputes", value: "Agri and flower trade exemptions, granite classification and royalty, trader turnover mismatches, composition eligibility, registration cancellation." },
@@ -113,7 +113,7 @@ export default function Page() {
         {
           question: "Is there a GST Appellate Tribunal bench in Madurai?",
           answer:
-            "Yes. GSTAT lists Madurai as one of three Tamil Nadu State Benches, with Chennai and Coimbatore. Under the roster reported from 1 August 2026, it sits on the first, second and third Fridays of each month. The portal assigns the bench for each appeal, so confirm it there before planning.",
+            "Yes. GSTAT lists Madurai as a Tamil Nadu State Bench location, alongside Chennai and Coimbatore. Under the roster reported from 1 August 2026, it sits on the first, second and third Fridays of each month. The portal assigns the bench for each appeal, so confirm it there before planning.",
         },
         {
           question: "Where would a High Court writ against a GST order from Madurai be filed?",

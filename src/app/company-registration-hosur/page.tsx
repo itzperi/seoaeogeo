@@ -95,7 +95,7 @@ export default function Page() {
         },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
-      relatedPosts={["private-limited-vs-llp-chennai-startups", "spice-plus-incorporation-explained", "udyam-registration-anna-nagar-manufacturers", "post-incorporation-compliance-checklist"]}
+      relatedPosts={["roc-chennai-vs-roc-coimbatore", "private-limited-vs-llp-chennai-startups", "spice-plus-incorporation-explained", "udyam-registration-anna-nagar-manufacturers", "post-incorporation-compliance-checklist"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">What kind of businesses register in Hosur?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">

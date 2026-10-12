@@ -54,6 +54,7 @@ export default function Page() {
         { question: "What ROC filings follow right after incorporation?", href: "/private-limited-company-incorporation-chennai" },
         { question: "Is statutory audit required before I can file my annual return?", href: "/audit-and-assurance" },
       ]}
+      relatedPosts={["post-incorporation-compliance-checklist", "strike-off-vs-winding-up", "roc-chennai-vs-roc-coimbatore"]}
       relatedSlugs={["company-registration-chennai", "private-limited-company-incorporation-chennai", "audit-and-assurance"]}
     />
   );

@@ -95,12 +95,12 @@ const TIMELINE = [
   ["May–July", "Statutory audit fieldwork, physical verification, confirmations, CARO and audit-trail testing; report to the group auditor"],
   ["By 30 June", "Audited or provisional figures ready for the RBI's FLA return due by 15 July, where the company has foreign investment"],
   ["Board meeting", "Board approves the financial statements and board's report (Sections 134 and 143); auditor signs the report"],
-  ["By 30 September", "Tax audit report due for FY 2025-26 where the return is due on 31 October (31 October where transfer pricing applies); Form No. 26 replaces Forms 3CA/3CB/3CD for tax year 2026-27"],
+  ["By 30 September", "Tax audit report due for FY 2025-26 where the return is due on 31 October (31 October where transfer pricing applies); for FY 2025-26 the CBDT extended the non-transfer-pricing audit report to 21 October 2026 and that return to 21 November 2026 (Circular No. 7/2026); Form No. 26 replaces Forms 3CA/3CB/3CD for tax year 2026-27"],
   ["By 30 September", "Annual general meeting within six months of the year-end (Section 96); the first AGM within nine months of the first year-end"],
   ["Within 15 days of the AGM", "Form ADT-1 where an auditor is appointed or re-appointed"],
   ["Within 30 days of the AGM", "Form AOC-4 with the audited financial statements (Section 137)"],
   ["Within 60 days of the AGM", "Form MGT-7 or MGT-7A annual return (Section 92)"],
-  ["31 October / 30 November", "Form 3CEB or Form 48 by 31 October and the income-tax return by 30 November for companies with transfer pricing; 31 October return due date otherwise"],
+  ["31 October / 30 November", "Form 3CEB or Form 48 by 31 October and the income-tax return by 30 November for companies with transfer pricing; 31 October return due date otherwise (21 November 2026 for FY 2025-26 after the CBDT extension)"],
 ];
 
 export default function Page() {

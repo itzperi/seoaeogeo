@@ -109,7 +109,7 @@ export default function Page() {
               <SimpleTable
                 head={["Stage of redevelopment", "Income tax point to plan for"]}
                 rows={[
-                  ["Signing and registering the joint development agreement", "Record ownership shares; cash received is taxable when received"],
+                  ["Signing and registering the joint development agreement", "Record ownership shares; any cash from the builder is added to the gain taxed in the completion-certificate year, with TDS when paid"],
                   ["Builder deducts TDS on cash consideration", "Match TDS credit to each owner's share"],
                   ["Completion certificate issued", "Capital gain on the land share generally falls due in this year"],
                   ["Owner sells a flat received from the builder", "New capital gain, with cost taken from the earlier computation"],
@@ -158,13 +158,14 @@ export default function Page() {
       ]}
       faqs={[
         { question: "How is the cost worked out for a bungalow my grandfather bought decades ago?", answer: "The cost to the earlier owner is used, and for property acquired before 1 April 2001 you can adopt its fair market value on that date instead. A registered valuer's report for 2001 supports this. The holding period also includes the earlier owners' years, so the gain is usually long-term." },
-        { question: "We are signing a joint development agreement. When do we pay tax?", answer: "For individuals and HUFs with a registered agreement, the capital gain on the land share is generally taxed in the year the completion certificate for the project is issued. Any cash received from the builder before then is taxable when received. We map this timeline before you sign." },
+        { question: "We are signing a joint development agreement. When do we pay tax?", answer: "For individuals and HUFs with a registered agreement, the capital gain on the land share is generally taxed in the year the completion certificate for the project is issued. Any cash received from the builder is added to that year's sale consideration, with tax deducted at source when it is paid. We map this timeline before you sign." },
         { question: "Can each heir claim the reinvestment exemption separately?", answer: "Yes. Each co-owner computes the gain on their own share and can claim the reinvestment exemptions individually, subject to the conditions and limits in each case. One heir may buy a house while another invests in bonds or pays the tax, so we work out the plan heir by heir." },
         { question: "What if the guideline value is higher than our agreed sale price?", answer: "If the stamp duty value exceeds the agreed price beyond a tolerance band, that value may be treated as the sale price for capital gains. Where you believe the stamp duty value is above fair market value, you can ask for the valuation to be referred to a Valuation Officer during assessment." },
         { question: "Is a family settlement among siblings treated as a sale?", answer: "A genuine family settlement made to settle or avoid disputes has generally been held not to be a transfer for capital gains. If one sibling receives cash to give up a share, the analysis changes. We help document the arrangement so later sales and rental income are reported consistently." },
         { question: "Do I need to meet you in person for a property sale?", answer: "One meeting at our Anna Nagar office is useful for a large sale or redevelopment, so we can go through deeds and family documents together. After that, most work is done by video call and secure document sharing. We have no office in R A Puram or anywhere other than Anna Nagar." },
       ]}
       furtherReading={[
+        { slug: "joint-development-agreement-tax-chennai", title: "Joint development agreement tax for Chennai landowners" },
         { slug: "capital-gains-tax-property-sale", title: "Capital Gains Tax on Property Sale for Chennai Sellers" },
       ]}
     />

@@ -61,6 +61,7 @@ export default function Page() {
         { question: "I live in Dubai — do I pay tax in India?", href: "/nri-tax-services-uae" },
         { question: "How does my US CPA use my Indian tax figures?", href: "/nri-tax-services-usa" },
       ]}
+      relatedPosts={["rnor-status-returning-nri"]}
       relatedSlugs={["nri-tax-services-uae", "nri-tax-services-uk", "nri-tax-services-usa", "nri-property-sale-tds-chennai"]}
     />
   );

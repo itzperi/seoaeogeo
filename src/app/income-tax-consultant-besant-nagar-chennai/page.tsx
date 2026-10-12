@@ -167,6 +167,8 @@ export default function Page() {
         { question: "Do I need to visit your office to work with you?", answer: "No. Besant Nagar is across the city from our Anna Nagar office, so most clients here share documents securely and meet us by video call. If you prefer to meet in person, book a time and visit the Anna Nagar office; we have no branch in Besant Nagar or elsewhere." },
       ]}
       furtherReading={[
+        { slug: "rnor-status-returning-nri", title: "RNOR status for NRIs returning to Chennai" },
+        { slug: "foreign-rsu-tax-schedule-fa-chennai", title: "Foreign RSU and ESPP tax and Schedule FA" },
         { slug: "old-vs-new-tax-regime", title: "Old vs New Tax Regime FY 2026-27: Which Saves More Tax?" },
         { slug: "capital-gains-tax-property-sale", title: "Capital Gains Tax on Property Sale for Chennai Sellers" },
       ]}

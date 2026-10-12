@@ -186,7 +186,7 @@ export default function Page() {
 
       <h2 className="mt-14 text-2xl text-obsidian">How are typical Pune capital gains taxed?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-        Rates apply to transfers on or after 23 July 2024, before surcharge (capped at 15% on capital gains) and 4% cess.
+        Rates apply to transfers on or after 23 July 2024, before surcharge (capped at 15% on long-term gains and on short-term gains from listed equity; not on gains taxed at slab rates) and 4% cess.
       </p>
       <DataTable head={["Asset", "Long-term after", "Long-term rate", "Short-term rate", "Note"]} rows={CAPITAL_GAINS} />
 
