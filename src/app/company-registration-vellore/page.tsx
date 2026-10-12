@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Company Registration in Vellore | Pvt Ltd, LLP, OPC" },
+  title: { absolute: "Private Limited Company Registration in Vellore | CA" },
   description:
     "Company registration in Vellore for leather, footwear and healthcare firms, handled online from our Chennai office: SPICe+, ROC Chennai, GST, IEC and Udyam.",
   alternates: { canonical: "/company-registration-vellore" },

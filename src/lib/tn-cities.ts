@@ -11,4 +11,10 @@ export const TN_CITY_PAGES: { slug: string; city: string }[] = [
   { slug: "company-registration-erode", city: "Erode" },
   { slug: "company-registration-tirunelveli", city: "Tirunelveli" },
   { slug: "company-registration-thoothukudi", city: "Thoothukudi" },
+  { slug: "company-registration-kanchipuram", city: "Kanchipuram" },
+  { slug: "company-registration-chengalpattu", city: "Chengalpattu" },
+  { slug: "company-registration-thanjavur", city: "Thanjavur" },
+  { slug: "company-registration-karur", city: "Karur" },
+  { slug: "company-registration-namakkal", city: "Namakkal" },
+  { slug: "company-registration-nagercoil", city: "Nagercoil" },
 ];

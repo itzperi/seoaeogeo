@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import AreaPageTemplate from "@/components/AreaPageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -31,6 +32,28 @@ export default function Page() {
         "Kilpauk is one of Chennai's more established, settled residential localities — tree-lined streets, older independent houses alongside newer apartment developments, and a largely long-term, owner-occupier population rather than a high-turnover rental corridor. Its civic infrastructure and metro connectivity along the Green Line have kept it a stable, family-oriented address for decades.",
         "Commercially, Kilpauk is mixed rather than a dedicated business district: mainline stretches like Kilpauk Garden Road and Poonamallee High Road carry a genuine mix of retail shops, clinics, restaurants, and small service businesses, alongside the residential core. That mix shows up in the kind of CA work Kilpauk clients typically need — individual income tax filing and property-related capital gains work for residents, alongside GST registration and compliance for the neighbourhood's shops and small professional practices.",
         "Kilpauk is also home to a number of established medical institutions and practitioners, which brings a recurring need for tax audit assessment under Section 44ADA for independent professionals, alongside standard advance tax planning.",
+      ]}
+      sections={[
+        {
+          heading: "Income tax for families and high-income individuals in Kilpauk",
+          body: (
+            <p>
+              Kilpauk&apos;s owner-occupier families and its many doctors and medical professionals often combine practice income with rent from older
+              houses and flats, deposits and investments. As parents age, questions arise about gifting property or money to children, adding a child
+              as co-owner, and what happens to capital gains when a long-held Kilpauk house is sold or rebuilt with a builder. Senior citizens in the
+              area also need help with pension, deposit interest and TDS refunds. We plan these across the family so ownership, rent and gains are
+              reported consistently; see our page on{" "}
+              <Link href="/income-tax-consultant-for-hni-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax planning for high-income individuals and families in Chennai
+              </Link>{" "}
+              or, for annual returns,{" "}
+              <Link href="/income-tax-return-filing-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax return filing in Chennai
+              </Link>
+              .
+            </p>
+          ),
+        },
       ]}
       relevantServices={[
         { slug: "income-tax-return-filing-chennai", why: "ITR filing for residents, including capital gains from property in an established, high-value locality." },

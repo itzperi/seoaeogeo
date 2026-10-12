@@ -1,6 +1,8 @@
 export type AreaSummary = {
   slug: string;
   name: string;
+  // Topic for the pre-typed WhatsApp enquiry; defaults to general CA services.
+  topic?: string;
 };
 
 // Locality pages — deliberately kept separate from SERVICES (src/lib/services.ts).
@@ -20,4 +22,10 @@ export const AREAS: AreaSummary[] = [
   { slug: "chartered-accountant-porur-chennai", name: "Porur" },
   { slug: "chartered-accountant-tambaram-chennai", name: "Tambaram" },
   { slug: "chartered-accountant-mylapore-chennai", name: "Mylapore" },
+  { slug: "income-tax-consultant-besant-nagar-chennai", name: "Besant Nagar", topic: "Income tax consultation" },
+  { slug: "income-tax-consultant-alwarpet-chennai", name: "Alwarpet", topic: "Income tax consultation" },
+  { slug: "income-tax-consultant-ra-puram-chennai", name: "R A Puram", topic: "Income tax consultation" },
+  { slug: "income-tax-consultant-kotturpuram-chennai", name: "Kotturpuram", topic: "Income tax consultation" },
+  { slug: "income-tax-consultant-gopalapuram-chennai", name: "Gopalapuram", topic: "Income tax consultation" },
+  { slug: "income-tax-consultant-neelankarai-ecr-chennai", name: "Neelankarai / ECR", topic: "Income tax consultation" },
 ];

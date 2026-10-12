@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Company Registration in Madurai | Pvt Ltd, LLP, OPC" },
+  title: { absolute: "Private Limited Company Registration in Madurai | CA" },
   description:
     "Company registration in Madurai for food, garment, rubber and service firms, handled online from our Chennai office: SPICe+, ROC Chennai, GST, FSSAI, Udyam.",
   alternates: { canonical: "/company-registration-madurai" },

@@ -5,7 +5,9 @@ import PageHero from "@/components/PageHero";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
+import { LOCATION_PAGES } from "@/lib/location-pages";
 import { INTERNATIONAL_AREAS, JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
+import { TN_CITY_PAGES } from "@/lib/tn-cities";
 import { getPostMeta, isPublished } from "@/lib/blog";
 import { getService } from "@/lib/services";
 
@@ -75,6 +77,7 @@ export default function ServicePageTemplate({
           url: pageUrl,
           serviceType,
           areaServedCountries: INTERNATIONAL_AREAS[crumbHref],
+          areaServedName: placeServed(crumbHref),
         })}
       />
       {howTo && (
@@ -223,4 +226,13 @@ export default function ServicePageTemplate({
       <CTASection service={crumbLabel} />
     </>
   );
+}
+
+// City pages served online from Chennai name their own city in areaServed.
+function placeServed(href: string): string | undefined {
+  const slug = href.replace(/^\//, "");
+  const loc = LOCATION_PAGES.find((l) => l.slug === slug);
+  if (loc) return `${loc.place}, India`;
+  const city = TN_CITY_PAGES.find((c) => c.slug === slug);
+  return city ? `${city.city}, Tamil Nadu` : undefined;
 }

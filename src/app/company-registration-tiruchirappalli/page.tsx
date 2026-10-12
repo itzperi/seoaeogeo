@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Company Registration in Trichy (Tiruchirappalli)" },
+  title: { absolute: "Private Limited Company Registration in Trichy | CA" },
   description:
     "Company registration in Trichy for fabrication, engineering and PSU vendor units, handled online from our Chennai office: SPICe+, ROC Chennai, GST and Udyam.",
   alternates: { canonical: "/company-registration-tiruchirappalli" },

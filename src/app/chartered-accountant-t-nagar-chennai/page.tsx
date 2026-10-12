@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import AreaPageTemplate from "@/components/AreaPageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -31,6 +32,28 @@ export default function Page() {
         "T Nagar is one of India's busiest commercial shopping districts, built around Ranganathan Street, Usman Road, and Pondy Bazaar — a dense concentration of silk saree stores, gold jewellery showrooms, textile traders, and everyday retail that draws shoppers from across Tamil Nadu and beyond.",
         "That retail density brings a specific compliance profile: high daily transaction volumes, significant cash and card mix, seasonal spikes around festivals and wedding season, and GST considerations specific to jewellery (with its own valuation and ITC rules) and textiles. Traders here often need GST return filing that keeps pace with genuinely high transaction counts, not a once-a-month afterthought.",
         "Many T Nagar businesses are also family-run trading concerns that have operated for years without a formal Private Limited or LLP structure — for these, our focus is usually GST compliance accuracy and tax audit applicability once turnover crosses the Section 44AB threshold, rather than a full corporate restructuring conversation.",
+      ]}
+      sections={[
+        {
+          heading: "Income tax for families and high-income individuals in T Nagar",
+          body: (
+            <p>
+              Many T Nagar trading families earn well beyond their business profit: rent from commercial frontage on busy shopping streets, shares in
+              family firms, gold and other investments, and capital gains when property is sold or redeveloped. Partners withdraw profit, interest
+              and remuneration from family firms, and several family members may own the same building in different shares. The personal returns of
+              these partners need to match the firm&apos;s books, the tenant&apos;s TDS and the ownership on title deeds. We plan advance tax on large rental and
+              business income and keep the family&apos;s filings consistent; see our page on{" "}
+              <Link href="/income-tax-consultant-for-hni-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax for high-income individuals and families in Chennai
+              </Link>{" "}
+              or{" "}
+              <Link href="/income-tax-return-filing-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax return filing in Chennai
+              </Link>{" "}
+              for individual returns.
+            </p>
+          ),
+        },
       ]}
       relevantServices={[
         { slug: "goods-and-services-tax", why: "High-volume GST return filing built for retail and trading transaction patterns." },

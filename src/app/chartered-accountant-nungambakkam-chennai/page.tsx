@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import AreaPageTemplate from "@/components/AreaPageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -31,6 +32,28 @@ export default function Page() {
         "Nungambakkam is one of Chennai's most established central business districts — well-connected, high-prestige, and home to a genuine concentration of corporate offices, professional services firms, and commercial establishments alongside its residential streets. Its position close to the city centre makes it a natural base for companies that want a central, well-recognised registered office address.",
         "That corporate concentration shows up directly in the CA work Nungambakkam clients need: private limited company incorporation for firms wanting a central Chennai address, virtual CFO and management advisory support for established businesses scaling their finance function, and GST compliance for the area's professional services and commercial establishments.",
         "Many Nungambakkam businesses are also mid-sized companies past the early startup stage — which means statutory audit and ROC compliance become a recurring, ongoing need rather than a one-time registration event.",
+      ]}
+      sections={[
+        {
+          heading: "Income tax for families and high-income individuals in Nungambakkam",
+          body: (
+            <p>
+              Nungambakkam is home to many senior corporate executives, company promoters and directors, whose personal tax is closely tied to
+              their businesses. Typical issues include salary with large perquisites, employee stock awards, dividends and remuneration from their own
+              companies, loans between director and company, and rent from residential or office property in this central, high-value area. Choosing
+              the right regime, planning advance tax on bonuses and stock sales, and reporting foreign shares correctly matter more here than routine
+              deductions. We coordinate a promoter&apos;s personal return with the company&apos;s filings so the two agree; read our{" "}
+              <Link href="/income-tax-consultant-for-hni-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax services for high-income individuals and families in Chennai
+              </Link>{" "}
+              or, for a straightforward return,{" "}
+              <Link href="/income-tax-return-filing-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax return filing in Chennai
+              </Link>
+              .
+            </p>
+          ),
+        },
       ]}
       relevantServices={[
         { slug: "private-limited-company-incorporation-chennai", why: "Company incorporation with a central Chennai registered office, handled end-to-end." },

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import AreaPageTemplate from "@/components/AreaPageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -31,6 +32,28 @@ export default function Page() {
         "Adyar is one of Chennai's more established, upscale residential neighbourhoods, known for its tree-lined streets and proximity to the Adyar River, and it sits within reach of major employment hubs including Guindy Industrial Estate, Tharamani, and the RMZ Millennia SEZ — while remaining primarily residential and institutional in character rather than a commercial district in its own right.",
         "Adyar is also home to a number of long-established educational, cultural, and non-profit institutions, which brings a specific and recurring need: trust and NGO registration and compliance, including 12A/80G registration for tax-exempt status. This is a genuine area of depth for us, alongside individual tax work for the area's concentration of doctors, consultants, and other independent professionals.",
         "For independent professionals in Adyar — doctors, consultants, architects, and similar — the recurring compliance question is usually tax audit applicability under Section 44ADA once gross receipts cross the professional threshold, alongside standard income tax return filing and advance tax planning.",
+      ]}
+      sections={[
+        {
+          heading: "Income tax for families and high-income individuals in Adyar",
+          body: (
+            <p>
+              Many Adyar households combine senior salaried or professional income with retirement savings, rent from a second flat and a
+              portfolio of shares and mutual funds. Families who have lived here for decades also hold older independent houses that are now being
+              sold or redeveloped, which raises capital gains, the choice between reinvesting in a house or in bonds, and sometimes a family member
+              abroad who shares ownership. Returning NRIs settling near the river add residential-status and foreign-asset questions to the mix. We
+              look at the whole household rather than one return at a time; our page on{" "}
+              <Link href="/income-tax-consultant-for-hni-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax planning for high-income individuals and families in Chennai
+              </Link>{" "}
+              explains the approach, and{" "}
+              <Link href="/income-tax-return-filing-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax return filing in Chennai
+              </Link>{" "}
+              covers routine annual filing.
+            </p>
+          ),
+        },
       ]}
       relevantServices={[
         { slug: "trust", why: "Trust, society, and Section 8 company registration, including 12A/80G exemption support for Adyar's institutions and NGOs." },

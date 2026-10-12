@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Company Registration in Tiruppur | Pvt Ltd, LLP, OPC" },
+  title: { absolute: "Private Limited Company Registration in Tiruppur | CA" },
   description:
     "Company registration in Tiruppur for knitwear exporters and job-work units, handled online from our Chennai office: SPICe+, ROC Coimbatore, IEC, LUT and GST.",
   alternates: { canonical: "/company-registration-tiruppur" },

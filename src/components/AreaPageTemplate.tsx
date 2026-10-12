@@ -12,6 +12,7 @@ export default function AreaPageTemplate({
   pageUrl,
   locality,
   crumbHref,
+  topic = "Chartered Accountant",
   h1,
   subhead,
   distanceNote,
@@ -25,6 +26,9 @@ export default function AreaPageTemplate({
   pageUrl: string;
   locality: string;
   crumbHref: string;
+  // Lead service for the page, e.g. "Income Tax Consultant"; drives the
+  // breadcrumb, eyebrow, schema name and WhatsApp topic.
+  topic?: string;
   h1: string;
   subhead: string;
   distanceNote: string;
@@ -45,16 +49,16 @@ export default function AreaPageTemplate({
     <>
       <JsonLd
         data={serviceSchema({
-          name: `Chartered Accountant Services for ${locality}, Chennai`,
+          name: `${topic} Services for ${locality}, Chennai`,
           description: subhead,
           url: pageUrl,
-          serviceType: "Chartered Accountancy Services",
+          serviceType: topic === "Chartered Accountant" ? "Chartered Accountancy Services" : `${topic} Services`,
           areaServedName: `${locality}, Chennai`,
         })}
       />
       {directAnswer && <JsonLd data={speakableSchema(["#direct-answer"])} />}
-      <Breadcrumbs items={[{ name: `Chartered Accountant — ${locality}`, href: crumbHref }]} />
-      <PageHero eyebrow={`Chartered Accountant · ${locality}, Chennai`} h1={h1} subhead={subhead} reviewedPath={crumbHref} service={`CA services in ${locality}`} />
+      <Breadcrumbs items={[{ name: `${topic} — ${locality}`, href: crumbHref }]} />
+      <PageHero eyebrow={`${topic} · ${locality}, Chennai`} h1={h1} subhead={subhead} reviewedPath={crumbHref} service={topic === "Chartered Accountant" ? `CA services in ${locality}` : `${topic} in ${locality}`} />
 
       <section className="bg-paper py-16">
         <div className="container-page">
@@ -84,7 +88,7 @@ export default function AreaPageTemplate({
           ))}
 
           <h2 className="mt-14 text-2xl text-obsidian">
-            Services most relevant to {locality} businesses
+            Services most relevant to {topic === "Chartered Accountant" ? `${locality} businesses` : `${locality} residents`}
           </h2>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
@@ -124,7 +128,7 @@ export default function AreaPageTemplate({
       <CTASection
         title={`Chartered accountant serving ${locality}, Chennai`}
         subtitle="Message us on WhatsApp, call, or visit our Anna Nagar office."
-        service={`CA services in ${locality}`}
+        service={topic === "Chartered Accountant" ? `CA services in ${locality}` : `${topic} in ${locality}`}
       />
     </>
   );

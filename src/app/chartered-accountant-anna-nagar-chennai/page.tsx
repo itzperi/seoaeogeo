@@ -85,6 +85,26 @@ export default function Page() {
             </p>
           ),
         },
+        {
+          heading: "Income tax for families and high-income individuals in Anna Nagar",
+          body: (
+            <p>
+              Anna Nagar has many long-settled families whose income now comes from several sources at once: a family business or professional
+              practice, rent from flats and shop units on the main roads, interest and dividends, and capital gains when an older house is sold or
+              redeveloped into apartments. Several generations often file together, and property may be jointly owned by parents and children. We
+              plan advance tax across these sources, keep rent and ownership shares consistent between family members, and handle the reinvestment
+              choices after a property sale. Because our office is in Anna Nagar, families can bring deeds and statements in person. See our{" "}
+              <Link href="/income-tax-consultant-for-hni-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax services for high-income individuals and families in Chennai
+              </Link>{" "}
+              or, for a single return,{" "}
+              <Link href="/income-tax-return-filing-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax return filing in Chennai
+              </Link>
+              .
+            </p>
+          ),
+        },
       ]}
       relevantServices={[
         { slug: "private-limited-company-incorporation-chennai", why: "Private limited company registration in Anna Nagar with a CA firm you can visit in person: documents, DSC and SPICe+ filing in 7–12 working days." },

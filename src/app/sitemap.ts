@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { AREAS } from "@/lib/areas";
 import { getPublishedPosts } from "@/lib/blog";
+import { LOCATION_PAGES } from "@/lib/location-pages";
 import { ALL_SERVICES } from "@/lib/services";
 import { PAGE_DATES } from "@/lib/page-dates";
 import { SITE_URL } from "@/lib/site";
@@ -57,5 +58,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...staticEntries, ...serviceEntries, ...areaEntries, ...cityEntries, ...blogEntries];
+  const locationEntries = LOCATION_PAGES.map((l) => ({
+    url: `${SITE_URL}/${l.slug}`,
+    lastModified: lastModified(`/${l.slug}`),
+    priority: 0.7,
+  }));
+
+  return [...staticEntries, ...serviceEntries, ...areaEntries, ...cityEntries, ...locationEntries, ...blogEntries];
 }

@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Company Registration in Coimbatore | Pvt Ltd, LLP, OPC" },
+  title: { absolute: "Private Limited Company Registration in Coimbatore | CA" },
   description:
     "Company registration in Coimbatore for Pvt Ltd, LLP and OPC founders, handled online from our Chennai office: DSC, SPICe+ filing, ROC Coimbatore, GST and Udyam.",
   alternates: { canonical: "/company-registration-coimbatore" },

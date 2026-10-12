@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Company Registration in Thoothukudi | Pvt Ltd, LLP, OPC" },
+  title: { absolute: "Private Limited Company Registration in Thoothukudi | CA" },
   description:
     "Company registration in Thoothukudi for port, logistics, salt and trading firms, done online from our Chennai office: SPICe+, ROC Chennai, IEC, GST and Udyam.",
   alternates: { canonical: "/company-registration-thoothukudi" },

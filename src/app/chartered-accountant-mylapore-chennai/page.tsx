@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import AreaPageTemplate from "@/components/AreaPageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -31,6 +32,28 @@ export default function Page() {
         "Mylapore is one of Chennai's oldest neighbourhoods and its cultural heart — home to the Kapaleeshwarar Temple, San Thome Cathedral, and a dense concentration of cultural, religious, and educational institutions alongside a vibrant arts scene and long-established local trading community.",
         "That institutional density gives Mylapore a genuinely distinct compliance profile: trust, society, and Section 8 company registration — including 12A/80G exemption support — is a recurring, meaningful need given the number of temples, cultural bodies, and charitable institutions based in and around the area.",
         "Alongside institutional work, Mylapore's long-established traders and independent professionals (many family-run businesses spanning generations) most often need straightforward GST compliance and individual income tax filing, generally with a lower compliance-complexity profile than a fast-changing commercial district.",
+      ]}
+      sections={[
+        {
+          heading: "Income tax for families and high-income individuals in Mylapore",
+          body: (
+            <p>
+              Mylapore&apos;s long-established families often hold ancestral houses, shares in family trading concerns and property passed down
+              through wills, sometimes through a Hindu Undivided Family. The income tax questions follow from that: how rent from a jointly inherited
+              house is split among heirs, how an old property&apos;s cost is worked out when it is finally sold, when gifts between relatives are tax-free,
+              and how an HUF is run or partitioned. Professionals and artists in the area add practice income and royalties to the same household. We
+              help families keep these filings consistent across members; see our page on{" "}
+              <Link href="/income-tax-consultant-for-hni-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax for high-income individuals and families in Chennai
+              </Link>{" "}
+              for wider planning, or{" "}
+              <Link href="/income-tax-return-filing-chennai" className="text-royal-violet underline underline-offset-2">
+                income tax return filing in Chennai
+              </Link>{" "}
+              for individual returns.
+            </p>
+          ),
+        },
       ]}
       relevantServices={[
         { slug: "trust", why: "Trust, society, and 12A/80G registration for Mylapore's cultural, religious, and charitable institutions." },

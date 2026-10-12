@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Company Registration in Erode | Pvt Ltd, LLP, OPC" },
+  title: { absolute: "Private Limited Company Registration in Erode | CA" },
   description:
     "Company registration in Erode for turmeric traders, handloom and textile units, handled online from our Chennai office: SPICe+, ROC Coimbatore, GST, FSSAI, IEC.",
   alternates: { canonical: "/company-registration-erode" },

@@ -255,6 +255,12 @@ export const SERVICES: ServiceSummary[] = [
     shortDescription:
       "Indian subsidiary set-up for UAE mainland and free-zone parents and NRI founders: MOFA attestation, FDI route, FC-GPR and India–UAE treaties.",
   },
+  {
+    slug: "income-tax-consultant-for-hni-chennai",
+    name: "Income Tax Consultant for HNIs",
+    shortDescription:
+      "Tax planning for HNIs and families in Chennai: capital gains, ESOPs and foreign RSUs, Schedule FA, residency, HUFs and advance tax.",
+  },
 ];
 
 // Specialist pages for NRIs, overseas businesses and urgent notices. Kept
@@ -367,6 +373,7 @@ export const SERVICE_GROUPS: { label: string; slugs: string[] }[] = [
     label: "Income tax & NRI",
     slugs: [
       "direct-tax",
+      "income-tax-consultant-for-hni-chennai",
       "income-tax-return-filing-chennai",
       "income-tax-notice-reply-chennai",
       "income-tax-assessment-appeals-chennai",
