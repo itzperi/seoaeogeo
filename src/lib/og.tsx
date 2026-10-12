@@ -21,11 +21,11 @@ export function ogImage({ eyebrow, title, subtitle }: { eyebrow: string; title: 
           fontFamily: "sans-serif",
         }}
       >
-        <div style={{ fontSize: 28, color: "#ffc233", letterSpacing: 2 }}>{eyebrow}</div>
-        <div style={{ fontSize: 68, fontWeight: 700, marginTop: 24, lineHeight: 1.1 }}>{title}</div>
-        <div style={{ fontSize: 32, marginTop: 24, opacity: 0.9 }}>{subtitle}</div>
-        <div style={{ fontSize: 26, marginTop: 40, opacity: 0.75 }}>
-          {BUSINESS_NAME} · {ADDRESS_SHORT}
+        <div style={{ display: "flex", fontSize: 28, color: "#ffc233", letterSpacing: 2 }}>{eyebrow}</div>
+        <div style={{ display: "flex", fontSize: 68, fontWeight: 700, marginTop: 24, lineHeight: 1.1 }}>{title}</div>
+        <div style={{ display: "flex", fontSize: 32, marginTop: 24, opacity: 0.9 }}>{subtitle}</div>
+        <div style={{ display: "flex", fontSize: 26, marginTop: 40, opacity: 0.75 }}>
+          {`${BUSINESS_NAME} · ${ADDRESS_SHORT}`}
         </div>
       </div>
     ),
