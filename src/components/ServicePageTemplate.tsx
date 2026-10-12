@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
-import { LOCATION_PAGES } from "@/lib/location-pages";
+import { LOCATION_PAGES, locationLinks } from "@/lib/location-pages";
 import { INTERNATIONAL_AREAS, JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { TN_CITY_PAGES } from "@/lib/tn-cities";
 import { getPostMeta, isPublished } from "@/lib/blog";
@@ -65,6 +65,7 @@ export default function ServicePageTemplate({
   children?: ReactNode;
 }) {
   const related = relatedSlugs.map(getService).filter((s): s is NonNullable<typeof s> => Boolean(s));
+  const cityLinks = locationLinks(crumbHref);
   const guides = relatedPosts
     .map(getPostMeta)
     .filter((p): p is NonNullable<typeof p> => Boolean(p) && isPublished(p!.date));
@@ -197,6 +198,23 @@ export default function ServicePageTemplate({
               ))}
             </ul>
           </div>
+        </section>
+      )}
+
+      {cityLinks && (
+        <section className="bg-paper pb-12">
+          <nav className="container-page" aria-label={cityLinks.heading}>
+            <h2 className="text-2xl text-obsidian">{cityLinks.heading}</h2>
+            <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {cityLinks.links.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </section>
       )}
 

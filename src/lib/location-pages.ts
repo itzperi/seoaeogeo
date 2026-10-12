@@ -24,3 +24,24 @@ export const LOCATION_PAGES: LocationPage[] = [
   { slug: "gst-litigation-tiruchirappalli", place: "Trichy", service: "GST litigation" },
   { slug: "gst-litigation-hosur", place: "Hosur", service: "GST litigation" },
 ];
+
+// Chennai pillar each location-page family links back to.
+export const LOCATION_PILLARS: Record<string, { href: string; label: string }> = {
+  "Income tax consultation": { href: "/income-tax-consultant-for-hni-chennai", label: "Income tax for HNIs in Chennai" },
+  "GST litigation": { href: "/gst-litigation-chennai", label: "GST litigation in Chennai" },
+};
+
+// Cross-links for a location page (its pillar plus sibling cities) or for a
+// pillar (all its cities), so no city page depends on a single inbound link.
+export function locationLinks(href: string): { heading: string; links: { href: string; label: string }[] } | null {
+  const slug = href.replace(/^\//, "");
+  const page = LOCATION_PAGES.find((l) => l.slug === slug);
+  const service = page?.service ?? Object.keys(LOCATION_PILLARS).find((k) => LOCATION_PILLARS[k].href === href);
+  if (!service) return null;
+  const cities = LOCATION_PAGES.filter((l) => l.service === service && l.slug !== slug).map((l) => ({
+    href: `/${l.slug}`,
+    label: `${l.service} in ${l.place}`,
+  }));
+  if (!page) return { heading: `${service} by city`, links: cities };
+  return { heading: `${service} in other cities`, links: [LOCATION_PILLARS[service], ...cities] };
+}

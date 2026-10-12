@@ -6,6 +6,7 @@ import {
   BUSINESS_LEGAL_NAME,
   BUSINESS_NAME,
   EMAIL,
+  FIRM_REGISTRATION_NO,
   FOUNDER_CREDENTIALS,
   FOUNDER_LINKEDIN,
   FOUNDER_NAME,
@@ -86,6 +87,9 @@ export function organizationSchema() {
     foundingDate: `${YEAR_FOUNDED}`,
     knowsLanguage: LANGUAGES_SPOKEN,
     founder: { "@id": `${SITE_URL}/#founder` },
+    ...(FIRM_REGISTRATION_NO && {
+      identifier: { "@type": "PropertyValue", propertyID: "ICAI firm registration number", value: FIRM_REGISTRATION_NO },
+    }),
     address: {
       "@type": "PostalAddress",
       streetAddress: `${ADDRESS.street}, ${ADDRESS.locality}`,
