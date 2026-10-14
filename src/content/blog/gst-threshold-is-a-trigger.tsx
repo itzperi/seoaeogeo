@@ -47,7 +47,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you&apos;re close to the GST threshold or unsure whether a specific trigger already applies to your business, C S Rushil &amp; Co. can check your actual position as part of our <Link href="/goods-and-services-tax">GST services</Link>. Book a free consultation.
+        If you&apos;re close to the GST threshold or unsure whether a specific trigger already applies to your business, C S Rushil &amp; Co. can check your actual position as part of our <Link href="/goods-and-services-tax">GST services</Link>. Book a consultation.
       </p>
     </>
   );

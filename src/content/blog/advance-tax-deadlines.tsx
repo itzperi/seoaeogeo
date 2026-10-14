@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If estimating and paying advance tax correctly every quarter feels like guesswork, C S Rushil &amp; Co. in Anna Nagar helps clients project income and calculate each installment accurately as part of our <Link href="/direct-tax">direct tax services</Link>. Book a free consultation before your next deadline.
+        If estimating and paying advance tax correctly every quarter feels like guesswork, C S Rushil &amp; Co. in Anna Nagar helps clients project income and calculate each installment accurately as part of our <Link href="/direct-tax">direct tax services</Link>. Book a consultation before your next deadline.
       </p>
     </>
   );

@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you are considering closing a company in Chennai and are unsure whether strike off or winding up is the right route, C S Rushil &amp; Co. can assess your company&apos;s specific situation and guide you through the correct process. Book a free consultation.
+        If you are considering closing a company in Chennai and are unsure whether strike off or winding up is the right route, C S Rushil &amp; Co. can assess your company&apos;s specific situation and guide you through the correct process. Book a consultation.
       </p>
     </>
   );

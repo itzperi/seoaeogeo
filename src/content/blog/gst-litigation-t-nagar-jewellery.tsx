@@ -37,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you run a retail or trading business in T Nagar and have a GST notice sitting unanswered, C S Rushil &amp; Co. can trace the actual source of the mismatch before the reply deadline passes. Book a free consultation.
+        If you run a retail or trading business in T Nagar and have a GST notice sitting unanswered, C S Rushil &amp; Co. can trace the actual source of the mismatch before the reply deadline passes. Book a consultation.
       </p>
     </>
   );

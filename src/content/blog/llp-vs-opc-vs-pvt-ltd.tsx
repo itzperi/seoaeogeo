@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you are deciding between these structures for a new business in Chennai, C S Rushil &amp; Co. can walk through your specific plans and recommend the structure that fits, then handle the full incorporation. Book a free consultation to get started.
+        If you are deciding between these structures for a new business in Chennai, C S Rushil &amp; Co. can walk through your specific plans and recommend the structure that fits, then handle the full incorporation. Book a consultation to get started.
       </p>
     </>
   );

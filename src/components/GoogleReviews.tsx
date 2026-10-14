@@ -97,7 +97,7 @@ export default function GoogleReviews({
             rel="noopener noreferrer"
             className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white hover:opacity-85"
           >
-            Book a Free Consultation
+            Book a Consultation
           </TrackedAnchor>
           <p className="text-sm text-carbon">15 minutes with a chartered accountant · in person in Anna Nagar or online</p>
         </div>

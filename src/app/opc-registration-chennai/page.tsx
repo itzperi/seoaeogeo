@@ -78,7 +78,7 @@ export default function Page() {
         {
           question: "Can an NRI register an OPC in India?",
           answer:
-            "Yes. Since the Companies (Incorporation) Second Amendment Rules, 2021, an Indian citizen can form an OPC whether resident in India or not, so NRIs are eligible as member and nominee. Separately, every company needs at least one director who stayed in India for 182 days or more in the financial year, so an NRI founder living abroad usually appoints a resident director alongside.",
+            "Yes. Since the Companies (Incorporation) Second Amendment Rules, 2021, an Indian citizen can form an OPC whether resident in India or not, so NRIs are eligible as member and nominee. Separately, every company needs at least one director who stayed in India for 182 days in the previous calendar year, so an NRI founder living abroad usually appoints a resident director alongside.",
         },
         {
           question: "What is the role of the nominee in an OPC?",
@@ -120,7 +120,7 @@ export default function Page() {
         <li>• The nominee must also be an Indian citizen and a natural person, and must consent in writing.</li>
         <li>• No one can be a member of more than one OPC, or a nominee in more than one OPC.</li>
         <li>• Minors cannot be members or nominees.</li>
-        <li>• At least one director must have stayed in India for 182 days or more in the financial year. The member can be that director.</li>
+        <li>• At least one director must have stayed in India for 182 days in the previous calendar year. The member can be that director.</li>
         <li>• An OPC cannot carry on non-banking financial investment activity, and it cannot convert into a Section 8 company.</li>
       </ul>
 

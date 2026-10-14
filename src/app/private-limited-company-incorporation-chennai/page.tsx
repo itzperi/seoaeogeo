@@ -37,7 +37,7 @@ const FAQS = [
   {
     question: "What is the minimum capital and number of directors required?",
     answer:
-      "A private limited company needs at least two directors and two shareholders, who can be the same people, and there is no minimum paid-up capital. It can have up to 15 directors (more with a special resolution) and 200 members. At least one director must have stayed in India for 182 days or more in the financial year.",
+      "A private limited company needs at least two directors and two shareholders, who can be the same people, and there is no minimum paid-up capital. It can have up to 15 directors (more with a special resolution) and 200 members. At least one director must have stayed in India for 182 days in the previous calendar year.",
   },
   {
     question: "Which ROC registers a private limited company in Chennai?",
@@ -97,7 +97,7 @@ const DOCUMENTS = [
   { item: "Address proof", indian: "Bank statement, utility bill or mobile bill not older than two months", foreign: "Overseas bank statement or utility bill, attested the same way as the passport" },
   { item: "Photograph", indian: "Recent passport-size photo", foreign: "Recent passport-size photo" },
   { item: "DSC and DIN", indian: "Class 3 DSC; DIN through SPICe+", foreign: "Class 3 DSC issued on attested documents; DIN through SPICe+" },
-  { item: "Residency", indian: "At least one director resident in India (182 days or more in the financial year)", foreign: "Cannot be the only director; an Indian-resident director is required" },
+  { item: "Residency", indian: "At least one director resident in India (182 days in the previous calendar year)", foreign: "Cannot be the only director; an Indian-resident director is required" },
   { item: "Registered office", indian: "Utility bill (not older than two months), rent agreement and owner's NOC if not owned", foreign: "Same Indian address documents; the office must be in India" },
   { item: "Foreign investment", indian: "Not applicable", foreign: "Share subscription from abroad reported to RBI in Form FC-GPR within 30 days of allotment" },
 ];
@@ -264,7 +264,7 @@ export default function IncorporationPage() {
                   { label: "Government forms", value: "SPICe+ Part A (name) and Part B (incorporation) with AGILE-PRO-S, e-MoA (INC-33) and e-AoA (INC-34) on the MCA V3 portal." },
                   { label: "Registrar", value: "ROC Chennai for a registered office in Chennai and most of Tamil Nadu; ROC Coimbatore for nine western districts." },
                   { label: "Minimum members", value: "2 directors and 2 shareholders (can be the same people); maximum 200 members. No minimum paid-up capital." },
-                  { label: "Resident director", value: "At least one director who stayed in India for 182 days or more in the financial year (Section 149(3), Companies Act, 2013)." },
+                  { label: "Resident director", value: "At least one director who stayed in India for 182 days in the previous calendar year (Section 149(3), Companies Act, 2013)." },
                   { label: "Key deadlines", value: "First auditor within 30 days, share certificates within 60 days, INC-20A within 180 days." },
                 ].map((f) => (
                   <div key={f.label} className="grid grid-cols-1 gap-1 px-5 py-3 sm:grid-cols-[200px_1fr] sm:gap-4">
@@ -551,7 +551,7 @@ export default function IncorporationPage() {
                 href="/contact"
                 className="mt-5 inline-block w-full rounded-buttons bg-white px-5 py-3 text-center text-sm font-medium text-obsidian hover:bg-lilac-mist"
               >
-                Book Free Consultation
+                Book Consultation
               </Link>
             </div>
             <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">

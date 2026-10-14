@@ -63,7 +63,7 @@ export default function Page() {
       ]}
       faqs={[
         { question: "Do you handle 12A/80G registration for trusts and NGOs in Adyar?", answer: "Yes — trust, society, and Section 8 company formation along with 12A/80G registration for tax-exempt status is a core part of our practice, and Adyar's concentration of educational and non-profit institutions makes this a recurring engagement for us in the area." },
-        { question: "I'm a doctor/consultant with a private practice in Adyar — do I need a tax audit?", answer: "It depends on your gross annual receipts. A tax audit under Section 44AB is generally required if your professional receipts cross the audit limit, or if you declare profit below the Section 44ADA presumptive rate while your income exceeds the basic exemption limit. Book a free consultation and we'll assess your specific position." },
+        { question: "I'm a doctor/consultant with a private practice in Adyar — do I need a tax audit?", answer: "It depends on your gross annual receipts. A tax audit under Section 44AB is generally required if your professional receipts cross the audit limit, or if you declare profit below the Section 44ADA presumptive rate while your income exceeds the basic exemption limit. Book a consultation and we'll assess your specific position." },
         { question: "Do you serve individuals as well as institutions in Adyar?", answer: "Yes — alongside trust/NGO work, we handle individual income tax filing, advance tax planning, and audit services for Adyar's professionals and residents." },
       ]}
       furtherReading={[

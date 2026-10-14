@@ -47,7 +47,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you&apos;re not sure whether a cash transaction in your business crosses one of these thresholds, C S Rushil &amp; Co. can check your specific situation before it becomes a filing-season surprise. Book a free consultation.
+        If you&apos;re not sure whether a cash transaction in your business crosses one of these thresholds, C S Rushil &amp; Co. can check your specific situation before it becomes a filing-season surprise. Book a consultation.
       </p>
     </>
   );

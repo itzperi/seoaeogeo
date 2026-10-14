@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If your company in Chennai needs to add or remove a director and you want the paperwork handled correctly and on time, C S Rushil &amp; Co. manages the full process end to end. Get in touch for a free consultation.
+        If your company in Chennai needs to add or remove a director and you want the paperwork handled correctly and on time, C S Rushil &amp; Co. manages the full process end to end. Get in touch for a consultation.
       </p>
     </>
   );

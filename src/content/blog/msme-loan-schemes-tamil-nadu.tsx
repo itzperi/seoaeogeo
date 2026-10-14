@@ -58,7 +58,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you want help figuring out which MSME loan schemes your Chennai business actually qualifies for and preparing the application, C S Rushil &amp; Co. can guide you through the process. Reach out for a free consultation.
+        If you want help figuring out which MSME loan schemes your Chennai business actually qualifies for and preparing the application, C S Rushil &amp; Co. can guide you through the process. Reach out for a consultation.
       </p>
     </>
   );

@@ -104,7 +104,7 @@ export default function Page() {
         {
           question: "I have returned from the Gulf. Can I be the resident director?",
           answer:
-            "Usually yes. A director counts as resident if they stayed in India for at least 182 days in the financial year, and for a newly incorporated company this is applied proportionately for the first year. If you have only just returned, another resident director may be needed initially. We check your dates before filing.",
+            "Usually yes. A director counts as resident if they stayed in India for at least 182 days in the previous calendar year, and for a newly incorporated company this is applied proportionately for the first year. If you have only just returned, another resident director may be needed initially. We check your dates before filing.",
         },
         {
           question: "How can Gulf savings be invested as share capital?",

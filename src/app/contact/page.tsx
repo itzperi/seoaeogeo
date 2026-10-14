@@ -44,13 +44,13 @@ export default function ContactPage() {
 
       <section className="bg-paper py-16">
         <div className="container-page">
-          <h2 className="text-2xl text-obsidian">Book a free consultation directly</h2>
+          <h2 className="text-2xl text-obsidian">Book a consultation directly</h2>
           <p className="mt-3 max-w-2xl text-slate">
             Pick a time that works for you — this books directly onto our calendar, no back-and-forth over email.
           </p>
           <div className="mt-6 overflow-hidden rounded-cards border border-ash shadow-[var(--shadow-card)]">
             <iframe
-              title="Book a free consultation with C S Rushil & Co."
+              title="Book a consultation with C S Rushil & Co."
               src={BOOKING_EMBED_SRC}
               width="100%"
               height="720"

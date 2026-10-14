@@ -65,7 +65,7 @@ export const SOCIALS = {
   instagram: "https://www.instagram.com/carushil_c_s/",
 };
 
-// Calendly 30-minute consultation — every "Book a Free Consultation"
+// Calendly 30-minute consultation — every "Book a Consultation"
 // button on the site points here.
 export const BOOKING_LINK = "https://calendly.com/ceo-csrushil/30min";
 // Same event in Calendly's inline-embed mode, for the iframe on /contact.

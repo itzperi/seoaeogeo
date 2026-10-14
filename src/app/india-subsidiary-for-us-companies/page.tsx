@@ -88,7 +88,7 @@ export default function Page() {
       subhead="How a Delaware or other US corporation incorporates a wholly owned Indian private limited company: documents and apostille, the resident director rule, the FDI automatic route, FC-GPR reporting, transfer pricing on intercompany services, and the points to coordinate with your US CPA."
       keyFacts={[
         { label: "Usual structure", value: "US parent holds all or nearly all shares of an Indian private limited company, with a nominee as the second shareholder." },
-        { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days or more in the financial year (section 149(3), Companies Act, 2013)." },
+        { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days in the previous calendar year (section 149(3), Companies Act, 2013)." },
         { label: "Document legalisation", value: "Apostille. The United States has been a party to the Hague Apostille Convention since 1981, as has India since 2005." },
         { label: "FDI approval", value: "None in automatic-route sectors; check the FDI Policy for your activity first." },
         { label: "RBI reporting", value: "Form FC-GPR within 30 days of share allotment, then the annual FLA return by 15 July." },
@@ -119,7 +119,7 @@ export default function Page() {
       }}
       faqs={[
         { question: "Can a Delaware C-corp own 100% of an Indian company?", answer: "Yes. Where the FDI Policy allows 100% foreign investment under the automatic route, a Delaware C-corp can hold all the economic interest in an Indian private limited company. Because a private company needs at least two shareholders, a nominee, often a US officer or group company, holds one share on behalf of the parent." },
-        { question: "Does the Indian subsidiary need a director who lives in India?", answer: "Yes. Section 149(3) of the Companies Act, 2013 requires at least one director who has stayed in India for 182 days or more during the financial year. This person can be an Indian national or a foreign national living in India, and is often the India country manager or a trusted local professional." },
+        { question: "Does the Indian subsidiary need a director who lives in India?", answer: "Yes. Section 149(3) of the Companies Act, 2013 requires at least one director who has stayed in India for 182 days or more in the previous calendar year. This person can be an Indian national or a foreign national living in India, and is often the India country manager or a trusted local professional." },
         { question: "How are US documents apostilled for use in India?", answer: "Both countries are parties to the Hague Apostille Convention, so US public documents need an apostille rather than embassy legalisation. State documents and notarised papers are apostilled by the Secretary of State of the issuing or notarising state, and federal documents by the US Department of State. The Indian authorities then accept them without further attestation." },
         { question: "What is FC-GPR and who files it?", answer: "FC-GPR is the RBI form reporting the issue of shares to a foreign investor. The Indian company files it on the FIRMS portal within 30 days of allotting shares to the US parent, through its authorised dealer bank, with the remittance details, the investor's KYC and a valuation certificate." },
         { question: "How is the Indian subsidiary paid for services to the US parent?", answer: "Most US groups use a cost-plus services agreement, where the Indian company invoices the parent for its costs plus an arm's length markup. Indian transfer pricing rules require this markup to be supported by benchmarking and documented each year, and the export of services also needs the correct GST treatment." },
@@ -145,7 +145,7 @@ export default function Page() {
 
       <h2 className="mt-14 text-2xl text-obsidian">Who can be the resident director of a US-owned Indian company?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-        Every Indian company needs at least one director who has stayed in India for 182 days or more in the financial year.
+        Every Indian company needs at least one director who has stayed in India for 182 days in the previous calendar year.
         US groups usually appoint the first India hire at senior level, an existing employee who has relocated, or an
         independent professional who acts as a non-executive director. The other directors can be US executives who never
         travel to India; they sign electronically using digital signature certificates. A resident director carries the

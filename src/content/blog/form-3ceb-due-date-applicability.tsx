@@ -53,7 +53,7 @@ export default function Body() {
       </ul>
 
       <p>
-        This is a genuinely common blind spot for Indian subsidiaries in their first year or two of operation, since the trigger is the existence of the transaction, not the company&apos;s revenue scale. C S Rushil &amp; Co. handles Form 3CEB certification and transfer pricing documentation for businesses across Chennai with cross-border or related-party transactions. Reach out for a free consultation.
+        This is a genuinely common blind spot for Indian subsidiaries in their first year or two of operation, since the trigger is the existence of the transaction, not the company&apos;s revenue scale. C S Rushil &amp; Co. handles Form 3CEB certification and transfer pricing documentation for businesses across Chennai with cross-border or related-party transactions. Reach out for a consultation.
       </p>
     </>
   );

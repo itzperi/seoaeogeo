@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If your Chennai based NGO or trust is planning to accept foreign funding and needs FCRA registration handled correctly, C S Rushil &amp; Co. can guide you through eligibility and the application process. Reach out for a free consultation.
+        If your Chennai based NGO or trust is planning to accept foreign funding and needs FCRA registration handled correctly, C S Rushil &amp; Co. can guide you through eligibility and the application process. Reach out for a consultation.
       </p>
     </>
   );

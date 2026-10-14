@@ -53,7 +53,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you&apos;ve received a notice and aren&apos;t sure which of these it actually is, C S Rushil &amp; Co. can identify the real trigger and draft the correct <Link href="/income-tax-notice-reply-chennai">income tax notice reply</Link>. Book a free consultation.
+        If you&apos;ve received a notice and aren&apos;t sure which of these it actually is, C S Rushil &amp; Co. can identify the real trigger and draft the correct <Link href="/income-tax-notice-reply-chennai">income tax notice reply</Link>. Book a consultation.
       </p>
     </>
   );

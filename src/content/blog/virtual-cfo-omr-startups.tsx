@@ -37,7 +37,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you&apos;re a founder or finance lead along the OMR corridor getting ready for a raise or trying to get a genuine handle on runway, C S Rushil &amp; Co. provides <Link href="/virtual-cfo-services">Virtual CFO support</Link> built around exactly this profile. Book a free consultation to see what it would look like for your stage.
+        If you&apos;re a founder or finance lead along the OMR corridor getting ready for a raise or trying to get a genuine handle on runway, C S Rushil &amp; Co. provides <Link href="/virtual-cfo-services">Virtual CFO support</Link> built around exactly this profile. Book a consultation to see what it would look like for your stage.
       </p>
     </>
   );

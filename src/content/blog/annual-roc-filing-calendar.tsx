@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If keeping track of ROC deadlines across the year feels like more than your team can manage internally, C S Rushil &amp; Co. maintains a compliance calendar for client companies in Chennai through our <Link href="/annual-compliance-package">annual compliance package</Link> and files everything on time. Reach out for a free consultation.
+        If keeping track of ROC deadlines across the year feels like more than your team can manage internally, C S Rushil &amp; Co. maintains a compliance calendar for client companies in Chennai through our <Link href="/annual-compliance-package">annual compliance package</Link> and files everything on time. Reach out for a consultation.
       </p>
     </>
   );

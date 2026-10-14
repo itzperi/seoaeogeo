@@ -87,7 +87,7 @@ export default function Page() {
       subhead="How a UK limited company incorporates a wholly owned Indian private limited company: Companies House documents and the FCDO apostille, the resident director rule, the FDI automatic route, FC-GPR, the India–UK tax treaty and trade agreement, and points for your UK adviser."
       keyFacts={[
         { label: "Usual structure", value: "UK Ltd parent holds all or nearly all shares of an Indian private limited company, with a nominee as the second shareholder." },
-        { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days or more in the financial year (section 149(3), Companies Act, 2013)." },
+        { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days in the previous calendar year (section 149(3), Companies Act, 2013)." },
         { label: "Document legalisation", value: "Apostille issued by the FCDO Legalisation Office; the UK and India are both parties to the Hague Apostille Convention." },
         { label: "FDI approval", value: "None in automatic-route sectors; check the FDI Policy for your activity first." },
         { label: "RBI reporting", value: "Form FC-GPR within 30 days of share allotment, then the annual FLA return by 15 July." },
@@ -119,7 +119,7 @@ export default function Page() {
       faqs={[
         { question: "Can a UK limited company own 100% of an Indian company?", answer: "Yes. Where the FDI Policy allows 100% foreign investment under the automatic route, a UK Ltd can hold the whole economic interest in an Indian private limited company. A private company needs two shareholders, so a nominee, often a UK director or another group company, holds one share on behalf of the parent." },
         { question: "How are UK documents apostilled for use in India?", answer: "The UK and India are both parties to the Hague Apostille Convention, so UK documents are legalised by an apostille from the FCDO Legalisation Office instead of attestation by the Indian High Commission. Documents such as board resolutions and passport copies are first certified by a UK notary or solicitor, then sent for the apostille." },
-        { question: "Does the Indian subsidiary need a director who lives in India?", answer: "Yes. Section 149(3) of the Companies Act, 2013 requires at least one director who has stayed in India for 182 days or more during the financial year. The UK directors can sit on the board from the UK and sign electronically, while the resident director is usually a senior India employee or an independent professional." },
+        { question: "Does the Indian subsidiary need a director who lives in India?", answer: "Yes. Section 149(3) of the Companies Act, 2013 requires at least one director who has stayed in India for 182 days or more in the previous calendar year. The UK directors can sit on the board from the UK and sign electronically, while the resident director is usually a senior India employee or an independent professional." },
         { question: "Does the India–UK trade agreement change how a subsidiary is set up?", answer: "No. The Comprehensive Economic and Trade Agreement, in force from 15 July 2026, mainly covers tariffs, services market access and business mobility. Setting up a subsidiary still follows the FDI Policy, the Companies Act and FEMA reporting. The agreement may still matter if your Indian company trades goods with the UK." },
         { question: "How does the India–UK tax treaty affect payments to the parent?", answer: "The India–UK Double Taxation Avoidance Convention can reduce Indian withholding tax on dividends, interest, royalties and fees paid to the UK parent, subject to conditions. The parent usually needs a UK certificate of residence from HMRC and the prescribed declarations in India to claim the treaty rate." },
         { question: "What UK tax points should we raise with our UK adviser?", answer: "Common items are the UK controlled foreign company rules, whether dividends from India qualify for the UK dividend exemption, relief for Indian withholding tax, UK transfer pricing on intercompany services and group reporting. We do not advise on UK tax, but we provide the Indian figures and documents your adviser needs." },
@@ -144,7 +144,7 @@ export default function Page() {
 
       <h2 className="mt-14 text-2xl text-obsidian">Who can be the resident director of a UK-owned Indian company?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-        At least one director must have stayed in India for 182 days or more in the financial year. UK groups usually appoint
+        At least one director must have stayed in India for 182 days in the previous calendar year. UK groups usually appoint
         their India lead, a relocated employee, or an independent professional who serves as a non-executive director. The UK
         directors do not need to travel to India for incorporation; they sign forms with digital signature certificates and
         attend board meetings by video. Because the resident director carries the same statutory duties as other directors,

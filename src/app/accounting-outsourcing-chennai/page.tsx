@@ -130,7 +130,7 @@ export default function Page() {
         <Link href="/virtual-cfo-services" className={linkClass}>
           Virtual CFO services
         </Link>
-        , which sit on top of an outsourced accounting function.
+        , which sit in addition to an outsourced accounting function.
       </p>
     </ServicePageTemplate>
   );

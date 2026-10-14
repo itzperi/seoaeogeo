@@ -33,7 +33,7 @@ export default function Body() {
       <h2>What rate applies to your services</h2>
 
       <p>
-        Most professional and consulting services attract eighteen percent GST. This needs to be charged on top of your invoice value once you are registered, and reported through regular <Link href="/gst-return-filing-chennai">GST return filing</Link>, which is a conversation worth having with clients before you cross the threshold, not after.
+        Most professional and consulting services attract eighteen percent GST. This needs to be charged in addition to your invoice value once you are registered, and reported through regular <Link href="/gst-return-filing-chennai">GST return filing</Link>, which is a conversation worth having with clients before you cross the threshold, not after.
       </p>
 
       <h2>Composition scheme: usually not the right fit</h2>
@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you are a freelancer or consultant in Chennai unsure whether GST registration applies to you yet, C S Rushil &amp; Co. can review your income pattern and client mix in a single free consultation and tell you plainly whether you need to register now or can wait.
+        If you are a freelancer or consultant in Chennai unsure whether GST registration applies to you yet, C S Rushil &amp; Co. can review your income pattern and client mix in a single consultation and tell you plainly whether you need to register now or can wait.
       </p>
     </>
   );

@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you are an NRI with property, investments, or family financial matters in Chennai and are unsure about your Indian filing obligation, C S Rushil &amp; Co. handles <Link href="/nri-tax-services">NRI tax filing</Link> and can review your specific situation remotely. Reach out for a free consultation.
+        If you are an NRI with property, investments, or family financial matters in Chennai and are unsure about your Indian filing obligation, C S Rushil &amp; Co. handles <Link href="/nri-tax-services">NRI tax filing</Link> and can review your specific situation remotely. Reach out for a consultation.
       </p>
     </>
   );

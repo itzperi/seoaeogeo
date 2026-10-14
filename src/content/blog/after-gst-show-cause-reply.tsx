@@ -49,7 +49,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you have filed a reply to a GST show cause notice and are unsure what comes next, or if a demand order has already been passed and you are deciding whether to appeal, C S Rushil &amp; Co. represents clients through the entire process, from the original notice through GSTAT if needed. Book a free consultation to discuss where your case currently stands.
+        If you have filed a reply to a GST show cause notice and are unsure what comes next, or if a demand order has already been passed and you are deciding whether to appeal, C S Rushil &amp; Co. represents clients through the entire process, from the original notice through GSTAT if needed. Book a consultation to discuss where your case currently stands.
       </p>
     </>
   );

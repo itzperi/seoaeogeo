@@ -89,7 +89,7 @@ export default function Page() {
         { label: "Typical time", value: "Pvt Ltd: 7–12 working days. LLP: 10–15 working days. Both counted from the point documents are ready." },
         { label: "Government form", value: "SPICe+ Part A and Part B with AGILE-PRO-S, e-MoA (INC-33) and e-AoA (INC-34) for companies; FiLLiP for LLPs. Filed on the MCA V3 portal." },
         { label: "Minimum members", value: "Pvt Ltd: 2 directors and 2 shareholders. LLP: 2 designated partners. OPC: 1 member plus a nominee." },
-        { label: "Resident director", value: "A company needs at least one director who stayed in India for 182 days or more in the financial year (Section 149(3), Companies Act, 2013)." },
+        { label: "Resident director", value: "A company needs at least one director who stayed in India for 182 days in the previous calendar year (Section 149(3), Companies Act, 2013)." },
         { label: "Key deadlines", value: "INC-20A (commencement of business) within 180 days of incorporation; first auditor within 30 days; LLP agreement (Form 3) within 30 days." },
       ]}
       howTo={{
@@ -144,7 +144,7 @@ export default function Page() {
         {
           question: "Can NRIs or foreign nationals be directors of an Indian company?",
           answer:
-            "Yes. NRIs and foreign nationals can be directors and shareholders of an Indian Private Limited Company, provided at least one director stayed in India for 182 days or more in the financial year. Foreign directors need a DIN and DSC based on their passport. Foreign shareholding must also follow FDI rules for the sector. See our page on company registration in India for foreigners for the additional documents and RBI reporting involved.",
+            "Yes. NRIs and foreign nationals can be directors and shareholders of an Indian Private Limited Company, provided at least one director stayed in India for 182 days in the previous calendar year. Foreign directors need a DIN and DSC based on their passport. Foreign shareholding must also follow FDI rules for the sector. See our page on company registration in India for foreigners for the additional documents and RBI reporting involved.",
         },
         {
           question: "Can my home address be the registered office?",

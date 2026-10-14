@@ -43,11 +43,11 @@ export default function Body() {
       <h2>Weighing the actual trade-off honestly</h2>
 
       <p>
-        The professional fee for <Link href="/gst-return-filing-chennai">GST return filing</Link> is a known, fixed monthly cost. The cost of a <Link href="/gst-notice-reply-chennai">GST notice reply</Link>, an ITC reversal, or interest on a delayed correction is unknown until it happens — and by the nature of how these compound, it&apos;s rarely smaller than what was saved over the months leading up to it.
+        The professional fee for <Link href="/gst-return-filing-chennai">GST return filing</Link> is a known, fixed monthly cost. The cost of a <Link href="/gst-notice-reply-chennai">GST notice reply</Link>, an ITC reversal, or interest on a delayed correction is unknown until it happens — and by the nature of how these compound, it&apos;s rarely smaller than what was saved over the months before it.
       </p>
 
       <p>
-        If you&apos;ve been filing GST returns yourself and want a second look at whether anything&apos;s accumulated as an issue, C S Rushil &amp; Co. can review your filing history. Book a free consultation.
+        If you&apos;ve been filing GST returns yourself and want a second look at whether anything&apos;s accumulated as an issue, C S Rushil &amp; Co. can review your filing history. Book a consultation.
       </p>
     </>
   );

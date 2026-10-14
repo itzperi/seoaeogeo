@@ -53,7 +53,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If preparing for your annual <Link href="/statutory-audit-chennai">statutory audit</Link> feels overwhelming or you are not sure what your auditor will actually ask for, C S Rushil &amp; Co. in Anna Nagar can walk you through exactly what to organize before the visit. Book a free consultation.
+        If preparing for your annual <Link href="/statutory-audit-chennai">statutory audit</Link> feels overwhelming or you are not sure what your auditor will actually ask for, C S Rushil &amp; Co. in Anna Nagar can walk you through exactly what to organize before the visit. Book a consultation.
       </p>
     </>
   );

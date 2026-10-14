@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you&apos;re unsure whether your Chennai startup would actually qualify for <Link href="/startup-india-registration-chennai">Startup India recognition</Link> and whether it&apos;s worth pursuing, C S Rushil &amp; Co. can assess your eligibility honestly before you spend time on the application. Book a free consultation.
+        If you&apos;re unsure whether your Chennai startup would actually qualify for <Link href="/startup-india-registration-chennai">Startup India recognition</Link> and whether it&apos;s worth pursuing, C S Rushil &amp; Co. can assess your eligibility honestly before you spend time on the application. Book a consultation.
       </p>
     </>
   );

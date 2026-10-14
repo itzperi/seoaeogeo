@@ -356,7 +356,7 @@ export default function VirtualCfoPage() {
                 rel="noopener noreferrer"
                 className="mt-5 inline-block w-full rounded-buttons bg-white px-5 py-3 text-center text-sm font-medium text-obsidian hover:bg-lilac-mist"
               >
-                Book Free Consultation
+                Book Consultation
               </a>
             </div>
             <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">

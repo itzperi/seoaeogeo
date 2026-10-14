@@ -172,7 +172,7 @@ export default function Page() {
 
       <h2 className="mt-14 text-2xl text-obsidian">What drives the cost of each option?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-        An EOR&apos;s cost is mainly a recurring service charge for each employee on top of salary and statutory
+        An EOR&apos;s cost is mainly a recurring service charge for each employee in addition to salary and statutory
         contributions, sometimes with a currency conversion margin, so it scales directly with headcount. A subsidiary
         involves one-off costs for document legalisation, incorporation and bank set-up, and then a broadly fixed annual
         cost for the statutory audit, ROC filings, the income tax return, transfer pricing documentation, FEMA returns and

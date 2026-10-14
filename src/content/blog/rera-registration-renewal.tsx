@@ -53,7 +53,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you&apos;re developing or selling real estate in Chennai and want to make sure your RERA registration, renewals, and disclosures stay on track, C S Rushil &amp; Co. can help manage the <Link href="/rera">RERA compliance</Link> calendar. Reach out for a free consultation.
+        If you&apos;re developing or selling real estate in Chennai and want to make sure your RERA registration, renewals, and disclosures stay on track, C S Rushil &amp; Co. can help manage the <Link href="/rera">RERA compliance</Link> calendar. Reach out for a consultation.
       </p>
     </>
   );

@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If building and maintaining a cash flow forecast isn&apos;t something you have time to do properly alongside running the business, C S Rushil &amp; Co. offers this as part of <Link href="/virtual-cfo-services">virtual CFO support</Link> for Chennai businesses. Reach out for a free consultation.
+        If building and maintaining a cash flow forecast isn&apos;t something you have time to do properly alongside running the business, C S Rushil &amp; Co. offers this as part of <Link href="/virtual-cfo-services">virtual CFO support</Link> for Chennai businesses. Reach out for a consultation.
       </p>
     </>
   );

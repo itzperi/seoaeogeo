@@ -78,7 +78,7 @@ export default function Page() {
         {
           question: "What happens if the LLP agreement is not filed within 30 days?",
           answer:
-            "If Form 3 is not filed within 30 days of incorporation, the LLP pays an additional fee on top of the normal filing fee. Under the LLP Rules as amended in 2022, that additional fee is a multiple of the normal fee and increases in slabs the longer the delay, with lower multiples for small LLPs. Where there is no LLP agreement on a point, the default rules in the First Schedule of the LLP Act decide partners' rights.",
+            "If Form 3 is not filed within 30 days of incorporation, the LLP pays an additional fee in addition to the normal filing fee. Under the LLP Rules as amended in 2022, that additional fee is a multiple of the normal fee and increases in slabs the longer the delay, with lower multiples for small LLPs. Where there is no LLP agreement on a point, the default rules in the First Schedule of the LLP Act decide partners' rights.",
         },
         {
           question: "What is the difference between an LLP and a Private Limited Company?",

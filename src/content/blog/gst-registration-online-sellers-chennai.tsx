@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you are setting up as an online seller in Chennai and want your GST registration done correctly from the first sale rather than fixed later, C S Rushil &amp; Co. in Anna Nagar handles registration, TCS reconciliation, and ongoing <Link href="/gst-return-filing-chennai">GST return filing</Link> for ecommerce sellers across the city. Book a free consultation to get started.
+        If you are setting up as an online seller in Chennai and want your GST registration done correctly from the first sale rather than fixed later, C S Rushil &amp; Co. in Anna Nagar handles registration, TCS reconciliation, and ongoing <Link href="/gst-return-filing-chennai">GST return filing</Link> for ecommerce sellers across the city. Book a consultation to get started.
       </p>
     </>
   );

@@ -81,7 +81,7 @@ export default function Body() {
       <h2>4. Choosing directors without checking eligibility</h2>
       <p>
         Every company must have at least one director who has stayed in India
-        for 182 days or more during the financial year. Founders who are
+        for 182 days or more in the previous calendar year. Founders who are
         abroad, or who travel heavily, should check this before incorporation.
         Directors also need a DIN and must keep their KYC current, which since
         31 March 2026 has moved to a three-year cycle with changes in contact

@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you are a landlord or tenant in Chennai unsure which TDS provision applies to your rent arrangement, C S Rushil &amp; Co. can confirm the correct treatment and help you stay compliant on both sides. Get in touch for a free consultation.
+        If you are a landlord or tenant in Chennai unsure which TDS provision applies to your rent arrangement, C S Rushil &amp; Co. can confirm the correct treatment and help you stay compliant on both sides. Get in touch for a consultation.
       </p>
     </>
   );

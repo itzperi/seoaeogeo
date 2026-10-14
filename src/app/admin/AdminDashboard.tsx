@@ -177,7 +177,7 @@ export default function AdminDashboard({
         </section>
         {funnel.topPlacements.length > 0 && (
           <p className="mt-3 text-xs text-slate">
-            Top buttons:{" "}
+            Action buttons:{" "}
             {funnel.topPlacements.map(([key, n], i) => (
               <span key={key}>
                 {i > 0 && " · "}

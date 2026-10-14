@@ -210,7 +210,7 @@ export default function Page() {
       <p className={pClass}>
         Rates were reset for transfers on or after 23 July 2024 and carried into the Income-tax Act, 2025, where the
         rates sit in Sections 196 (short-term gains on listed equity), 197 (other long-term gains) and 198 (long-term
-        gains on listed equity and equity funds). Surcharge and cess apply on top.
+        gains on listed equity and equity funds). Surcharge and cess apply in addition.
       </p>
       <Table head={["Asset", "Long-term if held", "Long-term rate", "Short-term rate"]} rows={CAPITAL_GAINS} />
       <p className={pClass}>

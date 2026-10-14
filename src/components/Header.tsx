@@ -95,7 +95,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="hidden min-h-[40px] items-center rounded-full border border-carbon bg-carbon px-5 text-[13px] font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85 lg:inline-flex"
           >
-            Book Free Consultation
+            Book Consultation
           </TrackedAnchor>
           <MobileNav />
         </div>

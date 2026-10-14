@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you are unsure which audits actually apply to your Chennai business this year, C S Rushil &amp; Co. can review your specific numbers and confirm your obligations before a deadline catches you off guard. Book a free consultation.
+        If you are unsure which audits actually apply to your Chennai business this year, C S Rushil &amp; Co. can review your specific numbers and confirm your obligations before a deadline catches you off guard. Book a consultation.
       </p>
     </>
   );

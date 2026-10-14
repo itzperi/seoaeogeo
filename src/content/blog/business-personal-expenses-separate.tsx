@@ -47,7 +47,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your books have accumulated a mix of personal and business transactions and you&apos;re not sure how to untangle them before your next filing, C S Rushil &amp; Co. can help sort this out properly through our <Link href="/bookkeeping-services-chennai">bookkeeping services in Chennai</Link>. Book a free consultation.
+        If your books have accumulated a mix of personal and business transactions and you&apos;re not sure how to untangle them before your next filing, C S Rushil &amp; Co. can help sort this out properly through our <Link href="/bookkeeping-services-chennai">bookkeeping services in Chennai</Link>. Book a consultation.
       </p>
     </>
   );

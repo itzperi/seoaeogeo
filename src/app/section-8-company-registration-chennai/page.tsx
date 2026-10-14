@@ -42,7 +42,7 @@ export default function Page() {
       }}
       keyFacts={[
         { label: "Government form", value: "SPICe+ Part A and Part B, with e-MoA (INC-13) and e-AoA (INC-31) for Section 8 companies. INC-12 is no longer filed for a new Section 8 licence." },
-        { label: "Minimum members", value: "2 directors and 2 members for a private Section 8 company; at least one director resident in India (182 days or more in the financial year)." },
+        { label: "Minimum members", value: "2 directors and 2 members for a private Section 8 company; at least one director resident in India (182 days in the previous calendar year)." },
         { label: "Name", value: "Must include a word such as Foundation, Forum, Association, Federation, Chambers, Confederation or Council." },
         { label: "Key restriction", value: "No dividend to members; income and profits must be applied only to the company's objects." },
         { label: "Next step", value: "Income tax registration and donor-deduction approval (commonly called 12A and 80G; Sections 332 and 354 of the Income-tax Act, 2025) via Form 105." },
@@ -117,7 +117,7 @@ export default function Page() {
       <h2 className="mt-14 text-2xl text-obsidian">Who is eligible to register a Section 8 company?</h2>
       <ul className="mt-4 max-w-3xl space-y-3 text-slate">
         <li>• At least two directors and two members for a private Section 8 company (three directors and seven members for a public one).</li>
-        <li>• At least one director who stayed in India for 182 days or more in the financial year.</li>
+        <li>• At least one director who stayed in India for 182 days in the previous calendar year.</li>
         <li>• Objects that fall within Section 8(1), with a commitment to apply all income to those objects.</li>
         <li>• A registered office in India with address proof and, if rented, the owner&apos;s NOC.</li>
         <li>• Members and directors can be individuals or organisations; foreign members bring additional documentation and FEMA considerations.</li>

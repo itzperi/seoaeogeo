@@ -19,7 +19,7 @@ export const meta: BlogPostMeta = {
     {
       question: "How much pre-deposit is needed for a GSTAT appeal?",
       answer:
-        "A further 10% of the tax still in dispute, on top of the 10% already paid at the first appeal, capped at Rs 20 crore each under CGST and SGST (Rs 40 crore for IGST). For penalty-only orders, the further pre-deposit is 10% of the disputed penalty. Paying it stays recovery of the balance until the appeal is decided.",
+        "A further 10% of the tax still in dispute, in addition to the 10% already paid at the first appeal, capped at Rs 20 crore each under CGST and SGST (Rs 40 crore for IGST). For penalty-only orders, the further pre-deposit is 10% of the disputed penalty. Paying it stays recovery of the balance until the appeal is decided.",
     },
     {
       question: "Which GSTAT bench hears an appeal from Tamil Nadu?",
@@ -138,7 +138,7 @@ export default function Body() {
         penalty are not counted, except where the order is for a penalty alone.
         Under Section 112(8), you pay the admitted amount in full plus a further
         10% of the tax that remains in dispute after the Appellate
-        Authority&apos;s order. That is on top of the 10% already paid under
+        Authority&apos;s order. That is in addition to the 10% already paid under
         Section 107(6) for the first appeal, so a business that contests the
         full demand through both stages will have deposited about 20% in total.
       </p>

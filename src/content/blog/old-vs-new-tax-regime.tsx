@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you want an actual side by side calculation using your real income and deductions rather than a generic comparison, the <Link href="/direct-tax">direct tax</Link> team at C S Rushil &amp; Co. in Anna Nagar can run both scenarios for you before you file. Book a free consultation to find out which regime fits your situation this year.
+        If you want an actual side by side calculation using your real income and deductions rather than a generic comparison, the <Link href="/direct-tax">direct tax</Link> team at C S Rushil &amp; Co. in Anna Nagar can run both scenarios for you before you file. Book a consultation to find out which regime fits your situation this year.
       </p>
     </>
   );

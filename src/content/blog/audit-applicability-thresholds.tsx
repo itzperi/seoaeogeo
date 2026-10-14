@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you want to know exactly where your Chennai business stands against these thresholds for the current financial year, C S Rushil &amp; Co. can review your numbers and tell you plainly what applies. Reach out for a free consultation.
+        If you want to know exactly where your Chennai business stands against these thresholds for the current financial year, C S Rushil &amp; Co. can review your numbers and tell you plainly what applies. Reach out for a consultation.
       </p>
     </>
   );

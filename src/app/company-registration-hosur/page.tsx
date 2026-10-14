@@ -91,7 +91,7 @@ export default function Page() {
         {
           question: "Can a Hosur company have directors who are not residents of Tamil Nadu?",
           answer:
-            "Yes. Directors can live in any state or abroad. The Companies Act only requires at least one director who has stayed in India for 182 days or more in the financial year. Directors in Bengaluru or elsewhere obtain their digital signatures online and sign the incorporation forms from wherever they are.",
+            "Yes. Directors can live in any state or abroad. The Companies Act only requires at least one director who has stayed in India for 182 days in the previous calendar year. Directors in Bengaluru or elsewhere obtain their digital signatures online and sign the incorporation forms from wherever they are.",
         },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}

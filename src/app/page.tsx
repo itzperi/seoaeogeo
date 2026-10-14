@@ -48,7 +48,7 @@ const HOME_FAQS = [
   {
     question: "Is there a chartered accountant near me in Anna Nagar, Chennai?",
     answer:
-      "Yes — C S Rushil & Co. is based in Anna Nagar, Chennai, and serves clients across the city for company incorporation, GST, audit, direct tax, and ROC compliance. Book a free consultation to visit our office or meet virtually.",
+      "Yes — C S Rushil & Co. is based in Anna Nagar, Chennai, and serves clients across the city for company incorporation, GST, audit, direct tax, and ROC compliance. Book a consultation to visit our office or meet virtually.",
   },
   {
     question: "Do you handle GST litigation and notice replies?",
@@ -57,7 +57,7 @@ const HOME_FAQS = [
   },
   {
     question: "Where is your office located?",
-    answer: `Our office is at ${ADDRESS_FULL}, open Monday to Saturday, 9:30 AM to 6:30 PM. Book a free consultation first so the right team member is available; same-day visits are often possible.`,
+    answer: `Our office is at ${ADDRESS_FULL}, open Monday to Saturday, 9:30 AM to 6:30 PM. Book a consultation first so the right team member is available; same-day visits are often possible.`,
   },
 ];
 
@@ -156,7 +156,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
               >
-                Book a Free Consultation
+                Book a Consultation
               </TrackedAnchor>
               <TrackedAnchor
                 action="whatsapp"

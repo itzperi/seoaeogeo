@@ -47,7 +47,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If your LLP has missed a filing in a prior year, this is recoverable — the Registrar allows late filing with the accumulated fee, and getting current is usually more straightforward than founders expect once someone actually starts the process. C S Rushil &amp; Co. handles <Link href="/llp-registration-chennai">LLP registration in Chennai</Link> and the ongoing Form 8/Form 11 filing calendar as part of our <Link href="/roc-compliances">ROC compliance</Link> work for LLPs across Chennai. Reach out for a free consultation.
+        If your LLP has missed a filing in a prior year, this is recoverable — the Registrar allows late filing with the accumulated fee, and getting current is usually more straightforward than founders expect once someone actually starts the process. C S Rushil &amp; Co. handles <Link href="/llp-registration-chennai">LLP registration in Chennai</Link> and the ongoing Form 8/Form 11 filing calendar as part of our <Link href="/roc-compliances">ROC compliance</Link> work for LLPs across Chennai. Reach out for a consultation.
       </p>
     </>
   );

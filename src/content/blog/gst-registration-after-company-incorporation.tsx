@@ -38,7 +38,7 @@ export default function Body() {
     <>
       <p>
         Once the certificate of incorporation arrives, founders face a long
-        list of registrations. GST is usually near the top, and the question is
+        list of registrations. GST is usually near the start of the list, and the question is
         not just how to register but when. Register too early and the company
         takes on monthly or quarterly return obligations before it has any
         sales. Register too late and it may owe tax it never collected from

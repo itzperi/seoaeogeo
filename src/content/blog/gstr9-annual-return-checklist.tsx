@@ -53,7 +53,7 @@ export default function Body() {
       </p>
 
       <p>
-        If preparing your annual GST return feels like untangling twelve months of small inconsistencies, C S Rushil &amp; Co. in Anna Nagar handles the full reconciliation and <Link href="/gst-return-filing-chennai">GST return filing</Link> for small and mid sized Chennai businesses. Book a free consultation before your filing window closes.
+        If preparing your annual GST return feels like untangling twelve months of small inconsistencies, C S Rushil &amp; Co. in Anna Nagar handles the full reconciliation and <Link href="/gst-return-filing-chennai">GST return filing</Link> for small and mid sized Chennai businesses. Book a consultation before your filing window closes.
       </p>
     </>
   );

@@ -59,7 +59,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you&apos;re a founder in Chennai wanting to avoid these mistakes rather than fix them later, C S Rushil &amp; Co. works with early stage businesses to set up compliance correctly from the start. Book a free consultation.
+        If you&apos;re a founder in Chennai wanting to avoid these mistakes rather than fix them later, C S Rushil &amp; Co. works with early stage businesses to set up compliance correctly from the start. Book a consultation.
       </p>
     </>
   );

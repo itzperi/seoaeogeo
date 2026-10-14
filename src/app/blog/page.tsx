@@ -44,7 +44,7 @@ export default function BlogIndexPage() {
           ))}
         </div>
       </section>
-      <CTASection title="Have a compliance question?" subtitle="Book a free consultation instead of searching for a generic answer." />
+      <CTASection title="Have a compliance question?" subtitle="Book a consultation instead of searching for a generic answer." />
     </>
   );
 }

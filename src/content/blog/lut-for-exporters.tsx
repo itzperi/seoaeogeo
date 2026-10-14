@@ -51,7 +51,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you export goods or services from Chennai and want your LUT filed correctly and renewed on time every year without you having to track the deadline yourself, C S Rushil &amp; Co. handles this as part of ongoing GST compliance. Get in touch for a free consultation.
+        If you export goods or services from Chennai and want your LUT filed correctly and renewed on time every year without you having to track the deadline yourself, C S Rushil &amp; Co. handles this as part of ongoing GST compliance. Get in touch for a consultation.
       </p>
     </>
   );

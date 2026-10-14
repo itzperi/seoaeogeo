@@ -101,7 +101,7 @@ export default function VideosPage() {
 
       <CTASection
         title="Have a specific question a video didn't cover?"
-        subtitle="Book a free consultation and we'll walk through your actual situation."
+        subtitle="Book a consultation and we'll walk through your actual situation."
       />
     </>
   );

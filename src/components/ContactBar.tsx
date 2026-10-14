@@ -95,7 +95,7 @@ export default function ContactBar() {
           out on hover/focus so the stack never covers page content. */}
       <div className="fixed bottom-6 right-6 z-50 hidden flex-col items-end gap-2 md:flex">
         {[
-          { action: "book" as const, href: BOOKING_LINK, label: "Book a free consultation", icon: <CalendarIcon />, style: "bg-carbon text-white", external: true },
+          { action: "book" as const, href: BOOKING_LINK, label: "Book a consultation", icon: <CalendarIcon />, style: "bg-carbon text-white", external: true },
           { action: "whatsapp" as const, href: waHref, label: "WhatsApp us", icon: <WhatsAppIcon />, style: "bg-[#25D366] text-carbon", external: true },
           { action: "call" as const, href: `tel:${PHONE_TEL}`, label: `Call ${PHONE_DISPLAY}`, icon: <PhoneIcon />, style: "bg-white text-carbon", external: false },
         ].map((b) => (

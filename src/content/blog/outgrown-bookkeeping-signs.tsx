@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If several of these feel uncomfortably true, it might be time to add virtual CFO support alongside your existing <Link href="/bookkeeping-services-chennai">bookkeeping</Link>. C S Rushil &amp; Co. offers virtual CFO services for growing Chennai businesses. Book a free consultation to see what that would look like for you.
+        If several of these feel uncomfortably true, it might be time to add virtual CFO support alongside your existing <Link href="/bookkeeping-services-chennai">bookkeeping</Link>. C S Rushil &amp; Co. offers virtual CFO services for growing Chennai businesses. Book a consultation to see what that would look like for you.
       </p>
     </>
   );

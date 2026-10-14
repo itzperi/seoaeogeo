@@ -40,7 +40,7 @@ export default function Page() {
       faqs={[
         { question: "Do you serve Tambaram even though it's far from your Anna Nagar office?", answer: "Yes — given the distance, we handle most Tambaram engagements remotely through document sharing and video consultations, with in-person meetings arranged when genuinely necessary." },
         { question: "Do you have an office in Tambaram?", answer: "No — we operate solely from Anna Nagar and serve Tambaram clients from that one office, remotely by default." },
-        { question: "Is Udyam registration worth it for a small Tambaram shop or service business?", answer: "Often yes — it's free, largely self-declaration based, and unlocks collateral-free lending and delayed-payment protection, which is genuinely useful for smaller local businesses. We can assess your specific eligibility during a free consultation." },
+        { question: "Is Udyam registration worth it for a small Tambaram shop or service business?", answer: "Often yes — it's free, largely self-declaration based, and unlocks collateral-free lending and delayed-payment protection, which is genuinely useful for smaller local businesses. We can assess your specific eligibility during a consultation." },
       ]}
       furtherReading={[
         { slug: "msme-loan-schemes-tamil-nadu", title: "MSME Loan Schemes for Small Businesses in Tamil Nadu" },

@@ -58,7 +58,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you want this kind of monthly financial oversight for your Chennai business without hiring a full time CFO, C S Rushil &amp; Co. provides <Link href="/virtual-cfo-services">virtual CFO services</Link> structured around exactly this rhythm. Book a free consultation to see how it would work for you.
+        If you want this kind of monthly financial oversight for your Chennai business without hiring a full time CFO, C S Rushil &amp; Co. provides <Link href="/virtual-cfo-services">virtual CFO services</Link> structured around exactly this rhythm. Book a consultation to see how it would work for you.
       </p>
     </>
   );

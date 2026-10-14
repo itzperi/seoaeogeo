@@ -53,7 +53,7 @@ export default function Body() {
       </p>
 
       <p>
-        If you have received a GST mismatch notice and are not sure how much of it is genuinely your liability versus a supplier filing delay, C S Rushil &amp; Co. reviews the reconciliation and drafts the <Link href="/gst-notice-reply-chennai">GST notice reply</Link> on your behalf. Reach out for a free consultation before the reply deadline passes.
+        If you have received a GST mismatch notice and are not sure how much of it is genuinely your liability versus a supplier filing delay, C S Rushil &amp; Co. reviews the reconciliation and drafts the <Link href="/gst-notice-reply-chennai">GST notice reply</Link> on your behalf. Reach out for a consultation before the reply deadline passes.
       </p>
     </>
   );

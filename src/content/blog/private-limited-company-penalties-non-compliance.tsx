@@ -13,7 +13,7 @@ export const meta: BlogPostMeta = {
     {
       question: "What is the late fee for filing AOC-4 and MGT-7 after the due date?",
       answer:
-        "An additional fee of ₹100 per day of delay applies to each form, AOC-4 for financial statements and MGT-7 or MGT-7A for the annual return, on top of the normal filing fee. There is no upper cap on this additional fee, so a company that misses both forms for a year accumulates a substantial amount quickly.",
+        "An additional fee of ₹100 per day of delay applies to each form, AOC-4 for financial statements and MGT-7 or MGT-7A for the annual return, in addition to the normal filing fee. There is no upper cap on this additional fee, so a company that misses both forms for a year accumulates a substantial amount quickly.",
     },
     {
       question: "When are directors disqualified for non-filing?",

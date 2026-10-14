@@ -47,7 +47,7 @@ export default function Body() {
       </p>
 
       <p>
-        If your business is profitable on paper but cash feels perpetually tight, C S Rushil &amp; Co. can build a proper cash flow forecast through our <Link href="/virtual-cfo-services">virtual CFO services</Link> to show you exactly where the gap is coming from. Book a free consultation.
+        If your business is profitable on paper but cash feels perpetually tight, C S Rushil &amp; Co. can build a proper cash flow forecast through our <Link href="/virtual-cfo-services">virtual CFO services</Link> to show you exactly where the gap is coming from. Book a consultation.
       </p>
     </>
   );
