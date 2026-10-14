@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Accounting Outsourcing in Chennai | Tally, Zoho, QuickBooks";
+const title = "Accounting Outsourcing in Chennai | C S Rushil & Co.";
 const description =
   "Accounting outsourcing in Chennai: bookkeeping, payroll, GST, TDS, PF and ESI compliance, monthly MIS and Tally, Zoho Books or QuickBooks setup in one team.";
 

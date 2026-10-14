@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Startup India (DPIIT) Recognition in Chennai" },
+  title: { absolute: "Startup India Registration in Chennai | C S Rushil & Co." },
   description:
     "Startup India registration in Chennai: DPIIT recognition eligibility under the 2026 definition, the NSWS application, and the Section 140 startup tax holiday.",
   alternates: { canonical: "/startup-india-registration-chennai" },

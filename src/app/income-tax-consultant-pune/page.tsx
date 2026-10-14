@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/income-tax-consultant-pune";
-const title = "Income Tax Consultant for HNIs in Pune | Online CA";
+const title = "Income Tax Consultant for HNIs in Pune | C S Rushil & Co.";
 const description =
   "Online income tax advice for high-income Pune professionals: ESOPs at auto and IT employers, returning NRIs and RNOR status, and Maharashtra property gains.";
 

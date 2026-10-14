@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Trademark Registration in Chennai | Search & Filing";
+const title = "Trademark Registration in Chennai | C S Rushil & Co.";
 const description =
   "Trademark registration in Chennai: brand search, Nice class selection, TM-A filing support, objection replies and renewals, with official fees and timelines.";
 

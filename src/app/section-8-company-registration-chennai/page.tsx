@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Section 8 Company Registration in Chennai | NGO" },
+  title: { absolute: "Section 8 Company Registration in Chennai | C S Rushil & Co." },
   description:
     "Section 8 company registration in Chennai for NGOs and foundations: licence through SPICe+, objects and name rules, e-MoA, e-AoA and 12A/80G next steps.",
   alternates: { canonical: "/section-8-company-registration-chennai" },

@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/gst-litigation-tiruchirappalli" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "GST Litigation & Appeals in Tiruchirappalli (Trichy)",
+    title: { absolute: "GST Litigation and Appeals in Trichy | C S Rushil & Co." },
     description: "Works contract disputes, show-cause replies and GST appeals for Trichy engineering and contracting businesses, handled from our Anna Nagar, Chennai office.",
     url: "/gst-litigation-tiruchirappalli",
   },

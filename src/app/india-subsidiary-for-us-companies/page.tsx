@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-us-companies";
-const title = "Set Up a Subsidiary in India from the US | CA Chennai";
+const title = "Subsidiary in India for US Companies | C S Rushil & Co.";
 const description =
   "Set up an Indian subsidiary from the US: Delaware parent documents and apostille, resident director, FDI automatic route, FC-GPR and transfer pricing.";
 

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Digital Signature Certificate (DSC) in Chennai | Class 3";
+const title = "Digital Signature Certificate in Chennai | C S Rushil & Co.";
 const description =
   "Get a Class 3 Digital Signature Certificate in Chennai for MCA, GST, income tax, DGFT and e-tenders, with Aadhaar eKYC or video verification and a USB token.";
 

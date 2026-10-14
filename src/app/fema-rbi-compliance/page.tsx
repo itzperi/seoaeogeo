@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "FEMA & RBI Compliance for Foreign-Owned Indian Companies";
+const title = "FEMA and RBI Compliance in India | C S Rushil & Co.";
 const description =
-  "FEMA and RBI reporting for foreign-owned Indian companies: FC-GPR in 30 days, FC-TRS in 60, FLA by 15 July, Form DI, ODI and APR, late submission fees and compounding.";
+  "FEMA and RBI compliance for foreign-owned Indian companies: FC-GPR, FC-TRS, annual returns, late fees and downstream investment. Book a consultation online.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

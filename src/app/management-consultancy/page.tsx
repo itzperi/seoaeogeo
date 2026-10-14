@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Management Consultancy Services in Chennai";
+const title = "Management Consultancy in Chennai | C S Rushil & Co.";
 const description =
   "Management consultancy in Chennai by Chartered Accountants: business plans, budgets, internal controls, process reviews and funding readiness for growing firms.";
 

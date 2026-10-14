@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "NRI Tax Services in India | UAE, UK & USA NRIs" },
+  title: { absolute: "NRI Tax Services for UAE, UK and USA | C S Rushil & Co." },
   description:
     "Indian tax filing, DTAA claims, property-sale TDS and repatriation for NRIs in the UAE, UK, USA and elsewhere, handled remotely by a Chennai CA firm.",
   alternates: { canonical: "/nri-tax-services" },

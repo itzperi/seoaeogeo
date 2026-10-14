@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "OPC Registration in Chennai | One Person Company" },
+  title: { absolute: "One Person Company Registration Chennai | C S Rushil & Co." },
   description:
     "OPC registration in Chennai for solo founders: SPICe+ filing with nominee consent (INC-3), NRI eligibility under the 2021 rules, and conversion to Pvt Ltd.",
   alternates: { canonical: "/opc-registration-chennai" },

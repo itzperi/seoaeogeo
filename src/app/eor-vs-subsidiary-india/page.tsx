@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/eor-vs-subsidiary-india";
-const title = "EOR vs Subsidiary in India: Which Should You Use?";
+const title = "EOR vs Subsidiary in India: Which to Use | C S Rushil & Co.";
 const description =
   "EOR or Indian subsidiary? Compare control, time to first hire, permanent establishment risk, IP ownership, compliance and exit, and see when to switch.";
 

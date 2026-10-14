@@ -283,7 +283,7 @@ export default function Page() {
       </div>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Timing depends on how quickly the transfer documents are signed and access is granted. Peak periods such as January
-        are best avoided for the pilot.
+        are better avoided for the pilot.
       </p>
     </ServicePageTemplate>
   );

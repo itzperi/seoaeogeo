@@ -231,7 +231,7 @@ export default function Body() {
 
       <h2>8. Look for specificity, not generic claims</h2>
       <p>
-        &ldquo;Expert-led&rdquo; and &ldquo;client-centric&rdquo; are claims
+        &ldquo;Specialist-led&rdquo; and &ldquo;client-centric&rdquo; are claims
         every firm makes, and chartered accountants are restricted by ICAI&apos;s
         ethical rules in how they can advertise, so marketing copy tells you
         little either way. Look instead for verifiable specifics: years in
@@ -248,7 +248,7 @@ export default function Body() {
 
       <h2>9. Test the first conversation</h2>
       <p>
-        The first meeting is the best preview you will get of the working
+        The first meeting is the most useful preview you will get of the working
         relationship. A good CA asks about your business before talking about
         their services, explains options rather than pushing one answer, and is
         honest about what they do not handle. Notice whether you are speaking to

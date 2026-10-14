@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "GST Litigation & Appeals in Coimbatore",
-    description: "Show-cause replies, first appeals and GSTAT appeals for Coimbatore manufacturers, handled from our Anna Nagar, Chennai office.",
+    description: "GST litigation for Coimbatore businesses: notice replies, first appeals and GSTAT appeals, handled online from Anna Nagar. Book a consultation online.",
     url: "/gst-litigation-coimbatore",
   },
 };

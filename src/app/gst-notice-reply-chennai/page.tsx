@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "GST Notice Reply in Chennai: DRC-01, ASMT-10 | CA" },
+  title: { absolute: "GST Notice Replies in Chennai: DRC-01 | C S Rushil & Co." },
   description:
     "Replies to GST notices in Chennai: ASMT-10 scrutiny, DRC-01A, DRC-01 show cause notices, ADT-01 audits and RFD-08 refund notices, drafted by a CA in Anna Nagar.",
   alternates: { canonical: "/gst-notice-reply-chennai" },

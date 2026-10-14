@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/chartered-accountant-velachery-chennai`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Chartered Accountant in Velachery, Chennai" },
+  title: { absolute: "Chartered Accountant in Velachery | C S Rushil & Co." },
   description:
     "Income tax return filing, GST, and audit services for Velachery's mix of salaried IT professionals and small businesses, from a Chennai CA firm.",
   alternates: { canonical: "/chartered-accountant-velachery-chennai" },

@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Outsourced Accounting for US CPA Firms | India" },
+  title: { absolute: "Outsourced Accounting for US CPA Firms | C S Rushil & Co." },
   description:
     "Offshore bookkeeping, month-end close and 1040, 1065 and 1120-S tax prep support for US CPA firms, prepared in your software for your review and signature.",
   alternates: { canonical: "/outsourced-accounting-for-cpa-firms" },

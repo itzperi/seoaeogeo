@@ -16,7 +16,7 @@ type ChoiceKey = "service" | "client_type" | "turnover" | "location" | "urgency"
 
 const CHOICE_STEPS: { key: ChoiceKey; question: string; options: readonly string[] }[] = [
   { key: "service", question: "What do you need help with?", options: SERVICE_OPTIONS },
-  { key: "client_type", question: "Which best describes you?", options: CLIENT_TYPE_OPTIONS },
+  { key: "client_type", question: "Which describes you most closely?", options: CLIENT_TYPE_OPTIONS },
   { key: "turnover", question: "What is your annual turnover?", options: TURNOVER_OPTIONS },
   { key: "location", question: "Where are you based?", options: LOCATION_OPTIONS },
   { key: "urgency", question: "How soon do you need this?", options: URGENCY_OPTIONS },

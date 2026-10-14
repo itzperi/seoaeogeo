@@ -133,7 +133,7 @@ export default function Body() {
         <li><strong>Start with the core activity in plain words.</strong> For example: to carry on the business of developing, licensing and maintaining software applications and providing related IT services.</li>
         <li><strong>Add the closely related activities.</strong> Consulting, training, support, and the sale of related hardware if relevant.</li>
         <li><strong>Mention the channels and geography if they matter.</strong> Online and offline sales, exports, or services to clients in India and abroad.</li>
-        <li><strong>Match the NIC code.</strong> Choose the NIC code whose description best fits the core activity and make sure the drafted object does not contradict it.</li>
+        <li><strong>Match the NIC code.</strong> Choose the NIC code whose description fits the core activity and make sure the drafted object does not contradict it.</li>
         <li><strong>Keep unrelated ideas out.</strong> If you plan a genuinely different business later, alter the clause or form a separate entity at that point.</li>
       </ul>
 

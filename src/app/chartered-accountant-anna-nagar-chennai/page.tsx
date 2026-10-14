@@ -11,7 +11,7 @@ const LANGUAGES_TEXT =
     : LANGUAGES_SPOKEN.join("");
 
 export const metadata: Metadata = {
-  title: { absolute: "CA Firm in Anna Nagar, Chennai | C S Rushil & Co." },
+  title: { absolute: "CA Firm, Anna Nagar Office, Chennai | C S Rushil & Co." },
   description:
     "CA firm in Anna Nagar, Chennai for company and LLP registration, GST and income tax. Visit Mon–Sat, 9:30 AM–6:30 PM; book first so the right CA is free.",
   alternates: { canonical: "/chartered-accountant-anna-nagar-chennai" },
@@ -125,7 +125,7 @@ export default function Page() {
         { question: "What documents should I bring for company registration?", answer: "For each director and shareholder: PAN, Aadhaar and a recent passport-size photo. For the company: proof of the registered office address, such as a rent agreement or electricity bill, with a No Objection Certificate from the property owner. NRI or foreign directors need additional documents, and we share a checklist for your situation before you start." },
         { question: "Can I work with you online instead of visiting?", answer: "Yes. Most GST, income tax and ROC filings are online, so many clients work with us by phone, email, WhatsApp and video call. Anna Nagar clients can mix the two — meet once in person, then handle the rest remotely." },
         { question: "How do I book an appointment?", answer: "Book a free consultation through the booking button on this page, call +91 72001 49711, or message us on WhatsApp. Tell us what you need help with so we can schedule the right person." },
-        { question: "Which services are best handled in person?", answer: "Company and LLP registration, where documents are checked and signed; first meetings for a statutory or tax audit; and replies to GST or income tax notices, where it helps to go through your records together. Routine return filing and bookkeeping usually do not need a visit." },
+        { question: "Which services need an in-person visit?", answer: "Company and LLP registration, where documents are checked and signed; first meetings for a statutory or tax audit; and replies to GST or income tax notices, where it helps to go through your records together. Routine return filing and bookkeeping usually do not need a visit." },
         { question: "How do I choose a CA firm in Anna Nagar?", answer: "Check four things: the partner's ICAI membership (verifiable on the ICAI website), whether the firm handles your specific work such as company registration, GST notices or audit, who on the team will actually do your filings, and how quickly they respond. Meeting the team at their office before you sign up is the simplest test." },
         { question: "What should I ask a CA firm before hiring them?", answer: "Ask how the firm communicates through the year, not just at filing time, and how quickly it replies to simple questions. Ask whether it regularly handles your type of work, and how it has dealt with GST or income tax notices, audit queries and disputes. Routine filing is easy to compare; handling problems is where firms differ. Also notice whether the partner can explain why a structure, deduction or filing approach applies to you in plain language rather than processing paperwork silently. If you leave the first conversation more confused than when you arrived, take that into account before committing to an ongoing relationship." },
       ]}

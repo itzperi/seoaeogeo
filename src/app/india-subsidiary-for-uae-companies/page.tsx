@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-uae-companies";
-const title = "Set Up a Subsidiary in India from the UAE | CA Chennai";
+const title = "Subsidiary in India for UAE Companies | C S Rushil & Co.";
 const description =
   "Set up an Indian subsidiary from the UAE: mainland or free-zone parent, MOFA and Indian mission attestation, FDI route, FC-GPR, India–UAE treaty, NRI founders.";
 

@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/income-tax-consultant-tiruchirappalli";
-const title = "Income Tax Consultant in Trichy for HNIs | CA Firm";
+const title = "Income Tax Consultant in Trichy for HNIs | C S Rushil & Co.";
 const description =
   "Income tax for Trichy PSU retirees, engineering ancillary owners and Gulf or Singapore NRIs with property in Tiruchirappalli: pension, residency and gains.";
 

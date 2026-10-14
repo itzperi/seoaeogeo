@@ -6,9 +6,9 @@ import CTASection from "@/components/CTASection";
 import { SOCIALS } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Tax & Compliance Video Guides",
+  title: { absolute: "Tax and Compliance Video Guides | C S Rushil & Co." },
   description:
-    "Short video explainers on GST, income tax, and business compliance for Chennai businesses, from CA Rushil C S — from our Instagram.",
+    "Short video guides on income tax, GST and company law from C S Rushil & Co. Watch them, then book a consultation online or visit our office.",
   alternates: { canonical: "/videos" },
 };
 

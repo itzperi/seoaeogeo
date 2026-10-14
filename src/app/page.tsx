@@ -8,7 +8,7 @@ import GoogleReviews from "@/components/GoogleReviews";
 import EnquiryCard from "@/components/EnquiryCard";
 import { EnquireButton } from "@/components/WhatsAppEnquiry";
 import TrackedAnchor from "@/components/TrackedAnchor";
-import { JsonLd, serviceCatalogSchema } from "@/lib/schema";
+import { JsonLd, serviceCatalogSchema, speakableSchema } from "@/lib/schema";
 import { CalcSticker, CoinSticker, Ribbon, StarSticker } from "@/components/Stickers";
 import {
   ADDRESS_FULL,
@@ -26,9 +26,9 @@ import {
 } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "CA Firm in Chennai | Chartered Accountants | C S Rushil & Co." },
+  title: { absolute: "Chartered Accountants, Anna Nagar | C S Rushil & Co." },
   description:
-    "CA firm in Anna Nagar, Chennai for company and LLP registration, GST, income tax, audit and virtual CFO services. Book a free consultation with our team.",
+    "CA firm in Anna Nagar, Chennai for company and LLP registration, GST, income tax, audit and virtual CFO work. Book a consultation online or visit our office.",
   alternates: { canonical: "/" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -129,6 +129,7 @@ export default function HomePage() {
   return (
     <>
       <JsonLd data={serviceCatalogSchema()} />
+      <JsonLd data={speakableSchema(["h1", "#hero-summary"])} />
       <section className="relative overflow-hidden border-b border-carbon bg-sky-wash">
         <Ribbon className="pointer-events-none absolute -bottom-10 left-0 h-44 w-full md:h-64" />
         <CoinSticker className="pointer-events-none absolute left-[46%] top-8 hidden w-20 -rotate-12 lg:block" />
@@ -138,9 +139,9 @@ export default function HomePage() {
           <div>
             <p className="sticker-tag bg-sunburst">CA Firm in {ADDRESS_SHORT}</p>
             <h1 className="mt-6 text-[52px] text-carbon sm:text-7xl lg:text-[104px]">
-              CA firm in Chennai for company registration, GST, tax and audit
+              C S Rushil &amp; Co. is a chartered accountancy firm in Anna Nagar, Chennai, covering income tax, GST, audit and company registration
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-carbon">
+            <p id="hero-summary" className="mt-6 max-w-xl text-lg leading-relaxed text-carbon">
               {BUSINESS_NAME} is a chartered accountancy firm in {ADDRESS_SHORT}, founded in {YEAR_FOUNDED} and
               led by {FOUNDER_NAME}. Our 16-member team handles company and LLP registration, GST, income tax,
               statutory and tax audit, ROC compliance, bookkeeping and virtual CFO services for businesses,

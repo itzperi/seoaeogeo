@@ -41,7 +41,7 @@ const CALENDAR = [
 ];
 
 export const metadata: Metadata = {
-  title: { absolute: "NRI Tax Services for UK Residents: India–UK DTAA" },
+  title: { absolute: "NRI Tax Services for UK Residents | C S Rushil & Co." },
   description:
     "Indian ITR filing for NRIs in the UK, India–UK DTAA claims, and the tax computation and TDS proof your UK accountant needs for HMRC foreign tax credit relief.",
   alternates: { canonical: "/nri-tax-services-uk" },

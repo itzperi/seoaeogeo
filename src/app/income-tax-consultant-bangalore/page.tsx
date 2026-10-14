@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/income-tax-consultant-bangalore";
-const title = "Income Tax Consultant for HNIs in Bengaluru | Online CA";
+const title = "Income Tax Consultant in Bengaluru | C S Rushil & Co.";
 const description =
   "Online income tax advice for high-income Bengaluru residents: foreign RSUs and ESOPs, Schedule FA, startup share sales and Karnataka property gains.";
 

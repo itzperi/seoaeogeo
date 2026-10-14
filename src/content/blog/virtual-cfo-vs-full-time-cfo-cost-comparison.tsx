@@ -90,7 +90,7 @@ export default function Body() {
             <td>Backed by a firm&apos;s broader team, not one individual</td>
           </tr>
           <tr>
-            <td>Best fit</td>
+            <td>Suited to</td>
             <td>Large, complex, high-revenue businesses needing daily senior presence</td>
             <td>Startups and growing SMEs needing senior oversight without full-time cost</td>
           </tr>

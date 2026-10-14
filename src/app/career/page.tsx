@@ -5,7 +5,7 @@ import CTASection from "@/components/CTASection";
 import { EMAIL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Careers | Chennai CA Firm",
+  title: { absolute: "Careers and Jobs at Our Chennai CA Firm | C S Rushil & Co." },
   description:
     "Join C S Rushil & Co.'s team in Anna Nagar, Chennai. We hire article assistants, semi-qualified accountants, and experienced CAs across audit, tax, and GST.",
   alternates: { canonical: "/career" },

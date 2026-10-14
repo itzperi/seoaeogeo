@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "TDS Return Filing in Chennai | 24Q, 26Q, 27Q";
+const title = "TDS Returns in Chennai: 24Q, 26Q, 27Q | C S Rushil & Co.";
 const description =
   "TDS return filing in Chennai under the Income-tax Act, 2025: Forms 138, 140, 144 (earlier 24Q, 26Q, 27Q), Form 16/16A, corrections, TDS on rent and property.";
 

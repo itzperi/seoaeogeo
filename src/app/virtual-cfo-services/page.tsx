@@ -42,7 +42,7 @@ const ENGAGEMENT_STEPS = [
 const COMPARISON = [
   { role: "Bookkeeper / Accountant", focus: "Historical record-keeping, compliance filing", scope: "Recording transactions and meeting statutory deadlines", bestFor: "Businesses needing accurate books and statutory filing, nothing forward-looking" },
   { role: "Virtual CFO", focus: "Forward-looking: budgeting, fundraising, pricing, board reporting", scope: "Part-time and scheduled: a monthly reporting cycle plus scoped time for raises, board meetings or budgets", bestFor: "Startups, SMEs and subsidiaries that need senior financial judgment but not daily, full-time presence" },
-  { role: "Full-Time CFO", focus: "Everything a Virtual CFO does, plus daily operational involvement and team management", scope: "Full-time, in-house, leading the finance team day to day", bestFor: "Businesses at a scale where financial complexity needs daily, in-house leadership" },
+  { role: "Full-Time CFO", focus: "Everything a Virtual CFO does, plus daily operational involvement and team management", scope: "Full-time, in-house, heading the finance team day to day", bestFor: "Businesses at a scale where financial complexity needs daily, in-house leadership" },
 ];
 
 const SUBSIDIARY_SCOPE = [

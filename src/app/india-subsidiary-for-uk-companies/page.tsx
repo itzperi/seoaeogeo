@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-uk-companies";
-const title = "Set Up a Subsidiary in India from the UK | CA Chennai";
+const title = "Subsidiary in India for UK Companies | C S Rushil & Co.";
 const description =
   "Set up an Indian subsidiary from the UK: Companies House documents with FCDO apostille, resident director, FDI route, FC-GPR, India–UK tax treaty and CETA.";
 

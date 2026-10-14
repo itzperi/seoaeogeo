@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Income Tax Consultants in Chennai | Direct Tax Services";
+const title = "Income Tax Consultants in Chennai | C S Rushil & Co.";
 const description =
   "Income tax consultants in Chennai: ITR filing, tax planning, TDS returns, tax audit, notices, assessments, appeals and NRI tax under the Income-tax Act, 2025.";
 

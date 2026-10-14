@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "GST Litigation & Appeals in Hosur",
-    description: "Inter-state supply disputes, show-cause replies and GST appeals for Hosur manufacturers, handled from our Anna Nagar, Chennai office.",
+    description: "GST litigation for Hosur businesses: notice replies, first appeals and GSTAT appeals, handled online from Anna Nagar. Book a consultation online.",
     url: "/gst-litigation-hosur",
   },
 };

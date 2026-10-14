@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Income Tax Consultant for HNIs in Chennai | Tax Planning";
+const title = "Income Tax Consultant for HNIs in Chennai | C S Rushil & Co.";
 const description =
   "Tax planning for HNIs and families in Chennai: capital gains on property and shares, ESOPs, foreign RSUs, Schedule FA, residential status, HUFs and advance tax.";
 
@@ -201,7 +201,7 @@ export default function Page() {
       />
       <p className={pClass}>
         For a family with ₹6 crore of income, almost all of it salary or business income, the new regime&apos;s 25% cap
-        alone reduces the top marginal rate from about 42.7% to 39%. Where a large part of the income is long-term
+        alone reduces the highest marginal rate from about 42.7% to 39%. Where a large part of the income is long-term
         capital gains, the 15% cap often matters more than the choice of regime. We test both before fixing advance
         tax.
       </p>

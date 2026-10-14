@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/income-tax-consultant-mumbai";
-const title = "Income Tax Consultant for HNIs in Mumbai | Online CA";
+const title = "Income Tax Consultant for HNIs in Mumbai | C S Rushil & Co.";
 const description =
   "Online income tax advice for high-income Mumbai investors: listed equity, F&O and intraday as business income, AIF and PMS reporting, Maharashtra property.";
 

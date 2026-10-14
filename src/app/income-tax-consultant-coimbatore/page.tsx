@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/income-tax-consultant-coimbatore";
-const title = "Income Tax Consultant in Coimbatore for HNIs | CA Firm";
+const title = "Income Tax Consultant in Coimbatore | C S Rushil & Co.";
 const description =
   "Income tax for Coimbatore industrialist families: firm and company profit extraction, HUFs, farm income and capital gains on industrial land, handled online.";
 

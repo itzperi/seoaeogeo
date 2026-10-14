@@ -45,7 +45,7 @@ export default function Body() {
       <h2>Not budgeting for compliance costs from day one</h2>
 
       <p>
-        Compliance, filing fees, professional fees, and penalties for genuine oversights add up to a real cost that many early budgets simply don&apos;t account for, leading to compliance being deprioritized specifically because it wasn&apos;t planned for financially.
+        Compliance, filing fees, professional fees, and penalties for genuine oversights add up to a real cost that many early budgets simply don&apos;t account for,  resulting in compliance being deprioritized because it was not planned for financially.
       </p>
 
       <h2>A practical first year checklist</h2>

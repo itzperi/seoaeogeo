@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "LLP Registration in Chennai | Process, Documents" },
+  title: { absolute: "LLP Registration in Chennai: Steps | C S Rushil & Co." },
   description:
     "LLP registration in Chennai: DIN and DSC for designated partners, FiLLiP filing, LLP agreement in Form 3 within 30 days, and Form 8 and Form 11 annual filings.",
   alternates: { canonical: "/llp-registration-chennai" },

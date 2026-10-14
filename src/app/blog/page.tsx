@@ -9,9 +9,9 @@ import { getPublishedPosts } from "@/lib/blog";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: "Tax & Compliance Insights Blog",
+  title: { absolute: "Tax and Compliance Insights Blog | C S Rushil & Co." },
   description:
-    "Practical guidance on GST, income tax, company compliance, and business registration for Chennai businesses, from C S Rushil & Co.",
+    "Practical guides on company law, GST, income tax, audit and compliance from C S Rushil & Co., Chartered Accountants in Anna Nagar. Book a consultation.",
   alternates: { canonical: "/blog" },
 };
 

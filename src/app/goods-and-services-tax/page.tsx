@@ -8,7 +8,7 @@ import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/goods-and-services-tax`;
-const title = "GST Consultants in Chennai | Registration, Returns, Notices";
+const title = "GST Returns and Notices in Chennai | C S Rushil & Co.";
 const description =
   "GST consultants in Chennai for registration, GSTR-1 and 3B returns, GSTR-9/9C, ITC reconciliation, LUT for exporters, notice replies, appeals and cancellation.";
 
@@ -101,7 +101,7 @@ export default function GstPage() {
       <JsonLd
         data={serviceSchema({
           name: "GST Consultants in Chennai",
-          description: "GST registration, return filing, annual returns, ITC reconciliation, LUT, notice replies and litigation for Chennai businesses.",
+          description: "GST registration, returns, notices and litigation for Chennai and Tamil Nadu businesses, handled online from Anna Nagar. Book a consultation online.",
           url: PAGE_URL,
           serviceType: "GST Compliance and Advisory",
         })}

@@ -13,7 +13,7 @@ export const meta: BlogPostMeta = {
     {
       question: "What is the deadline for filing INC-20A?",
       answer:
-        "Section 10A of the Companies Act, 2013 requires a director to file the declaration within 180 days of the date of incorporation. Until it is filed, along with verification of the registered office, a company with share capital cannot commence any business or exercise borrowing powers. In practice it is best filed as soon as subscription money is received.",
+        "Section 10A of the Companies Act, 2013 requires a director to file the declaration within 180 days of the date of incorporation. Until it is filed, along with verification of the registered office, a company with share capital cannot commence any business or exercise borrowing powers. In practice it is better filed as soon as subscription money is received.",
     },
     {
       question: "What is the penalty for not filing INC-20A?",

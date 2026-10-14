@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "IEC Registration in Chennai | Import Export Code";
+const title = "Import Export Code (IEC) in Chennai | C S Rushil & Co.";
 const description =
   "IEC registration in Chennai on the DGFT portal: PAN-based Import Export Code, documents, the April-June annual update, modification and GST LUT for exporters.";
 

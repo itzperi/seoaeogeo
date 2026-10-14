@@ -3,7 +3,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Tax Audit in Chennai & Anna Nagar | Section 44AB" },
+  title: { absolute: "Tax Audit in Chennai and Anna Nagar | C S Rushil & Co." },
   description:
     "Tax audit under Section 44AB of the Income Tax Act for Chennai businesses and professionals crossing prescribed turnover limits, handled by C S Rushil & Co.",
   alternates: { canonical: "/tax-audit-chennai" },

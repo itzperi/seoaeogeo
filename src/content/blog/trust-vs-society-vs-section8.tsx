@@ -52,7 +52,7 @@ export default function Body() {
       </ul>
 
       <p>
-        If you&apos;re deciding which structure fits your charitable initiative in Chennai, C S Rushil &amp; Co. can walk through your specific goals and handle the registration for whichever structure fits best. Book a free consultation.
+        If you&apos;re deciding which structure fits your charitable initiative in Chennai, C S Rushil &amp; Co. can walk through your goals and handle the registration for whichever structure fits. Book a consultation online or visit our Anna Nagar office.
       </p>
     </>
   );

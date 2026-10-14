@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/chartered-accountant-kilpauk-chennai`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Chartered Accountant in Kilpauk, Chennai" },
+  title: { absolute: "Chartered Accountant in Kilpauk, Chennai | C S Rushil & Co." },
   description:
     "Company registration, GST, income tax, and audit services for Kilpauk residents and local businesses, from a Chennai CA firm minutes away in Anna Nagar.",
   alternates: { canonical: "/chartered-accountant-kilpauk-chennai" },

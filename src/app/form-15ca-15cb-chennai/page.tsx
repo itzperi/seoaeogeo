@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Form 15CA and 15CB in Chennai | NRI Remittance";
+const title = "Form 15CA and 15CB Filing in Chennai | C S Rushil & Co.";
 const description =
   "Form 15CA and 15CB in Chennai, now Forms 145 and 146: CA certificates, DTAA review and NRO repatriation for NRIs remitting property sale proceeds abroad.";
 

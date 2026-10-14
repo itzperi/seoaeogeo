@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "GST Return Filing in Chennai | GSTR-1, 3B, 9";
+const title = "GSTR-1, 3B and 9 Filing in Chennai | C S Rushil & Co.";
 const description =
   "GST return filing in Chennai: GSTR-1, GSTR-3B, QRMP and IFF, CMP-08, GSTR-4 and GSTR-9/9C, with GSTR-2B reconciliation before every filing. Due dates inside.";
 

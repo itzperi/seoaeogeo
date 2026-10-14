@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Income Tax Return Filing in Chennai | ITR Forms & Due Dates";
+const title = "Income Tax Return Filing in Chennai | C S Rushil & Co.";
 const description =
   "ITR filing in Chennai for salaried people, professionals, NRIs and businesses: forms, due dates for FY 2025-26 and tax year 2026-27, AIS checks and refunds.";
 

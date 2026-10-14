@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Statutory Audit in Chennai for Companies & Subsidiaries";
+const title = "Statutory Audit in Chennai for Companies | C S Rushil & Co.";
 const description =
-  "Companies Act statutory audit in Chennai for private companies, foreign-owned subsidiaries and GCCs: group reporting packs, Ind AS, CARO 2020, audit trail and the AGM-to-AOC-4 timeline.";
+  "Statutory audit in Chennai for companies and foreign-owned subsidiaries: Ind AS, group audit instructions, CARO and audit trail. Book a consultation online.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

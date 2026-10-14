@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/income-tax-consultant-delhi-ncr";
-const title = "Income Tax Consultant for HNIs in Delhi NCR | Online CA";
+const title = "Income Tax Consultant in Delhi NCR | C S Rushil & Co.";
 const description =
   "Online income tax advice for high-income Delhi, Gurugram and Noida families: firm and LLP profit share, rental portfolios, builder floors and NCR property.";
 

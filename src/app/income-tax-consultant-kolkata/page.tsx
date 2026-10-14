@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/income-tax-consultant-kolkata";
-const title = "Income Tax Consultant for HNIs in Kolkata | Online CA";
+const title = "Income Tax Consultant for HNIs in Kolkata | C S Rushil & Co.";
 const description =
   "Online income tax advice for high-income Kolkata families: HUF returns, inherited and tenanted property, unlisted family-company shares and West Bengal sales.";
 

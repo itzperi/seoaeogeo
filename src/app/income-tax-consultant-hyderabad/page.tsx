@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/income-tax-consultant-hyderabad";
-const title = "Income Tax Consultant for HNIs in Hyderabad | Online CA";
+const title = "Income Tax Consultant in Hyderabad | C S Rushil & Co.";
 const description =
   "Online income tax advice for high-income Hyderabad residents: GCC RSUs, pharma promoter shareholdings, Telangana land deals and agricultural land gains.";
 

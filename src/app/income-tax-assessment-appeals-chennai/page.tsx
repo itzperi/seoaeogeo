@@ -3,7 +3,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Income Tax Assessment & Appeals in Chennai";
+const title = "Income Tax Assessment and Appeals Chennai | C S Rushil & Co.";
 const description =
   "Income tax assessment and appeals in Chennai: scrutiny and reassessment replies, CIT(A) appeals in Form 99 (earlier Form 35), ITAT appeals and stay of demand.";
 

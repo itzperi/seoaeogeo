@@ -3,9 +3,9 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Transfer Pricing Study & Form 3CEB / Form 48 in India";
+const title = "Transfer Pricing Study and Form 48 | C S Rushil & Co.";
 const description =
-  "Transfer pricing documentation and the accountant's report for Indian subsidiaries and GCCs: Form 3CEB for FY 2025-26, Form 48 from tax year 2026-27, benchmarking, safe harbour and APAs.";
+  "Transfer pricing study and Form 48 for Indian companies: methods, documentation, master file and safe harbour. Book a consultation online or visit our office.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

@@ -6,7 +6,7 @@ import CTASection from "@/components/CTASection";
 import { JsonLd, faqSchema } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: { absolute: "Frequently Asked Questions | C S Rushil & Co." },
+  title: { absolute: "FAQs on Company, GST and Income Tax | C S Rushil & Co." },
   description:
     "Answers to common questions about company registration, GST, income tax, audits, and compliance from a Chennai CA firm, with links to full detail on each topic.",
   alternates: { canonical: "/faq" },
