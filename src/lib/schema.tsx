@@ -67,6 +67,7 @@ export const INTERNATIONAL_AREAS: Record<string, string[]> = {
   "/eor-vs-subsidiary-india": SERVED_COUNTRIES,
   "/india-subsidiary-for-us-companies": ["United States", "India"],
   "/india-subsidiary-for-uk-companies": ["United Kingdom", "India"],
+  "/india-subsidiary-for-singapore-companies": ["Singapore", "India"],
   "/india-subsidiary-for-uae-companies": ["United Arab Emirates", "India"],
   "/outsourced-accounting-for-cpa-firms": ["United States"],
   "/outsourced-accounting-for-uk-accountants": ["United Kingdom"],

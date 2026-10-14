@@ -81,7 +81,7 @@ export default function Page() {
       h1="Setting Up a Company in India as a Foreign Business: Subsidiary, LLP or Branch"
       subhead="Entity selection, FDI route checks, document legalisation, SPICe+ incorporation and post-incorporation FEMA reporting for foreign companies and founders setting up in Chennai, Tamil Nadu or elsewhere in India."
       introHeading="Can a foreign company or foreign national register a company in India?"
-      intro="Yes. Foreign companies and individuals can own up to 100% of an Indian private limited company under the automatic route in most sectors, without prior government approval. Some sectors need government approval or carry foreign-ownership caps, so the first step is checking the FDI Policy for your activity. A private company needs at least two directors and two shareholders, and at least one director must have stayed in India for 182 days or more in the financial year. After incorporation, the share allotment must be reported to the RBI in Form FC-GPR."
+      intro="Yes. Foreign companies and individuals can own up to 100% of an Indian private limited company under the automatic route in most sectors, without prior government approval. Some sectors need government approval or carry foreign-ownership caps, so the first step is checking the FDI Policy for your activity. A private company needs at least two directors and two shareholders, and at least one director must have stayed in India for 182 days in the previous calendar year. After incorporation, the share allotment must be reported to the RBI in Form FC-GPR."
       citation={{ label: "DPIIT — Consolidated FDI Policy (dpiit.gov.in)", href: "https://www.dpiit.gov.in/static/uploads/2025/07/6457fc2703ee6082366c4a958b6473a8.pdf" }}
       subServicesHeading="What does company registration in India for a foreign business involve?"
       subServices={[
@@ -105,7 +105,7 @@ export default function Page() {
       }}
       faqs={[
         { question: "Can a foreigner own 100% of a company in India?", answer: "Yes, 100% foreign ownership is permitted under the automatic route in most sectors, so a foreign parent can hold all the shares of its Indian subsidiary, although some sectors need prior government approval or cap foreign holding, and investors from countries sharing a land border with India need government approval in all sectors. A nominee shareholder is commonly used to meet the two-shareholder minimum." },
-        { question: "Does an Indian subsidiary need a resident director?", answer: "Yes, every Indian company must have at least one director who has stayed in India for at least 182 days in the financial year, under section 149(3) of the Companies Act, 2013. This director can be an Indian citizen or a foreign national living in India. Foreign groups often appoint a senior India employee or a trusted local professional to this role." },
+        { question: "Does an Indian subsidiary need a resident director?", answer: "Yes, every Indian company must have at least one director who has stayed in India for at least 182 days in the previous calendar year, under section 149(3) of the Companies Act, 2013. This director can be an Indian citizen or a foreign national living in India. Foreign groups often appoint a senior India employee or a trusted local professional to this role." },
         { question: "What is the difference between a subsidiary, a branch office and a liaison office?", answer: "A subsidiary is a separate Indian company that can carry on any permitted business, while branch and liaison offices are extensions of the foreign company with restricted activities. A liaison office cannot earn income in India and only represents the parent. Branch, liaison and project offices need RBI approval through an authorised dealer bank, whereas a subsidiary in an automatic-route sector does not." },
         { question: "How long does it take to register a company in India from abroad?", answer: "The incorporation itself on the MCA portal typically takes a few weeks once documents are ready, but overall timing depends mostly on how quickly foreign documents are legalised. Apostille or consular attestation in the home country often takes longer than the Indian filings. Opening the bank account and receiving capital adds further time before the company is fully operational." },
         { question: "What is FC-GPR and when is it due?", answer: "FC-GPR is the form an Indian company files on the RBI FIRMS portal to report shares issued to a foreign investor, and it is due within 30 days of the allotment. It is filed through the company's authorised dealer bank with the FIRC, KYC of the investor, and a valuation certificate. Late filing can attract a late submission fee or compounding under FEMA." },
@@ -149,6 +149,10 @@ export default function Page() {
         and{" "}
         <Link href="/india-subsidiary-for-uae-companies" className={linkClass}>
           United Arab Emirates
+        </Link>
+        , and{" "}
+        <Link href="/india-subsidiary-for-singapore-companies" className={linkClass}>
+          Singapore
         </Link>
         . If you want to hire in India before the company is ready, compare an{" "}
         <Link href="/eor-vs-subsidiary-india" className={linkClass}>

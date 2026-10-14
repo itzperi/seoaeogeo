@@ -261,6 +261,12 @@ export const SERVICES: ServiceSummary[] = [
     shortDescription:
       "Tax planning for HNIs and families in Chennai: capital gains, ESOPs and foreign RSUs, Schedule FA, residency, HUFs and advance tax.",
   },
+  {
+    slug: "india-subsidiary-for-singapore-companies",
+    name: "India Subsidiary for Singapore Companies",
+    shortDescription:
+      "Indian subsidiary set-up for Singapore parents: apostilled documents, resident director, FDI route, FC-GPR and transfer pricing, Indian-law services.",
+  },
 ];
 
 // Specialist pages for NRIs, overseas businesses and urgent notices. Kept
@@ -342,6 +348,7 @@ export const SERVICE_GROUPS: { label: string; slugs: string[] }[] = [
       "company-registration-india-for-foreigners",
       "india-subsidiary-for-us-companies",
       "india-subsidiary-for-uk-companies",
+      "india-subsidiary-for-singapore-companies",
       "india-subsidiary-for-uae-companies",
       "eor-vs-subsidiary-india",
       "india-subsidiary-compliance-cfo",
