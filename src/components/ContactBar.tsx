@@ -39,7 +39,7 @@ function CalendarIcon() {
 }
 
 // Always-visible contact actions: a bottom bar on phones, a floating stack on
-// desktop. Every click is logged to Supabase (cta_clicks) for the funnel view.
+// desktop. Clicks are not stored; the tap opens WhatsApp, call or booking directly.
 export default function ContactBar() {
   const pathname = usePathname();
   if (pathname?.startsWith("/admin")) return null;

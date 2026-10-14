@@ -1,4 +1,4 @@
-import { adminRequest, insertRow } from "@/lib/supabase";
+import { adminRequest } from "@/lib/supabase";
 
 export * from "@/lib/lead-options";
 
@@ -82,11 +82,6 @@ export function scoreLead(lead: Pick<NewLead, "service" | "client_type" | "turno
   score = Math.min(100, score);
   const tier: LeadTier = score >= 60 ? "high" : score >= 35 ? "medium" : "standard";
   return { score, tier };
-}
-
-export async function saveLead(lead: NewLead): Promise<boolean> {
-  const { score, tier } = scoreLead(lead);
-  return insertRow("leads", { ...lead, lead_score: score, lead_tier: tier, status: "new" });
 }
 
 // Returns null when SUPABASE_SECRET_KEY isn't set yet (or the request fails).
