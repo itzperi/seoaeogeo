@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: { absolute: "RERA Compliance in Chennai | TNRERA CA Certificates" },
   description:
     "RERA compliance in Chennai for Tamil Nadu developers and agents: project registration, quarterly progress reports, CA certificates and annual audits.",
+  openGraph: {
+    title: "RERA Compliance in Chennai | TNRERA CA Certificates",
+    description: "RERA compliance in Chennai for Tamil Nadu developers and agents: project registration, quarterly progress reports, CA certificates and annual audits.",
+    url: "/rera",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   alternates: { canonical: "/rera" },
 };
 

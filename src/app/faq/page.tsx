@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: { absolute: "FAQs on Company, GST and Income Tax | C S Rushil & Co." },
   description:
     "Answers to common questions about company registration, GST, income tax, audits, and compliance from a Chennai CA firm, with links to full detail on each topic.",
+  openGraph: {
+    title: "FAQs on Company, GST and Income Tax | C S Rushil & Co.",
+    description: "Answers to common questions about company registration, GST, income tax, audits, and compliance from a Chennai CA firm, with links to full detail on each topic.",
+    url: "/faq",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   alternates: { canonical: "/faq" },
 };
 

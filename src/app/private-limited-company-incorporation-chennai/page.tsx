@@ -11,13 +11,13 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/private-limited-company-incorporation-chennai`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Private Limited Company Registration in Chennai | CA Firm" },
+  title: { absolute: "Private Limited Incorporation in Chennai | C S Rushil & Co." },
   description:
-    "Private limited company registration in Chennai via SPICe+: DSC, DIN, name approval, e-MoA/AoA, PAN/TAN, INC-20A and first-year ROC compliance, from Anna Nagar.",
+    "SPICe+ incorporation in Chennai: DIN and DSC, name approval, MoA and AoA, and post-incorporation filings. Book a consultation online or visit our office.",
   alternates: { canonical: "/private-limited-company-incorporation-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "Private Limited Company Registration in Chennai",
+    title: "Private Limited Incorporation in Chennai | C S Rushil & Co.",
     description:
       "Pvt Ltd company incorporation in Chennai through SPICe+, with a step-by-step timeline, document checklist and first-year compliance calendar.",
     url: "/private-limited-company-incorporation-chennai",
@@ -589,6 +589,30 @@ export default function IncorporationPage() {
         </section>
       )}
 
+      <section className="bg-paper pb-12">
+        <div className="container-page">
+          <h2 className="text-2xl text-obsidian">Official sources</h2>
+          <ul className="mt-4 list-disc space-y-2 pl-6 text-slate">
+            <li>
+              <a href="https://www.mca.gov.in" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+                Ministry of Corporate Affairs (MCA): company incorporation and SPICe+ filing
+              </a>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+                MCA: the Companies (Incorporation) Rules, 2014, including name approval
+              </a>
+            </li>
+            <li>
+              <a href="https://www.mca.gov.in" target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+                MCA: Director Identification Number and DIR-3 KYC requirements
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* CHECK fee schedule: the firm supplies the 2026 government fees and its own professional fees. Add a fee table here only from that source. */}
       <FAQSection items={FAQS} />
 
       <section className="bg-paper py-12">

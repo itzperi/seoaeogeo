@@ -55,6 +55,15 @@ export default function MobileNav() {
 
             <p className="eyebrow mt-6 text-xs text-slate">Locations</p>
             <ul className="mt-3 space-y-1">
+              <li>
+                <Link
+                  href="/chartered-accountant-chennai"
+                  onClick={() => setOpen(false)}
+                  className="block rounded-lg px-3 py-2.5 text-sm font-medium text-obsidian hover:bg-fog"
+                >
+                  Chartered accountant in Chennai
+                </Link>
+              </li>
               {AREAS.map((area) => (
                 <li key={area.slug}>
                   <Link

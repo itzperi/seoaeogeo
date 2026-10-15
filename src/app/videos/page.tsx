@@ -9,6 +9,12 @@ export const metadata: Metadata = {
   title: { absolute: "Tax and Compliance Video Guides | C S Rushil & Co." },
   description:
     "Short video guides on income tax, GST and company law from C S Rushil & Co. Watch them, then book a consultation online or visit our office.",
+  openGraph: {
+    title: "Tax and Compliance Video Guides | C S Rushil & Co.",
+    description: "Short video guides on income tax, GST and company law from C S Rushil & Co. Watch them, then book a consultation online or visit our office.",
+    url: "/videos",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   alternates: { canonical: "/videos" },
 };
 

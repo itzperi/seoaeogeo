@@ -12,6 +12,12 @@ export const metadata: Metadata = {
   title: { absolute: "Tax and Compliance Insights Blog | C S Rushil & Co." },
   description:
     "Practical guides on company law, GST, income tax, audit and compliance from C S Rushil & Co., Chartered Accountants in Anna Nagar. Book a consultation.",
+  openGraph: {
+    title: "Tax and Compliance Insights Blog | C S Rushil & Co.",
+    description: "Practical guides on company law, GST, income tax, audit and compliance from C S Rushil & Co., Chartered Accountants in Anna Nagar. Book a consultation.",
+    url: "/blog",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   alternates: { canonical: "/blog" },
 };
 

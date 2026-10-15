@@ -6,6 +6,12 @@ export const metadata: Metadata = {
   title: { absolute: "ROC Compliance for Chennai Companies | C S Rushil & Co." },
   description:
     "Annual filings, statutory registers, and Companies Act compliance to keep your Chennai company in good standing with the Registrar of Companies (MCA).",
+  openGraph: {
+    title: "ROC Compliance for Chennai Companies | C S Rushil & Co.",
+    description: "Annual filings, statutory registers, and Companies Act compliance to keep your Chennai company in good standing with the Registrar of Companies (MCA).",
+    url: "/roc-compliances",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   alternates: { canonical: "/roc-compliances" },
 };
 

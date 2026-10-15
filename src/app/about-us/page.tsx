@@ -35,6 +35,12 @@ export const metadata: Metadata = {
   title: { absolute: "About Our Chennai CA Firm and Team | C S Rushil & Co." },
   description:
     "C S Rushil & Co. is led by CA Rushil C S (Certified FAFD, Start-up Mentor) delivering audit, tax, GST, and compliance services from Anna Nagar, Chennai.",
+  openGraph: {
+    title: "About Our Chennai CA Firm and Team | C S Rushil & Co.",
+    description: "C S Rushil & Co. is led by CA Rushil C S (Certified FAFD, Start-up Mentor) delivering audit, tax, GST, and compliance services from Anna Nagar, Chennai.",
+    url: "/about-us",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   alternates: { canonical: "/about-us" },
 };
 

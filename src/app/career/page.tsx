@@ -8,6 +8,12 @@ export const metadata: Metadata = {
   title: { absolute: "Careers and Jobs at Our Chennai CA Firm | C S Rushil & Co." },
   description:
     "Join C S Rushil & Co.'s team in Anna Nagar, Chennai. We hire article assistants, semi-qualified accountants, and experienced CAs across audit, tax, and GST.",
+  openGraph: {
+    title: "Careers and Jobs at Our Chennai CA Firm | C S Rushil & Co.",
+    description: "Join C S Rushil & Co.'s team in Anna Nagar, Chennai. We hire article assistants, semi-qualified accountants, and experienced CAs across audit, tax, and GST.",
+    url: "/career",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   alternates: { canonical: "/career" },
 };
 

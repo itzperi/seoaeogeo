@@ -68,6 +68,9 @@ export default function Header() {
             </button>
             <div className="invisible absolute left-0 top-full pt-2 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
               <div className="w-56 rounded-[20px] border border-carbon bg-white p-2">
+                <Link href="/chartered-accountant-chennai" className="block rounded-xl px-3 py-2 text-sm font-medium text-carbon hover:bg-sky-wash">
+                  Chartered accountant in Chennai
+                </Link>
                 {AREAS.map((area) => (
                   <Link key={area.slug} href={`/${area.slug}`} className="block rounded-xl px-3 py-2 text-sm text-carbon hover:bg-sky-wash">
                     {area.name}

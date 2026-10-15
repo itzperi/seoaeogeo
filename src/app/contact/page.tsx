@@ -21,6 +21,13 @@ export const metadata: Metadata = {
   title: "Contact Us | Anna Nagar, Chennai",
   description:
     "Visit or call C S Rushil & Co. at our Anna Nagar, Chennai office. Phone, email, business hours, and map directions for our chartered accountancy firm.",
+  openGraph: {
+    title: "Contact Us | Anna Nagar, Chennai",
+    description:
+      "Visit or call C S Rushil & Co. at our Anna Nagar, Chennai office. Phone, email, business hours, and map directions for our chartered accountancy firm.",
+    url: "/contact",
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
   alternates: { canonical: "/contact" },
 };
 
