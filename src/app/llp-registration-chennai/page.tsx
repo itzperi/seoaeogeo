@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -34,7 +35,7 @@ export default function Page() {
       h1="LLP Registration Service in Chennai"
       subhead="Limited liability with partnership-style flexibility: DSC and DIN for designated partners, FiLLiP filing, the LLP agreement in Form 3, and your first Form 8 and Form 11 handled end-to-end."
       introHeading="What is an LLP, and who should choose LLP registration in Chennai?"
-      intro="LLP registration in Chennai creates a Limited Liability Partnership under the LLP Act, 2008: a separate legal entity where each partner's liability is limited to their agreed contribution. It suits professional firms, consultancies and family businesses that want partnership flexibility without a company's audit and board formalities. It cannot issue shares, so founders raising equity usually choose a Private Limited Company."
+      intro="LLP registration in Chennai creates a Limited Liability Partnership under the LLP Act, 2008: a separate legal entity where each partner's liability is limited to their agreed contribution. It suits professional firms and family businesses wanting partnership flexibility. It cannot issue shares, so founders raising equity usually choose a Private Limited Company."
       citation={{ label: "MCA FiLLiP (incorporation of LLP) web form", href: "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Fillip.html" }}
       keyFacts={[
         { label: "Typical time", value: "10–15 working days for incorporation once documents are ready; the LLP agreement follows within 30 days." },
@@ -68,7 +69,7 @@ export default function Page() {
         {
           question: "How many partners does an LLP need?",
           answer:
-            "An LLP needs at least two partners, and at least two of them must be designated partners who are individuals. At least one designated partner must be resident in India, meaning they stayed in India for 120 days or more during the financial year. There is no upper limit on the number of partners. A company or another LLP can also be a partner, acting through a nominee.",
+            "An LLP needs at least two partners, and at least two must be designated partners who are individuals. At least one designated partner must be resident in India, meaning they stayed in India for 120 days or more in the year. There is no upper limit on partners; a company or LLP can be a partner through a nominee.",
         },
         {
           question: "How long does LLP registration take in Chennai?",
@@ -78,32 +79,32 @@ export default function Page() {
         {
           question: "What happens if the LLP agreement is not filed within 30 days?",
           answer:
-            "If Form 3 is not filed within 30 days of incorporation, the LLP pays an additional fee in addition to the normal filing fee. Under the LLP Rules as amended in 2022, that additional fee is a multiple of the normal fee and increases in slabs the longer the delay, with lower multiples for small LLPs. Where there is no LLP agreement on a point, the default rules in the First Schedule of the LLP Act decide partners' rights.",
+            "If Form 3 is not filed within 30 days of incorporation, an additional fee applies. Under the LLP Rules as amended in 2022, it is a multiple of the normal fee and rises in slabs with the delay, with lower multiples for small LLPs. Where the agreement is silent, default rules in the LLP Act's First Schedule apply.",
         },
         {
           question: "What is the difference between an LLP and a Private Limited Company?",
           answer:
-            "Both give limited liability, but an LLP has no share capital, no board meetings and an audit only above set thresholds, while a Private Limited Company must be audited every year and holds regular board meetings. The trade-off is funding: a company can issue shares to investors and ESOPs to staff, and an LLP cannot. Choose based on whether equity funding is likely.",
+            "Both give limited liability, but an LLP has no share capital or board meetings and is audited only above set thresholds. A private limited company is audited every year and holds regular board meetings. The trade-off is funding: a company can issue shares and ESOPs, and an LLP cannot. Choose based on whether equity funding is likely.",
         },
         {
           question: "Is a statutory audit mandatory for an LLP?",
           answer:
-            "Only if the LLP's turnover exceeds ₹40 lakh or its partners' contribution exceeds ₹25 lakh in a financial year. Below both limits, the accounts need not be audited, though the designated partners still certify Form 8. This is one of the main compliance savings compared with a Private Limited Company, which needs an audit every year regardless of size. A tax audit may still apply under income tax law.",
+            "Only if turnover exceeds ₹40 lakh or the partners' contribution exceeds ₹25 lakh in a financial year. Below both limits the accounts need not be audited, though designated partners still certify Form 8. This is a main compliance saving over a private limited company, which needs an audit every year. A tax audit may still apply under income tax law.",
         },
         {
           question: "Can an existing partnership firm convert into an LLP?",
           answer:
-            "Yes. A partnership firm converts by filing Form 17 along with FiLLiP, under Section 55 and the Second Schedule of the LLP Act. All partners of the firm must become partners of the LLP, and no one else can join at the conversion stage. After approval, the firm's assets, liabilities and contracts vest in the LLP, and GST, Udyam and bank accounts are moved to the LLP's PAN.",
+            "Yes. A firm converts by filing Form 17 with FiLLiP under Section 55 and the Second Schedule of the LLP Act. All partners must become partners of the LLP, and no one else can join at conversion. After approval, assets, liabilities and contracts vest in the LLP, and GST, Udyam and bank accounts move to the LLP's PAN.",
         },
         {
           question: "Can an LLP later convert into a Private Limited Company?",
           answer:
-            "Yes. An LLP can register as a company under Section 366 of the Companies Act, 2013, by filing URC-1 along with SPICe+. Founders usually do this when an investor wants to buy equity, which an LLP cannot issue. The partners become shareholders, and the business, assets and liabilities continue in the company. We plan the conversion so licences and contracts move across with minimal disruption.",
+            "Yes. An LLP can register as a company under Section 366 of the Companies Act, 2013, by filing URC-1 along with SPICe+. Founders usually do this when an investor wants equity, which an LLP cannot issue. Partners become shareholders, and the business, assets and liabilities continue in the company. We plan the conversion to limit disruption.",
         },
         {
           question: "What should partners have ready before filing FiLLiP?",
           answer:
-            "Have DSCs and identity documents ready for every designated partner, along with registered office proof, before filing begins. That means a Class 3 DSC, PAN and address proof for each partner who will sign, and for the office, a rent agreement or ownership document, a recent utility bill and a no-objection letter from the owner. Sorting these out upfront avoids FiLLiP being sent back for resubmission. Agree the contribution and profit-sharing terms at the same time, since they feed into both FiLLiP and the Form 3 agreement due within 30 days. For a new consultancy, recording the registered office correctly from day one also keeps the address consistent across the bank account, GST registration and later MCA filings.",
+            "Have DSCs and identity documents ready for every designated partner, plus proof of the registered office: a rent agreement or ownership document, a recent utility bill and, if needed, the owner's no-objection letter. Sorting these out upfront avoids resubmission. Agree contribution and profit-sharing terms at the same time, since they feed into FiLLiP and the Form 3 agreement.",
         },
       ]}
       relatedQuestions={[
@@ -167,6 +168,17 @@ export default function Page() {
         <li>• <strong className="text-obsidian">Income tax return:</strong> filed every year, with an earlier due date if no audit applies and a later one if the LLP needs a tax or statutory audit.</li>
         <li>• <strong className="text-obsidian">Event-based filings:</strong> Form 3 when the LLP agreement changes, and Form 4 when a partner joins or leaves, each within 30 days.</li>
       </ul>
+      <ComparisonTable
+        heading="LLP or private limited company: how they differ"
+        columns={["Point", "LLP", "Private limited company"]}
+        rows={[
+          ["Share capital and ESOPs", "No shares; partners contribute", "Can issue shares and ESOPs"],
+          ["Board meetings", "Not required", "Required"],
+          ["Audit", "Only above the turnover or contribution thresholds", "Every year"],
+          ["Liability of owners", "Limited to agreed contribution", "Limited to shares held"],
+          ["Typical fit", "Professional firms, consultancies, family businesses", "Businesses expecting equity investment"],
+        ]}
+      />
     </ServicePageTemplate>
   );
 }

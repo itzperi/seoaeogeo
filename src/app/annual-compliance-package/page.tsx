@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -136,6 +137,17 @@ export default function Page() {
         </Link>
         .
       </p>
+      <ComparisonTable
+        heading="Filings, who they apply to and what we need"
+        columns={["Filing", "Who it applies to", "What we need from you", "Due timing"]}
+        rows={[
+          ["Financial statements (AOC-4 for companies, Form 8 for LLPs)", "Companies and LLPs", "Books, bank statements, closing stock and fixed asset details", "To confirm on mca.gov.in for your year end"],
+          ["Annual return (MGT-7 or MGT-7A for companies, Form 11 for LLPs)", "Companies and LLPs", "Shareholding, directors, and board and general meeting records", "To confirm on mca.gov.in"],
+          ["DIR-3 KYC", "Each director or designated partner with a DIN", "Director details, mobile number and email", "To confirm on mca.gov.in"],
+          ["Income tax return", "Companies, LLPs and individuals", "Accounts, tax computation and TDS records", "To confirm on incometax.gov.in for your tax year"],
+          ["GST and TDS returns", "Registered businesses and deductors", "Sales and purchase records, payroll and payments", "To confirm on cbic-gst.gov.in and incometax.gov.in"],
+        ]}
+      />
     </ServicePageTemplate>
   );
 }

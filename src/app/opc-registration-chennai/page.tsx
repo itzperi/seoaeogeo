@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -73,22 +74,22 @@ export default function Page() {
         {
           question: "Who can register a One Person Company?",
           answer:
-            "Only a natural person who is an Indian citizen can form an OPC, whether they live in India or abroad. Companies, LLPs, foreign nationals and minors cannot. The nominee must also be an Indian citizen. One person can be a member of only one OPC and a nominee in only one OPC at a time, so you cannot run several businesses through separate OPCs.",
+            "Only a natural person who is an Indian citizen can form an OPC, whether living in India or abroad. Companies, LLPs, foreign nationals and minors cannot. The nominee must also be an Indian citizen. One person can be a member of only one OPC and a nominee in only one OPC at a time.",
         },
         {
           question: "Can an NRI register an OPC in India?",
           answer:
-            "Yes. Since the Companies (Incorporation) Second Amendment Rules, 2021, an Indian citizen can form an OPC whether resident in India or not, so NRIs are eligible as member and nominee. Separately, every company needs at least one director who stayed in India for 182 days in the previous calendar year, so an NRI founder living abroad usually appoints a resident director alongside.",
+            "Yes. Since the Companies (Incorporation) Second Amendment Rules, 2021, an Indian citizen can form an OPC whether resident in India or not, so NRIs can be member and nominee. Every company also needs at least one director who stayed in India for 182 days in the previous calendar year, so an NRI founder abroad usually appoints a resident director.",
         },
         {
           question: "What is the role of the nominee in an OPC?",
           answer:
-            "The nominee becomes the member of the OPC if the original member dies or can no longer contract, so the company does not end with its owner. The nominee has no ownership or say while the member is active. Their written consent, previously filed as a separate INC-3, is now a declaration inside SPICe+ Part B, signed with the nominee's own digital signature.",
+            "The nominee becomes the member if the original member dies or can no longer contract, so the company does not end with its owner. The nominee has no ownership or say while the member is active. The nominee's consent is now a declaration within SPICe+ Part B, signed with the nominee's own digital signature.",
         },
         {
           question: "Is there a turnover or capital limit after which an OPC must convert?",
           answer:
-            "No. Before April 2021, an OPC had to convert into a private or public company once its paid-up capital exceeded ₹50 lakh or average annual turnover exceeded ₹2 crore. The 2021 amendment removed that compulsory conversion, so an OPC can keep growing as an OPC. It can still choose to convert at any time, which most founders do when they bring in a co-founder or investor.",
+            "No. Before April 2021, an OPC had to convert once its paid-up capital or turnover crossed set limits; the 2021 amendment removed that requirement. It can still convert at any time, which most founders do when bringing in a co-founder or investor.",
         },
         {
           question: "How do I convert an OPC into a Private Limited Company?",
@@ -98,12 +99,12 @@ export default function Page() {
         {
           question: "What compliance does an OPC have after registration?",
           answer:
-            "An OPC must have its accounts audited every year, file financial statements (AOC-4) within 180 days of the financial year end, and file its annual return (MGT-7A). It does not need an annual general meeting, and an OPC with only one director does not need to hold board meetings. Income tax returns, TDS and GST returns, if registered, apply as for any company.",
+            "An OPC must have its accounts audited every year, file financial statements (AOC-4) within 180 days of the financial year end, and file its annual return (MGT-7A). It does not need an annual general meeting, and a single-director OPC does not need board meetings. Income tax, TDS and GST returns, if registered, apply as for any company.",
         },
         {
           question: "Should I choose an OPC or a proprietorship?",
           answer:
-            "Choose an OPC if you want your personal assets protected from business debts, need a company name on contracts, or expect to bring in investors later. Choose a proprietorship if your business is small and low-risk and you want the least paperwork, because an OPC must be audited every year and file annual MCA returns. Many solo founders start as a proprietor and incorporate once contracts grow.",
+            "Choose an OPC if you want personal assets protected from business debts, need a company name on contracts, or expect investors later. Choose a proprietorship if the business is small and low-risk and you want less paperwork, because an OPC must be audited each year and file annual MCA returns. Many solo founders start as proprietors and incorporate later.",
         },
       ]}
       relatedQuestions={[
@@ -162,6 +163,17 @@ export default function Page() {
         </Link>{" "}
         guide.
       </p>
+      <ComparisonTable
+        heading="OPC, private limited company and proprietorship"
+        columns={["Point", "OPC", "Private limited", "Proprietorship"]}
+        rows={[
+          ["Owners", "One member and one nominee", "At least two shareholders and two directors", "One individual"],
+          ["Legal entity", "Yes, separate from the owner", "Yes", "No; owner and business are one"],
+          ["Liability", "Limited to shares held", "Limited to shares held", "Unlimited; personal assets exposed"],
+          ["Annual audit", "Yes", "Yes", "Only if a tax audit applies"],
+          ["Investors", "Possible, but usually converts to a private limited company", "Can issue shares", "Not possible as a company"],
+        ]}
+      />
     </ServicePageTemplate>
   );
 }

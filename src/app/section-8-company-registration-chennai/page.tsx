@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -73,7 +74,7 @@ export default function Page() {
         {
           question: "What objects can a Section 8 company have?",
           answer:
-            "A Section 8 company can be formed to promote commerce, art, science, sports, education, research, social welfare, religion, charity, protection of the environment or similar objects. It must intend to apply its profits and income only to promoting those objects, and it cannot pay dividends to its members. Objects should be specific enough that your actual activities clearly fall within them.",
+            "A Section 8 company can be formed to promote commerce, art, science, sports, education, research, social welfare, religion, charity, environmental protection or similar objects. It must apply its income only to those objects and cannot pay dividends to members. Objects should be specific enough that your actual activities clearly fall within them.",
         },
         {
           question: "Is a separate licence application needed for a Section 8 company?",
@@ -88,7 +89,7 @@ export default function Page() {
         {
           question: "How does a Section 8 company get 12A and 80G registration?",
           answer:
-            "From 1 April 2026, the registrations commonly called 12A and 80G fall under Sections 332 and 354 of the Income-tax Act, 2025. A Section 8 company applies on the income tax e-filing portal in Form 105, for registration so its own income is exempt and for approval so donors can claim a deduction. We prepare the application with the objects, activities and accounts the department asks for.",
+            "The registrations commonly called 12A and 80G are set out in the Income-tax Act, 2025 (section numbers to confirm on incometaxindia.gov.in). A Section 8 company applies on the income tax portal for registration so its income is exempt, and for approval so donors can claim deductions. We prepare the application with the objects, activities and accounts the department asks for.",
         },
         {
           question: "Can a Section 8 company receive CSR funds and foreign donations?",
@@ -98,12 +99,12 @@ export default function Page() {
         {
           question: "Should we choose a Section 8 company, a trust or a society?",
           answer:
-            "Choose a Section 8 company if you want formal corporate governance, a structure CSR donors are comfortable with, and easy changes in directors. A trust suits a small group of founders who want control held by trustees. A society suits a member-driven association. Compliance is heavier for a Section 8 company because of MCA filings and audit, so weigh that against credibility.",
+            "Choose a Section 8 company for formal governance, a structure CSR donors often accept, and easy changes in directors. A trust suits a small group who want trustees to hold control. A society suits a member-driven association. A Section 8 company carries heavier compliance because of MCA filings and audit, so weigh that against credibility.",
         },
         {
           question: "What compliance does a Section 8 company have?",
           answer:
-            "A Section 8 company files the same core MCA returns as other companies: audited financial statements in AOC-4 and the annual return in MGT-7 or MGT-7A, along with board meetings and statutory registers. It also files an income tax return, maintains the conditions of its income tax registration, and, if registered, CSR and FCRA returns. Converting it into a regular company needs approval through INC-18.",
+            "A Section 8 company files the same core MCA returns as other companies: audited financial statements in AOC-4 and the annual return in MGT-7 or MGT-7A, with board meetings and statutory registers. It also files an income tax return and keeps its income tax registration conditions. Converting to a regular company needs approval through INC-18.",
         },
       ]}
       relatedQuestions={[
@@ -165,6 +166,17 @@ export default function Page() {
         </Link>{" "}
         page.
       </p>
+      <ComparisonTable
+        heading="Section 8 company, trust and society"
+        columns={["Point", "Section 8 company", "Trust", "Society"]}
+        rows={[
+          ["Formed under", "Companies Act, 2013", "Trust deed under the applicable trust law", "Society registration under the applicable law (to confirm)"],
+          ["Governance", "Board of directors", "Trustees", "Governing body and members"],
+          ["Dividends", "Not allowed", "Not applicable", "Not allowed"],
+          ["Ongoing filings", "MCA returns and audit", "Trust accounts and income tax", "Society accounts and income tax"],
+          ["Good for", "Formal governance and CSR-friendly structure", "A small group wanting trustee control", "A member-driven association"],
+        ]}
+      />
     </ServicePageTemplate>
   );
 }

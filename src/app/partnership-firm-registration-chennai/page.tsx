@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -69,27 +70,27 @@ export default function Page() {
         {
           question: "Is registration of a partnership firm compulsory in Tamil Nadu?",
           answer:
-            "No. Registration with the Registrar of Firms is optional under the Indian Partnership Act, 1932, but an unregistered firm carries real disadvantages. Under Section 69, it cannot file a suit against a third party to enforce a contract, and partners cannot sue the firm or each other to enforce deed rights. Banks and government departments also often ask for the registration certificate.",
+            "No. Registration with the Registrar of Firms is optional under the Indian Partnership Act, 1932, but an unregistered firm has real disadvantages. Under Section 69, it cannot sue a third party to enforce a contract, and partners cannot sue the firm or each other to enforce deed rights. Banks and government departments often ask for the registration certificate.",
         },
         {
           question: "What documents are needed to register a partnership firm?",
           answer:
-            "You need the application in Form No. I signed by all partners, the stamped and signed partnership deed, and government-issued ID proofs of every partner. For the firm's place of business, keep a rent agreement or ownership proof and, if someone else owns it, a no objection letter. If the firm name uses words that need government approval, that approval order is also required.",
+            "You need the application in Form No. I signed by all partners, the stamped and signed partnership deed, and government ID proofs of every partner. Keep a rent agreement or ownership proof for the business place and, if someone else owns it, a no-objection letter. If the firm name needs government approval, that approval order is also required.",
         },
         {
           question: "How much stamp duty applies to a partnership deed in Tamil Nadu?",
           answer:
-            "Stamp duty on a partnership deed is set by the stamp law applicable in Tamil Nadu and depends on factors such as the capital contributed. Rates are revised from time to time, so we confirm the current amount from the Registration Department before the deed is executed rather than quoting a figure that may be outdated. Under-stamped deeds can be impounded, so this matters.",
+            "Stamp duty on a partnership deed follows the Tamil Nadu stamp law and depends on factors such as the capital contributed. Rates are revised from time to time, so we confirm the current amount from the Registration Department before the deed is executed. Under-stamped deeds can be impounded, so this matters.",
         },
         {
           question: "How many partners can a partnership firm have?",
           answer:
-            "A partnership firm needs at least two partners. The Companies Act, 2013 and the Companies (Miscellaneous) Rules, 2014 cap the number at 50 partners. Partners can be individuals, and a company or LLP can also be a partner through an authorised representative. A minor cannot be a full partner but can be admitted to the benefits of an existing partnership with all partners' consent.",
+            "A partnership firm needs at least two partners. The Companies (Miscellaneous) Rules, 2014 cap the number at 50 partners (to confirm against the current rules). Partners can be individuals, and a company or LLP can be a partner through an authorised representative. A minor can be admitted to benefits only with all partners' consent.",
         },
         {
           question: "What happens when a partner joins or leaves the firm?",
           answer:
-            "You execute a supplementary or retirement deed recording the change, and notify the Registrar of Firms under Section 63 of the Indian Partnership Act. The firm's PAN stays the same, but GST registration details, bank mandates and authorised signatories must be updated. Until public notice of retirement is given, a retiring partner can remain liable to third parties for the firm's acts.",
+            "You execute a supplementary or retirement deed recording the change and notify the Registrar of Firms under Section 63 of the Indian Partnership Act. The firm's PAN stays the same, but GST details, bank mandates and authorised signatories must be updated. Until public notice of retirement is given, a retiring partner can remain liable for the firm's acts.",
         },
         {
           question: "Should we register a partnership firm or an LLP?",
@@ -151,6 +152,16 @@ export default function Page() {
           </tbody>
         </table>
       </div>
+      <ComparisonTable
+        heading="Registered and unregistered firms"
+        columns={["Point", "Registered firm", "Unregistered firm"]}
+        rows={[
+          ["Enforcing contracts against third parties", "Can sue to enforce contracts", "Cannot sue to enforce a contract (Section 69)"],
+          ["Dealings with banks and departments", "Registration certificate available", "No registration certificate to show"],
+          ["Registration", "Optional; with the Registrar of Firms", "Not registered"],
+          ["Partner changes", "Recorded by deed and notice to the Registrar", "Recorded by deed only"],
+        ]}
+      />
     </ServicePageTemplate>
   );
 }

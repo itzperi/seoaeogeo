@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
@@ -75,12 +76,12 @@ export default function Page() {
         {
           question: "What do banks need to open a proprietorship current account?",
           answer:
-            "Banks follow RBI's KYC rules, which ask for the proprietor's own KYC plus usually two documents showing the business exists in your name. Accepted documents include a GST registration certificate, Udyam registration certificate, Shops and Establishments certificate, municipal trade licence or the proprietor's income tax return reflecting the business. Each bank may ask for specifics, so we check before you visit.",
+            "Banks follow RBI's KYC rules: the proprietor's own KYC plus usually two documents showing the business exists in your name. Accepted documents include a GST registration certificate, Udyam certificate, Shops and Establishments certificate, municipal trade licence or an income tax return reflecting the business. Each bank may ask for specifics, so we check before you visit.",
         },
         {
           question: "Is Shops and Establishments registration mandatory in Tamil Nadu?",
           answer:
-            "It depends on headcount. The Tamil Nadu Labour Department's online registration under the Tamil Nadu Shops and Establishments Act, 1947 is for shops and commercial establishments employing 10 or more persons, following the 2018 amendment. Smaller establishments are generally outside the registration requirement, though the Act's rules on working hours and holidays still apply. A local trade licence is a separate requirement.",
+            "It depends on headcount. Under the Tamil Nadu Shops and Establishments Act, 1947, registration applies to shops and commercial establishments employing 10 or more persons, following the 2018 amendment (to confirm the current threshold on the Labour Department portal). Smaller establishments are generally outside registration, though the Act's rules on hours and holidays may still apply.",
         },
         {
           question: "Do I need GST registration as a proprietor?",
@@ -164,6 +165,17 @@ export default function Page() {
         </Link>{" "}
         guide compares them side by side.
       </p>
+      <ComparisonTable
+        heading="Proprietorship, LLP and private limited company"
+        columns={["Point", "Proprietorship", "LLP", "Private limited"]}
+        rows={[
+          ["Owners", "One individual", "At least two partners", "At least two shareholders and two directors"],
+          ["Liability", "Unlimited; personal assets exposed", "Limited to agreed contribution", "Limited to shares held"],
+          ["Registration", "No separate company registration; GST and Udyam as needed", "FiLLiP with the MCA", "SPICe+ with the MCA"],
+          ["Annual audit", "Only if a tax audit applies", "Only above thresholds", "Every year"],
+          ["Good for", "Small, low-risk businesses", "Professional and family businesses", "Businesses expecting investors"],
+        ]}
+      />
     </ServicePageTemplate>
   );
 }
