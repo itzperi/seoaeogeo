@@ -267,6 +267,54 @@ export const SERVICES: ServiceSummary[] = [
     shortDescription:
       "Indian subsidiary set-up for Singapore parents: apostilled documents, resident director, FDI route, FC-GPR and transfer pricing, Indian-law services.",
   },
+  {
+    slug: "gst-return-filing-for-ecommerce-sellers",
+    name: "GST returns for e-commerce sellers",
+    shortDescription:
+      "GST returns for e-commerce sellers: state-wise GSTR-1, GSTR-3B and marketplace settlements matched first",
+  },
+  {
+    slug: "gst-return-filing-for-amazon-sellers",
+    name: "GST returns for Amazon sellers",
+    shortDescription:
+      "GST returns for Amazon sellers: GSTR-1, GSTR-3B, Amazon TCS and settlements reconciled before each filing",
+  },
+  {
+    slug: "gst-return-filing-for-freelancers",
+    name: "GST returns for freelancers",
+    shortDescription:
+      "GST returns for freelancers: registration limits, Indian and overseas invoices, monthly GSTR-1 and GSTR-3B",
+  },
+  {
+    slug: "gst-return-filing-for-restaurants",
+    name: "GST returns for restaurants",
+    shortDescription:
+      "GST returns for restaurants: composition or regular scheme, delivery platform sales, GSTR-1 and GSTR-3B",
+  },
+  {
+    slug: "gst-return-filing-for-clinics",
+    name: "GST returns for clinics",
+    shortDescription:
+      "GST returns for clinics: exempt and taxable services, medicine sales and input credit checked before filing",
+  },
+  {
+    slug: "gst-return-filing-for-startups",
+    name: "GST returns for startups",
+    shortDescription:
+      "GST returns for startups: the first return set up correctly, input credit on opening stock, monthly filing",
+  },
+  {
+    slug: "gst-return-filing-for-manufacturers",
+    name: "GST returns for manufacturers",
+    shortDescription:
+      "GST returns for manufacturers: input tax credit, inverted duty refunds, job work and GSTR-2B reconciliation",
+  },
+  {
+    slug: "gst-return-filing-for-import-export-businesses",
+    name: "GST returns for importers and exporters",
+    shortDescription:
+      "GST returns for importers and exporters: IGST on imports, LUT for exports, export invoices and refund claims",
+  },
 ];
 
 // Specialist pages for NRIs, overseas businesses and urgent notices. Kept
@@ -374,6 +422,14 @@ export const SERVICE_GROUPS: { label: string; slugs: string[] }[] = [
       "gst-return-filing-chennai",
       "gst-notice-reply-chennai",
       "gst-litigation-chennai",
+      "gst-return-filing-for-ecommerce-sellers",
+      "gst-return-filing-for-amazon-sellers",
+      "gst-return-filing-for-freelancers",
+      "gst-return-filing-for-restaurants",
+      "gst-return-filing-for-clinics",
+      "gst-return-filing-for-startups",
+      "gst-return-filing-for-manufacturers",
+      "gst-return-filing-for-import-export-businesses",
     ],
   },
   {

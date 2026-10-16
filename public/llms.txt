@@ -39,6 +39,14 @@
 - [GST Return Filing](https://www.csrushil.com/gst-return-filing-chennai): Monthly and quarterly GSTR-1 and GSTR-3B, QRMP, CMP-08, GSTR-4 and annual GSTR-9/9C, with GSTR-2B reconciliation before every filing.
 - [GST Notice Reply](https://www.csrushil.com/gst-notice-reply-chennai): Replies to ASMT-10, DRC-01A, DRC-01 and audit notices for Tamil Nadu businesses, before a dispute becomes an appeal.
 - [GST Litigation & Appeals](https://www.csrushil.com/gst-litigation-chennai): Representation for GST show-cause notices, departmental audits, appeals, and GSTAT proceedings for Chennai businesses.
+- [GST Returns: GST returns for e-commerce sellers](https://www.csrushil.com/gst-return-filing-for-ecommerce-sellers): GST returns for e-commerce sellers: state-wise GSTR-1, GSTR-3B and marketplace settlements matched first
+- [GST Returns: GST returns for Amazon sellers](https://www.csrushil.com/gst-return-filing-for-amazon-sellers): GST returns for Amazon sellers: GSTR-1, GSTR-3B, Amazon TCS and settlements reconciled before each filing
+- [GST Returns: GST returns for freelancers](https://www.csrushil.com/gst-return-filing-for-freelancers): GST returns for freelancers: registration limits, Indian and overseas invoices, monthly GSTR-1 and GSTR-3B
+- [GST Returns: GST returns for restaurants](https://www.csrushil.com/gst-return-filing-for-restaurants): GST returns for restaurants: composition or regular scheme, delivery platform sales, GSTR-1 and GSTR-3B
+- [GST Returns: GST returns for clinics](https://www.csrushil.com/gst-return-filing-for-clinics): GST returns for clinics: exempt and taxable services, medicine sales and input credit checked before filing
+- [GST Returns: GST returns for startups](https://www.csrushil.com/gst-return-filing-for-startups): GST returns for startups: the first return set up correctly, input credit on opening stock, monthly filing
+- [GST Returns: GST returns for manufacturers](https://www.csrushil.com/gst-return-filing-for-manufacturers): GST returns for manufacturers: input tax credit, inverted duty refunds, job work and GSTR-2B reconciliation
+- [GST Returns: GST returns for importers and exporters](https://www.csrushil.com/gst-return-filing-for-import-export-businesses): GST returns for importers and exporters: IGST on imports, LUT for exports, export invoices and refund claims
 
 ## Income tax & NRI
 - [Direct Tax](https://www.csrushil.com/direct-tax): Income tax planning, return filing, assessments, and representation before tax authorities.
