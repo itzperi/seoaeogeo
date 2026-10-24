@@ -25,7 +25,7 @@ export default function Header() {
       <div className="container-page flex h-[72px] items-center justify-between gap-4">
         <Link href="/" className="flex shrink-0 items-center gap-3">
           <span className="flex h-11 w-11 items-center justify-center rounded-full border border-carbon bg-white">
-            <Image src="/images/ca-india-badge.png" alt="CA India" width={36} height={36} className="h-9 w-9" />
+            <Image src="/images/ca-india-badge.png" alt="CA India logo" width={36} height={36} className="h-9 w-9" />
           </span>
           <span className="flex flex-col leading-none">
             <span className="text-[22px] uppercase leading-none text-carbon" style={{ fontFamily: "var(--font-display)" }}>

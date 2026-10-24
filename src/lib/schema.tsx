@@ -124,7 +124,8 @@ export function organizationSchema() {
       "ROC compliance",
     ],
     hasMap: GBP_URL,
-    sameAs: [SOCIALS.linkedin, SOCIALS.instagram, GBP_URL],
+    // Instagram left out until the firm confirms the account is the firm's own.
+    sameAs: [SOCIALS.linkedin, GBP_URL],
   };
 }
 
