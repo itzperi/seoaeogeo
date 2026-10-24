@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
+import StartingFees from "@/components/StartingFees";
+import { STARTING_FEES } from "@/lib/fees-and-timing";
 
 export const metadata: Metadata = {
   title: { absolute: "Income Tax Notice Reply in Chennai | Scrutiny Support" },
@@ -64,6 +66,8 @@ export default function Page() {
         { question: "I have a GST notice as well. How is that answered?", href: "/gst-notice-reply-chennai" },
       ]}
       relatedSlugs={["direct-tax", "tax-audit-chennai", "gst-notice-reply-chennai"]}
-    />
+    >
+      <StartingFees fee={STARTING_FEES["/income-tax-notice-reply-chennai"] ?? null} />
+    </ServicePageTemplate>
   );
 }

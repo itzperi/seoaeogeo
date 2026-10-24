@@ -3,6 +3,8 @@ import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
+import StartingFees from "@/components/StartingFees";
+import { STARTING_FEES } from "@/lib/fees-and-timing";
 
 const title = "Annual Compliance Package for Companies | C S Rushil & Co.";
 const description =
@@ -148,6 +150,7 @@ export default function Page() {
           ["GST and TDS returns", "Registered businesses and deductors", "Sales and purchase records, payroll and payments", "To confirm on cbic-gst.gov.in and incometax.gov.in"],
         ]}
       />
+      <StartingFees fee={STARTING_FEES["/annual-compliance-package"] ?? null} />
     </ServicePageTemplate>
   );
 }

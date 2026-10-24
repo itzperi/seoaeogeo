@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
+import StartingFees from "@/components/StartingFees";
+import { STARTING_FEES } from "@/lib/fees-and-timing";
 
 const title = "GSTR-1, 3B and 9 Filing in Chennai | C S Rushil & Co.";
 const description =
@@ -175,6 +177,7 @@ export default function Page() {
         </Link>{" "}
         page.
       </p>
+      <StartingFees fee={STARTING_FEES["/gst-return-filing-chennai"] ?? null} />
     </ServicePageTemplate>
   );
 }
