@@ -1,5 +1,5 @@
 import TrackedAnchor from "@/components/TrackedAnchor";
-import { GOOGLE_REVIEWS, SHOW_GOOGLE_REVIEWS } from "@/lib/reviews";
+import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT, GOOGLE_REVIEWS, SHOW_GOOGLE_REVIEWS } from "@/lib/reviews";
 import { BOOKING_LINK, GBP_URL } from "@/lib/site";
 
 // Sticker-palette fills for the review cards (black text passes AA on all).
@@ -66,6 +66,15 @@ export default function GoogleReviews({
             Read all reviews on Google →
           </a>
         </div>
+
+        {GOOGLE_RATING !== null && GOOGLE_REVIEW_COUNT !== null && (
+          <p className="mt-4 text-sm text-slate">
+            Rated {GOOGLE_RATING.toFixed(1)} out of 5 from {GOOGLE_REVIEW_COUNT} Google reviews.{" "}
+            <a href={GBP_URL} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+              See all reviews on Google
+            </a>
+          </p>
+        )}
 
         <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-3">
           {GOOGLE_REVIEWS.map((review, i) => (

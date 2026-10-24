@@ -10,6 +10,13 @@
 
 export const SHOW_GOOGLE_REVIEWS = true;
 
+// Overall rating and total count from the firm's Google Business Profile.
+// Fill these from the profile itself (never estimate). While both are null the
+// site shows no rating line. Do not add Review or AggregateRating schema.
+// {{GOOGLE_RATING}} and {{GOOGLE_REVIEW_COUNT}} are the placeholders to fill.
+export const GOOGLE_RATING: number | null = null;
+export const GOOGLE_REVIEW_COUNT: number | null = null;
+
 export type GoogleReview = {
   name: string;
   rating: 1 | 2 | 3 | 4 | 5;
