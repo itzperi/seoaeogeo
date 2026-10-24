@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
+import Glossary from "@/components/Glossary";
 
 const title = "FEMA and RBI Compliance in India | C S Rushil & Co.";
 const description =
@@ -210,6 +211,7 @@ export default function Page() {
         is complete by July, and from provisional figures otherwise, with a revision once the audit is signed. Our team
         handles this work from Anna Nagar, Chennai, for companies across India.
       </p>
+      <Glossary terms={["FC-GPR"]} />
     </ServicePageTemplate>
   );
 }

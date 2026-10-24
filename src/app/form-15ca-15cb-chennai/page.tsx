@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
+import Glossary from "@/components/Glossary";
 
 const title = "Form 15CA and 15CB Filing in Chennai | C S Rushil & Co.";
 const description =
@@ -131,6 +132,7 @@ export default function Page() {
         </Link>
         .
       </p>
+      <Glossary terms={["Form 15CA and 15CB"]} />
     </ServicePageTemplate>
   );
 }

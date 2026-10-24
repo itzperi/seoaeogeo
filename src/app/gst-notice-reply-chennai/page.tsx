@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
+import Glossary from "@/components/Glossary";
 
 export const metadata: Metadata = {
   title: { absolute: "GST Notice Replies in Chennai: DRC-01 | C S Rushil & Co." },
@@ -65,6 +66,8 @@ export default function Page() {
       ]}
       relatedPosts={["section-74a-gst-notice"]}
       relatedSlugs={["gst-litigation-chennai", "goods-and-services-tax", "income-tax-notice-reply-chennai"]}
-    />
+    >
+      <Glossary terms={["DRC-01", "ASMT-10"]} />
+    </ServicePageTemplate>
   );
 }
