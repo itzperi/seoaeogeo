@@ -27,7 +27,7 @@ const TEAM = [
   { name: "Darsan Kanna", photo: "/images/team/darsan-kanna.webp", linkedin: "https://www.linkedin.com/in/darsan-kanna-v-684208253" },
   { name: "Harini", photo: "/images/team/harini.webp" },
   { name: "Athulia", photo: "/images/team/athulia.webp" },
-  { name: "Ajay C", photo: "/images/team/ajay-c.webp", linkedin: "https://www.linkedin.com/in/ajay-m-578a21232" },
+  { name: "Ajay M", photo: "/images/team/ajay-c.webp", linkedin: "https://www.linkedin.com/in/ajay-m-578a21232" },
   { name: "Omair Khan", photo: "/images/team/omair-khan.png", linkedin: "https://www.linkedin.com/in/omairxkhan" },
 ];
 
