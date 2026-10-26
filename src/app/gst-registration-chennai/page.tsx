@@ -60,7 +60,7 @@ export default function Page() {
         { question: "What if I've already received a GST notice or demand?", href: "/gst-litigation-chennai" },
         { question: "Should I register my company before or after GST registration?", href: "/company-registration-chennai" },
       ]}
-      relatedSlugs={["goods-and-services-tax", "gst-litigation-chennai", "company-registration-chennai"]}
+      relatedSlugs={["goods-and-services-tax", "gst-litigation-chennai", "company-registration-chennai", "private-limited-company-incorporation-chennai"]}
     />
   );
 }

@@ -11,15 +11,15 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/private-limited-company-incorporation-chennai`;
 
 export const metadata: Metadata = {
-  title: { absolute: "Private Limited Incorporation in Chennai | C S Rushil & Co." },
+  title: { absolute: "Pvt Ltd Company Incorporation in Chennai | C S Rushil & Co." },
   description:
-    "SPICe+ incorporation in Chennai: DIN and DSC, name approval, MoA and AoA, and post-incorporation filings. Book a consultation online or visit our office.",
+    "Pvt Ltd company incorporation & registration in Chennai: SPICe+ filing, DIN, DSC, MoA/AoA, and ROC compliance. Book a consultation at our Anna Nagar office.",
   alternates: { canonical: "/private-limited-company-incorporation-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "Private Limited Incorporation in Chennai | C S Rushil & Co.",
+    title: "Pvt Ltd Company Incorporation in Chennai | C S Rushil & Co.",
     description:
-      "Pvt Ltd company incorporation in Chennai through SPICe+, with a step-by-step timeline, document checklist and first-year compliance calendar.",
+      "Pvt Ltd company incorporation & registration in Chennai: SPICe+ filing, DIN, DSC, MoA/AoA, and ROC compliance. Book a consultation at our Anna Nagar office.",
     url: "/private-limited-company-incorporation-chennai",
   },
 };
@@ -230,7 +230,7 @@ export default function IncorporationPage() {
         <div className="container-page grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-12">
             <div>
-              <h2 className="text-2xl text-obsidian">How does private limited company registration in Chennai work?</h2>
+              <h2 className="text-2xl text-obsidian">How does Pvt Ltd company incorporation and registration in Chennai work?</h2>
               <p id="direct-answer" className="mt-4 leading-relaxed text-slate">
                 Private limited company registration in Chennai is an online SPICe+ application to the Ministry of
                 Corporate Affairs under the Companies Act, 2013. It needs two directors, two shareholders, digital

@@ -185,7 +185,7 @@ export default function Page() {
         { question: "How should I reply to an income tax notice?", href: "/income-tax-notice-reply-chennai" },
         { question: "What happens in a scrutiny or reassessment proceeding?", href: "/income-tax-assessment-appeals-chennai" },
       ]}
-      relatedSlugs={["income-tax-return-filing-chennai", "nri-tax-services", "income-tax-assessment-appeals-chennai"]}
+      relatedSlugs={["income-tax-return-filing-chennai", "nri-tax-services", "income-tax-assessment-appeals-chennai", "private-limited-company-incorporation-chennai"]}
       relatedPosts={["foreign-rsu-tax-schedule-fa-chennai", "joint-development-agreement-tax-chennai", "rnor-status-returning-nri", "capital-gains-tax-property-sale", "advance-tax-deadlines", "old-vs-new-tax-regime", "nri-itr-filing"]}
     >
       <h2 className={h2Class}>Who counts as an HNI for tax purposes, and how does surcharge work?</h2>

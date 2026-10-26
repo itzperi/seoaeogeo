@@ -103,7 +103,7 @@ export default function Page() {
         { question: "What does LLP registration involve?", href: "/llp-registration-chennai" },
         { question: "Does a new partnership firm need GST registration?", href: "/gst-registration-chennai" },
       ]}
-      relatedSlugs={["company-registration-chennai", "llp-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "income-tax-return-filing-chennai", "bookkeeping-services-chennai"]}
+      relatedSlugs={["company-registration-chennai", "llp-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "income-tax-return-filing-chennai", "bookkeeping-services-chennai", "private-limited-company-incorporation-chennai"]}
       relatedPosts={["llp-vs-opc-vs-pvt-ltd", "gst-threshold-is-a-trigger", "msme-udyam-registration-checklist", "business-personal-expenses-separate"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Who should register a partnership firm?</h2>
@@ -119,7 +119,11 @@ export default function Page() {
         <Link href="/company-registration-chennai" className="text-royal-violet underline underline-offset-2">
           company registration in Chennai
         </Link>{" "}
-        page first.
+        page first. If you are weighing a Pvt Ltd company, our page on{" "}
+        <Link href="/private-limited-company-incorporation-chennai" className="text-royal-violet underline underline-offset-2">
+          incorporating a Pvt Ltd company in Chennai
+        </Link>{" "}
+        covers the process.
       </p>
 
       <h2 className="mt-14 text-2xl text-obsidian">What compliance applies after registration?</h2>

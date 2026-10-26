@@ -184,8 +184,12 @@ export default function Page() {
     >
       <h2 className="mt-14 text-2xl text-obsidian">How do Pvt Ltd, LLP, OPC, partnership, proprietorship and Section 8 compare?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">
-        Timelines below are what we typically see once documents are ready; government processing can vary. Foreign-owned businesses
-        should also read our page on{" "}
+        Timelines below are what we typically see once documents are ready; government processing can vary. To register a Pvt Ltd company, see
+        our page on{" "}
+        <Link href="/private-limited-company-incorporation-chennai" className="text-royal-violet underline underline-offset-2">
+          Pvt Ltd company incorporation in Chennai
+        </Link>
+        . Foreign-owned businesses should also read our page on{" "}
         <Link href="/company-registration-india-for-foreigners" className="text-royal-violet underline underline-offset-2">
           company registration in India for foreigners
         </Link>

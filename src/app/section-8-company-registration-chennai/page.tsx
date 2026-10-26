@@ -112,7 +112,7 @@ export default function Page() {
         { question: "How does a Section 8 company compare with other structures?", href: "/company-registration-chennai" },
         { question: "What audit does a not-for-profit company need?", href: "/audit-and-assurance" },
       ]}
-      relatedSlugs={["trust", "company-registration-chennai", "audit-and-assurance", "roc-compliances", "digital-signature-certificate-chennai", "annual-compliance-package"]}
+      relatedSlugs={["trust", "company-registration-chennai", "audit-and-assurance", "roc-compliances", "digital-signature-certificate-chennai", "annual-compliance-package", "private-limited-company-incorporation-chennai"]}
       relatedPosts={["trust-vs-society-vs-section8", "12a-80g-registration-guide-chennai-ngos", "fcra-registration"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Who is eligible to register a Section 8 company?</h2>
@@ -164,7 +164,11 @@ export default function Page() {
         <Link href="/company-registration-chennai" className="text-royal-violet underline underline-offset-2">
           company registration in Chennai
         </Link>{" "}
-        page.
+        page. If you want a for-profit company instead of a Section 8 company, see our page on{" "}
+        <Link href="/private-limited-company-incorporation-chennai" className="text-royal-violet underline underline-offset-2">
+          Private Limited company registration in Chennai
+        </Link>
+        .
       </p>
       <ComparisonTable
         heading="Section 8 company, trust and society"

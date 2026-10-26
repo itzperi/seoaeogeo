@@ -86,7 +86,7 @@ export default function Page() {
         { question: "Does every company need a statutory audit?", answer: "Yes. Every company registered under the Companies Act, 2013 needs its accounts audited every year, however small its turnover, and the audited accounts are filed in AOC-4. LLPs need an audit only if turnover exceeds ₹40 lakh or contribution exceeds ₹25 lakh." },
         { question: "Why does the order of annual filings matter?", answer: "Each filing depends on the one before it. The audit needs closed books; the AGM adopts the audited accounts; AOC-4 and MGT-7 follow the AGM; and GSTR-9 should match the audited figures. When one team runs the whole sequence, a delay at one stage does not cascade into late fees." },
       ]}
-      relatedSlugs={["roc-compliances", "statutory-audit-chennai", "bookkeeping-services-chennai"]}
+      relatedSlugs={["roc-compliances", "statutory-audit-chennai", "bookkeeping-services-chennai", "private-limited-company-incorporation-chennai"]}
       relatedPosts={["post-incorporation-compliance-checklist", "annual-roc-filing-calendar", "llp-annual-filing-form8-form11", "statutory-audit-checklist", "common-compliance-mistakes-chennai-startups"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Annual compliance calendar for a 31 March year end</h2>
