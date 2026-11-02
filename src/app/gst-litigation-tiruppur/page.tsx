@@ -52,12 +52,6 @@ function Table({ head, rows }: { head: string[]; rows: string[][] }) {
   );
 }
 
-const TIMELINE = [
-  ["Refund deficiency or SCN (RFD-03 / RFD-08)", "Deficiency memo: refile a corrected claim. RFD-08: reply in RFD-09 within the time stated, usually 15 days", "No pre-deposit. Reply with shipping bills, BRCs and the revised computation", "Proper officer handling the refund"],
-  ["Refund order (RFD-06)", "Order rejecting or reducing the claim, after a chance to be heard", "Check whether the reasons match the RFD-08 grounds; new grounds in the order are themselves appealable", "Proper officer"],
-  ["First appeal", "3 months from communication of the order, plus up to 1 month on sufficient cause", "Form APL-01 on the GST portal. For a pure refund rejection there is usually no tax demand, so the 10% pre-deposit on disputed tax generally does not arise", "Appellate Authority; hearing in person or by video, as allowed"],
-  ["Second appeal (GSTAT)", "3 months from communication of the appellate order, plus up to 3 months on sufficient cause", "Form APL-05 on the GSTAT e-filing portal. A further 10% of any tax still in dispute (cap ₹20 crore CGST + ₹20 crore SGST)", "A Tamil Nadu State Bench assigned by the portal (Chennai, Coimbatore or Madurai)"],
-];
 
 const DISPUTES = [
   ["IGST refund on exports with payment of tax", "Shipping bill refund held because invoice details in GSTR-1 do not match the shipping bill, or the exporter is flagged for risk verification", "Table 6A and shipping bill reconciliation, correction through the GST and customs systems, and a written request for release"],
@@ -165,7 +159,14 @@ export default function Page() {
         memo, which simply requires a corrected claim, or a show-cause notice in RFD-08 proposing to reject or reduce it. Only
         after the RFD-06 order does the appeal clock start.
       </p>
-      <Table head={["Step", "Time limit", "Form and pre-deposit", "Where it is heard"]} rows={TIMELINE} />
+      <p className={P}>
+        In short: a first appeal in Form APL-01 within 3 months of the order with 10% of the disputed tax as
+        pre-deposit, then a second appeal in Form APL-05 to a Tamil Nadu GSTAT State Bench within 3 months with a
+        further 10%. The full appeal ladder, with forums, condonation periods and pre-deposit caps, is set out once
+        on our Tamil Nadu hub page,{" "}
+        <Link href="/gst-litigation-chennai" className={LINK}>GST Litigation &amp; Appeals in Chennai</Link>. Beyond
+        the Tribunal, an appeal lies to the Madras High Court within 180 days, on a substantial question of law.
+      </p>
       <p className="mt-3 max-w-3xl text-xs text-slate">
         Refund and appeal provisions are in Sections 54, 107 and 112 of the CGST Act and Rules 89 to 96 of the CGST Rules, on{" "}
         <a href="https://cbic-gst.gov.in/gst-acts.html" target="_blank" rel="noopener noreferrer" className={LINK}>

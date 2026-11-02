@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 import ContactBar from "@/components/ContactBar";
 import EnquiryModal from "@/components/WhatsAppEnquiry";
 import Marquee from "@/components/Marquee";
-import { JsonLd, organizationSchema, personSchema, websiteSchema } from "@/lib/schema";
+import { JsonLd, siteGraph } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
 
 // GA4 loads only when a measurement ID is configured (Vercel env var).
@@ -59,9 +59,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </Script>
           </>
         )}
-        <JsonLd data={organizationSchema()} />
-        <JsonLd data={personSchema()} />
-        <JsonLd data={websiteSchema()} />
+        <JsonLd data={siteGraph()} />
         <Marquee />
         <Header />
         <main className="flex-1">{children}</main>

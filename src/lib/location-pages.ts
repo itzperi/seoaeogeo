@@ -28,7 +28,7 @@ export const LOCATION_PAGES: LocationPage[] = [
 // Chennai pillar each location-page family links back to.
 export const LOCATION_PILLARS: Record<string, { href: string; label: string }> = {
   "Income tax consultation": { href: "/income-tax-consultant-for-hni-chennai", label: "Income tax for HNIs in Chennai" },
-  "GST litigation": { href: "/gst-litigation-chennai", label: "GST litigation in Chennai" },
+  "GST litigation": { href: "/gst-litigation-chennai", label: "GST Litigation & Appeals in Chennai (Tamil Nadu hub)" },
 };
 
 // Cross-links for a location page (its pillar plus sibling cities) or for a

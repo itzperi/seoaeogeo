@@ -4,25 +4,50 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
+import SiloLinks from "@/components/SiloLinks";
+import { JsonLd, moneyPageGraph } from "@/lib/schema";
 import { getPostMeta, isPublished } from "@/lib/blog";
-import { SITE_URL } from "@/lib/site";
+import { PAGE_DATES } from "@/lib/page-dates";
 
-const PAGE_URL = `${SITE_URL}/private-limited-company-incorporation-chennai`;
+const PATH = "/private-limited-company-incorporation-chennai";
+const TITLE = "Private Limited Company Registration in Chennai | C S Rushil";
+const DESCRIPTION =
+  "Register a Private Limited Company in Chennai in 7–12 days via SPICe+. CA-assisted ROC Chennai filing, DSC, DIN, PAN/TAN & transparent MCA fees. Call now.";
 
 export const metadata: Metadata = {
-  title: { absolute: "Pvt Ltd Company Incorporation in Chennai | C S Rushil & Co." },
-  description:
-    "Pvt Ltd company incorporation & registration in Chennai: SPICe+ filing, DIN, DSC, MoA/AoA, and ROC compliance. Book a consultation at our Anna Nagar office.",
-  alternates: { canonical: "/private-limited-company-incorporation-chennai" },
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
+  alternates: { canonical: PATH },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "Pvt Ltd Company Incorporation in Chennai | C S Rushil & Co.",
-    description:
-      "Pvt Ltd company incorporation & registration in Chennai: SPICe+ filing, DIN, DSC, MoA/AoA, and ROC compliance. Book a consultation at our Anna Nagar office.",
-    url: "/private-limited-company-incorporation-chennai",
+    title: "Private Limited Company Registration in Chennai",
+    description: DESCRIPTION,
+    url: PATH,
   },
 };
+
+// Government-side costs only (ICAI: no professional fees on the site).
+// Figures match /blog/government-fees-company-registration and
+// /blog/tamil-nadu-stamp-duty-company-incorporation; SPICe+ shows the
+// amount actually payable at filing.
+const GOVT_COSTS = [
+  ["Digital Signature Certificates", "2 Class 3 DSCs, one per subscriber-director, with eKYC or video verification", "Priced by the Certifying Authority, not the MCA"],
+  ["SPICe+ Part A name reservation", "Only if you reserve the name before filing Part B", "₹1,000; nil when the name is applied for directly in Part B"],
+  ["SPICe+ Part B filing fee", "Covers the incorporation form and the MoA and AoA fees", "Zero for authorised capital up to ₹15 lakh"],
+  ["Tamil Nadu stamp duty on e-MoA (INC-33)", "Article 39, Indian Stamp Act as amended for Tamil Nadu in 2023", "₹200"],
+  ["Tamil Nadu stamp duty on e-AoA (INC-34)", "Article 10: ₹500 per ₹10 lakh of authorised capital or part, capped at ₹5 lakh", "₹500 up to ₹10 lakh; ₹1,000 at ₹15 lakh"],
+  ["PAN and TAN through AGILE-PRO-S (INC-35)", "GSTIN, EPFO and ESIC applied for in the same form at no fee", "₹66 (PAN) + ₹65 (TAN)"],
+  ["After incorporation", "Tamil Nadu Professional Tax enrolment with the Greater Chennai Corporation, Shops and Establishments registration (Form A), Udyam registration", "As charged by each authority; Udyam registration is free"],
+];
+
+// Why the Central Registration Centre sends SPICe+ forms back for Chennai
+// applicants, in the order we see them.
+const RESUBMISSION_TRIGGERS = [
+  { title: "Registered office proof in another name", text: "The TNEB electricity bill or Greater Chennai Corporation property tax receipt is in a name different from the owner who signed the no-objection certificate." },
+  { title: "PAN and Aadhaar details that do not match", text: "A director's name, date of birth or father's name differs between PAN and Aadhaar, often a missing middle name or initial." },
+  { title: "Generic main objects", text: "An objects clause such as 'all kinds of trading and services' instead of the specific business the company will carry on." },
+  { title: "Name too close to an existing company or trademark", text: "Proposed names that resemble a registered company, LLP or trademark, or use words that need central government approval." },
+];
 
 const LINK = "text-royal-violet underline underline-offset-2";
 const TH = "p-4 font-medium text-obsidian";
@@ -190,6 +215,11 @@ const RELATED_POSTS = [
   "common-compliance-mistakes-chennai-startups",
 ];
 
+const CRUMBS = [
+  { name: "Company Registration", href: "/company-registration-chennai" },
+  { name: "Private Limited Company Registration in Chennai", href: PATH },
+];
+
 export default function IncorporationPage() {
   const guides = RELATED_POSTS.map(getPostMeta).filter(
     (p): p is NonNullable<typeof p> => Boolean(p) && isPublished(p!.date),
@@ -197,33 +227,50 @@ export default function IncorporationPage() {
   return (
     <>
       <JsonLd
-        data={serviceSchema({
-          name: "Private Limited Company Registration in Chennai",
-          description:
-            "SPICe+ registration of private limited companies for businesses in Chennai and across Tamil Nadu, including DSC, DIN, name approval, e-MoA/e-AoA and first-year ROC compliance.",
-          url: PAGE_URL,
-          serviceType: "Business Incorporation",
+        data={moneyPageGraph({
+          path: PATH,
+          name: TITLE,
+          description: DESCRIPTION,
+          dateModified: PAGE_DATES[PATH],
+          service: {
+            name: "Private Limited Company Registration in Chennai",
+            serviceType: "Private Limited Company Registration and Incorporation",
+            description:
+              "SPICe+ registration of private limited companies with ROC Chennai, including DSC, DIN, name approval, e-MoA/e-AoA, PAN/TAN and first-year ROC compliance.",
+            offers: [
+              "Digital Signature Certificates and DIN",
+              "SPICe+ name reservation and incorporation filing",
+              "e-MoA (INC-33) and e-AoA (INC-34) drafting",
+              "PAN, TAN, GSTIN, EPFO and ESIC through AGILE-PRO-S",
+              "Professional Tax, Shops and Establishments and Udyam registration",
+              "First-year ROC compliance: ADT-1, INC-20A, share certificates",
+            ],
+          },
+          faqs: FAQS,
+          crumbs: CRUMBS,
+          howTo: {
+            name: "How to register a private limited company in Chennai",
+            description: "Step-by-step process for registering a private limited company through the MCA's SPICe+ form.",
+            steps: STEPS,
+          },
+          speakable: ["#lead-answer", "#direct-answer"],
         })}
       />
-      <JsonLd
-        data={howToSchema({
-          name: "How to register a private limited company in Chennai",
-          description: "Step-by-step process for registering a private limited company through the MCA's SPICe+ form.",
-          steps: STEPS,
-        })}
-      />
-      <JsonLd data={speakableSchema(["#direct-answer"])} />
-      <Breadcrumbs
-        items={[
-          { name: "Company Registration", href: "/company-registration-chennai" },
-          { name: "Private Limited Company Registration", href: "/private-limited-company-incorporation-chennai" },
-        ]}
-      />
+      <Breadcrumbs items={CRUMBS} schema={false} />
       <PageHero
-        reviewedPath="/private-limited-company-incorporation-chennai"
+        reviewedPath={PATH}
+        schema={false}
         eyebrow="Company Registration · Chennai"
         h1="Private Limited Company Registration in Chennai"
-        subhead="Pvt Ltd company incorporation through SPICe+ — DSC, DIN, name approval, e-MoA/e-AoA, PAN/TAN and first-year compliance — handled by a chartered accountant firm in Anna Nagar, Chennai, for founders across the city and Tamil Nadu."
+        lead={
+          <>
+            Planning <strong>Private Limited Company registration in Chennai</strong>? C S Rushil &amp; Co., a{" "}
+            <strong>chartered accountancy firm</strong> in Anna Nagar, files your SPICe+ incorporation with the{" "}
+            <strong>Registrar of Companies, Chennai</strong>: DSCs, DIN, name approval, e-MoA and e-AoA, PAN and TAN,
+            usually within 7–12 working days once documents are ready.
+          </>
+        }
+        subhead="Pvt Ltd company incorporation via SPICe+ with ROC Chennai, through to first-year compliance, for founders across the city and Tamil Nadu."
       />
 
       <section className="bg-paper py-16">
@@ -257,7 +304,7 @@ export default function IncorporationPage() {
             </div>
 
             <div className="overflow-hidden rounded-cards border border-carbon">
-              <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">Key facts</h2>
+              <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">What are the key facts at a glance?</h2>
               <dl className="divide-y divide-ash bg-paper">
                 {[
                   { label: "Typical time", value: "7–12 working days once documents are ready; about 3 weeks if you are collecting documents from scratch." },
@@ -273,6 +320,77 @@ export default function IncorporationPage() {
                   </div>
                 ))}
               </dl>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">What are the government fees and Tamil Nadu stamp duty for a Pvt Ltd company?</h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                For a Chennai company with authorised capital of up to ₹15 lakh, the government side is mainly Tamil
+                Nadu stamp duty (₹700 to ₹1,200) and PAN and TAN (₹131), plus the cost of two DSCs, because the MCA
+                filing fee in that band is zero.
+              </p>
+              <div className="mt-4 overflow-x-auto rounded-cards border border-ash">
+                <table className="w-full min-w-[720px] border-collapse text-sm">
+                  <caption className="sr-only">Government fees and Tamil Nadu stamp duty for private limited company registration</caption>
+                  <thead>
+                    <tr className="bg-fog text-left">
+                      <th className={TH}>Cost component</th>
+                      <th className={TH}>What it covers</th>
+                      <th className={TH}>Government charge</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-paper">
+                    {GOVT_COSTS.map(([item, covers, charge]) => (
+                      <tr key={item} className="border-t border-ash align-top">
+                        <td className={`${TD} font-medium text-obsidian`}>{item}</td>
+                        <td className={TD}>{covers}</td>
+                        <td className={TD}>{charge}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-3 text-xs text-slate">
+                Government charges only. Our professional fee is quoted separately after scoping. SPICe+ computes the
+                stamp duty payable at filing, which is the figure that counts. Details:{" "}
+                <Link href="/blog/government-fees-company-registration" className={LINK}>
+                  government fees for company registration
+                </Link>{" "}
+                and{" "}
+                <Link href="/blog/tamil-nadu-stamp-duty-company-incorporation" className={LINK}>
+                  stamp duty on company incorporation in Tamil Nadu
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">Which ROC handles a Chennai company, and why do applications get resubmitted?</h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                The Registrar of Companies, Chennai, at Shastri Bhavan, 26 Haddows Road, Nungambakkam, is the ROC for
+                companies with a registered office in Chennai and most of Tamil Nadu, while ROC Coimbatore covers nine
+                western districts. SPICe+ forms are examined by the MCA&apos;s Central Registration Centre (CRC), so
+                founders do not need to visit Haddows Road; later ROC filings and notices come from ROC Chennai.
+              </p>
+              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {RESUBMISSION_TRIGGERS.map((t) => (
+                  <div key={t.title} className="rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]">
+                    <h3 className="font-medium text-obsidian">{t.title}</h3>
+                    <p className="mt-1 text-sm text-slate">{t.text}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-4 text-sm text-slate">
+                How the two Registrars divide Tamil Nadu is covered in{" "}
+                <Link href="/blog/roc-chennai-vs-roc-coimbatore" className={LINK}>
+                  ROC Chennai vs ROC Coimbatore
+                </Link>
+                , and name objections in{" "}
+                <Link href="/blog/company-name-rejection-reasons" className={LINK}>
+                  why company names get rejected
+                </Link>
+                .
+              </p>
             </div>
 
             <div>
@@ -469,7 +587,7 @@ export default function IncorporationPage() {
 
             <div id="anna-nagar">
               <h2 className="text-2xl text-obsidian">
-                Private limited company registration in Anna Nagar
+                Can you register a private limited company in Anna Nagar in person?
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
                 Our office is at J-Block, 1st Street, 13th Main Rd, Anna Nagar,
@@ -612,8 +730,9 @@ export default function IncorporationPage() {
         </div>
       </section>
 
-      {/* CHECK fee schedule: the firm supplies the 2026 government fees and its own professional fees. Add a fee table here only from that source. */}
-      <FAQSection items={FAQS} />
+      <SiloLinks path={PATH} />
+
+      <FAQSection items={FAQS} schema={false} />
 
       <section className="bg-paper py-12">
         <div className="container-page">

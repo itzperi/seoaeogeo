@@ -2,6 +2,7 @@ import TrackedAnchor from "@/components/TrackedAnchor";
 import { EnquireButton } from "@/components/WhatsAppEnquiry";
 import { CheckSticker, CoinSticker, DocSticker, Ribbon } from "@/components/Stickers";
 import Link from "next/link";
+import type { ReactNode } from "react";
 import { PAGE_DATES } from "@/lib/page-dates";
 import { JsonLd, webPageReviewSchema } from "@/lib/schema";
 import { BOOKING_LINK, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
@@ -14,6 +15,8 @@ export default function PageHero({
   subhead,
   reviewedPath,
   service,
+  schema = true,
+  lead,
 }: {
   eyebrow: string;
   h1: string;
@@ -22,11 +25,15 @@ export default function PageHero({
   reviewedPath?: string;
   /** Service named in the pre-typed WhatsApp enquiry (defaults to the H1). */
   service?: string;
+  /** false when the page emits its WebPage node inside its own @graph. */
+  schema?: boolean;
+  /** 40–55 word direct answer shown as the first paragraph under the H1. */
+  lead?: ReactNode;
 }) {
   const updated = reviewedPath ? PAGE_DATES[reviewedPath] : undefined;
   return (
     <>
-    {reviewedPath && updated && <JsonLd data={webPageReviewSchema(reviewedPath, h1, updated)} />}
+    {schema && reviewedPath && updated && <JsonLd data={webPageReviewSchema(reviewedPath, h1, updated)} />}
     <section className="relative overflow-hidden border-b border-carbon bg-sky-wash">
       <Ribbon className="pointer-events-none absolute -bottom-6 left-0 h-40 w-full opacity-90 md:h-56" />
       <CoinSticker className="pointer-events-none absolute right-[6%] top-10 hidden w-20 rotate-12 md:block" />
@@ -36,8 +43,25 @@ export default function PageHero({
       <div className="container-page relative pb-28 pt-12 md:pb-40 md:pt-16">
         <p className="sticker-tag bg-sunburst">{eyebrow}</p>
         <h1 className="mt-6 max-w-4xl text-[44px] text-carbon sm:text-6xl md:text-7xl lg:text-[88px]">{h1}</h1>
-        <p className="mt-6 max-w-2xl text-lg leading-relaxed text-carbon md:text-xl">{subhead}</p>
-        {reviewedPath && updated && (
+        {lead && reviewedPath && updated && (
+          <div className="mt-5 text-sm text-carbon/80">
+            Reviewed by{" "}
+            <Link href="/about-us" className="font-semibold underline underline-offset-2">
+              {FOUNDER_NAME}
+            </Link>
+            , Chartered Accountant · Updated{" "}
+            <time dateTime={updated}>
+              {new Date(`${updated}T00:00:00Z`).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })}
+            </time>
+          </div>
+        )}
+        {lead && (
+          <p id="lead-answer" className="mt-6 max-w-3xl text-lg leading-relaxed text-carbon md:text-xl">
+            {lead}
+          </p>
+        )}
+        <p className={`${lead ? "mt-4 text-base md:text-lg" : "mt-6 text-lg md:text-xl"} max-w-2xl leading-relaxed text-carbon`}>{subhead}</p>
+        {!lead && reviewedPath && updated && (
           <p className="mt-4 text-sm text-carbon/80">
             Reviewed by{" "}
             <Link href="/about-us" className="font-semibold underline underline-offset-2">

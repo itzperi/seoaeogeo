@@ -2,11 +2,12 @@ import { JsonLd, faqSchema } from "@/lib/schema";
 
 export type FAQItem = { question: string; answer: string };
 
-export default function FAQSection({ items }: { items: FAQItem[] }) {
+// schema={false} when the page emits its FAQPage inside its own @graph.
+export default function FAQSection({ items, schema = true }: { items: FAQItem[]; schema?: boolean }) {
   return (
     <section className="bg-fog py-16">
       <div className="container-page">
-        <JsonLd data={faqSchema(items)} />
+        {schema && <JsonLd data={faqSchema(items)} />}
         <p className="eyebrow text-sm text-slate">FAQ</p>
         <h2 className="mt-3 text-3xl text-obsidian">
           Frequently asked questions

@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
+import SiloLinks from "@/components/SiloLinks";
 import { LOCATION_PAGES, locationLinks } from "@/lib/location-pages";
 import { INTERNATIONAL_AREAS, JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { TN_CITY_PAGES } from "@/lib/tn-cities";
@@ -37,6 +38,7 @@ export default function ServicePageTemplate({
   parentCrumb,
   keyFacts = [],
   relatedPosts = [],
+  topBanner,
   children,
 }: {
   pageUrl: string;
@@ -61,6 +63,8 @@ export default function ServicePageTemplate({
   keyFacts?: KeyFact[];
   /** Blog slugs shown as "Related guides" (3–5). Unpublished/unknown slugs are skipped. */
   relatedPosts?: string[];
+  /** Above-the-fold callout, e.g. pointing early-stage pages at their money page. */
+  topBanner?: ReactNode;
   /** Extra page-specific sections (tables, decision guides), rendered after the process steps. */
   children?: ReactNode;
 }) {
@@ -96,6 +100,7 @@ export default function ServicePageTemplate({
 
       <section className="bg-paper py-16">
         <div className="container-page">
+          {topBanner && <div className="mb-10 max-w-3xl">{topBanner}</div>}
           {keyFacts.length > 0 && (
             <div className="mb-12 max-w-3xl overflow-hidden rounded-cards border border-carbon">
               <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">Key facts</h2>
@@ -217,6 +222,8 @@ export default function ServicePageTemplate({
           </nav>
         </section>
       )}
+
+      <SiloLinks path={crumbHref} />
 
       <FAQSection items={faqs} />
 

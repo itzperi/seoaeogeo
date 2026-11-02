@@ -52,12 +52,6 @@ function Table({ head, rows }: { head: string[]; rows: string[][] }) {
   );
 }
 
-const TIMELINE = [
-  ["Show-cause notice reply", "Within the time stated, usually 30 days", "No pre-deposit. Reply in DRC-06 with the supply chain and delivery documents", "Proper officer in Tamil Nadu (Central GST or State Commercial Taxes)"],
-  ["First appeal", "3 months from communication of the order, plus up to 1 month on sufficient cause", "Form APL-01. Admitted amount plus 10% of disputed tax (cap ₹20 crore CGST + ₹20 crore SGST, or ₹40 crore IGST)", "Appellate Authority in the state whose officer passed the order"],
-  ["Second appeal (GSTAT)", "3 months from communication of the appellate order, plus up to 3 months on sufficient cause", "Form APL-05 on the GSTAT e-filing portal. A further 10% of tax in dispute, same caps", "Principal Bench, New Delhi, where place of supply is in issue; otherwise a State Bench assigned by the portal"],
-  ["Further appeal", "Principal Bench orders go to the Supreme Court; State Bench orders to the High Court within 180 days", "Filed by an advocate", "Supreme Court or Madras High Court"],
-];
 
 const DISPUTES = [
   ["Intra-state or inter-state supply", "Goods delivered to a Bengaluru plant on a Hosur invoice charged CGST and SGST, or the reverse, and the department demands the other tax", "Location of the supplier and the place of supply under the IGST Act, delivery documents and the bill-to-ship-to chain"],
@@ -165,7 +159,14 @@ export default function Page() {
         supply, the Tribunal appeal goes to the Principal Bench in New Delhi, and the next appeal goes straight to the Supreme
         Court.
       </p>
-      <Table head={["Step", "Time limit", "Form and pre-deposit", "Where it is heard"]} rows={TIMELINE} />
+      <p className={P}>
+        In short: a first appeal in Form APL-01 within 3 months of the order with 10% of the disputed tax as
+        pre-deposit, then a second appeal in Form APL-05 to a Tamil Nadu GSTAT State Bench within 3 months with a
+        further 10%. The full appeal ladder, with forums, condonation periods and pre-deposit caps, is set out once
+        on our Tamil Nadu hub page,{" "}
+        <Link href="/gst-litigation-chennai" className={LINK}>GST Litigation &amp; Appeals in Chennai</Link>. Beyond
+        the Tribunal, State Bench orders go to the Madras High Court and Principal Bench orders to the Supreme Court.
+      </p>
       <p className="mt-3 max-w-3xl text-xs text-slate">
         Sections 107, 109, 112, 117 and 118 of the CGST Act as amended, and Sections 10 and 19 of the IGST Act, on{" "}
         <a href="https://cbic-gst.gov.in/gst-acts.html" target="_blank" rel="noopener noreferrer" className={LINK}>

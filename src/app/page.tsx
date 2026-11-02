@@ -8,8 +8,11 @@ import GoogleReviews from "@/components/GoogleReviews";
 import EnquiryCard from "@/components/EnquiryCard";
 import { EnquireButton } from "@/components/WhatsAppEnquiry";
 import TrackedAnchor from "@/components/TrackedAnchor";
-import { JsonLd, serviceCatalogSchema, speakableSchema } from "@/lib/schema";
+import StageMatrix from "@/components/StageMatrix";
+import { JsonLd, moneyPageGraph } from "@/lib/schema";
 import { CalcSticker, CoinSticker, Ribbon, StarSticker } from "@/components/Stickers";
+import { ALL_SERVICES } from "@/lib/services";
+import { PAGE_DATES } from "@/lib/page-dates";
 import {
   ADDRESS_FULL,
   ADDRESS_SHORT,
@@ -17,27 +20,46 @@ import {
   BUSINESS_NAME,
   FIRM_REGISTRATION_NO,
   FOUNDER_CREDENTIALS,
+  FOUNDER_LINKEDIN,
   FOUNDER_NAME,
+  GBP_URL,
   ICAI_MEMBERSHIP_NO,
   PHONE_DISPLAY,
   PHONE_TEL,
+  SITE_URL,
+  TEAM_SIZE,
   WHATSAPP_LINK,
   YEAR_FOUNDED,
 } from "@/lib/site";
 
+// The homepage is the one canonical page for "CA firm in Chennai" /
+// "Chartered Accountants in Chennai". The old /chartered-accountant-chennai
+// hub 301s here; its area list lives in the #areas section below.
+const TITLE = "CA Firm in Chennai | C S Rushil & Co. Chartered Accountants";
+const DESCRIPTION =
+  "CA firm in Chennai (Anna Nagar) led by CA Rushil C S: Pvt Ltd company registration, GST litigation, virtual CFO, audit and income tax. Book a consultation.";
+
 export const metadata: Metadata = {
-  title: { absolute: "CA Firm in Chennai (Anna Nagar) | C S Rushil & Co." },
-  description:
-    "CA firm in Anna Nagar, Chennai for company and LLP registration, GST, income tax, audit and virtual CFO work. Book a consultation online or visit our office.",
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "C S Rushil & Co. — Chartered Accountants in Chennai",
-    description:
-      "Private limited company incorporation, GST litigation, audit, and tax services from a Chennai-based CA firm in Anna Nagar.",
+    title: "CA Firm in Chennai: C S Rushil & Co. Chartered Accountants",
+    description: DESCRIPTION,
     url: "/",
   },
 };
+
+const TRUST_FACTS = [
+  ["Led by", `${FOUNDER_NAME}, practising Chartered Accountant (ICAI)`],
+  ["Credentials", "ICAI Certificate in Forensic Accounting and Fraud Detection (FAFD); Start-up Mentor"],
+  ["Team", `${TEAM_SIZE} professionals`],
+  ["Office", ADDRESS_FULL],
+  ["Established", `${YEAR_FOUNDED}`],
+  ...(ICAI_MEMBERSHIP_NO ? [["ICAI membership no.", ICAI_MEMBERSHIP_NO]] : []),
+  ...(FIRM_REGISTRATION_NO ? [["ICAI firm registration no.", FIRM_REGISTRATION_NO]] : []),
+];
 
 const HOME_FAQS = [
   {
@@ -119,17 +141,33 @@ function GroupServiceCard({ service }: { service: ServiceSummary }) {
 }
 
 const QUICK_LINKS = [
-  ["Private Limited Company Incorporation", "private-limited-company-incorporation-chennai"],
+  ["Private Limited Company Registration", "private-limited-company-incorporation-chennai"],
   ["GST Litigation & Appeals", "gst-litigation-chennai"],
-  ["Audit & Assurance", "audit-and-assurance"],
-  ["Virtual CFO Services", "virtual-cfo-services"],
+  ["Virtual CFO in Chennai", "virtual-cfo-services"],
+  ["Statutory & Tax Audit", "statutory-audit-chennai"],
 ];
 
 export default function HomePage() {
   return (
     <>
-      <JsonLd data={serviceCatalogSchema()} />
-      <JsonLd data={speakableSchema(["h1", "#hero-summary"])} />
+      <JsonLd
+        data={moneyPageGraph({
+          path: "/",
+          name: TITLE,
+          description: DESCRIPTION,
+          dateModified: PAGE_DATES["/"],
+          service: {
+            name: "Chartered accountancy services in Chennai",
+            serviceType: "Chartered Accountancy Services",
+            description:
+              "Company and LLP registration, GST and GST litigation, income tax, statutory and tax audit, ROC compliance and virtual CFO services from a CA firm in Anna Nagar, Chennai.",
+            offers: ALL_SERVICES.map((s) => ({ name: s.name, url: `${SITE_URL}/${s.slug}` })),
+          },
+          faqs: HOME_FAQS,
+          crumbs: [],
+          speakable: ["h1", "#lead-answer"],
+        })}
+      />
       <section className="relative overflow-hidden border-b border-carbon bg-sky-wash">
         <Ribbon className="pointer-events-none absolute -bottom-10 left-0 h-44 w-full md:h-64" />
         <CoinSticker className="pointer-events-none absolute left-[46%] top-8 hidden w-20 -rotate-12 lg:block" />
@@ -137,15 +175,16 @@ export default function HomePage() {
         <StarSticker className="pointer-events-none absolute right-6 top-6 hidden w-14 rotate-12 md:block" />
         <div className="container-page relative grid grid-cols-1 gap-10 pb-32 pt-12 md:pb-48 md:pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
           <div>
-            <p className="sticker-tag bg-sunburst">CA Firm in {ADDRESS_SHORT}</p>
-            <h1 className="mt-6 text-[52px] text-carbon sm:text-7xl lg:text-[104px]">
-              C S Rushil &amp; Co. is a chartered accountancy firm in Anna Nagar, Chennai, covering income tax, GST, audit and company registration
+            <p className="sticker-tag bg-sunburst">Chartered Accountants · {ADDRESS_SHORT}</p>
+            <h1 className="mt-6 text-[52px] text-carbon sm:text-7xl lg:text-[96px]">
+              CA Firm in Chennai — Chartered Accountants for Tax, GST, Audit &amp; Incorporation
             </h1>
-            <p id="hero-summary" className="mt-6 max-w-xl text-lg leading-relaxed text-carbon">
-              {BUSINESS_NAME} is a chartered accountancy firm in {ADDRESS_SHORT}, founded in {YEAR_FOUNDED} and
-              led by {FOUNDER_NAME}. Our 16-member team handles company and LLP registration, GST, income tax,
-              statutory and tax audit, ROC compliance, bookkeeping and virtual CFO services for businesses,
-              professionals and NRIs across Chennai.
+            <p id="lead-answer" className="mt-6 max-w-xl text-lg leading-relaxed text-carbon">
+              Looking for a <strong>CA firm in Chennai</strong>? {BUSINESS_NAME} is a{" "}
+              <strong>chartered accountancy firm</strong> in J-Block, Anna Nagar, led by {FOUNDER_NAME}. Our{" "}
+              {TEAM_SIZE}-member team handles <strong>Private Limited Company registration</strong>,{" "}
+              <strong>GST litigation and appeals</strong>, <strong>virtual CFO</strong> work, audit and income tax for
+              businesses, professionals and NRIs across Chennai.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <TrackedAnchor
@@ -229,15 +268,21 @@ export default function HomePage() {
 
       <GoogleReviews />
 
+      <section className="border-b border-carbon bg-white py-14 md:py-20">
+        <div className="container-page">
+          <StageMatrix />
+        </div>
+      </section>
+
       <section className="bg-paper py-14 md:py-20">
         <div className="container-page">
           <p className="sticker-tag bg-lavender">Our services</p>
           <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
-            Full compliance lifecycle, one firm.
+            What does our CA firm in Chennai handle?
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-            From registering your company to filing its returns, audits and notices — in person in Chennai, or
-            remotely for NRIs and overseas businesses.
+            The full compliance lifecycle, from registering your company to filing its returns, audits and
+            notices, in person in Chennai or remotely for NRIs and overseas businesses.
           </p>
           {SERVICE_GROUPS.map((group) => {
             const services = group.slugs
@@ -262,7 +307,7 @@ export default function HomePage() {
         <div className="container-page">
           <p className="sticker-tag bg-mint-pop">Choosing a CA firm</p>
           <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
-            What to look for in a CA firm
+            What should you look for in a CA firm in Chennai?
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
             Whichever firm you choose, these are the checks worth making first. Where it applies, we have noted
@@ -292,15 +337,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="border-y border-carbon bg-concrete-gray py-14 md:py-20">
+      <section id="areas" className="scroll-mt-24 border-y border-carbon bg-concrete-gray py-14 md:py-20">
         <div className="container-page">
           <p className="sticker-tag bg-white">Areas we serve</p>
           <h2 className="mt-3 max-w-2xl text-5xl text-obsidian md:text-7xl">
-            Chartered accountant services across Chennai.
+            Which Chennai areas do we serve?
           </h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-            Our office is in Anna Nagar, and we work with clients across the
-            city — in person for those nearby, virtually for everyone else.
+            All of Chennai, from one office in Anna Nagar: in person for clients nearby, by video for everyone
+            else. Each area page covers the work we do there.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             {AREAS.map((area) => (
@@ -321,15 +366,30 @@ export default function HomePage() {
           <div>
             <p className="sticker-tag bg-sunburst">About the firm</p>
             <h2 className="mt-3 text-3xl text-obsidian">
-              Founded by {FOUNDER_NAME}
+              Who leads C S Rushil &amp; Co.?
             </h2>
             <p className="mt-4 leading-relaxed text-slate">
-              C S Rushil &amp; Co. is a chartered accountancy firm in Chennai,
-              based at {ADDRESS_FULL}. Founded by {FOUNDER_NAME}
-              ({FOUNDER_CREDENTIALS}), the firm is backed by a team of 16 skilled
-              professionals delivering audit, taxation, risk, compliance, and
-              management consulting services — combining technology-driven process
-              with hands-on experience across sectors.
+              C S Rushil &amp; Co. is a chartered accountancy firm at J-Block, Anna Nagar, Chennai, led by{" "}
+              <a href={FOUNDER_LINKEDIN} target="_blank" rel="noopener noreferrer" className="font-medium text-royal-violet underline underline-offset-2">
+                {FOUNDER_NAME}
+              </a>{" "}
+              ({FOUNDER_CREDENTIALS}). A team of {TEAM_SIZE} professionals handles audit, taxation, GST litigation,
+              company law compliance and virtual CFO work.
+            </p>
+            <dl className="mt-6 divide-y divide-ash overflow-hidden rounded-cards border border-carbon bg-white">
+              {TRUST_FACTS.map(([label, value]) => (
+                <div key={label} className="grid grid-cols-1 gap-1 px-5 py-3 sm:grid-cols-[150px_1fr] sm:gap-4">
+                  <dt className="text-sm font-medium text-obsidian">{label}</dt>
+                  <dd className="text-sm text-slate">{value}</dd>
+                </div>
+              ))}
+            </dl>
+            <p className="mt-3 text-sm text-slate">
+              Client reviews are on our{" "}
+              <a href={GBP_URL} target="_blank" rel="noopener noreferrer" className="underline underline-offset-2">
+                Google Business Profile
+              </a>
+              .
             </p>
             <Link
               href="/about-us"
@@ -360,8 +420,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      <FAQSection items={HOME_FAQS} />
-      <CTASection showForm={false} />
+      <FAQSection items={HOME_FAQS} schema={false} />
+      <CTASection showForm={false} title="Ready to talk to a CA firm in Chennai?" />
     </>
   );
 }

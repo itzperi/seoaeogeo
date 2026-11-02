@@ -37,7 +37,7 @@ function GoogleG() {
 // Client reviews from Google, placed next to the booking/form actions so
 // visitors see proof at the moment they decide to get in touch.
 export default function GoogleReviews({
-  heading = "What clients say on Google",
+  heading = "What do clients say about us on Google?",
   className = "bg-paper py-16",
 }: {
   heading?: string;

@@ -1,7 +1,6 @@
 import Link from "next/link";
 import FooterLogoGesture from "./FooterLogoGesture";
-import { AREAS } from "@/lib/areas";
-import { SERVICE_GROUPS, getService } from "@/lib/services";
+import { AREAS_HUB, COMPANY_LINKS, FOOTER_CORE_LINKS, PRIMARY_AREA_LINKS } from "@/lib/nav";
 import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, EMAIL, FIRM_REGISTRATION_NO, GBP_URL, GOOGLE_MAPS_EMBED_SRC, ICAI_MEMBERSHIP_NO, PHONE_DISPLAY, PHONE_TEL, SOCIALS } from "@/lib/site";
 
 export default function Footer() {
@@ -40,48 +39,46 @@ export default function Footer() {
           </div>
         </div>
 
-        <div>
-          <p className="eyebrow text-xs text-slate">Services</p>
+        <nav aria-label="Core practice areas" className="lg:col-span-2">
+          <p className="eyebrow text-xs text-slate">Core practice areas</p>
           <ul className="mt-4 space-y-2 text-sm text-slate">
-            {SERVICE_GROUPS.map((group) => {
-              const hub = getService(group.slugs[0]);
-              return (
-                hub && (
-                  <li key={group.label}>
-                    <Link href={`/${hub.slug}`} className="hover:text-obsidian">
-                      {group.label}
-                    </Link>
-                  </li>
-                )
-              );
-            })}
-          </ul>
-        </div>
-
-        <div>
-          <p className="eyebrow text-xs text-slate">Locations</p>
-          <ul className="mt-4 space-y-2 text-sm text-slate">
-            {AREAS.map((area) => (
-              <li key={area.slug}>
-                <Link href={`/${area.slug}`} className="hover:text-obsidian">
-                  {area.name}
+            {FOOTER_CORE_LINKS.map((link, i) => (
+              <li key={link.href}>
+                <Link href={link.href} className={`hover:text-obsidian ${i < 4 ? "font-medium text-obsidian" : ""}`}>
+                  {link.label}
                 </Link>
               </li>
             ))}
           </ul>
-        </div>
+        </nav>
 
-        <div>
-          <p className="eyebrow text-xs text-slate">Company</p>
+        <nav aria-label="Chennai locations">
+          <p className="eyebrow text-xs text-slate">Chennai hubs</p>
           <ul className="mt-4 space-y-2 text-sm text-slate">
-            <li><Link href="/about-us" className="hover:text-obsidian">About Us</Link></li>
-            <li><Link href="/blog" className="hover:text-obsidian">Insights</Link></li>
-            <li><Link href="/videos" className="hover:text-obsidian">Videos</Link></li>
-            <li><Link href="/faq" className="hover:text-obsidian">FAQ</Link></li>
-            <li><Link href="/career" className="hover:text-obsidian">Careers</Link></li>
-            <li><Link href="/contact" className="hover:text-obsidian">Contact</Link></li>
+            {PRIMARY_AREA_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-obsidian">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href={AREAS_HUB.href} className="font-medium text-obsidian hover:underline">
+                {AREAS_HUB.label} →
+              </Link>
+            </li>
           </ul>
-        </div>
+          <p className="eyebrow mt-8 text-xs text-slate">Company</p>
+          <ul className="mt-4 space-y-2 text-sm text-slate">
+            {COMPANY_LINKS.map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:text-obsidian">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
 
         <div>
           <p className="eyebrow text-xs text-slate">Contact</p>
@@ -93,27 +90,6 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <nav aria-label="All services" className="border-t border-ash">
-        <div className="container-page grid grid-cols-2 gap-x-6 gap-y-8 py-12 sm:grid-cols-4 lg:grid-cols-8">
-          {SERVICE_GROUPS.map((group) => (
-            <div key={group.label}>
-              <p className="eyebrow text-xs text-slate">{group.label}</p>
-              <ul className="mt-3 space-y-1.5 text-xs text-slate">
-                {group.slugs.map(getService).map(
-                  (s) =>
-                    s && (
-                      <li key={s.slug}>
-                        <Link href={`/${s.slug}`} className="hover:text-obsidian">
-                          {s.name}
-                        </Link>
-                      </li>
-                    ),
-                )}
-              </ul>
-            </div>
-          ))}
-        </div>
-      </nav>
       <div className="border-t border-ash">
         <div className="container-page flex flex-col gap-2 py-6 text-xs text-slate md:flex-row md:items-center md:justify-between">
           <p>© {year} C S Rushil &amp; Co. All rights reserved.</p>

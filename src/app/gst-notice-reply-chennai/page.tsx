@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 import Glossary from "@/components/Glossary";
@@ -19,6 +20,17 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ServicePageTemplate
+      topBanner={
+        <p className="rounded-cards border border-carbon bg-sunburst p-5 text-sm leading-relaxed text-carbon">
+          <strong>Already have a demand order, detention order or appeal deadline?</strong> This page covers early-stage
+          replies (ASMT-10 scrutiny, DRC-01A intimations). Contested DRC-01 adjudication, Section 73/74/74A demands,
+          Section 129 detentions and APL-01 or GSTAT appeals are handled under{" "}
+          <Link href="/gst-litigation-chennai" className="font-semibold underline underline-offset-2">
+            GST Litigation &amp; Appeals in Chennai
+          </Link>
+          .
+        </p>
+      }
       pageUrl={`${SITE_URL}/gst-notice-reply-chennai`}
       serviceType="GST Notice Reply"
       crumbLabel="GST Notice Reply"

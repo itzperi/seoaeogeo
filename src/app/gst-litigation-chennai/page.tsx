@@ -4,20 +4,23 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
-import { SITE_URL } from "@/lib/site";
+import SiloLinks from "@/components/SiloLinks";
+import { JsonLd, moneyPageGraph } from "@/lib/schema";
+import { PAGE_DATES } from "@/lib/page-dates";
 
-const PAGE_URL = `${SITE_URL}/gst-litigation-chennai`;
+const PATH = "/gst-litigation-chennai";
+const TITLE = "GST Litigation & Appeals in Chennai | GSTAT & SCN Reply";
+const DESCRIPTION =
+  "CA representation for GST Litigation & Appeals in Chennai under Sec 116. DRC-01 SCN replies, APL-01 First Appeals, GSTAT Chennai Bench & ITC mismatch defence.";
 
 export const metadata: Metadata = {
-  title: { absolute: "GST Litigation and Appeals in Chennai | Anna Nagar" },
-  description:
-    "GST notice or demand order in Tamil Nadu? Show-cause replies, first appeals and GSTAT appeals (Chennai, Coimbatore, Madurai benches) from an Anna Nagar CA firm.",
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
   alternates: { canonical: "/gst-litigation-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "GST Litigation in Chennai",
-    description: "Show-cause notice replies, appeals, and GSTAT representation by a Chennai chartered accountancy firm.",
+    title: "GST Litigation & Appeals in Chennai",
+    description: DESCRIPTION,
     url: "/gst-litigation-chennai",
   },
 };
@@ -70,12 +73,54 @@ const STAGES = [
   { stage: "ITC & Refund Dispute Defense", text: "We build the factual and documentary case to defend legitimate ITC claims and pursue refund entitlements through litigation where needed." },
 ];
 
-const NOTICE_TYPES = [
-  { form: "DRC-01A", text: "An intimation of tax ascertained as payable, issued before a formal show-cause notice. Responding here can sometimes resolve the matter without escalating to a full SCN." },
-  { form: "DRC-01", text: "The formal show-cause notice under Section 73 or Section 74 (for FY 2023-24 and earlier) or Section 74A (for FY 2024-25 onwards). Whether fraud or wilful misstatement is alleged decides the penalty exposure." },
-  { form: "ASMT-10", text: "Notice for discrepancies found during scrutiny of a filed return, typically the first sign of an ITC or turnover mismatch before it escalates further." },
-  { form: "REG-17", text: "Show-cause notice proposing cancellation of GST registration, usually for continuous non-filing. It needs an urgent reply to avoid losing registration entirely." },
-  { form: "GST APL-01 / APL-05", text: "Not notices but the appeal forms themselves: APL-01 for the first appeal to the Appellate Authority, APL-05 for the second appeal to GSTAT." },
+// Notice-to-defence playbook: what each form means, the reply route and
+// what the defence usually rests on.
+const PLAYBOOK = [
+  {
+    form: "DRC-01A / DRC-01",
+    title: "Show-cause notice under Section 73, 74 or 74A",
+    means: "DRC-01A is the pre-notice intimation; DRC-01 is the summary of the formal show-cause notice. Sections 73 and 74 cover FY 2023-24 and earlier; Section 74A covers FY 2024-25 onwards.",
+    reply: "Object in Part B of DRC-01A, or reply to the show-cause notice in DRC-06 within the time stated (usually 30 days) and ask for a personal hearing.",
+    defence: "Limitation, whether fraud or suppression is actually made out, invoice-level reconciliation, and the officer's jurisdiction.",
+  },
+  {
+    form: "ASMT-10",
+    title: "Scrutiny mismatch: GSTR-3B vs GSTR-2B, GSTR-1 vs e-way bills",
+    means: "The officer has found discrepancies while scrutinising your returns. No demand has been raised yet.",
+    reply: "Reply in ASMT-11 within the time allowed, explaining or accepting each discrepancy. This early stage is handled by our GST notice reply service.",
+    defence: "Line-by-line reconciliation: timing differences, credit notes, amendments in later returns, and supplier filing defaults.",
+  },
+  {
+    form: "Section 16(4), 16(5), 16(6)",
+    title: "ITC denied as time-barred",
+    means: "Credit is denied because it was claimed after the Section 16(4) deadline.",
+    reply: "Check whether Section 16(5) (FY 2017-18 to 2020-21 credit claimed in returns filed up to 30 November 2021) or Section 16(6) (registrations cancelled and later revoked) applies before replying or appealing.",
+    defence: "The retrospective relief in Sections 16(5) and 16(6), the return in which credit was actually claimed, and the date of revocation.",
+  },
+  {
+    form: "MOV-06 / MOV-07 / MOV-09",
+    title: "Goods or vehicle detained in transit (Section 129)",
+    means: "MOV-06 is the detention order, MOV-07 the notice proposing tax and penalty, MOV-09 the order of demand. Common on routes into Chennai such as the Chennai–Bengaluru highway and the Ennore port and Red Hills approaches.",
+    reply: "Reply to MOV-07 within 7 days; secure release by paying the penalty or furnishing security; appeal the MOV-09 order in APL-01 with 10% of the penalty as pre-deposit.",
+    defence: "Whether the defect was a technical lapse, such as a clerical e-way bill error or lapsed validity, with no intent to evade tax.",
+  },
+  {
+    form: "REG-17 / REG-19 / REG-21",
+    title: "GST registration cancelled by the officer",
+    means: "REG-17 proposes cancellation, usually for non-filing; REG-19 is the cancellation order.",
+    reply: "Reply to REG-17 in REG-18 within 7 working days. After a REG-19 order, apply for revocation in REG-21, generally within 90 days, once pending returns and dues are cleared.",
+    defence: "Proof that the business is operating, returns filed (or filed late with cause), and whether the notice was properly served.",
+  },
+];
+
+// Forums in Chennai where a CA appears under Section 116. The office named
+// on the notice or order always governs.
+const FORUMS = [
+  ["Central GST adjudication", "Chennai North, Chennai South and Chennai Outer Commissionerates (CBIC Chennai zone)", "Show-cause notices and orders for taxpayers allotted to the Centre"],
+  ["Central GST first appeal", "Commissioner (Appeals-I), Mahatma Gandhi Road, Nungambakkam, Chennai 600034, and Commissioner (Appeals-II), Newry Towers, Anna Nagar, Chennai 600040", "APL-01 appeals against Central GST orders. Newry Towers is a short walk from our J-Block office"],
+  ["State GST adjudication", "Tamil Nadu Commercial Taxes Department, Integrated Commercial Taxes Building, Nandanam, Chennai", "Show-cause notices and orders for taxpayers allotted to the State"],
+  ["State GST first appeal", "Appellate Deputy Commissioners (ST), PAPJM Building, Greams Road, Chennai", "APL-01 appeals against State GST orders"],
+  ["Second appeal", "GST Appellate Tribunal, Chennai State Bench", "APL-05 appeals: Category I matters (classification, ITC, refunds, valuation) and Category II matters (registration, Section 73/74 proceedings, penalties)"],
 ];
 
 const APPEAL_LADDER = [
@@ -158,31 +203,58 @@ const FAQS = [
   },
 ];
 
+const CRUMBS = [
+  { name: "GST", href: "/goods-and-services-tax" },
+  { name: "GST Litigation & Appeals in Chennai", href: PATH },
+];
+
 export default function GstLitigationPage() {
   return (
     <>
       <JsonLd
-        data={serviceSchema({
-          name: "GST Litigation & Appeals in Chennai",
-          description:
-            "Representation for GST show-cause notices, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal (GSTAT) proceedings.",
-          url: PAGE_URL,
-          serviceType: "Tax Litigation",
+        data={moneyPageGraph({
+          path: PATH,
+          name: TITLE,
+          description: DESCRIPTION,
+          dateModified: PAGE_DATES[PATH],
+          service: {
+            name: "GST Litigation & Appeals in Chennai",
+            serviceType: "GST Litigation, Show Cause Notice Reply, and GSTAT Appeals",
+            description:
+              "Representation under Section 116 of the CGST Act for GST show-cause notices, adjudication, first appeals before the Appellate Authority and second appeals before the GSTAT Chennai State Bench.",
+            offers: [
+              "DRC-01 / DRC-06 show-cause notice replies (Sections 73, 74 and 74A)",
+              "APL-01 first appeals before the Appellate Authority",
+              "APL-05 appeals before the GSTAT Chennai State Bench",
+              "Section 129 e-way bill detention appeals",
+              "ITC mismatch and Section 16(4) defence",
+              "GST registration cancellation and revocation",
+            ],
+          },
+          faqs: FAQS,
+          crumbs: CRUMBS,
+          howTo: {
+            name: "How GST litigation proceeds, from notice to tribunal",
+            description: "The stages a GST dispute typically moves through, from show-cause notice reply to GST Appellate Tribunal representation.",
+            steps: STAGES.map((s) => ({ name: s.stage, text: s.text })),
+          },
+          speakable: ["#lead-answer", "#direct-answer"],
         })}
       />
-      <JsonLd
-        data={howToSchema({
-          name: "How GST litigation proceeds, from notice to tribunal",
-          description: "The stages a GST dispute typically moves through, from show-cause notice reply to GST Appellate Tribunal representation.",
-          steps: STAGES.map((s) => ({ name: s.stage, text: s.text })),
-        })}
-      />
-      <JsonLd data={speakableSchema(["#direct-answer"])} />
-      <Breadcrumbs items={[{ name: "GST Litigation", href: "/gst-litigation-chennai" }]} />
+      <Breadcrumbs items={CRUMBS} schema={false} />
       <PageHero
-        reviewedPath="/gst-litigation-chennai"
+        reviewedPath={PATH}
+        schema={false}
         eyebrow="GST Disputes · Chennai"
-        h1="GST Litigation and Appeals in Chennai"
+        h1="GST Litigation & Appeals in Chennai"
+        lead={
+          <>
+            Need <strong>GST litigation and appeals support in Chennai</strong>? C S Rushil &amp; Co., an Anna Nagar{" "}
+            <strong>chartered accountancy firm</strong>, represents businesses under Section 116 of the CGST Act: DRC-06
+            replies to Section 73, 74 and 74A show-cause notices, APL-01 first appeals, and APL-05 appeals before the{" "}
+            <strong>GSTAT Chennai Bench</strong>.
+          </>
+        }
         subhead="Show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal representation — handled from our Anna Nagar office by chartered accountants who can appear on your behalf under Section 116 of the CGST Act."
       />
 
@@ -190,7 +262,16 @@ export default function GstLitigationPage() {
         <div className="container-page grid grid-cols-1 gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2 space-y-12">
             <div>
-              <h2 className="text-2xl text-obsidian">
+              <p className="rounded-cards border border-carbon bg-sunburst p-5 text-sm leading-relaxed text-carbon">
+                <strong>Still at the scrutiny stage?</strong> An ASMT-10 or DRC-01A that has not yet become a demand is
+                answered by our{" "}
+                <Link href="/gst-notice-reply-chennai" className="font-semibold underline underline-offset-2">
+                  GST notice reply service
+                </Link>
+                . This page covers contested matters: DRC-01 adjudication, Section 73/74/74A demands, Section 129
+                detention appeals, APL-01 first appeals and APL-05 appeals before the GSTAT Chennai Bench.
+              </p>
+              <h2 className="mt-8 text-2xl text-obsidian">
                 What is GST litigation?
               </h2>
               <p id="direct-answer" className="mt-4 leading-relaxed text-slate">
@@ -245,27 +326,58 @@ export default function GstLitigationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
-                Which GST notice forms might you receive?
+                Which GST notice have you received, and how is it defended?
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
-                GST notices arrive under specific form numbers, and which one
-                you&apos;ve received changes both the urgency and the right response —
-                confusing a scrutiny notice with a formal show-cause notice, for
-                example, can mean missing a much shorter reply window than you think
-                you have. If you have a notice but no order yet, see our{" "}
-                <Link href="/gst-notice-reply-chennai" className={LINK}>
-                  GST notice reply service
-                </Link>
-                .
+                The form number on the notice decides the reply form, the deadline and the defence, so identify it
+                first. Confusing a scrutiny notice with a show-cause notice can mean missing a much shorter reply
+                window. These cards summarise the five notices we see most often in Chennai.
               </p>
-              <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {NOTICE_TYPES.map((n) => (
-                  <div key={n.form} className="rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]">
-                    <p className="font-medium text-obsidian">Form {n.form}</p>
-                    <p className="mt-1 text-sm text-slate">{n.text}</p>
-                  </div>
+              <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+                {PLAYBOOK.map((n) => (
+                  <article key={n.form} className="rounded-cards border border-carbon bg-paper p-6">
+                    <p className="sticker-tag bg-lavender">{n.form}</p>
+                    <h3 className="mt-3 font-medium text-obsidian">{n.title}</h3>
+                    <dl className="mt-3 space-y-2 text-sm">
+                      <div>
+                        <dt className="font-medium text-obsidian">What it means</dt>
+                        <dd className="text-slate">{n.means}</dd>
+                      </div>
+                      <div>
+                        <dt className="font-medium text-obsidian">How to respond</dt>
+                        <dd className="text-slate">{n.reply}</dd>
+                      </div>
+                      <div>
+                        <dt className="font-medium text-obsidian">What the defence rests on</dt>
+                        <dd className="text-slate">{n.defence}</dd>
+                      </div>
+                    </dl>
+                  </article>
                 ))}
               </div>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">
+                Which Chennai GST offices and appellate forums do we appear before?
+              </h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                As practising Chartered Accountants, we appear under Section 116 of the CGST Act before every Central
+                and State GST forum in Chennai, up to the GST Appellate Tribunal. Whether your GSTIN is allotted to
+                the Centre or the State decides which offices handle your case.
+              </p>
+              <Table head={["Stage", "Forum and location", "What is heard there"]} rows={FORUMS} />
+              <p className="mt-3 text-xs text-slate">
+                Office locations as published by the CBIC Chennai zone (
+                <a href="https://gstchennai.gov.in" target="_blank" rel="noopener noreferrer" className={LINK}>
+                  gstchennai.gov.in
+                </a>
+                ) and the Tamil Nadu Commercial Taxes Department (
+                <a href="https://ctd.tn.gov.in" target="_blank" rel="noopener noreferrer" className={LINK}>
+                  ctd.tn.gov.in
+                </a>
+                ). The authority and address printed on your notice or order always govern.
+              </p>
             </div>
 
             <div>
@@ -494,7 +606,9 @@ export default function GstLitigationPage() {
         </div>
       </section>
 
-      <FAQSection items={FAQS} />
+      <SiloLinks path={PATH} />
+
+      <FAQSection items={FAQS} schema={false} />
 
       <section className="bg-paper py-12">
         <div className="container-page">

@@ -12,6 +12,7 @@ export const ICAI_MEMBERSHIP_NO: string | null = null;
 export const FIRM_REGISTRATION_NO: string | null = null; // ICAI FRN
 export const YEAR_QUALIFIED: string | null = null;
 export const YEAR_FOUNDED = 2024;
+export const TEAM_SIZE = 16;
 // The Business Profile's permanent CID link (from the profile's own edit
 // URLs). Used for schema sameAs/hasMap and every "view on Google" link, so
 // Google can tie the website to this exact listing. Prefer this over the

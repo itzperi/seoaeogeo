@@ -21,6 +21,7 @@ export const metadata: Metadata = {
 const STRUCTURES = [
   {
     name: "Private Limited Company",
+    linkLabel: "Private Limited Company Registration in Chennai",
     href: "/private-limited-company-incorporation-chennai",
     members: "2 directors and 2 shareholders (can be the same people); up to 200 members",
     liability: "Limited to unpaid share capital",
@@ -72,6 +73,16 @@ const STRUCTURES = [
 export default function Page() {
   return (
     <ServicePageTemplate
+      topBanner={
+        <p className="rounded-cards border border-carbon bg-sunburst p-5 text-sm leading-relaxed text-carbon">
+          <strong>Starting a company to raise funds or issue ESOPs?</strong> Most founders choose a Private Limited
+          Company. Go straight to{" "}
+          <Link href="/private-limited-company-incorporation-chennai" className="font-semibold underline underline-offset-2">
+            Private Limited Company Registration in Chennai
+          </Link>{" "}
+          for the SPICe+ steps, Tamil Nadu stamp duty and ROC Chennai timelines. This page compares every structure.
+        </p>
+      }
       pageUrl={`${SITE_URL}/company-registration-chennai`}
       serviceType="Company Registration"
       crumbLabel="Company Registration"
@@ -187,7 +198,7 @@ export default function Page() {
         Timelines below are what we typically see once documents are ready; government processing can vary. To register a Pvt Ltd company, see
         our page on{" "}
         <Link href="/private-limited-company-incorporation-chennai" className="text-royal-violet underline underline-offset-2">
-          Pvt Ltd company incorporation in Chennai
+          Private Limited Company Registration in Chennai
         </Link>
         . Foreign-owned businesses should also read our page on{" "}
         <Link href="/company-registration-india-for-foreigners" className="text-royal-violet underline underline-offset-2">
@@ -211,7 +222,7 @@ export default function Page() {
               <tr key={row.name} className="border-t border-ash">
                 <td className="p-4 font-medium text-obsidian">
                   <Link href={row.href} className="text-royal-violet underline underline-offset-2">
-                    {row.name}
+                    {row.linkLabel ?? row.name}
                   </Link>
                 </td>
                 <td className="p-4 text-slate">{row.members}</td>

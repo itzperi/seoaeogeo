@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AREAS } from "@/lib/areas";
-import { SERVICE_GROUPS, getService } from "@/lib/services";
+import { AREAS_HUB, CATEGORY_HUBS, FLAGSHIP_LINKS, PRIMARY_AREA_LINKS } from "@/lib/nav";
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
 export default function MobileNav() {
@@ -31,47 +30,46 @@ export default function MobileNav() {
       {open && (
         <div className="absolute inset-x-0 top-[72px] z-40 max-h-[calc(100vh-72px)] overflow-y-auto border-y border-carbon bg-white">
           <div className="container-page py-6">
-            {SERVICE_GROUPS.map((group, gi) => (
-              <div key={group.label} className={gi > 0 ? "mt-5" : undefined}>
-                <p className="eyebrow text-xs text-slate">{group.label}</p>
-                <ul className="mt-2 space-y-1">
-                  {group.slugs.map(getService).map(
-                    (service) =>
-                      service && (
-                        <li key={service.slug}>
-                          <Link
-                            href={`/${service.slug}`}
-                            onClick={() => setOpen(false)}
-                            className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
-                          >
-                            {service.name}
-                          </Link>
-                        </li>
-                      ),
-                  )}
-                </ul>
-              </div>
-            ))}
-
-            <p className="eyebrow mt-6 text-xs text-slate">Locations</p>
-            <ul className="mt-3 space-y-1">
-              <li>
-                <Link
-                  href="/"
-                  onClick={() => setOpen(false)}
-                  className="block rounded-lg px-3 py-2.5 text-sm font-medium text-obsidian hover:bg-fog"
-                >
-                  Chartered accountant in Chennai
-                </Link>
-              </li>
-              {AREAS.map((area) => (
-                <li key={area.slug}>
+            <p className="eyebrow text-xs text-slate">Flagship services</p>
+            <ul className="mt-2 space-y-1">
+              {FLAGSHIP_LINKS.map((link) => (
+                <li key={link.href}>
                   <Link
-                    href={`/${area.slug}`}
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="block rounded-lg px-3 py-2.5 text-sm font-medium text-obsidian hover:bg-fog"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <p className="eyebrow mt-6 text-xs text-slate">Practice areas</p>
+            <ul className="mt-2 space-y-1">
+              {CATEGORY_HUBS.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
                     onClick={() => setOpen(false)}
                     className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
                   >
-                    {area.name}
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <p className="eyebrow mt-6 text-xs text-slate">Locations</p>
+            <ul className="mt-3 space-y-1">
+              {[...PRIMARY_AREA_LINKS, AREAS_HUB].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    onClick={() => setOpen(false)}
+                    className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
+                  >
+                    {link.label}
                   </Link>
                 </li>
               ))}

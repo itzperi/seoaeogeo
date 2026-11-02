@@ -6,9 +6,16 @@
 > statutory, tax and internal audit; ROC, FEMA and annual compliance; accounting outsourcing; virtual CFO.
 > Consultations in English, Tamil and Hindi; walk-in office in Anna Nagar and online service across India.
 
+## Core services (one canonical page each)
+- [CA Firm in Chennai](https://www.csrushil.com/): Chartered accountancy firm in J-Block, Anna Nagar, Chennai, led by CA Rushil C S; tax, GST, audit, incorporation and virtual CFO work for businesses, professionals and NRIs.
+- [Private Limited Company Registration in Chennai](https://www.csrushil.com/private-limited-company-incorporation-chennai): SPICe+ incorporation with ROC Chennai (Shastri Bhavan, Haddows Road) in 7–12 working days once documents are ready; DSC, DIN, e-MoA/e-AoA, PAN/TAN, Tamil Nadu stamp duty and first-year compliance.
+- [Virtual CFO in Chennai](https://www.csrushil.com/virtual-cfo-services): CA-led fractional CFO services for startups, SMEs and foreign-owned subsidiaries: monthly MIS, 13-week cash-flow forecasts, budgets, fundraising support and board packs.
+- [GST Litigation & Appeals in Chennai](https://www.csrushil.com/gst-litigation-chennai): Representation under Section 116 of the CGST Act: DRC-06 replies to Section 73/74/74A notices, APL-01 first appeals, APL-05 appeals before the GSTAT Chennai State Bench, Section 129 detention appeals.
+- Full entity facts, NAP and service summaries: [llms-full.txt](https://www.csrushil.com/llms-full.txt)
+
 ## Company & LLP registration
 - [Company Registration](https://www.csrushil.com/company-registration-chennai): Fast-tracked Private Limited and LLP company registration in Chennai, from name approval to certificate of incorporation.
-- [Private Limited Company Incorporation](https://www.csrushil.com/private-limited-company-incorporation-chennai): End-to-end SPICe+ incorporation for Private Limited Companies in Chennai — documentation, MCA filing, and post-incorporation compliance.
+- [Private Limited Company Registration in Chennai](https://www.csrushil.com/private-limited-company-incorporation-chennai): End-to-end SPICe+ incorporation for Private Limited Companies in Chennai — documentation, MCA filing, and post-incorporation compliance.
 - [LLP Registration](https://www.csrushil.com/llp-registration-chennai): Limited Liability Partnership registration in Chennai — DPIN, name reservation, FiLLiP filing, and LLP Agreement drafting.
 - [OPC Registration](https://www.csrushil.com/opc-registration-chennai): One Person Company registration for solo founders: SPICe+ filing, nominee consent (INC-3), NRI eligibility and later conversion to Pvt Ltd.
 - [Partnership Firm Registration](https://www.csrushil.com/partnership-firm-registration-chennai): Partnership deed drafting and stamping, registration with the Tamil Nadu Registrar of Firms on tnreginet, firm PAN, GST and deed changes.
@@ -38,7 +45,7 @@
 - [GST Registration](https://www.csrushil.com/gst-registration-chennai): New GST registration for businesses and professionals in Chennai — documentation, ARN tracking, and certificate issuance.
 - [GST Return Filing](https://www.csrushil.com/gst-return-filing-chennai): Monthly and quarterly GSTR-1 and GSTR-3B, QRMP, CMP-08, GSTR-4 and annual GSTR-9/9C, with GSTR-2B reconciliation before every filing.
 - [GST Notice Reply](https://www.csrushil.com/gst-notice-reply-chennai): Replies to ASMT-10, DRC-01A, DRC-01 and audit notices for Tamil Nadu businesses, before a dispute becomes an appeal.
-- [GST Litigation & Appeals](https://www.csrushil.com/gst-litigation-chennai): Representation for GST show-cause notices, departmental audits, appeals, and GSTAT proceedings for Chennai businesses.
+- [GST Litigation & Appeals in Chennai](https://www.csrushil.com/gst-litigation-chennai): Representation for GST show-cause notices, departmental audits, appeals, and GSTAT proceedings for Chennai businesses.
 - [GST Returns: GST returns for e-commerce sellers](https://www.csrushil.com/gst-return-filing-for-ecommerce-sellers): GST returns for e-commerce sellers: state-wise GSTR-1, GSTR-3B and marketplace settlements matched first
 - [GST Returns: GST returns for Amazon sellers](https://www.csrushil.com/gst-return-filing-for-amazon-sellers): GST returns for Amazon sellers: GSTR-1, GSTR-3B, Amazon TCS and settlements reconciled before each filing
 - [GST Returns: GST returns for freelancers](https://www.csrushil.com/gst-return-filing-for-freelancers): GST returns for freelancers: registration limits, Indian and overseas invoices, monthly GSTR-1 and GSTR-3B
@@ -80,7 +87,7 @@
 - [Outsourced Bookkeeping for UK Practices](https://www.csrushil.com/outsourced-accounting-for-uk-accountants): Bookkeeping, MTD VAT returns and year-end accounts preparation for UK accountancy practices to review and file.
 
 ## Advisory
-- [Virtual CFO Services](https://www.csrushil.com/virtual-cfo-services): Outsourced financial leadership — MIS, budgeting, fundraising support, and board-ready reporting for growing businesses.
+- [Virtual CFO in Chennai](https://www.csrushil.com/virtual-cfo-services): Outsourced financial leadership — MIS, budgeting, fundraising support, and board-ready reporting for growing businesses.
 - [Management Consultancy](https://www.csrushil.com/management-consultancy): Business process, risk, and strategy advisory that turns compliance data into operating decisions.
 
 ## Company registration across Tamil Nadu (served online from Anna Nagar, Chennai)
@@ -123,7 +130,7 @@
 ## Areas served (Chennai)
 Anna Nagar, Kilpauk, T Nagar, Ambattur, OMR/Sholinganallur, Velachery, Adyar,
 Nungambakkam, Guindy, Porur, Tambaram, Mylapore; income tax pages for Besant Nagar, Alwarpet,
-R A Puram, Kotturpuram, Gopalapuram and Neelankarai/ECR — see [locality pages](https://www.csrushil.com/chartered-accountant-anna-nagar-chennai)
+R A Puram, Kotturpuram, Gopalapuram and Neelankarai/ECR — see the [areas we serve](https://www.csrushil.com/#areas)
 
 ## Other sections
 - [About Us](https://www.csrushil.com/about-us): Firm background, founder credentials, team
@@ -134,3 +141,4 @@ R A Puram, Kotturpuram, Gopalapuram and Neelankarai/ECR — see [locality pages]
 - Phone: +91 72001 49711
 - Email: admin@csrushil.com
 - Address: Old Door No. AP-890, New No. 18, J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai - 600040
+- Hours: Monday to Saturday, 9:30 AM to 6:30 PM; Sunday closed

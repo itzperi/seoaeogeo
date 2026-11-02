@@ -52,6 +52,16 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ServicePageTemplate
+      topBanner={
+        <p className="rounded-cards border border-carbon bg-sunburst p-5 text-sm leading-relaxed text-carbon">
+          <strong>Need only the CFO side?</strong> Monthly group reporting, IFRS or US GAAP bridges and board packs are
+          also offered on their own through our{" "}
+          <Link href="/virtual-cfo-services" className="font-semibold underline underline-offset-2">
+            Virtual CFO in Chennai
+          </Link>{" "}
+          service.
+        </p>
+      }
       pageUrl={`${SITE_URL}/india-subsidiary-compliance-cfo`}
       serviceType="Subsidiary Compliance and Outsourced CFO"
       crumbLabel="India Subsidiary Compliance & CFO"

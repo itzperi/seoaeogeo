@@ -11,13 +11,13 @@ const LANGUAGES_TEXT =
     : LANGUAGES_SPOKEN.join("");
 
 export const metadata: Metadata = {
-  title: { absolute: "CA Firm, Anna Nagar Office, Chennai | C S Rushil & Co." },
+  title: { absolute: "Chartered Accountant in Anna Nagar, Chennai | C S Rushil & Co." },
   description:
     "CA firm in Anna Nagar, Chennai for company and LLP registration, GST and income tax. Visit Mon–Sat, 9:30 AM–6:30 PM; book first so the right CA is free.",
   alternates: { canonical: "/chartered-accountant-anna-nagar-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "CA Firm in Anna Nagar, Chennai",
+    title: "Chartered Accountant in Anna Nagar, Chennai",
     description: "Company and LLP registration, GST, audit and income tax services from a CA firm based in Anna Nagar.",
     url: "/chartered-accountant-anna-nagar-chennai",
   },
@@ -29,7 +29,7 @@ export default function Page() {
       pageUrl={PAGE_URL}
       locality="Anna Nagar"
       crumbHref="/chartered-accountant-anna-nagar-chennai"
-      h1="CA Firm in Anna Nagar, Chennai"
+      h1="Chartered Accountant in Anna Nagar, Chennai"
       subhead="C S Rushil & Co. is a chartered accountant firm headquartered in Anna Nagar, at J-Block, 1st Street, 13th Main Rd — led by CA Rushil C S with a 16-member team handling company registration, GST, audit and tax."
       distanceNote="This is our home base: our office is in Anna Nagar itself, open Monday to Saturday, 9:30 AM to 6:30 PM. We recommend booking a consultation first so the right team member is available — for Anna Nagar clients, a same-day meeting is often possible. Call us for directions and parking."
       directAnswer="Yes. C S Rushil & Co. is a chartered accountant firm headquartered in Anna Nagar, at J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai 600040. The firm handles company registration, GST, audit and income tax, and Anna Nagar clients can meet the team in person at the office or work with the firm online."

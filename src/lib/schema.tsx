@@ -18,6 +18,7 @@ import {
   SITE_URL,
   SOCIALS,
   YEAR_FOUNDED,
+  TEAM_SIZE,
   YEAR_QUALIFIED,
 } from "./site";
 
@@ -73,12 +74,21 @@ export const INTERNATIONAL_AREAS: Record<string, string[]> = {
   "/outsourced-accounting-for-uk-accountants": ["United Kingdom"],
 };
 
+// Stable entity ids. Every page's WebPage, Service and BlogPosting nodes
+// point at these instead of repeating the entities.
+export const ORG_ID = `${SITE_URL}/#organization`;
+export const PERSON_ID = `${SITE_URL}/#ca-rushil`;
+const WEBSITE_ID = `${SITE_URL}/#website`;
+const SCHEMA_NAME = `${BUSINESS_NAME} Chartered Accountants`;
+const ICAI = { "@type": "Organization", name: "The Institute of Chartered Accountants of India", url: "https://www.icai.org/" };
+
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "AccountingService",
     "@id": `${SITE_URL}/#organization`,
-    name: BUSINESS_NAME,
+    name: SCHEMA_NAME,
+    alternateName: [BUSINESS_NAME, "CS Rushil & Co CA Firm Chennai"],
     legalName: BUSINESS_LEGAL_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
@@ -87,7 +97,10 @@ export function organizationSchema() {
     email: EMAIL,
     foundingDate: `${YEAR_FOUNDED}`,
     knowsLanguage: LANGUAGES_SPOKEN,
-    founder: { "@id": `${SITE_URL}/#founder` },
+    priceRange: "₹₹",
+    founder: { "@id": PERSON_ID },
+    employee: { "@id": PERSON_ID },
+    numberOfEmployees: { "@type": "QuantitativeValue", value: TEAM_SIZE },
     ...(FIRM_REGISTRATION_NO && {
       identifier: { "@type": "PropertyValue", propertyID: "ICAI firm registration number", value: FIRM_REGISTRATION_NO },
     }),
@@ -124,8 +137,7 @@ export function organizationSchema() {
       "ROC compliance",
     ],
     hasMap: GBP_URL,
-    // Instagram left out until the firm confirms the account is the firm's own.
-    sameAs: [SOCIALS.linkedin, GBP_URL],
+    sameAs: [SOCIALS.linkedin, SOCIALS.instagram, GBP_URL],
   };
 }
 
@@ -136,24 +148,30 @@ export function personSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
-    "@id": `${SITE_URL}/#founder`,
+    "@id": PERSON_ID,
     name: FOUNDER_NAME,
-    jobTitle: "Founder & Managing Partner, Chartered Accountant",
+    jobTitle: "Founder & Managing Partner, Practising Chartered Accountant",
+    url: `${SITE_URL}/about-us`,
     description: FOUNDER_CREDENTIALS,
     worksFor: { "@id": `${SITE_URL}/#organization` },
     sameAs: [FOUNDER_LINKEDIN],
-    memberOf: {
-      "@type": "Organization",
-      name: "The Institute of Chartered Accountants of India",
-      url: "https://www.icai.org/",
-    },
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      credentialCategory: "Professional qualification",
-      name: "Chartered Accountant",
-      recognizedBy: { "@type": "Organization", name: "The Institute of Chartered Accountants of India", url: "https://www.icai.org/" },
-      ...(YEAR_QUALIFIED && { dateCreated: YEAR_QUALIFIED }),
-    },
+    memberOf: ICAI,
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "Professional qualification",
+        name: "Chartered Accountant (ICAI)",
+        recognizedBy: ICAI,
+        ...(YEAR_QUALIFIED && { dateCreated: YEAR_QUALIFIED }),
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "Post-qualification certificate",
+        name: "Certified in Forensic Accounting and Fraud Detection (FAFD)",
+        recognizedBy: ICAI,
+      },
+    ],
+    knowsAbout: ["GST litigation", "Company incorporation", "Virtual CFO services", "Forensic accounting", "Start-up mentoring"],
     ...(ICAI_MEMBERSHIP_NO && {
       identifier: { "@type": "PropertyValue", propertyID: "ICAI membership number", value: ICAI_MEMBERSHIP_NO },
     }),
@@ -276,7 +294,8 @@ export function webPageReviewSchema(path: string, name: string, date: string) {
     name,
     isPartOf: { "@id": `${SITE_URL}/#website` },
     about: { "@id": `${SITE_URL}/#organization` },
-    reviewedBy: { "@id": `${SITE_URL}/#founder` },
+    author: { "@id": PERSON_ID },
+    reviewedBy: { "@id": PERSON_ID },
     lastReviewed: date,
     dateModified: date,
   };
@@ -291,6 +310,85 @@ export function speakableSchema(cssSelector: string[]) {
       cssSelector,
     },
   };
+}
+
+// Strips per-node @context so nodes can sit inside one @graph.
+function node<T extends object>(data: T) {
+  const { ["@context"]: _ctx, ...rest } = data as T & { "@context"?: string };
+  void _ctx;
+  return rest;
+}
+
+export function graph(nodes: object[]) {
+  return { "@context": "https://schema.org", "@graph": nodes.map(node) };
+}
+
+// Site-wide entities, emitted once per page by the root layout.
+export function siteGraph() {
+  return graph([organizationSchema(), personSchema(), websiteSchema()]);
+}
+
+// One connected graph for a money page: WebPage (authored and reviewed by
+// CA Rushil C S) → Service (with its offer catalogue) → FAQPage and
+// BreadcrumbList. Pages using it pass schema={false} to Breadcrumbs,
+// FAQSection and PageHero so no node is emitted twice.
+export function moneyPageGraph(opts: {
+  path: string;
+  name: string;
+  description: string;
+  dateModified?: string;
+  service: { name: string; serviceType: string; description: string; offers: string[] | { name: string; url: string }[] };
+  faqs: { question: string; answer: string }[];
+  crumbs: { name: string; href: string }[];
+  howTo?: { name: string; description: string; steps: { name: string; text: string }[] };
+  speakable?: string[];
+}) {
+  const url = `${SITE_URL}${opts.path === "/" ? "/" : opts.path}`;
+  const pageId = `${url}#webpage`;
+  const serviceId = `${url}#service`;
+  const crumbs = [{ name: "Home", href: "/" }, ...opts.crumbs.filter((c) => c.href !== "/")];
+  return graph([
+    {
+      "@type": "WebPage",
+      "@id": pageId,
+      url,
+      name: opts.name,
+      description: opts.description,
+      inLanguage: "en-IN",
+      isPartOf: { "@id": WEBSITE_ID },
+      about: { "@id": ORG_ID },
+      mainEntity: { "@id": serviceId },
+      author: { "@id": PERSON_ID },
+      reviewedBy: { "@id": PERSON_ID },
+      breadcrumb: { "@id": `${url}#breadcrumb` },
+      ...(opts.dateModified && { dateModified: opts.dateModified, lastReviewed: opts.dateModified }),
+      ...(opts.speakable && { speakable: { "@type": "SpeakableSpecification", cssSelector: opts.speakable } }),
+    },
+    {
+      "@type": "Service",
+      "@id": serviceId,
+      name: opts.service.name,
+      serviceType: opts.service.serviceType,
+      description: opts.service.description,
+      url,
+      provider: { "@id": ORG_ID },
+      areaServed: [{ "@type": "City", name: "Chennai" }, { "@type": "State", name: "Tamil Nadu" }],
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: opts.service.name,
+        itemListElement: opts.service.offers.map((o) => ({
+          "@type": "Offer",
+          itemOffered:
+            typeof o === "string"
+              ? { "@type": "Service", name: o }
+              : { "@type": "Service", name: o.name, url: o.url },
+        })),
+      },
+    },
+    { ...faqSchema(opts.faqs), "@id": `${url}#faq` },
+    { ...localBusinessBreadcrumb(crumbs.map((c) => ({ name: c.name, url: `${SITE_URL}${c.href}` }))), "@id": `${url}#breadcrumb` },
+    ...(opts.howTo ? [{ ...howToSchema(opts.howTo), "@id": `${url}#howto` }] : []),
+  ]);
 }
 
 export function JsonLd({ data }: { data: object }) {

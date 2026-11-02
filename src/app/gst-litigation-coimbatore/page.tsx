@@ -52,12 +52,6 @@ function Table({ head, rows }: { head: string[]; rows: string[][] }) {
   );
 }
 
-const TIMELINE = [
-  ["Show-cause notice reply", "Within the time stated in the notice, usually 30 days", "No pre-deposit. Reply in DRC-06 with documents; ask for a personal hearing", "Proper officer (Central GST or State Commercial Taxes, depending on your allotment)"],
-  ["First appeal", "3 months from communication of the order, plus up to 1 month on sufficient cause", "Form APL-01 on the GST portal. Admitted amount plus 10% of disputed tax (cap ₹20 crore CGST + ₹20 crore SGST); 10% of penalty for penalty-only orders", "Appellate Authority; personal hearing in person or by video, as the authority allows"],
-  ["Second appeal (GSTAT)", "3 months from communication of the appellate order, plus up to 3 months on sufficient cause", "Form APL-05 on the GSTAT e-filing portal. A further 10% of the tax in dispute, same caps", "GSTAT State Bench, which sits in Coimbatore on Thursdays under the current roster; the portal assigns the bench"],
-  ["High Court", "180 days from the GSTAT order", "Only on a substantial question of law; filed by an advocate", "Madras High Court"],
-];
 
 const DISPUTES = [
   ["Classification of pumps, motors and parts", "Whether a part or sub-assembly falls under the pump or motor heading or a general parts heading, and the rate change history around the September 2025 rationalisation", "HSN chapter and section notes, drawings and catalogues showing the part's sole or principal use"],
@@ -166,7 +160,14 @@ export default function Page() {
         portal. Missing the first-appeal window by more than a month generally ends the statutory route, leaving only a writ
         petition in the High Court on limited grounds.
       </p>
-      <Table head={["Step", "Time limit", "Form and pre-deposit", "Where it is heard"]} rows={TIMELINE} />
+      <p className={P}>
+        In short: a first appeal in Form APL-01 within 3 months of the order with 10% of the disputed tax as
+        pre-deposit, then a second appeal in Form APL-05 to a Tamil Nadu GSTAT State Bench within 3 months with a
+        further 10%. The full appeal ladder, with forums, condonation periods and pre-deposit caps, is set out once
+        on our Tamil Nadu hub page,{" "}
+        <Link href="/gst-litigation-chennai" className={LINK}>GST Litigation &amp; Appeals in Chennai</Link>. Beyond
+        the Tribunal, a State Bench order is appealed to the Madras High Court within 180 days.
+      </p>
       <p className="mt-3 max-w-3xl text-xs text-slate">
         Pre-deposit and limitation are under Sections 107 and 112 of the CGST Act (as amended by the Finance (No. 2) Act, 2024
         and the Finance Act, 2025), available on{" "}

@@ -6,7 +6,39 @@ import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
 import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
+import { AREAS } from "@/lib/areas";
 import { getService } from "@/lib/services";
+
+// Anchor sets for the links every area page gives the four money pages.
+// Rotated by area so 18 pages do not repeat one identical sentence.
+const MONEY_ANCHORS = [
+  { home: "CA firm in Chennai", pvt: "Private Limited Company registration in Chennai", vcfo: "Virtual CFO in Chennai", gst: "GST litigation and appeals in Chennai" },
+  { home: "chartered accountancy practice in Chennai", pvt: "private limited company registration", vcfo: "virtual CFO services in Chennai", gst: "GST appeals and litigation" },
+  { home: "Chennai CA firm", pvt: "registering a private limited company in Chennai", vcfo: "a virtual CFO", gst: "GST litigation in Chennai" },
+];
+const LINK = "font-medium text-royal-violet underline underline-offset-2";
+
+function MoneyLinks({ locality, crumbHref, residents }: { locality: string; crumbHref: string; residents: boolean }) {
+  const i = Math.max(0, AREAS.findIndex((a) => `/${a.slug}` === crumbHref));
+  const a = MONEY_ANCHORS[i % MONEY_ANCHORS.length];
+  const home = <Link href="/" className={LINK}>{a.home}</Link>;
+  const pvt = <Link href="/private-limited-company-incorporation-chennai" className={LINK}>{a.pvt}</Link>;
+  const vcfo = <Link href="/virtual-cfo-services" className={LINK}>{a.vcfo}</Link>;
+  const gst = <Link href="/gst-litigation-chennai" className={LINK}>{a.gst}</Link>;
+  return residents ? (
+    <p>
+      Many {locality} residents also own a business or practice. For that side of their affairs, our {home} handles{" "}
+      {pvt} when a business is ready to incorporate, monthly reporting through {vcfo}, and {gst} when a GST notice turns
+      into a demand.
+    </p>
+  ) : (
+    <p>
+      {locality} clients work with the same team as the rest of our {home}: {pvt} for new ventures, {vcfo} for
+      businesses that need monthly MIS and cash-flow forecasting, and {gst} when a show-cause notice or demand order
+      needs a reply or an appeal.
+    </p>
+  );
+}
 
 export default function AreaPageTemplate({
   pageUrl,
@@ -87,6 +119,13 @@ export default function AreaPageTemplate({
             </div>
           ))}
 
+          <h2 className="mt-12 text-2xl text-obsidian">
+            How do {locality} clients work with our CA firm in Chennai?
+          </h2>
+          <div className="mt-4 max-w-2xl leading-relaxed text-slate">
+            <MoneyLinks locality={locality} crumbHref={crumbHref} residents={topic !== "Chartered Accountant"} />
+          </div>
+
           <h2 className="mt-14 text-2xl text-obsidian">
             Services most relevant to {topic === "Chartered Accountant" ? `${locality} businesses` : `${locality} residents`}
           </h2>
@@ -120,6 +159,23 @@ export default function AreaPageTemplate({
               </ul>
             </>
           )}
+          <nav aria-label="Other Chennai areas" className="mt-14">
+            <h2 className="text-2xl text-obsidian">Which other Chennai areas do we serve?</h2>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {AREAS.filter((area) => `/${area.slug}` !== crumbHref).map((area) => (
+                <li key={area.slug}>
+                  <Link href={`/${area.slug}`} className="inline-block rounded-navpills border border-ash bg-paper px-4 py-2 text-sm text-obsidian hover:bg-fog">
+                    {area.name}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/#areas" className="inline-block rounded-navpills border border-carbon bg-white px-4 py-2 text-sm font-medium text-obsidian hover:bg-fog">
+                  All Chennai areas →
+                </Link>
+              </li>
+            </ul>
+          </nav>
         </div>
       </section>
 

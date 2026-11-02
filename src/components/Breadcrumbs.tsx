@@ -4,15 +4,18 @@ import { SITE_URL } from "@/lib/site";
 
 export type Crumb = { name: string; href: string };
 
-export default function Breadcrumbs({ items }: { items: Crumb[] }) {
+// schema={false} when the page emits its BreadcrumbList inside its own @graph.
+export default function Breadcrumbs({ items, schema = true }: { items: Crumb[]; schema?: boolean }) {
   const full = [{ name: "Home", href: "/" }, ...items];
   return (
     <nav aria-label="Breadcrumb" className="container-page bg-paper pt-6 text-sm text-slate">
-      <JsonLd
-        data={localBusinessBreadcrumb(
-          full.map((c) => ({ name: c.name, url: `${SITE_URL}${c.href}` }))
-        )}
-      />
+      {schema && (
+        <JsonLd
+          data={localBusinessBreadcrumb(
+            full.map((c) => ({ name: c.name, url: `${SITE_URL}${c.href}` }))
+          )}
+        />
+      )}
       <ol className="flex flex-wrap items-center gap-1.5">
         {full.map((crumb, i) => (
           <li key={crumb.href} className="flex items-center gap-1.5">

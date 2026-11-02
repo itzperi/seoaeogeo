@@ -4,23 +4,90 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
-import { BOOKING_LINK, SITE_URL, SOCIALS } from "@/lib/site";
+import SiloLinks from "@/components/SiloLinks";
+import { JsonLd, moneyPageGraph } from "@/lib/schema";
+import { PAGE_DATES } from "@/lib/page-dates";
+import { BOOKING_LINK, SOCIALS } from "@/lib/site";
 
-const PAGE_URL = `${SITE_URL}/virtual-cfo-services`;
+// URL kept as /virtual-cfo-services (no -chennai) to keep its indexing
+// history; every internal link and the canonical use this exact path.
+const PATH = "/virtual-cfo-services";
+const TITLE = "Virtual CFO in Chennai | Fractional CFO | C S Rushil & Co.";
+const DESCRIPTION =
+  "Hire a CA-led Virtual CFO in Chennai for startups, SMEs & foreign subsidiaries. Monthly MIS, cash flow forecasting, fundraising & board packs in Anna Nagar.";
 
 export const metadata: Metadata = {
-  title: { absolute: "Virtual & Fractional CFO Services in Chennai | Anna Nagar" },
-  description:
-    "Virtual and fractional CFO services in Chennai: MIS, budgeting, fundraising support and group reporting for startups, SMEs and foreign-owned subsidiaries.",
-  alternates: { canonical: "/virtual-cfo-services" },
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
+  alternates: { canonical: PATH },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "Virtual CFO Services in Chennai",
-    description: "Outsourced CFO-level financial leadership for growing Chennai businesses.",
-    url: "/virtual-cfo-services",
+    title: "Virtual CFO in Chennai: Outsourced & Fractional CFO Services",
+    description: DESCRIPTION,
+    url: PATH,
   },
 };
+
+// What the engagement delivers at each business stage.
+const STAGE_MATRIX = [
+  {
+    stage: "Seed and early-stage startups",
+    who: "Pre-Series A SaaS and D2C companies, often in OMR or the IITM Research Park",
+    deliverables: [
+      "Burn rate and runway model, updated monthly",
+      "Unit economics: CAC, LTV, contribution margin by channel",
+      "Investor MIS deck in the format your investors ask for",
+      "ESOP pool and cap-table hygiene",
+      "DPIIT recognition and FEMA tracking, including FC-GPR after each foreign allotment",
+    ],
+  },
+  {
+    stage: "Scaling SMEs and manufacturers",
+    who: "₹5 crore to ₹100 crore turnover, often in Ambattur, Guindy or Sriperumbudur",
+    deliverables: [
+      "Working capital and debtor-days review",
+      "SKU-level and plant-level costing and margin analysis",
+      "CMA data for cash credit and overdraft facilities",
+      "Internal controls in Tally, Zoho or the ERP you already run",
+      "GST and TDS outflows mapped into the cash-flow forecast",
+    ],
+  },
+  {
+    stage: "Foreign-owned Indian subsidiaries",
+    who: "Subsidiaries of US, UK, Singapore and UAE parents",
+    deliverables: [
+      "Monthly group reporting with an Ind AS to IFRS or US GAAP bridge",
+      "Intercompany transfer pricing margin monitored through the year, ready for Form 3CEB",
+      "RBI FLA return and FEMA compliance calendar",
+      "Board packs for directors who join from abroad",
+    ],
+  },
+];
+
+const ROADMAP = [
+  {
+    phase: "Days 1–30",
+    focus: "Clean the base",
+    items: ["Chart of accounts cleanup", "Historical reconciliation of bank, GST and TDS ledgers", "KPI list agreed with the founders or board"],
+  },
+  {
+    phase: "Days 31–60",
+    focus: "First reporting cycle",
+    items: ["First monthly MIS pack", "13-week rolling cash-flow forecast", "Margin leak review by product, customer or plant"],
+  },
+  {
+    phase: "Days 61–90",
+    focus: "Run the cadence",
+    items: ["Budget vs actual variance review every month", "Board pack prepared from the same data, not rebuilt each quarter", "Agreed monthly review call"],
+  },
+];
+
+const TECH_STACK = [
+  ["Accounting", "Zoho Books (built by Chennai-headquartered Zoho), Tally Prime, QuickBooks, Xero"],
+  ["Payouts and collections", "RazorpayX and Cashfree payout reconciliation"],
+  ["Payroll", "Keka and Zoho Payroll"],
+  ["MIS dashboards", "Power BI and Google Looker Studio"],
+];
 
 const SCOPE = [
   { name: "Monthly MIS Reporting", text: "Structured management information system reports — revenue, margin, cash position, and the specific KPIs your business actually runs on, not a generic template." },
@@ -110,28 +177,50 @@ export default function VirtualCfoPage() {
   return (
     <>
       <JsonLd
-        data={serviceSchema({
-          name: "Virtual CFO Services in Chennai",
-          description:
-            "Outsourced financial leadership for Chennai startups and SMEs — MIS reporting, budgeting, fundraising support, and board-ready financials.",
-          url: PAGE_URL,
-          serviceType: "Financial Advisory",
+        data={moneyPageGraph({
+          path: PATH,
+          name: TITLE,
+          description: DESCRIPTION,
+          dateModified: PAGE_DATES[PATH],
+          service: {
+            name: "Virtual CFO in Chennai",
+            serviceType: "Virtual CFO and Fractional CFO Services",
+            description:
+              "CA-led outsourced and fractional CFO services for Chennai startups, SMEs and foreign-owned subsidiaries: monthly MIS, cash-flow forecasting, budgeting, fundraising support and board reporting.",
+            offers: [
+              "Monthly MIS reporting",
+              "13-week rolling cash-flow forecasting",
+              "Budgeting and variance analysis",
+              "Fundraising models and investor due diligence",
+              "Board and investor reporting",
+              "Group reporting for foreign-owned subsidiaries",
+            ],
+          },
+          faqs: FAQS,
+          crumbs: [{ name: "Virtual CFO in Chennai", href: PATH }],
+          howTo: {
+            name: "How a Virtual CFO engagement works",
+            description: "The stages a Virtual CFO engagement typically moves through, from initial assessment to ongoing monthly reporting.",
+            steps: ENGAGEMENT_STEPS,
+          },
+          speakable: ["#lead-answer", "#direct-answer"],
         })}
       />
-      <JsonLd
-        data={howToSchema({
-          name: "How a Virtual CFO engagement works",
-          description: "The stages a Virtual CFO engagement typically moves through, from initial assessment to ongoing monthly reporting.",
-          steps: ENGAGEMENT_STEPS,
-        })}
-      />
-      <JsonLd data={speakableSchema(["#direct-answer"])} />
-      <Breadcrumbs items={[{ name: "Virtual CFO Services", href: "/virtual-cfo-services" }]} />
+      <Breadcrumbs items={[{ name: "Virtual CFO in Chennai", href: PATH }]} schema={false} />
       <PageHero
-        reviewedPath="/virtual-cfo-services"
+        reviewedPath={PATH}
+        schema={false}
         eyebrow="Virtual & Fractional CFO · Chennai"
-        h1="Virtual CFO Services in Chennai"
-        subhead="Outsourced financial leadership — MIS, budgeting, fundraising support, and board-ready reporting — for growing businesses that aren't ready for a full-time CFO."
+        h1="Virtual CFO in Chennai — Outsourced & Fractional CFO Services"
+        lead={
+          <>
+            Looking for a <strong>Virtual CFO in Chennai</strong>? C S Rushil &amp; Co. is an Anna Nagar-based{" "}
+            <strong>chartered accountancy firm</strong> providing fractional CFO services, including monthly MIS
+            reporting, 13-week cash-flow forecasting, fundraising models and FEMA and ROC compliance, for Chennai
+            startups, SMEs and foreign-owned subsidiaries.
+          </>
+        }
+        subhead="Senior financial leadership on a part-time, scheduled basis, for growing businesses that aren't ready for a full-time CFO."
       />
 
       <section className="bg-paper py-16">
@@ -213,6 +302,88 @@ export default function VirtualCfoPage() {
                 </Link>
                 .
               </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">What does a virtual CFO deliver at each stage of a business?</h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                The deliverables change with the stage of the business: runway and investor reporting for startups,
+                working capital and costing for SMEs, and group reporting for subsidiaries.
+              </p>
+              <div className="mt-4 overflow-x-auto rounded-cards border border-ash">
+                <table className="w-full min-w-[640px] border-collapse text-sm">
+                  <caption className="sr-only">Virtual CFO deliverables by business stage</caption>
+                  <thead>
+                    <tr className="bg-fog text-left">
+                      <th className="p-4 font-medium text-obsidian">Stage</th>
+                      <th className="p-4 font-medium text-obsidian">Typical client</th>
+                      <th className="p-4 font-medium text-obsidian">What the virtual CFO delivers</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-paper">
+                    {STAGE_MATRIX.map((row) => (
+                      <tr key={row.stage} className="border-t border-ash align-top">
+                        <td className="p-4 font-medium text-obsidian">{row.stage}</td>
+                        <td className="p-4 text-slate">{row.who}</td>
+                        <td className="p-4 text-slate">
+                          <ul className="list-disc space-y-1 pl-4">
+                            {row.deliverables.map((d) => (
+                              <li key={d}>{d}</li>
+                            ))}
+                          </ul>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="mt-4 text-sm text-slate">
+                Startup engagements in the IT corridor are covered in more depth in{" "}
+                <Link href="/blog/virtual-cfo-omr-startups" className="text-royal-violet underline">
+                  virtual CFO for OMR startups
+                </Link>
+                , and subsidiary work in our{" "}
+                <Link href="/india-subsidiary-compliance-cfo" className="text-royal-violet underline">
+                  India subsidiary compliance and CFO retainer
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">What happens in the first 90 days with a virtual CFO?</h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                The first 90 days move from cleaning the books, to a first reporting cycle, to a monthly cadence the
+                business can rely on. This is a sample roadmap; the actual plan is set after the initial assessment.
+              </p>
+              <ol className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+                {ROADMAP.map((r) => (
+                  <li key={r.phase} className="rounded-cards border border-carbon bg-paper p-6">
+                    <p className="sticker-tag bg-mint-pop">{r.phase}</p>
+                    <h3 className="mt-3 font-medium text-obsidian">{r.focus}</h3>
+                    <ul className="mt-2 list-disc space-y-1 pl-4 text-sm text-slate">
+                      {r.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </li>
+                ))}
+              </ol>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">Which finance and ERP tools does our virtual CFO team work in?</h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                We work in the systems you already use; a virtual CFO engagement does not need new software.
+              </p>
+              <dl className="mt-4 divide-y divide-ash overflow-hidden rounded-cards border border-ash bg-paper">
+                {TECH_STACK.map(([area, tools]) => (
+                  <div key={area} className="grid grid-cols-1 gap-1 px-5 py-3 sm:grid-cols-[200px_1fr] sm:gap-4">
+                    <dt className="text-sm font-medium text-obsidian">{area}</dt>
+                    <dd className="text-sm text-slate">{tools}</dd>
+                  </div>
+                ))}
+              </dl>
             </div>
 
             <div>
@@ -379,7 +550,9 @@ export default function VirtualCfoPage() {
         </div>
       </section>
 
-      <FAQSection items={FAQS} />
+      <SiloLinks path={PATH} />
+
+      <FAQSection items={FAQS} schema={false} />
 
       <section className="bg-paper py-12">
         <div className="container-page">
