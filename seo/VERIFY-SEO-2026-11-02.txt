@@ -100,11 +100,11 @@ AI readiness
   PASS  robots.txt allows named crawlers  — Googlebot, OAI-SearchBot, GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Applebot
 
 Sitemap
-  PASS  sitemap.xml served  — 181 URLs
+  PASS  sitemap.xml served  — 180 URLs
   PASS  / has lastmod  — 2026-11-02T00:00:00.000Z
   PASS  /private-limited-company-incorporation-chennai has lastmod  — 2026-11-02T00:00:00.000Z
   PASS  /virtual-cfo-services has lastmod  — 2026-11-02T00:00:00.000Z
   PASS  /gst-litigation-chennai has lastmod  — 2026-11-02T00:00:00.000Z
-  PASS  every URL is 200 and self-canonical  — 181/181
+  PASS  every URL is 200 and self-canonical  — 180/180
 
 90/90 checks passed
