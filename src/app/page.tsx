@@ -26,7 +26,7 @@ import {
 } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Chartered Accountants, Anna Nagar | C S Rushil & Co." },
+  title: { absolute: "CA Firm in Chennai (Anna Nagar) | C S Rushil & Co." },
   description:
     "CA firm in Anna Nagar, Chennai for company and LLP registration, GST, income tax, audit and virtual CFO work. Book a consultation online or visit our office.",
   alternates: { canonical: "/" },
@@ -324,8 +324,8 @@ export default function HomePage() {
               Founded by {FOUNDER_NAME}
             </h2>
             <p className="mt-4 leading-relaxed text-slate">
-              C S Rushil &amp; Co. is a dynamic, fast-growing chartered accountancy
-              firm based in {ADDRESS_FULL}. Founded by {FOUNDER_NAME}
+              C S Rushil &amp; Co. is a chartered accountancy firm in Chennai,
+              based at {ADDRESS_FULL}. Founded by {FOUNDER_NAME}
               ({FOUNDER_CREDENTIALS}), the firm is backed by a team of 16 skilled
               professionals delivering audit, taxation, risk, compliance, and
               management consulting services — combining technology-driven process

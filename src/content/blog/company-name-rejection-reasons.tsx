@@ -243,8 +243,8 @@ export default function Body() {
         director details, capital, the registered office, stamp duty and linked
         registrations. Our{" "}
         <Link href="/company-registration-chennai">company registration in Chennai</Link>{" "}
-        guide explains the full sequence, and our post on the{" "}
-        <Link href="/blog/company-registration-timeline-day-by-day">day-by-day registration timeline</Link>{" "}
+        guide explains the full sequence, and our page on the{" "}
+        <Link href="/private-limited-company-incorporation-chennai">private limited company registration timeline</Link>{" "}
         shows how a name objection affects the overall schedule. If you are
         weighing a different structure, see{" "}
         <Link href="/llp-registration-chennai">LLP registration</Link>,

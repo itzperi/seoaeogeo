@@ -22,7 +22,6 @@ const STATIC_PATHS = [
   { path: "blog", priority: 0.6 },
   { path: "videos", priority: 0.5 },
   { path: "faq", priority: 0.7 },
-  { path: "chartered-accountant-chennai", priority: 0.8 },
 ];
 
 // Re-validate daily so scheduled posts appear on their publish date.

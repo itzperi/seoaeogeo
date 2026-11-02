@@ -57,7 +57,7 @@ export default function MobileNav() {
             <ul className="mt-3 space-y-1">
               <li>
                 <Link
-                  href="/chartered-accountant-chennai"
+                  href="/"
                   onClick={() => setOpen(false)}
                   className="block rounded-lg px-3 py-2.5 text-sm font-medium text-obsidian hover:bg-fog"
                 >

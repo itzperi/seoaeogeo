@@ -209,8 +209,8 @@ export default function Body() {
         A sensible approach is to set authorised capital a little above what you
         expect to issue in the first year or two, and increase it later when
         you raise funds. Our post on{" "}
-        <Link href="/blog/authorised-vs-paid-up-capital">authorised versus paid-up capital</Link>{" "}
-        explains the trade-off in more detail.
+        <Link href="/blog/government-fees-company-registration">government fees for company registration</Link>{" "}
+        shows how the capital figure changes the fees.
       </p>
 
       <h2>Stamp duty when you increase capital later</h2>

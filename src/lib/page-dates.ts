@@ -11,7 +11,6 @@ export const PAGE_DATES: Record<string, string> = {
   "/chartered-accountant-adyar-chennai": "2026-10-14",
   "/chartered-accountant-ambattur-chennai": "2026-10-14",
   "/chartered-accountant-anna-nagar-chennai": "2026-10-14",
-  "/chartered-accountant-chennai": "2026-10-15",
   "/chartered-accountant-guindy-chennai": "2026-10-14",
   "/chartered-accountant-kilpauk-chennai": "2026-10-14",
   "/chartered-accountant-mylapore-chennai": "2026-10-14",

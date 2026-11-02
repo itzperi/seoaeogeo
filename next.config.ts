@@ -20,6 +20,8 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // The Chennai hub duplicated the homepage's intent; one URL now carries "CA firm in Chennai".
+      { source: "/chartered-accountant-chennai", destination: "/", permanent: true },
       // The combined USA & UK page became the NRI hub with separate country pages.
       { source: "/nri-tax-services-usa-uk", destination: "/nri-tax-services", permanent: true },
       // The pricing page was removed; send old links to the contact page.
