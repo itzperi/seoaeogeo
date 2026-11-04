@@ -92,3 +92,26 @@ Every plan has its own verify register (section 13.3 or Appendix A). Many items 
 - NRI income tax notices belong to plan 25 at `/income-tax-notice-reply-for-nris`. Plan 27 no longer proposes its own post (`/blog/income-tax-notice-nri-abroad`) and links to plan 25's page instead.
 - New country pages `/nri-tax-services-singapore` and `/nri-tax-services-canada` must pass the same 60% unique-copy gate as the existing UAE, UK and USA pages. Australia and Malaysia stay deferred until Search Console shows demand.
 - Live-page risk to fix first: the UAE page FAQ about salary credited to an Indian account (plan 27, L7). It also omits the 60 + 365 day residency test (L1).
+
+## Status of live-site fixes (4 Nov 2026, commit a5e8035)
+Fixed:
+- StartingFees block and fee config removed from all four pages that rendered it
+- NRI main-page FAQ now gives both residency tests; UAE salary FAQ rewritten
+- Turnaround promises removed: GST registration page and online-sellers post, DSC page, Pvt Ltd sidebar
+- s.149(3) wording changed to "during the financial year" on 13 pages and one post
+- Subsidiary page: audit-independence line (s.144); Form 3CEB / Form 48 dates clarified
+- Five meta descriptions fixed (length, NRI and "appeals" intent)
+
+Checked and left unchanged (the plans misread these):
+- "GSTR 2A" in the online-sellers post is correct, because marketplace TCS data appears in GSTR-2A, not 2B
+- LLP late fees: the page describes the Form 3 slab fee and the blog the per-day fee for Forms 8 and 11. These are different rules, not a conflict
+- Cash deposits: ₹1 crore / ₹50 lakh is the return-filing trigger and ₹10 lakh is the bank-reporting (SFT) threshold. Different rules, not a conflict
+- Old-regime "₹4–5 lakh" rule of thumb: not on the ITR page as plan 24 described
+
+Still open, for the firm:
+- Decision on the GST litigation page title and cards (see above)
+- Contact page says "we typically respond within one business day". Keep it only if the firm meets it
+- Booking link named "30min" while the offer is a 15-minute consultation (Calendly event setting)
+- Data-security claims on live pages need confirming
+- ITR page: confirm CBDT Circular 7/2026 and the 21 Nov 2026 audit due date exist as stated
+- GBP hours ("Open 24 hours"), ICAI membership and firm registration numbers
