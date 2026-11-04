@@ -39,6 +39,16 @@ const TOOLS = [
     name: "GST Appeal Deadline & Pre-Deposit Calculator",
     text: "Find the due date for a first appeal under section 107 or a GSTAT appeal under section 112, and the pre-deposit by tax head.",
   },
+  {
+    href: "/tools/nri-property-sale-tds-calculator",
+    name: "NRI Property Sale TDS Calculator",
+    text: "Compare the section 195 TDS a buyer deducts on the full sale price with the estimated tax on your gain, and see what a lower deduction certificate could leave with you.",
+  },
+  {
+    href: "/tools/foreign-subsidiary-compliance-calendar",
+    name: "India Subsidiary First-Year Compliance Calendar",
+    text: "Turn your incorporation and share allotment dates into a dated first-year calendar: first auditor, FC-GPR, INC-20A, FLA, transfer pricing, AGM, AOC-4 and MGT-7.",
+  },
 ];
 
 const FAQS = [
@@ -55,7 +65,7 @@ const FAQS = [
   {
     question: "Do the calculators include your professional fee?",
     answer:
-      "No. The fee calculator shows government charges only, and the other two tools do not price our services at all. Our professional fee is quoted separately after a scoping call, based on the work your matter needs, so you see the full picture of cost before anything starts.",
+      "No. The fee calculator shows government charges only, and the other tools do not price our services at all. Our professional fee is quoted separately after a scoping call, based on the work your matter needs, so you see the full picture of cost before anything starts.",
   },
   {
     question: "Which law do the calculators follow?",
@@ -74,12 +84,12 @@ export default function Page() {
       h1={H1}
       lead={
         <>
-          These <strong>free calculators</strong> from C S Rushil &amp; Co., a chartered accountancy firm in Anna Nagar,
-          Chennai, answer three questions we hear often: what is my residential status, what will the government charge
+          These <strong>calculators</strong> from C S Rushil &amp; Co., a chartered accountancy firm in Anna Nagar,
+          Chennai, answer questions we hear often, such as: what is my residential status, what will the government charge
           to register my company, and when is my GST appeal due. Each result is an estimate that we confirm.
         </>
       }
-      subhead="Three working tools for NRI tax, company registration and GST appeals, each with the rules explained in words."
+      subhead="Working tools for NRI tax, NRI property sales, company registration, foreign-owned subsidiaries and GST appeals, each with the rules explained in words."
       crumbs={CRUMBS}
       ctaService="tax and compliance calculators"
       faqs={FAQS}

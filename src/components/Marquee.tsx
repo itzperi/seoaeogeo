@@ -1,5 +1,5 @@
 const MESSAGES = [
-  "Free 15-minute consultation with a chartered accountant",
+  "15-minute consultation with a chartered accountant",
   "GST notice? Reply before the deadline",
   "Tax audit · Transfer pricing · Virtual CFO",
   "NRI tax for UAE · UK · USA",

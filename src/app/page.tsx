@@ -1,3 +1,4 @@
+import TamilSummaryBox from "@/components/TamilSummaryBox";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { AREAS } from "@/lib/areas";
@@ -418,6 +419,7 @@ export default function HomePage() {
         </div>
       </section>
 
+      <TamilSummaryBox path="/" />
       <FAQSection items={HOME_FAQS} schema={false} />
       <CTASection showForm={false} title="Ready to talk to a CA firm in Chennai?" />
     </>

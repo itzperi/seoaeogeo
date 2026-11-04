@@ -27,6 +27,8 @@ const STATIC_PATHS = [
   { path: "tools/nri-residential-status-calculator", priority: 0.6 },
   { path: "tools/company-registration-government-fee-calculator", priority: 0.6 },
   { path: "tools/gst-appeal-deadline-pre-deposit-calculator", priority: 0.6 },
+  { path: "tools/nri-property-sale-tds-calculator", priority: 0.6 },
+  { path: "tools/foreign-subsidiary-compliance-calendar", priority: 0.6 },
 ];
 
 // Re-validate daily so scheduled posts appear on their publish date.

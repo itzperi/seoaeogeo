@@ -1,3 +1,4 @@
+import CrossBorderSteps from "@/components/CrossBorderSteps";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
@@ -258,6 +259,7 @@ export default function Page() {
         .
       </p>
 
+      <CrossBorderSteps country="singapore" service="an India subsidiary for a Singapore company" />
       <HighTicketSections notIncluded={NOT_INCLUDED} />
 
       <h2 className="mt-14 text-2xl text-obsidian">How does a Singapore–India working model run day to day?</h2>

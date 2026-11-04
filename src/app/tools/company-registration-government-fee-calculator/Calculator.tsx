@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import CalcWhatsApp from "@/components/CalcWhatsApp";
 
 type Entity = "pvt" | "opc" | "llp";
 
@@ -165,6 +166,10 @@ export default function Calculator() {
             <p className="mt-2 text-sm leading-relaxed text-carbon">
               This is an estimate for guidance. We confirm the exact government charges for your case before you pay anything.
             </p>
+            <CalcWhatsApp
+              tool="company-registration-government-fee-calculator"
+              summary={`company registration fee calculator: ${entity === "pvt" ? "Private Limited" : entity === "opc" ? "OPC" : "LLP"}, capital ₹${capital || "0"}, estimated government charges ${rupees(out.total)}.`}
+            />
           </div>
         )}
       </div>

@@ -60,7 +60,7 @@ export default function Page() {
       path={PATH}
       title={TITLE}
       description={DESCRIPTION}
-      eyebrow="Free tool · NRI tax"
+      eyebrow="Tool · NRI tax"
       h1={H1}
       lead={
         <>

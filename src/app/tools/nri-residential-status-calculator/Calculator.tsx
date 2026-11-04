@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState, type FormEvent } from "react";
+import CalcWhatsApp from "@/components/CalcWhatsApp";
 
 type YesNo = "yes" | "no";
 type Status = "ROR" | "RNOR" | "NR" | "DEEMED";
@@ -212,6 +213,10 @@ export default function Calculator() {
               </Link>
               .
             </p>
+            <CalcWhatsApp
+              tool="nri-residential-status-calculator"
+              summary={`NRI residential status calculator: ${days || "0"} days in India this year, ${days4 || "0"} days in the previous four years, result: ${result.title}.`}
+            />
           </div>
         )}
       </div>

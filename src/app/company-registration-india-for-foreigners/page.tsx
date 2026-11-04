@@ -1,3 +1,4 @@
+import CrossBorderSteps from "@/components/CrossBorderSteps";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
@@ -160,6 +161,7 @@ export default function Page() {
         </Link>
         .
       </p>
+      <CrossBorderSteps country="any" service="company registration in India for a foreign founder" />
     </ServicePageTemplate>
   );
 }

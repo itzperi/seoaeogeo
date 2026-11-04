@@ -1,3 +1,4 @@
+import CrossBorderSteps from "@/components/CrossBorderSteps";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
@@ -148,6 +149,7 @@ export default function Page() {
       ]}
       relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "virtual-cfo-services"]}
     >
+      <CrossBorderSteps country="uk" service="an India subsidiary for a UK company" />
       <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />
 
       <h2 className="mt-14 text-2xl text-obsidian">What documents does a UK parent need, and how are they apostilled?</h2>

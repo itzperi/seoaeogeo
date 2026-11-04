@@ -1,3 +1,4 @@
+import CrossBorderSteps from "@/components/CrossBorderSteps";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
@@ -147,6 +148,7 @@ export default function Page() {
       ]}
       relatedSlugs={["india-subsidiary-compliance-cfo", "fema-rbi-compliance", "transfer-pricing-audit"]}
     >
+      <CrossBorderSteps country="uae" service="an India subsidiary for a UAE company" />
       <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />
 
       <h2 className="mt-14 text-2xl text-obsidian">What documents does a UAE parent need, and how are they attested?</h2>

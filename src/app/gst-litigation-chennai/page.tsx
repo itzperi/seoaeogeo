@@ -1,3 +1,5 @@
+import ICAIVerificationTrustBar from "@/components/ICAIVerificationTrustBar";
+import TamilSummaryBox from "@/components/TamilSummaryBox";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -612,6 +614,12 @@ export default function GstLitigationPage() {
 
       <SiloLinks path={PATH} />
 
+      <section className="bg-paper pb-12">
+        <div className="container-page">
+          <ICAIVerificationTrustBar />
+        </div>
+      </section>
+      <TamilSummaryBox path="/gst-litigation-chennai" />
       <FAQSection items={FAQS} schema={false} />
 
       <section className="bg-paper py-12">

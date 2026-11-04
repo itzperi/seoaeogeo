@@ -1,3 +1,4 @@
+import CrossBorderSteps from "@/components/CrossBorderSteps";
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
@@ -212,6 +213,7 @@ export default function Page() {
         handles this work from Anna Nagar, Chennai, for companies across India.
       </p>
       <Glossary terms={["FC-GPR"]} />
+      <CrossBorderSteps country="any" service="FEMA and RBI compliance" />
     </ServicePageTemplate>
   );
 }

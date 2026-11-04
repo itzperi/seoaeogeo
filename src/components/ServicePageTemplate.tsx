@@ -6,12 +6,37 @@ import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
 import SiloLinks from "@/components/SiloLinks";
+import ICAIVerificationTrustBar from "@/components/ICAIVerificationTrustBar";
+import CAFirmChecklist from "@/components/CAFirmChecklist";
+import ActTransitionTable, { ACT_ROWS } from "@/components/ActTransitionTable";
+import TamilSummaryBox from "@/components/TamilSummaryBox";
 import { cityServices } from "@/lib/city-services";
 import { LOCATION_PAGES, locationLinks } from "@/lib/location-pages";
 import { INTERNATIONAL_AREAS, JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { TN_CITY_PAGES } from "@/lib/tn-cities";
 import { getPostMeta, isPublished } from "@/lib/blog";
 import { getService } from "@/lib/services";
+
+// Pages that show the "what to check before choosing who files for you" table.
+const CHECKLIST_PAGES = new Set([
+  "/company-registration-chennai",
+  "/llp-registration-chennai",
+  "/opc-registration-chennai",
+  "/section-8-company-registration-chennai",
+  "/gst-registration-chennai",
+  "/gst-return-filing-chennai",
+  "/income-tax-return-filing-chennai",
+]);
+
+// Pages that show the Income-tax Act 1961 → 2025 reference table, and its rows.
+const ACT_TABLE_PAGES: Record<string, (keyof typeof ACT_ROWS)[]> = {
+  "/direct-tax": ["year", "taxAudit", "scrutiny", "reassess", "stay", "appeal", "tds195", "tpReport"],
+  "/income-tax-return-filing-chennai": ["year", "taxAudit", "cg54", "cg54ec", "cg54f", "appeal"],
+  "/income-tax-notice-reply-chennai": ["year", "scrutiny", "reassess", "stay", "appeal"],
+  "/nri-tax-services": ["year", "tds195", "remitInfo", "remitForms", "trc", "cg54", "cg54ec", "cg54f"],
+  "/form-15ca-15cb-chennai": ["year", "tds195", "remitInfo", "remitForms", "trc"],
+  "/transfer-pricing-audit": ["year", "tpReport", "taxAudit"],
+};
 
 export type SubService = { name: string; text: string };
 export type HowToStep = { name: string; text: string };
@@ -171,6 +196,10 @@ export default function ServicePageTemplate({
 
           {children}
 
+          {CHECKLIST_PAGES.has(crumbHref) && <CAFirmChecklist />}
+          {ACT_TABLE_PAGES[crumbHref] && <ActTransitionTable rows={ACT_TABLE_PAGES[crumbHref]} />}
+          <ICAIVerificationTrustBar />
+
           {related.length > 0 && (
             <>
               <h2 className="mt-14 text-2xl text-obsidian">Which related services might you need?</h2>
@@ -190,6 +219,8 @@ export default function ServicePageTemplate({
           )}
         </div>
       </section>
+
+      <TamilSummaryBox path={crumbHref} />
 
       {guides.length > 0 && (
         <section className="bg-paper pb-12">

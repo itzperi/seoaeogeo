@@ -6,6 +6,7 @@ import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
 import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
+import TamilSummaryBox from "@/components/TamilSummaryBox";
 import { AREAS } from "@/lib/areas";
 import { getService } from "@/lib/services";
 
@@ -217,6 +218,7 @@ export default function AreaPageTemplate({
         </div>
       </section>
 
+      <TamilSummaryBox path={crumbHref} />
       <FAQSection items={faqs} />
       <GoogleProfileStrip />
       <CTASection

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import CalcWhatsApp from "@/components/CalcWhatsApp";
 
 type Stage = "s107" | "s112";
 
@@ -219,6 +220,10 @@ export default function Calculator() {
             <p className="mt-4 text-sm leading-relaxed text-carbon">
               This is an estimate for guidance, based on the CGST Act as amended up to the Finance Act, 2025. We confirm the due date and pre-deposit for your order before anything is filed.
             </p>
+            <CalcWhatsApp
+              tool="gst-appeal-deadline-pre-deposit-calculator"
+              summary={`GST appeal calculator: ${out.stage === "s107" ? "first appeal (Section 107)" : "GSTAT appeal (Section 112)"}, order dated ${date}, appeal due by ${fmtDate(out.due)}, pre-deposit about ${rupees(out.total)}.`}
+            />
           </div>
         )}
       </div>
