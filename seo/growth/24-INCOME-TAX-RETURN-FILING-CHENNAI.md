@@ -34,6 +34,8 @@
 
 ---
 
+> **Cross-plan note (4 Nov 2026):** read `00-RECONCILIATION.md` first. Shared tools and articles have one owner across all plans; URLs below are aligned to it.
+
 ## 1. Executive summary
 
 **What this plan does.** It turns `/income-tax-return-filing-chennai` from a well-written information page into the lead-generating owner of "ITR filing Chennai" and its close variants. It adds 26 new URLs, 5 location sections and 3 ITR tools around it without touching HNI, NRI or notice intents.

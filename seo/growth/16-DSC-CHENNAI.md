@@ -55,6 +55,8 @@
 
 ---
 
+> **Cross-plan note (4 Nov 2026):** read `00-RECONCILIATION.md` first. Shared tools and articles have one owner across all plans; URLs below are aligned to it.
+
 ## 1. Executive summary
 
 ### 1.1 Where we start (3 Nov 2026)

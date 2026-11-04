@@ -41,6 +41,8 @@
 >
 > Plans already done or running: 1, 2, 3, 16, 20, 21, 22, 24, 25, 27. Service 23 (GST Litigation & Appeals) is the existing `/gst-litigation-chennai` money page from the Nov 2026 overhaul. It is not owned by plan 22. Plan 22 links to it.
 
+> **Cross-plan note (4 Nov 2026):** read `00-RECONCILIATION.md` first. Shared tools and articles have one owner across all plans; URLs below are aligned to it.
+
 ## 1. Executive summary
 
 ### 1.1 What "high-ticket" means for a CA firm

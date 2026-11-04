@@ -38,6 +38,8 @@
 
 ---
 
+> **Cross-plan note (4 Nov 2026):** read `00-RECONCILIATION.md` first. Shared tools and articles have one owner across all plans; URLs below are aligned to it.
+
 ## 1. Executive summary
 
 ### 1.1 The opportunity in one paragraph
@@ -339,7 +341,7 @@ Nine personas. Each is a pattern, not a real client. Every WhatsApp message is u
 | S3 | Blog [NEW] | `/blog/gstr-1-vs-gstr-3b-mismatch-notice` |
 | S4 | Blog [NEW] | `/blog/drc-01a-pay-or-object-part-b` |
 | S5 | Blog [NEW] | `/blog/gst-audit-adt-01-preparation-checklist` |
-| S6 | Blog [NEW] | `/blog/gst-reconciliation-gstr-1-3b-2b-method` |
+| S6 | Blog [NEW] | `/blog/gstr-2b-itc-reconciliation-guide` |
 | S7 | Blog [NEW] | `/blog/section-61-scrutiny-asmt-10-explained` |
 | S8 | Blog [NEW] | `/blog/central-or-state-gst-officer-chennai` |
 | C1 | Comparison [NEW] | `/gst-notice-reply-ca-vs-self-reply` |
@@ -493,7 +495,7 @@ Nine personas. Each is a pattern, not a real client. Every WhatsApp message is u
 | E05 | what is rfd-08 notice | Informational | TOFU | P2 | Problem [NEW] | `/gst-refund-rejection-notice-rfd-08-reply` | what is rfd-08 notice | rfd-08 meaning; rfd-09 | RFD-08, RFD-09 | Medium |
 | E06 | section 61 gst scrutiny of returns | Informational | TOFU | P2 | Blog [NEW] | `/blog/section-61-scrutiny-asmt-10-explained` | section 61 gst scrutiny of returns | scrutiny of returns gst; officer scrutiny gst | Section 61, ASMT-10 | Medium |
 | E07 | gstr-2b vs gstr-3b mismatch reasons | Informational | TOFU | P1 | Blog (upgrade) | `/blog/itc-mismatch-notices` | gstr-2b vs gstr-3b mismatch reasons | why gstr-2b and gstr-3b differ | GSTR-2B, GSTR-3B | Medium |
-| E08 | how to reconcile gstr-1 gstr-3b gstr-2b | Informational | TOFU | P2 | Blog [NEW] | `/blog/gst-reconciliation-gstr-1-3b-2b-method` | how to reconcile gstr-1 gstr-3b gstr-2b | gst reconciliation steps; gst reconciliation template | GSTR-1, GSTR-3B, GSTR-2B | Medium |
+| E08 | how to reconcile gstr-1 gstr-3b gstr-2b | Informational | TOFU | P2 | Blog [NEW] | `/blog/gstr-2b-itc-reconciliation-guide` | how to reconcile gstr-1 gstr-3b gstr-2b | gst reconciliation steps; gst reconciliation template | GSTR-1, GSTR-3B, GSTR-2B | Medium |
 | E09 | types of gst notices list | Informational | TOFU | P2 | Tool [NEW] | `/tools/gst-notice-type-identifier` | types of gst notices list | gst notice types; list of gst notices | ASMT, DRC, ADT, RFD, REG forms | Medium |
 | E10 | what is reg-03 notice | Informational | TOFU | P3 | Problem [NEW] | `/gst-registration-notice-reg-03-reg-17-reply` | what is reg-03 notice | reg-03 clarification notice; reg-04 reply | REG-03, REG-04 | Low |
 
@@ -685,7 +687,7 @@ Titles are at most 60 characters, metas at most 155 (verified by script). L1 to 
 | S3 | Blog [NEW] | `/blog/gstr-1-vs-gstr-3b-mismatch-notice` | GSTR-1 vs GSTR-3B Mismatch Notice: How to Respond | A notice on GSTR-1 and GSTR-3B differences is about output tax, not credit. See typical causes, records to match and how to reply to the officer. | GSTR-1 vs GSTR-3B Mismatch Notice: Causes and Reply Steps | gstr-1 vs gstr-3b mismatch notice | gst output tax mismatch notice; gstr-1 gstr-3b difference notice | Problem | 1,300 to 1,700 |
 | S4 | Blog [NEW] | `/blog/drc-01a-pay-or-object-part-b` | DRC-01A: Pay with Interest or Object in Part B? | A DRC-01A asks you to pay or object before a show cause notice. See what Part A and Part B mean and how to weigh paying against objecting. | DRC-01A Explained: Pay with Interest or Object in Part B | drc-01a pay or object part b | what is drc-01a; drc-01a reply; drc-03 payment | Informational / decision | 1,400 to 1,800 |
 | S5 | Blog [NEW] | `/blog/gst-audit-adt-01-preparation-checklist` | GST Audit Notice ADT-01: Preparation Checklist | An ADT-01 audit notice lists records the department wants to see. Use this checklist to prepare books, returns and replies before the audit visit. | GST Audit Notice ADT-01: What to Prepare Before the Visit | gst audit notice adt-01 | what is adt-01; gst audit preparation checklist; adt-01 reply | Informational / urgent | 1,300 to 1,700 |
-| S6 | Blog [NEW] | `/blog/gst-reconciliation-gstr-1-3b-2b-method` | GSTR-1, 3B and 2B Reconciliation: Step-by-Step | A month-wise method to reconcile GSTR-1, GSTR-3B and GSTR-2B before replying to a GST notice, with a table you can copy and fill. | GSTR-1, GSTR-3B and GSTR-2B Reconciliation: A Step-by-Step Method | how to reconcile gstr-1 gstr-3b gstr-2b | gst reconciliation steps; gst reconciliation template | Informational / method | 1,500 to 1,900 |
+| S6 | Blog [NEW] | `/blog/gstr-2b-itc-reconciliation-guide` | GSTR-1, 3B and 2B Reconciliation: Step-by-Step | A month-wise method to reconcile GSTR-1, GSTR-3B and GSTR-2B before replying to a GST notice, with a table you can copy and fill. | GSTR-1, GSTR-3B and GSTR-2B Reconciliation: A Step-by-Step Method | how to reconcile gstr-1 gstr-3b gstr-2b | gst reconciliation steps; gst reconciliation template | Informational / method | 1,500 to 1,900 |
 | S7 | Blog [NEW] | `/blog/section-61-scrutiny-asmt-10-explained` | Section 61 Scrutiny and ASMT-10 Explained | Section 61 lets an officer scrutinise your returns and issue an ASMT-10. See what it means, how to reply in ASMT-11 and what follows. | Section 61 Scrutiny and the ASMT-10 Notice Explained | what is asmt-10 notice | section 61 gst scrutiny of returns; asmt-10 reply; ஜிஎஸ்டி ஆய்வு நோட்டீஸ் | Informational | 1,300 to 1,700 |
 | S8 | Blog [NEW] | `/blog/central-or-state-gst-officer-chennai` | Central or State GST Officer: Who Sent Your Notice? | In Tamil Nadu your GSTIN sits with the Centre or the State. See how to tell who issued your notice and where your reply and hearing go. | Central or State GST: Which Officer Sent Your Notice in Tamil Nadu? | central gst or state gst notice difference | who sends gst notices in tamil nadu; cbic or state notice | Informational / local | 1,100 to 1,400 |
 | C1 | Comparison [NEW] | `/gst-notice-reply-ca-vs-self-reply` | GST Notice Reply: Do It Yourself or Use a CA? | Compare replying to a GST notice yourself with using a CA: suitability, risk, effort and best use by notice type. A plain table for business owners. | GST Notice Reply: Do It Yourself or Use a Chartered Accountant? | gst notice reply ca vs self | can i reply to a gst notice myself; do i need a ca for gst notice | Commercial | 1,000 to 1,300 |
@@ -1623,7 +1625,7 @@ Order is BOFU first: the MP, the two owned posts and the tools ship before audie
 |---|---|---|---|---|---|---|---|---|---|
 | Money-page upgrade | MP phase 3: documents, comparison table, #chennai-offices, #tamil-nadu (5.7 to 5.10) | gst notice reply in chennai | `/gst-notice-reply-chennai` | Money page | Transactional | WhatsApp Us | S1, S2, T1, T2, T3 | DEV + CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
 | Article 1 | GSTR-1 vs GSTR-3B Mismatch Notice: How to Respond | gstr-1 vs gstr-3b mismatch notice | `/blog/gstr-1-vs-gstr-3b-mismatch-notice` | Blog [NEW] | Per page | WhatsApp | MP, T1, tools | CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
-| Article 2 | GSTR-1, 3B and 2B Reconciliation: Step-by-Step | how to reconcile gstr-1 gstr-3b gstr-2b | `/blog/gst-reconciliation-gstr-1-3b-2b-method` | Blog [NEW] | Per page | WhatsApp | MP, T1, tools | CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
+| Article 2 | GSTR-1, 3B and 2B Reconciliation: Step-by-Step | how to reconcile gstr-1 gstr-3b gstr-2b | `/blog/gstr-2b-itc-reconciliation-guide` | Blog [NEW] | Per page | WhatsApp | MP, T1, tools | CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
 | Comparison page | GST Notice Reply: Do It Yourself or Use a CA? | gst notice reply ca vs self | `/gst-notice-reply-ca-vs-self-reply` | Comparison [NEW] | Commercial | Book 15-minute consultation | MP, tools | CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
 | Location / audience / problem page | GST Registration Notice: REG-03 and REG-17 Reply | gst registration notice reg-03 reg-17 reply | `/gst-registration-notice-reg-03-reg-17-reply` | Problem [NEW] | Local / audience / urgent | WhatsApp | MP | CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
 | FAQ / AEO answers (3) | Publish: D19, CM01, CM04 | see Section 6 | on best page of each | AEO | Informational | WhatsApp | per answer | CL | Cited or answered in AI tools (manual check week 6) |
@@ -1703,7 +1705,7 @@ Order is BOFU first: the MP, the two owned posts and the tools ship before audie
 |---|---|---|---|---|---|---|---|---|---|
 | Money-page upgrade | MP: CRO test 2 (WhatsApp CTA text) | gst notice reply in chennai | `/gst-notice-reply-chennai` | Money page | Transactional | WhatsApp Us | S1, S2, T1, T2, T3 | DEV + CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
 | Article 1 | Refresh: GSTR-1 vs GSTR-3B Mismatch Notice: How to Respond | gstr-1 vs gstr-3b mismatch notice | `/blog/gstr-1-vs-gstr-3b-mismatch-notice` | Refresh | Per page | WhatsApp | MP, T1, tools | CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
-| Article 2 | Refresh: GSTR-1, 3B and 2B Reconciliation: Step-by-Step | how to reconcile gstr-1 gstr-3b gstr-2b | `/blog/gst-reconciliation-gstr-1-3b-2b-method` | Refresh | Per page | WhatsApp | MP, T1, tools | CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
+| Article 2 | Refresh: GSTR-1, 3B and 2B Reconciliation: Step-by-Step | how to reconcile gstr-1 gstr-3b gstr-2b | `/blog/gstr-2b-itc-reconciliation-guide` | Refresh | Per page | WhatsApp | MP, T1, tools | CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
 | Comparison page | Refresh: DRC-01A: Pay With Interest or Object? Compared | pay with interest or object drc-01a | `/gst-notice-pay-with-interest-vs-object` | Refresh | Commercial | Book 15-minute consultation | MP | CL | Improved CTR or position |
 | Location / audience / problem page | GST Notice Reply for Service Providers | gst notice for service provider chennai | `/gst-notice-reply-for-service-providers` | Audience [NEW] | Local / audience / urgent | WhatsApp | MP | CL | Indexed; clicks and WhatsApp taps vs week-2 baseline |
 | FAQ / AEO answers (3) | Publish: AU01, AU02, AU03 | see Section 6 | on best page of each | AEO | Informational | WhatsApp | per answer | CL | Cited or answered in AI tools (manual check week 6) |
@@ -1818,7 +1820,7 @@ Order is BOFU first: the MP, the two owned posts and the tools ship before audie
 | S3 | Your GSTR-1 and GSTR-3B do not match: what the officer sees | LinkedIn, Reel, WhatsApp | `/blog/gstr-1-vs-gstr-3b-mismatch-notice` |
 | S4 | Pay or object? The DRC-01A decision | LinkedIn, Email, Reel | `/blog/drc-01a-pay-or-object-part-b` |
 | S5 | Audit notice ADT-01: records to ready | LinkedIn, Email, Association | `/blog/gst-audit-adt-01-preparation-checklist` |
-| S6 | A month-wise reconciliation table you can copy | LinkedIn carousel, WhatsApp, Email | `/blog/gst-reconciliation-gstr-1-3b-2b-method` |
+| S6 | A month-wise reconciliation table you can copy | LinkedIn carousel, WhatsApp, Email | `/blog/gstr-2b-itc-reconciliation-guide` |
 | S7 | What is an ASMT-10, in 60 seconds | Reel, GBP, Status | `/blog/section-61-scrutiny-asmt-10-explained` |
 | S8 | Centre or State: who sent your notice? | GBP, LinkedIn, Forum | `/blog/central-or-state-gst-officer-chennai` |
 | C1 | Reply yourself or use a CA? | LinkedIn, Forum, Email | `/gst-notice-reply-ca-vs-self-reply` |

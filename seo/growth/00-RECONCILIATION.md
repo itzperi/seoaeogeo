@@ -41,3 +41,49 @@ Where both plans proposed the same tool or article, there is now one URL with on
 ## Combined weekly effort
 
 The two calendars run in parallel at about 2× the brief's weekly load. If the team cannot sustain that, run 02 (BOFU money page) in weeks 1–6 and 01 from week 4, staggering the overlapping GBP posts.
+
+---
+
+# Addendum (4 Nov 2026): plans 03, 16, 20–25 and 90
+
+## Further single-owner decisions
+| Asset | Single URL | Owner | Others |
+|---|---|---|---|
+| Composition vs regular GST post | `/blog/regular-vs-composition-gst-scheme` | 20 GST registration (the choice is made at registration) | 21 links; 21's duplicate post is dropped |
+| GST scheme tool (composition vs regular, QRMP vs monthly) | `/tools/gst-filing-scheme-selector` | 21 GST returns | 20 links with `?question=composition`; 20's separate checker is dropped, leaving 20 with 2 tools |
+| GSTR-1 / 3B / 2B reconciliation method | `/blog/gstr-2b-itc-reconciliation-guide` | 21 | 22 links; 22's duplicate post is dropped |
+| LUT for exporters | `/blog/lut-for-exporters` and LUT copy | 21 | 20 removes LUT as a sub-service from `/gst-registration-chennai` and links |
+| REG-03 clarification notices | `/gst-notice-reply-chennai` | 22 | 20 stops at the application stage and links |
+| GST notice vs litigation | "Has an order been issued?" No goes to 22 `/gst-notice-reply-chennai`. Yes goes to `/gst-litigation-chennai` | — | — |
+
+## Shared routes to build once
+`/tools/<name>`, `/faq/<topic>`, `/case-studies/<topic>`, plus plan 90's `/how-we-work` and `/resources/<name>`, are proposed by several plans. Build one shared layout, breadcrumb and schema pattern for each route group before any plan ships its own page there. Case studies stay noindex until the client gives written consent. FAQ hubs in use: company-registration, private-limited-company, llp-registration, digital-signature-certificate, gst-registration, gst-return-filing, gst-notice-reply, income-tax-return-filing, income-tax-notice. Each FAQ appears on one hub only.
+
+## Thin-page gate (applies to every plan)
+Plans 22, 24 and 25 gate their audience and problem pages: a page ships only if its copy is at least 60% unique, otherwise it becomes a section on the money page. Apply the same gate to all plans. It matters most for plan 16 (DSC): its 10 new audience and problem pages are unlikely to clear it for a low-ticket service, so start them as sections on `/digital-signature-certificate-chennai`.
+
+## Shared host pages
+Plans 16, 20, 22, 24 and 25 each add a section to the same Chennai area pages (Anna Nagar, T Nagar, OMR, Guindy, Ambattur and others) and to the `/income-tax-consultant-<city>` pages. Put these into one "Services for <area> clients" block per page, with a short paragraph and link per service, so the area pages do not turn into stacks of service copy.
+
+## Scheduled posts that plans link to before they go live
+- `/blog/gst-registration-after-company-incorporation`: dated 8 Jan 2027, linked from 01, 02 and 20
+- `/blog/convert-partnership-firm-to-llp`: dated 4 Dec 2026, owned by 03
+- `/blog/company-registration-timeline-day-by-day` and `/blog/authorised-vs-paid-up-capital`: scheduled
+Bring the dates forward or hold the links until each post is live. A link to an unpublished post returns 404.
+
+## Decision for the firm: GST litigation page vs plan 22
+Plan 22 notes that `/gst-litigation-chennai` (from the Nov 2026 overhaul) still has early-stage content: "SCN Reply" in the title, "DRC-01 SCN replies" in the meta, ASMT-10 and DRC-01A/DRC-01 playbook cards, a "received a show-cause notice" FAQ, and a REG-17/19/21 card. The firm's brief asked for those cards. To make the split clean, rename the title to "GST Litigation & Appeals in Chennai | GSTAT & Demand Orders", keep the cards as short summaries that each link to `/gst-notice-reply-chennai`, and move the REG-17 card's detail there. Decide before shipping plan 22.
+
+## Live-site fixes found across plans (not yet made)
+- `StartingFees` placeholder on `/gst-return-filing-chennai` would print a professional fee once filled. Remove it, because ICAI rules do not allow published fees.
+- Turnaround promises: "3–7 working days" (GST registration page and online-sellers post) and "often the same day" (DSC page)
+- GSTR-2A written where GSTR-2B is meant (online-sellers post)
+- Conflicting figures: LLP late fees (blog vs page); cash-deposit thresholds and the old-regime rule of thumb (ITR page vs posts)
+- Meta descriptions 1–2 characters over 155 on three GST return pages; the ITR meta names NRIs (plan 27's intent); the GST notice meta says "appeals"
+- Booking link named "30min" while the offer is a 15-minute consultation
+- Independence: `/india-subsidiary-compliance-cfo` includes statutory audit in a retainer. Set one published rule on audit vs non-audit services (Companies Act and ICAI, verify)
+- Form names mixed old/new on the subsidiary page (Form 3CEB vs Form 48)
+- Data-security claims on live pages (NDA, named logins, work inside client systems) need the firm's confirmation
+
+## Sign-off load
+Every plan has its own verify register (section 13.3 or Appendix A). Many items repeat across plans (s.149(3), ITR/GST due dates, 2025-Act section mapping, ICAI on "free"). CA Rushil C S can sign each repeated item once, then tick it in every register.

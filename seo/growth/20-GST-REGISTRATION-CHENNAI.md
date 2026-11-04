@@ -59,6 +59,8 @@
 
 ---
 
+> **Cross-plan note (4 Nov 2026):** read `00-RECONCILIATION.md` first. Shared tools and articles have one owner across all plans; URLs below are aligned to it.
+
 ## 1. Executive summary
 
 ### 1.1 Where we start (3 Nov 2026)
@@ -400,7 +402,7 @@ Every external fact cited from these carries the verify label unless it is in th
 | P5 | `/blog/need-gstin-urgently-marketplace-tender-customer` | NEW |
 | T1 | `/tools/gst-registration-threshold-checker` | NEW |
 | T2 | `/tools/gst-registration-document-checklist` | NEW |
-| T3 | `/tools/regular-vs-composition-gst-checker` | NEW |
+| T3 | `/tools/gst-filing-scheme-selector?question=composition` | NEW |
 | FAQ | `/faq/gst-registration` | NEW |
 | CASE | `/case-studies/gst-registration-chennai` | NEW (noindex until consent) |
 | PROC | `/gst-registration-process-and-timeline` | NEW |
@@ -671,7 +673,7 @@ Character counts for every title and meta are checked by script in Section 14.2 
 | P5 | `/blog/need-gstin-urgently-marketplace-tender-customer` | Need a GSTIN Urgently? Marketplace, Tender, Customer | When a marketplace, tender or customer is waiting for your GSTIN: what to prepare first, what slows applications, and what no one can promise. | Need a GSTIN Urgently? What to Prepare First |
 | T1 | `/tools/gst-registration-threshold-checker` | GST Registration Threshold Checker for Tamil Nadu | Enter your supplies and turnover to see whether GST registration looks compulsory, close, or optional in Tamil Nadu. Not legal advice. | GST Registration Threshold Checker |
 | T2 | `/tools/gst-registration-document-checklist` | GST Registration Document Checklist by Business Type | Choose proprietorship, partnership, LLP or company and your premises type to get a clear GST registration document checklist. | GST Registration Document Checklist |
-| T3 | `/tools/regular-vs-composition-gst-checker` | Regular or Composition GST? Quick Eligibility Checker | Answer six questions about your supplies and customers to see how regular and composition schemes compare for your business. Not advice. | Regular or Composition GST Checker |
+| T3 | `/tools/gst-filing-scheme-selector?question=composition` | Regular or Composition GST? Quick Eligibility Checker | Answer six questions about your supplies and customers to see how regular and composition schemes compare for your business. Not advice. | Regular or Composition GST Checker |
 | FAQ | `/faq/gst-registration` | GST Registration FAQs for Chennai Business Owners | Answers on GST registration in Chennai: threshold, documents, address proof, voluntary registration, queries, amendments and next steps. | GST Registration: Frequently Asked Questions |
 | CASE | `/case-studies/gst-registration-chennai` | GST Registration Case Study \| C S Rushil & Co. | A consented, anonymised GST registration engagement: the facts, the issue, the steps and the outcome. Template, noindex until consent. | GST Registration: A Client Case Study |
 | PROC | `/gst-registration-process-and-timeline` | GST Registration Process and Timeline in Chennai | Government fee position, the steps from application to REG-06, what affects timing and who does what. No professional fee figures, no promises. | GST Registration: Process, Government Fee and Timeline |

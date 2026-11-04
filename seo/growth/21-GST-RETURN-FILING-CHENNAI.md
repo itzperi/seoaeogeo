@@ -13,7 +13,7 @@ C S Rushil & Co., Chartered Accountants · csrushil.com · drafted 3 Nov 2026 ·
 | Code | URL | Code | URL |
 |---|---|---|---|
 | M | `/gst-return-filing-chennai` | N1 | NEW `/blog/qrmp-vs-monthly-gst-filing` |
-| EC | `/gst-return-filing-for-ecommerce-sellers` | N2 | NEW `/blog/composition-vs-regular-gst-scheme` |
+| EC | `/gst-return-filing-for-ecommerce-sellers` | N2 | NEW `/blog/regular-vs-composition-gst-scheme` |
 | FR | `/gst-return-filing-for-freelancers` | N3 | NEW `/blog/gstr-1-vs-gstr-3b-vs-gstr-2b` |
 | RS | `/gst-return-filing-for-restaurants` | N4 | NEW `/blog/gstr-9-vs-gstr-9c` |
 | IE | `/gst-return-filing-for-import-export-businesses` | N5 | NEW `/blog/gstr-2b-itc-reconciliation-guide` |
@@ -29,11 +29,13 @@ C S Rushil & Co., Chartered Accountants · csrushil.com · drafted 3 Nov 2026 ·
 | GN | `/gst-notice-reply-chennai` (plan 22, link only) | N15 | NEW `/tools/gstr-2b-reconciliation-checklist` |
 | IM | `/blog/itc-mismatch-notices` (plan 22, link only) | N16 | NEW `/tools/gst-return-due-date-tracker` |
 | GL | `/gst-litigation-chennai` (link only) | N17 | NEW `/tools/gst-filing-scheme-selector` |
-| HUB | `/goods-and-services-tax` (link only) | N18 | NEW `/gst-return-filing-faqs` |
+| HUB | `/goods-and-services-tax` (link only) | N18 | NEW `/faq/gst-return-filing` |
 | DSC | `/digital-signature-certificate-chennai` | N19 | NEW `/case-studies/gst-return-compliance-cleanup` (noindex) |
 | BK | `/bookkeeping-services-chennai` | N20 | NEW `/gst-return-filing-process` |
 
 ---
+
+> **Cross-plan note (4 Nov 2026):** read `00-RECONCILIATION.md` first. Shared tools and articles have one owner across all plans; URLs below are aligned to it.
 
 ## 1. Executive summary
 
