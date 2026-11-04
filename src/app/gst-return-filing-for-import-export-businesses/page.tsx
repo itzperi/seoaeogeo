@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const title = "GST Returns for Importers and Exporters | C S Rushil & Co.";
-const description = "GST returns for importers and exporters: IGST on imports, LUT for exports, export invoices and refund claims. Book a consultation online or visit our office.";
+const description = "GST returns for importers and exporters: IGST on imports, LUT for exports, export invoices and refund claims. Book a consultation or visit our office.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

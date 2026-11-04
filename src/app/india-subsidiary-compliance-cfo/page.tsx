@@ -39,7 +39,7 @@ const PACK = [
 export const metadata: Metadata = {
   title: { absolute: "India Subsidiary Compliance & CFO Support | Chennai" },
   description:
-    "One retainer for foreign-owned Indian subsidiaries: statutory audit, ROC and FEMA filings, transfer pricing, GST, TDS, payroll and monthly group reporting.",
+    "One retainer for foreign-owned Indian subsidiaries: statutory audit coordination, ROC and FEMA filings, transfer pricing, GST, TDS, payroll and monthly group reporting.",
   alternates: { canonical: "/india-subsidiary-compliance-cfo" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -75,16 +75,16 @@ export default function Page() {
       keyFacts={[
         { label: "FLA return (RBI)", value: "By 15 July each year" },
         { label: "AGM and ROC filings", value: "AGM within six months of year end; AOC-4 within 30 days and MGT-7 within 60 days of the AGM" },
-        { label: "Transfer pricing", value: "Form 3CEB by 31 October; return by 30 November where a TP report applies" },
+        { label: "Transfer pricing", value: "Form 3CEB for FY 2025-26 by 31 October (Form 48 from tax year 2026-27 under the Income-tax Act, 2025); return by 30 November where a TP report applies" },
         { label: "Board meetings", value: "At least four a year, no more than 120 days apart" },
         { label: "Director KYC", value: "DIR-3 KYC Web once every three financial years, by 30 June of the year it falls due" },
       ]}
       subServicesHeading="What does an India subsidiary compliance and CFO retainer cover?"
       subServices={[
-        { name: "Statutory Audit and Year-End Close", text: "We prepare Indian GAAP or Ind AS financial statements, coordinate the statutory audit, and align the year-end timetable with your group reporting deadlines." },
+        { name: "Statutory Audit and Year-End Close", text: "We prepare Indian GAAP or Ind AS financial statements, coordinate the statutory audit, and align the year-end timetable with your group reporting deadlines. Where we are your statutory auditor, we do not also prepare your books or financial statements: Section 144 of the Companies Act, 2013 restricts the other services an auditor can provide." },
         { name: "ROC and Board Compliance", text: "AOC-4, MGT-7 and DPT-3 filings, plus agendas and minutes for at least four board meetings a year, with no more than 120 days between two meetings." },
         { name: "FEMA Reporting", text: "FC-GPR for each fresh share allotment, the annual FLA return, and downstream investment reporting where the subsidiary itself invests in another Indian entity." },
-        { name: "Transfer Pricing", text: "Benchmarking of intercompany services, royalties, cost recharges and loans, Form 3CEB accountant's report, and master file compliance where your group crosses the thresholds." },
+        { name: "Transfer Pricing", text: "Benchmarking of intercompany services, royalties, cost recharges and loans, Form 3CEB accountant's report (Form 48 from tax year 2026-27), and master file compliance where your group crosses the thresholds." },
         { name: "GST, TDS and Payroll", text: "Monthly GST returns and reconciliations, TDS on vendor and cross-border payments, and payroll compliance for PF, ESI and Tamil Nadu professional tax." },
         { name: "MIS and Group Reporting Packs", text: "Monthly management accounts, cash flow and variance commentary, with IFRS or US GAAP adjustments mapped to your parent's chart of accounts and reporting calendar." },
       ]}
@@ -106,7 +106,7 @@ export default function Page() {
         { question: "Can you prepare reporting in IFRS or US GAAP for our parent?", answer: "Yes, we prepare monthly reporting packs with IFRS or US GAAP adjustments alongside the statutory books, which are kept in Indian GAAP or Ind AS as applicable. Common adjustments include lease accounting, revenue recognition timing and employee benefit provisions. We document each adjustment so your group auditors can trace the reporting pack back to the Indian ledger." },
         { question: "What are the main annual deadlines for a foreign-owned Indian subsidiary?", answer: "For a company with a 31 March year end and a foreign parent, the main annual dates are the FLA return by 15 July, the AGM by 30 September, Form 3CEB by 31 October, AOC-4 within 30 days and MGT-7 within 60 days of the AGM, the income tax return by 30 November where a transfer pricing report applies, and GSTR-9 by 31 December. Monthly GST and TDS, quarterly TDS statements and four advance tax instalments run alongside." },
         { question: "What does the monthly reporting pack for the parent contain?", answer: "A typical pack has the month's profit and loss, balance sheet and cash flow against budget, the trial balance mapped to the group chart of accounts, IFRS or US GAAP adjustments, and an intercompany reconciliation with the parent and fellow subsidiaries. It also covers cash forecast, payroll, ageing, tax position, a transfer pricing margin check and upcoming compliance dates, in the parent's format." },
-        { question: "Do you act as the resident director?", answer: "No, we do not provide resident directors. Every Indian company needs at least one director who stayed in India for 182 days in the previous calendar year, and that person should be someone your group appoints and trusts. We coordinate closely with your resident director on board papers, statutory registers, filings and signatures throughout the year." },
+        { question: "Do you act as the resident director?", answer: "No, we do not provide resident directors. Every Indian company needs at least one director who stayed in India for 182 days during the financial year, and that person should be someone your group appoints and trusts. We coordinate closely with your resident director on board papers, statutory registers, filings and signatures throughout the year." },
         { question: "We are a GCC in Chennai. Is this retainer suitable for a captive centre?", answer: "Yes, global capability centres and captive service units are typical users of this retainer, since they combine cost-plus transfer pricing, large payrolls and parent reporting needs. The key areas are setting the cost-plus markup correctly, invoicing the parent on time, managing GST on export of services, and handling PF, ESI and professional tax for a growing headcount." },
         { question: "Who handles the statutory audit if you prepare the accounts?", answer: "The statutory audit is performed by an independent auditor appointed by the shareholders, and we keep the accounting and audit roles separate to protect independence. Where we prepare the books and reporting packs, we coordinate with your appointed auditor on schedules, queries and the audit timetable. Where the group prefers, we can be considered for the audit role only if we are not preparing the accounts." },
       ]}

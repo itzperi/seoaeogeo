@@ -45,7 +45,7 @@ export default function Page() {
         { label: "Verification", value: "Aadhaar eKYC biometric, Aadhaar eKYC OTP with video verification, or a paper application with documents and video or in-person verification" },
         { label: "Storage", value: "Private key generated and stored on a FIPS 140-2 Level 2 validated USB crypto token held by you" },
         { label: "Validity", value: "Fixed term chosen at purchase, commonly one, two or three years; must be renewed before expiry" },
-        { label: "Typical time", value: "Depends on the Certifying Authority's review; often the same day once verification is complete" },
+        { label: "Typical time", value: "Depends on the Certifying Authority's review after your verification is complete" },
       ]}
       subServicesHeading="Which DSC services do we facilitate?"
       subServices={[

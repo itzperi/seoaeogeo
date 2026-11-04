@@ -4,7 +4,7 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const title = "GST Returns for Manufacturers, Chennai | C S Rushil & Co.";
-const description = "GST returns for manufacturers: input tax credit, inverted duty refunds, job work and GSTR-2B reconciliation. Book a consultation online or visit our office.";
+const description = "GST returns for manufacturers: input tax credit, inverted duty refunds, job work and GSTR-2B reconciliation. Book a consultation or visit our office.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

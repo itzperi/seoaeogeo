@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
-import StartingFees from "@/components/StartingFees";
-import { STARTING_FEES } from "@/lib/fees-and-timing";
 
 const title = "Income Tax Consultant for HNIs in Chennai | C S Rushil & Co.";
 const description =
@@ -430,7 +428,6 @@ export default function Page() {
         </Link>
         .
       </p>
-      <StartingFees fee={STARTING_FEES["/income-tax-consultant-for-hni-chennai"] ?? null} />
     </ServicePageTemplate>
   );
 }

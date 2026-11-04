@@ -7,7 +7,7 @@ import Glossary from "@/components/Glossary";
 export const metadata: Metadata = {
   title: { absolute: "GST Notice Replies in Chennai: DRC-01 | C S Rushil & Co." },
   description:
-    "CA-led help to reply to GST show cause and DRC-01 notices in Chennai: reconciliation, drafting and appeals. Message us on WhatsApp or book a consultation.",
+    "CA-led replies to GST notices in Chennai: ASMT-10, DRC-01A and DRC-01, with reconciliation and drafting. Message us on WhatsApp or book a consultation.",
   alternates: { canonical: "/gst-notice-reply-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

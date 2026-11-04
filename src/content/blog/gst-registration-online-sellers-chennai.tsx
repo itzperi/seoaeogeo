@@ -39,7 +39,7 @@ export default function Body() {
       <h2>What documents you actually need</h2>
 
       <p>
-        PAN, Aadhaar, proof of business address (even a rent agreement for a small home office works), a cancelled cheque or bank statement, and your marketplace seller agreement. Registration itself typically takes three to seven working days once documents are in order.
+        PAN, Aadhaar, proof of business address (even a rent agreement for a small home office works), a cancelled cheque or bank statement, and your marketplace seller agreement. How long registration takes depends on the time limits in the GST rules and on whether the officer raises a clarification (REG-03), so the cleaner the documents, the fewer delays.
       </p>
 
       <h2>A quick checklist before you start selling online</h2>

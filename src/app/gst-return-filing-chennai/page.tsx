@@ -2,12 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
-import StartingFees from "@/components/StartingFees";
-import { STARTING_FEES } from "@/lib/fees-and-timing";
 
 const title = "GSTR-1, 3B and 9 Filing in Chennai | C S Rushil & Co.";
 const description =
-  "GST return filing in Chennai: GSTR-1, GSTR-3B, QRMP and IFF, CMP-08, GSTR-4 and GSTR-9/9C, with GSTR-2B reconciliation before every filing. Due dates inside.";
+  "GST return filing in Chennai: GSTR-1, GSTR-3B, QRMP/IFF, CMP-08, GSTR-4 and GSTR-9/9C, with GSTR-2B reconciliation before every filing. Due dates inside.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -177,7 +175,6 @@ export default function Page() {
         </Link>{" "}
         page.
       </p>
-      <StartingFees fee={STARTING_FEES["/gst-return-filing-chennai"] ?? null} />
     </ServicePageTemplate>
   );
 }
