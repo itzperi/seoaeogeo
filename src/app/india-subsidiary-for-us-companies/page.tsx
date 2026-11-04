@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+import HighTicketSections, { type Audience } from "@/components/HighTicketSections";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-us-companies";
-const title = "Subsidiary in India for US Companies | C S Rushil & Co.";
+const title = "Set Up an India Subsidiary for a US Company | Chennai";
 const description =
-  "Set up an Indian subsidiary from the US: Delaware parent documents and apostille, resident director, FDI automatic route, FC-GPR and transfer pricing.";
+  "CA-led help for US companies setting up an Indian subsidiary: incorporation, FEMA reporting and first-year compliance, served online from Chennai.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -67,12 +68,26 @@ const INTERCOMPANY = [
   ["Secondment of US staff", "US employees work in India for a period while staying on US payroll.", "Indian tax on salary for work done in India, possible permanent establishment questions, and recharge arrangements."],
 ];
 
+const AUDIENCES: Audience[] = [
+  { who: "US startup hiring its first India team", need: "A legal entity to employ engineers and pay them locally, without stalling the product roadmap.", help: "Incorporation, the bank account, FC-GPR and payroll set-up, with the steps sequenced around your hiring dates.", enquiry: "setting up an Indian subsidiary for our US startup" },
+  { who: "Mid-market US company adding an India operation", need: "An entity that fits the group's controls, intercompany model and audit timetable.", help: "Structure, intercompany agreement, transfer pricing and a reporting pack for your controller.", enquiry: "setting up an Indian subsidiary for our US company" },
+  { who: "Group building a global capability centre in Chennai", need: "Cost-plus invoicing, a large payroll and GST on export of services from the first month.", help: "Set-up followed by the monthly compliance and reporting cycle on one calendar.", enquiry: "setting up a global capability centre in Chennai for our US group" },
+  { who: "PE or VC-backed US company", need: "Clean records from day one so the Indian entity does not slow down the next diligence.", help: "Share records, FEMA filings and first-year ROC compliance kept ready for review.", enquiry: "setting up an Indian subsidiary for our investor-backed US company" },
+];
+
 const US_ITEMS = [
   ["Form 5471", "US persons with specified interests in a foreign corporation generally file this information return with their US return.", "Your US CPA, using the Indian company's financial statements and share register."],
   ["Controlled foreign corporation inclusions (GILTI, recast as net CFC tested income from 2026)", "Income of a controlled foreign corporation can be included in the US shareholder's income even if not distributed.", "Your US CPA, using our Indian profit, tax paid and asset figures."],
   ["Foreign tax credits", "Indian corporate tax and withholding tax may be creditable in the US subject to US rules.", "Your US CPA, using Indian tax payment challans and returns."],
   ["Entity classification", "Whether the Indian company can or should be treated as a corporation or otherwise for US purposes.", "Your US CPA or US tax counsel."],
   ["US reporting of foreign bank accounts", "US persons with signature authority over the Indian company's bank account may have US reporting obligations.", "Your US CPA."],
+];
+
+const NOT_INCLUDED = [
+  "Acting as your resident director or nominee shareholder. Your group appoints and trusts that person.",
+  "Advice on US tax or company law, or your US filings. That stays with your US CPA or counsel, with whom we coordinate on the Indian figures.",
+  "Investment, banking or immigration advice, including visas for staff moving to India.",
+  "The statutory audit of the Indian company if we keep its books; an independent auditor does that.",
 ];
 
 export default function Page() {
@@ -84,7 +99,7 @@ export default function Page() {
       crumbHref={slug}
       parentCrumb={{ name: "Company Setup in India for Foreign Businesses", href: "/company-registration-india-for-foreigners" }}
       eyebrow="India Entry · United States Parent Companies"
-      h1="Set Up a Subsidiary in India from the US"
+      h1="Set Up an Indian Subsidiary from the US: Incorporation, FEMA and First-Year Compliance"
       subhead="How a Delaware or other US corporation incorporates a wholly owned Indian private limited company: documents and apostille, the resident director rule, the FDI automatic route, FC-GPR reporting, transfer pricing on intercompany services, and the points to coordinate with your US CPA."
       keyFacts={[
         { label: "Usual structure", value: "US parent holds all or nearly all shares of an Indian private limited company, with a nominee as the second shareholder." },
@@ -125,6 +140,8 @@ export default function Page() {
         { question: "How is the Indian subsidiary paid for services to the US parent?", answer: "Most US groups use a cost-plus services agreement, where the Indian company invoices the parent for its costs plus an arm's length markup. Indian transfer pricing rules require this markup to be supported by benchmarking and documented each year, and the export of services also needs the correct GST treatment." },
         { question: "Does the India–US tax treaty help the subsidiary?", answer: "The India–US Double Taxation Avoidance Agreement can reduce Indian withholding tax on dividends, interest, royalties and fees paid to the US parent, subject to conditions. The parent usually needs a US residency certification, such as IRS Form 6166, and the prescribed declarations in India to claim the treaty rate." },
         { question: "Do you advise on US tax filings such as Form 5471?", answer: "No. We are Indian chartered accountants and do not give US tax advice. We prepare the Indian financial statements, tax payment records and intercompany data your US CPA needs for Form 5471, controlled foreign corporation inclusions and foreign tax credits, and we coordinate timelines so both sets of filings use the same numbers." },
+        { question: "How long does incorporation take?", answer: "Based on our experience, a private limited company is usually incorporated in 7 to 12 working days once all documents and digital signatures are ready. Apostille, courier and bank steps on the US side add time, so we agree a timetable with you at the start. This is an estimate from past work, not a promise." },
+        { question: "Should we use an employer of record first?", answer: "An employer of record can suit a very small or short-term team, while a subsidiary suits a long-term team, owned assets or contracts signed in India. Each has compliance and cost trade-offs, including permanent establishment questions. Our EOR versus subsidiary guide compares them, and we can discuss your case in a 15-minute consultation." },
         { question: "How do you work with a US team across time zones?", answer: "India Standard Time is 9.5 to 10.5 hours ahead of US Eastern time, depending on daylight saving. We typically hold calls in the Indian evening, which is the US morning, share documents through a secure portal, and agree a monthly close and reporting calendar so your US team receives information at the start of its working day." },
       ]}
       relatedQuestions={[
@@ -134,6 +151,8 @@ export default function Page() {
       ]}
       relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "fema-rbi-compliance"]}
     >
+      <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />
+
       <h2 className="mt-14 text-2xl text-obsidian">What documents does a US parent need, and how are they apostilled?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Because the United States and India are both parties to the Hague Apostille Convention, US documents need an apostille

@@ -63,6 +63,7 @@ export const PRIMARY_AREA_LINKS: NavLink[] = PRIMARY_AREA_SLUGS.map((slug) => {
 
 export const COMPANY_LINKS: NavLink[] = [
   { href: "/about-us", label: "About Us" },
+  { href: "/how-we-work", label: "How We Work" },
   { href: "/blog", label: "Insights" },
   { href: "/videos", label: "Videos" },
   { href: "/faq", label: "FAQ" },

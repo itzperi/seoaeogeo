@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+import HighTicketSections, { type Audience } from "@/components/HighTicketSections";
 import { SITE_URL } from "@/lib/site";
 
 const linkClass = "font-medium text-royal-violet underline underline-offset-2";
@@ -36,14 +37,30 @@ const PACK = [
   { name: "Compliance status", text: "Filings completed in the month, the next 60 days of due dates, and any notices received." },
 ];
 
+const AUDIENCES: Audience[] = [
+  { who: "US, UK, Singapore or UAE parent with a new Indian company", need: "The first year's filings (FC-GPR, INC-20A, first auditor, board meetings) while the team is still being hired.", help: "A 12-month calendar from day one, and we run each filing with your resident director.", enquiry: "a compliance and CFO retainer for our new Indian subsidiary" },
+  { who: "Global capability centre (GCC) in Chennai", need: "Cost-plus invoicing to the parent, transfer pricing, GST on export of services and a large payroll.", help: "The markup, invoicing, TP documentation and PF, ESI and professional tax on one monthly cycle.", enquiry: "compliance and reporting for our global capability centre in India" },
+  { who: "Established subsidiary with gaps in past filings", need: "Late FC-GPR or FLA returns, missed ROC forms or TDS defaults found by group audit.", help: "A health check of past filings and a plan to regularise each gap before monthly work starts.", enquiry: "a compliance health check for our Indian subsidiary" },
+  { who: "Group finance team needing monthly packs", need: "Indian numbers that load into consolidation without rework, in IFRS or US GAAP.", help: "Packs mapped to your group chart of accounts, with intercompany balances confirmed each month.", enquiry: "monthly group reporting for our Indian subsidiary" },
+  { who: "Investor-backed Indian company with a foreign holding company", need: "Board packs, FEMA reporting on each funding round and clean records for diligence.", help: "Board-ready reporting and the FEMA filings that follow each allotment.", enquiry: "compliance and board reporting for our investor-backed Indian company" },
+  { who: "Parent changing its Indian accountant", need: "A handover without missed dates in the middle of the year.", help: "We take over from the current calendar position and confirm open items with the outgoing firm.", enquiry: "taking over compliance for our Indian subsidiary from another firm" },
+];
+
+const NOT_INCLUDED = [
+  "Acting as your resident director or nominee shareholder. Your group appoints and trusts that person.",
+  "The statutory audit of a company whose books or reporting packs we prepare. An independent auditor appointed by the shareholders does the audit.",
+  "Advice on US, UK, Singapore, UAE or other foreign tax or company law. That stays with your home adviser, with whom we coordinate.",
+  "Legal drafting of commercial contracts beyond the intercompany and finance documents described here.",
+];
+
 export const metadata: Metadata = {
-  title: { absolute: "India Subsidiary Compliance & CFO Support | Chennai" },
+  title: { absolute: "India Subsidiary Compliance & CFO Retainer | Chennai" },
   description:
-    "One retainer for foreign-owned Indian subsidiaries: statutory audit coordination, ROC and FEMA filings, transfer pricing, GST, TDS, payroll and monthly group reporting.",
+    "CA-led retainer for foreign-owned Indian subsidiaries and GCCs: ROC, FEMA, transfer pricing, GST, TDS, payroll and monthly group reporting.",
   alternates: { canonical: "/india-subsidiary-compliance-cfo" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "Annual Compliance, Audit, Transfer Pricing & CFO Support for Indian Subsidiaries",
+    title: "Compliance and CFO Retainer for Foreign-Owned Indian Subsidiaries and GCCs",
     description: "ROC, FEMA, transfer pricing, audit, tax, payroll and parent reporting for Indian subsidiaries and GCCs, from Chennai.",
     url: "/india-subsidiary-compliance-cfo",
   },
@@ -67,7 +84,7 @@ export default function Page() {
       crumbLabel="India Subsidiary Compliance & CFO"
       crumbHref="/india-subsidiary-compliance-cfo"
       eyebrow="Foreign-Owned Subsidiaries · GCCs · Chennai"
-      h1="Annual Compliance, Audit, Transfer Pricing & CFO Support for Indian Subsidiaries"
+      h1="Compliance and CFO Retainer for Foreign-Owned Indian Subsidiaries and GCCs"
       subhead="A single retainer covering the Indian statutory calendar and the reporting your parent company expects: ROC and FEMA filings, transfer pricing, GST, TDS, payroll, statutory audit coordination and monthly MIS, for foreign-owned subsidiaries and global capability centres in Chennai."
       introHeading="What compliance does a foreign-owned Indian subsidiary have each year?"
       intro="A foreign-owned Indian subsidiary must hold at least four board meetings a year, get its accounts audited, file AOC-4 and MGT-7 with the Registrar, file the FLA return with the RBI by 15 July, and file Form 3CEB transfer pricing reports for transactions with its foreign parent. Alongside these sit monthly GST and TDS returns, PF, ESI and Tamil Nadu professional tax, and the annual income tax return. Most foreign parents also need monthly management accounts in IFRS or US GAAP for group consolidation."
@@ -108,6 +125,10 @@ export default function Page() {
         { question: "What does the monthly reporting pack for the parent contain?", answer: "A typical pack has the month's profit and loss, balance sheet and cash flow against budget, the trial balance mapped to the group chart of accounts, IFRS or US GAAP adjustments, and an intercompany reconciliation with the parent and fellow subsidiaries. It also covers cash forecast, payroll, ageing, tax position, a transfer pricing margin check and upcoming compliance dates, in the parent's format." },
         { question: "Do you act as the resident director?", answer: "No, we do not provide resident directors. Every Indian company needs at least one director who stayed in India for 182 days during the financial year, and that person should be someone your group appoints and trusts. We coordinate closely with your resident director on board papers, statutory registers, filings and signatures throughout the year." },
         { question: "We are a GCC in Chennai. Is this retainer suitable for a captive centre?", answer: "Yes, global capability centres and captive service units are typical users of this retainer, since they combine cost-plus transfer pricing, large payrolls and parent reporting needs. The key areas are setting the cost-plus markup correctly, invoicing the parent on time, managing GST on export of services, and handling PF, ESI and professional tax for a growing headcount." },
+        { question: "How does onboarding start?", answer: "We begin with a 15-minute consultation, then a scoping call. After that we review your past ROC, FEMA, tax and payroll filings, agree how to regularise any gap, and build a 12-month calendar of Indian due dates. We share it with your parent finance team and your resident director before monthly work starts." },
+        { question: "Can you work alongside our US or UK accountant?", answer: "Yes. We handle Indian law and Indian filings and coordinate with your home accountant or lawyer on the points where the two systems meet, such as intercompany invoices and year-end timing. We do not advise on US, UK or other foreign law; that stays with your own adviser." },
+        { question: "How do you handle time zones?", answer: "We schedule calls in your business hours where they overlap with ours and agree a monthly close timetable with cut-off dates. Our office hours are Monday to Saturday, 9:30 AM to 6:30 PM India time, and written updates reach you by email or WhatsApp. Any calls outside those hours are agreed at onboarding." },
+        { question: "How are fees decided?", answer: "Fees are agreed in a written engagement letter after the scoping call, based on the entities, filings and reporting you need. We do not publish price lists, in line with the rules for chartered accountants. Government fees and third-party costs, such as digital signature certificates, are shown separately and at actual." },
         { question: "Who handles the statutory audit if you prepare the accounts?", answer: "The statutory audit is performed by an independent auditor appointed by the shareholders, and we keep the accounting and audit roles separate to protect independence. Where we prepare the books and reporting packs, we coordinate with your appointed auditor on schedules, queries and the audit timetable. Where the group prefers, we can be considered for the audit role only if we are not preparing the accounts." },
       ]}
       relatedQuestions={[
@@ -118,6 +139,8 @@ export default function Page() {
       relatedSlugs={["transfer-pricing-audit", "statutory-audit-chennai", "virtual-cfo-services"]}
       relatedPosts={["annual-roc-filing-calendar", "form-3ceb-due-date-applicability", "tds-return-filing-deadlines", "advance-tax-deadlines"]}
     >
+      <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />
+
       <h2 className="mt-14 text-2xl text-obsidian">What is the 12-month compliance calendar for a foreign-owned Indian subsidiary?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         The calendar below covers tax year 2026-27 for a private company with a 31 March year end, a foreign parent and

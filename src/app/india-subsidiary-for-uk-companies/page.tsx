@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+import HighTicketSections, { type Audience } from "@/components/HighTicketSections";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-uk-companies";
@@ -74,6 +75,20 @@ const UK_INDIA = [
   ["Double Contributions Convention", "Social security agreement that entered into force alongside CETA on 15 July 2026.", "Relevant if UK employees are posted to the Indian subsidiary, as it addresses paying social security contributions in both countries."],
 ];
 
+const AUDIENCES: Audience[] = [
+  { who: "UK company opening an India delivery team", need: "An Indian entity to employ staff and invoice the UK parent for services.", help: "Incorporation, FEMA reporting, payroll and the cost-plus intercompany set-up.", enquiry: "setting up an Indian subsidiary for our UK company" },
+  { who: "UK group adding a captive centre in Chennai", need: "Transfer pricing, GST on export of services and monthly reporting to the UK finance team.", help: "Set-up followed by one compliance and reporting calendar.", enquiry: "setting up a captive centre in Chennai for our UK group" },
+  { who: "UK founder of Indian origin", need: "A company in India that the UK business owns, without tax surprises on either side.", help: "Indian structure and filings, coordinated with your UK accountant on the UK side.", enquiry: "setting up an Indian company owned by my UK business" },
+  { who: "UK parent with an existing Indian subsidiary", need: "Past filing gaps or a change of Indian accountant.", help: "A health check of past filings, then the annual cycle.", enquiry: "compliance for our existing Indian subsidiary owned from the UK" },
+];
+
+const NOT_INCLUDED = [
+  "Acting as your resident director or nominee shareholder. Your group appoints and trusts that person.",
+  "Advice on UK tax or company law, or your UK filings. That stays with your UK accountant or solicitor, with whom we coordinate on the Indian figures.",
+  "Investment, banking or immigration advice, including visas for staff moving to India.",
+  "The statutory audit of the Indian company if we keep its books; an independent auditor does that.",
+];
+
 export default function Page() {
   return (
     <ServicePageTemplate
@@ -133,6 +148,8 @@ export default function Page() {
       ]}
       relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "virtual-cfo-services"]}
     >
+      <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />
+
       <h2 className="mt-14 text-2xl text-obsidian">What documents does a UK parent need, and how are they apostilled?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         The FCDO Legalisation Office issues apostilles for UK documents. Public documents, such as Companies House

@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import SiloLinks from "@/components/SiloLinks";
+import HighTicketSections, { type Audience } from "@/components/HighTicketSections";
 import { JsonLd, moneyPageGraph } from "@/lib/schema";
 import { PAGE_DATES } from "@/lib/page-dates";
 import { BOOKING_LINK, SOCIALS } from "@/lib/site";
@@ -80,6 +81,21 @@ const ROADMAP = [
     focus: "Run the cadence",
     items: ["Budget vs actual variance review every month", "Board pack prepared from the same data, not rebuilt each quarter", "Agreed monthly review call"],
   },
+];
+
+// High-ticket buyers (growth plan 90, section 7.5).
+const AUDIENCES: Audience[] = [
+  { who: "Venture or angel-backed startup", need: "Investor updates, board packs and runway numbers the board can rely on.", help: "Monthly MIS, a rolling cash forecast and a board pack in the format your investors ask for.", enquiry: "a virtual CFO for our investor-backed startup" },
+  { who: "PE-backed or growth-stage company", need: "Budget-versus-actual discipline and reporting on the investor's calendar.", help: "A monthly close timetable, variance commentary and quarterly board papers.", enquiry: "a virtual CFO for our PE-backed company" },
+  { who: "Manufacturer in Chennai, Coimbatore or the Sriperumbudur–Oragadam corridor", need: "Costing by product or plant, stock and bank-limit reporting, and working capital that keeps up with growth.", help: "Plant-level costing, CMA data for the bank and a cash forecast, served online outside Chennai.", enquiry: "a virtual CFO for our manufacturing business" },
+  { who: "Owner-led family business", need: "Numbers that support decisions, not just year-end filings.", help: "A monthly management pack and a review call on margins, cash and the next decisions.", enquiry: "a virtual CFO for our family business" },
+];
+
+const NOT_INCLUDED = [
+  "The statutory audit of a company for which we act as virtual CFO. The Companies Act restricts an auditor from providing such services to the company it audits, so an independent auditor does the audit.",
+  "Raising funds, introducing investors, negotiating term sheets or giving investment advice.",
+  "Advice on foreign tax or company law for overseas group companies; that stays with your home adviser.",
+  "Daily bookkeeping, unless agreed separately as a bookkeeping engagement.",
 ];
 
 const TECH_STACK = [
@@ -165,6 +181,21 @@ const FAQS = [
     question: "Can a virtual CFO support a foreign-owned Indian subsidiary?",
     answer:
       "Yes. For a foreign-owned subsidiary, the virtual CFO role centres on reporting to the parent: monthly group packs in the parent's format with IFRS or US GAAP adjustments, quarterly board papers, intercompany reconciliations and monitoring of the transfer pricing markup. It sits alongside the Indian statutory calendar of ROC, FEMA, GST, TDS and income tax filings, which we can also handle under our subsidiary compliance retainer.",
+  },
+  {
+    question: "Can you also be our statutory auditor?",
+    answer:
+      "No, not for the same company. The Companies Act restricts an auditor from providing certain services, such as accounting and outsourced financial services, to the company it audits. If you need a statutory audit, it is done by an independent auditor appointed by your shareholders, and we work with that auditor on schedules and queries.",
+  },
+  {
+    question: "Do you support manufacturers outside Chennai, such as in Coimbatore?",
+    answer:
+      "Yes, online. We serve Coimbatore and the rest of Tamil Nadu from our only office in Anna Nagar, Chennai, using video calls, shared folders and a monthly review meeting. Manufacturers typically need costing by product or plant, stock reporting and bank-limit data. We do not have an office in Coimbatore.",
+  },
+  {
+    question: "How is the fee for a virtual CFO decided?",
+    answer:
+      "The fee is agreed in a written engagement letter after a scoping call, based on the reporting you need, how often we review it and how many entities are involved. We do not publish price lists, in line with the rules for chartered accountants. Third-party costs, such as software, are shown separately and at actual.",
   },
   {
     question: "Does a Virtual CFO engagement look different for a manufacturer and a newer services company?",
@@ -401,6 +432,10 @@ export default function VirtualCfoPage() {
                   </li>
                 ))}
               </ol>
+            </div>
+
+            <div>
+              <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />
             </div>
 
             <div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+import HighTicketSections, { type Audience } from "@/components/HighTicketSections";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-uae-companies";
@@ -73,6 +74,20 @@ const UAE_ITEMS = [
   ["Economic substance and management", "Where the parent is managed from matters for its treaty residence and for whether it is treated as a genuine holding company.", "Your UAE adviser, with input from us on Indian anti-avoidance provisions."],
 ];
 
+const AUDIENCES: Audience[] = [
+  { who: "UAE mainland company expanding to India", need: "An Indian entity with the right attested documents and FDI route.", help: "Document attestation guidance, incorporation and FEMA reporting.", enquiry: "setting up an Indian subsidiary for our UAE mainland company" },
+  { who: "Free-zone company investing in India", need: "Clarity on how a free-zone parent invests and what documents Indian authorities accept.", help: "Structure check, documents and the first-year filings.", enquiry: "setting up an Indian subsidiary for our UAE free-zone company" },
+  { who: "NRI founder living in the UAE", need: "An Indian company the founder controls from Dubai, with a resident director in India.", help: "Structure, director rules, FEMA filings and the annual calendar.", enquiry: "setting up an Indian company as an NRI founder in the UAE" },
+  { who: "UAE group with an existing Indian subsidiary", need: "Monthly reporting and compliance that the group can rely on.", help: "One calendar for ROC, FEMA, tax, GST and payroll, plus monthly packs.", enquiry: "compliance for our Indian subsidiary owned from the UAE" },
+];
+
+const NOT_INCLUDED = [
+  "Acting as your resident director or nominee shareholder. Your group appoints and trusts that person.",
+  "Advice on UAE tax or company law, or your UAE filings. That stays with your UAE accountant or adviser, with whom we coordinate on the Indian figures.",
+  "Investment, banking or immigration advice, including visas for staff moving to India.",
+  "The statutory audit of the Indian company if we keep its books; an independent auditor does that.",
+];
+
 export default function Page() {
   return (
     <ServicePageTemplate
@@ -132,6 +147,8 @@ export default function Page() {
       ]}
       relatedSlugs={["india-subsidiary-compliance-cfo", "fema-rbi-compliance", "transfer-pricing-audit"]}
     >
+      <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />
+
       <h2 className="mt-14 text-2xl text-obsidian">What documents does a UAE parent need, and how are they attested?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         The UAE is not listed as a party on the HCCH status table for the Apostille Convention, so UAE documents cannot be

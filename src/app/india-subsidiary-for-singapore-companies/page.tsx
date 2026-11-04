@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
+import HighTicketSections from "@/components/HighTicketSections";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-singapore-companies";
@@ -72,6 +73,13 @@ const TIMELINE = [
   ["SPICe+ incorporation and certificate", "1 to 3 weeks after filing", "Registrar of Companies processing"],
   ["Bank account and remittance of capital", "2 to 6 weeks", "Bank KYC on the parent and directors"],
   ["FC-GPR filing", "Within 30 days of allotment", "Timely allotment of shares"],
+];
+
+const NOT_INCLUDED = [
+  "Acting as your resident director or nominee shareholder. Your group appoints and trusts that person.",
+  "Advice on Singapore tax or company law, or your Singapore filings. That stays with your Singapore accountant or corporate secretary, with whom we coordinate on the Indian figures.",
+  "Investment, banking or immigration advice, including visas for staff moving to India.",
+  "The statutory audit of the Indian company if we keep its books; an independent auditor does that.",
 ];
 
 export default function Page() {
@@ -249,6 +257,8 @@ export default function Page() {
         </Link>
         .
       </p>
+
+      <HighTicketSections notIncluded={NOT_INCLUDED} />
 
       <h2 className="mt-14 text-2xl text-obsidian">How does a Singapore–India working model run day to day?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
