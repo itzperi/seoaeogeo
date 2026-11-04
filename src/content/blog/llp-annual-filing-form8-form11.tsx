@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "Every LLP in Chennai must file Form 11 and Form 8 annually, regardless of turnover or activity — here's what each form covers and when they're due.",
   date: "2026-09-25",
   excerpt:
-    "Every LLP must file Form 11 and Form 8 annually regardless of turnover or activity — here's exactly what each form covers and when they're due.",
+    "Every LLP must file Form 11 and Form 8 annually regardless of turnover or activity — here's exactly what each form covers and when they're due.",
+  summary:
+    "Every LLP must file Form 11, the annual return, and Form 8, the statement of account and solvency, each year, even with no business. For most LLPs these fall due on 30 May and 30 October. Late fees accrue daily with no cap, but missed years can be filed late.",
+  faqs: [
+    {
+      question: "What annual filings does an LLP have to make?",
+      answer:
+        "Two filings are mandatory every year whether or not the LLP did any business: Form 11, the annual return, and Form 8, the statement of account and solvency. Missing either attracts a late fee that accrues per day of delay with no upper cap, so the deadlines are worth knowing well in advance.",
+    },
+    {
+      question: "What is the due date for LLP Form 11 and Form 8?",
+      answer:
+        "Form 11 is due within 60 days of the close of the financial year, which for most LLPs means 30 May. Form 8 is due within 30 days of the end of six months from the close of the financial year, which for most LLPs means 30 October.",
+    },
+    {
+      question: "Does an LLP need an audit?",
+      answer:
+        "Form 8 does not require audited financials unless the LLP's turnover exceeds 40 lakh rupees or its capital contribution exceeds 25 lakh rupees. Below both thresholds, self-certified figures are sufficient. Form 8 needs a statement of assets and liabilities and a solvency declaration signed by the designated partners.",
+    },
+    {
+      question: "Can an LLP file past-due Form 8 and Form 11?",
+      answer:
+        "Yes. If an LLP has missed a filing in a prior year, it is recoverable. The Registrar allows late filing with the accumulated fee, and getting current is usually more straightforward than founders expect. The longer the delay, the larger the penalty, since it accrues daily with no maximum.",
+    },
+  ],
 };
 
 export default function Body() {

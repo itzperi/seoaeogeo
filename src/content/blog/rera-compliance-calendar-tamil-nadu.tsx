@@ -26,6 +26,8 @@ export const meta: BlogPostMeta = {
         "Yes, developers can apply for an extension of the project completion timeline, but this requires a formal application with justification — it isn't automatic, and delays in filing the extension request can create a compliance gap.",
     },
   ],
+  summary:
+    "RERA compliance in Tamil Nadu continues until the completion certificate. Recurring items are the quarterly progress report, escrow account certification, an annual audit of project accounts, extension applications before the timeline lapses, and event-based amendments. Seventy percent of funds collected must stay in the project escrow account, and non-compliance is publicly visible.",
 };
 
 export default function Body() {

@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "Usually not. A long list of unrelated activities tends to attract queries from the Registrar, confuse banks during account opening, and complicate GST registration and licence applications. It is better to state one or two focused main objects that match your NIC code, with closely related activities, and to amend the clause if your business genuinely changes.",
     },
-  ],
+  ],
+  summary:
+    "The objects clause of the Memorandum of Association states what the company exists to do, under section 4(1)(c). In SPICe+, the e-MoA objects are prefilled from the NIC code chosen in Part A, so the code, the company name and the objects must align. Vague or overly broad objects cause problems with the Registrar, banks and licences.",
 };
 
 export default function Body() {

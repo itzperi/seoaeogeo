@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Generally yes, if the operator gives a written agreement and NOC naming the company and a utility bill for the premises, and the company can actually receive notices there. The address must be complete and match the documents. Confirm with the operator that they will forward government notices promptly, since missed notices create compliance risk.",
     },
   ],
+  summary:
+    "A company may legally use a founder's home as its registered office. Section 12 requires a registered office that can receive notices within thirty days of incorporation, with verification furnished to the Registrar. For an owned home, expect a recent utility bill, an NOC from the owner and proof of ownership, with English translation of Tamil bills.",
 };
 
 export default function Body() {

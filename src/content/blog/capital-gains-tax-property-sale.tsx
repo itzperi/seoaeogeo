@@ -42,6 +42,8 @@ export const meta: BlogPostMeta = {
         "Yes, where the consideration is ₹50 lakh or more and you are a resident, the buyer deducts 1% of the higher of the price and the stamp duty value, and deposits it through Form 141 for payments from 1 April 2026. Non-resident sellers face a much higher deduction on the full price.",
     },
   ],
+  summary:
+    "On a Chennai property sale, deduct transfer expenses and the cost of purchase and improvement from the sale price, or the guideline value if it is more than 10% higher. Holding more than 24 months makes the gain long-term at 12.5%, with an indexed 20% option for property acquired before 23 July 2024. Shorter holdings are taxed at slab rates.",
 };
 
 export default function Body() {

@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "A shareholders' agreement is a legal contract, so it should be drafted or vetted by an advocate. A chartered accountant contributes on the commercial and financial side: capital structure, valuation and pricing formulas, tax on transfers and buy-backs, FEMA pricing for foreign shareholders, and the ROC filings that follow. The two should review the same draft.",
     },
   ],
+  summary:
+    "A founders' agreement records answers to hard questions while co-founders are aligned, since the articles deal with transfers, meetings and directors only in general terms. It covers roles, founder vesting, transfer restrictions, tag-along and drag-along, reserved matters, deadlock resolution, IP assignment, non-compete and dispute resolution.",
 };
 
 export default function Body() {

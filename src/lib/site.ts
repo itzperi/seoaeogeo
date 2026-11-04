@@ -66,12 +66,38 @@ export const SOCIALS = {
   instagram: "https://www.instagram.com/carushil_c_s/",
 };
 
-// Calendly 30-minute consultation — every "Book a Consultation"
-// button on the site points here.
+// Other profiles of the firm that AI engines and Google use to confirm the
+// entity. Set each URL once the profile exists; null entries are skipped in
+// the schema sameAs list, so nothing unverified is ever published.
+export const ENTITY_PROFILES: Record<string, string | null> = {
+  facebook: null, // Facebook business page
+  wikidata: null, // https://www.wikidata.org/wiki/Q...
+  icaiCaConnect: null, // ICAI CA Connect firm listing
+  clearlevel: null, // ClearLevel firm directory listing
+  revenuebase: null, // RevenueBase firm profile
+};
+
+// Profiles of CA Rushil C S beyond LinkedIn (Person schema sameAs).
+export const FOUNDER_PROFILES: Record<string, string | null> = {
+  taxguru: null, // TaxGuru author profile
+  icaiMember: null, // ICAI member directory entry, if public
+};
+
+// Calendly booking for the 15-minute consultation. Every "Book a 15-minute
+// consultation" button points here. The event slug is still "30min" until
+// the firm renames it in Calendly; update both constants when it does.
 export const BOOKING_LINK = "https://calendly.com/ceo-csrushil/30min";
 // Same event in Calendly's inline-embed mode, for the iframe on /contact.
 export const BOOKING_EMBED_SRC =
-  "https://calendly.com/ceo-csrushil/30min?embed_type=Inline&embed_domain=www.csrushil.com&hide_gdpr_banner=1";
+  "https://calendly.com/ceo-csrushil/30min?embed_type=Inline&embed_domain=www.csrushil.com&hide_gdpr_banner=1&utm_source=website&utm_medium=embed&utm_campaign=contact";
+
+// Adds UTM tags so Calendly reports which page each booking came from.
+// campaign = the page slug ("home" for /).
+export function withBookingUtm(href: string, pathname: string) {
+  const campaign = pathname.replace(/^\/|\/$/g, "").replace(/\//g, "-") || "home";
+  const sep = href.includes("?") ? "&" : "?";
+  return `${href}${sep}utm_source=website&utm_medium=cta&utm_campaign=${encodeURIComponent(campaign)}`;
+}
 
 // wa.me expects the number with no "+" or spaces. Same NAP phone number as
 // everywhere else — do not point this at a different number.

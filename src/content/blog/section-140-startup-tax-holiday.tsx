@@ -35,7 +35,9 @@ export const meta: BlogPostMeta = {
       answer:
         "No. The Income Tax Department's published text of section 140 caps total turnover at ₹100 crore in the tax year for which the deduction is claimed. DPIIT's startup recognition criteria use a separate limit of below ₹200 crore (₹300 crore for deep-tech startups). A startup can be DPIIT-recognised and still exceed the tax-holiday limit, so check both for the relevant year.",
     },
-  ],
+  ],
+  summary:
+    "From 1 April 2026, the startup tax holiday formerly in section 80-IAC sits in section 140 of the Income-tax Act, 2025. An eligible company or LLP can deduct 100% of eligible profits for three consecutive tax years chosen within ten years of incorporation, if turnover stays within 100 crore rupees and it holds the required certificate.",
 };
 
 export default function Body() {

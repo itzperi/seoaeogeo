@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "It depends on the basis of investment. Investment by an NRI on a repatriation basis is foreign investment and is reported in Form FC-GPR within 30 days of issue of shares. RBI's Master Direction states that NRI investment on a non-repatriation basis under Schedule IV is deemed domestic investment, so FC-GPR does not apply to it.",
     },
   ],
+  summary:
+    "An NRI can be both a director and a shareholder of an Indian private limited company. The conditions are practical: the NRI needs a DIN and DSC, documents must be attested abroad, and at least one director must have stayed in India 182 days or more in the financial year. Foreign exchange reporting depends on how the money comes in.",
 };
 
 export default function Body() {

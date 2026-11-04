@@ -41,6 +41,8 @@ export const meta: BlogPostMeta = {
         "Yes. Under Section 56 of the CGST Act, interest is payable if a refund is not paid within 60 days of the date the complete application was received. The rate is set by notification. Where the refund follows an appellate order in your favour, interest is computed from the date of the original application.",
     },
   ],
+  summary:
+    "Export refunds for Tiruppur exporters usually stall for four reasons: the shipping bill does not match GSTR-1, a customs step such as the EGM is missing, the refund formula was applied incorrectly, or the application was incomplete. The route differs for exports with IGST paid and exports under LUT claiming unutilised credit.",
 };
 
 export default function Body() {

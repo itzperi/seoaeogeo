@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "IT and startup businesses along Chennai's OMR corridor tend to need a Virtual CFO for a specific reason: getting fundraise-ready, not just filing taxes.",
   date: "2026-09-26",
   excerpt:
-    "IT and startup businesses along OMR tend to need a Virtual CFO for one specific reason: getting fundraise-ready, not just filing taxes on time.",
+    "IT and startup businesses along OMR tend to need a Virtual CFO for one specific reason: getting fundraise-ready, not just filing taxes on time.",
+  summary:
+    "OMR startups and IT-services companies usually seek a virtual CFO ahead of a fundraise, needing clean historical financials, a defensible model and MIS reporting. Accurate runway and burn tracking matters, and export invoicing brings LUT filings and GST treatment into the same conversation as financial strategy.",
+  faqs: [
+    {
+      question: "Why do OMR startups hire a virtual CFO?",
+      answer:
+        "Founders along Old Mahabalipuram Road usually reach out ahead of a funding round, not because of a revenue number. Investors expect clean historical financials, a defensible financial model and MIS reporting that does not need the founder to explain every number. Getting this in order takes longer than most founders expect if it starts the month before term sheets.",
+    },
+    {
+      question: "Why does runway tracking matter for growth-stage startups?",
+      answer:
+        "A company burning capital ahead of profitability needs an accurate runway number, not a rough estimate, because hiring decisions, vendor commitments and the timing of the next raise all depend on it. This is a different rhythm from a virtual CFO engagement for an established profitable business.",
+    },
+    {
+      question: "How does export invoicing affect IT companies on OMR?",
+      answer:
+        "IT and software services companies frequently invoice international clients, which brings LUT filings and export-invoicing GST treatment into the same conversation as the CFO work. For this client profile, the compliance side and the financial-strategy side are not really separate, even though they are often treated as separate services elsewhere.",
+    },
+  ],
 };
 
 export default function Body() {

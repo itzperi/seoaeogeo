@@ -41,6 +41,8 @@ export const meta: BlogPostMeta = {
         "The detention, penalty order and first appeal are handled by the authorities of the state where the vehicle was stopped, such as Karnataka for a Hosur shipment held near Bengaluru. Documents and drafts can be prepared remotely, but in-person hearings there may be better attended by a representative based in that state.",
     },
   ],
+  summary:
+    "When goods are detained under Section 129 for a breach such as no valid e-way bill, they are released on paying the penalty or giving security. The officer must issue notice in Form MOV-07 within seven days of detention and pass the order in MOV-09 within seven days of that notice. The order can be appealed with a 10% pre-deposit.",
 };
 
 export default function Body() {

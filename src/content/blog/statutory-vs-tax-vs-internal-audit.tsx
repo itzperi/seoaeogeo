@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Chennai business owners often treat \"audit\" as one thing, but statutory, tax, and internal audit are three separate exercises with different triggers.",
   date: "2026-09-19",
   excerpt:
-    "Business owners in Chennai often use the word audit as if it means one single thing, but statutory audit, tax audit, and internal audit are...",
+    "Business owners in Chennai often use the word audit as if it means one single thing, but statutory audit, tax audit, and internal audit are...",
+  summary:
+    "Statutory audit, tax audit and internal audit are three separate exercises. Statutory audit is required for every company under company law. Tax audit applies under the Income Tax Act once turnover or receipts cross a threshold. Internal audit reviews controls and risk, and is mandatory only for certain classes of companies.",
+  faqs: [
+    {
+      question: "What is the difference between statutory audit and tax audit?",
+      answer:
+        "A statutory audit is required under company law for every registered company regardless of size and checks whether the financial statements give a true and fair view. A tax audit applies under the Income Tax Act once turnover or gross receipts cross a threshold and verifies compliance with income tax provisions. The same chartered accountant is often engaged for both.",
+    },
+    {
+      question: "If I have a statutory audit, do I still need a tax audit?",
+      answer:
+        "Possibly. Tax audit applicability depends purely on turnover thresholds under a different law, so a statutory audit does not cover it. Missing this obligation because you thought the statutory audit covered it is a common and costly mistake. The tax audit report in Form 3CA/3CB-3CD is filed along with the income tax return.",
+    },
+    {
+      question: "What is an internal audit and is it compulsory?",
+      answer:
+        "Internal audit evaluates a company's internal controls, risk management and operational efficiency rather than statutory compliance. Certain classes of companies are legally required to have an internal audit function under company law. Many others choose to have one anyway because it helps catch inefficiencies, fraud risk and process gaps early.",
+    },
+  ],
 };
 
 export default function Body() {

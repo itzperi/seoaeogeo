@@ -38,6 +38,17 @@ export default function Page() {
         { name: "Labour Law Compliance under the New Labour Codes", text: "Gratuity and bonus provisioning, Shops & Establishment Act compliance, and Tamil Nadu-specific labour law requirements." },
         { name: "Payroll Audit & Compliance Health Check", text: "A one-time review of your existing payroll process to catch compliance gaps before they become penalties." },
       ]}
+      howTo={{
+        heading: "How do we run your payroll each month?",
+        steps: [
+          { name: "Collect employee and salary data", text: "Employee master data, salary structures, joining and leaving dates, and investment declarations for TDS on salary." },
+          { name: "Check registrations", text: "We confirm the business's EPF, ESI and Tamil Nadu professional tax registrations where they apply, and register where they are missing." },
+          { name: "Compute monthly payroll", text: "Gross pay, deductions, PF and ESI contributions, professional tax and TDS on salary are computed for each employee." },
+          { name: "Issue payslips and the payment file", text: "Payslips are shared with employees and a bank transfer file is prepared for salary payments." },
+          { name: "Deposit and file statutory dues", text: "PF, ESI, professional tax and TDS are deposited and the related returns are filed on time." },
+          { name: "Year-end statements", text: "Form 16 is issued to employees and annual payroll reconciliations are prepared for the books and the tax return." },
+        ],
+      }}
       faqs={[
         { question: "What's the difference between payroll processing and payroll compliance?", answer: "Payroll processing is calculating and disbursing salaries each month. Payroll compliance is the statutory side that comes with it — PF and ESI contributions, Professional Tax deduction, and TDS on salaries, each with its own filing deadline. Treating these separately is how compliance gaps happen; we handle both as one process." },
         { question: "Do you handle payroll for a company that doesn't have an Indian entity yet?", answer: "Yes — for foreign companies setting up in India, we can guide you through Employer of Record arrangements to hire staff before your entity is registered, then transition to standard compliant payroll once incorporation is complete." },

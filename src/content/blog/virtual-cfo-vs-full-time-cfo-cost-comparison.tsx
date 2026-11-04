@@ -25,7 +25,9 @@ export const meta: BlogPostMeta = {
       answer:
         "It depends on complexity rather than revenue alone — a pre-revenue startup preparing for a funding round often benefits significantly from Virtual CFO support for financial modelling and due-diligence readiness, even without revenue yet.",
     },
-  ],
+  ],
+  summary:
+    "A full-time CFO means a fixed salary plus benefits and a recruitment effort whatever the workload, while a virtual CFO works on a scoped retainer matched to reporting needs and can start sooner. The real question is whether your business needs daily senior attention or senior oversight on a scheduled, recurring basis.",
 };
 
 export default function Body() {

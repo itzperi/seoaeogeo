@@ -26,6 +26,8 @@ export const meta: BlogPostMeta = {
         "Yes, a newly formed trust, society, or Section 8 company can apply for provisional registration immediately after formation, which is typically valid for 3 years before conversion to regular registration based on actual activities.",
     },
   ],
+  summary:
+    "12A registration exempts an NGO's own income applied to charitable purposes from tax, while 80G lets donors claim a deduction. The process runs from formation to provisional registration through Form 10A, then regular registration through Form 10AB before the provisional period ends, then renewal. FCRA for foreign funds is a separate approval.",
 };
 
 export default function Body() {

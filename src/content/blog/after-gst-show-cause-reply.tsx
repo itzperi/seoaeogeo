@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Filed your reply to a GST show-cause notice already? Here's what happens next, and realistically how long you should expect the process to take.",
   date: "2026-09-19",
   excerpt:
-    "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",
+    "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",
+  summary:
+    "After you reply to a GST show cause notice, the officer can drop the proceedings, issue a demand order for some or all of the proposed amount, or call a personal hearing. If a demand order is passed, you can appeal to the Appellate Authority within the prescribed time, generally three months.",
+  faqs: [
+    {
+      question: "What happens after I reply to a GST show cause notice?",
+      answer:
+        "After reviewing your reply, the proper officer can drop the proceedings entirely if satisfied, issue a demand order confirming some or all of the proposed tax, interest and penalty, or call you for a personal hearing before deciding. Which of these happens depends heavily on how complete and well documented your original reply was.",
+    },
+    {
+      question: "How long do I have to appeal a GST demand order?",
+      answer:
+        "You can appeal before the Appellate Authority within the prescribed time limit, generally three months from the date of the order, extendable only in limited circumstances. Missing this window makes the order final and considerably harder to challenge later, so tracking the date the order is communicated to you matters.",
+    },
+    {
+      question: "Is a GST personal hearing a bad sign?",
+      answer:
+        "Not automatically. Personal hearings usually happen when your written reply raises points needing clarification, when large amounts are involved, or when the officer wants to see original documents rather than copies. It is often simply due process for higher value cases, and going in prepared with organised originals makes a real difference to the outcome.",
+    },
+  ],
 };
 
 export default function Body() {

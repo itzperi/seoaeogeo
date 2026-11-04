@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "Selling on Amazon, Flipkart, Meesho, or your own website isn't the same as running a regular shop under GST — many first-time sellers learn this the hard way.",
   date: "2026-09-19",
   excerpt:
-    "Selling on Amazon, Flipkart, Meesho, or your own website is not the same as running a regular shop when it comes to GST, and a lot of first...",
+    "Selling on Amazon, Flipkart, Meesho, or your own website is not the same as running a regular shop when it comes to GST, and a lot of first...",
+  summary:
+    "Online sellers on marketplaces generally need GST registration from day one. Since 1 October 2023, a small seller below the threshold selling goods only within Tamil Nadu may get a PAN-based enrolment number instead. Marketplaces collect TCS, and inventory in another state's warehouse may need registration there.",
+  faqs: [
+    {
+      question: "Do online sellers need GST registration from the first sale?",
+      answer:
+        "If you sell goods through an ecommerce operator such as Amazon or Flipkart, GST registration is generally required from day one. Since 1 October 2023, a small seller below the threshold who sells goods only within Tamil Nadu may get a PAN-based enrolment number instead, subject to conditions. Selling to other states through a marketplace still needs full registration.",
+    },
+    {
+      question: "What is TCS on marketplace sales?",
+      answer:
+        "Marketplaces deduct Tax Collected at Source at 0.5 percent, reduced from one percent with effect from July 2024, on the net value of taxable supplies before paying you out. It shows up in your GSTR 2A and can be claimed as credit against your GST liability. Flag any mismatch immediately rather than letting it pile up.",
+    },
+    {
+      question: "Do I need GST registration in other states?",
+      answer:
+        "Possibly. If your marketplace stores your inventory in a warehouse outside Tamil Nadu, such as a fulfilment centre in Karnataka or Delhi, you may need registration in that state too. GST registration is tied to place of supply and warehouse location, not just your home address in Chennai.",
+    },
+    {
+      question: "What documents are needed to register for GST as an online seller?",
+      answer:
+        "You need PAN, Aadhaar, proof of business address (even a rent agreement for a small home office works), a cancelled cheque or bank statement, and your marketplace seller agreement. How long registration takes depends on the GST rules' time limits and whether the officer raises a clarification, so cleaner documents mean fewer delays.",
+    },
+  ],
 };
 
 export default function Body() {

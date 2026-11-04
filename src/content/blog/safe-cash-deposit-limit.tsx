@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "There's no single legal cash deposit limit, but specific thresholds trigger automatic reporting to the Income Tax Department. Here's what those actually are.",
   date: "2026-09-26",
   excerpt:
-    "There's no single legal cash deposit limit, but specific thresholds trigger automatic reporting to the Income Tax Department.",
+    "There's no single legal cash deposit limit, but specific thresholds trigger automatic reporting to the Income Tax Department.",
+  summary:
+    "There is no fixed legal ceiling on cash deposits, but banks automatically report deposits of ten lakh rupees or more in a savings account, or fifty lakh in a current account, in a financial year. The real risk is an unexplained source. Separately, Section 269ST restricts accepting two lakh rupees or more in cash.",
+  faqs: [
+    {
+      question: "Is there a legal limit on how much cash I can deposit?",
+      answer:
+        "There is no fixed legal ceiling, but specific thresholds trigger automatic reporting to the Income Tax Department. Cash deposits aggregating 10 lakh rupees or more in a savings account in a financial year are reported, and for business current accounts the threshold is 50 lakh rupees. This is a reporting trigger, not a penalty trigger.",
+    },
+    {
+      question: "What happens when a large cash deposit is reported?",
+      answer:
+        "The department may ask you to explain its source during return processing or through a scrutiny notice, which needs a documented reply. A business owner with genuine cash sales, clear books and consistent filings can explain this easily. Someone depositing cash with no documented source faces a genuinely harder conversation.",
+    },
+    {
+      question: "What is Section 269ST?",
+      answer:
+        "Section 269ST prohibits accepting 2 lakh rupees or more in cash from a single person in a single day, or for a single transaction, with a penalty equal to the amount received if violated. It is a restriction on receiving cash, distinct from the deposit-reporting threshold, and business owners frequently conflate the two.",
+    },
+  ],
 };
 
 export default function Body() {

@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Yes. The Occupational Safety, Health and Working Conditions Code, 2020 came into force on 21 November 2025, replacing the Factories Act, 1948 among other laws. Factory registration and licensing now follow the Code and the rules notified under it. In Tamil Nadu the state's factory inspectorate administers licensing, so confirm current thresholds and forms before applying.",
     },
   ],
+  summary:
+    "Manufacturers in Tamil Nadu usually pick a private limited company because lenders respond well to charge registration with the Registrar, audited financials, equity infusion and continuity of licences. After incorporation come PAN, TAN, EPFO and ESIC through SPICe+, then GST and Udyam registration. Promoters still often give personal guarantees on MSME loans.",
 };
 
 export default function Body() {

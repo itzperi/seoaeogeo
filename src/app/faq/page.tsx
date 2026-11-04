@@ -99,6 +99,14 @@ export default function FaqHubPage() {
       <PageHero
         eyebrow="FAQ"
         h1="Frequently Asked Questions"
+        lead={
+          <>
+            This page answers the questions clients ask{" "}
+            <strong>C S Rushil &amp; Co., Chartered Accountants in Anna Nagar, Chennai</strong> most often: company and LLP
+            registration, GST registration, returns and notices, income tax returns and notices, audit, NRI tax and how we
+            work. Each answer is short and links to the full service page for the details.
+          </>
+        }
         subhead="Quick answers to the questions we hear most across company registration, GST, income tax, and audit — each with a link to the full guide on that topic."
       />
 

@@ -15,6 +15,8 @@ import {
   ICAI_MEMBERSHIP_NO,
   LANGUAGES_SPOKEN,
   PHONE_TEL,
+  ENTITY_PROFILES,
+  FOUNDER_PROFILES,
   SITE_URL,
   SOCIALS,
   YEAR_FOUNDED,
@@ -51,7 +53,8 @@ function to24h(time: string) {
 
 // Countries the firm serves remotely (NRIs, foreign-owned companies,
 // overseas accounting firms).
-export const SERVED_COUNTRIES = ["India", "United Arab Emirates", "United States", "United Kingdom"];
+export const SERVED_COUNTRIES = ["India", "United Arab Emirates", "United States", "United Kingdom", "Singapore"];
+const GULF = ["Saudi Arabia", "Qatar", "Oman", "Kuwait", "Bahrain"];
 
 // Service pages whose buyers are mostly outside India, keyed by route.
 export const INTERNATIONAL_AREAS: Record<string, string[]> = {
@@ -59,7 +62,9 @@ export const INTERNATIONAL_AREAS: Record<string, string[]> = {
   "/india-subsidiary-compliance-cfo": SERVED_COUNTRIES,
   "/fema-rbi-compliance": SERVED_COUNTRIES,
   "/transfer-pricing-audit": SERVED_COUNTRIES,
-  "/nri-tax-services": SERVED_COUNTRIES,
+  "/nri-tax-services": [...SERVED_COUNTRIES, ...GULF],
+  "/nri-tax-services-gulf": [...GULF, "India"],
+  "/nri-tax-services-singapore": ["Singapore", "India"],
   "/nri-tax-services-uae": ["United Arab Emirates", "India"],
   "/nri-tax-services-uk": ["United Kingdom", "India"],
   "/nri-tax-services-usa": ["United States", "India"],
@@ -103,6 +108,12 @@ export function organizationSchema() {
     numberOfEmployees: { "@type": "QuantitativeValue", value: TEAM_SIZE },
     ...(FIRM_REGISTRATION_NO && {
       identifier: { "@type": "PropertyValue", propertyID: "ICAI firm registration number", value: FIRM_REGISTRATION_NO },
+      hasCredential: {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "Firm registration",
+        name: `ICAI firm registration no. ${FIRM_REGISTRATION_NO}`,
+        recognizedBy: ICAI,
+      },
     }),
     address: {
       "@type": "PostalAddress",
@@ -137,7 +148,7 @@ export function organizationSchema() {
       "ROC compliance",
     ],
     hasMap: GBP_URL,
-    sameAs: [SOCIALS.linkedin, SOCIALS.instagram, GBP_URL],
+    sameAs: [SOCIALS.linkedin, SOCIALS.instagram, GBP_URL, ...Object.values(ENTITY_PROFILES).filter((u): u is string => Boolean(u))],
   };
 }
 
@@ -154,7 +165,7 @@ export function personSchema() {
     url: `${SITE_URL}/about-us`,
     description: FOUNDER_CREDENTIALS,
     worksFor: { "@id": `${SITE_URL}/#organization` },
-    sameAs: [FOUNDER_LINKEDIN],
+    sameAs: [FOUNDER_LINKEDIN, ...Object.values(FOUNDER_PROFILES).filter((u): u is string => Boolean(u))],
     memberOf: ICAI,
     hasCredential: [
       {
@@ -162,6 +173,9 @@ export function personSchema() {
         credentialCategory: "Professional qualification",
         name: "Chartered Accountant (ICAI)",
         recognizedBy: ICAI,
+        ...(ICAI_MEMBERSHIP_NO && {
+          identifier: { "@type": "PropertyValue", propertyID: "ICAI membership number", value: ICAI_MEMBERSHIP_NO },
+        }),
         ...(YEAR_QUALIFIED && { dateCreated: YEAR_QUALIFIED }),
       },
       {

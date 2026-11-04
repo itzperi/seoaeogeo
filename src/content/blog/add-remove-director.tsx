@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Founders in Chennai often need to add a co founder, an investor's nominee, or remove a director who is exiting — each has a specific procedure to follow.",
   date: "2026-09-19",
   excerpt:
-    "Founders in Chennai often need to add a co founder as a director, bring on an investor's nominee, or remove a director who is exiting the...",
+    "Founders in Chennai often need to add a co founder as a director, bring on an investor's nominee, or remove a director who is exiting the...",
+  summary:
+    "Adding a director needs the person's consent, a board resolution, a Director Identification Number if they lack one, and an ROC form filed within the prescribed time. Removal works by resignation letter or a shareholder resolution. In both cases, update statutory registers and board minutes immediately, not only the ROC filing.",
+  faqs: [
+    {
+      question: "What is needed to appoint a new director in a company?",
+      answer:
+        "Appointing a director needs the consent of the person being appointed, a board resolution approving the appointment, and the appropriate form filed with the Registrar of Companies within the prescribed time after the resolution. If the person has no Director Identification Number, they need one, which requires identity and address proof and a digital signature certificate.",
+    },
+    {
+      question: "How can a director be removed or resign from a company?",
+      answer:
+        "A director can resign by submitting a resignation letter to the board, or can be removed by shareholders through an ordinary resolution in specific circumstances. Either route requires filing the relevant form with the Registrar within the prescribed window. The company must also update its statutory registers straight away, rather than treating the ROC filing as the end of the matter.",
+    },
+    {
+      question: "What happens if a director change is filed late with the ROC?",
+      answer:
+        "Filing the required ROC form late attracts additional fees that increase the longer the delay continues. In some cases, significant delay can raise compliance flags on the company more broadly. The change also needs to be reflected in board minutes, the register of directors and any agreement, such as a shareholders agreement, that names specific individuals as directors.",
+    },
+  ],
 };
 
 export default function Body() {

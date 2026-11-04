@@ -17,7 +17,7 @@ export default function SiloLinks({ path }: { path: string }) {
   return (
     <nav aria-label={`More ${group.label} services`} className="border-t border-ash bg-paper py-12">
       <div className="container-page">
-        <h2 className="text-xl text-obsidian">More {group.label} services in Chennai</h2>
+        <h2 className="text-xl text-obsidian">Which other {group.label} services do we offer in Chennai?</h2>
         <ul className="mt-4 grid grid-cols-1 gap-x-6 gap-y-2 text-sm sm:grid-cols-2 lg:grid-cols-3">
           {siblings.map((s) => (
             <li key={s.slug}>

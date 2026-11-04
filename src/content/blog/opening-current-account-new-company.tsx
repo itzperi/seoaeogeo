@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "SPICe+ lets you choose from the banks integrated with the MCA system, and the application must be made through AGILE-PRO-S. After incorporation, a company can also open accounts with other banks by approaching them directly with its incorporation documents and a board resolution. Many companies keep one operating account and add others later.",
     },
-  ],
+  ],
+  summary:
+    "A new company's bank account request is built into the incorporation filing through the AGILE-PRO-S form linked to SPICe+ Part B, where opening a bank account is mandatory. After incorporation, details go to the chosen bank, which validates them and completes its own KYC. The account number then appears on the MCA dashboard.",
 };
 
 export default function Body() {

@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Yes. The MCA's SPICe+ FAQs state that the Certificate of Incorporation is issued with the PAN allotted by the Income Tax Department, and an email with the certificate indicating PAN and TAN is sent to the applicant. The physical PAN card follows separately from the Income Tax Department.",
     },
   ],
+  summary:
+    "Registering a company typically takes about 7 to 12 working days when everything is in order, though the Registrar has no statutory deadline. The steps run from document collection and Digital Signature Certificates through SPICe+ Part A name approval and Part B filing, then payment and scrutiny, ending in the Certificate of Incorporation with PAN and TAN.",
 };
 
 export default function Body() {

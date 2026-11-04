@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "On approving the INC-6 application, the Registrar issues a fresh certificate of incorporation reflecting the change in class and the new name without the OPC suffix. The company remains the same legal entity, so its assets, contracts, PAN and bank accounts continue, though records with banks, GST and other authorities should be updated.",
     },
   ],
+  summary:
+    "A One Person Company can convert to a private limited company when the founder wants a co-founder, investor or employee equity, since an OPC can have only one member. Since 2021, conversion is voluntary, with no compulsory conversion on crossing the old capital or turnover limits. The steps start with a board meeting approving altered MoA and AoA.",
 };
 
 export default function Body() {

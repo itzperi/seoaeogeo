@@ -41,6 +41,8 @@ export const meta: BlogPostMeta = {
         "Yes. The notice is uploaded on the GST portal with a summary in Form DRC-01, and the reply is filed in Form DRC-06 with supporting documents, within the time the notice states, usually 30 days. Ask for a personal hearing in the reply. Voluntary payment, if chosen, is made through Form DRC-03.",
     },
   ],
+  summary:
+    "Section 74A applies to GST notices for FY 2024-25 onwards and replaces Sections 73 and 74 with one provision. It allows a notice within 42 months of the annual return due date and an order within 12 months of the notice, extendable by up to 6 months. Penalty depends on whether fraud is alleged and proved.",
 };
 
 export default function Body() {

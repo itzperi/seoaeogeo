@@ -10,7 +10,7 @@ export default function FAQSection({ items, schema = true }: { items: FAQItem[];
         {schema && <JsonLd data={faqSchema(items)} />}
         <p className="eyebrow text-sm text-slate">FAQ</p>
         <h2 className="mt-3 text-3xl text-obsidian">
-          Frequently asked questions
+          What do clients ask us most often?
         </h2>
         <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
           {items.map((item) => (

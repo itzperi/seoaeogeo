@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "Incorporation through SPICe+ usually takes a couple of weeks once documents are ready. The longer part is the changeover: fresh GST registration, licences in the company name, a new bank account, customer and vendor updates and the ITC transfer. Most businesses plan a cut-off date, often a month or quarter end, and run the transition around it.",
     },
-  ],
+  ],
+  summary:
+    "A sole proprietorship has no direct conversion route because it has no legal existence apart from its owner. The practical method is two steps: incorporate a new private limited company through SPICe+, then transfer the business to it as a going concern by agreement. GST, licence and tax conditions need attention along the way.",
 };
 
 export default function Body() {

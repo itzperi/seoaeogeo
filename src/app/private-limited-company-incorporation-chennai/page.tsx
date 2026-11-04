@@ -351,7 +351,11 @@ export default function IncorporationPage() {
                 </table>
               </div>
               <p className="mt-3 text-xs text-slate">
-                Government charges only. Our professional fee is quoted separately after scoping. SPICe+ computes the
+                Estimate yours with our{" "}
+                <Link href="/tools/company-registration-government-fee-calculator" className={LINK}>
+                  Tamil Nadu company registration government fee calculator
+                </Link>
+                . Government charges only. Our professional fee is quoted separately after scoping. SPICe+ computes the
                 stamp duty payable at filing, which is the figure that counts. Details:{" "}
                 <Link href="/blog/government-fees-company-registration" className={LINK}>
                   government fees for company registration
@@ -669,7 +673,7 @@ export default function IncorporationPage() {
                 href="/contact"
                 className="mt-5 inline-block w-full rounded-buttons bg-white px-5 py-3 text-center text-sm font-medium text-obsidian hover:bg-lilac-mist"
               >
-                Book Consultation
+                Talk to a CA
               </Link>
             </div>
             <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">

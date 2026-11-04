@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "According to the MCA's FAQs, there is no fee for applying for GSTIN, EPFO or ESIC registration through AGILE-PRO-S. The incorporation fees and stamp duty for SPICe+ are separate. The bank account opened through the form is subject to the chosen bank's own account terms and KYC process.",
     },
   ],
+  summary:
+    "AGILE-PRO-S is the web form that must accompany every SPICe+ Part B application. It decides which employer registrations a new company starts with: EPFO, ESIC and a bank account are mandatory, while GSTIN is optional. PAN and TAN are not part of it. Having the codes does not mean contributions begin immediately.",
 };
 
 export default function Body() {

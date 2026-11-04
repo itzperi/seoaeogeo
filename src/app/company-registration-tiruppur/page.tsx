@@ -93,6 +93,16 @@ export default function Page() {
           answer:
             "Yes. The registered office can be your factory, a rented unit or your home in Tiruppur, supported by a recent utility bill and, for rented premises, the rent agreement and the owner's no-objection letter. The same address is normally used as the principal place of business for GST and on your IEC.",
         },
+        {
+          question: "What happens to pending duty drawback of my old proprietorship after I start a company?",
+          answer:
+            "Claims depend on the shipping bills filed under the old exporter code, so they generally stay with the old entity. Keep the old IEC, bank account and portal access active until every pending claim is received, and use the new company's IEC only for new shipments.",
+        },
+        {
+          question: "Can overseas buyers or NRIs hold shares in a Tiruppur export company?",
+          answer:
+            "Foreign investment in manufacturing is generally permitted, usually under the automatic route, with a reporting filing to the Reserve Bank after shares are issued. Rules and pricing conditions apply, so we confirm the current position before shares are allotted. Any tax treatment in the investor's own country is for their home adviser.",
+        },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
       relatedPosts={["lut-for-exporters", "llp-vs-opc-vs-pvt-ltd", "msme-udyam-registration-checklist", "post-incorporation-compliance-checklist"]}
@@ -128,6 +138,14 @@ export default function Page() {
         </Link>
         .
       </p>
+      <h2 className="mt-14 text-2xl text-obsidian">What should a Tiruppur promoter family settle before the new exporter company starts invoicing?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Settle three things first: who the shareholders and directors will be, which entity holds the export registrations, and what happens to the old entity&apos;s pending shipments.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Many Tiruppur exporters start as proprietorships or partnerships and add a company when overseas brands or banks ask for one. During the changeover, shipments already made under the old exporter code continue to belong to the old entity, while new orders move to the company once its IEC, GST and bank account are ready. Agree when buyers will be told to use the new name, how stock and fabric lying with job workers will be transferred, and who signs for the new entity at the bank. Planning this on a call avoids a gap where neither entity can invoice.
+      </p>
+
     </ServicePageTemplate>
   );
 }

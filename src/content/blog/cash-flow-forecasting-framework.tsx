@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Cash flow forecasting sounds like something only large companies need, but small Chennai businesses often run into cash problems for exactly that reason.",
   date: "2026-09-19",
   excerpt:
-    "Cash flow forecasting sounds like something only large companies need, but small and mid sized businesses in Chennai often run into far...",
+    "Cash flow forecasting sounds like something only large companies need, but small and mid sized businesses in Chennai often run into far...",
+  summary:
+    "A practical cash flow forecast starts from your true cash position, not just the bank balance, then runs as a rolling thirteen week view updated weekly. Map predictable items like salaries and rent with exact dates, estimate receivables conservatively, and watch for weeks where outflows exceed inflows so you can act early.",
+  faqs: [
+    {
+      question: "What is a rolling thirteen week cash flow forecast?",
+      answer:
+        "It is a cash flow forecast covering the next thirteen weeks, updated weekly by adding a new week at the end and refining the near term weeks with actual data from up-to-date bookkeeping. It gives enough forward visibility to catch problems while there is time to act, without the inaccuracy of projecting too far ahead.",
+    },
+    {
+      question: "Why is the bank balance not your true cash position?",
+      answer:
+        "Your true cash position accounts for money that has come in but is earmarked for upcoming payments, such as supplier dues or salaries, not just the number your bank app shows today. Confusing the two is one of the most common reasons businesses get caught off guard by a payment they technically could not afford.",
+    },
+    {
+      question: "Why do cash flow forecasts turn out wrong?",
+      answer:
+        "The single biggest reason is consistently overestimating when customers will pay. Salaries, rent and loan repayments are predictable and should be mapped with exact dates, but customer receivables and large one-time expenses need a realistic, conservative estimate. The forecast's real value is spotting weeks where outflows exceed inflows before they happen.",
+    },
+  ],
 };
 
 export default function Body() {

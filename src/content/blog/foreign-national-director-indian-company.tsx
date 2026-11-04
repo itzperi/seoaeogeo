@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "No. Under India's FDI policy introduced through Press Note 3 of 2020 and reflected in RBI's Master Direction, an entity or citizen of a country sharing a land border with India, or an investment whose beneficial owner is from such a country, can invest only under the Government approval route.",
     },
-  ],
+  ],
+  summary:
+    "A foreign national can be a director of an Indian company with a Director Identification Number and a Digital Signature Certificate, using passport details instead of PAN. A private limited company needs at least two directors, one of whom must have stayed in India 182 days or more in the year. Foreign documents need attestation.",
 };
 
 export default function Body() {

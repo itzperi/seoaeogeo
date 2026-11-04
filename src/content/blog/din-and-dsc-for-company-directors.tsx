@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "A Class 3 Digital Signature Certificate. Class 2 certificates were discontinued by the Controller of Certifying Authorities from 1 January 2021, and Class 3 is now the standard issued for MCA, income tax and GST filings. The DSC must be valid, not revoked, and registered or associated with the director's DIN on the MCA portal.",
     },
   ],
+  summary:
+    "A Director Identification Number is a personal, permanent number that must be kept active through KYC, while a Digital Signature Certificate lets directors sign filings and expires. Directors now need Class 3 certificates, since Class 2 was discontinued from 1 January 2021. Both carry ongoing obligations beyond incorporation, including a revised KYC cycle from 2026.",
 };
 
 export default function Body() {

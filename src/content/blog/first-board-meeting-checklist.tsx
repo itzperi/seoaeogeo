@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Section 173(5) treats a One Person Company, small company or dormant company as compliant if it holds at least one board meeting in each half of a calendar year with a gap of not less than ninety days between the two. Other companies must hold at least four meetings a year with no more than 120 days between consecutive meetings.",
     },
   ],
+  summary:
+    "Section 173(1) requires a company's first board meeting within thirty days of incorporation, with seven days' written notice and a quorum of one-third of the board or two directors, whichever is higher. The agenda covers noting constitutional documents, director disclosures, appointing the first auditor, authorising the bank account, share certificates and INC-20A.",
 };
 
 export default function Body() {

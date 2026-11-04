@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Under FEMA, the company must issue the shares within 60 days of receiving the investment, failing which the money must be refunded within 15 days. It then reports the issue to the RBI in Form FC-GPR within 30 days of allotment, along with a valuation certificate supporting the price and the bank's confirmation of the inward remittance.",
     },
   ],
+  summary:
+    "Subscribers to the Memorandum become members on incorporation, so no separate board allotment is needed, but each must still pay the agreed amount into the company's bank account. Next come INC-20A within 180 days, which unlocks business and borrowing, and issuing share certificates under section 56(4).",
 };
 
 export default function Body() {

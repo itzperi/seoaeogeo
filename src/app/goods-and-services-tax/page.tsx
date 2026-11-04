@@ -4,7 +4,15 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, serviceSchema, speakableSchema } from "@/lib/schema";
+import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
+
+const GST_STEPS = [
+  { name: "Tell us what you need", text: "A new registration, monthly or quarterly returns, the annual return, an LUT for exports, or a notice you have received." },
+  { name: "Review your GSTIN on the portal", text: "We check the registration details, filing history and any notices or demands already on the GST portal." },
+  { name: "Reconcile the figures", text: "Sales are matched with GSTR-1, and input tax credit in the books with GSTR-2B, before anything is filed." },
+  { name: "File or respond", text: "We file the return, application or reply on the GST portal in the form required, after you approve the figures." },
+  { name: "Keep the calendar", text: "Every due date for your GSTIN goes on a calendar we share with you, so returns and replies are not missed." },
+];
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/goods-and-services-tax`;
@@ -118,7 +126,7 @@ export default function GstPage() {
       <section className="bg-paper py-16">
         <div className="container-page">
           <div className="mb-12 max-w-3xl overflow-hidden rounded-cards border border-carbon">
-            <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">Key facts</h2>
+            <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">What are the key GST facts?</h2>
             <dl className="divide-y divide-ash bg-paper">
               {KEY_FACTS.map((f) => (
                 <div key={f.label} className="grid grid-cols-1 gap-1 px-5 py-3 sm:grid-cols-[200px_1fr] sm:gap-4">
@@ -146,7 +154,7 @@ export default function GstPage() {
             .
           </p>
 
-          <h2 className="mt-14 text-2xl text-obsidian">Our GST services in Chennai</h2>
+          <h2 className="mt-14 text-2xl text-obsidian">Which GST services do we offer in Chennai?</h2>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
             {HUB.map((s) => (
               <Link
@@ -161,7 +169,7 @@ export default function GstPage() {
             ))}
           </div>
 
-          <h2 className="mt-14 text-2xl text-obsidian">GSTR-9 and GSTR-9C: the annual return</h2>
+          <h2 className="mt-14 text-2xl text-obsidian">What are GSTR-9 and GSTR-9C, and who must file them?</h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
             GSTR-9 brings together the year&apos;s GSTR-1 and GSTR-3B filings and is due by 31 December after the
             financial year. Businesses with aggregate turnover up to ₹2 crore are exempt from FY 2024-25 onwards. Above ₹5
@@ -174,7 +182,7 @@ export default function GstPage() {
             lists what to reconcile first.
           </p>
 
-          <h2 className="mt-14 text-2xl text-obsidian">ITC reconciliation with GSTR-2B</h2>
+          <h2 className="mt-14 text-2xl text-obsidian">How is input tax credit reconciled with GSTR-2B?</h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
             GSTR-2B is the monthly statement of input tax credit available to you, built from what your suppliers report.
             Under Rule 36(4), credit can be claimed only on invoices that appear in it. We match your purchase register with
@@ -187,7 +195,7 @@ export default function GstPage() {
             explains how they are answered.
           </p>
 
-          <h2 className="mt-14 text-2xl text-obsidian">LUT for exporters</h2>
+          <h2 className="mt-14 text-2xl text-obsidian">Do exporters need a Letter of Undertaking (LUT)?</h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
             Exporters of goods and services, including software and consulting firms billing overseas clients, can supply
             without paying IGST by furnishing a Letter of Undertaking in Form GST RFD-11. The LUT is valid for a financial
@@ -203,7 +211,7 @@ export default function GstPage() {
             covers the usual causes and fixes.
           </p>
 
-          <h2 className="mt-14 text-2xl text-obsidian">Cancellation and revocation of GST registration</h2>
+          <h2 className="mt-14 text-2xl text-obsidian">How is a GST registration cancelled or revoked?</h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
             A business that closes or no longer needs registration applies for cancellation in Form REG-16 and files a final
             return in GSTR-10 within three months of cancellation. The department can also cancel a registration, most often
@@ -218,11 +226,27 @@ export default function GstPage() {
         </div>
       </section>
 
+      <section className="bg-paper pb-12">
+        <div className="container-page max-w-3xl">
+          <h2 className="text-2xl text-obsidian">How do we take on your GST work?</h2>
+          <p className="mt-4 leading-relaxed text-slate">Every GST engagement follows the same five steps, whatever the starting point.</p>
+          <ol className="mt-4 space-y-3">
+            {GST_STEPS.map((s, i) => (
+              <li key={s.name} className="rounded-cards border border-ash bg-paper p-5">
+                <p className="font-medium text-obsidian">{i + 1}. {s.name}</p>
+                <p className="mt-1 text-sm text-slate">{s.text}</p>
+              </li>
+            ))}
+          </ol>
+        </div>
+        <JsonLd data={howToSchema({ name: "How we take on your GST work", description: "The five steps we follow for GST registration, returns and notices.", steps: GST_STEPS })} />
+      </section>
+
       <FAQSection items={FAQS} />
 
       <section className="bg-paper py-12">
         <div className="container-page">
-          <h2 className="text-xl text-obsidian">People also ask</h2>
+          <h2 className="text-xl text-obsidian">What else do people ask?</h2>
           <ul className="mt-4 space-y-2">
             <li>
               <Link href="/gst-registration-chennai" className={linkClass}>

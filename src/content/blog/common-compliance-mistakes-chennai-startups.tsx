@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Chennai founders focused on customers and product often let compliance mistakes pile up quietly until they surface as penalties or blocked fundraising.",
   date: "2026-09-19",
   excerpt:
-    "Founders launching a business in Chennai are usually focused on customers and product, which is exactly right, but it also means compliance...",
+    "Founders launching a business in Chennai are usually focused on customers and product, which is exactly right, but it also means compliance...",
+  summary:
+    "Common early compliance mistakes for Chennai startups are delaying GST registration, mixing personal and business finances, ignoring TDS duties once salaries or vendor payments cross thresholds, skipping annual ROC filings while inactive, and not budgeting for compliance. A first-year checklist covering each avoids penalties, notices and blocked fundraising later.",
+  faqs: [
+    {
+      question: "What compliance mistakes do startups in Chennai commonly make?",
+      answer:
+        "The recurring mistakes are delaying GST registration until it feels urgent, mixing personal and business finances, ignoring TDS obligations as an employer or payer, treating annual ROC filings as optional for inactive companies, and not budgeting for compliance costs from day one. They pile up quietly until they surface as penalties, notices or blocked fundraising.",
+    },
+    {
+      question: "Do I have to file ROC returns if my company is inactive?",
+      answer:
+        "Yes. Annual filing obligations apply regardless of activity level, and penalties accumulate daily. Founders who incorporate early and then pause operations often assume filings can wait until the business is active again, but this makes a genuinely dormant company far more expensive to maintain than they expect.",
+    },
+    {
+      question: "When does a startup need to start deducting TDS?",
+      answer:
+        "TDS deduction, deposit and return filing obligations begin immediately once a startup pays salaries above the exemption limit, or makes payments to vendors and professionals above specified thresholds. Many early stage founders only realise this when a vendor or ex-employee raises it, by which point interest has already accrued.",
+    },
+  ],
 };
 
 export default function Body() {

@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Rule 12 requires a minimum period of one year between the grant of options and their vesting. Beyond that, the company sets the vesting schedule in the ESOP plan. Many startups use four-year schedules with a one-year cliff, but this is a commercial choice rather than a legal requirement, and it must be disclosed in the shareholders' approval.",
     },
   ],
+  summary:
+    "An unlisted company issues ESOPs under section 62(1)(b) and Rule 12, which need a special resolution, at least one year between grant and vesting, non-transferable options, and an SH-6 register. ESOP-ready articles should cover authorised capital headroom and avoid investor vetoes or a missing buyback route, with DPIIT-recognised startups getting relaxed exclusions.",
 };
 
 export default function Body() {

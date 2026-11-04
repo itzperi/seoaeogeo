@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Under Rule 12 of the Companies (Share Capital and Debentures) Rules, 2014, ESOPs can be granted to permanent employees and directors other than independent directors. Promoters and directors holding more than 10% are normally excluded, but DPIIT-recognised startups may grant options to them for up to ten years from incorporation.",
     },
   ],
+  summary:
+    "IT and SaaS founders in Chennai usually choose a private limited company, since it is the standard route for angel and fund investment and supports ESOPs under section 62. An LLP may suit a bootstrapped two-partner consultancy. Founders should settle the object clause, equity split, written IP assignment and authorised capital headroom before incorporation.",
 };
 
 export default function Body() {

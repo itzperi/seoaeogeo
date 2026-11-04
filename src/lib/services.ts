@@ -372,6 +372,16 @@ export const SPECIALIST_SERVICES: ServiceSummary[] = [
     name: "NRI Tax Services — USA",
     shortDescription: "Indian tax filing and India–US DTAA support, with account data for your US CPA’s FBAR and FATCA reporting.",
   },
+  {
+    slug: "nri-tax-services-gulf",
+    name: "NRI Tax Services — Gulf",
+    shortDescription: "Indian tax for NRIs in Saudi Arabia, Qatar, Oman, Kuwait and Bahrain: residency, NRO income, Chennai property and DTAA relief.",
+  },
+  {
+    slug: "nri-tax-services-singapore",
+    name: "NRI Tax Services — Singapore",
+    shortDescription: "Indian tax for NRIs in Singapore: India–Singapore DTAA, Certificate of Residence, RSUs and returning to Chennai.",
+  },
 ];
 
 export const ALL_SERVICES: ServiceSummary[] = [...SERVICES, ...SPECIALIST_SERVICES];
@@ -445,6 +455,8 @@ export const SERVICE_GROUPS: { label: string; slugs: string[] }[] = [
       "nri-tax-services-uae",
       "nri-tax-services-uk",
       "nri-tax-services-usa",
+      "nri-tax-services-gulf",
+      "nri-tax-services-singapore",
       "nri-property-sale-tds-chennai",
       "form-15ca-15cb-chennai",
     ],

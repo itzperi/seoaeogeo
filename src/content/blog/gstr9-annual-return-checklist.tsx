@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "GSTR 9 is the annual return every regular GST registered business must file, summarizing a full year of GSTR-1 and GSTR-3B filings. A practical checklist.",
   date: "2026-09-19",
   excerpt:
-    "GSTR 9 is the annual return every regular GST registered business needs to file, summarizing an entire financial year of GSTR 1 and GSTR 3B...",
+    "GSTR 9 is the annual return every regular GST registered business needs to file, summarizing an entire financial year of GSTR 1 and GSTR 3B...",
+  summary:
+    "GSTR 9 is the annual return that consolidates a full year of GSTR 1 and GSTR 3B filings for regular GST taxpayers above the notified threshold. Reconcile sales, input tax credit against GSTR 2B, and credit or debit notes before filing, and start weeks ahead, since gaps surface here.",
+  faqs: [
+    {
+      question: "Who has to file GSTR 9?",
+      answer:
+        "Any business registered under the regular GST scheme with turnover above the notified threshold for the financial year needs to file GSTR 9. Composition scheme taxpayers file a separate, simpler return, GSTR 9A, and very small taxpayers are given relief in some years, so confirm your obligation each year rather than assuming.",
+    },
+    {
+      question: "What goes into the GSTR 9 annual return?",
+      answer:
+        "It asks you to reconcile outward supplies, inward supplies and input tax credit claimed, tax paid, and any amendments made during the year, all pulled from twelve months of GSTR 1 and GSTR 3B filings. If monthly returns were accurate and on time it is largely consolidation. If not, the gaps become visible to the department.",
+    },
+    {
+      question: "What problems commonly surface at GSTR 9 time?",
+      answer:
+        "The three most common are input tax credit claimed in GSTR 3B not matching GSTR 2B for the year, sales reported in GSTR 1 not matching your books, and credit or debit notes never properly reflected during the year. Each needs to be reconciled and corrected or explained before filing.",
+    },
+    {
+      question: "When should I start preparing the GSTR 9 return?",
+      answer:
+        "Start well before the deadline, ideally a few weeks ahead. Because GSTR 9 depends on reconciling a full year of data, starting early usually surfaces mismatches with enough time to fix them. Starting in the final days leaves no room to correct anything found, and GSTR 9 filings are a common trigger for departmental review.",
+    },
+  ],
 };
 
 export default function Body() {

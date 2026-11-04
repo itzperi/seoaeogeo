@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Advance tax catches consultants, freelancers, and small business owners in Chennai off guard — it means paying tax in installments through the year.",
   date: "2026-09-19",
   excerpt:
-    "Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires...",
+    "Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires...",
+  summary:
+    "Advance tax is paid in four installments across the financial year by anyone whose tax liability after TDS is expected to cross the threshold, including salaried people with freelance, rent or capital gains income. Cumulative payments are due by mid June, September, December and March, and shortfalls attract interest under Sections 234B and 234C.",
+  faqs: [
+    {
+      question: "Who has to pay advance tax in India?",
+      answer:
+        "Anyone whose total tax liability for the year, after TDS, is expected to exceed the threshold under the Income Tax Act must pay advance tax in installments. This includes salaried individuals with significant additional income from freelancing, rent or capital gains, not only business owners, which is the part many salaried professionals miss.",
+    },
+    {
+      question: "What are the advance tax installment dates?",
+      answer:
+        "Advance tax is paid in four installments, with cumulative percentages of the estimated tax due by each deadline: roughly fifteen percent by mid June, forty five percent by mid September, seventy five percent by mid December, and the full hundred percent by mid March. Missing an installment or underpaying against these cumulative percentages triggers interest under Sections 234B and 234C.",
+    },
+    {
+      question: "How can freelancers avoid interest on advance tax?",
+      answer:
+        "Recalculate your income and the advance tax due at each installment date, rather than paying a fixed amount every quarter regardless of actual earnings. This is the most reliable way to avoid interest. If your income has been irregular, paying a slightly higher installment than the strict minimum in an early quarter creates a buffer for the year.",
+    },
+  ],
 };
 
 export default function Body() {

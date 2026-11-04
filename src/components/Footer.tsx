@@ -1,5 +1,6 @@
 import Link from "next/link";
 import FooterLogoGesture from "./FooterLogoGesture";
+import TrackedAnchor from "./TrackedAnchor";
 import { AREAS_HUB, COMPANY_LINKS, FOOTER_CORE_LINKS, PRIMARY_AREA_LINKS } from "@/lib/nav";
 import { ADDRESS_FULL, ADDRESS_SHORT, BOOKING_LINK, EMAIL, FIRM_REGISTRATION_NO, GBP_URL, GOOGLE_MAPS_EMBED_SRC, ICAI_MEMBERSHIP_NO, PHONE_DISPLAY, PHONE_TEL, SOCIALS } from "@/lib/site";
 
@@ -35,7 +36,7 @@ export default function Footer() {
           <div className="mt-4 flex gap-3 text-sm text-slate">
             <a href={SOCIALS.linkedin} className="hover:text-obsidian">LinkedIn</a>
             <a href={SOCIALS.instagram} className="hover:text-obsidian">Instagram</a>
-            <a href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-obsidian">Book a call</a>
+            <TrackedAnchor action="book" placement="footer" href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-obsidian">Book a 15-minute consultation</TrackedAnchor>
           </div>
         </div>
 

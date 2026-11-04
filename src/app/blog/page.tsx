@@ -30,6 +30,13 @@ export default function BlogIndexPage() {
       <PageHero
         eyebrow="Insights"
         h1="Tax & compliance insights for Chennai businesses"
+        lead={
+          <>
+            These guides explain Indian tax and company law for Chennai businesses, founders and NRIs: company and LLP
+            registration, GST notices and returns, income tax, audit, FEMA and virtual CFO work. Each is written and
+            reviewed by <strong>CA Rushil C S</strong> and links to the matching service page if you need help.
+          </>
+        }
         subhead="Practical, Chennai-specific guidance on GST, incorporation, and compliance — written by our team, not generic filler."
       />
       <section className="bg-paper py-16">

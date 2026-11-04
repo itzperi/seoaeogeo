@@ -42,6 +42,8 @@ export const meta: BlogPostMeta = {
         "Yes. An LLP can convert into a private limited company under section 366 of the Companies Act through URC-1 filed with SPICe+. It takes a newspaper notice, partner and creditor consents and fresh registrations in the company's name. Doing it while a term sheet is pending adds weeks, so plan it early.",
     },
   ],
+  summary:
+    "A Chennai startup expecting equity investment or ESOPs should choose a private limited company, since investors buy shares and an LLP has no share capital. An LLP suits a closely held, self-funded team that values lighter compliance. Foreign investment is also more limited in an LLP, and converting later costs time.",
 };
 
 export default function Body() {

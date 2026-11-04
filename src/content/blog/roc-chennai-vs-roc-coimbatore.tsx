@@ -40,7 +40,9 @@ export const meta: BlogPostMeta = {
       answer:
         "To the Regional Director, Southern Region, at Chennai, within 60 days of the order, in the form prescribed under the Companies (Adjudication of Penalties) Rules, 2014. Recent ROC Coimbatore adjudication orders name the Regional Director, Chennai, as the appellate authority, so companies under either Tamil Nadu ROC appeal to the same office.",
     },
-  ],
+  ],
+  summary:
+    "Which Registrar handles a Tamil Nadu company depends on the district of its registered office. ROC Coimbatore covers nine western districts, namely Coimbatore, Dharmapuri, Dindigul, Erode, Krishnagiri, Namakkal, the Nilgiris, Salem and Tiruppur. ROC Chennai covers the other 29 districts, and Puducherry has its own ROC.",
 };
 
 const chennaiDistricts = [

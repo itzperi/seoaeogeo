@@ -26,6 +26,8 @@ export const meta: BlogPostMeta = {
         "Extensions are occasionally granted at the officer's discretion for genuine cause, but they are not guaranteed. Request one in writing immediately if you need it — don't simply let the deadline pass and hope for leniency.",
     },
   ],
+  summary:
+    "In the first 48 hours after a GST show cause notice, read it twice to identify the section, the reply deadline and the allegation, gather returns, invoices and bank records, then get a chartered accountant's assessment. A strong reply rebuts each allegation point by point with annexed documents, since a missed or weak reply can lead to an ex-parte order.",
 };
 
 export default function Body() {

@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "High transaction volume and a chain of smaller suppliers make T Nagar's retail sector especially exposed to ITC mismatch notices. Here's the real pattern.",
   date: "2026-09-26",
   excerpt:
-    "High transaction volume and a chain of smaller suppliers make T Nagar's retail sector especially exposed to ITC mismatch notices.",
+    "High transaction volume and a chain of smaller suppliers make T Nagar's retail sector especially exposed to ITC mismatch notices.",
+  summary:
+    "T Nagar traders often receive ITC mismatch notices even when they claimed credit exactly as invoiced, because direct suppliers filed late or wrongly. Jewellery has added valuation rules. The reply that works identifies the specific supplier and invoice causing the gap and supports it with evidence, rather than promising to reconcile later.",
+  faqs: [
+    {
+      question: "Why do T Nagar traders get ITC mismatch notices?",
+      answer:
+        "T Nagar retail businesses run high transaction counts with a wide base of suppliers, many of them small traders. Input Tax Credit reflects in your GSTR-2B only if each direct supplier has reported invoices accurately and on time. One late or incorrect filer among your suppliers appears as your mismatch, even though you did nothing wrong.",
+    },
+    {
+      question: "How should I reply to a GST mismatch notice?",
+      answer:
+        "First identify exactly which supplier and which invoice caused the discrepancy, then prepare a GST notice reply with that specific evidence, not a general acknowledgment. A well-documented reply naming the actual source of the mismatch resolves faster than one that only promises to reconcile going forward, and keeps the matter from escalating into litigation.",
+    },
+    {
+      question: "Are jewellery GST notices different from textile notices?",
+      answer:
+        "Yes. Gold and jewellery transactions carry specific valuation rules under GST, and high-value, low-volume transactions are scrutinised differently from routine retail sales. A notice on a jewellery transaction often has a different root cause than a routine textile ITC mismatch, so it needs a correspondingly different reply.",
+    },
+  ],
 };
 
 export default function Body() {

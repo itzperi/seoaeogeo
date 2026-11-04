@@ -6,6 +6,7 @@ import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
 import SiloLinks from "@/components/SiloLinks";
+import { cityServices } from "@/lib/city-services";
 import { LOCATION_PAGES, locationLinks } from "@/lib/location-pages";
 import { INTERNATIONAL_AREAS, JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 import { TN_CITY_PAGES } from "@/lib/tn-cities";
@@ -70,6 +71,7 @@ export default function ServicePageTemplate({
 }) {
   const related = relatedSlugs.map(getService).filter((s): s is NonNullable<typeof s> => Boolean(s));
   const cityLinks = locationLinks(crumbHref);
+  const citySvc = cityServices(crumbHref);
   const guides = relatedPosts
     .map(getPostMeta)
     .filter((p): p is NonNullable<typeof p> => Boolean(p) && isPublished(p!.date));
@@ -103,7 +105,7 @@ export default function ServicePageTemplate({
           {topBanner && <div className="mb-10 max-w-3xl">{topBanner}</div>}
           {keyFacts.length > 0 && (
             <div className="mb-12 max-w-3xl overflow-hidden rounded-cards border border-carbon">
-              <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">Key facts</h2>
+              <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">What are the key facts?</h2>
               <dl className="divide-y divide-ash bg-paper">
                 {keyFacts.map((f) => (
                   <div key={f.label} className="grid grid-cols-1 gap-1 px-5 py-3 sm:grid-cols-[200px_1fr] sm:gap-4">
@@ -171,7 +173,7 @@ export default function ServicePageTemplate({
 
           {related.length > 0 && (
             <>
-              <h2 className="mt-14 text-2xl text-obsidian">Related services</h2>
+              <h2 className="mt-14 text-2xl text-obsidian">Which related services might you need?</h2>
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
                 {related.map((s) => (
                   <Link
@@ -192,7 +194,7 @@ export default function ServicePageTemplate({
       {guides.length > 0 && (
         <section className="bg-paper pb-12">
           <div className="container-page">
-            <h2 className="text-2xl text-obsidian">Related guides</h2>
+            <h2 className="text-2xl text-obsidian">Which guides explain this in more detail?</h2>
             <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
               {guides.map((g) => (
                 <li key={g.slug}>
@@ -203,6 +205,26 @@ export default function ServicePageTemplate({
               ))}
             </ul>
           </div>
+        </section>
+      )}
+
+      {citySvc && (
+        <section className="bg-paper pb-12">
+          <nav className="container-page" aria-label={`Services for ${citySvc.city} businesses`}>
+            <h2 className="text-2xl text-obsidian">Which other services do {citySvc.city} businesses use?</h2>
+            <p className="mt-2 max-w-3xl text-sm text-slate">
+              All served online from our only office in Anna Nagar, Chennai.
+            </p>
+            <ul className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {citySvc.links.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="text-sm font-medium text-royal-violet underline underline-offset-2">
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </section>
       )}
 
@@ -230,7 +252,7 @@ export default function ServicePageTemplate({
       {relatedQuestions.length > 0 && (
         <section className="bg-paper py-12">
           <div className="container-page">
-            <h2 className="text-xl text-obsidian">People also ask</h2>
+            <h2 className="text-xl text-obsidian">What else do people ask?</h2>
             <ul className="mt-4 space-y-2">
               {relatedQuestions.map((q) => (
                 <li key={q.question}>

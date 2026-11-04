@@ -4,8 +4,8 @@ import { CheckSticker, CoinSticker, DocSticker, Ribbon } from "@/components/Stic
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { PAGE_DATES } from "@/lib/page-dates";
-import { JsonLd, webPageReviewSchema } from "@/lib/schema";
-import { BOOKING_LINK, FOUNDER_NAME, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { JsonLd, speakableSchema, webPageReviewSchema } from "@/lib/schema";
+import { BOOKING_LINK, FOUNDER_NAME, ICAI_MEMBERSHIP_NO, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 // Sky-wash poster hero: sticker tag, crushed condensed headline with the
 // blue ribbon behind it, stickers around the edges, black-filled Book CTA.
@@ -34,6 +34,7 @@ export default function PageHero({
   return (
     <>
     {schema && reviewedPath && updated && <JsonLd data={webPageReviewSchema(reviewedPath, h1, updated)} />}
+    {schema && lead && <JsonLd data={speakableSchema(["h1", "#lead-answer"])} />}
     <section className="relative overflow-hidden border-b border-carbon bg-sky-wash">
       <Ribbon className="pointer-events-none absolute -bottom-6 left-0 h-40 w-full opacity-90 md:h-56" />
       <CoinSticker className="pointer-events-none absolute right-[6%] top-10 hidden w-20 rotate-12 md:block" />
@@ -49,7 +50,7 @@ export default function PageHero({
             <Link href="/about-us" className="font-semibold underline underline-offset-2">
               {FOUNDER_NAME}
             </Link>
-            , Chartered Accountant · Updated{" "}
+            , Chartered Accountant{ICAI_MEMBERSHIP_NO && <> (ICAI M. No. {ICAI_MEMBERSHIP_NO})</>} · Updated{" "}
             <time dateTime={updated}>
               {new Date(`${updated}T00:00:00Z`).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })}
             </time>
@@ -67,7 +68,7 @@ export default function PageHero({
             <Link href="/about-us" className="font-semibold underline underline-offset-2">
               {FOUNDER_NAME}
             </Link>
-            , Chartered Accountant · Updated{" "}
+            , Chartered Accountant{ICAI_MEMBERSHIP_NO && <> (ICAI M. No. {ICAI_MEMBERSHIP_NO})</>} · Updated{" "}
             <time dateTime={updated}>
               {new Date(`${updated}T00:00:00Z`).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })}
             </time>
@@ -89,7 +90,7 @@ export default function PageHero({
             rel="noopener noreferrer"
             className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-lavender"
           >
-            Book a Video Call
+            Book a 15-Minute Consultation
           </TrackedAnchor>
           <TrackedAnchor
             action="call"

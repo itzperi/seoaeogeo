@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Most audit delay in Chennai businesses has nothing to do with book complexity and everything to do with documents not being ready when the auditor arrives.",
   date: "2026-09-19",
   excerpt:
-    "A surprising amount of audit delay in Chennai businesses has nothing to do with the complexity of the books and everything to do with...",
+    "A surprising amount of audit delay in Chennai businesses has nothing to do with the complexity of the books and everything to do with...",
+  summary:
+    "Before an auditor visits, have ready bank statements for every account, the ledger or software export and trial balance, sales and purchase invoices, GST returns, payroll and statutory records with TDS, PF, ESI and Professional Tax proof, a fixed asset register, and loan documents. Organised records shorten the audit.",
+  faqs: [
+    {
+      question: "What documents does an auditor ask for?",
+      answer:
+        "Auditors typically need bank statements for the full year across every account, the general ledger or accounting software export, a trial balance, sales and purchase invoices, credit and debit notes, GST returns, payroll and statutory records, a fixed asset register, and loan sanction letters and repayment schedules. Having these ready avoids repeated follow-up requests.",
+    },
+    {
+      question: "Which GST returns should be ready for an audit?",
+      answer:
+        "If you are GST registered, keep your GSTR-1, GSTR-3B and GSTR-2B for the full year ready. This lets the auditor reconcile revenue and input credit against your books quickly, rather than requesting them midway through fieldwork. Sales and purchase documents should be organised chronologically or by month alongside them.",
+    },
+    {
+      question: "Why do audits get delayed in Chennai businesses?",
+      answer:
+        "A surprising amount of audit delay has little to do with the complexity of the books and everything to do with documents not being ready when the auditor arrives. Scattered spreadsheets and missing statutory proofs cause back and forth, so organising everything in advance shortens the whole process considerably.",
+    },
+  ],
 };
 
 export default function Body() {

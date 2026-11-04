@@ -422,7 +422,11 @@ export default function GstLitigationPage() {
               </p>
               <Table head={["Stage", "Forum", "Time limit and form", "Pre-deposit"]} rows={APPEAL_LADDER} />
               <p className="mt-3 text-xs text-slate">
-                Source: Sections 107, 112, 117 and 118 of the CGST Act as amended,
+                Work out your own dates and pre-deposit with the{" "}
+                <Link href="/tools/gst-appeal-deadline-pre-deposit-calculator" className={LINK}>
+                  GST appeal deadline and pre-deposit calculator
+                </Link>
+                . Source: Sections 107, 112, 117 and 118 of the CGST Act as amended,
                 available on{" "}
                 <a href="https://cbic-gst.gov.in/gst-acts.html" target="_blank" rel="noopener noreferrer" className={LINK}>
                   cbic-gst.gov.in

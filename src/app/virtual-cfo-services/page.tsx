@@ -9,6 +9,7 @@ import HighTicketSections, { type Audience } from "@/components/HighTicketSectio
 import { JsonLd, moneyPageGraph } from "@/lib/schema";
 import { PAGE_DATES } from "@/lib/page-dates";
 import { BOOKING_LINK, SOCIALS } from "@/lib/site";
+import TrackedAnchor from "@/components/TrackedAnchor";
 
 // URL kept as /virtual-cfo-services (no -chennai) to keep its indexing
 // history; every internal link and the canonical use this exact path.
@@ -556,14 +557,16 @@ export default function VirtualCfoPage() {
                 whether a Virtual CFO engagement — or just tighter bookkeeping —
                 is the right next step.
               </p>
-              <a
+              <TrackedAnchor
+                action="book"
+                placement="vcfo-sidebar"
                 href={BOOKING_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-5 inline-block w-full rounded-buttons bg-white px-5 py-3 text-center text-sm font-medium text-obsidian hover:bg-lilac-mist"
               >
-                Book Consultation
-              </a>
+                Book a 15-Minute Consultation
+              </TrackedAnchor>
             </div>
             <div className="rounded-cards border border-ash bg-paper p-8 shadow-[var(--shadow-card)]">
               <h3 className="eyebrow text-xs text-slate">Related services</h3>

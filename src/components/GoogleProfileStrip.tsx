@@ -22,7 +22,7 @@ export default function GoogleProfileStrip({ service }: { service?: string }) {
         <div>
           <p className="sticker-tag bg-white">On Google Maps</p>
           <h2 id="google-profile-heading" className="mt-3 text-4xl text-carbon md:text-5xl">
-            {service ? `${service} in Anna Nagar, Chennai` : `${BUSINESS_NAME} on Google`}
+            {service ? `Where can you meet us about ${service}?` : `Where is ${BUSINESS_NAME} on Google?`}
           </h2>
           <address className="mt-4 not-italic text-[15px] leading-relaxed text-carbon">
             <strong>{BUSINESS_NAME}</strong>

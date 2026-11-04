@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "Any Chennai trust, society, or Section 8 company accepting foreign donations needs FCRA registration first — and the rules have tightened considerably.",
   date: "2026-09-19",
   excerpt:
-    "Any trust, society, or Section 8 company in Chennai that wants to receive donations or grants from a foreign source needs FCRA registration...",
+    "Any trust, society, or Section 8 company in Chennai that wants to receive donations or grants from a foreign source needs FCRA registration...",
+  summary:
+    "A trust, society or Section 8 company that wants to receive foreign donations or grants needs FCRA registration first. Eligibility generally needs a minimum period of activity, minimum spending on core activities and clean compliance. Contributions must go to a designated FCRA account at State Bank of India, New Delhi, with annual returns required.",
+  faqs: [
+    {
+      question: "Who needs FCRA registration in India?",
+      answer:
+        "Any trust, society or Section 8 company that intends to accept foreign contributions of any kind, including in kind donations and not just cash, needs FCRA registration. The Foreign Contribution Regulation Act governs funds from foreign individuals, foreign companies and international bodies, regardless of the organisation's legal structure.",
+    },
+    {
+      question: "What are the eligibility conditions for FCRA registration?",
+      answer:
+        "An organisation generally needs to have existed and been active for a minimum number of years, spent a minimum amount on its core charitable activities in that period, be registered as a trust, society or Section 8 company, and have a clean compliance history. Without that track record, it can sometimes apply for prior permission for a specific foreign contribution.",
+    },
+    {
+      question: "Which bank account receives foreign contributions under FCRA?",
+      answer:
+        "All foreign contributions must be received into a designated FCRA account at the specified branch of the State Bank of India in New Delhi. Many first time applicants assume any bank will do. Funds can then flow to a separate utilisation account, but the receipt itself must go through the designated account.",
+    },
+    {
+      question: "What compliance continues after FCRA registration?",
+      answer:
+        "Registration is not a one time formality. Registered organisations must file an annual return disclosing foreign contributions received and utilised, maintain separate books of account for foreign contributions, and renew the registration periodically. Failure to file the return or violations of permitted utilisation can lead to suspension or cancellation.",
+    },
+  ],
 };
 
 export default function Body() {

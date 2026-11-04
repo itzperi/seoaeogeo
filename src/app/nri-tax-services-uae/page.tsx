@@ -103,7 +103,7 @@ export default function Page() {
         { question: "What does the full NRI tax service cover?", href: "/nri-tax-services" },
         { question: "How does Indian tax work for NRIs living in the UK?", href: "/nri-tax-services-uk" },
       ]}
-      relatedSlugs={["nri-tax-services", "nri-property-sale-tds-chennai", "nri-tax-services-uk", "nri-tax-services-usa"]}
+      relatedSlugs={["nri-tax-services", "nri-tax-services-gulf", "nri-property-sale-tds-chennai", "nri-tax-services-singapore"]}
       relatedPosts={["nri-itr-filing", "capital-gains-tax-property-sale", "advance-tax-deadlines"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">What documents does a UAE-based NRI need for an Indian tax return?</h2>

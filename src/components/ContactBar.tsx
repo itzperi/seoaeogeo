@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL, withBookingUtm } from "@/lib/site";
 import { serviceForPath } from "@/lib/service-for-path";
 import { track } from "@/lib/track";
 import { enquiryMessage, openEnquiry, whatsappHref } from "@/components/WhatsAppEnquiry";
@@ -42,6 +42,7 @@ function CalendarIcon() {
 // desktop. Clicks are not stored; the tap opens WhatsApp, call or booking directly.
 export default function ContactBar() {
   const pathname = usePathname();
+  const bookingHref = withBookingUtm(BOOKING_LINK, pathname || "/");
   if (pathname?.startsWith("/admin")) return null;
   const service = serviceForPath(pathname || "/");
   // Plain link works without JavaScript; with it, the click opens the
@@ -78,14 +79,14 @@ export default function ContactBar() {
           WhatsApp
         </a>
         <a
-          href={BOOKING_LINK}
+          href={bookingHref}
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => track("book", "mobile-bar")}
           className="flex min-h-[56px] flex-col items-center justify-center gap-0.5 bg-carbon py-2.5 text-xs font-bold uppercase tracking-[0.032em] text-white"
         >
           <CalendarIcon />
-          Book a call
+          15-min call
         </a>
       </nav>
       {/* Keeps the footer's last lines from hiding behind the bar. */}
@@ -95,7 +96,7 @@ export default function ContactBar() {
           out on hover/focus so the stack never covers page content. */}
       <div className="fixed bottom-6 right-6 z-50 hidden flex-col items-end gap-2 md:flex">
         {[
-          { action: "book" as const, href: BOOKING_LINK, label: "Book a consultation", icon: <CalendarIcon />, style: "bg-carbon text-white", external: true },
+          { action: "book" as const, href: bookingHref, label: "Book a 15-minute consultation", icon: <CalendarIcon />, style: "bg-carbon text-white", external: true },
           { action: "whatsapp" as const, href: waHref, label: "WhatsApp us", icon: <WhatsAppIcon />, style: "bg-[#25D366] text-carbon", external: true },
           { action: "call" as const, href: `tel:${PHONE_TEL}`, label: `Call ${PHONE_DISPLAY}`, icon: <PhoneIcon />, style: "bg-white text-carbon", external: false },
         ].map((b) => (

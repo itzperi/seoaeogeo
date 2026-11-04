@@ -118,20 +118,26 @@ const CHOOSING_CRITERIA: { title: string; text: string; firmFact?: string }[] = 
   },
 ];
 
-function GroupServiceCard({ service }: { service: ServiceSummary }) {
-  // Same visual style as ServiceCard, minus the generic "Learn more" label —
-  // the link's text is the service name itself (descriptive anchor).
+// One card per service group: descriptive links to every service plus a
+// single WhatsApp enquiry for the group. (One button per group instead of per
+// service keeps the homepage HTML and RSC payload small.)
+function ServiceGroupCard({ label, services }: { label: string; services: ServiceSummary[] }) {
   return (
-    <div className="flex flex-col rounded-cards border border-carbon bg-white p-7 transition hover:-rotate-1 hover:bg-lavender">
-      <Link href={`/${service.slug}`} className="group flex flex-1 flex-col">
-        <h4 className="text-[28px] uppercase leading-[0.95] text-carbon" style={{ fontFamily: "var(--font-display)", fontWeight: 400 }}>
-          {service.name}
-        </h4>
-        <p className="mt-3 flex-1 text-sm leading-relaxed text-carbon">{service.shortDescription}</p>
-      </Link>
+    <div className="flex flex-col rounded-cards border border-carbon bg-white p-7">
+      <h3 className="text-2xl text-obsidian md:text-3xl">{label}</h3>
+      <ul className="mt-4 flex-1 space-y-3">
+        {services.map((service) => (
+          <li key={service.slug}>
+            <Link href={`/${service.slug}`} className="font-medium text-carbon underline underline-offset-2 hover:text-royal-violet">
+              {service.name}
+            </Link>
+            <p className="text-sm leading-relaxed text-slate">{service.shortDescription}</p>
+          </li>
+        ))}
+      </ul>
       <EnquireButton
-        service={service.name}
-        placement="home-service-card"
+        service={label}
+        placement="home-service-group"
         className="mt-5 inline-flex min-h-[44px] items-center justify-center self-start rounded-full border border-carbon bg-[#25D366] px-4 text-xs font-bold uppercase tracking-[0.032em] text-carbon"
       >
         Enquire on WhatsApp
@@ -195,7 +201,7 @@ export default function HomePage() {
                 rel="noopener noreferrer"
                 className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
               >
-                Book a Consultation
+                Book a 15-Minute Consultation
               </TrackedAnchor>
               <TrackedAnchor
                 action="whatsapp"
@@ -284,22 +290,14 @@ export default function HomePage() {
             The full compliance lifecycle, from registering your company to filing its returns, audits and
             notices, in person in Chennai or remotely for NRIs and overseas businesses.
           </p>
-          {SERVICE_GROUPS.map((group) => {
-            const services = group.slugs
-              .map((slug) => getService(slug))
-              .filter((s): s is ServiceSummary => Boolean(s));
-            if (services.length === 0) return null;
-            return (
-              <div key={group.label} className="mt-12">
-                <h3 className="text-2xl text-obsidian md:text-3xl">{group.label}</h3>
-                <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  {services.map((service) => (
-                    <GroupServiceCard key={service.slug} service={service} />
-                  ))}
-                </div>
-              </div>
-            );
-          })}
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2">
+            {SERVICE_GROUPS.map((group) => {
+              const services = group.slugs
+                .map((slug) => getService(slug))
+                .filter((s): s is ServiceSummary => Boolean(s));
+              return services.length > 0 ? <ServiceGroupCard key={group.label} label={group.label} services={services} /> : null;
+            })}
+          </div>
         </div>
       </section>
 

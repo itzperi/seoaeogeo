@@ -139,6 +139,11 @@ export default function Page() {
           answer:
             "No. Notices, invoices and e-way bills can be shared by email, and replies and appeals are filed online. We discuss drafts on video calls and attend hearings by video where the authority permits, or in person by arrangement. You can visit our Anna Nagar office by appointment if you prefer.",
         },
+        {
+          question: "Does a Hosur supplier need GST registration in Karnataka for a Bengaluru warehouse?",
+          answer:
+            "Generally yes. GST registration is state-wise, so a godown, office or other place of business in Karnataka usually needs its own registration there, and supplies between your Hosur and Bengaluru units are treated as supplies between distinct persons. We review the set-up before a notice raises the point.",
+        },
       ]}
       relatedSlugs={["gst-notice-reply-chennai", "goods-and-services-tax", "gst-return-filing-chennai"]}
       relatedPosts={["eway-bill-detention-section-129-appeal", "gst-appellate-tribunal-gstat-explained", "gst-show-cause-notice-first-48-hours", "itc-mismatch-notices"]}
@@ -211,6 +216,14 @@ export default function Page() {
         <Link href="/company-registration-hosur" className={LINK}>company registration in Hosur</Link>. To discuss a notice,{" "}
         <Link href="/contact" className={LINK}>contact us</Link>.
       </p>
+      <h2 className={H2}>What records should a Hosur auto-component or electronics unit keep for inter-state audits?</h2>
+      <p className={P}>
+        Keep delivery, billing and shipping addresses for each consignment, with the e-way bill and the tax charged side by side.
+      </p>
+      <p className={P}>
+        Hosur suppliers that sell to buyers in Karnataka and elsewhere face questions about the place of supply, so each invoice file should show where goods were delivered and why the chosen tax head applies. For SEZ supplies keep the endorsement and LUT papers, and for job work movements keep challans and ITC-04. This record set answers most notices raised from a border check or a scrutiny.
+      </p>
+
     </ServicePageTemplate>
   );
 }

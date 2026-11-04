@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "FSSAI Licence & Registration in Chennai";
+const title = "FSSAI Licence & Registration in Chennai | Food Licence";
 const description =
   "FSSAI licence in Chennai: basic registration, state or central licence by turnover under the April 2026 limits, FoSCoS filing and Form D-1 annual returns.";
 

@@ -8,6 +8,8 @@ export type BlogPostMeta = {
   date: string; // ISO yyyy-mm-dd
   updated?: string; // ISO yyyy-mm-dd — last substantive revision (optional)
   excerpt: string;
+  /** 40–60 word direct answer shown under the H1 as #lead-answer (AEO / voice). */
+  summary?: string;
   faqs?: FAQItem[];
 };
 

@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "INC-20A is digitally signed by a director authorised by a board resolution, and certified by a chartered accountant, company secretary or cost accountant in whole-time practice. The certifying professional confirms that they have verified the particulars and attachments from the company's original records, which is why bank statements showing subscription receipts are needed.",
     },
-  ],
+  ],
+  summary:
+    "Under section 10A, a company with share capital incorporated after the 2019 amendment cannot start business or borrow until a director files Form INC-20A within 180 days of incorporation, confirming subscribers have paid for their shares, and the registered office is verified. Default carries a fixed penalty and can lead to strike-off by the Registrar.",
 };
 
 export default function Body() {

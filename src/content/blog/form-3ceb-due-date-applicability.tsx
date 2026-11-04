@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "Form 3CEB applies to any international transaction with an associated enterprise, regardless of value — here's who needs it and when it's due.",
   date: "2026-09-25",
   excerpt:
-    "Form 3CEB applies to any international transaction with an associated enterprise, regardless of value. Here's who needs it and when it's due.",
+    "Form 3CEB applies to any international transaction with an associated enterprise, regardless of value. Here's who needs it and when it's due.",
+  summary:
+    "Form 3CEB is the transfer pricing report a Chartered Accountant certifies. It applies to any international transaction with an associated enterprise regardless of value, and to specified domestic related-party transactions above the prescribed threshold. It is due by 31 October after the financial year, before the income tax return.",
+  faqs: [
+    {
+      question: "Who needs to file Form 3CEB?",
+      answer:
+        "Two categories trigger it. First, any international transaction with an associated enterprise, such as a foreign parent, subsidiary or group company, regardless of value. Second, specified domestic transactions between related Indian entities, but only once the aggregate value crosses the prescribed threshold. It commonly applies to Indian subsidiaries paying management fees or royalties to a foreign parent.",
+    },
+    {
+      question: "What is the due date for Form 3CEB?",
+      answer:
+        "Form 3CEB must be filed by 31 October following the end of the relevant financial year, one month before the 30 November income tax return due date for taxpayers required to furnish a transfer pricing report. It is filed on the e-filing portal and must be filed before the income tax return, since the ITR utility checks for it.",
+    },
+    {
+      question: "What counts as an associated enterprise?",
+      answer:
+        "The definition is statutory, not a general sense of a related company. It includes a parent-subsidiary relationship, entities under common control or common shareholding above prescribed thresholds, and entities where one has effective management or capital control over the other. A shared director or long-standing vendor does not automatically qualify.",
+    },
+    {
+      question: "What happens if Form 3CEB is not filed?",
+      answer:
+        "Failing to file when required, or filing with inadequate documentation, exposes a company to penalties under the Income Tax Act. More significantly, the tax authority may adjust reported income at assessment if it is not satisfied the pricing was at arm's length. If the other country gives no corresponding adjustment, the same income can be taxed twice.",
+    },
+  ],
 };
 
 export default function Body() {

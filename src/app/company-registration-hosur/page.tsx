@@ -93,6 +93,16 @@ export default function Page() {
           answer:
             "Yes. Directors can live in any state or abroad. The Companies Act only requires at least one director who has stayed in India for 182 days during the financial year. Directors in Bengaluru or elsewhere obtain their digital signatures online and sign the incorporation forms from wherever they are.",
         },
+        {
+          question: "Should a Hosur company's objects clause list only auto components?",
+          answer:
+            "No. The objects clause should describe your main business but can be drafted broadly enough to cover related manufacturing, assembly, tooling and services, so you do not need to amend it every time you add a product line. We draft it around what your OEM customers actually buy from you.",
+        },
+        {
+          question: "Can an engineer-founder get shares for technical expertise in a Hosur company?",
+          answer:
+            "A private company can issue sweat equity shares to directors or employees for know-how or value additions, subject to Companies Act conditions, including a valuation. Many founders instead start with a founder shareholding and add an agreement on roles and exit, so we compare both approaches on the planning call.",
+        },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
       relatedPosts={["roc-chennai-vs-roc-coimbatore", "private-limited-vs-llp-chennai-startups", "spice-plus-incorporation-explained", "udyam-registration-anna-nagar-manufacturers", "post-incorporation-compliance-checklist"]}
@@ -130,6 +140,14 @@ export default function Page() {
         </Link>
         .
       </p>
+      <h2 className="mt-14 text-2xl text-obsidian">What should a Hosur tool room or electronics assembler decide while incorporating?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Decide how much capital the plant needs, who the technical and financial promoters are, and which customers will onboard the company, because these set the structure.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        A tool room or electronics assembler buying machines usually plans the paid-up capital and bank limit together, so the company can show funds against its machinery. Founders who are engineers often hold technical shares, while a Bengaluru-based investor or family member may hold the financial stake; roles and exit terms are best written down at the start. Customers onboarding a new supplier typically ask for the certificate of incorporation, GST, Udyam and bank details to match exactly, so we keep the names consistent across all four. Where the promoter also keeps a Bengaluru office, it is registered for GST in Karnataka as a separate place of business.
+      </p>
+
     </ServicePageTemplate>
   );
 }

@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Shutting down a company that never took off? The first question is strike-off vs. formal winding up — genuinely different processes and costs.",
   date: "2026-09-19",
   excerpt:
-    "When a Chennai business owner decides to shut down a company that never took off or has stopped operating, one of the first questions is...",
+    "When a Chennai business owner decides to shut down a company that never took off or has stopped operating, one of the first questions is...",
+  summary:
+    "Strike off is a simplified, cheaper route for a company with no assets or liabilities that has been inactive for the required period; the Registrar removes its name. Winding up is a formal process with a liquidator for companies with assets, liabilities or disputes. Pending filings and dues generally need clearing first.",
+  faqs: [
+    {
+      question: "What is the difference between strike off and winding up?",
+      answer:
+        "Strike off is a simplified route for a company with no assets, no liabilities and no business for the period specified under the Companies Act. The Registrar removes its name from the register. Winding up is a formal legal process, with a liquidator, used when assets and liabilities must be settled or disputes resolved. Strike off is faster and cheaper.",
+    },
+    {
+      question: "Can every company use the strike off route?",
+      answer:
+        "No. Strike off is available only if the company genuinely has no significant assets, no outstanding liabilities and has been inactive for the required period. If your company has pending loans, unpaid vendors or ongoing contracts, strike off is not the correct route, and attempting it anyway can create legal exposure later.",
+    },
+    {
+      question: "What must be cleared before closing a company?",
+      answer:
+        "Regardless of the route, outstanding statutory filings, pending tax returns and unpaid dues generally need to be regularised before the Registrar or tribunal will process the closure. A company with years of pending annual compliance filings usually cannot skip straight to strike off without first addressing that backlog.",
+    },
+  ],
 };
 
 export default function Body() {

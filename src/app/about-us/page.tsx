@@ -57,8 +57,16 @@ export default function AboutPage() {
       <Breadcrumbs items={[{ name: "About Us", href: "/about-us" }]} />
       <PageHero
         eyebrow="About the firm"
-        h1="Enabling smarter compliance with expertise and assurance"
-        subhead="Our experienced consultants help Chennai businesses navigate audits, regulations, and financial decisions through tailored solutions and dependable support."
+        h1="About C S Rushil & Co., Chartered Accountants in Anna Nagar, Chennai"
+        lead={
+          <>
+            <strong>C S Rushil &amp; Co.</strong> is a chartered accountancy firm in J-Block, Anna Nagar, Chennai, founded in
+            2024 and led by <strong>CA Rushil C S</strong> (ICAI; Certificate in Forensic Accounting and Fraud Detection). A
+            team of 16 handles company registration, GST and income tax, audit, FEMA and virtual CFO work for clients in
+            Chennai, across Tamil Nadu and abroad.
+          </>
+        }
+        subhead="Our team helps Chennai businesses, NRIs and foreign-owned companies with audits, tax, compliance and financial decisions."
       />
 
       <section className="bg-paper py-16">

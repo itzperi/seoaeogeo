@@ -84,7 +84,7 @@ export default function Page() {
       relatedSlugs={["nri-tax-services", "nri-property-sale-tds-chennai", "nri-tax-services-uae"]}
       relatedPosts={["nri-itr-filing", "capital-gains-tax-property-sale", "tds-return-filing-deadlines"]}
     >
-      <h2 className="mt-14 text-2xl text-obsidian">The four parts of Form 145</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">What are the four parts of Form 145?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         The requirement comes from Section 397(3)(d) of the Income-tax Act, 2025 (earlier Section 195(6)), which asks anyone
         paying a non-resident to report the payment, and Rule 220 of the Income-tax Rules, 2026. Which part you file depends
@@ -115,7 +115,7 @@ export default function Page() {
         checklist still asks for &quot;15CA/15CB&quot;, Forms 145 and 146 are what it now means.
       </p>
 
-      <h2 className="mt-14 text-2xl text-obsidian">Related NRI services</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">Which related NRI services might you need?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Remittance is usually the last step. If you are selling property, start with our{" "}
         <Link href="/nri-property-sale-tds-chennai" className={linkClass}>

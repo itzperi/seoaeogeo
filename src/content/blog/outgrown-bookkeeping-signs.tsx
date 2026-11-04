@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Bookkeeping keeps your records accurate, but a growing business eventually needs someone actively interpreting the numbers, not just recording them.",
   date: "2026-09-19",
   excerpt:
-    "Bookkeeping keeps your transaction records accurate, but there is a point where a growing business needs more than accurate records, it...",
+    "Bookkeeping keeps your transaction records accurate, but there is a point where a growing business needs more than accurate records, it...",
+  summary:
+    "A business has outgrown bookkeeping when decisions rest on gut feeling rather than known margins and cash, cash feels tight despite healthy sales, funding projections are built from scratch each time, or the accountant speaks to you only at tax time. A virtual CFO interprets numbers and supports decisions.",
+  faqs: [
+    {
+      question: "How do I know when bookkeeping is no longer enough?",
+      answer:
+        "Bookkeeping keeps records accurate, but a growing business eventually needs someone interpreting the numbers. Signs include making pricing, hiring or expansion decisions on gut feeling, cash feeling tight despite healthy sales, struggling to produce projections for investors or lenders, and talking to your accountant only at tax time.",
+    },
+    {
+      question: "Why is my cash tight when sales look fine?",
+      answer:
+        "A common pattern in growing Chennai businesses is healthy looking revenue with a persistently tight cash position, usually due to poor receivables management, unplanned inventory buildup, or payment terms that do not match between what you pay suppliers and what customers pay you. A bookkeeper records these; a virtual CFO identifies the pattern and fixes the structural cause.",
+    },
+    {
+      question: "What do investors and lenders expect to see?",
+      answer:
+        "Investors and lenders expect financial projections, scenario models, and a clear narrative connecting your historical numbers to your future plans. If assembling that package feels like starting from scratch every time it is requested, that is a sign you need ongoing financial planning support, not just historical bookkeeping.",
+    },
+  ],
 };
 
 export default function Body() {

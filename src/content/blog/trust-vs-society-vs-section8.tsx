@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Starting a nonprofit in Chennai means choosing between a trust, a society, or a Section 8 company — the right choice depends on governance and funding plans.",
   date: "2026-09-19",
   excerpt:
-    "Anyone starting a charitable or nonprofit initiative in Chennai has to choose between three common structures, a trust, a society, or a...",
+    "Anyone starting a charitable or nonprofit initiative in Chennai has to choose between three common structures, a trust, a society, or a...",
+  summary:
+    "A trust is the simplest and fastest structure for small, closely held charitable work. A society needs seven or more members and an elected managing committee. A Section 8 company has the most formal governance and suits larger NGOs seeking institutional or foreign funding, including FCRA registration.",
+  faqs: [
+    {
+      question: "Which is better: trust, society or Section 8 company?",
+      answer:
+        "It depends on governance preference and funding plans. A trust is usually easiest for a smaller, closely held charitable effort. A society fits if you want broader community governance with periodic elections. A Section 8 company's stronger compliance framework often helps when you plan to scale, seek institutional grants or pursue FCRA registration.",
+    },
+    {
+      question: "How many people are needed to form a society?",
+      answer:
+        "A society is formed by a group of at least seven individuals coming together for a charitable, literary or scientific purpose, registered under the relevant state societies registration act. It has a managing committee elected periodically, which means more procedural formality around meetings, elections and record keeping than a trust.",
+    },
+    {
+      question: "Why do larger NGOs choose a Section 8 company?",
+      answer:
+        "A Section 8 company is registered under the Companies Act for charitable objectives and carries the most formal governance and compliance structure, similar to a private company but without distributing profits to members. It signals a higher level of governance rigour to funders and regulators, which larger NGOs and those seeking foreign funding often value.",
+    },
+  ],
 };
 
 export default function Body() {

@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Business owners considering Virtual CFO support often aren't sure what it actually involves month to month. Here's what a genuine monthly review covers.",
   date: "2026-09-19",
   excerpt:
-    "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense...",
+    "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense...",
+  summary:
+    "A monthly virtual CFO review covers profit and loss trends against prior months and last year, cash position with a short-term forecast, receivables and payables ageing, key ratios and unit economics, and budget against actual with a discussion of what to change. The aim is to catch problems early.",
+  faqs: [
+    {
+      question: "What does a virtual CFO review every month?",
+      answer:
+        "A monthly review typically covers profit and loss trends against prior months and the same period last year, cash position and a forward-looking forecast, receivables and payables ageing, key ratios such as gross and operating margin, unit economics, and a comparison of budget against actual results with a conversation about any variance.",
+    },
+    {
+      question: "Why does a virtual CFO look at trends and not just the current month?",
+      answer:
+        "A single bad month can be noise, while a trend across three months usually is not. Reviewing the profit and loss in the context of prior months and the same period last year shows trends in revenue, cost of goods and operating expenses, rather than treating each month as an isolated snapshot.",
+    },
+    {
+      question: "Why review receivables and payables ageing?",
+      answer:
+        "Reviewing how much is owed to you, for how long, against how much you owe suppliers and when it is due, catches collection problems early and manages payment timing in a way that protects your cash position without damaging supplier relationships. It also helps check that cash generated is consistent with reported profit.",
+    },
+  ],
 };
 
 export default function Body() {

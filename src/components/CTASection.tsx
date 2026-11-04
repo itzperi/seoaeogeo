@@ -6,7 +6,7 @@ import { EnquireButton } from "@/components/WhatsAppEnquiry";
 import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 export default function CTASection({
-  title = "Let's simplify your compliance.",
+  title = "Ready to talk to a chartered accountant?",
   subtitle = "Talk to a chartered accountant in Chennai today — no obligation, no jargon.",
   showForm = true,
   service,
@@ -41,7 +41,7 @@ export default function CTASection({
                     rel="noopener noreferrer"
                     className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
                   >
-                    Book a Consultation
+                    Book a 15-Minute Consultation
                   </TrackedAnchor>
                   <TrackedAnchor
                     action="call"

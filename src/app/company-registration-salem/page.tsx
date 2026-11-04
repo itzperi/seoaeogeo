@@ -93,6 +93,16 @@ export default function Page() {
           answer:
             "Yes. A residential address in Salem can be the registered office, supported by a recent electricity bill or property tax receipt and the owner's no-objection letter if the house is not in your name. You can shift the registered office to a factory or office later by filing the change with the ROC.",
         },
+        {
+          question: "Can Salem truck owners move their lorries into a company?",
+          answer:
+            "Yes, but the vehicles stay registered in the owner's name until each is transferred with the transport authority, and permits and finance agreements may need the lender's consent. Many operators first incorporate and then move the fleet gradually, so we map each vehicle and loan before filing.",
+        },
+        {
+          question: "Is a Private Limited Company a good fit for a Salem steel-linked trading business?",
+          answer:
+            "Often, where turnover is high and the business borrows against stock or receivables, because banks and steel suppliers are familiar with companies. A company must have audited accounts every year regardless of turnover, while an LLP is audited only above prescribed limits, so weigh that compliance cost.",
+        },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
       relatedPosts={["llp-vs-opc-vs-pvt-ltd", "spice-plus-incorporation-explained", "msme-loan-schemes-tamil-nadu", "post-incorporation-compliance-checklist"]}
@@ -129,6 +139,14 @@ export default function Page() {
         </Link>
         .
       </p>
+      <h2 className="mt-14 text-2xl text-obsidian">How should Salem steel, sago and transport businesses choose between a company and an LLP?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        The right entity depends on how the business borrows and who owns the assets: steel traders and sago mills usually lean to a company, while a small lorry fleet often suits an LLP or stays as it is.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Salem steel-linked traders carry large stock and receivables and rely on bank limits, which favours a company with audited accounts. Sago and starch mills hold costly machinery and land, so the plan should state whether the plant is transferred into the company or leased from the family. Lorry operators have a different problem: vehicles, permits and finance sit in individual names, so incorporation is worthwhile mainly when several owners or a contract with a corporate buyer require it. Textile and silk businesses in Salem can treat the choice like the sago mills, driven by funding and family ownership.
+      </p>
+
     </ServicePageTemplate>
   );
 }

@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "Startup India recognition gets mentioned often by Chennai founders, but there's genuine confusion about what it actually provides versus what people assume.",
   date: "2026-09-19",
   excerpt:
-    "Startup India recognition gets mentioned often by founders in Chennai, but there's genuine confusion about what it actually provides versus...",
+    "Startup India recognition gets mentioned often by founders in Chennai, but there's genuine confusion about what it actually provides versus...",
+  summary:
+    "Startup India recognition generally suits private limited companies, LLPs or registered partnerships within an eligible age and turnover limit that work on genuine innovation. Benefits include a possible income tax exemption through a separate approval, self-certified compliance and tender eligibility. It does not provide funding or exempt you from GST or ROC compliance.",
+  faqs: [
+    {
+      question: "Who is eligible for Startup India recognition?",
+      answer:
+        "A business generally needs to be incorporated as a private limited company, LLP or registered partnership within a specified number of years, have turnover below a specified threshold, and work on innovation, development or improvement of products, processes or services with scalability and employment potential, rather than being a routine trading or services business.",
+    },
+    {
+      question: "What are the benefits of Startup India recognition?",
+      answer:
+        "Recognised startups can access an income tax exemption on profits for a specified number of years within their first ten years, subject to conditions and a separate approval, easier labour and environmental compliance through self-certification, and eligibility for government tenders that otherwise need prior turnover or experience. Angel tax no longer applies from assessment year 2025-26.",
+    },
+    {
+      question: "Does Startup India recognition give funding or exempt me from GST?",
+      answer:
+        "No. Recognition does not itself provide funding, though it can improve access to the Fund of Funds for Startups and certain government-backed schemes. It also does not exempt a business from GST, regular ROC compliance or other standard obligations, a common misconception among first-time founders.",
+    },
+    {
+      question: "Is Startup India recognition worth applying for?",
+      answer:
+        "If your business genuinely involves an innovative product, technology or process and you are within the eligibility window on incorporation age and turnover, the effort is generally worth it. A standard trading, retail or conventional services business without an innovation angle is unlikely to be recognised and is not worth pursuing.",
+    },
+  ],
 };
 
 export default function Body() {

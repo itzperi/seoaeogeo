@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "Under section 25 of the CGST Act, a person liable to register must apply within 30 days of becoming liable. If the application is made within that time, registration is effective from the date of liability. A late application makes registration effective only from the date of grant, leaving a gap in which tax is still payable.",
     },
-  ],
+  ],
+  summary:
+    "A new company must register for GST under section 22 once aggregate turnover crosses 40 lakh rupees for goods only, or 20 lakh for services or mixed supplies. Some cases need registration regardless of turnover, such as inter-state supply of goods, reverse charge liability or certain e-commerce sales. GSTIN can also be applied for through AGILE-PRO-S at incorporation.",
 };
 
 export default function Body() {

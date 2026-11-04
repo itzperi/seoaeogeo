@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Generally yes. If your goods are stored in a fulfilment centre in another state, that warehouse is treated as your place of business in that state, and GST registration is needed there. Sellers using marketplace fulfilment networks should check which states their inventory is placed in before enabling the service.",
     },
   ],
+  summary:
+    "Marketplaces accept proprietorships, partnerships, LLPs and companies, so incorporating is a risk and growth decision, not a platform rule. Signals include liability exposure, funding, ESOPs, banking and credit, and brand ownership, at the cost of statutory audit and ROC filings. Under section 24, selling through an e-commerce operator that collects TCS needs GST registration.",
 };
 
 export default function Body() {

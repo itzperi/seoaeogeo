@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "NRIs with family, property, or investments in Chennai often have a genuine Indian tax filing obligation that gets overlooked simply by living abroad.",
   date: "2026-09-19",
   excerpt:
-    "Non resident Indians with family, property, or investments back in Chennai often have a genuine Indian tax filing obligation that gets...",
+    "Non resident Indians with family, property, or investments back in Chennai often have a genuine Indian tax filing obligation that gets...",
+  summary:
+    "NRI status for tax depends on days spent in India, not passport. Income arising or received in India, such as rent, capital gains and interest, stays taxable. Foreign income generally does not. NRE interest is exempt while NRO interest is taxable, and filing a return is often needed to claim a refund of excess TDS.",
+  faqs: [
+    {
+      question: "How is NRI status decided for tax purposes?",
+      answer:
+        "Residential status depends on the number of days spent in India during the financial year and the preceding years, not on your passport, visa status or where you consider home. You can hold an Indian passport and be a non-resident for a year, or hold a foreign passport and still be treated as resident.",
+    },
+    {
+      question: "What income of an NRI is taxable in India?",
+      answer:
+        "Income that arises or is received in India remains taxable regardless of residential status. This typically includes rental income from Indian property, capital gains on selling Indian property or investments, and interest on Indian bank accounts and fixed deposits. Foreign salary and foreign investment income generally stay outside Indian tax for a genuine NRI.",
+    },
+    {
+      question: "Is NRE or NRO account interest taxable?",
+      answer:
+        "Interest on an NRE account is exempt from Indian tax, while interest on an NRO account is fully taxable and typically has TDS deducted at a higher rate at source. Assuming both are treated the same leads to overpaying tax that could have been avoided or underreporting taxable interest.",
+    },
+    {
+      question: "Does an NRI need to file an Indian return if TDS was deducted?",
+      answer:
+        "Often yes. Filing is frequently needed to claim a refund when the TDS rate applied is higher than the actual tax liability, or to report capital gains correctly. A Double Taxation Avoidance Agreement may also allow credit for Indian tax against tax owed abroad, but it must be claimed properly on both sides.",
+    },
+  ],
 };
 
 export default function Body() {

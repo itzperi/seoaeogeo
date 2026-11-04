@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Every founder starting a business in Chennai eventually faces the same decision: which legal structure to register under.",
   date: "2026-09-19",
   excerpt:
-    "Every founder starting a business in Chennai eventually faces the same decision: which legal structure to register under.",
+    "Every founder starting a business in Chennai eventually faces the same decision: which legal structure to register under.",
+  summary:
+    "An LLP suits two or more partners wanting limited liability with lighter compliance but cannot raise equity funding. An OPC suits a solo founder but allows only one member. A Private Limited Company has the heaviest compliance but is the structure investors expect and the only one able to issue different share classes.",
+  faqs: [
+    {
+      question: "Which is better for a startup: LLP, OPC or Private Limited Company?",
+      answer:
+        "It depends on your situation. A solo founder not raising external funding soon may do with an OPC or proprietorship. Partners wanting simplicity and lighter compliance often fit an LLP. If you will need investor capital, a Private Limited Company is usually the right starting point, despite more paperwork from day one.",
+    },
+    {
+      question: "Can an LLP raise equity funding from investors?",
+      answer:
+        "No. LLPs cannot raise equity funding from investors, which rules them out for anyone planning to bring in venture capital or angel investment later. A Private Limited Company is the only one of the three that can issue different classes of shares and raise equity in the way growth startups need.",
+    },
+    {
+      question: "What is the limitation of a One Person Company?",
+      answer:
+        "An OPC cannot have more than one member by design, which limits it if you plan to bring in a co-founder soon. It suits a solo founder who wants a company's limited liability without a second shareholder. It carries more compliance than a proprietorship but less than a full private company in some respects.",
+    },
+  ],
 };
 
 export default function Body() {

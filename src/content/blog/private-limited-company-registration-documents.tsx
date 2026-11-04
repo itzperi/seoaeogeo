@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "A spelling or format difference between PAN, Aadhaar and the name typed into SPICe+ can trigger a resubmission or DIN rejection, because the system validates PAN data with the Income Tax Department. Fix the mismatch before filing, either by updating one of the records or by using exactly the PAN name consistently across every form.",
     },
-  ],
+  ],
+  summary:
+    "Most incorporation delays come from documents, not law. The MCA expects the MoA and AoA, proof of registered office with a utility bill not older than two months, identity and address proof for every subscriber and first director, declarations in INC-9, and Digital Signature Certificates. Foreign subscribers also need correctly attested documents.",
 };
 
 export default function Body() {

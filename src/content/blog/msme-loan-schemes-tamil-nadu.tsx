@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "Chennai small business owners often assume bank loans are their only option, without realizing Udyam/MSME registration unlocks better-terms loan schemes.",
   date: "2026-09-19",
   excerpt:
-    "Small business owners in Chennai often assume bank loans are their only financing option, without realizing that registering as an MSME...",
+    "Small business owners in Chennai often assume bank loans are their only financing option, without realizing that registering as an MSME...",
+  summary:
+    "Udyam registration is the prerequisite for MSME loan schemes. It opens access to the CGTMSE collateral-free guarantee, Tamil Nadu state schemes with subsidised loans and capital subsidy, and central interest subvention. Eligibility depends on Udyam classification, loan purpose and sometimes sector or promoter background, so check each scheme's criteria first.",
+  faqs: [
+    {
+      question: "Why is Udyam registration needed for MSME loan schemes?",
+      answer:
+        "Every MSME loan scheme and subsidy programme requires Udyam registration as a prerequisite, because this is how the government classifies and verifies a business as micro, small or medium. Registration is free and done online, and without it a business does not qualify for the schemes, however small it is.",
+    },
+    {
+      question: "Can a small business get a collateral-free loan?",
+      answer:
+        "Yes. The Credit Guarantee Fund Trust for Micro and Small Enterprises scheme allows eligible businesses to access collateral-free loans up to a specified limit, with the government guaranteeing a portion of the loan to the bank. It is useful for small businesses and startups with no property or assets to pledge.",
+    },
+    {
+      question: "Does Tamil Nadu offer MSME loan support beyond central schemes?",
+      answer:
+        "Yes. Tamil Nadu offers support through state industrial promotion bodies, including subsidised loans and capital subsidy for units in specific categories or locations. These schemes change periodically, so check current eligibility criteria and application windows before assuming a particular subsidy still applies.",
+    },
+    {
+      question: "What decides eligibility for an MSME loan scheme?",
+      answer:
+        "Eligibility usually depends on Udyam classification based on turnover and investment thresholds, the purpose of the loan, and sometimes the sector or the promoter's background. Applying without checking the specific scheme's criteria wastes time on applications that were never going to be approved, and most schemes still need financial statements.",
+    },
+  ],
 };
 
 export default function Body() {

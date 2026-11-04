@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "ROC filings follow a predictable annual cycle, but the forms and deadlines are scattered enough that even organized Chennai companies miss one.",
   date: "2026-09-19",
   excerpt:
-    "Registrar of Companies filings follow a predictable annual cycle, but the specific forms and their deadlines are scattered enough across...",
+    "Registrar of Companies filings follow a predictable annual cycle, but the specific forms and their deadlines are scattered enough across...",
+  summary:
+    "Every company must hold its annual general meeting and then file financial statements (AOC-4) and the annual return (MGT-7 or MGT-7A) with the Registrar, whether or not it did any business. Event-based forms for director, address, capital or charge changes and auditor appointment run on their own deadlines.",
+  faqs: [
+    {
+      question: "Which ROC filings must a company make every year?",
+      answer:
+        "Every company must hold its annual general meeting within the prescribed timeline after the financial year closes, then file its financial statements in Form AOC-4 and its annual return in Form MGT-7 or MGT-7A with the Registrar. These two filings are the backbone of annual ROC compliance and apply regardless of whether the company did any business.",
+    },
+    {
+      question: "Do I need to file ROC returns if my company had no business?",
+      answer:
+        "Yes. Annual filing obligations apply regardless of turnover or activity level. Many small and newly incorporated companies assume compliance can wait when there was minimal or no business, but the penalty for late filing accumulates per day of delay, which adds up faster than most founders expect.",
+    },
+    {
+      question: "Which ROC forms depend on events during the year?",
+      answer:
+        "Event-based filings are triggered whenever something changes: a director joins or exits, the registered office address changes, share capital is altered, or charges are created or satisfied against company assets. Each has its own form and deadline counted from the date of the event, not the financial year end. Auditor appointment is also reported after the AGM.",
+    },
+  ],
 };
 
 export default function Body() {

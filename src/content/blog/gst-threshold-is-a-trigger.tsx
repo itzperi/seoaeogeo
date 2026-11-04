@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "Staying just under the GST registration threshold feels safe. In practice, it's the moment that starts a clock, not a permanent exemption.",
   date: "2026-09-26",
   excerpt:
-    "Staying just under the GST registration threshold feels safe. In practice, it's the moment that starts a clock, not a permanent exemption.",
+    "Staying just under the GST registration threshold feels safe. In practice, it's the moment that starts a clock, not a permanent exemption.",
+  summary:
+    "The GST registration threshold is a trigger, not a permanent exemption. Turnover is tracked on a continuous financial-year basis, so registration is due from the month you cross it. Inter-state supply of goods, certain agency arrangements and some e-commerce sales can require registration even below the threshold.",
+  faqs: [
+    {
+      question: "Is being below the GST threshold a permanent exemption?",
+      answer:
+        "No. The threshold, such as forty lakh rupees for goods or twenty lakh for services, is a trigger and not a permanent exemption. Treating it as a line to stay under indefinitely is where the real risk begins, because a business that crosses it becomes liable to register from that point.",
+    },
+    {
+      question: "When must I register after crossing the GST threshold?",
+      answer:
+        "Aggregate turnover is tracked on a continuous financial-year basis, not only at year end. A business that crosses the threshold in month seven is liable to apply for registration from that point, not from the following April. Checking turnover only once a year often reveals the line was crossed months earlier.",
+    },
+    {
+      question: "Can I need GST registration even below the turnover threshold?",
+      answer:
+        "Yes. Inter-state supply of goods, specific agency arrangements and e-commerce sales through certain platforms can require registration even for a business well under the standard threshold. Inter-state supply of services alone is exempt below the threshold. The statement that you are too small for GST holds only if none of these triggers applies.",
+    },
+    {
+      question: "What is the penalty for registering late for GST?",
+      answer:
+        "Operating without registration after crossing the threshold exposes the business to penalties and interest calculated from the date registration should have happened, not the date it actually occurred. The cost therefore compounds the longer the gap goes unnoticed, which is why monitoring turnover through the year matters.",
+    },
+  ],
 };
 
 export default function Body() {

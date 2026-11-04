@@ -139,6 +139,11 @@ export default function Page() {
           answer:
             "No. Contracts, notices and returns can be shared by email, and replies and appeals are filed online. We discuss drafts on video calls and attend hearings by video where the authority permits, or in person by arrangement. You can visit our Anna Nagar office by appointment if you prefer.",
         },
+        {
+          question: "What records show a fabricator's materials went into a particular contract?",
+          answer:
+            "Keep the contract and bill of quantities, purchase orders, material issue slips, running bills and delivery or erection records for each job. Together these link inputs to the work, which helps both a works-contract classification argument and an ITC defence.",
+        },
       ]}
       relatedSlugs={["gst-notice-reply-chennai", "goods-and-services-tax", "tds-return-filing-chennai"]}
       relatedPosts={["gst-show-cause-notice-first-48-hours", "after-gst-show-cause-reply", "itc-mismatch-notices"]}
@@ -212,6 +217,14 @@ export default function Page() {
         <Link href="/company-registration-tiruchirappalli" className={LINK}>company registration in Tiruchirappalli</Link>. To
         discuss a notice, <Link href="/contact" className={LINK}>contact us</Link>.
       </p>
+      <h2 className={H2}>How should a Trichy contractor organise documents for a GST audit?</h2>
+      <p className={P}>
+        Organise documents project by project, so each contract file carries its order, running bills, materials and tax invoices.
+      </p>
+      <p className={P}>
+        Engineering ancillaries and erection contractors in Trichy often run several contracts for large buyers at once. A project-wise file lets you show which bills belong to which contract, how free-issue material was handled and where TDS was deducted. Keeping the GSTR-7 credit statements next to the invoices makes reconciliation far quicker when an officer asks for it.
+      </p>
+
     </ServicePageTemplate>
   );
 }

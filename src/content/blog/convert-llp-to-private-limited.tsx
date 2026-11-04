@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "It can be, but only if the transfer fits the capital gains exemption for a firm's business taken over by a company. Historically the conditions were that all assets and liabilities pass, all partners become shareholders in their capital-account proportions, they receive only shares, and they keep at least 50% of the voting power for five years.",
     },
   ],
+  summary:
+    "An LLP can become a private limited company without winding up, by registering under Part I of Chapter XXI of the Companies Act, 2013 through section 366. The steps are partner approval, name reservation, a URC-2 newspaper notice, then a SPICe+ Part B filing. Conditions include at least two members, secured creditor consent and up-to-date LLP filings.",
 };
 
 export default function Body() {

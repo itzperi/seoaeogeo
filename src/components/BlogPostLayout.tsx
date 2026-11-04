@@ -52,6 +52,7 @@ export default function BlogPostLayout({
   date,
   updated,
   faqs,
+  summary,
   children,
 }: {
   slug: string;
@@ -61,6 +62,8 @@ export default function BlogPostLayout({
   /** Last substantive revision (YYYY-MM-DD); defaults to the publish date. */
   updated?: string;
   faqs?: FAQItem[];
+  /** 40–60 word direct answer rendered as #lead-answer. */
+  summary?: string;
   children: ReactNode;
 }) {
   const money = moneyPageFor(slug);
@@ -75,6 +78,7 @@ export default function BlogPostLayout({
     author: { "@type": "Person", "@id": PERSON_ID, name: FOUNDER_NAME, url: `${SITE_URL}/about-us` },
     publisher: { "@id": `${SITE_URL}/#organization` },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${slug}` },
+    ...(summary && { speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "#lead-answer"] } }),
   };
 
   return (
@@ -96,6 +100,12 @@ export default function BlogPostLayout({
           </p>
           <h1 className="mt-6 max-w-4xl text-5xl text-carbon md:text-7xl">{title}</h1>
           <p className="mt-6 max-w-2xl text-lg text-carbon">{description}</p>
+          {summary && (
+            <p id="lead-answer" className="mt-6 max-w-3xl rounded-cards border border-carbon bg-white p-5 text-base leading-relaxed text-carbon">
+              <strong>In short: </strong>
+              {summary}
+            </p>
+          )}
         </div>
       </section>
 

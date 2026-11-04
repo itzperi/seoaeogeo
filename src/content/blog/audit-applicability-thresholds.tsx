@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "One of the most common questions from growing businesses in Chennai is simple: has my business crossed the point where an audit becomes mandatory.",
   date: "2026-09-19",
   excerpt:
-    "One of the most common questions from growing businesses in Chennai is simple: has my business crossed the point where an audit becomes...",
+    "One of the most common questions from growing businesses in Chennai is simple: has my business crossed the point where an audit becomes...",
+  summary:
+    "Which audit applies depends on the law. Tax audit under the Income Tax Act turns on turnover or professional receipts, with a higher limit if cash transactions stay low. Statutory audit applies to every private limited company and to LLPs above their threshold. GST reconciliation is filed with the annual return above a turnover threshold.",
+  faqs: [
+    {
+      question: "When is a tax audit mandatory for a business?",
+      answer:
+        "Under the Income Tax Act, a business exceeding the specified turnover threshold in a financial year needs a tax audit, reported in Form 3CA/3CB and 3CD. A higher threshold is available if cash transactions are kept within a specified limit. Professionals face a separate, generally lower threshold based on gross receipts rather than turnover.",
+    },
+    {
+      question: "Does a private limited company need an audit if it made no sales?",
+      answer:
+        "Yes. Every registered private limited company needs a statutory audit regardless of profitability or activity level. A company that made no sales during the year still needs one because it is registered as a company, which often surprises founders of dormant or early stage entities. LLPs need it above the specified contribution or turnover threshold.",
+    },
+    {
+      question: "Can a business cross an audit threshold without noticing?",
+      answer:
+        "Yes. Turnover thresholds are assessed on the full financial year, so a business that grows rapidly partway through can cross one without the owner realising until the accountant flags it at year end, leaving less time to prepare. Tracking turnover on a running basis through the year helps you spot it early.",
+    },
+  ],
 };
 
 export default function Body() {

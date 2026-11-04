@@ -93,6 +93,16 @@ export default function Page() {
           answer:
             "Yes. An OPC can convert into a Private Limited Company at any time by adding at least one more member and director, altering its documents and filing INC-6 with the ROC. It remains the same legal entity, so its PAN, GST registration, bank account and contracts continue. Many solo founders start this way.",
         },
+        {
+          question: "Can a Madurai granite or agri-trading business register as a company?",
+          answer:
+            "Yes. Trading and processing businesses incorporate like any other, with objects drafted for the trade. Incorporation does not itself give any quarrying, mining or agricultural-marketing permission; those licences come from separate departments and are usually applied for in the name of the new company once it exists.",
+        },
+        {
+          question: "Can an existing Madurai partnership firm become a company or LLP?",
+          answer:
+            "Yes. A partnership firm can be converted into a company or an LLP, or you can incorporate a new entity and transfer the business to it. Which route is cleaner depends on the firm assets, contracts and licences. We compare both routes on a planning call before anything is filed.",
+        },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
       relatedPosts={["roc-chennai-vs-roc-coimbatore", "llp-vs-opc-vs-pvt-ltd", "spice-plus-incorporation-explained", "msme-loan-schemes-tamil-nadu", "common-compliance-mistakes-chennai-startups"]}
@@ -129,6 +139,14 @@ export default function Page() {
         </Link>
         .
       </p>
+      <h2 className="mt-14 text-2xl text-obsidian">How should a Madurai trading or agri-linked firm choose a structure?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        A family trading house that wants limited liability with light compliance often considers an LLP, while a firm planning bank borrowing or outside investors usually chooses a private limited company.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Madurai traders in commodities, textiles and agri-linked goods often hold stock worth far more than their capital, so lenders look closely at the legal form and the accounts behind it. A company must have its accounts audited every year, whereas an LLP is audited only above prescribed turnover or contribution limits. Granite and stone businesses should also treat quarry leases and mining permissions as a separate approval track, held by whichever entity actually operates the lease. We usually settle the entity and the licence holder together so the paperwork does not need re-doing later.
+      </p>
+
     </ServicePageTemplate>
   );
 }

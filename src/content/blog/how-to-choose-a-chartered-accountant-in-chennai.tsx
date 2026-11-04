@@ -41,7 +41,9 @@ export const meta: BlogPostMeta = {
       answer:
         "The biggest red flags are refusing to share an ICAI membership or firm registration number, promising a specific tax outcome or refund, suggesting that income or expenses be kept off the books, quoting a single lump sum that hides government fees, and filing returns without first reviewing your documents. Any one of these is reason to keep looking.",
     },
-  ],
+  ],
+  summary:
+    "Choosing a chartered accountant in Chennai starts with nine checks, beginning with verifying ICAI membership and the firm registration number, and checking peer review status if you need an audit. The guide also lists red flags that should end a conversation and questions to ask in a first meeting. Verify answers rather than relying on reviews or a polished website.",
 };
 
 export default function Body() {

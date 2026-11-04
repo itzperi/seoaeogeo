@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "TDS on rent trips up both sides in Chennai — tenants who don't realize they must deduct it, and landlords who forget to check it against their return.",
   date: "2026-09-19",
   excerpt:
-    "Tax deducted at source on rent payments trips up both sides of the transaction in Chennai, tenants who don't realize they need to deduct it...",
+    "Tax deducted at source on rent payments trips up both sides of the transaction in Chennai, tenants who don't realize they need to deduct it...",
+  summary:
+    "TDS on rent catches both tenants and landlords. Under Section 194 I, a tenant paying rent above the annual threshold deducts TDS, while Section 194 IB covers individuals paying rent above a monthly threshold. Tenants deposit it and issue a certificate; landlords should check Form 26AS before filing their return.",
+  faqs: [
+    {
+      question: "When does a tenant have to deduct TDS on rent?",
+      answer:
+        "Under Section 194 I, a tenant paying rent above a specified annual threshold for land, building or furniture must deduct TDS before paying the landlord and deposit it with the government. Section 194 IB separately covers individuals paying rent above a monthly threshold, so the exemption many individual tenants assume applies often does not.",
+    },
+    {
+      question: "What is the difference between Section 194 I and 194 IB?",
+      answer:
+        "The two provisions look similar but carry different thresholds, rates and compliance requirements. Rates differ for land or building versus plant or machinery. Under 194 IB, the deduction and deposit can be a one time annual event rather than a monthly cycle. Using the wrong section or rate is among the most common errors.",
+    },
+    {
+      question: "What should landlords check about TDS on rent?",
+      answer:
+        "Landlords should verify that TDS deducted by the tenant appears in their Form 26AS tax credit before filing their own return. A mismatch between what the tenant claims to have deducted and the landlord's credit is a common, avoidable notice trigger, usually caused by deposit under the wrong PAN or a missed deadline.",
+    },
+  ],
 };
 
 export default function Body() {

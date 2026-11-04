@@ -93,6 +93,16 @@ export default function Page() {
           answer:
             "Yes. To export goods such as pumps, motors, castings or textile machinery spares, the company needs an Importer Exporter Code from DGFT, which is linked to its PAN. Exporters also usually file a Letter of Undertaking under GST so that exports can be shipped without paying IGST upfront. We can add both after incorporation.",
         },
+        {
+          question: "Can two brothers who run a foundry together hold equal shares in a company?",
+          answer:
+            "Yes. A private company can have any shareholding split, including equal holdings, but equal control can deadlock decisions. We usually suggest the shareholders agreement or articles state who signs bank documents, how disputes are settled and what happens if one brother wants to exit, before the company is incorporated.",
+        },
+        {
+          question: "Does each unit of a Coimbatore family group need its own company?",
+          answer:
+            "Not necessarily. Many groups keep a separate entity for each activity, such as manufacturing, trading and real estate, to separate risk and bank limits, while others run one company with several units. The choice affects GST, related-party dealings and audit scope, so we map the group on a call first.",
+        },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
       relatedPosts={["roc-chennai-vs-roc-coimbatore", "private-limited-vs-llp-chennai-startups", "spice-plus-incorporation-explained", "lut-for-exporters", "post-incorporation-compliance-checklist"]}
@@ -133,6 +143,14 @@ export default function Page() {
         </Link>
         .
       </p>
+      <h2 className="mt-14 text-2xl text-obsidian">Which structure suits a Coimbatore pump or textile machinery maker seeking machine finance?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        A private limited company is usually the easier fit when a bank lends against plant and machinery, because the lender takes security over company assets.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        When a company creates a charge on its machinery or stock in favour of a bank, the charge is also registered online with the Registrar, which gives the lender comfort and is a routine step for borrowing units. A textile machinery maker supplying many spinning mills also tends to be asked for audited accounts by buyers, which a company produces every year. An LLP can still work for a lightly financed family workshop. Whichever you choose, agree early which family members are directors, and how land and machinery move across if the business is being converted from a partnership.
+      </p>
+
     </ServicePageTemplate>
   );
 }

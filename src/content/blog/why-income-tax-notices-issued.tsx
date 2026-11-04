@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "An income tax notice usually means one specific, fixable data mismatch — not that you're in trouble. Here are the actual triggers behind most notices.",
   date: "2026-09-26",
   excerpt:
-    "An income tax notice usually means one specific, fixable data mismatch — not that you're in trouble. Here are the actual triggers.",
+    "An income tax notice usually means one specific, fixable data mismatch — not that you're in trouble. Here are the actual triggers.",
+  summary:
+    "Most income tax notices come from an automated system flagging a specific mismatch, not a manual decision that you did something wrong. The most common trigger is income not matching Form 26AS or AIS. Others are high-value transactions without a matching income profile, non-filing despite reportable transactions, and rarer random scrutiny selection.",
+  faqs: [
+    {
+      question: "Why do I get an income tax notice?",
+      answer:
+        "In practice, the large majority of notices are triggered by an automated system flagging a specific, identifiable mismatch, not a manual decision that you have done something wrong. The most common causes are income not matching Form 26AS or AIS, high-value transactions not matching your income profile, and non-filing despite reportable transactions.",
+    },
+    {
+      question: "What is the most common reason for an income tax notice?",
+      answer:
+        "By far the most common trigger is reported income not matching Form 26AS or AIS. Your employer, bank or mutual fund house reports your income and TDS to the department, and the system cross-checks it against your return. A forgotten interest credit or an unreported capital gain shows up as a mismatch.",
+    },
+    {
+      question: "Can I get a notice for not filing a return?",
+      answer:
+        "Yes. If TDS was deducted on your income, or you had transactions that appear in the department's data, but no return was filed at all, that gap itself is a common trigger. The system flags the absence of a filing as readily as it flags an inconsistency within one.",
+    },
+    {
+      question: "Is random scrutiny a common cause of notices?",
+      answer:
+        "No. A small percentage of returns are selected for detailed scrutiny based on risk parameters unrelated to any specific error. This exists, but it is a much smaller share of actual notices than mismatch-driven ones, despite being the version people worry about most.",
+    },
+  ],
 };
 
 export default function Body() {

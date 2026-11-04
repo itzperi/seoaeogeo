@@ -42,6 +42,6 @@ export function locationLinks(href: string): { heading: string; links: { href: s
     href: `/${l.slug}`,
     label: `${l.service} in ${l.place}`,
   }));
-  if (!page) return { heading: `${service} by city`, links: cities };
-  return { heading: `${service} in other cities`, links: [LOCATION_PILLARS[service], ...cities] };
+  if (!page) return { heading: `Which cities do we serve for ${service.toLowerCase()}?`, links: cities };
+  return { heading: `Where else do we handle ${service.toLowerCase()}?`, links: [LOCATION_PILLARS[service], ...cities] };
 }

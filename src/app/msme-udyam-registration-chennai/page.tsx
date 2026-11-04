@@ -37,6 +37,17 @@ export default function Page() {
         { name: "Scheme Eligibility Mapping", text: "Identifying applicable central and Tamil Nadu state MSME schemes — subsidies, credit-linked capital subsidy, and priority lending — relevant to your sector." },
         { name: "Bank Loan Documentation Support", text: "Preparing the financial documentation banks require to process collateral-free MSME loan applications." },
       ]}
+      howTo={{
+        heading: "How do you get Udyam registration for your business?",
+        steps: [
+          { name: "Confirm the enterprise qualifies", text: "We check that the business is a manufacturing or service enterprise and how it is likely to be classified (micro, small or medium) from its investment and turnover." },
+          { name: "Collect the details", text: "Aadhaar of the proprietor, managing partner or authorised director, and the enterprise's PAN and GSTIN where it has one." },
+          { name: "File on the Udyam Registration portal", text: "The application is filed on the government's Udyam Registration portal with Aadhaar OTP verification. There is no government fee." },
+          { name: "Check the data drawn from tax records", text: "The portal draws investment and turnover figures from income tax and GST records linked to the PAN, so we check they match your books." },
+          { name: "Receive the Udyam certificate", text: "Once registered, the enterprise gets a Udyam Registration Number and an e-certificate." },
+          { name: "Keep the registration up to date", text: "We update the registration when details change and review the classification each year as turnover and investment change." },
+        ],
+      }}
       faqs={[
         { question: "Is Udyam registration mandatory?", answer: "It's not legally mandatory to operate a business, but without it you cannot access MSME-specific benefits — priority lending, delayed-payment protection, tender eligibility, and various subsidy schemes — so most eligible businesses register voluntarily to unlock these." },
         { question: "What documents are needed for Udyam registration?", answer: "Only your Aadhaar (of the proprietor/managing partner/karta) and PAN and GST details of the business — the process is largely self-declaration based, pulling investment and turnover figures from linked government databases." },

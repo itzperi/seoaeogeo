@@ -7,7 +7,7 @@ Target /
   PASS  self-referencing canonical  — https://www.csrushil.com
   PASS  exactly one <h1>  — 1: CA Firm in Chennai — Chartered Accountants for Tax, GST, Audit & Incorporation
   PASS  40–55 word lead answer (#lead-answer)  — 53 words
-  PASS  content <h2>s phrased as questions  — 7/7
+  PASS  content <h2>s phrased as questions  — 8/8
   PASS  native <table> present
   PASS  @graph JSON-LD present  — 2 blocks
   PASS  AccountingService #organization with NAP  — C S Rushil & Co. Chartered Accountants
@@ -26,7 +26,7 @@ Target /private-limited-company-incorporation-chennai
   PASS  self-referencing canonical  — https://www.csrushil.com/private-limited-company-incorporation-chennai
   PASS  exactly one <h1>  — 1: Private Limited Company Registration in Chennai
   PASS  40–55 word lead answer (#lead-answer)  — 48 words
-  PASS  content <h2>s phrased as questions  — 16/16
+  PASS  content <h2>s phrased as questions  — 18/18
   PASS  native <table> present
   PASS  @graph JSON-LD present  — 2 blocks
   PASS  AccountingService #organization with NAP  — C S Rushil & Co. Chartered Accountants
@@ -45,7 +45,7 @@ Target /virtual-cfo-services
   PASS  self-referencing canonical  — https://www.csrushil.com/virtual-cfo-services
   PASS  exactly one <h1>  — 1: Virtual CFO in Chennai — Outsourced & Fractional CFO Services
   PASS  40–55 word lead answer (#lead-answer)  — 44 words
-  PASS  content <h2>s phrased as questions  — 13/13
+  PASS  content <h2>s phrased as questions  — 18/18
   PASS  native <table> present
   PASS  @graph JSON-LD present  — 2 blocks
   PASS  AccountingService #organization with NAP  — C S Rushil & Co. Chartered Accountants
@@ -54,7 +54,7 @@ Target /virtual-cfo-services
   PASS  WebPage author + reviewedBy → #ca-rushil
   PASS  BreadcrumbList  — 1 found
   PASS  exactly one FAQPage  — 1 found
-  PASS  FAQPage mirrors visible FAQs 1:1  — 10 questions
+  PASS  FAQPage mirrors visible FAQs 1:1  — 13 questions
 
 Target /gst-litigation-chennai
   PASS  HTTP 200 without redirect  — status 200
@@ -64,7 +64,7 @@ Target /gst-litigation-chennai
   PASS  self-referencing canonical  — https://www.csrushil.com/gst-litigation-chennai
   PASS  exactly one <h1>  — 1: GST Litigation & Appeals in Chennai
   PASS  40–55 word lead answer (#lead-answer)  — 49 words
-  PASS  content <h2>s phrased as questions  — 14/14
+  PASS  content <h2>s phrased as questions  — 16/16
   PASS  native <table> present
   PASS  @graph JSON-LD present  — 2 blocks
   PASS  AccountingService #organization with NAP  — C S Rushil & Co. Chartered Accountants
@@ -76,7 +76,7 @@ Target /gst-litigation-chennai
   PASS  FAQPage mirrors visible FAQs 1:1  — 8 questions
 
 Navigation
-  PASS  footer links cut by ≥50%  — 99 → 29 (−71%)
+  PASS  footer links cut by ≥50%  — 99 → 31 (−69%)
   PASS  header links cut by ≥50%  — 88 → 28 (−68%)
   PASS  footer links / with keyword anchor  — CA Firm in Chennai
   PASS  footer links /private-limited-company-incorporation-chennai with keyword anchor  — Private Limited Company Registration in Chennai
@@ -100,11 +100,11 @@ AI readiness
   PASS  robots.txt allows named crawlers  — Googlebot, OAI-SearchBot, GPTBot, ChatGPT-User, PerplexityBot, ClaudeBot, Applebot
 
 Sitemap
-  PASS  sitemap.xml served  — 180 URLs
+  PASS  sitemap.xml served  — 188 URLs
   PASS  / has lastmod  — 2026-11-02T00:00:00.000Z
-  PASS  /private-limited-company-incorporation-chennai has lastmod  — 2026-11-02T00:00:00.000Z
-  PASS  /virtual-cfo-services has lastmod  — 2026-11-02T00:00:00.000Z
+  PASS  /private-limited-company-incorporation-chennai has lastmod  — 2026-11-04T00:00:00.000Z
+  PASS  /virtual-cfo-services has lastmod  — 2026-11-04T00:00:00.000Z
   PASS  /gst-litigation-chennai has lastmod  — 2026-11-02T00:00:00.000Z
-  PASS  every URL is 200 and self-canonical  — 180/180
+  PASS  every URL is 200 and self-canonical  — 188/188
 
 90/90 checks passed

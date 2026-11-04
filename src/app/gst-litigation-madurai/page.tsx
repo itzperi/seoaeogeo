@@ -139,6 +139,11 @@ export default function Page() {
           answer:
             "No. Notices, replies and appeals are all on the GST and GSTAT portals, and documents are shared by email. We discuss drafts on video calls and attend hearings by video where the authority permits, or in person by arrangement. You can visit our Anna Nagar office by appointment if you prefer.",
         },
+        {
+          question: "How far back can the department go for a Madurai trader's old GST returns?",
+          answer:
+            "The limit depends on the section invoked and the financial year, and it is longer where fraud or suppression is alleged. Send us the notice and we check the section, the period and whether the notice and order are within time, since a notice issued late can be challenged on that ground alone.",
+        },
       ]}
       relatedSlugs={["gst-notice-reply-chennai", "goods-and-services-tax", "gst-return-filing-chennai"]}
       relatedPosts={["gst-appellate-tribunal-gstat-explained", "gst-show-cause-notice-first-48-hours", "itc-mismatch-notices"]}
@@ -212,6 +217,14 @@ export default function Page() {
         <Link href="/company-registration-madurai" className={LINK}>company registration in Madurai</Link>. To discuss a
         notice, <Link href="/contact" className={LINK}>contact us</Link>.
       </p>
+      <h2 className={H2}>What records protect a Madurai trader, granite dealer or produce commission agent?</h2>
+      <p className={P}>
+        Keep sales and purchase books that match returns, e-way bills and bank receipts, plus the paperwork specific to your trade.
+      </p>
+      <p className={P}>
+        Traders should hold stock registers and bank statements that agree with turnover, because notices often start from data mismatches. Granite and stone dealers should keep lease and royalty papers and transport records together, and agri-linked sellers should record whether goods were sold loose or packed and labelled. A monthly check of GSTR-1 against e-way bills catches most differences before the department does.
+      </p>
+
     </ServicePageTemplate>
   );
 }

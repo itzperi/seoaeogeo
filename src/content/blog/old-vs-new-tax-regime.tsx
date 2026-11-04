@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Salaried professionals and small business owners in Chennai ask this every year: old tax regime or new? The honest answer depends on your actual deductions.",
   date: "2026-09-19",
   excerpt:
-    "Every year around this time, salaried professionals and small business owners in Chennai ask the same question: should I stick with the old...",
+    "Every year around this time, salaried professionals and small business owners in Chennai ask the same question: should I stick with the old...",
+  summary:
+    "Which tax regime is better depends on your deductions. The new regime has lower slab rates but removes most deductions such as Section 80C, HRA and home loan interest on a self-occupied property. The old regime often wins with a home loan, insurance, PPF or ELSS and HRA, so compute your tax both ways.",
+  faqs: [
+    {
+      question: "Should I choose the old or new tax regime?",
+      answer:
+        "It depends entirely on your deductions, and running your actual numbers matters more than any rule of thumb. Compute your tax liability both ways using your actual income and deduction amounts. Someone with a home loan and full 80C investments often saves more under the old regime, while someone with few deductions usually saves more under the new one.",
+    },
+    {
+      question: "What deductions are lost under the new tax regime?",
+      answer:
+        "The new regime gives lower slab rates but takes away most of the deductions and exemptions the old regime allowed, including Section 80C investments, HRA exemption and the standard housing loan interest benefit on a self-occupied property. It is simpler to file and suits people with few investments or no home loan.",
+    },
+    {
+      question: "Can I switch between tax regimes every year?",
+      answer:
+        "Salaried individuals can switch between regimes every year when filing their income tax return. Those with business income face more restrictions on switching back and forth, which is worth knowing before you commit. Assuming last year's choice is still better is a common mistake, especially if your income or deductions changed.",
+    },
+  ],
 };
 
 export default function Body() {

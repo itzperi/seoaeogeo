@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely the amount you saved.",
   date: "2026-09-26",
   excerpt:
-    "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely small.",
+    "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely small.",
+  summary:
+    "Filing GST yourself looks cheaper, but the portal accepts whatever you enter and will not flag a wrong HSN code, ineligible input tax credit or a supplier mismatch. Small unnoticed monthly errors compound into notices, reversals and interest, which are unknown costs set against a known monthly filing fee.",
+  faqs: [
+    {
+      question: "Is it safe to file GST returns myself?",
+      answer:
+        "Filing is possible, since the portal walks you through it, but the risk lies in decisions made without context. GSTR-1 and GSTR-3B interfaces accept whatever numbers you input. They do not flag a wrong HSN classification, input tax credit claimed on an ineligible expense, or a supplier mismatch, so errors surface only when a notice arrives.",
+    },
+    {
+      question: "What mistakes happen in self-filed GST returns?",
+      answer:
+        "Typical errors include invoices classified under the wrong HSN code, Input Tax Credit claimed on ineligible expenses, and missed reconciliations. One error alone may be a minor correction, but twelve months of small unnoticed errors can accumulate into an ITC mismatch, a scrutiny notice or an audit that takes much longer to resolve.",
+    },
+    {
+      question: "Does DIY GST filing really save money?",
+      answer:
+        "Not necessarily. A professional fee is a known, fixed monthly cost, while a GST notice reply, an ITC reversal or interest on a delayed correction is unknown until it happens. Because these costs compound, they are rarely smaller than what was saved over the earlier months of filing without help.",
+    },
+  ],
 };
 
 export default function Body() {

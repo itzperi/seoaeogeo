@@ -26,6 +26,8 @@ export const meta: BlogPostMeta = {
         "It's typically instant to same-day, since it's a fully online, self-declaration-based registration through the Udyam portal, unlike the more document-intensive older MSME registration process.",
     },
   ],
+  summary:
+    "Udyam registration is free, mostly instant, and uses investment and turnover limits to classify a business as micro, small or medium, with revised limits in force from 1 April 2025. It brings delayed payment protection after 45 days, priority-sector lending, tender benefits and scheme access. Register on the Udyam portal with the proprietor's Aadhaar and the business PAN.",
 };
 
 export default function Body() {

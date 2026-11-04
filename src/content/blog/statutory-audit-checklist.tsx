@@ -25,7 +25,9 @@ export const meta: BlogPostMeta = {
       answer:
         "Statutory audit is mandatory for every company under the Companies Act. Tax audit under Section 44AB of the Income Tax Act applies only above prescribed turnover/receipt thresholds and focuses specifically on income-tax compliance, not overall financial statement accuracy.",
     },
-  ],
+  ],
+  summary:
+    "Most statutory audit delays come from documents nobody prepared in advance. Auditors work through core financial records, statutory and compliance documents such as GST and TDS returns, board minutes and registers, and transaction-level evidence on related parties, large transactions, loans and statutory dues. Year-round habits such as monthly bank reconciliation speed the audit.",
 };
 
 export default function Body() {

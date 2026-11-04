@@ -11,7 +11,7 @@ const LANGUAGES_TEXT =
     : LANGUAGES_SPOKEN.join("");
 
 export const metadata: Metadata = {
-  title: { absolute: "Chartered Accountant in Anna Nagar, Chennai | C S Rushil & Co." },
+  title: { absolute: "Chartered Accountant in Anna Nagar, Chennai | C S Rushil" },
   description:
     "CA firm in Anna Nagar, Chennai for company and LLP registration, GST and income tax. Visit Mon–Sat, 9:30 AM–6:30 PM; book first so the right CA is free.",
   alternates: { canonical: "/chartered-accountant-anna-nagar-chennai" },

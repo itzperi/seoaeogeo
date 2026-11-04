@@ -42,6 +42,8 @@ export const meta: BlogPostMeta = {
         "SPICe+ Part B can allot a Director Identification Number to up to three proposed directors who do not already hold one. Directors who already have a DIN simply enter it. Every subscriber and director still needs a valid Class 3 Digital Signature Certificate to sign the forms, so arrange DSCs first.",
     },
   ],
+  summary:
+    "SPICe+ is the MCA's single web form for incorporating a company. Part A reserves the name, and Part B carries the incorporation details with linked forms e-MoA, e-AoA and AGILE-PRO-S. One approval issues the CIN, PAN, TAN, EPFO and ESIC registrations and triggers the bank account request. The Central Registration Centre processes it for companies across Tamil Nadu.",
 };
 
 export default function Body() {

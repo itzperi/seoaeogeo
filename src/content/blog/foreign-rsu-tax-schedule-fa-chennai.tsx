@@ -36,6 +36,8 @@ export const meta: BlogPostMeta = {
         "Usually yes. A resident can claim foreign tax credit for tax withheld abroad, limited to the Indian tax on that income. The claim needs a statement in the prescribed form filed on or before the return due date, supported by the broker's tax statement showing the withholding.",
     },
   ],
+  summary:
+    "RSUs from a foreign parent are taxed twice for a Chennai employee. At vesting, the market value is a salary perquisite taxed at slab rates with TDS through payroll. On sale, the difference from the vest-date value is a capital gain, long-term at 12.5% after 24 months, otherwise at slab rates. Holdings are also reported every year as foreign assets.",
 };
 
 export default function Body() {

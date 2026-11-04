@@ -139,6 +139,11 @@ export default function Page() {
           answer:
             "Sometimes not. A first appeal needs 10% of the disputed tax upfront and months of follow-up. For a small demand, paying with interest, or using the reduced-penalty option within the notice period, can be cheaper. We assess the merits, the pre-deposit and the time cost before recommending an appeal.",
         },
+        {
+          question: "Can GST be demanded on scrap and dross generated at our foundry?",
+          answer:
+            "Scrap, sprues and dross sold by the unit are taxable supplies, so a department query often asks whether every sale was invoiced. The defence is a yield and scrap register showing melting input, casting output and scrap sold, matched to your sales invoices and returns.",
+        },
       ]}
       relatedSlugs={["gst-notice-reply-chennai", "goods-and-services-tax", "gst-return-filing-chennai"]}
       relatedPosts={["gst-appellate-tribunal-gstat-explained", "itc-mismatch-notices", "gst-show-cause-notice-first-48-hours", "lut-for-exporters"]}
@@ -218,6 +223,14 @@ export default function Page() {
         the district, see <Link href="/company-registration-coimbatore" className={LINK}>company registration in Coimbatore</Link>.
         To discuss a notice, <Link href="/contact" className={LINK}>contact us</Link>.
       </p>
+      <h2 className={H2}>What records should a Coimbatore pump or foundry unit keep to answer a GST audit?</h2>
+      <p className={P}>
+        Keep records that tie every input to an output: purchase invoices, stock registers, job work challans, melting and yield logs, scrap sales and dispatch papers.
+      </p>
+      <p className={P}>
+        An officer reconciling a pump or casting unit usually works backwards from GSTR-1, GSTR-3B and GSTR-2B to your books. Units that maintain a monthly reconciliation, a tooling register and an ITC-04 file are able to answer scrutiny queries in days rather than weeks. Textile machinery exporters should also hold shipping bills, e-BRC or FIRC and refund working papers together, because these are asked for as a set.
+      </p>
+
     </ServicePageTemplate>
   );
 }

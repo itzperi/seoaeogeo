@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
   date: "2026-09-19",
   excerpt:
-    "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
+    "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
+  summary:
+    "Freelancers and consultants providing services must register for GST once aggregate turnover in a financial year crosses twenty lakh rupees, counted across all clients. Out-of-state clients alone do not force registration below that limit. Most professional services attract eighteen percent GST, and exporters of services often register and file a Letter of Undertaking.",
+  faqs: [
+    {
+      question: "At what income do freelancers need to register for GST?",
+      answer:
+        "For services, which covers most freelance and consulting work, GST registration becomes mandatory once your aggregate turnover in a financial year crosses twenty lakh rupees. This is lower than the forty lakh threshold for businesses selling goods, and it is calculated on total receipts across all your work, not per client.",
+    },
+    {
+      question: "Do I need GST registration if my clients are in another state?",
+      answer:
+        "Not necessarily. For services, a government notification exempts providers from registering as long as their all-India aggregate turnover stays within twenty lakh rupees, so out-of-state clients alone do not force registration. A different trigger, such as selling goods to other states or reverse charge liability, can still require it, so check your setup.",
+    },
+    {
+      question: "What GST rate applies to freelance services?",
+      answer:
+        "Most professional and consulting services attract eighteen percent GST. Once registered, this must be charged in addition to your invoice value and reported through regular GST returns. It is worth discussing with clients before you cross the threshold, not after, so your pricing and invoices are ready.",
+    },
+    {
+      question: "Is the composition scheme good for freelancers?",
+      answer:
+        "Usually not. It is available to service providers under a separate notification with its own turnover cap, but it restricts interstate supply and claiming input credit. That often makes it a poor fit for freelancers who buy software subscriptions, hire subcontractors or work with clients outside Tamil Nadu.",
+    },
+  ],
 };
 
 export default function Body() {

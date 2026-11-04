@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Within 15 days of registration, the LLP must inform the Registrar of Firms with which the firm was registered, using Form 14. It must file the LLP agreement in Form 3 within 30 days of incorporation, and for 12 months its official correspondence must state that it was converted from the named firm.",
     },
   ],
+  summary:
+    "A partnership firm can convert to an LLP under section 55 of the LLP Act, 2008, but only if the LLP's partners are exactly the firm's partners and no one else. The application is made in Form 17 alongside FiLLiP, with partner consent, a chartered accountant certified statement of assets and liabilities, and creditor consents where relevant.",
 };
 
 export default function Body() {

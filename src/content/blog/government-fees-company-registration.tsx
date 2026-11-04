@@ -31,6 +31,8 @@ export const meta: BlogPostMeta = {
         "Not strictly. A DSC is issued by a licensed Certifying Authority under the Information Technology Act, and its price is set by the Certifying Authority or its agent rather than by the MCA. The cost varies with the validity period and token, so treat it as a necessary third-party cost and compare quotes.",
     },
   ],
+  summary:
+    "Government costs of company registration are the MCA SPICe+ filing fee, which is zero for authorised capital up to Rs. 15 lakh, the PAN and TAN charges collected through one consolidated challan, a separate name reservation fee if used, and state stamp duty. Digital Signature Certificates are market-priced. Professional fees are excluded from these statutory figures.",
 };
 
 export default function Body() {

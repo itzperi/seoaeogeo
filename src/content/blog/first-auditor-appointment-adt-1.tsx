@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "The MCA's ADT forms FAQ says that for a first auditor appointment, the start date of the period of accounts should be the date of incorporation and the end date should be the end of the financial year. For example, a company incorporated on 15 August 2025 would show 15/08/2025 to 31/03/2026.",
     },
-  ],
+  ],
+  summary:
+    "Under section 139(6), the board must appoint the first auditor within thirty days of registration. If it fails, members appoint within ninety days at an extraordinary general meeting. The first auditor serves until the first AGM. Filing ADT-1 is not strictly mandatory for the first auditor, but the MCA FAQ recommends it.",
 };
 
 export default function Body() {

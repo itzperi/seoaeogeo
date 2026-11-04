@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "Chennai real estate developers and agents need to track not just initial RERA registration but renewal deadlines and ongoing disclosure obligations.",
   date: "2026-09-19",
   excerpt:
-    "Real estate developers and agents in Chennai working on projects that fall under the Real Estate Regulatory Authority need to track not...",
+    "Real estate developers and agents in Chennai working on projects that fall under the Real Estate Regulatory Authority need to track not...",
+  summary:
+    "Real estate projects above the specified plot size or number of units, and agents dealing in them, need RERA registration before advertising, booking or selling. Project registration lasts for the declared completion timeline, so apply for extension before it expires. Developers must also keep a designated project bank account and update progress.",
+  faqs: [
+    {
+      question: "When is RERA registration required?",
+      answer:
+        "Any real estate project above the specified plot size or number of units, and any agent facilitating transactions in such projects, needs RERA registration before advertising, marketing, booking, selling or offering the project or units for sale. Selling even a single unit before registration is complete exposes the developer to penalties.",
+    },
+    {
+      question: "How long is a RERA registration valid?",
+      answer:
+        "RERA registration for a project is generally valid for the period declared as the project's completion timeline at the time of registration. If the project runs beyond that date, the developer must apply for an extension or renewal before the original validity expires, not after, since operating a lapsed project carries significant penalty exposure.",
+    },
+    {
+      question: "What ongoing obligations apply to RERA developers?",
+      answer:
+        "Developers must submit periodic updates on project progress, maintain a designated bank account where a specified percentage of funds collected from buyers is deposited and used only for that project's construction costs, and update the RERA website with any material changes to the project.",
+    },
+    {
+      question: "Do real estate agents need separate RERA registration?",
+      answer:
+        "Yes. Agents need their own RERA registration, renewed periodically, and may deal only in projects that are themselves properly RERA registered. Facilitating a transaction in an unregistered project as a registered agent creates liability for the agent as well as the developer.",
+    },
+  ],
 };
 
 export default function Body() {

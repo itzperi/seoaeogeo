@@ -137,7 +137,7 @@ export default function Page() {
         { question: "What FEMA filings follow a foreign investment?", href: "/fema-rbi-compliance" },
         { question: "What does annual compliance for an Indian subsidiary involve?", href: "/india-subsidiary-compliance-cfo" },
       ]}
-      relatedSlugs={["india-subsidiary-compliance-cfo", "fema-rbi-compliance", "transfer-pricing-audit"]}
+      relatedSlugs={["india-subsidiary-compliance-cfo", "fema-rbi-compliance", "transfer-pricing-audit", "nri-tax-services-singapore"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">What documents does a Singapore parent need, and how are they legalised?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

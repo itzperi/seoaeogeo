@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "No. The MCA now describes RUN (Reserve Unique Name) as the service for changing the name of an existing company. Names for new companies are reserved through SPICe+ Part A, either as a standalone name application or together with the full incorporation filing in Part B.",
     },
-  ],
+  ],
+  summary:
+    "Company names are reserved in SPICe+ Part A, where up to two names can be proposed. Names are rejected when identical or phonetically similar to an existing company or LLP, when they include another party's registered trademark, or when they use restricted words needing government approval. Choose two options that pass these tests under Section 4 and the incorporation rules.",
 };
 
 export default function Body() {

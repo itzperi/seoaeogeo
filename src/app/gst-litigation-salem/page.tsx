@@ -147,6 +147,11 @@ export default function Page() {
           answer:
             "No. Detention documents can be photographed and sent immediately, and replies and appeals are filed online. We discuss drafts on video calls and attend hearings by video where the authority permits, or in person by arrangement. You can visit our Anna Nagar office by appointment if you prefer.",
         },
+        {
+          question: "What should a lorry operator do on receiving a GST notice for an old year?",
+          answer:
+            "Read the section invoked, the period and the reply deadline, then check whether your activity is hiring out vehicles or running a goods transport agency. Collect consignment notes, hire agreements, bank receipts and returns, and send the notice to us before the deadline passes.",
+        },
       ]}
       relatedSlugs={["gst-notice-reply-chennai", "goods-and-services-tax", "gst-return-filing-chennai"]}
       relatedPosts={["eway-bill-detention-section-129-appeal", "gst-show-cause-notice-first-48-hours", "itc-mismatch-notices", "gst-appellate-tribunal-gstat-explained"]}
@@ -212,6 +217,14 @@ export default function Page() {
         <Link href="/company-registration-salem" className={LINK}>company registration in Salem</Link>. To discuss a detention
         or notice, <Link href="/contact" className={LINK}>contact us</Link>.
       </p>
+      <h2 className={H2}>What records should a Salem steel, sago or transport business keep ready?</h2>
+      <p className={P}>
+        Keep documents that prove movement and receipt of goods: e-way bills, weighbridge slips, consignment notes and bank payments.
+      </p>
+      <p className={P}>
+        Steel and scrap traders in Salem should hold weighbridge slips, transport details and stock registers for every purchase from a supplier who may later be questioned. Sago and starch units should hold product specifications and packing details, since the rate can depend on how the goods are sold. Transporters should keep consignment notes and hire agreements apart, because the line between a transport agency and a vehicle owner turns on them.
+      </p>
+
     </ServicePageTemplate>
   );
 }

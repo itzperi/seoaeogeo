@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "Section 64(2) of the Companies Act, 2013 provides a penalty of five hundred rupees for each day the default continues, subject to a maximum of five lakh rupees for the company and one lakh rupees for each officer in default. Additional filing fees for late filing also apply under the fee rules.",
     },
-  ],
+  ],
+  summary:
+    "Authorised capital is the maximum share capital a company can issue, while paid-up capital is the amount shareholders have actually paid. There is no minimum capital for a private company today. Authorised capital drives MCA filing fees and Tamil Nadu stamp duty on the Articles, but paid-up capital does not affect these incorporation charges.",
 };
 
 export default function Body() {

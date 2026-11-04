@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "If your Chennai business exports services or goods, a Letter of Undertaking (LUT) is one of the most valuable and most overlooked GST filings you can make.",
   date: "2026-09-19",
   excerpt:
-    "If your Chennai business sells services or goods to clients outside India, a Letter of Undertaking (LUT) is one of the most valuable and...",
+    "If your Chennai business sells services or goods to clients outside India, a Letter of Undertaking (LUT) is one of the most valuable and...",
+  summary:
+    "A Letter of Undertaking lets a registered GST exporter ship goods or services without paying IGST, instead of paying upfront and claiming a refund. It is filed online in Form GST RFD 11, valid for one financial year, and must be renewed before the first export invoice of each year.",
+  faqs: [
+    {
+      question: "What is an LUT under GST?",
+      answer:
+        "A Letter of Undertaking lets you export goods or services without paying IGST, provided you have filed a valid LUT for the financial year. Exports are a taxable supply at a zero rate, so without an LUT you would pay IGST upfront and then claim a refund later, tying up cash.",
+    },
+    {
+      question: "How is an LUT filed and how long is it valid?",
+      answer:
+        "An LUT is filed online through the GST portal using Form GST RFD 11 and is valid for one financial year at a time. It must be renewed every year before your first export invoice of that year. The form is short but needs details of two independent witnesses.",
+    },
+    {
+      question: "Who benefits from filing an LUT?",
+      answer:
+        "IT consultants and freelancers serving overseas clients, garment and textile exporters, and any Chennai business invoicing in foreign currency benefit directly. Exporters need GST registration in place to file an LUT at all. Without one, you either pay tax upfront that you should not have to, or file repeated refund claims.",
+    },
+    {
+      question: "What happens if my LUT lapses?",
+      answer:
+        "If your LUT lapses and you keep invoicing exports without one, you should technically be charging and paying IGST on those invoices. Most businesses discover this only when preparing the annual return, at which point interest may apply on the delayed tax payment. A calendar reminder at the start of each financial year avoids it.",
+    },
+  ],
 };
 
 export default function Body() {

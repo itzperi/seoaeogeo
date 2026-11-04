@@ -41,6 +41,8 @@ export const meta: BlogPostMeta = {
         "Often yes. If the property given for development was a residential house, the house reinvestment exemption may apply; for a vacant plot, the exemption for investing net consideration in a house may apply. Whether flats received from the developer qualify, and from which date the time limits run, is fact-specific.",
     },
   ],
+  summary:
+    "For an individual or HUF who signs a registered joint development agreement, capital gains are taxed in the tax year the completion certificate is issued, not the year of signing, under section 45(5A) of the 1961 Act. Sale value is the stamp duty value of the owner's share plus any cash received. Transferring your share before completion loses this deferral.",
 };
 
 export default function Body() {

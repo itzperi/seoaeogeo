@@ -61,7 +61,7 @@ export default function EnquiryCard({ service, placement }: { service?: string; 
           rel="noopener noreferrer"
           className="font-medium text-carbon underline underline-offset-2"
         >
-          Book a video call
+          Book a 15-minute consultation
         </TrackedAnchor>
       </div>
     </div>

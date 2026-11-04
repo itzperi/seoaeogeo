@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
   date: "2026-09-26",
   excerpt:
-    "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
+    "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
+  summary:
+    "A profitable business can still run out of cash because profit is recorded when a sale is earned while cash arrives when the customer pays, and inventory ties up money the profit statement does not show. A rolling cash flow forecast, kept separate from profit, catches shortfalls early.",
+  faqs: [
+    {
+      question: "Why can a profitable business run out of cash?",
+      answer:
+        "Profit is recorded when it is earned, but cash arrives when it is actually paid. A sale might not turn into cash for 60 or 90 days on credit terms, while rent, salaries and supplier payments fall due on their own schedule. Fast growth can make this worse as receivables grow faster than cash coming in.",
+    },
+    {
+      question: "How does inventory affect cash but not profit?",
+      answer:
+        "Money spent on inventory sits on the balance sheet, not as an expense on the profit and loss statement, until the goods are sold. A business building up stock ahead of a busy season can look profitable on paper while its actual cash reserves quietly drain to pay for goods that have not yet generated revenue.",
+    },
+    {
+      question: "How can a business avoid a cash shortfall?",
+      answer:
+        "Forecast cash separately from profit. A rolling cash flow forecast tracks when money actually arrives and leaves, not just what is recorded as earned or spent. It catches a coming shortfall weeks or months early, giving time to adjust payment terms, chase overdue receivables or arrange short-term financing before it becomes urgent.",
+    },
+  ],
 };
 
 export default function Body() {

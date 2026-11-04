@@ -8,7 +8,31 @@ export const meta: BlogPostMeta = {
     "An ITC mismatch notice is one of the most common GST notices Chennai businesses receive — usually because GSTR-3B and a supplier's GSTR-1 don't match.",
   date: "2026-09-19",
   excerpt:
-    "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to...",
+    "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to...",
+  summary:
+    "An ITC mismatch notice usually arises because the credit you claimed in GSTR 3B does not match what suppliers reported in GSTR 1. Compare your GSTR 2B with your purchase register line by line, contact the supplier, keep written proof, and reply within the given window rather than reversing everything immediately.",
+  faqs: [
+    {
+      question: "Why did I get an ITC mismatch notice?",
+      answer:
+        "Your input tax credit depends on your supplier filing correctly and on time. If a supplier delays their GSTR 1, files wrong figures or stops filing, the credit you claimed will not appear in your GSTR 2B, and the system flags the gap automatically. You may have done nothing wrong, yet you receive the notice.",
+    },
+    {
+      question: "How should I respond to an ITC mismatch notice?",
+      answer:
+        "Do not immediately reverse the full amount. Pull your GSTR 2B for the exact period and compare it line by line against your purchase register to identify which invoices cause the gap. Where a supplier has not yet filed, explain with proof of payment and the original invoice. Genuine errors on your side need reversal with interest.",
+    },
+    {
+      question: "What are the most common causes of an ITC mismatch?",
+      answer:
+        "In order of frequency: the supplier has not yet filed GSTR 1 for the period, the supplier filed the invoice under the wrong GSTIN, the supplier entered the invoice value or tax wrongly, you claimed credit on an invoice later amended or cancelled, or there is a genuine duplicate claim on your own books.",
+    },
+    {
+      question: "What happens if I ignore an ITC mismatch notice?",
+      answer:
+        "An unanswered ITC mismatch notice typically escalates into a formal show cause notice with interest and penalty proposed, and potentially into GST litigation. Responding within the given window, even with a partial explanation and a plan for the remainder, is always better than silence.",
+    },
+  ],
 };
 
 export default function Body() {

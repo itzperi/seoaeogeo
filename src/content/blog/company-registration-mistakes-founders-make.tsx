@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "Yes. A company's financial statements in AOC-4 and annual return in MGT-7 or MGT-7A are due every year whether or not it trades. Late filing attracts an additional fee of ₹100 per day per form, and three continuous years of default disqualifies the directors. A company with no activity can instead apply for dormant status or strike-off.",
     },
-  ],
+  ],
+  summary:
+    "Ten recurring mistakes cause trouble in company registration: a vague or too narrow object clause, authorised capital chosen without reason, a 50:50 split with no deadlock plan, unchecked director eligibility, and a missed INC-20A declaration within 180 days. Most problems come from hurried choices before filing and missed steps afterwards.",
 };
 
 export default function Body() {

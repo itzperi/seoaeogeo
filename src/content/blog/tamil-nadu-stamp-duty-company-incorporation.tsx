@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "Yes. MCA guidance lists form SH-7, used to notify an alteration of share capital, among the filings on which stamp duty is paid electronically through MCA21. For a Tamil Nadu company, the system computes the duty on the increase based on the state schedule, and the SRN is processed only after both the filing fee and stamp duty are paid.",
     },
-  ],
+  ],
+  summary:
+    "Stamp duty on a company's MoA and AoA depends on the state of the registered office. In Tamil Nadu after the 2023 amendment, the MoA entry is a fixed amount while the Articles are charged per ten lakh rupees of authorised capital, subject to a maximum. SPICe+ calculates and collects it on a separate challan.",
 };
 
 export default function Body() {

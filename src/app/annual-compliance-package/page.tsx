@@ -87,7 +87,7 @@ export default function Page() {
       relatedSlugs={["roc-compliances", "statutory-audit-chennai", "bookkeeping-services-chennai", "private-limited-company-incorporation-chennai"]}
       relatedPosts={["post-incorporation-compliance-checklist", "annual-roc-filing-calendar", "llp-annual-filing-form8-form11", "statutory-audit-checklist", "common-compliance-mistakes-chennai-startups"]}
     >
-      <h2 className="mt-14 text-2xl text-obsidian">Annual compliance calendar for a 31 March year end</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">What is the annual compliance calendar for a 31 March year end?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Company dates for AOC-4 and MGT-7 assume the AGM is held on 30 September, the last permitted date; an earlier AGM
         brings them forward. Government extensions, where notified, are applied as they come.
@@ -113,7 +113,7 @@ export default function Page() {
         </table>
       </div>
 
-      <h2 className="mt-14 text-2xl text-obsidian">The individual services behind the package</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">Which individual services make up the package?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Each part of the package is also available on its own. See our{" "}
         <Link href="/roc-compliances" className={linkClass}>

@@ -139,6 +139,11 @@ export default function Page() {
           answer:
             "No. Refund claims, replies and appeals are filed on the GST and GSTAT portals, and documents are shared by email. We discuss drafts on video calls and attend hearings by video where the authority permits, or in person by arrangement. You can visit our Anna Nagar office by appointment if you prefer.",
         },
+        {
+          question: "What documents does a refund officer usually ask knitwear exporters for?",
+          answer:
+            "Expect to be asked for export invoices, shipping bills, bank realisation proof, your GSTR-1, GSTR-3B and GSTR-2B, and the working that supports the refund claim. Keeping these reconciled each month makes replies to a deficiency or show-cause notice much faster.",
+        },
       ]}
       relatedSlugs={["gst-notice-reply-chennai", "goods-and-services-tax", "iec-registration-chennai"]}
       relatedPosts={["tiruppur-export-refund-rejection", "lut-for-exporters", "itc-mismatch-notices", "gst-appellate-tribunal-gstat-explained"]}
@@ -211,6 +216,14 @@ export default function Page() {
         new entity, <Link href="/company-registration-tiruppur" className={LINK}>company registration in Tiruppur</Link>. To
         discuss a refund or notice, <Link href="/contact" className={LINK}>contact us</Link>.
       </p>
+      <h2 className={H2}>How can a Tiruppur exporter keep refund files ready for a notice?</h2>
+      <p className={P}>
+        Keep one refund file per month holding invoices, shipping bills, realisation proof, returns and the refund working.
+      </p>
+      <p className={P}>
+        Knitwear exporters often file refund claims every month or quarter, so a consistent monthly file shortens the reply to a deficiency memo or show-cause notice. Include job work challans for knitting, dyeing and printing units in the chain, since officers sometimes test whether inputs sent for processing came back or were exported. Tracking the status of each shipping bill against the invoice avoids the most common mismatch.
+      </p>
+
     </ServicePageTemplate>
   );
 }

@@ -41,6 +41,8 @@ export const meta: BlogPostMeta = {
         "Generally the gain on a foreign asset sold while RNOR, with the proceeds received abroad, is not taxed in India because it neither accrues nor is received in India. The country where the asset sits may still tax it. Bringing the money to India later does not by itself make it taxable here.",
     },
   ],
+  summary:
+    "A returning NRI is RNOR, resident but not ordinarily resident, if resident under the day-count tests but non-resident in at least nine of the ten preceding years, or present in India for 729 days or less over the seven preceding years. During RNOR, most foreign income earned and received abroad stays outside Indian tax.",
 };
 
 export default function Body() {

@@ -30,7 +30,9 @@ export const meta: BlogPostMeta = {
       answer:
         "Yes. Section 446B provides that if a small company, one person company, producer company or start-up company defaults in specified provisions, including filing of financial statements and annual returns, the penalty is not more than half of the penalty otherwise specified, subject to maximum limits for the company and its officers. Additional filing fees still apply in full.",
     },
-  ],
+  ],
+  summary:
+    "Missing a private limited company's annual filings costs money in layers: a fee of 100 rupees per day for each late form with no upper limit, then penalties on the company and officers for defaults such as not filing financial statements, the annual return or holding the AGM, and finally consequences for directors personally.",
 };
 
 export default function Body() {

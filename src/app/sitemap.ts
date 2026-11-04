@@ -23,6 +23,10 @@ const STATIC_PATHS = [
   { path: "videos", priority: 0.5 },
   { path: "faq", priority: 0.7 },
   { path: "how-we-work", priority: 0.6 },
+  { path: "tools", priority: 0.6 },
+  { path: "tools/nri-residential-status-calculator", priority: 0.6 },
+  { path: "tools/company-registration-government-fee-calculator", priority: 0.6 },
+  { path: "tools/gst-appeal-deadline-pre-deposit-calculator", priority: 0.6 },
 ];
 
 // Re-validate daily so scheduled posts appear on their publish date.

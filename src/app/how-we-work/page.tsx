@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { ADDRESS_FULL, BUSINESS_HOURS, LANGUAGES_SPOKEN } from "@/lib/site";
+import { ADDRESS_FULL, BUSINESS_HOURS, FIRM_REGISTRATION_NO, FOUNDER_NAME, ICAI_MEMBERSHIP_NO, LANGUAGES_SPOKEN } from "@/lib/site";
 
 // Engagement process for high-ticket and cross-border clients (growth plan
 // 90, N1). Linked from every flagship page via HighTicketSections. Holds no
@@ -74,6 +74,14 @@ export default function HowWeWorkPage() {
         h1="How We Work With Clients"
         subhead="From first message to engagement letter: what happens, who does it, and how scope and fees are agreed before any work starts."
         service="A first consultation"
+        lead={
+          <>
+            Every new client starts with a <strong>15-minute consultation</strong> with a chartered accountant, followed by a
+            conflict and independence check, a scoping call and a <strong>written engagement letter</strong> that sets out
+            the scope, responsibilities and fees. Only then does onboarding begin. We do not publish price lists, in line
+            with the rules for chartered accountants.
+          </>
+        }
       />
 
       <section className="bg-paper py-16">
@@ -82,6 +90,13 @@ export default function HowWeWorkPage() {
           <p className="mt-4 leading-relaxed text-slate">
             Every engagement follows the same seven steps, so you know what is agreed in writing before work begins.
           </p>
+          {(ICAI_MEMBERSHIP_NO || FIRM_REGISTRATION_NO) && (
+            <p className="mt-4 rounded-cards border border-ash bg-paper p-4 text-sm text-obsidian">
+              {FOUNDER_NAME}
+              {ICAI_MEMBERSHIP_NO && <>, ICAI membership no. {ICAI_MEMBERSHIP_NO}</>}
+              {FIRM_REGISTRATION_NO && <> · C S Rushil &amp; Co., ICAI firm registration no. {FIRM_REGISTRATION_NO}</>}
+            </p>
+          )}
           <div className="mt-6 overflow-x-auto rounded-cards border border-ash">
             <table className="w-full min-w-[600px] border-collapse text-sm">
               <caption className="sr-only">Steps from first contact to ongoing work</caption>
@@ -103,6 +118,21 @@ export default function HowWeWorkPage() {
               </tbody>
             </table>
           </div>
+
+          <h2 className="mt-14 text-2xl text-obsidian">Which services do clients usually start with?</h2>
+          <p className="mt-4 leading-relaxed text-slate">
+            Most first engagements fall into one of a few services. Founders usually start with{" "}
+            <Link href="/company-registration-chennai" className={LINK}>company registration in Chennai</Link> or go straight to{" "}
+            <Link href="/private-limited-company-incorporation-chennai" className={LINK}>Private Limited Company registration</Link>.
+            Businesses facing the tax department come to us for a{" "}
+            <Link href="/gst-notice-reply-chennai" className={LINK}>GST notice reply</Link>,{" "}
+            <Link href="/gst-litigation-chennai" className={LINK}>GST litigation and appeals</Link> or an{" "}
+            <Link href="/income-tax-notice-reply-chennai" className={LINK}>income tax notice reply</Link>. Growing companies
+            add a <Link href="/virtual-cfo-services" className={LINK}>virtual CFO</Link> and a{" "}
+            <Link href="/statutory-audit-chennai" className={LINK}>statutory audit</Link>, individuals need{" "}
+            <Link href="/income-tax-return-filing-chennai" className={LINK}>income tax return filing</Link>, and foreign-owned
+            companies need <Link href="/fema-rbi-compliance" className={LINK}>FEMA and RBI compliance</Link>.
+          </p>
 
           <h2 className="mt-14 text-2xl text-obsidian">How are fees agreed?</h2>
           <p className="mt-4 leading-relaxed text-slate">

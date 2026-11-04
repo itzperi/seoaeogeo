@@ -8,7 +8,26 @@ export const meta: BlogPostMeta = {
     "Paying a personal bill from the business account feels harmless in the moment. It's the single habit that creates the most avoidable tax and audit pain.",
   date: "2026-09-26",
   excerpt:
-    "Paying a personal bill from the business account feels harmless. It's the single habit that creates the most avoidable tax and audit pain.",
+    "Paying a personal bill from the business account feels harmless. It's the single habit that creates the most avoidable tax and audit pain.",
+  summary:
+    "Running personal expenses through the business account or books undermines every other deduction claimed, distorts real profitability and slows audits, because the auditor must investigate unexplained withdrawals. The fix is a habit: draw a genuine salary or owner's drawing at set intervals and pay personal expenses from that, never directly from the business.",
+  faqs: [
+    {
+      question: "Why should business and personal expenses be kept separate?",
+      answer:
+        "Every expense claimed as a business deduction must genuinely be a business expense under the Income Tax Act. A personal expense run through the business books, even a small one, undermines the legitimacy of every other deduction on that return if questioned. It also distorts your real profitability, which matters for loans and investors.",
+    },
+    {
+      question: "How do personal expenses in business books affect an audit?",
+      answer:
+        "During a statutory or tax audit, unexplained withdrawals or personal-looking expenses force the auditor to investigate and document them. That slows the audit and can trigger deeper scrutiny of other transactions that would otherwise have gone unquestioned. What started as convenience can become the reason an audit takes weeks instead of days.",
+    },
+    {
+      question: "What is the simplest way to stop mixing personal and business money?",
+      answer:
+        "Draw a genuine salary or owner's drawing from the business at a set interval, and pay personal expenses from that, never directly from the business account. This one habit change eliminates most of the mixing problem without requiring any new software or process, and keeps the books clean for filing and audit.",
+    },
+  ],
 };
 
 export default function Body() {

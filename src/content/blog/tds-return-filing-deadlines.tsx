@@ -26,6 +26,8 @@ export const meta: BlogPostMeta = {
         "If you have a valid TAN but deducted no tax in a quarter, you can file a declaration for non-filing on the TRACES portal rather than a nil return, though requirements can vary — check current guidance for your specific deductor category.",
     },
   ],
+  summary:
+    "TDS returns are due quarterly: 31 July, 31 October, 31 January and 31 May for April to March. Late filing brings a per-day fee under section 234E capped at the TDS amount, a discretionary penalty under section 271H, and interest on late deposit under section 201(1A). Reconcile challans and verify PANs before filing.",
 };
 
 export default function Body() {

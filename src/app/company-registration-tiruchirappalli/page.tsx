@@ -93,6 +93,16 @@ export default function Page() {
           answer:
             "Yes. Any premises in Tiruchirappalli district that you own or rent, whether a workshop in an industrial area, an office or your home, can be the registered office. You need a recent utility bill and, for rented premises, the rent agreement and the owner's no-objection letter. The office can be changed later with an ROC filing.",
         },
+        {
+          question: "Can a new Trichy company use my old proprietorship's experience for tenders?",
+          answer:
+            "It depends on the tender conditions. Some buyers accept the track record of a predecessor business if the transfer is documented, while others ask for the bidding entity's own completed contracts. Read the eligibility clause before you decide on the timing of the move, and ask us if it is unclear.",
+        },
+        {
+          question: "Does a Trichy works contractor need GST registration straight after incorporation?",
+          answer:
+            "GST registration becomes compulsory once turnover crosses the applicable threshold, or earlier for inter-state supplies and certain other cases. In practice, principal contractors and government departments usually want a GSTIN before onboarding or releasing payments, so most contracting companies register at the start.",
+        },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
       relatedPosts={["private-limited-vs-llp-chennai-startups", "msme-udyam-registration-checklist", "spice-plus-incorporation-explained", "annual-roc-filing-calendar"]}
@@ -130,6 +140,14 @@ export default function Page() {
         </Link>
         .
       </p>
+      <h2 className="mt-14 text-2xl text-obsidian">How should a Trichy works contractor or engineering ancillary plan its company?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        A works contractor should plan the company around tender eligibility, because net worth, turnover and past experience decide which bids it can enter.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Tenders from large buyers and public bodies commonly ask for audited financials, a net worth statement and completed work certificates. A brand-new company has no filed accounts yet, which is why the timing of incorporation relative to your next big bid matters. Engineering ancillaries that supply a single large buyer should also keep their GST, Udyam and bank details consistent across all buyer registrations, since a mismatch in names or PAN holds up payments. For erection and service contractors, the choice between a company and an LLP often turns on whether performance guarantees and bank limits are expected.
+      </p>
+
     </ServicePageTemplate>
   );
 }

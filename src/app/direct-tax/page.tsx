@@ -98,7 +98,7 @@ export default function Page() {
       relatedSlugs={["income-tax-return-filing-chennai", "income-tax-notice-reply-chennai", "tax-audit-chennai"]}
       relatedPosts={["old-vs-new-tax-regime", "advance-tax-deadlines", "why-income-tax-notices-issued", "capital-gains-tax-property-sale", "tds-return-filing-deadlines"]}
     >
-      <h2 className="mt-14 text-2xl text-obsidian">Our income tax services, one by one</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">What does each of our income tax services cover?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Direct tax covers the taxes you pay directly to the government on income, chiefly income tax and the tax deducted
         at source on payments you make or receive. Each service below has its own page with due dates, documents and
@@ -118,7 +118,7 @@ export default function Page() {
         ))}
       </div>
 
-      <h2 className="mt-14 text-2xl text-obsidian">Key income tax dates in a year</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">What are the key income tax dates in a year?</h2>
       <div className="mt-6 max-w-3xl overflow-x-auto rounded-cards border border-ash">
         <table className="w-full text-left text-sm">
           <thead className="bg-carbon text-white">
@@ -138,7 +138,7 @@ export default function Page() {
         </table>
       </div>
 
-      <h2 className="mt-14 text-2xl text-obsidian">Working across the 1961 and 2025 Acts</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">How do we work across the 1961 and 2025 Income-tax Acts?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         For the next few years, most taxpayers will deal with both laws at once. A return for FY 2025-26 filed in 2026 is
         governed by the 1961 Act, while TDS deducted from April 2026 is reported under the new Act in new forms. A

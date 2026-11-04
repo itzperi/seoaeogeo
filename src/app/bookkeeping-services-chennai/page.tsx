@@ -39,6 +39,17 @@ export default function Page() {
         { name: "Bookkeeping for NRIs & Family Offices", text: "Rental income, capital gains, and investment tracking across India and abroad." },
         { name: "Accounts Clean-up & Backlog Bookkeeping", text: "Fixing books that have fallen behind, ahead of an audit, funding round, or sale — handled with the urgency these situations need." },
       ]}
+      howTo={{
+        heading: "How do we set up and run your bookkeeping each month?",
+        steps: [
+          { name: "Review your current books", text: "We look at your accounting software (Tally Prime, Zoho Books, QuickBooks or Xero), the last closed month and any backlog, and agree what needs cleaning up first." },
+          { name: "Agree the chart of accounts and cut-off", text: "We fix the ledger structure, cost centres if you need them, and the monthly date by which bills, invoices and bank statements reach us." },
+          { name: "Set up document sharing", text: "Sales invoices, purchase bills, expense claims and bank statements are shared in the way agreed in the engagement letter." },
+          { name: "Record and reconcile every month", text: "We post the month's transactions, reconcile bank accounts and receivables and payables, and flag missing documents." },
+          { name: "Hand over GST and TDS data", text: "The reconciled books feed your GST returns and TDS deposits, so filings match the ledgers." },
+          { name: "Deliver monthly reports and year-end books", text: "You receive a monthly summary of profit, cash and dues, and at year end the books are closed ready for audit and the income tax return." },
+        ],
+      }}
       faqs={[
         { question: "Do I need to switch accounting software to work with you?", answer: "No — we work on whatever platform you already use, whether that's Zoho Books, Tally Prime, QuickBooks, or Xero. If you're not on any of these yet, we can help you choose and migrate, but it's never a requirement to start." },
         { question: "How quickly can you clean up backlog bookkeeping before an audit?", answer: "A few months of backlog with clean source documents can often be caught up in one to two weeks; a full year with disorganised records takes longer. The timeline depends on how far behind the books are and how organised the underlying invoices and bank statements are, and we'll give you a realistic estimate after a first look." },
