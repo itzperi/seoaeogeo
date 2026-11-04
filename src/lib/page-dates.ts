@@ -65,6 +65,7 @@ export const PAGE_DATES: Record<string, string> = {
   "/gst-return-filing-for-manufacturers": "2026-11-04",
   "/gst-return-filing-for-restaurants": "2026-10-16",
   "/gst-return-filing-for-startups": "2026-10-16",
+  "/how-we-work": "2026-11-04",
   "/iec-registration-chennai": "2026-10-14",
   "/income-tax-assessment-appeals-chennai": "2026-10-14",
   "/income-tax-consultant-alwarpet-chennai": "2026-10-13",
@@ -116,5 +117,5 @@ export const PAGE_DATES: Record<string, string> = {
   "/transfer-pricing-audit": "2026-10-16",
   "/trust": "2026-10-15",
   "/videos": "2026-10-15",
-  "/virtual-cfo-services": "2026-11-02",
+  "/virtual-cfo-services": "2026-11-04",
 };
