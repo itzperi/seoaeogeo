@@ -87,3 +87,8 @@ Plan 22 notes that `/gst-litigation-chennai` (from the Nov 2026 overhaul) still 
 
 ## Sign-off load
 Every plan has its own verify register (section 13.3 or Appendix A). Many items repeat across plans (s.149(3), ITR/GST due dates, 2025-Act section mapping, ICAI on "free"). CA Rushil C S can sign each repeated item once, then tick it in every register.
+
+## Plan 27 (NRI tax), added 4 Nov 2026
+- NRI income tax notices belong to plan 25 at `/income-tax-notice-reply-for-nris`. Plan 27 no longer proposes its own post (`/blog/income-tax-notice-nri-abroad`) and links to plan 25's page instead.
+- New country pages `/nri-tax-services-singapore` and `/nri-tax-services-canada` must pass the same 60% unique-copy gate as the existing UAE, UK and USA pages. Australia and Malaysia stay deferred until Search Console shows demand.
+- Live-page risk to fix first: the UAE page FAQ about salary credited to an Indian account (plan 27, L7). It also omits the 60 + 365 day residency test (L1).
