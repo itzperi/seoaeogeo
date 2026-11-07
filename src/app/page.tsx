@@ -66,7 +66,7 @@ const HOME_FAQS = [
   {
     question: "How do I find a chartered accountant near me in Chennai for company registration?",
     answer:
-      "C S Rushil & Co. is a Chennai-based chartered accountancy firm in Anna Nagar led by CA Rushil C S (Certified FAFD, Start-up Mentor), handling private limited company incorporation, GST, audit, and ROC compliance for businesses across Chennai — Anna Nagar, T. Nagar, Vadapalani, Guindy, OMR, and beyond.",
+      "C S Rushil & Co. is a Chennai-based chartered accountancy firm in Anna Nagar led by CA Rushil C S (Certified FAFD, Start-up Mentor), handling private limited company incorporation, GST, audit, and ROC compliance for businesses across Chennai — Anna Nagar, T. Nagar, Nungambakkam, Guindy, OMR, and beyond. Our only office is in Anna Nagar; clients elsewhere are served online or by appointment at that office.",
   },
   {
     question: "Is there a chartered accountant near me in Anna Nagar, Chennai?",

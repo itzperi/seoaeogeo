@@ -18,6 +18,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "PerplexityBot", allow: "/" },
       { userAgent: "Perplexity-User", allow: "/" },
       { userAgent: "ClaudeBot", allow: "/" },
+      { userAgent: "Claude-SearchBot", allow: "/" },
       { userAgent: "Claude-User", allow: "/" },
       { userAgent: "anthropic-ai", allow: "/" },
       { userAgent: "Google-Extended", allow: "/" },
