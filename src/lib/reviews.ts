@@ -7,8 +7,15 @@
 // - No Review/AggregateRating schema: Google ignores self-hosted review
 //   markup for LocalBusiness, and ICAI discourages self-promotional ratings.
 // Set SHOW_GOOGLE_REVIEWS to false to hide every review block at once.
+//
+// OFF since 8 Nov 2026: the ICAI Code of Ethics 2026 (Vol I, cl. 3.1.3(E))
+// says a member's write-up "should not contain testimonials or endorsements",
+// and the ICAI website advisory of 14 Oct 2020 lists "testimonial with client
+// name" as not permitted (item 21). Named review quotes on the site fall under
+// both. Turn this back on only after CA Rushil C S confirms in writing that the
+// format is permitted. The "Review us on Google" / profile links can stay.
 
-export const SHOW_GOOGLE_REVIEWS = true;
+export const SHOW_GOOGLE_REVIEWS = false;
 
 // Overall rating and total count from the firm's Google Business Profile.
 // Fill these from the profile itself (never estimate). While both are null the

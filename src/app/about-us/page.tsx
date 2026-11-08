@@ -44,11 +44,15 @@ export const metadata: Metadata = {
   alternates: { canonical: "/about-us" },
 };
 
+// Factual description of how engagements run. ICAI's website advisory
+// (14 Oct 2020, item 27) does not permit a "why choose us" feature, and the
+// Code of Ethics bars exaggerated or comparative claims, so this states process
+// only — no superlatives, no comparison with other firms.
 const VALUES = [
-  { title: "Specialist Financial Guidance", text: "Deep, current expertise across audit, tax, and compliance — not generic advice." },
-  { title: "Tailored, Client-Centric Solutions", text: "Every engagement is scoped to your business stage, sector, and risk profile." },
-  { title: "Support At Every Stage", text: "From first-time incorporation to enterprise-scale audits, we scale with you." },
-  { title: "Commitment To Clarity & Trust", text: "Transparent fees, plain-language explanations, and ethical practice in every engagement." },
+  { title: "Scoped in writing", text: "Each engagement starts with a scoping call and a written engagement letter that lists what is and is not included." },
+  { title: "Explained in plain language", text: "Filings, notices and reports are explained in English, Tamil or Hindi before anything is signed or submitted." },
+  { title: "Independence checked", text: "A conflict and independence check runs before we accept work. The firm does not audit a company whose books it keeps." },
+  { title: "Fees agreed first", text: "Professional fees are agreed in the engagement letter before work begins. Government fees are shown separately." },
 ];
 
 export default function AboutPage() {
@@ -112,8 +116,15 @@ export default function AboutPage() {
           </div>
 
           <h2 className="mt-16 text-2xl text-obsidian">
-            Why choose us
+            How we work with clients
           </h2>
+          <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+            The full process, from the 15-minute consultation to onboarding, is on{" "}
+            <Link href="/how-we-work" className="font-medium text-royal-violet underline underline-offset-2">
+              how we work
+            </Link>
+            .
+          </p>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {VALUES.map((v) => (
               <div

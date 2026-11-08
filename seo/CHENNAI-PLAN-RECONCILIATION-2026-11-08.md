@@ -75,9 +75,39 @@ New content gaps from the keyword research are in section 7.
 
 ## 7. Research findings (8 Nov 2026)
 
-_Pending: the competitor teardown, the ICAI position on comparison pages, backlinks and citations, the keyword map, and maps / local presence were still being researched when this file was first committed. They will be added in a follow-up commit._
+Full write-ups: `D:\csr-audit-2026-11-08\competitors\COMPETITOR-ANALYSIS.md` and `BACKLINKS.md` (raw pages and scripts alongside).
 
-Already decided: no "C S Rushil vs Kanakkupillai" or "Kanakkupillai alternatives" pages. Naming competitors in comparative advertising does not fit the ICAI rules this site follows. A neutral guide on choosing between a CA firm and an online filing platform, without naming competitors, is the ICAI-safe alternative.
+### 7.1 ICAI rules (checked 8 Nov 2026)
+
+Sources: ICAI Code of Ethics 2026, Vol I, effective 1 Apr 2026 (resource.cdn.icai.org/92475coe2026v1.pdf), and the ICAI website advisory of 14 Oct 2020 (icai.org/post/advisory-website-guidelines-of-the-institute).
+
+| Rule | Effect on the plan / site | Action |
+|---|---|---|
+| Cl. 3.1.3(E): no "testimonials or endorsements"; advisory item 21: no "testimonial with client name" | The named Google-review block was live on 183 of 190 pages | **Fixed on this branch:** `SHOW_GOOGLE_REVIEWS = false`. Turn it back on only with CA Rushil C S's written confirmation |
+| Advisory item 27: no "why choose us" feature; cl. 3.1.3(B): no exaggerated claims | /about-us had a "Why choose us" block with self-praising copy | **Fixed on this branch:** now "How we work with clients", which describes the process only |
+| Cl. 3.1.3(C): no "disparaging references or unsubstantiated comparisons" | "CSR vs Kanakkupillai" or "alternatives" pages | **Declined.** Build a neutral "CA firm or online filing platform: how to choose" guide that names no brands |
+| Cl. 3.3.7(xiii): "Fee charged cannot be given"; advisory 28 Apr 2020 covers "free of charge" too | Pricing page, `pricing.md`, "from ₹" prices | **Declined** (already the site's rule). Government and statutory fees are fine |
+| Cl. 3.1.3(F): no achievements or "position held, or accreditation(s) granted by any organisation" | "Start-up Mentor" appears in bylines, meta descriptions and schema | **Owner:** confirm with CA Rushil C S whether "Start-up Mentor" (a position) may stay. FAFD is an ICAI post-qualification certificate and is likely fine |
+| Advisory: no "Top Firm" wording or rankings | /career has "Why choose a boutique Chennai firm for articleship?" | **Owner:** reword if CA Rushil C S considers it comparative |
+
+### 7.2 Competitors (live pages, 8 Nov 2026)
+
+- **Kanakkupillai** (/company-registration-in-chennai, /private-limited-company-registration-in-chennai): the plan's figures are confirmed (₹4,372 / ₹6,022 / ₹21,614 + GST and govt fees). It has a "Reviewed by Vaishnavi B, Chartered Accountant" byline (last updated 30 Oct 2026), a structure table on the hub, the RoC Chennai address, 7 to 8 FAQs and four calculators. The plan's claim of a **Tamil interface is false**: no Tamil text or hreflang was found. Its LLP Chennai URL returns 404.
+- **IndiaFilings**: Chennai company and LLP pages say "Starting from ₹2,899", have 10 FAQs and no byline, and carry Product/Offer/AggregateRating (4.5 from 12,876) schema. /chennai is a 510-word booking page for in-person advisors, with no street address.
+- **B S Sridhar & Co.** (bssridhar.com) is a direct local competitor: Pace Prana, South Park Road, Anna Nagar West, 600040. Its company-registration page has about 930 words, no FAQ, byline or tables, was last modified in 2021, and still states the abolished ₹1 lakh minimum capital. It has six calculators.
+- **Where CSR already leads:** question headings (18 to 32 against 0 to 7), schema depth, a CA byline with dates, government-fee tables and Tamil summaries. **Gaps:** no answer paragraph directly under the H1 on the company and LLP hub pages (the answer sits under the intro heading), and the LLP page is dated 16 Oct. On tools CSR is level: 5 calculators against Kanakkupillai's 4 and B S Sridhar's 6.
+
+### 7.3 Backlinks and citations
+
+- **Backlink Health Score: INSUFFICIENT DATA (0/7).** No Moz, Bing or DataForSEO data. Common Crawl (Jul to Sep 2026) puts indiafilings.com at rank 25,435 and kanakkupillai.com at 1,911,586; csrushil.com is not in the top 7.5M.
+- **0 verified live backlinks.** LinkedIn and village.ai profiles block automated checks. github.com/itzperi/seoaeogeo mentions the domain in plain text, and the repo is public: consider making it private, since it holds internal plans.
+- **A dead clone, csrushil.digitalvicky.com, is still indexed** with the title "Top Chartered Accountant firms in Chennai" and an old Vadapalani address. Its DNS no longer resolves, so it should drop out of the index. If it persists, ask the domain owner to remove it or file a Google outdated-content removal.
+- **NAP:** not found on Sulekha, AdvisorKhoj, busy.in or IndiaMART. Justdial and RegisterKaro block automated checks. ICAI directory not checked.
+- **ICAI-safe citation opportunities:** ICAI Startup mentor registration, SIRC of ICAI talks and newsletter, StartupTN, IIT Madras Incubation Cell, iTNT Hub, Startup India profile (no logo on the site, per advisory item 23), The Chennai Angels, Madras Chamber of Commerce, SICCI, TiE Chennai, TaxGuru and CAclubindia author profiles, Bing Places, Apple Business Connect, and a free Justdial listing. **Avoid** "Top CA firms" listicles, paid upgrades and empanelment claims on the site (advisory item 25).
+
+### 7.4 Keywords and maps
+
+_Pending: the keyword and maps research was still running when this was written._
 
 ## 8. Live-site audit findings (8 Nov 2026)
 
@@ -102,7 +132,7 @@ PageSpeed Insights, homepage, mobile (Lighthouse 13.6.0, 8 Nov 2026): Performanc
 
 **Conclusion:** plan sections 1.1 (template risk), 1.6 (schema) and 1.8 (rendering) are already met. On-page work is not the bottleneck. Off-site authority is: GBP, reviews, citations and the ICAI number.
 
-**ICAI check for the owner:** the homepage, /about-us and /contact show a section headed "What do clients say about us on Google?" (Google reviews widget). Confirm with CA Rushil C S that showing third-party Google reviews is acceptable under the ICAI website guidelines, since self-published testimonials are not.
+**ICAI:** the Google reviews section quoted clients by name on 183 pages. That is now switched off; see 7.1.
 
 ## 9. Owner to-do (in order)
 
@@ -110,4 +140,6 @@ PageSpeed Insights, homepage, mobile (Lighthouse 13.6.0, 8 Nov 2026): Performanc
 2. Fix the GBP hours and categories; start review requests after each engagement.
 3. Decide the AI-training policy for the robots.txt `Content-Signal` line (search=yes and ai-input=yes are safe defaults; ai-train is your choice).
 4. Claim and match NAP on the directories listed in section 7.
-5. Confirm with CA Rushil C S any regulatory facts flagged in section 8 before the next quarterly refresh.
+5. CA Rushil C S to confirm the ICAI items in 7.1: reviews stay off unless the format is confirmed as permitted; whether "Start-up Mentor" may stay in bylines and schema; the /career "boutique firm" heading.
+6. Consider making the GitHub repo itzperi/seoaeogeo private (it holds internal plans and drafts).
+7. Confirm with CA Rushil C S any regulatory facts flagged in section 8 before the next quarterly refresh.
