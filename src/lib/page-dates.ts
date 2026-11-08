@@ -73,7 +73,7 @@ export const PAGE_DATES: Record<string, string> = {
   "/income-tax-consultant-besant-nagar-chennai": "2026-10-13",
   "/income-tax-consultant-coimbatore": "2026-10-14",
   "/income-tax-consultant-delhi-ncr": "2026-10-14",
-  "/income-tax-consultant-for-hni-chennai": "2026-11-04",
+  "/income-tax-consultant-for-hni-chennai": "2026-11-08",
   "/income-tax-consultant-gopalapuram-chennai": "2026-10-13",
   "/income-tax-consultant-hyderabad": "2026-10-14",
   "/income-tax-consultant-kolkata": "2026-10-14",
