@@ -23,7 +23,11 @@ export default function EnquiryCard({ service, placement }: { service?: string; 
   return (
     <div className="rounded-[28px] border border-carbon bg-white p-6 md:p-8">
       <p className="text-xs font-bold uppercase tracking-[0.06em] text-slate">No forms · reply on WhatsApp</p>
-      <h3 className="mt-2 text-3xl text-carbon">{service ? `Ask about ${service}` : "What do you need help with?"}</h3>
+      {/* h2, not h3: in the home hero it follows the H1 directly, and a skipped
+          level fails Lighthouse heading-order. Body-face classes keep the h3 look. */}
+      <h2 className="mt-2 font-[family-name:var(--font-body)] text-3xl font-bold normal-case tracking-[-0.01em] text-carbon">
+        {service ? `Ask about ${service}` : "What do you need help with?"}
+      </h2>
       <p className="mt-2 text-sm text-slate">
         Tap below and WhatsApp opens with your message already typed. A chartered accountant replies in the chat.
       </p>

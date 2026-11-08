@@ -7,7 +7,7 @@ const CARD_FILLS = ["bg-lavender", "bg-sunburst", "bg-mint-pop"];
 
 function Stars({ rating }: { rating: number }) {
   return (
-    <span className="flex gap-0.5" aria-label={`${rating} out of 5 stars`}>
+    <span className="flex gap-0.5" role="img" aria-label={`${rating} out of 5 stars`}>
       {[1, 2, 3, 4, 5].map((i) => (
         <svg key={i} width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
           <path

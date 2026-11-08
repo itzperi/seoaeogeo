@@ -98,6 +98,8 @@ Crawl of every URL in the live sitemap on 8 Nov 2026 (190 pages; raw data in `D:
 | Sitemap | 190 URLs, valid XML, HTTPS www only, no duplicates, git-based `lastmod` (varied, not uniform). `<priority>` tags are ignored by Google; they do no harm |
 | Agent readiness | Content is server-rendered; llms.txt and llms-full.txt are live; robots.txt names every AI bot (Claude-SearchBot added on this branch). No `Content-Signal` line (owner decision) and no Markdown versions of pages (optional) |
 
+PageSpeed Insights, homepage, mobile (Lighthouse 13.6.0, 8 Nov 2026): Performance 99 (LCP 1.1 s, TBT 40 ms, CLS 0), Accessibility 95, Best Practices 96, SEO 100, Agentic Browsing 2/3. Two accessibility findings were fixed in the follow-up commit: the Google-review star rating used `aria-label` on a role-less `<span>` (now `role="img"`), which also failed the Agentic Browsing "accessibility tree" audit, and the hero enquiry card jumped from H1 to H3 (now an H2 with the same look). Re-run PageSpeed after deploy to confirm 3/3.
+
 **Conclusion:** plan sections 1.1 (template risk), 1.6 (schema) and 1.8 (rendering) are already met. On-page work is not the bottleneck. Off-site authority is: GBP, reviews, citations and the ICAI number.
 
 **ICAI check for the owner:** the homepage, /about-us and /contact show a section headed "What do clients say about us on Google?" (Google reviews widget). Confirm with CA Rushil C S that showing third-party Google reviews is acceptable under the ICAI website guidelines, since self-published testimonials are not.
