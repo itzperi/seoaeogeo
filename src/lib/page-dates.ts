@@ -2,7 +2,7 @@
 // Last git change of each page's content (YYYY-MM-DD).
 export const PAGE_DATES: Record<string, string> = {
   "/": "2026-11-08",
-  "/about-us": "2026-11-04",
+  "/about-us": "2026-11-08",
   "/accounting-outsourcing-chennai": "2026-10-14",
   "/annual-compliance-package": "2026-11-04",
   "/audit-and-assurance": "2026-10-06",
