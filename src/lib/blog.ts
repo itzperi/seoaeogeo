@@ -97,6 +97,8 @@ const modules = {
     import("@/content/blog/section-140-startup-tax-holiday"),
   "how-to-choose-a-chartered-accountant-in-chennai": () =>
     import("@/content/blog/how-to-choose-a-chartered-accountant-in-chennai"),
+  "ca-firm-or-online-filing-platform": () =>
+    import("@/content/blog/ca-firm-or-online-filing-platform"),
   "gst-show-cause-notice-first-48-hours": () =>
     import("@/content/blog/gst-show-cause-notice-first-48-hours"),
   "spice-plus-incorporation-explained": () =>
@@ -543,6 +545,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     updated: "2026-10-06",
     excerpt:
       "Credentials, service breadth, responsiveness, and red flags — a practical checklist for picking a chartered accountant in Chennai.",
+  },
+  {
+    slug: "ca-firm-or-online-filing-platform",
+    title: "CA Firm or Online Filing Platform: How to Choose",
+    description:
+      "How to choose between a chartered accountant firm and an online filing platform: who signs, ICAI checks, confidentiality, fees and which work suits each.",
+    date: "2026-11-08",
+    excerpt:
+      "Who signs your filings, how to verify a chartered accountant, how fees are split and which kinds of work suit each option, set out without naming any provider.",
   },
   {
     slug: "gst-show-cause-notice-first-48-hours",

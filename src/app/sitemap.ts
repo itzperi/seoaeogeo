@@ -11,65 +11,49 @@ import { TN_CITY_PAGES } from "@/lib/tn-cities";
 // (src/lib/page-dates.ts, regenerated with `npm run page-dates`). Never use
 // `new Date()` here: stamping every page "modified today" on every build
 // defeats lastModified as a freshness signal to crawlers.
+// No <priority> or <changefreq>: Google ignores both, so they are left out.
 const FALLBACK_DATE = "2026-10-03";
 const lastModified = (path: string) => new Date(PAGE_DATES[path] ?? FALLBACK_DATE);
 
 const STATIC_PATHS = [
-  { path: "", priority: 1 },
-  { path: "about-us", priority: 0.7 },
-  { path: "contact", priority: 0.7 },
-  { path: "career", priority: 0.4 },
-  { path: "blog", priority: 0.6 },
-  { path: "videos", priority: 0.5 },
-  { path: "faq", priority: 0.7 },
-  { path: "how-we-work", priority: 0.6 },
-  { path: "tools", priority: 0.6 },
-  { path: "tools/nri-residential-status-calculator", priority: 0.6 },
-  { path: "tools/company-registration-government-fee-calculator", priority: 0.6 },
-  { path: "tools/gst-appeal-deadline-pre-deposit-calculator", priority: 0.6 },
-  { path: "tools/nri-property-sale-tds-calculator", priority: 0.6 },
-  { path: "tools/foreign-subsidiary-compliance-calendar", priority: 0.6 },
+  "",
+  "about-us",
+  "contact",
+  "career",
+  "blog",
+  "videos",
+  "faq",
+  "how-we-work",
+  "tools",
+  "tools/nri-residential-status-calculator",
+  "tools/company-registration-government-fee-calculator",
+  "tools/gst-appeal-deadline-pre-deposit-calculator",
+  "tools/nri-property-sale-tds-calculator",
+  "tools/foreign-subsidiary-compliance-calendar",
 ];
 
 // Re-validate daily so scheduled posts appear on their publish date.
 export const revalidate = 86400;
 
+const entry = (slug: string) => ({ url: `${SITE_URL}/${slug}`, lastModified: lastModified(`/${slug}`) });
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticEntries = STATIC_PATHS.map(({ path, priority }) => ({
+  const staticEntries = STATIC_PATHS.map((path) => ({
     url: `${SITE_URL}/${path}`,
     lastModified: lastModified(path ? `/${path}` : "/"),
-    priority,
-  }));
-
-  const serviceEntries = ALL_SERVICES.map((service) => ({
-    url: `${SITE_URL}/${service.slug}`,
-    lastModified: lastModified(`/${service.slug}`),
-    priority: 0.8,
   }));
 
   const blogEntries = getPublishedPosts().map((post) => ({
     url: `${SITE_URL}/blog/${post.slug}`,
     lastModified: new Date(post.updated ?? post.date),
-    priority: 0.6,
   }));
 
-  const areaEntries = AREAS.map((area) => ({
-    url: `${SITE_URL}/${area.slug}`,
-    lastModified: lastModified(`/${area.slug}`),
-    priority: 0.7,
-  }));
-
-  const cityEntries = TN_CITY_PAGES.map((c) => ({
-    url: `${SITE_URL}/${c.slug}`,
-    lastModified: lastModified(`/${c.slug}`),
-    priority: 0.7,
-  }));
-
-  const locationEntries = LOCATION_PAGES.map((l) => ({
-    url: `${SITE_URL}/${l.slug}`,
-    lastModified: lastModified(`/${l.slug}`),
-    priority: 0.7,
-  }));
-
-  return [...staticEntries, ...serviceEntries, ...areaEntries, ...cityEntries, ...locationEntries, ...blogEntries];
+  return [
+    ...staticEntries,
+    ...ALL_SERVICES.map((s) => entry(s.slug)),
+    ...AREAS.map((a) => entry(a.slug)),
+    ...TN_CITY_PAGES.map((c) => entry(c.slug)),
+    ...LOCATION_PAGES.map((l) => entry(l.slug)),
+    ...blogEntries,
+  ];
 }

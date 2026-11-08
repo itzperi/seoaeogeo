@@ -3,9 +3,11 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
+import FAQSection from "@/components/FAQSection";
 import Image from "next/image";
 import { AREAS } from "@/lib/areas";
 import {
+  ADDRESS_FULL,
   FIRM_REGISTRATION_NO,
   FOUNDER_CREDENTIALS,
   FOUNDER_NAME,
@@ -29,6 +31,33 @@ const TEAM = [
   { name: "Athulia", photo: "/images/team/athulia.webp" },
   { name: "Ajay M", photo: "/images/team/ajay-c.webp", linkedin: "https://www.linkedin.com/in/ajay-m-578a21232" },
   { name: "Omair Khan", photo: "/images/team/omair-khan.png", linkedin: "https://www.linkedin.com/in/omairxkhan" },
+];
+
+// Facts only from src/lib/site.ts and /how-we-work. No fees, outcomes or
+// positions beyond what the rest of the site already states.
+const ABOUT_FAQS = [
+  {
+    question: "Who leads C S Rushil & Co.?",
+    answer: `The firm is led by ${FOUNDER_NAME}, a Chartered Accountant who founded it in ${YEAR_FOUNDED}. A team of 16 works with clients on company registration, GST, income tax, audit, FEMA and virtual CFO work.`,
+  },
+  {
+    question: "Where is the C S Rushil & Co. office?",
+    answer: `The firm's only office is at ${ADDRESS_FULL}, open Monday to Saturday, 9:30 AM to 6:30 PM. Clients elsewhere in Chennai, Tamil Nadu and abroad are served online.`,
+  },
+  {
+    question: "Which languages can I use for a consultation?",
+    answer: "Consultations are held in English, Tamil and Hindi, in person at the Anna Nagar office or by video call.",
+  },
+  {
+    question: "How does an engagement with the firm start?",
+    answer:
+      "It starts with a 15-minute consultation. If the work suits the firm, a conflict and independence check follows, then a scoping call and a written engagement letter that sets out the scope and fees before any work begins.",
+  },
+  {
+    question: "How can I check that a chartered accountant is an ICAI member?",
+    answer:
+      "The Institute of Chartered Accountants of India (ICAI) runs a public member search, Trace a Member, at traceamember.icai.org. You can check any chartered accountant's membership there before you engage them.",
+  },
 ];
 
 export const metadata: Metadata = {
@@ -259,6 +288,8 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <FAQSection items={ABOUT_FAQS} />
 
       <CTASection />
     </>

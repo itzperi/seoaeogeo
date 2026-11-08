@@ -420,9 +420,26 @@ export default function Page() {
         <Link href="/chartered-accountant-nungambakkam-chennai" className={linkClass}>
           Nungambakkam
         </Link>
-        , as well as Besant Nagar, Alwarpet, R A Puram, Kotturpuram, Gopalapuram and Poes Garden, and Neelankarai and
-        the East Coast Road. Families and executives in Bengaluru, Hyderabad, Mumbai, Delhi NCR, Pune and Kolkata work
-        with us online, with meetings by video call and documents exchanged securely. To arrange a first consultation,{" "}
+        , as well as{" "}
+        <Link href="/income-tax-consultant-besant-nagar-chennai" className={linkClass}>Besant Nagar</Link>,{" "}
+        <Link href="/income-tax-consultant-alwarpet-chennai" className={linkClass}>Alwarpet</Link>,{" "}
+        <Link href="/income-tax-consultant-ra-puram-chennai" className={linkClass}>R A Puram</Link>,{" "}
+        <Link href="/income-tax-consultant-kotturpuram-chennai" className={linkClass}>Kotturpuram</Link>,{" "}
+        <Link href="/income-tax-consultant-gopalapuram-chennai" className={linkClass}>Gopalapuram</Link> and Poes
+        Garden, and{" "}
+        <Link href="/income-tax-consultant-neelankarai-ecr-chennai" className={linkClass}>Neelankarai and the East Coast Road</Link>.
+        Outside Chennai, clients in{" "}
+        <Link href="/income-tax-consultant-coimbatore" className={linkClass}>Coimbatore</Link>,{" "}
+        <Link href="/income-tax-consultant-madurai" className={linkClass}>Madurai</Link> and{" "}
+        <Link href="/income-tax-consultant-tiruchirappalli" className={linkClass}>Trichy</Link>, and families and
+        executives in{" "}
+        <Link href="/income-tax-consultant-bangalore" className={linkClass}>Bengaluru</Link>,{" "}
+        <Link href="/income-tax-consultant-hyderabad" className={linkClass}>Hyderabad</Link>,{" "}
+        <Link href="/income-tax-consultant-mumbai" className={linkClass}>Mumbai</Link>,{" "}
+        <Link href="/income-tax-consultant-delhi-ncr" className={linkClass}>Delhi NCR</Link>,{" "}
+        <Link href="/income-tax-consultant-pune" className={linkClass}>Pune</Link> and{" "}
+        <Link href="/income-tax-consultant-kolkata" className={linkClass}>Kolkata</Link>, work with us online, with
+        meetings by video call and documents exchanged securely. To arrange a first consultation,{" "}
         <Link href="/contact" className={linkClass}>
           contact us
         </Link>

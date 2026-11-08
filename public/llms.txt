@@ -137,14 +137,39 @@
 - [GST Litigation in Hosur](https://www.csrushil.com/gst-litigation-hosur): Place-of-supply, wrong-tax-head and inter-state e-way bill disputes for Hosur auto component and electronics makers.
 
 ## Areas served (Chennai)
-Anna Nagar, Kilpauk, T Nagar, Ambattur, OMR/Sholinganallur, Velachery, Adyar,
-Nungambakkam, Guindy, Porur, Tambaram, Mylapore; income tax pages for Besant Nagar, Alwarpet,
-R A Puram, Kotturpuram, Gopalapuram and Neelankarai/ECR — see the [areas we serve](https://www.csrushil.com/#areas)
+The only office is in Anna Nagar. Each area page covers that area's typical clients and local compliance; clients outside Anna Nagar are served online or by appointment at the office.
+- [Chartered Accountant in Anna Nagar](https://www.csrushil.com/chartered-accountant-anna-nagar-chennai): Home office; walk-in by appointment
+- [Chartered Accountant in Kilpauk](https://www.csrushil.com/chartered-accountant-kilpauk-chennai)
+- [Chartered Accountant in T Nagar](https://www.csrushil.com/chartered-accountant-t-nagar-chennai)
+- [Chartered Accountant in Ambattur](https://www.csrushil.com/chartered-accountant-ambattur-chennai)
+- [Chartered Accountant in OMR / Sholinganallur](https://www.csrushil.com/chartered-accountant-omr-sholinganallur-chennai)
+- [Chartered Accountant in Velachery](https://www.csrushil.com/chartered-accountant-velachery-chennai)
+- [Chartered Accountant in Adyar](https://www.csrushil.com/chartered-accountant-adyar-chennai)
+- [Chartered Accountant in Nungambakkam](https://www.csrushil.com/chartered-accountant-nungambakkam-chennai)
+- [Chartered Accountant in Guindy](https://www.csrushil.com/chartered-accountant-guindy-chennai)
+- [Chartered Accountant in Porur](https://www.csrushil.com/chartered-accountant-porur-chennai)
+- [Chartered Accountant in Tambaram](https://www.csrushil.com/chartered-accountant-tambaram-chennai)
+- [Chartered Accountant in Mylapore](https://www.csrushil.com/chartered-accountant-mylapore-chennai)
+- Income tax for high-income individuals by area: [Besant Nagar](https://www.csrushil.com/income-tax-consultant-besant-nagar-chennai), [Alwarpet](https://www.csrushil.com/income-tax-consultant-alwarpet-chennai), [R A Puram](https://www.csrushil.com/income-tax-consultant-ra-puram-chennai), [Kotturpuram](https://www.csrushil.com/income-tax-consultant-kotturpuram-chennai), [Gopalapuram](https://www.csrushil.com/income-tax-consultant-gopalapuram-chennai), [Neelankarai / ECR](https://www.csrushil.com/income-tax-consultant-neelankarai-ecr-chennai)
 
 ## Other sections
 - [About Us](https://www.csrushil.com/about-us): Firm background, founder credentials, team
 - [FAQ](https://www.csrushil.com/faq): Common questions across all services
 - [Blog](https://www.csrushil.com/blog): GST, incorporation, audit, and Chennai compliance guides
+- [How we work](https://www.csrushil.com/how-we-work): Consultation, independence check, scoping, engagement letter, onboarding
+
+## Markdown copies of service pages (for AI agents)
+Every service, area and city page has a plain Markdown copy at `https://www.csrushil.com/md/<slug>` (homepage: `/md/index`). The HTML page stays canonical. Examples:
+- [Homepage](https://www.csrushil.com/md/index)
+- [Private Limited Company Registration in Chennai](https://www.csrushil.com/md/private-limited-company-incorporation-chennai)
+- [Company Registration in Chennai](https://www.csrushil.com/md/company-registration-chennai)
+- [GST Notice Reply in Chennai](https://www.csrushil.com/md/gst-notice-reply-chennai)
+- [GST Litigation & Appeals in Chennai](https://www.csrushil.com/md/gst-litigation-chennai)
+- [Income Tax Notice Reply in Chennai](https://www.csrushil.com/md/income-tax-notice-reply-chennai)
+- [NRI Tax Services](https://www.csrushil.com/md/nri-tax-services)
+- [Virtual CFO Services](https://www.csrushil.com/md/virtual-cfo-services)
+- [Statutory Audit in Chennai](https://www.csrushil.com/md/statutory-audit-chennai)
+- [Chartered Accountant in Anna Nagar](https://www.csrushil.com/md/chartered-accountant-anna-nagar-chennai)
 
 ## Contact
 - Phone: +91 72001 49711
