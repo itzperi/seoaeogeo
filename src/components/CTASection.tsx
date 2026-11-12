@@ -42,7 +42,7 @@ export default function CTASection({
                     className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85"
                   >
                     Book a 15-Minute Consultation
-                  </TrackedAnchor>
+                  </TrackedAnchor>{" "}
                   <TrackedAnchor
                     action="call"
                     placement="cta-section"
@@ -50,7 +50,7 @@ export default function CTASection({
                     className="inline-flex min-h-[48px] w-full items-center justify-center rounded-full sm:w-auto border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon transition-colors hover:bg-lavender"
                   >
                     Call {PHONE_DISPLAY}
-                  </TrackedAnchor>
+                  </TrackedAnchor>{" "}
                   <EnquireButton
                     service={service}
                     placement="cta-section"

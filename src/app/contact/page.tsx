@@ -241,7 +241,7 @@ export default function ContactPage() {
               <div className="mt-3 flex flex-wrap gap-3">
                 <a href={`tel:${PHONE_TEL}`} className="rounded-buttons bg-obsidian px-5 py-3 text-sm font-medium text-white hover:opacity-90">
                   Call {PHONE_DISPLAY}
-                </a>
+                </a>{" "}
                 <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="rounded-buttons border border-ash px-5 py-3 text-sm font-medium text-obsidian hover:bg-fog">
                   WhatsApp Us
                 </a>
