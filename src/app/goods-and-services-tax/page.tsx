@@ -4,6 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
+import SiloLinks from "@/components/SiloLinks";
 import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 
 const GST_STEPS = [
@@ -65,7 +66,35 @@ const HUB = [
   },
 ];
 
+// "Which page do I need?" router: situation → what applies → page. Gives
+// answer engines a table to lift and links every GST leaf from the hub.
+const SITUATIONS = [
+  { situation: "Starting a business or crossing the turnover threshold", applies: "Registration in REG-01 within 30 days of becoming liable", href: "/gst-registration-chennai", page: "GST registration" },
+  { situation: "Registered and filing every month or quarter", applies: "GSTR-1 and GSTR-3B, or QRMP up to ₹5 crore turnover, with GSTR-2B reconciliation", href: "/gst-return-filing-chennai", page: "GST return filing" },
+  { situation: "Received ASMT-10, DRC-01A or a mismatch notice", applies: "A written reply with reconciliations within the time in the notice", href: "/gst-notice-reply-chennai", page: "GST notice reply" },
+  { situation: "Received a show-cause notice or a demand order", applies: "Reply under Section 73, 74 or 74A, then appeal in APL-01 if needed", href: "/gst-litigation-chennai", page: "GST litigation and appeals" },
+  { situation: "Selling on Amazon, Flipkart or your own store", applies: "State-wise GSTR-1, TCS credit and settlement reconciliation", href: "/gst-return-filing-for-ecommerce-sellers", page: "GST for e-commerce sellers" },
+  { situation: "Freelancer or consultant billing clients abroad", applies: "Export of services under LUT, and registration rules for inter-state services", href: "/gst-return-filing-for-freelancers", page: "GST for freelancers" },
+  { situation: "Exporter or importer", applies: "LUT, IGST on imports, refunds of unused credit", href: "/gst-return-filing-for-import-export-businesses", page: "GST for importers and exporters" },
+  { situation: "Restaurant, clinic, startup or manufacturer", applies: "Sector rules for rates, exemptions, credit and refunds", href: "/gst-return-filing-for-restaurants", page: "GST by industry" },
+];
+
 const FAQS = [
+  {
+    question: "When is GST e-invoicing mandatory?",
+    answer:
+      "E-invoicing applies to B2B invoices of businesses whose aggregate turnover exceeded ₹5 crore in any financial year from 2017-18 onwards. Since 1 April 2025, businesses with turnover of ₹10 crore or more must also report each invoice to the Invoice Registration Portal within 30 days of its date, or the portal will not accept it. We check both limits when we take on a GSTIN.",
+  },
+  {
+    question: "What is the QRMP scheme?",
+    answer:
+      "QRMP lets businesses with aggregate turnover up to ₹5 crore file GSTR-1 and GSTR-3B quarterly instead of monthly, while still paying tax each month through PMT-06. B2B sellers can upload invoices monthly through the Invoice Furnishing Facility so their customers get credit on time. It suits small businesses with few B2B sales; it does not reduce the tax payable.",
+  },
+  {
+    question: "Does a freelancer or consultant billing overseas clients need GST registration?",
+    answer:
+      "Below the ₹20 lakh threshold for services, generally not: service providers making inter-state supplies, including exports of services, are exempt from compulsory registration until they cross the threshold. Above it, registration is required, and exports can then be made without IGST under an LUT. Our freelancers page covers the full rules.",
+  },
   {
     question: "What does a GST consultant in Chennai do?",
     answer:
@@ -169,6 +198,43 @@ export default function GstPage() {
             ))}
           </div>
 
+          <h2 className="mt-14 text-2xl text-obsidian">Which GST service fits your situation?</h2>
+          <div className="mt-6 overflow-x-auto rounded-cards border border-ash">
+            <table className="w-full min-w-[680px] text-left text-sm">
+              <thead className="bg-carbon text-white">
+                <tr>
+                  <th className="px-4 py-3 font-medium">Your situation</th>
+                  <th className="px-4 py-3 font-medium">What applies</th>
+                  <th className="px-4 py-3 font-medium">Where to start</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-ash bg-paper">
+                {SITUATIONS.map((r) => (
+                  <tr key={r.href}>
+                    <td className="px-4 py-3 align-top font-medium text-obsidian">{r.situation}</td>
+                    <td className="px-4 py-3 align-top text-slate">{r.applies}</td>
+                    <td className="px-4 py-3 align-top">
+                      <Link href={r.href} className={linkClass}>
+                        {r.page}
+                      </Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-4 max-w-2xl text-sm text-slate">
+            Rules and due dates are as notified by the CBIC and GSTN; see the{" "}
+            <a href="https://www.gst.gov.in/" target="_blank" rel="noopener noreferrer" className={linkClass}>
+              GST common portal
+            </a>{" "}
+            and the{" "}
+            <a href="https://cbic-gst.gov.in/" target="_blank" rel="noopener noreferrer" className={linkClass}>
+              CBIC GST portal
+            </a>{" "}
+            for current notifications.
+          </p>
+
           <h2 className="mt-14 text-2xl text-obsidian">What are GSTR-9 and GSTR-9C, and who must file them?</h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
             GSTR-9 brings together the year&apos;s GSTR-1 and GSTR-3B filings and is due by 31 December after the
@@ -241,6 +307,8 @@ export default function GstPage() {
         </div>
         <JsonLd data={howToSchema({ name: "How we take on your GST work", description: "The five steps we follow for GST registration, returns and notices.", steps: GST_STEPS })} />
       </section>
+
+      <SiloLinks path="/goods-and-services-tax" />
 
       <FAQSection items={FAQS} />
 

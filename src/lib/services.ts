@@ -323,6 +323,36 @@ export const SERVICES: ServiceSummary[] = [
 // related-service cards.
 export const SPECIALIST_SERVICES: ServiceSummary[] = [
   {
+    slug: "outsourced-bookkeeping-services",
+    name: "Outsourced Bookkeeping (US, UK, Singapore, Australia, UAE)",
+    shortDescription: "Monthly bookkeeping, catch-up work and year-end books kept from Chennai for businesses in the US, UK, Singapore, Australia, the UAE and India.",
+  },
+  {
+    slug: "outsourced-bookkeeping-usa",
+    name: "Outsourced Bookkeeping for US Businesses",
+    shortDescription: "QuickBooks Online and Xero bookkeeping, catch-up clean-ups, 1099 tracking and a year-end package for your CPA, who files the returns.",
+  },
+  {
+    slug: "outsourced-bookkeeping-uk",
+    name: "Outsourced Bookkeeping for UK Businesses",
+    shortDescription: "Xero, QuickBooks and FreeAgent bookkeeping, VAT figures and MTD for Income Tax records; you or your UK agent submit to HMRC.",
+  },
+  {
+    slug: "outsourced-bookkeeping-singapore",
+    name: "Outsourced Bookkeeping for Singapore Companies",
+    shortDescription: "Xero and QuickBooks bookkeeping, GST F5 figures and SFRS year-end books for your Singapore tax agent and corporate secretary.",
+  },
+  {
+    slug: "outsourced-bookkeeping-australia",
+    name: "Outsourced Bookkeeping for Australian Businesses",
+    shortDescription: "Xero and MYOB bookkeeping, payroll and super reconciliations and EOFY handover, with BAS lodged by your registered agent.",
+  },
+  {
+    slug: "outsourced-bookkeeping-uae",
+    name: "Outsourced Bookkeeping for Dubai & UAE Companies",
+    shortDescription: "IFRS bookkeeping, VAT figures, Corporate Tax-ready books and e-invoicing readiness; your FTA-registered tax agent files.",
+  },
+  {
     slug: "gst-notice-reply-chennai",
     name: "GST Notice Reply",
     shortDescription: "Replies to ASMT-10, DRC-01A, DRC-01 and audit notices for Tamil Nadu businesses, before a dispute becomes an appeal.",
@@ -477,6 +507,17 @@ export const SERVICE_GROUPS: { label: string; slugs: string[] }[] = [
       "trust",
       "outsourced-accounting-for-cpa-firms",
       "outsourced-accounting-for-uk-accountants",
+    ],
+  },
+  {
+    label: "Outsourced bookkeeping",
+    slugs: [
+      "outsourced-bookkeeping-services",
+      "outsourced-bookkeeping-usa",
+      "outsourced-bookkeeping-uk",
+      "outsourced-bookkeeping-singapore",
+      "outsourced-bookkeeping-australia",
+      "outsourced-bookkeeping-uae",
     ],
   },
   {

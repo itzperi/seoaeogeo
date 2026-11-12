@@ -54,6 +54,7 @@ function to24h(time: string) {
 // Countries the firm serves remotely (NRIs, foreign-owned companies,
 // overseas accounting firms).
 export const SERVED_COUNTRIES = ["India", "United Arab Emirates", "United States", "United Kingdom", "Singapore"];
+const BOOKKEEPING_COUNTRIES = [...SERVED_COUNTRIES, "Australia"];
 const GULF = ["Saudi Arabia", "Qatar", "Oman", "Kuwait", "Bahrain"];
 
 // Service pages whose buyers are mostly outside India, keyed by route.
@@ -77,6 +78,12 @@ export const INTERNATIONAL_AREAS: Record<string, string[]> = {
   "/india-subsidiary-for-uae-companies": ["United Arab Emirates", "India"],
   "/outsourced-accounting-for-cpa-firms": ["United States"],
   "/outsourced-accounting-for-uk-accountants": ["United Kingdom"],
+  "/outsourced-bookkeeping-services": BOOKKEEPING_COUNTRIES,
+  "/outsourced-bookkeeping-usa": ["United States"],
+  "/outsourced-bookkeeping-uk": ["United Kingdom"],
+  "/outsourced-bookkeeping-singapore": ["Singapore"],
+  "/outsourced-bookkeeping-australia": ["Australia"],
+  "/outsourced-bookkeeping-uae": ["United Arab Emirates"],
 };
 
 // Stable entity ids. Every page's WebPage, Service and BlogPosting nodes
@@ -132,7 +139,7 @@ export function organizationSchema() {
       { "@type": "City", name: "Chennai" },
       ...AREAS.map((area) => ({ "@type": "Place" as const, name: `${area.name}, Chennai` })),
       { "@type": "State", name: "Tamil Nadu" },
-      ...SERVED_COUNTRIES.map((name) => ({ "@type": "Country" as const, name })),
+      ...BOOKKEEPING_COUNTRIES.map((name) => ({ "@type": "Country" as const, name })),
     ],
     openingHoursSpecification: openingHoursSpecification(),
     knowsAbout: [

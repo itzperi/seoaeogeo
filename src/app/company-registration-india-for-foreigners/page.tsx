@@ -84,6 +84,14 @@ export default function Page() {
       introHeading="Can a foreign company or foreign national register a company in India?"
       intro="Yes. Foreign companies and individuals can own up to 100% of an Indian private limited company under the automatic route in most sectors, without prior government approval. Some sectors need government approval or carry foreign-ownership caps, so the first step is checking the FDI Policy for your activity. A private company needs at least two directors and two shareholders, and at least one director must have stayed in India for 182 days during the financial year. After incorporation, the share allotment must be reported to the RBI in Form FC-GPR."
       citation={{ label: "DPIIT — Consolidated FDI Policy (dpiit.gov.in)", href: "https://www.dpiit.gov.in/static/uploads/2025/07/6457fc2703ee6082366c4a958b6473a8.pdf" }}
+      keyFacts={[
+        { label: "Foreign ownership", value: "Up to 100% under the automatic route in most sectors; some sectors need government approval or have caps." },
+        { label: "Minimum people", value: "Two directors and two shareholders for a private limited company; one director must have stayed in India for at least 182 days in the financial year." },
+        { label: "Usual timeline", value: "About 4 to 10 weeks from document legalisation to bank account and first capital, depending mostly on the apostille or attestation step." },
+        { label: "FEMA reporting", value: "Shares issued within 60 days of receiving the money; FC-GPR on the RBI FIRMS portal within 30 days of allotment; FLA return every year by 15 July." },
+        { label: "First-year filings", value: "INC-20A within 180 days of incorporation and the first auditor within 30 days, then the annual ROC, tax and transfer pricing calendar." },
+        { label: "Served from", value: "Our only office, in Anna Nagar, Chennai; foreign founders are served online, with documents couriered or signed digitally." },
+      ]}
       subServicesHeading="What does company registration in India for a foreign business involve?"
       subServices={[
         { name: "Entity Choice: Subsidiary, LLP or Office", text: "We compare a wholly owned subsidiary, an LLP, and a branch, liaison or project office against what you plan to do in India, covering tax, liability, permitted activities and ongoing compliance." },

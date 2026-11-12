@@ -71,3 +71,23 @@
 
 ## Professional standards
 - The firm follows ICAI guidelines: professional fees are not published on the website, and there is no rating markup. Government fees are listed where they are public facts.
+
+## Outsourced bookkeeping (US, UK, Singapore, Australia, UAE, India)
+Bookkeeping is kept from the Chennai office in the client's own software. Outside India the firm prepares figures only; the client or its locally registered accountant, BAS agent or tax agent files with the IRS, HMRC, IRAS/ACRA, ATO or UAE FTA. In India the firm files GST, TDS, ROC and income tax returns directly. No published price lists; fees are quoted after a review of the books.
+- [Outsourced Bookkeeping Services from India](https://www.csrushil.com/outsourced-bookkeeping-services): How offshore bookkeeping works, who files what in each country, cost drivers, outsourced vs in-house, and who it does not suit.
+- [Outsourced Bookkeeping for US Small Businesses](https://www.csrushil.com/outsourced-bookkeeping-usa): QuickBooks Online and Xero monthly close, catch-up clean-ups, 1099-NEC/MISC tracking at the $2,000 threshold for 2026 payments, sales tax data and a CPA-ready year-end package; the client's CPA or EA files.
+- [Outsourced Bookkeeping for UK Businesses](https://www.csrushil.com/outsourced-bookkeeping-uk): Xero, QuickBooks, FreeAgent and Sage bookkeeping, nine-box VAT figures and MTD for Income Tax records (from 6 April 2026 above £50,000); the client or its UK agent submits to HMRC. UK GDPR transfer via IDTA or UK Addendum.
+- [Outsourced Bookkeeping for Singapore Companies](https://www.csrushil.com/outsourced-bookkeeping-singapore): Xero, QuickBooks and Zoho Books bookkeeping, GST F5 figures (registration above S$1 million, 9%), multi-currency revaluation and SFRS year-end books; the tax agent and corporate secretary file with IRAS and ACRA.
+- [Outsourced Bookkeeping for Australian Businesses](https://www.csrushil.com/outsourced-bookkeeping-australia): Xero, MYOB and QuickBooks bookkeeping, payroll and super reconciliations under Payday Super (from 1 July 2026) and EOFY handover. Not TPB-registered: BAS is lodged by the client's registered BAS or tax agent.
+- [Outsourced Bookkeeping for Dubai & UAE Companies](https://www.csrushil.com/outsourced-bookkeeping-uae): IFRS bookkeeping in Zoho Books, QuickBooks, Xero or Tally, VAT figures by emirate, Corporate Tax-ready books (9% above AED 375,000), first-period rebuilds and e-invoicing readiness; the client's FTA-registered tax agent files on EmaraTax.
+- [Bookkeeping Services in Chennai](https://www.csrushil.com/bookkeeping-services-chennai): Tally Prime and Zoho Books bookkeeping, GST and TDS filing, MIS, audit-trail (edit log) compliance and 8-year retention under Section 128; the firm does not audit companies whose books it keeps.
+
+## ROC compliance calendar (companies and LLPs registered with ROC Chennai)
+- Page: https://www.csrushil.com/roc-compliances
+- Company, 31 March year end: AGM within 6 months (by 30 September); ADT-1 within 15 days, AOC-4 within 30 days and MGT-7/MGT-7A within 60 days of the AGM; DPT-3 by 30 June; MSME-1 by 30 April and 31 October where dues to micro and small suppliers exceed 45 days; DIR-3 KYC Web once every three financial years by 30 June.
+- LLP: Form 11 by 30 May; Form 8 by 30 October.
+- Late fee ₹100 per day per form; Section 164(2) disqualification after three continuous years of non-filing.
+
+## Income tax by place
+- Walk-in office for income tax: Anna Nagar, Chennai (https://www.csrushil.com/income-tax-consultant-anna-nagar-chennai): senior citizens and pensioners, parents of NRIs, NRI property sales with lower deduction certificates, doctors and Koyambedu traders.
+- Direct tax hub with NRI situations and every area, city and country page: https://www.csrushil.com/direct-tax

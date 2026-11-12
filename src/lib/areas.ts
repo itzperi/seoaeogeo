@@ -22,6 +22,7 @@ export const AREAS: AreaSummary[] = [
   { slug: "chartered-accountant-porur-chennai", name: "Porur" },
   { slug: "chartered-accountant-tambaram-chennai", name: "Tambaram" },
   { slug: "chartered-accountant-mylapore-chennai", name: "Mylapore" },
+  { slug: "income-tax-consultant-anna-nagar-chennai", name: "Anna Nagar (income tax)", topic: "Income tax consultation" },
   { slug: "income-tax-consultant-besant-nagar-chennai", name: "Besant Nagar", topic: "Income tax consultation" },
   { slug: "income-tax-consultant-alwarpet-chennai", name: "Alwarpet", topic: "Income tax consultation" },
   { slug: "income-tax-consultant-ra-puram-chennai", name: "R A Puram", topic: "Income tax consultation" },

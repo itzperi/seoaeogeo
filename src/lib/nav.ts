@@ -38,6 +38,7 @@ export const FOOTER_CORE_LINKS: NavLink[] = [
   { href: "/income-tax-consultant-for-hni-chennai", label: "Income Tax for HNIs" },
   { href: "/india-subsidiary-compliance-cfo", label: "India Subsidiary Compliance" },
   { href: "/nri-tax-services", label: "NRI Tax Services" },
+  { href: "/outsourced-bookkeeping-services", label: "Outsourced Bookkeeping (US, UK, SG, AU, UAE)" },
 ];
 
 // Top six commercial localities; the rest are one click away on the

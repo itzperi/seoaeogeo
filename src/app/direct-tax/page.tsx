@@ -40,6 +40,63 @@ const DATES = [
   { item: "Quarterly TDS statements", when: "31 July, 31 October, 31 January and 31 May" },
 ];
 
+// Which NRIs need Indian income tax help, and where each case is covered.
+const NRI_CASES = [
+  { who: "NRI with Indian rent, interest or dividends above the basic exemption limit", needs: "An Indian return each year; NRIs do not get the rebate that makes income up to ₹12 lakh tax-free for residents", href: "/nri-tax-services", page: "NRI tax services" },
+  { who: "NRI whose bank or tenant deducted more TDS than the tax due", needs: "A return to claim the refund, often with treaty relief using a tax residency certificate", href: "/nri-tax-services", page: "NRI tax services" },
+  { who: "NRI selling a flat, house or plot in India", needs: "Buyer's TDS at non-resident rates, a lower deduction certificate before the sale, capital gains and reinvestment", href: "/nri-property-sale-tds-chennai", page: "NRI property sale TDS" },
+  { who: "NRI sending money abroad from an NRO account", needs: "The CA certificate and remitter's form (earlier 15CB and 15CA, now Forms 146 and 145)", href: "/form-15ca-15cb-chennai", page: "Form 15CA and 15CB" },
+  { who: "Indian citizen in the UAE or another no-tax country with Indian income above ₹15 lakh", needs: "A check whether the deemed-resident rule makes them resident but not ordinarily resident in India", href: "/nri-tax-services-uae", page: "NRI tax for the UAE and Dubai" },
+  { who: "NRI in the US, UK or Singapore with income taxed in both countries", needs: "Treaty relief under the India–US, India–UK or India–Singapore DTAA, and figures for the foreign return", href: "/nri-tax-services-usa", page: "NRI tax for the USA" },
+  { who: "NRI returning to India for good", needs: "Residential status, RNOR years, foreign income and Schedule FA for foreign assets", href: "/blog/rnor-status-returning-nri", page: "RNOR status for returning NRIs" },
+];
+
+// Where our income tax clients are: Chennai neighbourhoods, other cities
+// (online) and NRI countries. Every link is to a page with its own content.
+const PLACES: { group: string; links: { href: string; label: string }[] }[] = [
+  {
+    group: "Chennai neighbourhoods",
+    links: [
+      { href: "/income-tax-consultant-anna-nagar-chennai", label: "Anna Nagar (our office)" },
+      { href: "/income-tax-consultant-alwarpet-chennai", label: "Alwarpet" },
+      { href: "/income-tax-consultant-besant-nagar-chennai", label: "Besant Nagar" },
+      { href: "/income-tax-consultant-ra-puram-chennai", label: "R A Puram" },
+      { href: "/income-tax-consultant-kotturpuram-chennai", label: "Kotturpuram" },
+      { href: "/income-tax-consultant-gopalapuram-chennai", label: "Gopalapuram" },
+      { href: "/income-tax-consultant-neelankarai-ecr-chennai", label: "Neelankarai and ECR" },
+      { href: "/chartered-accountant-nungambakkam-chennai", label: "Nungambakkam" },
+      { href: "/chartered-accountant-adyar-chennai", label: "Adyar" },
+      { href: "/chartered-accountant-mylapore-chennai", label: "Mylapore" },
+      { href: "/chartered-accountant-kilpauk-chennai", label: "Kilpauk" },
+      { href: "/chartered-accountant-t-nagar-chennai", label: "T Nagar" },
+    ],
+  },
+  {
+    group: "Other Indian cities (online)",
+    links: [
+      { href: "/income-tax-consultant-bangalore", label: "Bengaluru" },
+      { href: "/income-tax-consultant-hyderabad", label: "Hyderabad" },
+      { href: "/income-tax-consultant-mumbai", label: "Mumbai" },
+      { href: "/income-tax-consultant-delhi-ncr", label: "Delhi NCR" },
+      { href: "/income-tax-consultant-pune", label: "Pune" },
+      { href: "/income-tax-consultant-kolkata", label: "Kolkata" },
+      { href: "/income-tax-consultant-coimbatore", label: "Coimbatore" },
+      { href: "/income-tax-consultant-madurai", label: "Madurai" },
+      { href: "/income-tax-consultant-tiruchirappalli", label: "Trichy" },
+    ],
+  },
+  {
+    group: "NRIs abroad (online)",
+    links: [
+      { href: "/nri-tax-services-usa", label: "USA" },
+      { href: "/nri-tax-services-uk", label: "United Kingdom" },
+      { href: "/nri-tax-services-uae", label: "UAE and Dubai" },
+      { href: "/nri-tax-services-singapore", label: "Singapore" },
+      { href: "/nri-tax-services-gulf", label: "Saudi Arabia, Qatar, Oman, Kuwait, Bahrain" },
+    ],
+  },
+];
+
 export default function Page() {
   return (
     <ServicePageTemplate
@@ -84,6 +141,8 @@ export default function Page() {
         { question: "What changed with the Income-tax Act, 2025?", answer: "The new Act applies from 1 April 2026 and replaces 'previous year' and 'assessment year' with a single 'tax year'. Most sections and forms are renumbered: for example, tax audit moves from Section 44AB to Section 63, and TDS provisions are consolidated in Sections 392 and 393. Income up to 31 March 2026 is still taxed under the 1961 Act." },
         { question: "What happens if I receive an income tax scrutiny notice?", answer: "Respond within the deadline in the notice with supporting documents. We check whether the notice was issued in time, identify the issues raised, build a case file and file replies through e-Proceedings. If an addition is made, we can appeal to the CIT(A) within 30 days of the demand notice." },
         { question: "Do you help NRIs with Indian income tax?", answer: "Yes. We file Indian returns for NRIs, claim DTAA benefits with a tax residency certificate, recover excess TDS on rent, interest and property sales, and prepare Forms 145 and 146 (earlier 15CA and 15CB) when money is sent abroad from an NRO account." },
+        { question: "Which NRIs have to file an income tax return in India?", answer: "An NRI must file if Indian income, such as rent, deposit interest, dividends or capital gains, is above the basic exemption limit, and NRIs do not get the rebate that makes income up to ₹12 lakh tax-free for residents. An NRI should also file to claim back excess TDS, to carry forward a capital loss, or to report the sale of Indian property, where the buyer's TDS is often more than the tax due." },
+        { question: "Can I meet an income tax consultant in person in Anna Nagar?", answer: "Yes. Our only office is in J-Block, Anna Nagar, Chennai, open Monday to Saturday from 9:30 am to 6:30 pm, and walk-in meetings are by appointment. Clients elsewhere in Chennai, in other Indian cities and abroad work with us online, with family members able to join meetings by video." },
         { question: "Who has to pay advance tax?", answer: "Anyone whose tax for the year, after TDS, is ₹10,000 or more must pay advance tax in four instalments: 15%, 45%, 75% and 100% of the year's tax by 15 June, 15 September, 15 December and 15 March. Resident senior citizens without business income are exempt. Shortfalls attract 1% interest a month." },
         { question: "When does a business need a tax audit?", answer: "A tax audit under Section 63 of the Income-tax Act, 2025 (earlier Section 44AB) applies when business turnover or professional receipts cross the prescribed limits, or when lower presumptive profits are declared. The audit report is due by 30 September and the return by 31 October." },
         { question: "Why do business owners end up paying advance tax interest when salaried people rarely do?", answer: "Because nobody deducts tax for them. A salaried person's employer deducts TDS every month, so little is left to pay at year-end, while a shop owner or trader must estimate the year's income and pay each instalment personally. Seasonal swings, such as a strong festive quarter or a slow monsoon, make the June and September estimates hard to get right. Catching up in December or March does not remove the interest for the earlier shortfall, and paying nothing until the return is filed means interest for every instalment missed. Re-estimating income before each due date from actual sales to date keeps interest under Sections 424 and 425 (earlier 234B and 234C) to a minimum." },
@@ -136,6 +195,67 @@ export default function Page() {
             ))}
           </tbody>
         </table>
+      </div>
+
+      <h2 className="mt-14 text-2xl text-obsidian">Which NRIs need Indian income tax help?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        An NRI is taxed in India only on income earned or received in India, but that still covers rent, deposit interest,
+        dividends and the sale of Indian property or shares. These are the situations that bring NRIs to us, and the page
+        that covers each one.
+      </p>
+      <div className="mt-6 overflow-x-auto rounded-cards border border-ash">
+        <table className="w-full min-w-[680px] text-left text-sm">
+          <thead className="bg-carbon text-white">
+            <tr>
+              <th className="px-4 py-3 font-medium">If you are</th>
+              <th className="px-4 py-3 font-medium">What you need</th>
+              <th className="px-4 py-3 font-medium">Where it is covered</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-ash bg-paper">
+            {NRI_CASES.map((r) => (
+              <tr key={r.who}>
+                <td className="px-4 py-3 align-top font-medium text-obsidian">{r.who}</td>
+                <td className="px-4 py-3 align-top text-slate">{r.needs}</td>
+                <td className="px-4 py-3 align-top">
+                  <Link href={r.href} className={linkClass}>
+                    {r.page}
+                  </Link>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="mt-4 max-w-2xl text-sm text-slate">
+        Not sure whether you are an NRI for the year? The{" "}
+        <Link href="/tools/nri-residential-status-calculator" className={linkClass}>
+          NRI residential status calculator
+        </Link>{" "}
+        works through the day-count and deemed-residency tests.
+      </p>
+
+      <h2 className="mt-14 text-2xl text-obsidian">Where are our income tax clients?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Our only office is in Anna Nagar, Chennai. Clients elsewhere in Chennai visit by appointment or work with us online,
+        and clients in other cities and abroad are served online. Each page below covers the income and tax questions
+        typical of that place.
+      </p>
+      <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
+        {PLACES.map((g) => (
+          <nav key={g.group} aria-label={`Income tax: ${g.group}`} className="rounded-cards border border-ash bg-paper p-6">
+            <h3 className="font-medium text-obsidian">{g.group}</h3>
+            <ul className="mt-3 space-y-2 text-sm">
+              {g.links.map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className={linkClass}>
+                    {l.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ))}
       </div>
 
       <h2 className="mt-14 text-2xl text-obsidian">How do we work across the 1961 and 2025 Income-tax Acts?</h2>

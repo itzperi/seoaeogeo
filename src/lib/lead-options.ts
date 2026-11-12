@@ -38,6 +38,8 @@ export const LOCATION_OPTIONS = [
   "UAE / Gulf",
   "United Kingdom",
   "USA / Canada",
+  "Singapore",
+  "Australia",
   "Other country",
 ] as const;
 

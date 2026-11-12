@@ -55,22 +55,32 @@ const modules = {
     import("@/content/blog/din-and-dsc-for-company-directors"),
   "moa-objects-clause-drafting": () =>
     import("@/content/blog/moa-objects-clause-drafting"),
+  "is-it-safe-to-outsource-bookkeeping-to-india": () =>
+    import("@/content/blog/is-it-safe-to-outsource-bookkeeping-to-india"),
   "authorised-vs-paid-up-capital": () =>
     import("@/content/blog/authorised-vs-paid-up-capital"),
   "inc-20a-commencement-of-business": () =>
     import("@/content/blog/inc-20a-commencement-of-business"),
+  "mtd-income-tax-records-sole-traders-2026": () =>
+    import("@/content/blog/mtd-income-tax-records-sole-traders-2026"),
   "first-board-meeting-checklist": () =>
     import("@/content/blog/first-board-meeting-checklist"),
   "first-auditor-appointment-adt-1": () =>
     import("@/content/blog/first-auditor-appointment-adt-1"),
+  "can-overseas-bookkeeper-do-bas-australia": () =>
+    import("@/content/blog/can-overseas-bookkeeper-do-bas-australia"),
   "opening-current-account-new-company": () =>
     import("@/content/blog/opening-current-account-new-company"),
   "convert-proprietorship-to-private-limited": () =>
     import("@/content/blog/convert-proprietorship-to-private-limited"),
+  "uae-e-invoicing-2027-bookkeeping-checklist": () =>
+    import("@/content/blog/uae-e-invoicing-2027-bookkeeping-checklist"),
   "convert-partnership-firm-to-llp": () =>
     import("@/content/blog/convert-partnership-firm-to-llp"),
   "convert-llp-to-private-limited": () =>
     import("@/content/blog/convert-llp-to-private-limited"),
+  "catch-up-bookkeeping-how-long-what-to-send": () =>
+    import("@/content/blog/catch-up-bookkeeping-how-long-what-to-send"),
   "opc-to-private-limited-conversion": () =>
     import("@/content/blog/opc-to-private-limited-conversion"),
   "private-limited-company-for-ecommerce-sellers": () =>
@@ -357,6 +367,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "The objects clause decides what your company can do. Here is how to draft main objects that satisfy the MCA, banks, GST and licensing authorities.",
   },
   {
+    slug: "is-it-safe-to-outsource-bookkeeping-to-india",
+    title: "Is It Safe to Outsource Bookkeeping to India? A Checklist",
+    description:
+      "What to check before a firm in India keeps your books: access, the data-transfer rule in the US, UK, Singapore, Australia and UAE, who files and how to exit.",
+    date: "2026-11-12",
+    excerpt:
+      "It can be, if you control the access and the paperwork. A country-by-country checklist covering access, data-transfer rules, who files and what happens when you leave.",
+  },
+  {
     slug: "authorised-vs-paid-up-capital",
     title: "Authorised vs Paid-Up Capital: What Founders Should Know",
     description:
@@ -373,6 +392,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-11-17",
     excerpt:
       "A new company cannot start business or borrow until it files INC-20A. Here is the 180-day deadline, what the form needs, and what happens if you miss it.",
+  },
+  {
+    slug: "mtd-income-tax-records-sole-traders-2026",
+    title: "MTD for Income Tax: What Records Sole Traders Need From 2026",
+    description:
+      "MTD for Income Tax starts 6 April 2026 above £50,000 of qualifying income. What digital records sole traders and landlords keep, and who sends the updates.",
+    date: "2026-11-19",
+    excerpt:
+      "From 6 April 2026, sole traders and landlords over £50,000 of qualifying income keep digital records and send quarterly updates. What that means for your books.",
   },
   {
     slug: "first-board-meeting-checklist",
@@ -393,6 +421,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "The board must appoint the first auditor within 30 days of incorporation. How the rule works, the ADT-1 position, and the fix if the deadline is missed.",
   },
   {
+    slug: "can-overseas-bookkeeper-do-bas-australia",
+    title: "Can an Overseas Bookkeeper Do My BAS? What the Law Allows",
+    description:
+      "Under the Tax Agent Services Act, BAS work for a fee needs a registered agent. What an offshore bookkeeper can do, what needs supervision, and Payday Super.",
+    date: "2026-11-26",
+    excerpt:
+      "An offshore bookkeeper can keep and reconcile your books, but BAS services for a fee need a registered BAS or tax agent who supervises, lodges and stays responsible.",
+  },
+  {
     slug: "opening-current-account-new-company",
     title: "Opening a Current Account for a New Company",
     description:
@@ -411,6 +448,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "There is no one-click conversion. You incorporate a company, transfer the business into it and re-register GST, licences and bank accounts. Here is how.",
   },
   {
+    slug: "uae-e-invoicing-2027-bookkeeping-checklist",
+    title: "UAE E-Invoicing 2027: What to Fix in Your Books Now",
+    description:
+      "UAE B2B e-invoicing starts in 2027 through an Accredited Service Provider. The go-live dates, plus the TRN, customer, item and credit-note data to fix first.",
+    date: "2026-12-03",
+    excerpt:
+      "B2B e-invoicing in the UAE goes live from 1 January 2027 for the largest businesses and 1 July 2027 for the rest. A practical checklist of what to clean up in your books first.",
+  },
+  {
     slug: "convert-partnership-firm-to-llp",
     title: "Convert a Partnership Firm to an LLP: Form 17 Guide",
     description:
@@ -427,6 +473,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-12-08",
     excerpt:
       "LLPs that want equity investors or ESOPs often move to a company. Here is how the section 366 route, URC-2 notice and URC-1 filing work in practice.",
+  },
+  {
+    slug: "catch-up-bookkeeping-how-long-what-to-send",
+    title: "Catch-Up Bookkeeping: How Long It Takes and What to Send",
+    description:
+      "What catch-up bookkeeping involves, what decides how long it takes, the documents to send, the order the work is done in, and how filing deadlines are handled.",
+    date: "2026-12-10",
+    excerpt:
+      "Books months behind? What decides how long a catch-up takes, the documents to send, and the order the work is done in, from bank reconciliations to tax figures.",
   },
   {
     slug: "opc-to-private-limited-conversion",

@@ -22,12 +22,20 @@ export default function Page() {
       serviceType="Bookkeeping"
       crumbLabel="Bookkeeping Services"
       crumbHref="/bookkeeping-services-chennai"
+      parentCrumb={{ name: "Outsourced Bookkeeping", href: "/outsourced-bookkeeping-services" }}
       eyebrow="Bookkeeping · Chennai"
       h1="Bookkeeping Services in Chennai"
       subhead="Cloud accounting, monthly books close, and MIS reporting on the software you already use — from routine bookkeeping to backlog clean-up before an audit or raise."
       introHeading="What do bookkeeping services in Chennai cover?"
       intro="Bookkeeping is the ongoing recording and reconciliation of a business's financial transactions — sales, purchases, bank movements, and payroll entries — kept accurate and current enough that the resulting financial statements are actually reliable. Done well, it's the foundation everything else (tax filing, audit, investor reporting) is built on; done inconsistently, it creates the kind of backlog that turns a routine audit or funding round into a scramble."
       citation={{ label: "ICAI — Accounting Standards", href: "https://www.icai.org/post/accounting-standards" }}
+      keyFacts={[
+        { label: "Software", value: "Tally Prime, Zoho Books, QuickBooks or Xero, on your own licence or subscription." },
+        { label: "Books retention (companies)", value: "Books of account and vouchers for at least 8 financial years, under Section 128 of the Companies Act, 2013." },
+        { label: "Audit trail", value: "Since 1 April 2023, company accounting software must keep an edit log (audit trail) that cannot be disabled." },
+        { label: "Filings included", value: "GST returns, TDS returns, and ROC and income tax filings where agreed, prepared from the same reconciled books." },
+        { label: "Independence", value: "We do not act as statutory auditor of a company whose books we keep." },
+      ]}
       subServicesHeading="What bookkeeping services do we offer in Chennai?"
       subServices={[
         { name: "Cloud Accounting on Zoho Books / Tally Prime / QuickBooks / Xero", text: "Setup, data migration, and ongoing bookkeeping on the platform you already use — no forced switch to a different system." },
@@ -56,14 +64,23 @@ export default function Page() {
         { question: "Can you maintain books in US GAAP or IFRS format for our Indian subsidiary?", answer: "Yes — this is a specific service we provide for wholly-owned subsidiaries of overseas parent companies, including reporting in the parent's format alongside standard Indian statutory books, and coordination on FEMA/FC-GPR filings." },
         { question: "Do you handle reconciliation for Amazon or Flipkart sellers?", answer: "Yes — reconciling marketplace settlement reports against your books, tracking TCS deducted under GST, and inventory accounting is a routine part of our e-commerce bookkeeping service." },
         { question: "What's included in monthly MIS reporting?", answer: "A closed profit and loss statement, cash flow position, and a comparison against your budget where one exists — delivered on a fixed date every month, not whenever time allows." },
+        { question: "Tally Prime or Zoho Books: which should a Chennai business use?", answer: "Both work. Tally Prime suits businesses with inventory, multiple godowns or a long history in Tally, and is widely known by Chennai accountants and auditors. Zoho Books suits service businesses and startups that want cloud access, bank feeds and online invoicing from anywhere. We keep books in either and can migrate opening balances if you decide to switch." },
+        { question: "Is the audit trail (edit log) mandatory in accounting software?", answer: "For companies, yes. Since 1 April 2023 the Companies (Accounts) Rules require accounting software that records an audit trail of every change, with the date, and the feature cannot be disabled. The statutory auditor reports on it. When we set up or migrate books we check that the edit log is switched on in your Tally Prime or Zoho Books edition." },
+        { question: "How long must a company keep its books in India?", answer: "Section 128 of the Companies Act, 2013 requires books of account and the relevant vouchers to be kept for at least 8 financial years before the current year. Income tax and GST rules also set their own periods, so in practice books are kept for at least 8 years and longer where an assessment or appeal is open." },
+        { question: "Can you catch up a year of pending entries before the ITR or ROC deadline?", answer: "Usually, if source documents are available. We post the missing months in order, reconcile bank accounts and GST data, and prioritise what the return or the audit needs first. Tell us the deadline at the first call; if the backlog cannot be cleared in time, we say so and plan the filing around what can be done properly." },
+        { question: "Do you come to our office or work online?", answer: "Most bookkeeping is done online from our Anna Nagar office using your Tally data, Zoho Books access or shared documents. Meetings can be held at our Anna Nagar office, by video, or at your premises by arrangement for Chennai clients who keep physical records." },
+        { question: "Can the same firm keep our books and do our statutory audit?", answer: "No. A Chartered Accountant cannot audit books they keep, so if we keep a company's books we do not act as its statutory auditor. We can keep the books and work with your independent auditor, or act as auditor if someone else keeps the books." },
+        { question: "What decides the monthly bookkeeping fee?", answer: "We do not publish price lists. The fee depends on the number of transactions, bank accounts and GSTINs, inventory, payroll, whether GST and TDS filing are included, any backlog and the reports you need. After reviewing your books we quote a fixed monthly fee in the engagement letter." },
         { question: "How is bookkeeping for a clinic different from a regular small business?", answer: "A clinic earns from several streams that behave differently: consultation fees, procedure charges, diagnostic or lab income, and pharmacy sales, each with its own margin and payment timing. A generic setup that books them as one revenue line balances, but cannot show which part of the practice is profitable or worth expanding. Clinic bookkeeping separates these streams, tracks insurance and TPA reimbursements, which lag cash consultations, against what has actually been collected, and classifies equipment and consumables correctly. Keeping streams apart also matters for GST, since healthcare services by clinics are generally exempt while over-the-counter pharmacy sales are not. Practice management software rarely produces this financial view on its own." },
       ]}
       relatedQuestions={[
         { question: "Do you also handle payroll alongside bookkeeping?", href: "/payroll-services-chennai" },
         { question: "How does bookkeeping connect to my statutory audit?", href: "/statutory-audit-chennai" },
         { question: "Can bookkeeping and Virtual CFO work be combined?", href: "/virtual-cfo-services" },
+        { question: "Do you keep books for businesses outside India too?", href: "/outsourced-bookkeeping-services" },
       ]}
-      relatedSlugs={["outsourced-accounting-for-cpa-firms", "outsourced-accounting-for-uk-accountants", "virtual-cfo-services"]}
+      relatedPosts={["catch-up-bookkeeping-how-long-what-to-send", "business-personal-expenses-separate"]}
+      relatedSlugs={["outsourced-bookkeeping-services", "accounting-outsourcing-chennai", "virtual-cfo-services"]}
     />
   );
 }
