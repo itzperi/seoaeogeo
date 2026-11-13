@@ -133,7 +133,7 @@ export default function ServicePageTemplate({
           {topBanner && <div className="mb-10 max-w-3xl">{topBanner}</div>}
           {keyFacts.length > 0 && (
             <div className="mb-12 max-w-3xl overflow-hidden rounded-cards border border-carbon">
-              <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">What are the key facts?</h2>
+              <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">What are the key facts about {h1.replace(/:.*$/, "")}?</h2>
               <dl className="divide-y divide-ash bg-paper">
                 {keyFacts.map((f) => (
                   <div key={f.label} className="grid grid-cols-1 gap-1 px-5 py-3 sm:grid-cols-[200px_1fr] sm:gap-4">
