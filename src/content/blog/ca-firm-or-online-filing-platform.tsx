@@ -129,7 +129,7 @@ export default function Body() {
       <p>
         A firm is the natural fit when the work needs a signature, when a notice or appeal is involved, or when the
         answer depends on your facts, such as choosing between a{" "}
-        <Link href="/blog/llp-vs-opc-vs-pvt-ltd" className={link}>
+        <Link href="/company-registration-chennai" className={link}>
           private limited company, LLP or OPC
         </Link>
         , replying to a{" "}

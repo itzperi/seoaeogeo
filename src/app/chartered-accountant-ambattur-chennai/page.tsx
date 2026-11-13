@@ -46,8 +46,6 @@ export default function Page() {
       ]}
       furtherReading={[
         { slug: "statutory-audit-checklist", title: "Statutory Audit Checklist: What Auditors Actually Ask For" },
-        { slug: "annual-roc-filing-calendar", title: "Annual ROC Filing Deadlines: Calendar for Chennai Companies" },
-        { slug: "common-compliance-mistakes-chennai-startups", title: "First-Year Compliance Mistakes Chennai Startups Make" },
       ]}
     />
   );

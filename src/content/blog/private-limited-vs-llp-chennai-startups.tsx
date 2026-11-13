@@ -54,7 +54,7 @@ export default function Body() {
         bring in outside investors, hire a team, or both, within the next two
         or three years. If you are still choosing between an LLP, a One Person
         Company and a private limited company in general terms, start with our{" "}
-        <Link href="/blog/llp-vs-opc-vs-pvt-ltd">
+        <Link href="/company-registration-chennai">
           LLP vs OPC vs private limited overview
         </Link>
         . Here the question is narrower: once fundraising or hiring is on the

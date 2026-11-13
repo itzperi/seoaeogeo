@@ -163,7 +163,6 @@ export default function Page() {
       ]}
       furtherReading={[
         { slug: "foreign-rsu-tax-schedule-fa-chennai", title: "Foreign RSU and ESPP tax and Schedule FA" },
-        { slug: "old-vs-new-tax-regime", title: "Old vs New Tax Regime FY 2026-27: Which Saves More Tax?" },
         { slug: "advance-tax-deadlines", title: "Advance Tax Deadlines for FY 2026 to 27: A Practical Guide" },
       ]}
     />

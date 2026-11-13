@@ -27,6 +27,22 @@ const nextConfig: NextConfig = {
       // The pricing page was removed; send old links to the contact page.
       // "CA fees in Chennai" searchers need the fee-transparency checks (ICAI: no
       // fee figures), so send them to the guide rather than the contact page.
+      // Thin posts (under 460 words, zero impressions Aug-Nov 2026) merged into
+      // the service page or stronger guide that owns the same search (13 Nov 2026).
+      { source: "/blog/llp-vs-opc-vs-pvt-ltd", destination: "/company-registration-chennai", permanent: true },
+      { source: "/blog/startup-india-registration", destination: "/startup-india-registration-chennai", permanent: true },
+      { source: "/blog/annual-roc-filing-calendar", destination: "/roc-compliances", permanent: true },
+      { source: "/blog/audit-applicability-thresholds", destination: "/audit-and-assurance", permanent: true },
+      { source: "/blog/trust-vs-society-vs-section8", destination: "/trust", permanent: true },
+      { source: "/blog/rera-registration-renewal", destination: "/rera", permanent: true },
+      { source: "/blog/old-vs-new-tax-regime", destination: "/income-tax-return-filing-chennai", permanent: true },
+      { source: "/blog/gst-registration-online-sellers-chennai", destination: "/gst-registration-chennai", permanent: true },
+      { source: "/blog/common-compliance-mistakes-chennai-startups", destination: "/annual-compliance-package", permanent: true },
+      { source: "/blog/msme-loan-schemes-tamil-nadu", destination: "/msme-udyam-registration-chennai", permanent: true },
+      { source: "/blog/outgrown-bookkeeping-signs", destination: "/bookkeeping-services-chennai", permanent: true },
+      { source: "/blog/cash-flow-forecasting-framework", destination: "/virtual-cfo-services", permanent: true },
+      { source: "/blog/virtual-cfo-vs-full-time-cfo-cost-comparison", destination: "/virtual-cfo-services", permanent: true },
+      { source: "/blog/gst-litigation-t-nagar-jewellery", destination: "/blog/itc-mismatch-notices", permanent: true },
       { source: "/ca-fees-chennai", destination: "/blog/how-to-choose-a-chartered-accountant-in-chennai", permanent: true },
       // Merged into the company registration hub (it competed for the same searches).
       { source: "/formation-of-business-entity", destination: "/company-registration-chennai", permanent: true },

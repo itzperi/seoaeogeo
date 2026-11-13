@@ -48,7 +48,6 @@ export default function Page() {
       furtherReading={[
         { slug: "virtual-cfo-omr-startups", title: "Virtual CFO Support for OMR's Growth-Stage Startups" },
         { slug: "form-3ceb-due-date-applicability", title: "Form 3CEB Due Date and Applicability: A Practical Guide" },
-        { slug: "common-compliance-mistakes-chennai-startups", title: "First-Year Compliance Mistakes Chennai Startups Make" },
       ]}
     />
   );

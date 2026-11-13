@@ -67,7 +67,6 @@ export default function Page() {
       ]}
       furtherReading={[
         { slug: "fcra-registration", title: "FCRA Registration for Chennai NGOs Accepting Foreign Funds" },
-        { slug: "old-vs-new-tax-regime", title: "Old vs New Tax Regime FY 2026-27: Which Saves More Tax?" },
       ]}
     />
   );

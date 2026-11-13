@@ -41,7 +41,8 @@ export const meta: BlogPostMeta = {
       answer:
         "Yes. A company must hold its AGM, file AOC-4 and MGT-7 or MGT-7A, get its accounts audited and file an income tax return even with nil turnover. Penalties for late ROC filings accumulate per day, so a dormant first year is not a free year. Strike-off is the route if the company will not operate.",
     },
-  ],
+  ],
+
   summary:
     "A new company must hold its first board meeting and appoint the first auditor within 30 days of incorporation, issue share certificates within two months, and file INC-20A within 180 days. After the first financial year, it needs the audit, the AGM, then AOC-4, MGT-7 and the income tax return. GST, professional tax and TDS apply as relevant.",
 };
@@ -260,7 +261,7 @@ export default function Body() {
         and MGT-7 or MGT-7A deadlines then run from the AGM date, not from the
         year-end, so holding the AGM late pushes every annual ROC filing late
         with it. Our{" "}
-        <Link href="/blog/annual-roc-filing-calendar">
+        <Link href="/roc-compliances">
           annual ROC filing calendar
         </Link>{" "}
         covers the recurring cycle from the second year onwards.
@@ -308,7 +309,7 @@ export default function Body() {
         Put every date above into one calendar on the day the certificate
         arrives, and assign each to a named person. Most first-year problems
         come from deadlines nobody owned, not from complicated law; see our{" "}
-        <Link href="/blog/common-compliance-mistakes-chennai-startups">
+        <Link href="/annual-compliance-package">
           first-year compliance mistakes
         </Link>{" "}
         for the patterns. If you are still incorporating, read our{" "}

@@ -8,6 +8,11 @@ Questions:
 3. Is an auditor the same as a chartered accountant?
 4. How much does it cost to register a private limited company in Tamil Nadu?
 5. Tax consultant in Chennai for NRI property sale
+6. What is the Form 3CEB due date for 2026, and what is Form 48?
+7. What is the time limit for a Section 74A GST notice?
+8. Is my company under ROC Chennai or ROC Coimbatore?
+9. What is the new section for 44AB under the Income-tax Act 2025?
+10. What are the government fees to register a private limited company in Tamil Nadu?
 
 | Date | Platform | Question # | Firm named? | csrushil.com URL cited | Other firms/sites cited | Notes |
 |---|---|---|---|---|---|---|

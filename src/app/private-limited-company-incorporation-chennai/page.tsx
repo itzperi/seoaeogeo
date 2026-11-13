@@ -215,7 +215,8 @@ const RELATED_POSTS = [
   "spice-plus-incorporation-explained",
   "private-limited-vs-llp-chennai-startups",
   "post-incorporation-compliance-checklist",
-  "common-compliance-mistakes-chennai-startups",
+  "company-name-rejection-reasons",
+  "government-fees-company-registration",
 ];
 
 const CRUMBS = [

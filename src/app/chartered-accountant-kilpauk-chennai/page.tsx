@@ -66,7 +66,6 @@ export default function Page() {
         { question: "Can you register a small clinic or shop in Kilpauk for GST?", answer: "Yes, GST registration and ongoing return filing for local retail, clinics, and small service businesses is something we handle regularly for clients in and around Kilpauk." },
       ]}
       furtherReading={[
-        { slug: "audit-applicability-thresholds", title: "Audit Applicability Thresholds for Chennai Businesses" },
         { slug: "capital-gains-tax-property-sale", title: "Capital Gains Tax on Property Sale for Chennai Sellers" },
       ]}
     />

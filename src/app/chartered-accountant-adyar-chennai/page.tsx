@@ -68,7 +68,6 @@ export default function Page() {
       ]}
       furtherReading={[
         { slug: "fcra-registration", title: "FCRA Registration for Chennai NGOs Accepting Foreign Funds" },
-        { slug: "outgrown-bookkeeping-signs", title: "Signs Your Chennai Business Has Outgrown Basic Bookkeeping" },
       ]}
     />
   );

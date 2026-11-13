@@ -169,7 +169,6 @@ export default function Page() {
       furtherReading={[
         { slug: "rnor-status-returning-nri", title: "RNOR status for NRIs returning to Chennai" },
         { slug: "foreign-rsu-tax-schedule-fa-chennai", title: "Foreign RSU and ESPP tax and Schedule FA" },
-        { slug: "old-vs-new-tax-regime", title: "Old vs New Tax Regime FY 2026-27: Which Saves More Tax?" },
         { slug: "capital-gains-tax-property-sale", title: "Capital Gains Tax on Property Sale for Chennai Sellers" },
       ]}
     />

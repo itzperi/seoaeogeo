@@ -48,7 +48,6 @@ export default function Page() {
       furtherReading={[
         { slug: "what-virtual-cfo-reviews-monthly", title: "What a Virtual CFO Actually Reviews Every Month" },
         { slug: "itc-mismatch-notices", title: "ITC Mismatch Notices: Why They Happen and How to Respond" },
-        { slug: "annual-roc-filing-calendar", title: "Annual ROC Filing Deadlines: Calendar for Chennai Companies" },
       ]}
     />
   );

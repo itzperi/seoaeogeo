@@ -123,8 +123,6 @@ const modules = {
     import("@/content/blog/tds-return-filing-deadlines"),
   "msme-udyam-registration-checklist": () =>
     import("@/content/blog/msme-udyam-registration-checklist"),
-  "virtual-cfo-vs-full-time-cfo-cost-comparison": () =>
-    import("@/content/blog/virtual-cfo-vs-full-time-cfo-cost-comparison"),
   "rera-compliance-calendar-tamil-nadu": () =>
     import("@/content/blog/rera-compliance-calendar-tamil-nadu"),
   "12a-80g-registration-guide-chennai-ngos": () =>
@@ -137,16 +135,8 @@ const modules = {
     import("@/content/blog/advance-tax-deadlines"),
   "after-gst-show-cause-reply": () =>
     import("@/content/blog/after-gst-show-cause-reply"),
-  "annual-roc-filing-calendar": () =>
-    import("@/content/blog/annual-roc-filing-calendar"),
-  "audit-applicability-thresholds": () =>
-    import("@/content/blog/audit-applicability-thresholds"),
   "capital-gains-tax-property-sale": () =>
     import("@/content/blog/capital-gains-tax-property-sale"),
-  "cash-flow-forecasting-framework": () =>
-    import("@/content/blog/cash-flow-forecasting-framework"),
-  "common-compliance-mistakes-chennai-startups": () =>
-    import("@/content/blog/common-compliance-mistakes-chennai-startups"),
   "documents-checklist-before-auditor-visit": () =>
     import("@/content/blog/documents-checklist-before-auditor-visit"),
   "fcra-registration": () =>
@@ -155,46 +145,28 @@ const modules = {
     import("@/content/blog/form-3ceb-due-date-applicability"),
   "gst-freelancers-consultants": () =>
     import("@/content/blog/gst-freelancers-consultants"),
-  "gst-registration-online-sellers-chennai": () =>
-    import("@/content/blog/gst-registration-online-sellers-chennai"),
   "gstr9-annual-return-checklist": () =>
     import("@/content/blog/gstr9-annual-return-checklist"),
   "itc-mismatch-notices": () =>
     import("@/content/blog/itc-mismatch-notices"),
-  "llp-vs-opc-vs-pvt-ltd": () =>
-    import("@/content/blog/llp-vs-opc-vs-pvt-ltd"),
   "llp-annual-filing-form8-form11": () =>
     import("@/content/blog/llp-annual-filing-form8-form11"),
   "lut-for-exporters": () =>
     import("@/content/blog/lut-for-exporters"),
-  "msme-loan-schemes-tamil-nadu": () =>
-    import("@/content/blog/msme-loan-schemes-tamil-nadu"),
   "nri-itr-filing": () =>
     import("@/content/blog/nri-itr-filing"),
-  "old-vs-new-tax-regime": () =>
-    import("@/content/blog/old-vs-new-tax-regime"),
-  "outgrown-bookkeeping-signs": () =>
-    import("@/content/blog/outgrown-bookkeeping-signs"),
   "post-incorporation-compliance-checklist": () =>
     import("@/content/blog/post-incorporation-compliance-checklist"),
-  "rera-registration-renewal": () =>
-    import("@/content/blog/rera-registration-renewal"),
-  "startup-india-registration": () =>
-    import("@/content/blog/startup-india-registration"),
   "statutory-vs-tax-vs-internal-audit": () =>
     import("@/content/blog/statutory-vs-tax-vs-internal-audit"),
   "strike-off-vs-winding-up": () =>
     import("@/content/blog/strike-off-vs-winding-up"),
   "tds-on-rent": () =>
     import("@/content/blog/tds-on-rent"),
-  "trust-vs-society-vs-section8": () =>
-    import("@/content/blog/trust-vs-society-vs-section8"),
   "virtual-cfo-omr-startups": () =>
     import("@/content/blog/virtual-cfo-omr-startups"),
   "what-virtual-cfo-reviews-monthly": () =>
     import("@/content/blog/what-virtual-cfo-reviews-monthly"),
-  "gst-litigation-t-nagar-jewellery": () =>
-    import("@/content/blog/gst-litigation-t-nagar-jewellery"),
   "business-personal-expenses-separate": () =>
     import("@/content/blog/business-personal-expenses-separate"),
   "safe-cash-deposit-limit": () =>
@@ -679,15 +651,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "Udyam registration unlocks delayed-payment protection, priority lending, and tender eligibility. Here's whether you qualify and how to apply.",
   },
   {
-    slug: "virtual-cfo-vs-full-time-cfo-cost-comparison",
-    title: "Virtual CFO vs Full-Time CFO: A Cost Comparison for Chennai",
-    description:
-      "A real cost comparison between a Virtual CFO engagement and a full-time in-house CFO hire for growing Chennai businesses.",
-    date: "2026-09-19",
-    excerpt:
-      "A full-time CFO in Chennai costs significantly more than most growth-stage businesses assume. Here's the actual math against a Virtual CFO engagement.",
-  },
-  {
     slug: "rera-compliance-calendar-tamil-nadu",
     title: "RERA Compliance Calendar for Tamil Nadu Developers",
     description:
@@ -725,12 +688,13 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "advance-tax-deadlines",
-    title: "Advance Tax Deadlines for FY 2026 to 27: A Practical Guide",
+    title: "Advance Tax Due Dates 2026-27: Instalments and Interest",
     description:
-      "Advance tax catches consultants, freelancers, and small business owners in Chennai off guard — it means paying tax in installments through the year.",
+      "Advance tax for tax year 2026-27 is due 15 June, 15 September, 15 December and 15 March: 15%, 45%, 75% and 100%. Who must pay and how interest works.",
     date: "2026-09-19",
+    updated: "2026-11-13",
     excerpt:
-      "Advance tax catches a lot of consultants, freelancers, and small business owners in Chennai off guard, mainly because it requires...",
+      "Advance tax for tax year 2026-27 is paid in four instalments: 15%, 45%, 75% and 100% by 15 June, 15 September, 15 December and 15 March. Who must pay, and how interest is avoided.",
   },
   {
     slug: "after-gst-show-cause-reply",
@@ -742,24 +706,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",
   },
   {
-    slug: "annual-roc-filing-calendar",
-    title: "Annual ROC Filing Deadlines: Calendar for Chennai Companies",
-    description:
-      "ROC filings follow a predictable annual cycle, but the forms and deadlines are scattered enough that even organized Chennai companies miss one.",
-    date: "2026-09-19",
-    excerpt:
-      "Registrar of Companies filings follow a predictable annual cycle, but the specific forms and their deadlines are scattered enough across...",
-  },
-  {
-    slug: "audit-applicability-thresholds",
-    title: "Audit Applicability Thresholds for Chennai Businesses",
-    description:
-      "One of the most common questions from growing businesses in Chennai is simple: has my business crossed the point where an audit becomes mandatory.",
-    date: "2026-09-19",
-    excerpt:
-      "One of the most common questions from growing businesses in Chennai is simple: has my business crossed the point where an audit becomes...",
-  },
-  {
     slug: "capital-gains-tax-property-sale",
     title: "Capital Gains Tax on Selling Property in Chennai: 2026 Guide",
     description:
@@ -768,24 +714,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     updated: "2026-10-12",
     excerpt:
       "A worked guide to capital gains on selling a Chennai house, flat or plot: the 12.5% or 20% indexed choice, guideline value, reinvestment exemptions, TDS and co-owners.",
-  },
-  {
-    slug: "cash-flow-forecasting-framework",
-    title: "Simple Cash Flow Forecasting Framework for Small Businesses",
-    description:
-      "Cash flow forecasting sounds like something only large companies need, but small Chennai businesses often run into cash problems for exactly that reason.",
-    date: "2026-09-19",
-    excerpt:
-      "Cash flow forecasting sounds like something only large companies need, but small and mid sized businesses in Chennai often run into far...",
-  },
-  {
-    slug: "common-compliance-mistakes-chennai-startups",
-    title: "First-Year Compliance Mistakes Chennai Startups Make",
-    description:
-      "Chennai founders focused on customers and product often let compliance mistakes pile up quietly until they surface as penalties or blocked fundraising.",
-    date: "2026-09-19",
-    excerpt:
-      "Founders launching a business in Chennai are usually focused on customers and product, which is exactly right, but it also means compliance...",
   },
   {
     slug: "documents-checklist-before-auditor-visit",
@@ -825,15 +753,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
   },
   {
-    slug: "gst-registration-online-sellers-chennai",
-    title: "GST Registration for Online Sellers in Chennai: Key Rules",
-    description:
-      "Selling on Amazon, Flipkart, Meesho, or your own website isn't the same as running a regular shop under GST — many first-time sellers learn this the hard way.",
-    date: "2026-09-19",
-    excerpt:
-      "Selling on Amazon, Flipkart, Meesho, or your own website is not the same as running a regular shop when it comes to GST, and a lot of first...",
-  },
-  {
     slug: "gstr9-annual-return-checklist",
     title: "GSTR-9 Annual Return: Filing Checklist for Small Businesses",
     description:
@@ -850,15 +769,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to...",
-  },
-  {
-    slug: "llp-vs-opc-vs-pvt-ltd",
-    title: "LLP vs OPC vs Private Limited: Choosing a Chennai Structure",
-    description:
-      "Every founder starting a business in Chennai eventually faces the same decision: which legal structure to register under.",
-    date: "2026-09-19",
-    excerpt:
-      "Every founder starting a business in Chennai eventually faces the same decision: which legal structure to register under.",
   },
   {
     slug: "llp-annual-filing-form8-form11",
@@ -879,15 +789,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "If your Chennai business sells services or goods to clients outside India, a Letter of Undertaking (LUT) is one of the most valuable and...",
   },
   {
-    slug: "msme-loan-schemes-tamil-nadu",
-    title: "MSME Loan Schemes for Small Businesses in Tamil Nadu",
-    description:
-      "Chennai small business owners often assume bank loans are their only option, without realizing Udyam/MSME registration unlocks better-terms loan schemes.",
-    date: "2026-09-19",
-    excerpt:
-      "Small business owners in Chennai often assume bank loans are their only financing option, without realizing that registering as an MSME...",
-  },
-  {
     slug: "nri-itr-filing",
     title: "NRI Income Tax Return Filing: A Guide for Chennai NRIs",
     description:
@@ -895,24 +796,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "Non resident Indians with family, property, or investments back in Chennai often have a genuine Indian tax filing obligation that gets...",
-  },
-  {
-    slug: "old-vs-new-tax-regime",
-    title: "Old vs New Tax Regime FY 2026-27: Which Saves More Tax?",
-    description:
-      "Salaried professionals and small business owners in Chennai ask this every year: old tax regime or new? The honest answer depends on your actual deductions.",
-    date: "2026-09-19",
-    excerpt:
-      "Every year around this time, salaried professionals and small business owners in Chennai ask the same question: should I stick with the old...",
-  },
-  {
-    slug: "outgrown-bookkeeping-signs",
-    title: "Signs Your Chennai Business Has Outgrown Basic Bookkeeping",
-    description:
-      "Bookkeeping keeps your records accurate, but a growing business eventually needs someone actively interpreting the numbers, not just recording them.",
-    date: "2026-09-19",
-    excerpt:
-      "Bookkeeping keeps your transaction records accurate, but there is a point where a growing business needs more than accurate records, it...",
   },
   {
     slug: "post-incorporation-compliance-checklist",
@@ -923,24 +806,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     updated: "2026-10-12",
     excerpt:
       "Month by month, what a newly incorporated Tamil Nadu company must do in its first year, worked through for a company incorporated on 15 June 2026.",
-  },
-  {
-    slug: "rera-registration-renewal",
-    title: "RERA Registration Renewal Deadlines for Chennai Developers",
-    description:
-      "Chennai real estate developers and agents need to track not just initial RERA registration but renewal deadlines and ongoing disclosure obligations.",
-    date: "2026-09-19",
-    excerpt:
-      "Real estate developers and agents in Chennai working on projects that fall under the Real Estate Regulatory Authority need to track not...",
-  },
-  {
-    slug: "startup-india-registration",
-    title: "Startup India Registration: Is It Worth It in Chennai?",
-    description:
-      "Startup India recognition gets mentioned often by Chennai founders, but there's genuine confusion about what it actually provides versus what people assume.",
-    date: "2026-09-19",
-    excerpt:
-      "Startup India recognition gets mentioned often by founders in Chennai, but there's genuine confusion about what it actually provides versus...",
   },
   {
     slug: "statutory-vs-tax-vs-internal-audit",
@@ -970,15 +835,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
       "Tax deducted at source on rent payments trips up both sides of the transaction in Chennai, tenants who don't realize they need to deduct it...",
   },
   {
-    slug: "trust-vs-society-vs-section8",
-    title: "Trust vs Society vs Section 8: Choosing an NGO Structure",
-    description:
-      "Starting a nonprofit in Chennai means choosing between a trust, a society, or a Section 8 company — the right choice depends on governance and funding plans.",
-    date: "2026-09-19",
-    excerpt:
-      "Anyone starting a charitable or nonprofit initiative in Chennai has to choose between three common structures, a trust, a society, or a...",
-  },
-  {
     slug: "virtual-cfo-omr-startups",
     title: "Virtual CFO Support for OMR's Growth-Stage Startups",
     description:
@@ -995,15 +851,6 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-19",
     excerpt:
       "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense...",
-  },
-  {
-    slug: "gst-litigation-t-nagar-jewellery",
-    title: "Why T Nagar Jewellery and Textile Traders Get ITC Notices",
-    description:
-      "High transaction volume and a chain of smaller suppliers make T Nagar's retail sector especially exposed to ITC mismatch notices. Here's the real pattern.",
-    date: "2026-09-26",
-    excerpt:
-      "High transaction volume and a chain of smaller suppliers make T Nagar's retail sector especially exposed to ITC mismatch notices.",
   },
   {
     slug: "business-personal-expenses-separate",

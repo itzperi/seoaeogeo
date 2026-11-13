@@ -312,8 +312,8 @@ export default function VirtualCfoPage() {
                 If more than
                 one of these sounds familiar, that&apos;s the actual signal — not a
                 specific headcount or turnover threshold. See our full breakdown in{" "}
-                <Link href="/blog/outgrown-bookkeeping-signs" className="text-royal-violet underline">
-                  Signs Your Chennai Business Has Outgrown Basic Bookkeeping
+                <Link href="/bookkeeping-services-chennai" className="text-royal-violet underline">
+                  bookkeeping services in Chennai
                 </Link>
                 .
               </p>

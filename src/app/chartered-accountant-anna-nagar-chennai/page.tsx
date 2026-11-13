@@ -133,9 +133,7 @@ export default function Page() {
         { slug: "how-to-choose-a-chartered-accountant-in-chennai", title: "How to Choose a CA Firm in Chennai: 9 Checks Before You Hire" },
         { slug: "itc-mismatch-notices", title: "ITC Mismatch Notices: Why They Happen and How to Respond" },
         { slug: "documents-checklist-before-auditor-visit", title: "Documents Checklist Before Your Auditor's Visit" },
-        { slug: "audit-applicability-thresholds", title: "Audit Applicability Thresholds for Chennai Businesses" },
         { slug: "post-incorporation-compliance-checklist", title: "Post-Incorporation Compliance Checklist for Chennai Firms" },
-        { slug: "outgrown-bookkeeping-signs", title: "Signs Your Chennai Business Has Outgrown Basic Bookkeeping" },
         { slug: "advance-tax-deadlines", title: "Advance Tax Deadlines for FY 2026 to 27: A Practical Guide" },
         { slug: "msme-udyam-registration-checklist", title: "MSME Udyam Registration After Incorporation: A Checklist" },
       ]}
