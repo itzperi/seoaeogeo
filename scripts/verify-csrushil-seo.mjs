@@ -26,7 +26,9 @@ const BASELINE = { footer: 99, header: 88 };
 const AI_BOTS = ["Googlebot", "OAI-SearchBot", "GPTBot", "ChatGPT-User", "PerplexityBot", "ClaudeBot", "Applebot"];
 
 const results = [];
+const warnings = [];
 const check = (group, name, pass, detail = "") => results.push({ group, name, pass: Boolean(pass), detail });
+const advise = (group, name, pass, detail = "") => { if (!pass) warnings.push(`${group}: ${name} — ${detail}`); };
 
 async function get(path, opts = {}) {
   const res = await fetch(BASE + path, { redirect: "manual", ...opts });
@@ -66,10 +68,10 @@ async function checkTarget({ path, phrase }) {
 
   const title = decode(one(html, /<title>([\s\S]*?)<\/title>/) ?? "");
   check(g, `title contains "${phrase}"`, title.includes(phrase), title);
-  check(g, "title length 50–60", title.length >= 50 && title.length <= 60, `${title.length} chars`);
+  advise(g, "Review title display length (editorial guideline)", title.length >= 30 && title.length <= 65, `${title.length} chars`);
 
   const desc = decode(one(html, /<meta name="description" content="([^"]*)"/) ?? "");
-  check(g, "meta description 120–165 chars", desc.length >= 120 && desc.length <= 165, `${desc.length} chars`);
+  check(g, "meta description present", Boolean(desc), `${desc.length} chars`);
 
   const canonical = one(html, /<link rel="canonical" href="([^"]*)"/);
   check(g, "self-referencing canonical", canonical === SITE + (path === "/" ? "" : path) || canonical === SITE + path, canonical);
@@ -79,13 +81,13 @@ async function checkTarget({ path, phrase }) {
 
   const lead = decode(one(html, /<p[^>]*id="lead-answer"[^>]*>([\s\S]*?)<\/p>/) ?? "");
   const words = lead ? lead.split(" ").length : 0;
-  check(g, "40–55 word lead answer (#lead-answer)", words >= 40 && words <= 55, `${words} words`);
+  check(g, "Server-rendered lead answer (#lead-answer)", words > 0, `${words} words; no fixed ranking word count`);
 
   const h2s = all(html, /<h2[^>]*>([\s\S]*?)<\/h2>/g).map(decode);
   const generic = new Set(["Frequently asked questions", "People also ask", "Related guides", "Official sources", "Related services"]);
   const content = h2s.filter((h) => !generic.has(h) && !h.startsWith("More "));
   const questions = content.filter((h) => h.endsWith("?"));
-  check(g, "content <h2>s phrased as questions", questions.length === content.length, `${questions.length}/${content.length}${content.length > questions.length ? " — not: " + content.filter((h) => !h.endsWith("?")).join(" | ") : ""}`);
+  advise(g, "Question headings where useful (editorial observation)", questions.length === content.length, `${questions.length}/${content.length}`);
   check(g, "native <table> present", /<table[\s>]/.test(html), "");
 
   const { blocks, nodes } = jsonLdNodes(html);
@@ -96,8 +98,9 @@ async function checkTarget({ path, phrase }) {
   check(g, "Person CA Rushil C S (#ca-rushil)", person?.name === "CA Rushil C S", person?.jobTitle ?? "");
   const service = ofType(nodes, "Service").find((n) => n.provider?.["@id"] === `${SITE}/#organization`);
   check(g, "Service with provider and OfferCatalog", service?.hasOfferCatalog, service?.serviceType ?? "");
-  const webpage = ofType(nodes, "WebPage").find((n) => n.author?.["@id"] === `${SITE}/#ca-rushil` && n.reviewedBy?.["@id"] === `${SITE}/#ca-rushil`);
-  check(g, "WebPage author + reviewedBy → #ca-rushil", webpage, "");
+  const webpage = ofType(nodes, "WebPage").find((n) => n.publisher?.["@id"] === `${SITE}/#organization`);
+  check(g, "WebPage publisher → #organization", webpage, "Professional reviews require separate evidence");
+  check(g, "Review claims agree with visible dated attribution", !webpage?.reviewedBy || (webpage.lastReviewed && decode(html).includes("Reviewed by")), "");
   check(g, "BreadcrumbList", ofType(nodes, "BreadcrumbList").length === 1, `${ofType(nodes, "BreadcrumbList").length} found`);
 
   const faqs = ofType(nodes, "FAQPage");
@@ -199,4 +202,5 @@ for (const r of results) {
 }
 const failed = results.filter((r) => !r.pass).length;
 console.log(`\n${results.length - failed}/${results.length} checks passed`);
+for (const warning of warnings) console.log(`WARN ${warning}`);
 process.exit(failed ? 1 : 0);

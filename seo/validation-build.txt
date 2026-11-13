@@ -1,0 +1,188 @@
+
+> csrushil-website@0.1.0 build
+> next build --webpack
+
+▲ Next.js 16.3.5 (webpack)
+✓ Running next.config.ts took 104ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 16.6s
+  Running TypeScript ...
+  Finished TypeScript in 15.7s ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/288) ...
+  Generating static pages using 15 workers (72/288) 
+  Generating static pages using 15 workers (144/288) 
+  Generating static pages using 15 workers (216/288) 
+✓ Generating static pages using 15 workers (288/288) in 8.0s
+  Finalizing page optimization ...
+  Collecting build traces ...
+
+Route (app)                                                          Revalidate  Expire
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about-us
+├ ○ /accounting-outsourcing-chennai
+├ ƒ /admin
+├ ○ /annual-compliance-package
+├ ƒ /api/admin/leads
+├ ƒ /api/admin/leads/[id]
+├ ƒ /api/admin/login
+├ ƒ /api/admin/logout
+├ ƒ /api/leads
+├ ƒ /api/track
+├ ○ /apple-icon.png
+├ ○ /audit-and-assurance
+├ ○ /blog                                                                    1d      1y
+├   /blog/[slug]
+│ ├ ● /blog/foreign-rsu-tax-schedule-fa-chennai                              1d      1y
+│ ├ ● /blog/rnor-status-returning-nri                                        1d      1y
+│ ├ ● /blog/joint-development-agreement-tax-chennai                          1d      1y
+│ └ ● [+66 more paths]
+├   /blog/[slug]/opengraph-image
+│ ├ ● /blog/foreign-rsu-tax-schedule-fa-chennai/opengraph-image
+│ ├ ● /blog/rnor-status-returning-nri/opengraph-image
+│ ├ ● /blog/joint-development-agreement-tax-chennai/opengraph-image
+│ └ ● [+66 more paths]
+├ ○ /bookkeeping-services-chennai
+├ ○ /career
+├ ○ /chartered-accountant-adyar-chennai
+├ ○ /chartered-accountant-ambattur-chennai
+├ ○ /chartered-accountant-anna-nagar-chennai
+├ ○ /chartered-accountant-guindy-chennai
+├ ○ /chartered-accountant-kilpauk-chennai
+├ ○ /chartered-accountant-mylapore-chennai
+├ ○ /chartered-accountant-nungambakkam-chennai
+├ ○ /chartered-accountant-omr-sholinganallur-chennai
+├ ○ /chartered-accountant-porur-chennai
+├ ○ /chartered-accountant-t-nagar-chennai
+├ ○ /chartered-accountant-tambaram-chennai
+├ ○ /chartered-accountant-velachery-chennai
+├ ○ /company-registration-chengalpattu
+├ ○ /company-registration-chennai
+├ ○ /company-registration-coimbatore
+├ ○ /company-registration-erode
+├ ○ /company-registration-hosur
+├ ○ /company-registration-india-for-foreigners
+├ ○ /company-registration-kanchipuram
+├ ○ /company-registration-karur
+├ ○ /company-registration-madurai
+├ ○ /company-registration-nagercoil
+├ ○ /company-registration-namakkal
+├ ○ /company-registration-salem
+├ ○ /company-registration-thanjavur
+├ ○ /company-registration-thoothukudi
+├ ○ /company-registration-tiruchirappalli
+├ ○ /company-registration-tirunelveli
+├ ○ /company-registration-tiruppur
+├ ○ /company-registration-vellore
+├ ○ /contact
+├ ○ /digital-signature-certificate-chennai
+├ ○ /direct-tax
+├ ○ /eor-vs-subsidiary-india
+├ ○ /faq
+├ ○ /fema-rbi-compliance
+├ ○ /form-15ca-15cb-chennai
+├ ○ /fssai-license-chennai
+├ ○ /goods-and-services-tax
+├ ○ /gst-litigation-chennai
+├ ○ /gst-litigation-chennai/opengraph-image
+├ ○ /gst-litigation-coimbatore
+├ ○ /gst-litigation-hosur
+├ ○ /gst-litigation-madurai
+├ ○ /gst-litigation-salem
+├ ○ /gst-litigation-tiruchirappalli
+├ ○ /gst-litigation-tiruppur
+├ ○ /gst-notice-reply-chennai
+├ ○ /gst-registration-chennai
+├ ○ /gst-return-filing-chennai
+├ ○ /gst-return-filing-for-amazon-sellers
+├ ○ /gst-return-filing-for-clinics
+├ ○ /gst-return-filing-for-ecommerce-sellers
+├ ○ /gst-return-filing-for-freelancers
+├ ○ /gst-return-filing-for-import-export-businesses
+├ ○ /gst-return-filing-for-manufacturers
+├ ○ /gst-return-filing-for-restaurants
+├ ○ /gst-return-filing-for-startups
+├ ○ /how-we-work
+├ ○ /icon.png
+├ ○ /iec-registration-chennai
+├ ○ /income-tax-assessment-appeals-chennai
+├ ○ /income-tax-consultant-alwarpet-chennai
+├ ○ /income-tax-consultant-anna-nagar-chennai
+├ ○ /income-tax-consultant-bangalore
+├ ○ /income-tax-consultant-besant-nagar-chennai
+├ ○ /income-tax-consultant-coimbatore
+├ ○ /income-tax-consultant-delhi-ncr
+├ ○ /income-tax-consultant-for-hni-chennai
+├ ○ /income-tax-consultant-for-hni-chennai/opengraph-image
+├ ○ /income-tax-consultant-gopalapuram-chennai
+├ ○ /income-tax-consultant-hyderabad
+├ ○ /income-tax-consultant-kolkata
+├ ○ /income-tax-consultant-kotturpuram-chennai
+├ ○ /income-tax-consultant-madurai
+├ ○ /income-tax-consultant-mumbai
+├ ○ /income-tax-consultant-neelankarai-ecr-chennai
+├ ○ /income-tax-consultant-pune
+├ ○ /income-tax-consultant-ra-puram-chennai
+├ ○ /income-tax-consultant-tiruchirappalli
+├ ○ /income-tax-notice-reply-chennai
+├ ○ /income-tax-return-filing-chennai
+├ ○ /india-subsidiary-compliance-cfo
+├ ○ /india-subsidiary-for-singapore-companies
+├ ○ /india-subsidiary-for-uae-companies
+├ ○ /india-subsidiary-for-uk-companies
+├ ○ /india-subsidiary-for-us-companies
+├ ○ /llp-registration-chennai
+├ ○ /management-consultancy
+├ ○ /manifest.webmanifest
+├ ƒ /md/[...path]
+├ ○ /msme-udyam-registration-chennai
+├ ○ /nri-property-sale-tds-chennai
+├ ○ /nri-tax-services
+├ ○ /nri-tax-services-gulf
+├ ○ /nri-tax-services-singapore
+├ ○ /nri-tax-services-uae
+├ ○ /nri-tax-services-uk
+├ ○ /nri-tax-services-usa
+├ ○ /opc-registration-chennai
+├ ○ /opengraph-image
+├ ○ /outsourced-accounting-for-cpa-firms
+├ ○ /outsourced-accounting-for-uk-accountants
+├ ○ /outsourced-bookkeeping-australia
+├ ○ /outsourced-bookkeeping-services
+├ ○ /outsourced-bookkeeping-singapore
+├ ○ /outsourced-bookkeeping-uae
+├ ○ /outsourced-bookkeeping-uk
+├ ○ /outsourced-bookkeeping-usa
+├ ○ /partnership-firm-registration-chennai
+├ ○ /payroll-services-chennai
+├ ○ /private-limited-company-incorporation-chennai
+├ ○ /private-limited-company-incorporation-chennai/opengraph-image
+├ ○ /proprietorship-registration-chennai
+├ ○ /rera
+├ ○ /robots.txt
+├ ○ /roc-compliances
+├ ○ /section-8-company-registration-chennai
+├ ○ /sitemap.xml                                                             1d      1y
+├ ○ /startup-india-registration-chennai
+├ ○ /statutory-audit-chennai
+├ ○ /tax-audit-chennai
+├ ○ /tds-return-filing-chennai
+├ ○ /tools
+├ ○ /tools/company-registration-government-fee-calculator
+├ ○ /tools/foreign-subsidiary-compliance-calendar
+├ ○ /tools/gst-appeal-deadline-pre-deposit-calculator
+├ ○ /tools/nri-property-sale-tds-calculator
+├ ○ /tools/nri-residential-status-calculator
+├ ○ /trademark-registration-chennai
+├ ○ /transfer-pricing-audit
+├ ○ /trust
+├ ○ /videos
+└ ○ /virtual-cfo-services
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

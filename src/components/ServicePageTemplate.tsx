@@ -52,6 +52,7 @@ export default function ServicePageTemplate({
   eyebrow,
   h1,
   subhead,
+  lead,
   intro,
   introHeading,
   citation,
@@ -74,6 +75,8 @@ export default function ServicePageTemplate({
   eyebrow: string;
   h1: string;
   subhead: string;
+  /** Concise service answer beneath the H1. */
+  lead?: string;
   intro: string;
   introHeading: string;
   citation?: Citation;
@@ -121,9 +124,9 @@ export default function ServicePageTemplate({
           })}
         />
       )}
-      <JsonLd data={speakableSchema(["#direct-answer"])} />
+      <JsonLd data={speakableSchema(["#direct-answer"], pageUrl)} />
       <Breadcrumbs items={[...(parentCrumb ? [parentCrumb] : []), { name: crumbLabel, href: crumbHref }]} />
-      <PageHero eyebrow={eyebrow} h1={h1} subhead={subhead} reviewedPath={crumbHref} service={crumbLabel} />
+      <PageHero eyebrow={eyebrow} h1={h1} subhead={subhead} lead={lead} reviewedPath={crumbHref} service={crumbLabel} />
 
       <section className="bg-paper py-16">
         <div className="container-page">

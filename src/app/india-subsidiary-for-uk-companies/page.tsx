@@ -103,7 +103,7 @@ export default function Page() {
       subhead="How a UK limited company incorporates a wholly owned Indian private limited company: Companies House documents and the FCDO apostille, the resident director rule, the FDI automatic route, FC-GPR, the India–UK tax treaty and trade agreement, and points for your UK adviser."
       keyFacts={[
         { label: "Usual structure", value: "UK Ltd parent holds all or nearly all shares of an Indian private limited company, with a nominee as the second shareholder." },
-        { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days during the financial year (section 149(3), Companies Act, 2013)." },
+        { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days during the financial year (section 149(3), Companies Act, 2013)." },
         { label: "Document legalisation", value: "Apostille issued by the FCDO Legalisation Office; the UK and India are both parties to the Hague Apostille Convention." },
         { label: "FDI approval", value: "None in automatic-route sectors; check the FDI Policy for your activity first." },
         { label: "RBI reporting", value: "Form FC-GPR within 30 days of share allotment, then the annual FLA return by 15 July." },
@@ -163,7 +163,7 @@ export default function Page() {
 
       <h2 className="mt-14 text-2xl text-obsidian">Who can be the resident director of a UK-owned Indian company?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-        At least one director must have stayed in India for 182 days during the financial year. UK groups usually appoint
+        At least one director must have stayed in India for 182 days during the financial year. UK groups usually appoint
         their India lead, a relocated employee, or an independent professional who serves as a non-executive director. The UK
         directors do not need to travel to India for incorporation; they sign forms with digital signature certificates and
         attend board meetings by video. Because the resident director carries the same statutory duties as other directors,

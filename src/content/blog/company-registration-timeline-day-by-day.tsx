@@ -250,13 +250,8 @@ export default function Body() {
         <li>INC-20A declaration within 180 days, before commencing business (section 10A)</li>
       </ul>
       <p>
-        Our posts on the{" "}
-        <Link href="/blog/first-board-meeting-checklist">first board meeting</Link>{" "}
-        and{" "}
-        <Link href="/blog/inc-20a-commencement-of-business">INC-20A</Link>{" "}
-        explain each step, and our{" "}
-        <Link href="/roc-compliances">ROC compliances</Link> page covers the
-        ongoing calendar.
+        Our <Link href="/roc-compliances">ROC compliance guide</Link> lists
+        INC-20A and other event-based filings alongside the ongoing calendar.
       </p>
 
       <h2>How to keep to the shorter end of the range</h2>

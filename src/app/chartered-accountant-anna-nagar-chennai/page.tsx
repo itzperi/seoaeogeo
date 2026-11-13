@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: { absolute: "Chartered Accountant in Anna Nagar, Chennai | C S Rushil" },
   description:
     "CA firm in Anna Nagar, Chennai for company and LLP registration, GST and income tax. Visit Mon–Sat, 9:30 AM–6:30 PM; book first so the right CA is free.",
-  alternates: { canonical: "/chartered-accountant-anna-nagar-chennai" },
+  alternates: { canonical: "/chartered-accountant-anna-nagar-chennai", types: { "text/markdown": "/md/chartered-accountant-anna-nagar-chennai" } },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Anna Nagar, Chennai",

@@ -54,7 +54,7 @@ export default function Page() {
       howTo={{
         heading: "How do you get started with outsourced bookkeeping from India?",
         steps: [
-          { name: "Free consultation", text: "A 15-minute call in the Australian afternoon about your business, your software, your BAS cycle and where the books are today." },
+          { name: "Initial consultation", text: "A 15-minute call in the Australian afternoon about your business, your software, your BAS cycle and where the books are today." },
           { name: "Review of your books", text: "We look at the last reconciled period, unreconciled items and any backlog, and agree who your registered BAS or tax agent is." },
           { name: "Engagement letter and data terms", text: "A written engagement letter with confidentiality and data handling terms, so you can meet APP 8 before disclosing data overseas." },
           { name: "Access and receipts", text: "You invite us into Xero, MYOB or QuickBooks and agree how receipts and bills reach us." },

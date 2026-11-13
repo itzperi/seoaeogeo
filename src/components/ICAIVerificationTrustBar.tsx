@@ -1,11 +1,11 @@
-import { FIRM_REGISTRATION_NO, FOUNDER_NAME, ICAI_MEMBERSHIP_NO } from "@/lib/site";
+import { FIRM_REGISTRATION_NO, FOUNDER_NAME, ICAI_MEMBER_LOOKUP_URL, ICAI_MEMBERSHIP_NO } from "@/lib/site";
 
 // "Verify your chartered accountant" block for service, NRI and foreign
 // subsidiary pages. Every statement is about what the law reserves for a
 // chartered accountant in practice; it makes no claim about other firms.
 // The membership and firm numbers render only once they are set in site.ts.
 
-const ICAI_LOOKUP = "https://www.icai.org/";
+const ICAI_LOOKUP = ICAI_MEMBER_LOOKUP_URL;
 
 const RESERVED = [
   "Form 146 (earlier Form 15CB), the accountant's certificate a bank asks for before money is sent abroad",
@@ -22,11 +22,11 @@ export default function ICAIVerificationTrustBar() {
       </h2>
       <p className="mt-4 leading-relaxed text-slate">
         Chartered accountants in India are members of the Institute of Chartered Accountants of India (ICAI), and a
-        practising member or firm can be checked on the{" "}
+        member identity can be checked through{" "}
         <a href={ICAI_LOOKUP} target="_blank" rel="noopener noreferrer" className="font-medium text-royal-violet underline underline-offset-2">
-          ICAI website
+          ICAI&apos;s Trace a Member service
         </a>
-        . It takes about two minutes, and it matters most for foreign parent companies and NRIs, because some documents
+        . Ask separately for current practice status and the firm&apos;s registration details. This matters for foreign parent companies and NRIs, because some documents
         are valid only when signed by a chartered accountant in practice:
       </p>
       <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate">

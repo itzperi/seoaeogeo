@@ -1,5 +1,5 @@
 // Writes src/lib/page-dates.ts: the date each page's content last changed in
-// git, used for sitemap <lastmod> and the "Reviewed … Updated" line.
+// git, used for sitemap <lastmod> and the "Content updated" line.
 // Run after committing content changes:  npm run page-dates
 import { execFileSync } from "node:child_process";
 import { readdirSync, statSync, writeFileSync } from "node:fs";

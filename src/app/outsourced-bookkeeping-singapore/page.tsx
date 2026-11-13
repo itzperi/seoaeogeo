@@ -54,7 +54,7 @@ export default function Page() {
       howTo={{
         heading: "How do you get started with outsourced bookkeeping from India?",
         steps: [
-          { name: "Free consultation", text: "A 15-minute call in the Singapore afternoon about your company, its GST status, your software and where the books are today." },
+          { name: "Initial consultation", text: "A 15-minute call in the Singapore afternoon about your company, its GST status, your software and where the books are today." },
           { name: "Review of your books", text: "We look at the last closed month, unreconciled items and any backlog years, and agree the scope with you." },
           { name: "Engagement letter and data terms", text: "A written engagement letter with confidentiality and data protection terms that meet your PDPA transfer obligations." },
           { name: "Access and receipts", text: "You invite us into Xero, QuickBooks or Zoho Books and agree how bills and receipts reach us." },

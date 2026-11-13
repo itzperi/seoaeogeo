@@ -104,7 +104,7 @@ export default function Page() {
       subhead="How a Delaware or other US corporation incorporates a wholly owned Indian private limited company: documents and apostille, the resident director rule, the FDI automatic route, FC-GPR reporting, transfer pricing on intercompany services, and the points to coordinate with your US CPA."
       keyFacts={[
         { label: "Usual structure", value: "US parent holds all or nearly all shares of an Indian private limited company, with a nominee as the second shareholder." },
-        { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days during the financial year (section 149(3), Companies Act, 2013)." },
+        { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days during the financial year (section 149(3), Companies Act, 2013)." },
         { label: "Document legalisation", value: "Apostille. The United States has been a party to the Hague Apostille Convention since 1981, as has India since 2005." },
         { label: "FDI approval", value: "None in automatic-route sectors; check the FDI Policy for your activity first." },
         { label: "RBI reporting", value: "Form FC-GPR within 30 days of share allotment, then the annual FLA return by 15 July." },
@@ -166,7 +166,7 @@ export default function Page() {
 
       <h2 className="mt-14 text-2xl text-obsidian">Who can be the resident director of a US-owned Indian company?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-        Every Indian company needs at least one director who has stayed in India for 182 days during the financial year.
+        Every Indian company needs at least one director who has stayed in India for 182 days during the financial year.
         US groups usually appoint the first India hire at senior level, an existing employee who has relocated, or an
         independent professional who acts as a non-executive director. The other directors can be US executives who never
         travel to India; they sign electronically using digital signature certificates. A resident director carries the

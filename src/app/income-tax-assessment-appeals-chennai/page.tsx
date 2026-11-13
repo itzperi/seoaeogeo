@@ -41,7 +41,7 @@ export default function Page() {
       serviceType="Income Tax Assessment and Appeals"
       crumbLabel="Assessment and Appeals"
       crumbHref="/income-tax-assessment-appeals-chennai"
-      parentCrumb={{ name: "Direct Tax", href: "/direct-tax" }}
+      parentCrumb={{ name: "Tax Consultants in Chennai", href: "/direct-tax" }}
       eyebrow="Income Tax Litigation · Chennai"
       h1="Income Tax Assessment and Appeals in Chennai"
       subhead="Scrutiny and reassessment proceedings handled with a documented case file, and appeals to the CIT(A) and the Income Tax Appellate Tribunal filed within the time limit."

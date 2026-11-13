@@ -554,7 +554,7 @@ export default function VirtualCfoPage() {
           <aside className="lg:sticky lg:top-24 h-fit space-y-6">
             <div className="rounded-cards border border-carbon bg-royal-violet p-8">
               <h3 className="text-lg font-medium text-white">Not sure if you need this yet?</h3>
-              <p className="mt-2 text-sm text-white/80">
+              <p className="mt-2 text-sm text-white">
                 We&apos;ll assess your current reporting and tell you honestly
                 whether a Virtual CFO engagement — or just tighter bookkeeping —
                 is the right next step.

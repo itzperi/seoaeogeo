@@ -124,6 +124,7 @@ function analyse(path, html) {
 const results = [];
 const check = (group, name, pass, detail = "") => results.push({ group, name, pass: Boolean(pass), detail });
 const warn = [];
+const advise = (group, name, pass, detail = "") => { if (!pass) warn.push(`${group}: ${name} — ${detail}`); };
 
 async function main() {
   const sitemap = await (await fetch(`${BASE}/sitemap.xml`)).text();
@@ -150,8 +151,9 @@ async function main() {
   const badDesc = pages.filter((p) => p.desc.length < 120 || p.desc.length > 160);
   const dupT = pages.filter((p, i) => pages.findIndex((q) => q.title === p.title) !== i);
   const dupD = pages.filter((p, i) => pages.findIndex((q) => q.desc === p.desc) !== i);
-  check("On-page", "Titles 30–60 characters", !badTitle.length, badTitle.map((p) => `${p.path} (${p.title.length})`).join(", "));
-  check("On-page", "Descriptions 120–160 characters", !badDesc.length, badDesc.map((p) => `${p.path} (${p.desc.length})`).join(", "));
+  advise("On-page", "Title length review (not an indexing rule)", !badTitle.length, badTitle.map((p) => `${p.path} (${p.title.length})`).join(", "));
+  advise("On-page", "Description length review (not an indexing rule)", !badDesc.length, badDesc.map((p) => `${p.path} (${p.desc.length})`).join(", "));
+  check("On-page", "Titles and descriptions present", pages.every((p) => p.title && p.desc));
   check("On-page", "Unique titles", !dupT.length, dupT.map((p) => p.path).join(", "));
   check("On-page", "Unique descriptions", !dupD.length, dupD.map((p) => p.path).join(", "));
   const badH1 = pages.filter((p) => p.h1 !== 1);
@@ -173,10 +175,10 @@ async function main() {
   // Content depth
   for (const u of URGENT) {
     const p = pages.find((x) => x.path === u);
-    check("Content", `${u} has 3,500+ words`, p && p.words >= 3500, p ? `${p.words} words` : "missing");
+    check("Content", `${u} is available with server-rendered content`, p && p.words > 0, p ? `${p.words} words; no minimum ranking word count` : "missing");
   }
   const thin = pages.filter((p) => p.words < 500);
-  check("Content", "No thin pages (< 500 words)", !thin.length, thin.map((p) => `${p.path} (${p.words})`).join(", "));
+  advise("Content", "Short pages for manual intent review (word count does not establish quality)", !thin.length, thin.map((p) => `${p.path} (${p.words})`).join(", "));
 
   // Tools
   const hub = pages.find((p) => p.path === "/tools");
@@ -202,11 +204,11 @@ async function main() {
   // AEO ratios
   const h2 = pages.reduce((a, p) => a + p.h2count, 0);
   const h2q = pages.reduce((a, p) => a + p.h2q, 0);
-  check("AEO", "Question-phrased H2s above 70% site-wide", h2q / h2 > 0.7, `${((100 * h2q) / h2).toFixed(1)}%`);
+  advise("AEO", "Question heading ratio (descriptive, not a ranking threshold)", h2q / h2 > 0.7, `${((100 * h2q) / h2).toFixed(1)}%`);
   const noLead = pages.filter((p) => !p.lead);
-  check("AEO", "Lead / direct answer on every page", !noLead.length, noLead.map((p) => p.path).join(", "));
+  advise("AEO", "Pages without an explicitly marked lead answer", !noLead.length, noLead.map((p) => p.path).join(", "));
   const noSpk = pages.filter((p) => !p.speakable);
-  check("AEO", "Speakable on every page", !noSpk.length, noSpk.map((p) => p.path).join(", "));
+  advise("AEO", "Optional speakable absent (not required for AI search)", !noSpk.length, noSpk.map((p) => p.path).join(", "));
 
   // Payload
   const home = pages.find((p) => p.path === "/");

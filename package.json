@@ -13,7 +13,9 @@
     "page-dates": "node scripts/gen-page-dates.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "verify:seo": "node scripts/verify-csrushil-seo.mjs",
-    "verify:audit": "node scripts/verify-seo-audit.mjs"
+    "verify:audit": "node scripts/verify-seo-audit.mjs",
+    "verify:integrity": "node scripts/verify-site-integrity.mjs",
+    "typecheck": "next typegen && tsc --noEmit"
   },
   "dependencies": {
     "next": "16.3.5",

@@ -54,7 +54,7 @@ export default function Page() {
       howTo={{
         heading: "How do you get started with outsourced bookkeeping from India?",
         steps: [
-          { name: "Free consultation", text: "A 15-minute call at a time that suits US hours to understand your business, your software and where the books are today." },
+          { name: "Initial consultation", text: "A 15-minute call at a time that suits US hours to understand your business, your software and where the books are today." },
           { name: "Review of your books", text: "With read access to QuickBooks Online or Xero, we look at the last closed month, unreconciled items and any backlog, and agree the scope." },
           { name: "Engagement letter", text: "A written engagement letter sets out the work, the monthly close date, what you send us, confidentiality terms and the fee in US dollars." },
           { name: "Access and document flow", text: "You invite us as accountant or advisor users, connect bank feeds and agree how receipts and bills reach us, for example Dext, Hubdoc or a shared folder." },

@@ -25,7 +25,7 @@ export const SERVICES: ServiceSummary[] = [
     slug: "company-registration-chennai",
     name: "Company Registration",
     shortDescription:
-      "Fast-tracked Private Limited and LLP company registration in Chennai, from name approval to certificate of incorporation.",
+      "Private Limited and LLP registration in Chennai, covering structure selection, documents, name approval and incorporation filings.",
   },
   {
     slug: "gst-litigation-chennai",
@@ -71,9 +71,9 @@ export const SERVICES: ServiceSummary[] = [
   },
   {
     slug: "direct-tax",
-    name: "Direct Tax",
+    name: "Tax Consultant in Chennai (Income Tax)",
     shortDescription:
-      "Income tax planning, return filing, assessments, and representation before tax authorities.",
+      "Tax consultants in Chennai for income tax returns, tax planning, TDS, tax audit, notices, appeals and NRI tax, from Anna Nagar.",
   },
   {
     slug: "income-tax-return-filing-chennai",

@@ -28,7 +28,7 @@
 - Role: Founder & Managing Partner, practising Chartered Accountant (member of the Institute of Chartered Accountants of India)
 - Credentials: ICAI Certificate in Forensic Accounting and Fraud Detection (FAFD); Start-up Mentor
 - LinkedIn: https://in.linkedin.com/in/rushil-cs
-- Reviews every service page on the website (shown as "Reviewed by CA Rushil C S" with the update date)
+- Professional review attribution is shown only when a dated sign-off is recorded; a content update is not a professional review.
 
 ## Core service 1: CA Firm in Chennai
 - URL: https://www.csrushil.com/
@@ -40,7 +40,7 @@
 - URL: https://www.csrushil.com/private-limited-company-incorporation-chennai
 - Summary: SPICe+ incorporation under the Companies Act, 2013, recorded with the Registrar of Companies, Chennai.
 - Typical time: 7–12 working days once documents and DSCs are ready; about 3 weeks from scratch.
-- Requirements: 2 directors and 2 shareholders (can be the same people); at least one director resident in India for 182 days in the previous calendar year; no minimum paid-up capital.
+- Requirements: 2 directors and 2 shareholders (can be the same people); at least one director resident in India for at least 182 days during the financial year (Section 149(3), Companies Act, 2013); no minimum paid-up capital.
 - Registrar: ROC Chennai, Shastri Bhavan, 26 Haddows Road, Nungambakkam, Chennai, for Chennai and most of Tamil Nadu; ROC Coimbatore for nine western districts. SPICe+ forms are examined by the MCA Central Registration Centre.
 - Government charges (authorised capital up to ₹15 lakh): MCA filing fee zero; Tamil Nadu stamp duty ₹200 on the MoA plus ₹500 per ₹10 lakh of authorised capital (or part) on the AoA; PAN ₹66 and TAN ₹65; DSCs priced by the Certifying Authority; ₹1,000 only if the name is reserved separately in SPICe+ Part A.
 - Common resubmission triggers: registered office proof (EB bill, property tax receipt) in a name other than the NOC signatory; PAN and Aadhaar details that do not match; generic main objects; names close to existing companies or trademarks.

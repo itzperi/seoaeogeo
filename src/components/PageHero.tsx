@@ -1,11 +1,11 @@
 import TrackedAnchor from "@/components/TrackedAnchor";
 import { EnquireButton } from "@/components/WhatsAppEnquiry";
 import { CheckSticker, CoinSticker, DocSticker, Ribbon } from "@/components/Stickers";
-import Link from "next/link";
+import ContentAttribution from "@/components/ContentAttribution";
 import type { ReactNode } from "react";
 import { PAGE_DATES } from "@/lib/page-dates";
-import { JsonLd, speakableSchema, webPageReviewSchema } from "@/lib/schema";
-import { BOOKING_LINK, FOUNDER_NAME, ICAI_MEMBERSHIP_NO, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
+import { JsonLd, speakableSchema, webPageSchema } from "@/lib/schema";
+import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL, SITE_URL } from "@/lib/site";
 
 // Sky-wash poster hero: sticker tag, crushed condensed headline with the
 // blue ribbon behind it, stickers around the edges, black-filled Book CTA.
@@ -21,7 +21,7 @@ export default function PageHero({
   eyebrow: string;
   h1: string;
   subhead: string;
-  /** Route of a service/area page; shows "Reviewed by … · Updated …" from its git date. */
+  /** Route for content dates and separately documented professional reviews. */
   reviewedPath?: string;
   /** Service named in the pre-typed WhatsApp enquiry (defaults to the H1). */
   service?: string;
@@ -33,8 +33,8 @@ export default function PageHero({
   const updated = reviewedPath ? PAGE_DATES[reviewedPath] : undefined;
   return (
     <>
-    {schema && reviewedPath && updated && <JsonLd data={webPageReviewSchema(reviewedPath, h1, updated)} />}
-    {schema && lead && <JsonLd data={speakableSchema(["h1", "#lead-answer"])} />}
+    {schema && reviewedPath && updated && <JsonLd data={webPageSchema(reviewedPath, h1, updated)} />}
+    {schema && lead && <JsonLd data={speakableSchema(["h1", "#lead-answer"], reviewedPath ? `${SITE_URL}${reviewedPath}` : undefined)} />}
     <section className="relative overflow-hidden border-b border-carbon bg-sky-wash">
       <Ribbon className="pointer-events-none absolute -bottom-6 left-0 h-40 w-full opacity-90 md:h-56" />
       <CoinSticker className="pointer-events-none absolute right-[6%] top-10 hidden w-20 rotate-12 md:block" />
@@ -44,36 +44,13 @@ export default function PageHero({
       <div className="container-page relative pb-28 pt-12 md:pb-40 md:pt-16">
         <p className="sticker-tag bg-sunburst">{eyebrow}</p>
         <h1 className="mt-6 max-w-4xl text-[44px] text-carbon sm:text-6xl md:text-7xl lg:text-[88px]">{h1}</h1>
-        {lead && reviewedPath && updated && (
-          <div className="mt-5 text-sm text-carbon/80">
-            Reviewed by{" "}
-            <Link href="/about-us" className="font-semibold underline underline-offset-2">
-              {FOUNDER_NAME}
-            </Link>
-            , Chartered Accountant{ICAI_MEMBERSHIP_NO && <> (ICAI M. No. {ICAI_MEMBERSHIP_NO})</>} · Updated{" "}
-            <time dateTime={updated}>
-              {new Date(`${updated}T00:00:00Z`).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })}
-            </time>
-          </div>
-        )}
         {lead && (
           <p id="lead-answer" className="mt-6 max-w-3xl text-lg leading-relaxed text-carbon md:text-xl">
             {lead}
           </p>
         )}
         <p className={`${lead ? "mt-4 text-base md:text-lg" : "mt-6 text-lg md:text-xl"} max-w-2xl leading-relaxed text-carbon`}>{subhead}</p>
-        {!lead && reviewedPath && updated && (
-          <p className="mt-4 text-sm text-carbon/80">
-            Reviewed by{" "}
-            <Link href="/about-us" className="font-semibold underline underline-offset-2">
-              {FOUNDER_NAME}
-            </Link>
-            , Chartered Accountant{ICAI_MEMBERSHIP_NO && <> (ICAI M. No. {ICAI_MEMBERSHIP_NO})</>} · Updated{" "}
-            <time dateTime={updated}>
-              {new Date(`${updated}T00:00:00Z`).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" })}
-            </time>
-          </p>
-        )}
+        {reviewedPath && <ContentAttribution path={reviewedPath} updated={updated} />}
         <div className="mt-8 flex flex-wrap gap-3">
           <EnquireButton
             service={service ?? h1}

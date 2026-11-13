@@ -54,7 +54,7 @@ export default function Page() {
       howTo={{
         heading: "How do you get started with outsourced bookkeeping from India?",
         steps: [
-          { name: "Free consultation", text: "A 15-minute call during the UK morning about your business, your software, your VAT scheme and where the books are today." },
+          { name: "Initial consultation", text: "A 15-minute call during the UK morning about your business, your software, your VAT scheme and where the books are today." },
           { name: "Review of your books", text: "We look at the last closed month, unreconciled items, the last VAT return and any backlog, and agree the scope." },
           { name: "Engagement letter and data terms", text: "A written engagement letter, a data processing agreement and the UK international transfer terms, before we see any client data." },
           { name: "Access and receipts", text: "You add us as users in Xero, QuickBooks, FreeAgent or Sage, and agree how receipts and bills reach us, for example Dext or Hubdoc." },

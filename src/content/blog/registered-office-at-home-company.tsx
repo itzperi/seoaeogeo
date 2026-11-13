@@ -146,9 +146,8 @@ export default function Body() {
         asks for photographs of the registered office showing the external
         building and the inside of the office with at least one director or
         KMP, along with location coordinates. A home office therefore needs to
-        look like a place where the company actually operates. See our post on{" "}
-        <Link href="/blog/inc-20a-commencement-of-business">INC-20A</Link>{" "}
-        for details.
+        look like a place where the company actually operates. See the INC-20A deadline in our{" "}
+        <Link href="/roc-compliances">ROC compliance guide</Link>.
       </p>
 
       <h2>What the NOC should say</h2>

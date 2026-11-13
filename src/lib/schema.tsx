@@ -1,5 +1,6 @@
 import { AREAS } from "./areas";
 import { ALL_SERVICES } from "./services";
+import { getContentReview } from "./content-reviews";
 import {
   ADDRESS,
   BUSINESS_HOURS,
@@ -100,7 +101,7 @@ export function organizationSchema() {
     "@type": "AccountingService",
     "@id": `${SITE_URL}/#organization`,
     name: SCHEMA_NAME,
-    alternateName: [BUSINESS_NAME, "CS Rushil & Co CA Firm Chennai"],
+    alternateName: [BUSINESS_NAME, "CS Rushil & Co"],
     legalName: BUSINESS_LEGAL_NAME,
     url: SITE_URL,
     logo: `${SITE_URL}/logo.png`,
@@ -109,7 +110,6 @@ export function organizationSchema() {
     email: EMAIL,
     foundingDate: `${YEAR_FOUNDED}`,
     knowsLanguage: LANGUAGES_SPOKEN,
-    priceRange: "₹₹",
     founder: { "@id": PERSON_ID },
     employee: { "@id": PERSON_ID },
     numberOfEmployees: { "@type": "QuantitativeValue", value: TEAM_SIZE },
@@ -137,7 +137,12 @@ export function organizationSchema() {
     },
     areaServed: [
       { "@type": "City", name: "Chennai" },
-      ...AREAS.map((area) => ({ "@type": "Place" as const, name: `${area.name}, Chennai` })),
+      // Strip topic qualifiers such as "Anna Nagar (income tax)" and dedupe,
+      // so each locality is declared once as a plain place name.
+      ...Array.from(new Set(AREAS.map((area) => area.name.replace(/\s*\([^)]*\)\s*$/, "")))).map((name) => ({
+        "@type": "Place" as const,
+        name: `${name}, Chennai`,
+      })),
       { "@type": "State", name: "Tamil Nadu" },
       ...BOOKKEEPING_COUNTRIES.map((name) => ({ "@type": "Country" as const, name })),
     ],
@@ -155,7 +160,7 @@ export function organizationSchema() {
       "ROC compliance",
     ],
     hasMap: GBP_URL,
-    sameAs: [SOCIALS.linkedin, SOCIALS.instagram, GBP_URL, ...Object.values(ENTITY_PROFILES).filter((u): u is string => Boolean(u))],
+    sameAs: [SOCIALS.linkedin, GBP_URL, ...Object.values(ENTITY_PROFILES).filter((u): u is string => Boolean(u))],
   };
 }
 
@@ -172,7 +177,9 @@ export function personSchema() {
     url: `${SITE_URL}/about-us`,
     description: FOUNDER_CREDENTIALS,
     worksFor: { "@id": `${SITE_URL}/#organization` },
-    sameAs: [FOUNDER_LINKEDIN, ...Object.values(FOUNDER_PROFILES).filter((u): u is string => Boolean(u))],
+    // The Instagram account is CA Rushil C S's own (carushil_c_s), so it
+    // belongs to the Person entity, not the firm.
+    sameAs: [FOUNDER_LINKEDIN, SOCIALS.instagram, ...Object.values(FOUNDER_PROFILES).filter((u): u is string => Boolean(u))],
     memberOf: ICAI,
     hasCredential: [
       {
@@ -305,8 +312,9 @@ export function websiteSchema() {
   };
 }
 
-// Who reviewed a page and when: E-E-A-T signal for search and AI engines.
-export function webPageReviewSchema(path: string, name: string, date: string) {
+// Content modification and professional review are separate facts.
+export function webPageSchema(path: string, name: string, date: string) {
+  const review = getContentReview(path, date);
   return {
     "@context": "https://schema.org",
     "@type": "WebPage",
@@ -315,17 +323,19 @@ export function webPageReviewSchema(path: string, name: string, date: string) {
     name,
     isPartOf: { "@id": `${SITE_URL}/#website` },
     about: { "@id": `${SITE_URL}/#organization` },
-    author: { "@id": PERSON_ID },
-    reviewedBy: { "@id": PERSON_ID },
-    lastReviewed: date,
+    publisher: { "@id": ORG_ID },
+    ...(review && { reviewedBy: { "@id": PERSON_ID }, lastReviewed: review.reviewedOn }),
     dateModified: date,
   };
 }
 
-export function speakableSchema(cssSelector: string[]) {
+// Pass the page URL so this node shares the page's WebPage @id and merges
+// with webPageSchema() instead of declaring a second, anonymous WebPage.
+export function speakableSchema(cssSelector: string[], pageUrl?: string) {
   return {
     "@context": "https://schema.org",
     "@type": "WebPage",
+    ...(pageUrl && { "@id": `${pageUrl}#webpage`, url: pageUrl }),
     speakable: {
       "@type": "SpeakableSpecification",
       cssSelector,
@@ -349,8 +359,7 @@ export function siteGraph() {
   return graph([organizationSchema(), personSchema(), websiteSchema()]);
 }
 
-// One connected graph for a money page: WebPage (authored and reviewed by
-// CA Rushil C S) → Service (with its offer catalogue) → FAQPage and
+// One connected graph for a money page: WebPage → Service → FAQPage and
 // BreadcrumbList. Pages using it pass schema={false} to Breadcrumbs,
 // FAQSection and PageHero so no node is emitted twice.
 export function moneyPageGraph(opts: {
@@ -368,6 +377,7 @@ export function moneyPageGraph(opts: {
   const pageId = `${url}#webpage`;
   const serviceId = `${url}#service`;
   const crumbs = [{ name: "Home", href: "/" }, ...opts.crumbs.filter((c) => c.href !== "/")];
+  const review = getContentReview(opts.path, opts.dateModified);
   return graph([
     {
       "@type": "WebPage",
@@ -379,10 +389,10 @@ export function moneyPageGraph(opts: {
       isPartOf: { "@id": WEBSITE_ID },
       about: { "@id": ORG_ID },
       mainEntity: { "@id": serviceId },
-      author: { "@id": PERSON_ID },
-      reviewedBy: { "@id": PERSON_ID },
+      publisher: { "@id": ORG_ID },
+      ...(review && { reviewedBy: { "@id": PERSON_ID }, lastReviewed: review.reviewedOn }),
       breadcrumb: { "@id": `${url}#breadcrumb` },
-      ...(opts.dateModified && { dateModified: opts.dateModified, lastReviewed: opts.dateModified }),
+      ...(opts.dateModified && { dateModified: opts.dateModified }),
       ...(opts.speakable && { speakable: { "@type": "SpeakableSpecification", cssSelector: opts.speakable } }),
     },
     {
@@ -416,7 +426,7 @@ export function JsonLd({ data }: { data: object }) {
   return (
     <script
       type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }}
     />
   );
 }

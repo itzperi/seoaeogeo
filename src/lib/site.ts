@@ -9,6 +9,7 @@ export const FOUNDER_CREDENTIALS = "Certified FAFD, Start-up Mentor";
 // Regulatory identifiers. Leave null until the firm supplies the real value:
 // components render these only when set, so no placeholder ever goes live.
 export const ICAI_MEMBERSHIP_NO: string | null = null;
+export const ICAI_MEMBER_LOOKUP_URL = "https://traceamember.icai.org/";
 export const FIRM_REGISTRATION_NO: string | null = null; // ICAI FRN
 export const YEAR_QUALIFIED: string | null = null;
 export const YEAR_FOUNDED = 2024;
@@ -36,8 +37,8 @@ export const PHONE_TEL = "+917200149711";
 export const EMAIL = "admin@csrushil.com";
 
 // Confirmed 2026-10-05 against the corrected profile. This exact string must match the Google Business
-// Profile address character-for-character — that identical-NAP match is a
-// direct local ranking factor, so don't reformat it "for style" later.
+// Profile address consistently. This is an existing firm-maintained record,
+// not independent verification of the current GBP pin or address.
 export const ADDRESS = {
   street: "Old Door No. AP-890, New No. 18, J-Block, 1st Street, 13th Main Rd",
   locality: "Anna Nagar",

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: { absolute: "Company Registration in Chennai | Pvt Ltd, LLP, OPC" },
   description:
     "Company registration service in Chennai for Pvt Ltd, LLP, OPC, Section 8 and partnership firms: SPICe+ and FiLLiP filing, DSC, DIN and compliance.",
-  alternates: { canonical: "/company-registration-chennai" },
+  alternates: { canonical: "/company-registration-chennai", types: { "text/markdown": "/md/company-registration-chennai" } },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Company Registration Service in Chennai",
@@ -89,9 +89,10 @@ export default function Page() {
       crumbHref="/company-registration-chennai"
       eyebrow="Company Registration · Chennai"
       h1="Company Registration Service in Chennai"
+      lead="C S Rushil & Co. helps Chennai founders choose a business structure and prepare incorporation documents from its Anna Nagar office. Company incorporation uses MCA's SPICe+ process; LLPs follow a separate filing process. Start with the proposed owners, business activity and office documents so the applicable route and requirements can be checked."
       subhead="Private Limited, LLP, OPC, Section 8, partnership and proprietorship set-ups: name approval, MCA filing and the first-year compliance calendar, handled by a chartered accountant firm in Anna Nagar."
       introHeading="What does our company registration service in Chennai cover?"
-      intro="Our company registration service in Chennai covers Private Limited companies, LLPs, OPCs, Section 8 companies, partnership firms and proprietorships. We obtain DSCs, reserve the name, file SPICe+ or FiLLiP, and set up PAN, TAN, the bank account and post-incorporation filings. With documents ready, a Pvt Ltd typically takes 7–12 working days and an LLP 10–15."
+      intro="Our company registration service in Chennai covers Private Limited companies, LLPs, OPCs, Section 8 companies, partnership firms and proprietorships. We obtain DSCs, reserve the name, file SPICe+ or FiLLiP, and set up PAN, TAN and post-incorporation filings. With documents ready, a Pvt Ltd typically takes 7–12 working days and an LLP 10–15."
       citation={{
         label: "MCA SPICe+ and linked filings FAQs",
         href: "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/spiceplus-linked-filings.html",
@@ -100,7 +101,7 @@ export default function Page() {
         { label: "Typical time", value: "Pvt Ltd: 7–12 working days. LLP: 10–15 working days. Both counted from the point documents are ready." },
         { label: "Government form", value: "SPICe+ Part A and Part B with AGILE-PRO-S, e-MoA (INC-33) and e-AoA (INC-34) for companies; FiLLiP for LLPs. Filed on the MCA V3 portal." },
         { label: "Minimum members", value: "Pvt Ltd: 2 directors and 2 shareholders. LLP: 2 designated partners. OPC: 1 member plus a nominee." },
-        { label: "Resident director", value: "A company needs at least one director who stayed in India for 182 days during the financial year (Section 149(3), Companies Act, 2013)." },
+        { label: "Resident director", value: "A company needs at least one director who stayed in India for 182 days during the financial year (Section 149(3), Companies Act, 2013)." },
         { label: "Key deadlines", value: "INC-20A (commencement of business) within 180 days of incorporation; first auditor within 30 days; LLP agreement (Form 3) within 30 days." },
       ]}
       howTo={{
@@ -155,7 +156,7 @@ export default function Page() {
         {
           question: "Can NRIs or foreign nationals be directors of an Indian company?",
           answer:
-            "Yes. NRIs and foreign nationals can be directors and shareholders of an Indian Private Limited Company, provided at least one director stayed in India for 182 days during the financial year. Foreign directors need a DIN and DSC based on their passport. Foreign shareholding must also follow FDI rules for the sector. See our page on company registration in India for foreigners for the additional documents and RBI reporting involved.",
+            "Yes. NRIs and foreign nationals can be directors and shareholders of an Indian Private Limited Company, provided at least one director stayed in India for 182 days during the financial year. Foreign directors need a DIN and DSC based on their passport. Foreign shareholding must also follow FDI rules for the sector. See our page on company registration in India for foreigners for the additional documents and RBI reporting involved.",
         },
         {
           question: "Can my home address be the registered office?",

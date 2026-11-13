@@ -121,7 +121,7 @@ export default function Page() {
         <li>• The nominee must also be an Indian citizen and a natural person, and must consent in writing.</li>
         <li>• No one can be a member of more than one OPC, or a nominee in more than one OPC.</li>
         <li>• Minors cannot be members or nominees.</li>
-        <li>• At least one director must have stayed in India for 182 days during the financial year. The member can be that director.</li>
+        <li>• At least one director must have stayed in India for 182 days during the financial year. The member can be that director.</li>
         <li>• An OPC cannot carry on non-banking financial investment activity, and it cannot convert into a Section 8 company.</li>
       </ul>
 

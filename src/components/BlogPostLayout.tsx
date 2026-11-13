@@ -3,8 +3,10 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
-import { JsonLd, PERSON_ID } from "@/lib/schema";
-import { FOUNDER_NAME, SITE_URL } from "@/lib/site";
+import ContentAttribution from "@/components/ContentAttribution";
+import { getContentReview } from "@/lib/content-reviews";
+import { JsonLd, ORG_ID, PERSON_ID } from "@/lib/schema";
+import { BUSINESS_NAME, SITE_URL } from "@/lib/site";
 
 // The money page each post feeds, picked from its slug. Order matters:
 // GST disputes before general GST, company topics before the catch-all.
@@ -67,6 +69,7 @@ export default function BlogPostLayout({
   children: ReactNode;
 }) {
   const money = moneyPageFor(slug);
+  const review = getContentReview(`/blog/${slug}`, updated ?? date);
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -75,7 +78,8 @@ export default function BlogPostLayout({
     image: `${SITE_URL}/blog/${slug}/opengraph-image`,
     datePublished: date,
     dateModified: updated ?? date,
-    author: { "@type": "Person", "@id": PERSON_ID, name: FOUNDER_NAME, url: `${SITE_URL}/about-us` },
+    author: { "@type": "Organization", "@id": ORG_ID, name: BUSINESS_NAME, url: `${SITE_URL}/about-us` },
+    ...(review && { reviewedBy: { "@id": PERSON_ID }, lastReviewed: review.reviewedOn }),
     publisher: { "@id": `${SITE_URL}/#organization` },
     mainEntityOfPage: { "@type": "WebPage", "@id": `${SITE_URL}/blog/${slug}` },
     ...(summary && { speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "#lead-answer"] } }),
@@ -96,9 +100,9 @@ export default function BlogPostLayout({
                 {new Date(updated).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}
               </>
             )}
-            {" · "}Written by {FOUNDER_NAME}
           </p>
           <h1 className="mt-6 max-w-4xl text-5xl text-carbon md:text-7xl">{title}</h1>
+          <ContentAttribution path={`/blog/${slug}`} updated={updated ?? date} />
           <p className="mt-6 max-w-2xl text-lg text-carbon">{description}</p>
           {summary && (
             <p id="lead-answer" className="mt-6 max-w-3xl rounded-cards border border-carbon bg-white p-5 text-base leading-relaxed text-carbon">

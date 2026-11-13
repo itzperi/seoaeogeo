@@ -183,14 +183,14 @@ export default function Body() {
         requires a director to file INC-20A within 180 days of incorporation,
         declaring that every subscriber has paid the value of their shares, and
         the current form asks for the bank and date of each receipt. Until this
-        is done, the company cannot commence business or borrow. See our post on{" "}
-        <Link href="/blog/inc-20a-commencement-of-business">INC-20A</Link>.
+        is done, the company cannot commence business or borrow. See the filing calendar in our{" "}
+        <Link href="/roc-compliances">ROC compliance guide</Link>.
       </p>
       <p>
         Share certificates must be issued to subscribers within two months of
         incorporation under section 56(4). Our{" "}
-        <Link href="/blog/first-board-meeting-checklist">first board meeting checklist</Link>{" "}
-        covers how this is done.
+        <Link href="/roc-compliances">ROC compliance guide</Link>{" "}
+        also lists related event-based filings.
       </p>
 
       <h2>Increasing authorised capital later</h2>

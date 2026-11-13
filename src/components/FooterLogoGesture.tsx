@@ -39,9 +39,9 @@ export default function FooterLogoGesture() {
       <Image
         src="/images/ca-india-badge.png"
         alt="Chartered Accountancy practice"
-        width={32}
+        width={35}
         height={32}
-        className="h-8 w-8"
+        className="h-8 w-auto"
       />
     </button>
   );

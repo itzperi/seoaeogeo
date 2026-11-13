@@ -66,7 +66,7 @@ export default function Page() {
       howTo={{
         heading: "How does outsourced bookkeeping start?",
         steps: [
-          { name: "Free consultation", text: "A 15-minute call at a time that suits your time zone, about your business, your software and where the books stand." },
+          { name: "Initial consultation", text: "A 15-minute call at a time that suits your time zone, about your business, your software and where the books stand." },
           { name: "Review of your books", text: "With read access to your accounting file we check the last closed month, unreconciled items and any backlog." },
           { name: "Written engagement letter", text: "Scope, monthly close date, what you send us, who files what in your country, confidentiality terms and a fixed fee." },
           { name: "Access and document flow", text: "You invite us into your software and agree how bills, receipts and statements reach us." },

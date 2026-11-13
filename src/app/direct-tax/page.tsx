@@ -3,16 +3,16 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Income Tax Consultants in Chennai | C S Rushil & Co.";
+const title = "Tax Consultant in Chennai | Income Tax, TDS & NRI Tax";
 const description =
-  "Income tax consultants in Chennai: ITR filing, tax planning, TDS returns, tax audit, notices, assessments, appeals and NRI tax under the Income-tax Act, 2025.";
+  "Tax consultants in Chennai (Anna Nagar CA firm): ITR filing, tax planning, TDS, tax audit, notices, appeals and NRI tax under the Income-tax Act, 2025.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
   description,
-  alternates: { canonical: "/direct-tax" },
+  alternates: { canonical: "/direct-tax", types: { "text/markdown": "/md/direct-tax" } },
   openGraph: {
-    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+    images: [{ url: "/direct-tax/opengraph-image", width: 1200, height: 630 }],
     title,
     description,
     url: "/direct-tax",
@@ -102,13 +102,14 @@ export default function Page() {
     <ServicePageTemplate
       pageUrl={`${SITE_URL}/direct-tax`}
       serviceType="Income Tax and Direct Tax Advisory"
-      crumbLabel="Direct Tax"
+      crumbLabel="Tax Consultants in Chennai"
       crumbHref="/direct-tax"
       eyebrow="Direct Tax · Chennai"
-      h1="Direct Tax and Income Tax Consultants in Chennai"
+      h1="Tax Consultants in Chennai: Income Tax, TDS and NRI Tax"
+      lead="C S Rushil & Co., a chartered accountancy firm in Anna Nagar, works as tax consultants in Chennai for income tax return preparation, tax planning, TDS compliance and notice-response support. The work starts with your income sources, taxpayer status and the year concerned. Individuals, businesses and NRIs can consult at the office or online, with the scope agreed before work starts."
       subhead="Return filing, tax planning, TDS, tax audit, notices, assessments and appeals for individuals, NRIs, firms and companies, from our Anna Nagar office."
-      introHeading="What do income tax consultants in Chennai handle?"
-      intro="As income tax consultants in Chennai, we handle every part of direct tax for individuals, NRIs, firms and companies: income tax returns, advance tax, TDS returns, tax audit, replies to notices, scrutiny assessments and appeals. From 1 April 2026, the Income-tax Act, 2025 replaces the 1961 Act, renumbering most sections and forms, so we work under both."
+      introHeading="What does a tax consultant in Chennai handle?"
+      intro="As tax consultants in Chennai, we handle direct tax for individuals, NRIs, firms and companies: income tax returns, advance tax, TDS, tax audit, notice replies, scrutiny assessments and appeals. The Income-tax Act, 2025 replaces the 1961 Act from 1 April 2026, so we work under both: the new Act for current years, the old one for earlier years."
       citation={{ label: "Income Tax Department: Objective and scope of the Income-tax Act, 2025 (incometax.gov.in)", href: "https://www.incometax.gov.in/iec/foportal/help/all-topics/e-filing-services/objective-and-scope-new-act" }}
       keyFacts={[
         { label: "Law in force", value: "Income-tax Act, 2025 from 1 April 2026; the 1961 Act still governs FY 2025-26 and earlier years" },

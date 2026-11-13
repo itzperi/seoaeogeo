@@ -44,7 +44,7 @@ export default function Page() {
       serviceType="TDS Return Filing"
       crumbLabel="TDS Return Filing"
       crumbHref="/tds-return-filing-chennai"
-      parentCrumb={{ name: "Direct Tax", href: "/direct-tax" }}
+      parentCrumb={{ name: "Tax Consultants in Chennai", href: "/direct-tax" }}
       eyebrow="TDS Returns · Chennai"
       h1="TDS Return Filing in Chennai"
       subhead="Quarterly TDS statements, Form 16 and 16A certificates, correction statements and one-off property and rent deductions, prepared under the Income-tax Act, 2025."

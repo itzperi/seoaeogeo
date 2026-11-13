@@ -30,6 +30,7 @@ export const CATEGORY_HUBS: NavLink[] = SERVICE_GROUPS.map((group) => {
 export const FOOTER_CORE_LINKS: NavLink[] = [
   { href: "/", label: "CA Firm in Chennai" },
   { href: "/private-limited-company-incorporation-chennai", label: "Private Limited Company Registration in Chennai" },
+  { href: "/direct-tax", label: "Tax Consultant in Chennai" },
   { href: "/virtual-cfo-services", label: "Virtual CFO in Chennai" },
   { href: "/gst-litigation-chennai", label: "GST Litigation & Appeals in Chennai" },
   { href: "/company-registration-chennai", label: "Company Registration in Chennai" },

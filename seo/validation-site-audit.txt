@@ -1,0 +1,66 @@
+
+> csrushil-website@0.1.0 verify:audit
+> node scripts/verify-seo-audit.mjs http://127.0.0.1:3100
+
+Crawling 202 sitemap URLs from http://127.0.0.1:3100 ...
+
+Technical
+  PASS  All 202 sitemap URLs return 200  —  202/202
+
+On-page
+  PASS  Titles and descriptions present
+  PASS  Unique titles
+  PASS  Unique descriptions
+  PASS  Exactly one <h1> per page
+  PASS  Self-referencing canonicals
+  PASS  Every <img> has alt text
+
+ICAI
+  PASS  No Review / AggregateRating schema
+  PASS  No "free consultation / free tool" wording
+
+Content
+  PASS  /gst-notice-reply-chennai is available with server-rendered content  —  5145 words; no minimum ranking word count
+  PASS  /income-tax-notice-reply-chennai is available with server-rendered content  —  4992 words; no minimum ranking word count
+  PASS  /nri-tax-services is available with server-rendered content  —  5503 words; no minimum ranking word count
+
+Tools
+  PASS  /tools/company-registration-government-fee-calculator live and linked from /tools
+  PASS  /tools/nri-residential-status-calculator live and linked from /tools
+  PASS  /tools/nri-property-sale-tds-calculator live and linked from /tools
+  PASS  /tools/gst-appeal-deadline-pre-deposit-calculator live and linked from /tools
+  PASS  /tools/foreign-subsidiary-compliance-calendar live and linked from /tools
+
+Trust
+  PASS  CA-firm checklist on 8 registration/filing pages
+
+GEO
+  PASS  1961 → 2025 Act table on 6 tax pages
+
+Conversion
+  PASS  Cross-border 3-step block on 6 foreign-client pages
+
+AEO
+  PASS  Tamil summary on home, money and urgent pages
+  PASS  Tamil summary on Chennai area and Tamil Nadu city pages (52)
+
+Warnings
+  WARN  On-page: Title length review (not an indexing rule) — /outsourced-bookkeeping-services (64), /outsourced-bookkeeping-australia (61), /outsourced-bookkeeping-uae (62)
+  WARN  On-page: Description length review (not an indexing rule) — /roc-compliances (161), /outsourced-bookkeeping-services (194), /outsourced-bookkeeping-usa (166), /outsourced-bookkeeping-uk (171), /outsourced-bookkeeping-singapore (177), /outsourced-bookkeeping-australia (171), /outsourced-bookkeeping-uae (180)
+  WARN  ICAI membership and firm numbers are not set in src/lib/site.ts, so no credential appears in JSON-LD yet (by design until the firm supplies them).
+  WARN  Homepage HTML is 171 KB (target < 150 KB).
+
+Scorecard
+  Signal                                         After
+  Pages in sitemap                                 202
+  Average words per page                          1865
+  Question-phrased H2s                             80%
+  Pages with a lead answer                         202
+  Pages with FAQPage schema                        201
+  Pages with HowTo schema                          120
+  Pages with a Tamil summary                        58
+  Pages with the ICAI verification block            99
+  Interactive tools                                  5
+  Homepage HTML (KB)                               171
+
+22/22 checks passed, 4 warning(s).

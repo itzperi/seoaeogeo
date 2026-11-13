@@ -17,14 +17,14 @@ const GST_STEPS = [
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/goods-and-services-tax`;
-const title = "GST Returns and Notices in Chennai | C S Rushil & Co.";
+const title = "GST Consultants in Chennai | C S Rushil & Co.";
 const description =
   "GST consultants in Chennai for registration, GSTR-1 and 3B returns, GSTR-9/9C, ITC reconciliation, LUT for exporters, notice replies, appeals and cancellation.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
   description,
-  alternates: { canonical: "/goods-and-services-tax" },
+  alternates: { canonical: "/goods-and-services-tax", types: { "text/markdown": "/md/goods-and-services-tax" } },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title,
@@ -143,12 +143,13 @@ export default function GstPage() {
           serviceType: "GST Compliance and Advisory",
         })}
       />
-      <JsonLd data={speakableSchema(["#direct-answer"])} />
+      <JsonLd data={speakableSchema(["#direct-answer"], PAGE_URL)} />
       <Breadcrumbs items={[{ name: "GST Consultants", href: "/goods-and-services-tax" }]} />
       <PageHero
         reviewedPath="/goods-and-services-tax"
         eyebrow="GST · Chennai"
         h1="GST Consultants in Chennai"
+        lead="C S Rushil & Co. supports Chennai businesses with GST registration, return filing, input tax credit reconciliation and notice replies from Anna Nagar. For a notice, keep the complete notice, GSTIN, relevant return periods and response deadline ready. The team reviews the issue and supporting records before preparing the appropriate response."
         subhead="Registration, monthly and annual returns, input tax credit reconciliation, LUTs, notices and appeals, handled by one GST team from our Anna Nagar office."
       />
 

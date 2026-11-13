@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero";
 import GoogleReviews from "@/components/GoogleReviews";
 import EnquiryCard from "@/components/EnquiryCard";
 import FAQSection from "@/components/FAQSection";
+import ProfessionalVerification from "@/components/ProfessionalVerification";
 import { JsonLd } from "@/lib/schema";
 import {
   ADDRESS,
@@ -14,6 +15,7 @@ import {
   BUSINESS_HOURS,
   EMAIL,
   GOOGLE_MAPS_EMBED_SRC,
+  GBP_DIRECTIONS_URL,
   PHONE_DISPLAY,
   PHONE_TEL,
   SITE_URL,
@@ -288,7 +290,7 @@ export default function ContactPage() {
             The office is in J-Block, {ADDRESS.locality}, Chennai, on 1st Street, 13th Main Road.
           </p>
           <p className={P}>
-            Our full address is {ADDRESS_FULL}. If you are using a map app, search for the Plus Code {PLUS_CODE} or
+            Our full address is {ADDRESS_FULL}. <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className={LINK}>Open directions to the Anna Nagar office</a>. If you are using a map app, search for the Plus Code {PLUS_CODE} or
             for C S Rushil &amp; Co., and use the embedded map above to see the pin. When you arrive, look for J-Block
             and 1st Street on 13th Main Road. If you are coming for a first meeting, it helps to book a slot
             on the calendar above or call ahead on{" "}
@@ -302,6 +304,7 @@ export default function ContactPage() {
             if you want to see what we do for businesses and individuals in the neighbourhood.
           </p>
 
+          <ProfessionalVerification />
           <h2 className={H2}>When can you visit or call the office?</h2>
           <p className={P}>
             The office is open Monday to Saturday, {BUSINESS_HOURS[0].hours}, and closed on Sunday.

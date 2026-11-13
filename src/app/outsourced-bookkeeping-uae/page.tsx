@@ -54,7 +54,7 @@ export default function Page() {
       howTo={{
         heading: "How do you get started with outsourced bookkeeping from India?",
         steps: [
-          { name: "Free consultation", text: "A 15-minute call during UAE working hours about your company, its licence, VAT and Corporate Tax registration, and your software." },
+          { name: "Initial consultation", text: "A 15-minute call during UAE working hours about your company, its licence, VAT and Corporate Tax registration, and your software." },
           { name: "Review of your books", text: "We look at the last closed month, open VAT periods, the start of your first Corporate Tax period and any backlog, and agree the scope." },
           { name: "Engagement letter", text: "A written engagement letter with scope, close dates, confidentiality and data handling terms, and the name of your FTA-registered tax agent." },
           { name: "Access and documents", text: "You give us user access to your accounting software and agree how bills, invoices and bank statements reach us." },

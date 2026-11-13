@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description,
   alternates: { canonical: "/income-tax-consultant-for-hni-chennai" },
   openGraph: {
-    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+    images: [{ url: "/income-tax-consultant-for-hni-chennai/opengraph-image", width: 1200, height: 630 }],
     title,
     description,
     url: "/income-tax-consultant-for-hni-chennai",
