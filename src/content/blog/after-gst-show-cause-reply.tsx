@@ -8,7 +8,8 @@ export const meta: BlogPostMeta = {
     "Filed your reply to a GST show-cause notice already? Here's what happens next, and realistically how long you should expect the process to take.",
   date: "2026-09-19",
   excerpt:
-    "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",
+    "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",
+
   summary:
     "After you reply to a GST show cause notice, the officer can drop the proceedings, issue a demand order for some or all of the proposed amount, or call a personal hearing. If a demand order is passed, you can appeal to the Appellate Authority within the prescribed time, generally three months.",
   faqs: [
@@ -67,6 +68,11 @@ export default function Body() {
         Keep every piece of correspondence with the department organized chronologically, continue <Link href="/gst-return-filing-chennai">filing your regular GST returns</Link> without interruption (a pending dispute does not pause your ongoing compliance obligations), and avoid making any admissions in casual communication that could be used against you later.
       </p>
 
+      <p>
+        If the adjudication order confirms a demand, our free{" "}
+        <Link href="/tools/gst-appeal-deadline-pre-deposit-calculator">GST appeal deadline and pre-deposit calculator</Link>{" "}
+        shows the appeal deadline and the pre-deposit.
+      </p>
       <p>
         If you have filed a reply to a GST show cause notice and are unsure what comes next, or if a demand order has already been passed and you are deciding whether to appeal, C S Rushil &amp; Co. represents clients through the entire process, from the original notice through GSTAT if needed. Book a consultation to discuss where your case currently stands.
       </p>

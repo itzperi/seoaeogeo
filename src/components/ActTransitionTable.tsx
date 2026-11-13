@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 // Income-tax Act, 1961 → Income-tax Act, 2025 reference table.
 // Every mapping here is one already used (and cited) elsewhere on the site,
 // so the numbering stays consistent across pages. Add a row only after the
@@ -32,7 +34,11 @@ export default function ActTransitionTable({ rows }: { rows: (keyof typeof ACT_R
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">
         The Income-tax Act, 2025 applies from 1 April 2026 (tax year 2026-27 onwards) and renumbers most sections and
         forms. Income earned up to 31 March 2026, and notices and appeals for those years, still follow the Income-tax
-        Act, 1961, so both numbers appear in practice.
+        Act, 1961, so both numbers appear in practice. See the{" "}
+        <Link href="/blog/income-tax-act-2025-section-mapping" className="font-medium text-royal-violet underline underline-offset-2">
+          full table of old and new section and form numbers
+        </Link>
+        .
       </p>
       <div className="mt-6 overflow-x-auto rounded-cards border border-ash">
         <table className="w-full min-w-[560px] border-collapse text-sm">

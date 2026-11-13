@@ -212,6 +212,10 @@ export default function Body() {
         <li>If you are selling an Indian property soon after returning, check whether the buyer should deduct TDS as for a resident or a non-resident, based on your status on the date of payment.</li>
       </ul>
       <p>
+        Check whether you are resident, RNOR or non-resident for a year with our free{" "}
+        <Link href="/tools/nri-residential-status-calculator">NRI residential status calculator</Link>.
+      </p>
+      <p>
         We advise returning families in{" "}
         <Link href="/income-tax-consultant-besant-nagar-chennai">Besant Nagar</Link>,{" "}
         <Link href="/income-tax-consultant-neelankarai-ecr-chennai">Neelankarai and the ECR</Link>{" "}

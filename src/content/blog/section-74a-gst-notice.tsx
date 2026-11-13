@@ -264,6 +264,10 @@ export default function Body() {
         .
       </p>
       <p>
+        If the order goes against you, work out the appeal deadline and the pre-deposit with our free{" "}
+        <Link href="/tools/gst-appeal-deadline-pre-deposit-calculator">GST appeal deadline and pre-deposit calculator</Link>.
+      </p>
+      <p>
         If you have received a notice citing Section 74A and want it reviewed
         before the reply date, <Link href="/contact">contact our Anna Nagar office</Link>.
       </p>

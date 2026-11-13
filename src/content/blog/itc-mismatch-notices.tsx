@@ -8,7 +8,8 @@ export const meta: BlogPostMeta = {
     "An ITC mismatch notice is one of the most common GST notices Chennai businesses receive — usually because GSTR-3B and a supplier's GSTR-1 don't match.",
   date: "2026-09-19",
   excerpt:
-    "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to...",
+    "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to...",
+
   summary:
     "An ITC mismatch notice usually arises because the credit you claimed in GSTR 3B does not match what suppliers reported in GSTR 1. Compare your GSTR 2B with your purchase register line by line, contact the supplier, keep written proof, and reply within the given window rather than reversing everything immediately.",
   faqs: [
@@ -76,6 +77,11 @@ export default function Body() {
         An unanswered ITC mismatch notice typically escalates into a formal show cause notice with interest and penalty proposed, and potentially into <Link href="/gst-litigation-chennai">GST litigation</Link>. Responding within the given window, even with a partial explanation and a plan for the remainder, is always better than silence.
       </p>
 
+      <p>
+        If an ITC demand is confirmed, our free{" "}
+        <Link href="/tools/gst-appeal-deadline-pre-deposit-calculator">GST appeal deadline and pre-deposit calculator</Link>{" "}
+        shows the appeal deadline and the pre-deposit.
+      </p>
       <p>
         If you have received a GST mismatch notice and are not sure how much of it is genuinely your liability versus a supplier filing delay, C S Rushil &amp; Co. reviews the reconciliation and drafts the <Link href="/gst-notice-reply-chennai">GST notice reply</Link> on your behalf. Reach out for a consultation before the reply deadline passes.
       </p>

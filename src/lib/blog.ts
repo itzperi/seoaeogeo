@@ -21,6 +21,8 @@ export type BlogPostModule = {
 // Static registry — Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
+  "income-tax-act-2025-section-mapping": () =>
+    import("@/content/blog/income-tax-act-2025-section-mapping"),
   "foreign-rsu-tax-schedule-fa-chennai": () =>
     import("@/content/blog/foreign-rsu-tax-schedule-fa-chennai"),
   "rnor-status-returning-nri": () =>
@@ -213,6 +215,15 @@ export type BlogSlug = keyof typeof modules;
 // export by convention; duplicated here (rather than importing every module
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
+  {
+    slug: "income-tax-act-2025-section-mapping",
+    title: "Income-tax Act 2025: Old vs New Section and Form Numbers",
+    description:
+      "Section 44AB is now 63, 195 is 393(2), 54 is 82, Form 15CA is 145 and Form 3CEB is 48. A table of 1961 to 2025 section, form and rule numbers.",
+    date: "2026-11-13",
+    excerpt:
+      "The Income-tax Act, 2025 renumbers most sections and forms from tax year 2026-27. A lookup table of old and new numbers for audit, TDS, capital gains, notices and transfer pricing.",
+  },
   {
     slug: "foreign-rsu-tax-schedule-fa-chennai",
     title: "Foreign RSU and ESPP Tax and Schedule FA for Chennai Staff",

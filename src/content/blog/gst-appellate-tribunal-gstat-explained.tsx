@@ -41,7 +41,8 @@ export const meta: BlogPostMeta = {
       answer:
         "Usually your authorised representative appears, and you attend only if the bench needs you. Hearing notices are issued through the portal, and the sitting days depend on the current office order for each bench. Check the cause list a few days ahead, because rosters and member composition are revised from time to time.",
     },
-  ],
+  ],
+
   summary:
     "A GSTAT appeal is the second appeal, filed on Form GST APL-05 on the GSTAT portal within three months of the Appellate Authority's order, after paying a further 10% of the tax still in dispute, subject to a cap, and the appeal fee. You normally must have completed the first appeal. The portal assigns the Tamil Nadu State Bench.",
 };
@@ -263,6 +264,10 @@ export default function Body() {
         <li>Prepare an indexed paper book, and list any document that the lower authorities ignored.</li>
         <li>Keep filing regular returns; a pending appeal does not pause ongoing compliance.</li>
       </ul>
+      <p>
+        To work out the filing deadline and pre-deposit for a first appeal or a GSTAT appeal, use our free{" "}
+        <Link href="/tools/gst-appeal-deadline-pre-deposit-calculator">GST appeal deadline and pre-deposit calculator</Link>.
+      </p>
       <p>
         For the full appeal ladder, notices and documents in one place, see our{" "}
         <Link href="/gst-litigation-chennai">GST litigation and GSTAT appeals page</Link>

@@ -288,6 +288,10 @@ export default function Body() {
         <li>Diarise the seven-day and 15-day periods the moment a MOV-06 is issued.</li>
       </ul>
       <p>
+        To check the last date for an appeal against the order and the pre-deposit it needs, use our free{" "}
+        <Link href="/tools/gst-appeal-deadline-pre-deposit-calculator">GST appeal deadline and pre-deposit calculator</Link>.
+      </p>
+      <p>
         For the disputes typical of each area, see our pages on{" "}
         <Link href="/gst-litigation-salem">GST litigation in Salem</Link> and{" "}
         <Link href="/gst-litigation-hosur">GST litigation in Hosur</Link>, and the

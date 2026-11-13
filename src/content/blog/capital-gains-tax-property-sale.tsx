@@ -274,6 +274,10 @@ export default function Body() {
           <Link href="/blog/joint-development-agreement-tax-chennai">joint development agreement tax in Chennai</Link>.</li>
       </ul>
       <p>
+        If the seller is an NRI, the buyer must deduct TDS on the sale; estimate it with our free{" "}
+        <Link href="/tools/nri-property-sale-tds-calculator">NRI property sale TDS calculator</Link>.
+      </p>
+      <p>
         Property sales are usually one part of a wider family tax picture. Our{" "}
         <Link href="/income-tax-consultant-for-hni-chennai">income tax planning for HNIs and families in Chennai</Link>{" "}
         brings property, shares and foreign assets into one computation. To go

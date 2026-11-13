@@ -25,7 +25,9 @@ const nextConfig: NextConfig = {
       // The combined USA & UK page became the NRI hub with separate country pages.
       { source: "/nri-tax-services-usa-uk", destination: "/nri-tax-services", permanent: true },
       // The pricing page was removed; send old links to the contact page.
-      { source: "/ca-fees-chennai", destination: "/contact", permanent: true },
+      // "CA fees in Chennai" searchers need the fee-transparency checks (ICAI: no
+      // fee figures), so send them to the guide rather than the contact page.
+      { source: "/ca-fees-chennai", destination: "/blog/how-to-choose-a-chartered-accountant-in-chennai", permanent: true },
       // Merged into the company registration hub (it competed for the same searches).
       { source: "/formation-of-business-entity", destination: "/company-registration-chennai", permanent: true },
       // Thin locality posts merged into their service/area pages (Oct 2026).
