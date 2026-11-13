@@ -104,7 +104,7 @@ export default function Page() {
         { question: "Does a new partnership firm need GST registration?", href: "/gst-registration-chennai" },
       ]}
       relatedSlugs={["company-registration-chennai", "llp-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "income-tax-return-filing-chennai", "bookkeeping-services-chennai", "private-limited-company-incorporation-chennai"]}
-      relatedPosts={["llp-vs-opc-vs-pvt-ltd", "gst-threshold-is-a-trigger", "msme-udyam-registration-checklist", "business-personal-expenses-separate"]}
+      relatedPosts={["convert-partnership-firm-to-llp", "llp-vs-opc-vs-pvt-ltd", "gst-threshold-is-a-trigger", "msme-udyam-registration-checklist"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">Who should register a partnership firm?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">
@@ -157,7 +157,7 @@ export default function Page() {
         </table>
       </div>
       <ComparisonTable
-        heading="Registered and unregistered firms"
+        heading="What is the difference between a registered and an unregistered partnership firm?"
         columns={["Point", "Registered firm", "Unregistered firm"]}
         rows={[
           ["Enforcing contracts against third parties", "Can sue to enforce contracts", "Cannot sue to enforce a contract (Section 69)"],

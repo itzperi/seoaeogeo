@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "government-fees-company-registration",
-  title: "Government Fees for Company Registration in India",
+  title: "Government Fees for Company Registration in India (2026)",
   description:
     "The statutory costs of registering a company: MCA filing fees, the zero-fee band, name reservation, PAN and TAN, stamp duty and DSC. Government charges only.",
   date: "2026-10-20",
@@ -250,8 +250,11 @@ export default function Body() {
         <li>Plan for post-incorporation filing fees in the first year</li>
       </ul>
       <p>
-        For the end-to-end process, see our guide to{" "}
-        <Link href="/company-registration-chennai">company registration in Chennai</Link>.
+        To estimate these charges for your own authorised capital, use our free{" "}
+        <Link href="/tools/company-registration-government-fee-calculator">company registration government fee calculator</Link>.
+        For the full process, see{" "}
+        <Link href="/private-limited-company-incorporation-chennai">private limited company incorporation in Chennai</Link>{" "}
+        and our guide to <Link href="/company-registration-chennai">company registration in Chennai</Link>.
         If you would like the government costs worked out for your proposed
         structure, you can <Link href="/contact">book a consultation with C S Rushil &amp; Co.</Link>
       </p>

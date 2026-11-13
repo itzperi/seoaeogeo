@@ -4,7 +4,7 @@ import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
-const title = "Annual Compliance Package for Companies | C S Rushil & Co.";
+const title = "Annual Compliance for Private Limited Companies and LLPs";
 const description =
   "Annual compliance package for companies and LLPs in Chennai: bookkeeping, statutory audit, AOC-4, MGT-7, DIR-3 KYC, LLP Form 8 and 11, ITR, GST and TDS returns.";
 

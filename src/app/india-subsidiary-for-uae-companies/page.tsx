@@ -6,7 +6,7 @@ import HighTicketSections, { type Audience } from "@/components/HighTicketSectio
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-uae-companies";
-const title = "Subsidiary in India for UAE Companies | C S Rushil & Co.";
+const title = "India Subsidiary for UAE Companies: Setup, FDI and Tax";
 const description =
   "Set up an Indian subsidiary from the UAE: mainland or free-zone parent, MOFA and Indian mission attestation, FDI route, FC-GPR, India–UAE treaty, NRI founders.";
 
@@ -92,6 +92,7 @@ const NOT_INCLUDED = [
 export default function Page() {
   return (
     <ServicePageTemplate
+      relatedPosts={["form-3ceb-due-date-applicability", "nri-director-private-limited-company", "foreign-national-director-indian-company"]}
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="India Subsidiary Incorporation for UAE Companies"
       crumbLabel="India Subsidiary for UAE Companies"

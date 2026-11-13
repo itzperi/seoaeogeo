@@ -6,7 +6,7 @@ import HighTicketSections, { type Audience } from "@/components/HighTicketSectio
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-uk-companies";
-const title = "Subsidiary in India for UK Companies | C S Rushil & Co.";
+const title = "India Subsidiary for UK Companies: Setup, FDI and Tax";
 const description =
   "Set up an Indian subsidiary from the UK: Companies House documents with FCDO apostille, resident director, FDI route, FC-GPR, India–UK tax treaty and CETA.";
 
@@ -93,6 +93,7 @@ const NOT_INCLUDED = [
 export default function Page() {
   return (
     <ServicePageTemplate
+      relatedPosts={["form-3ceb-due-date-applicability", "foreign-national-director-indian-company", "first-auditor-appointment-adt-1"]}
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="India Subsidiary Incorporation for UK Companies"
       crumbLabel="India Subsidiary for UK Companies"

@@ -82,6 +82,7 @@ const OFFICES = [
 export default function Page() {
   return (
     <ServicePageTemplate
+      relatedPosts={["form-3ceb-due-date-applicability"]}
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="India Market Entry Structuring"
       crumbLabel="EOR vs Subsidiary in India"

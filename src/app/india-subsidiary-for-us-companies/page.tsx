@@ -94,6 +94,7 @@ const NOT_INCLUDED = [
 export default function Page() {
   return (
     <ServicePageTemplate
+      relatedPosts={["form-3ceb-due-date-applicability", "foreign-national-director-indian-company", "first-auditor-appointment-adt-1"]}
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="India Subsidiary Incorporation for US Companies"
       crumbLabel="India Subsidiary for US Companies"

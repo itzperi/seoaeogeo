@@ -74,6 +74,7 @@ const LEGALISATION = [
 export default function Page() {
   return (
     <ServicePageTemplate
+      relatedPosts={["form-3ceb-due-date-applicability", "foreign-national-director-indian-company"]}
       pageUrl={`${SITE_URL}/company-registration-india-for-foreigners`}
       serviceType="Foreign Company Incorporation in India"
       crumbLabel="Company Registration for Foreigners"

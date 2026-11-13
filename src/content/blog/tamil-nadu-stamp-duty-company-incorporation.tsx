@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "tamil-nadu-stamp-duty-company-incorporation",
-  title: "Stamp Duty on Company Incorporation in Tamil Nadu",
+  title: "Stamp Duty on Company Incorporation in Tamil Nadu (2026)",
   description:
     "How stamp duty on the MoA and AoA works for companies registered in Tamil Nadu, how SPICe+ computes and collects it, and how authorised capital affects it.",
   date: "2026-10-16",
@@ -30,7 +30,8 @@ export const meta: BlogPostMeta = {
       answer:
         "Yes. MCA guidance lists form SH-7, used to notify an alteration of share capital, among the filings on which stamp duty is paid electronically through MCA21. For a Tamil Nadu company, the system computes the duty on the increase based on the state schedule, and the SRN is processed only after both the filing fee and stamp duty are paid.",
     },
-  ],
+  ],
+
   summary:
     "Stamp duty on a company's MoA and AoA depends on the state of the registered office. In Tamil Nadu after the 2023 amendment, the MoA entry is a fixed amount while the Articles are charged per ten lakh rupees of authorised capital, subject to a maximum. SPICe+ calculates and collects it on a separate challan.",
 };
@@ -253,6 +254,13 @@ export default function Body() {
         <Link href="/company-registration-chennai">company registration in Chennai</Link>{" "}
         covers the full process from name approval to certificate of
         incorporation.
+      </p>
+      <p>
+        The free{" "}
+        <Link href="/tools/company-registration-government-fee-calculator">government fee calculator</Link>{" "}
+        works out Tamil Nadu stamp duty with the MCA fees for your authorised capital, and our page on{" "}
+        <Link href="/private-limited-company-incorporation-chennai">private limited company incorporation in Chennai</Link>{" "}
+        covers each step of the filing.
       </p>
       <p>
         If you want help working out the stamp duty for your proposed capital

@@ -6,7 +6,7 @@ import HighTicketSections from "@/components/HighTicketSections";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-singapore-companies";
-const title = "India Subsidiary for Singapore Companies | C S Rushil & Co.";
+const title = "India Subsidiary for Singapore Companies: Setup and Tax";
 const description =
   "Set up an Indian subsidiary from Singapore: incorporation, resident director and FC-GPR filings. Book a consultation online or visit our Anna Nagar office.";
 
@@ -86,6 +86,7 @@ const NOT_INCLUDED = [
 export default function Page() {
   return (
     <ServicePageTemplate
+      relatedPosts={["form-3ceb-due-date-applicability", "foreign-national-director-indian-company", "first-auditor-appointment-adt-1"]}
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="India Subsidiary Incorporation for Singapore Companies"
       crumbLabel="India Subsidiary for Singapore Companies"

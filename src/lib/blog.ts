@@ -296,7 +296,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "tamil-nadu-stamp-duty-company-incorporation",
-    title: "Stamp Duty on Company Incorporation in Tamil Nadu",
+    title: "Stamp Duty on Company Incorporation in Tamil Nadu (2026)",
     description:
       "How stamp duty on the MoA and AoA works for companies registered in Tamil Nadu, how SPICe+ computes and collects it, and how authorised capital affects it.",
     date: "2026-10-16",
@@ -305,7 +305,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "government-fees-company-registration",
-    title: "Government Fees for Company Registration in India",
+    title: "Government Fees for Company Registration in India (2026)",
     description:
       "The statutory costs of registering a company: MCA filing fees, the zero-fee band, name reservation, PAN and TAN, stamp duty and DSC. Government charges only.",
     date: "2026-10-20",
@@ -796,12 +796,13 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "form-3ceb-due-date-applicability",
-    title: "Form 3CEB Due Date and Applicability: A Practical Guide",
+    title: "Form 3CEB Due Date 2026, Applicability and Form 48",
     description:
-      "Form 3CEB applies to any international transaction with an associated enterprise, regardless of value — here's who needs it and when it's due.",
+      "Form 3CEB for FY 2025-26 was due 31 October 2026. Who must file, the ₹20 crore domestic rule, the late-filing penalty, and Form 48 from tax year 2026-27.",
     date: "2026-09-25",
+    updated: "2026-11-13",
     excerpt:
-      "Form 3CEB applies to any international transaction with an associated enterprise, regardless of value. Here's who needs it and when it's due.",
+      "Form 3CEB for FY 2025-26 was due on 31 October 2026. Who must file it, what happens if it is late, and how Form 48 replaces it from tax year 2026-27.",
   },
   {
     slug: "gst-freelancers-consultants",
