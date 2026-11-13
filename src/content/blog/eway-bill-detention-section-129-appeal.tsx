@@ -7,6 +7,7 @@ export const meta: BlogPostMeta = {
   description:
     "Goods detained under Section 129 in Tamil Nadu: the MOV forms, current penalty amounts, paying for release vs contesting, and the appeal with a 10% pre-deposit.",
   date: "2026-10-12",
+  updated: "2026-11-13",
   excerpt:
     "A vehicle stopped for an e-way bill lapse: what each MOV form means, how the Section 129 penalty is worked out, whether to pay or contest, and how to appeal.",
   faqs: [
@@ -33,7 +34,7 @@ export const meta: BlogPostMeta = {
     {
       question: "Is every e-way bill mistake a ground for detention?",
       answer:
-        "No. CBIC Circular 64/38/2018-GST says minor errors, such as a spelling mistake in a name, a wrong PIN code with the correct address, or one or two wrong digits in the vehicle or document number, should attract only a small general penalty under Section 125, not detention and Section 129 penalty.",
+        "No. CBIC Circular 64/38/2018-GST says minor errors, such as a spelling mistake in a name with the correct GSTIN, a wrong PIN code with the correct address, or one or two wrong digits in the document or vehicle number, should attract only a Section 125 penalty of Rs 500 each under the CGST and SGST Acts.",
     },
     {
       question: "What if our goods are detained outside Tamil Nadu?",
@@ -68,82 +69,150 @@ export default function Body() {
         notice. The order can be appealed with a 10% pre-deposit.
       </p>
 
-      <h2>What do the MOV forms mean at each stage?</h2>
+      <h2>What is the MOV form sequence after a vehicle is stopped?</h2>
+      <p>
+        The usual order is MOV-01 (statement), MOV-02 (inspection order),
+        MOV-04 (verification report), then either MOV-05 (release, if nothing
+        is wrong) or MOV-06 (detention), MOV-07 (penalty notice) and MOV-09
+        (penalty order). Goods are released by MOV-05 once the penalty is paid
+        or a MOV-08 bond and security are given.
+      </p>
       <table>
         <thead>
           <tr>
-            <th>Stage</th>
-            <th>Form</th>
+            <th>Step</th>
+            <th>Form and official title</th>
+            <th>Legal basis</th>
             <th>Time limit</th>
             <th>What to do</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Interception and statement</td>
-            <td>MOV-01 (statement of the person in charge); MOV-02 (order for physical verification)</td>
-            <td>On the spot</td>
-            <td>Check the statement before signing; note any disagreement in writing</td>
+            <td>1. Interception</td>
+            <td>MOV-01: Statement of the owner, driver or person in charge of the goods and conveyance</td>
+            <td>Section 68(3); Circular 41/15/2018-GST, para 2(d)</td>
+            <td>At interception</td>
+            <td>Read the statement before signing; note any disagreement in writing</td>
           </tr>
           <tr>
-            <td>Physical verification report</td>
-            <td>MOV-04</td>
-            <td>Inspection is normally to be completed within 3 working days, extendable by MOV-03</td>
-            <td>Ask for a copy; photograph the goods and documents</td>
+            <td>2. Inspection order</td>
+            <td>MOV-02: Order for physical verification or inspection of the conveyance, goods and documents</td>
+            <td>Rule 138B; Circular 41/15/2018-GST, para 2(d)</td>
+            <td>Officer records a summary in Part A of EWB-03 within 24 hours</td>
+            <td>Take the vehicle to the place named in the order and ask for a copy</td>
           </tr>
           <tr>
-            <td>Release, if no discrepancy</td>
-            <td>MOV-05</td>
-            <td>After verification</td>
+            <td>3. Extension, if any</td>
+            <td>MOV-03: Order of extension of time for inspection beyond three working days</td>
+            <td>Circular 41/15/2018-GST, para 2(e)</td>
+            <td>Inspection should end within 3 working days of MOV-02 unless extended in writing</td>
+            <td>Check that any extension was approved and served on you</td>
+          </tr>
+          <tr>
+            <td>4. Verification report</td>
+            <td>MOV-04: Physical verification report</td>
+            <td>Rule 138C; Circular 41/15/2018-GST, para 2(f)</td>
+            <td>Final report in Part B of EWB-03 within 3 days of the inspection</td>
+            <td>Compare the quantities and descriptions with the invoice; photograph goods and documents</td>
+          </tr>
+          <tr>
+            <td>5a. Nothing wrong</td>
+            <td>MOV-05: Release order</td>
+            <td>Circular 41/15/2018-GST, para 2(g)</td>
+            <td>Forthwith</td>
             <td>Collect the release order before moving the vehicle</td>
           </tr>
           <tr>
-            <td>Detention order</td>
-            <td>MOV-06</td>
-            <td>When goods and vehicle are detained</td>
+            <td>5b. Detention</td>
+            <td>MOV-06: Order of detention under Section 129(1)</td>
+            <td>Section 129(1), proviso</td>
+            <td>Must be served before goods or vehicle are detained</td>
             <td>Note the date: the seven-day clock for the notice runs from here</td>
           </tr>
           <tr>
-            <td>Notice proposing penalty</td>
-            <td>MOV-07</td>
+            <td>6. Penalty notice</td>
+            <td>MOV-07: Notice under Section 129(3), with a summary in DRC-01</td>
+            <td>Section 129(3); Rule 142(1)</td>
             <td>Within 7 days of detention</td>
-            <td>Reply with documents explaining the lapse and ask for a hearing</td>
+            <td>Reply in writing with documents and ask for a hearing (Section 129(4))</td>
           </tr>
           <tr>
-            <td>Security for provisional release</td>
-            <td>MOV-08 (bond and security, such as a bank guarantee)</td>
-            <td>Any time before the order, if you choose this route</td>
-            <td>Lets you move the goods while contesting the penalty</td>
+            <td>7. Provisional release (optional)</td>
+            <td>MOV-08: Bond for provisional release of goods and conveyance, with security such as a bank guarantee</td>
+            <td>Section 129(1)(c); Circular 41/15/2018-GST, para 2(i)</td>
+            <td>Any time before payment, if you choose this route</td>
+            <td>Lets the goods move while you contest the penalty</td>
           </tr>
           <tr>
-            <td>Penalty order</td>
-            <td>MOV-09, with summary in DRC-07</td>
+            <td>8. Penalty order</td>
+            <td>MOV-09: Order of demand of tax and penalty, with a summary in DRC-07</td>
+            <td>Section 129(3); Rule 142(5)</td>
             <td>Within 7 days of service of MOV-07</td>
             <td>Check the date and the reasons; the appeal lies against this order</td>
           </tr>
           <tr>
-            <td>If the penalty is not paid</td>
-            <td>MOV-10 / MOV-11 (Section 130 proceedings)</td>
-            <td>After 15 days from receipt of the MOV-09 order</td>
-            <td>Goods and vehicle can be sold or disposed of, so do not let this period lapse</td>
+            <td>9. Release</td>
+            <td>MOV-05: Release order</td>
+            <td>Circular 41/15/2018-GST, paras 2(h) to 2(j)</td>
+            <td>On payment of the penalty, or on the MOV-08 bond and security</td>
+            <td>Keep the release order with the payment proof</td>
+          </tr>
+          <tr>
+            <td>10. Penalty unpaid</td>
+            <td>Sale by auction, with notice in DRC-10</td>
+            <td>Section 129(6); Rule 144A</td>
+            <td>If the penalty is not paid within 15 days of receiving the MOV-09 order</td>
+            <td>File the appeal in time: Rule 144A stays the sale once an appeal is filed, except for perishable or hazardous goods</td>
           </tr>
         </tbody>
       </table>
       <p>
-        The MOV forms are prescribed under Rule 138C and the related rules of
-        the CGST Rules. Shorter periods apply to perishable goods.
+        The MOV forms and their sequence are set out in{" "}
+        <a href="https://cbic-gst.gov.in/pdf/circularno-41-cgst.pdf" target="_blank" rel="noopener noreferrer">
+          CBIC Circular 41/15/2018-GST
+        </a>
+        , read with Rules 138B and 138C of the CGST Rules. The form titles date
+        from 2018 and still say &quot;tax and penalty&quot;; since 1 January
+        2022, Section 129 demands a penalty only. If you pay within seven days
+        of the MOV-07 notice and before the order, the payment is made through
+        DRC-03 and the officer closes the case in DRC-05 under{" "}
+        <a
+          href="https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter18/rule142_v1.00.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Rule 142(3)
+        </a>
+        . MOV-10 and MOV-11 are the confiscation forms under Section 130, which
+        the circular reserves for cases where the officer believes the movement
+        was meant to evade tax. Shorter periods apply to perishable goods.
       </p>
 
       <h2>How is the Section 129 penalty calculated?</h2>
       <p>
-        The penalty structure was changed by the Finance Act, 2021 with effect
-        from 1 January 2022, which also removed the separate tax demand at
-        detention. We have not found a later amendment to these amounts, but
-        check the current text of Section 129 in the{" "}
-        <a href="https://cbic-gst.gov.in/gst-acts.html" target="_blank" rel="noopener noreferrer">
-          CGST Act on cbic-gst.gov.in
+        The penalty depends on whether the owner of the goods comes forward:
+        200% of the tax if the owner does, and the higher of 50% of the value or
+        200% of the tax if not, with lower capped amounts for exempt goods.
+        These amounts were set by the Finance Act, 2021 with effect from 1
+        January 2022, which also removed the separate tax demand at detention.
+      </p>
+      <p>
+        The current text of Section 129 on{" "}
+        <a
+          href="https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter19/section129_v1.00.html"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CBIC&apos;s tax information portal
         </a>{" "}
-        before relying on them.
+        records the amendments of 1 January 2022 (Notification No.
+        39/2021-Central Tax) and no later change to these amounts. The Act
+        itself is also on{" "}
+        <a href="https://cbic-gst.gov.in/gst-acts.html" target="_blank" rel="noopener noreferrer">
+          cbic-gst.gov.in
+        </a>
+        .
       </p>
       <table>
         <thead>
@@ -213,7 +282,7 @@ export default function Body() {
           <tr>
             <td>Contest without release</td>
             <td>Rarely practical; only where goods are not urgent and the detention is clearly unlawful</td>
-            <td>The 15-day period after the order and possible Section 130 proceedings</td>
+            <td>The 15-day period after the order, after which the goods can be auctioned under Section 129(6) unless an appeal is filed</td>
           </tr>
           <tr>
             <td>Pay and accept</td>
@@ -233,16 +302,38 @@ export default function Body() {
         cause of detention near the Karnataka border.
       </p>
       <p>
-        Not every slip justifies Section 129. CBIC Circular 64/38/2018-GST lists
-        minor discrepancies, such as spelling mistakes, a wrong PIN code with a
-        correct address, or one or two wrong digits in a document or vehicle
-        number, that should attract only a small penalty under Section 125.
-        Courts have also set aside detentions where the e-way bill had expired
-        but the documents were genuine and there was no intent to evade tax.
-        These are arguments for the MOV-07 reply and the appeal.
+        Not every slip justifies Section 129.{" "}
+        <a href="https://cbic-gst.gov.in/pdf/Circular_64_38_Eway_Bill.pdf" target="_blank" rel="noopener noreferrer">
+          CBIC Circular 64/38/2018-GST
+        </a>{" "}
+        says that where an invoice and an e-way bill accompany the goods,
+        Section 129 proceedings may not be started for these errors:
+      </p>
+      <ul>
+        <li>a spelling mistake in the consignor&apos;s or consignee&apos;s name, where the GSTIN is correct;</li>
+        <li>a wrong PIN code with the correct address, as long as the error does not lengthen the e-way bill&apos;s validity;</li>
+        <li>an error in the consignee&apos;s address where the locality and other details are correct;</li>
+        <li>an error in one or two digits of the document number;</li>
+        <li>an error at the 4 or 6-digit HSN level where the first 2 digits and the tax rate are correct;</li>
+        <li>an error in one or two digits or characters of the vehicle number.</li>
+      </ul>
+      <p>
+        For these, the circular directs a penalty of Rs 500 each under Section
+        125 of the CGST Act and the State GST Act (Rs 1,000 under the IGST Act)
+        per consignment, in DRC-07. Courts have also set aside detentions where
+        the e-way bill had expired but the documents were genuine and there was
+        no intent to evade tax. These are arguments for the MOV-07 reply and
+        the appeal.
       </p>
 
       <h2>How do you appeal a Section 129 order?</h2>
+      <p>
+        You file Form APL-01 on the GST portal against the MOV-09 order and its
+        DRC-07 summary, within three months of the order being communicated,
+        with a pre-deposit of 10% of the penalty. If the first appeal fails, a
+        second appeal lies to the GST Appellate Tribunal within three months,
+        with a further 10% of the penalty.
+      </p>
       <ol>
         <li>
           <strong>Check the dates.</strong> Was MOV-07 issued within seven days
@@ -279,6 +370,38 @@ export default function Body() {
           covers that stage.
         </li>
       </ol>
+      <table>
+        <thead>
+          <tr>
+            <th>Stage</th>
+            <th>Form</th>
+            <th>Time limit</th>
+            <th>Pre-deposit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First appeal (Section 107)</td>
+            <td>APL-01 on the GST portal</td>
+            <td>3 months from communication of the MOV-09 order, plus up to 1 month for sufficient cause</td>
+            <td>10% of the penalty (Section 107(6), proviso, from 1 October 2025)</td>
+          </tr>
+          <tr>
+            <td>Second appeal (Section 112)</td>
+            <td>APL-05 on the GSTAT e-filing portal</td>
+            <td>3 months from communication of the appellate order, plus up to 3 months for sufficient cause</td>
+            <td>A further 10% of the penalty (Section 112(8), proviso)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Source: Sections 107 and 112 of the CGST Act as amended, on CBIC&apos;s
+        tax information portal. The Appellate Authority is to decide an appeal
+        within one year of filing where it is possible to do so (Section
+        107(13)). The full appeal ladder, with the pre-deposit caps, is on our{" "}
+        <Link href="/gst-litigation-chennai">GST litigation and GSTAT page</Link>
+        .
+      </p>
 
       <h2>What should transporters and consignors do now?</h2>
       <ul>
@@ -290,6 +413,8 @@ export default function Body() {
       <p>
         To check the last date for an appeal against the order and the pre-deposit it needs, use our free{" "}
         <Link href="/tools/gst-appeal-deadline-pre-deposit-calculator">GST appeal deadline and pre-deposit calculator</Link>.
+        If you are still at the MOV-07 stage and need a written reply, see our{" "}
+        <Link href="/gst-notice-reply-chennai">GST notice reply service in Chennai</Link>.
       </p>
       <p>
         For the disputes typical of each area, see our pages on{" "}

@@ -72,7 +72,14 @@ const NOTICE_DIRECTORY = [
   ["DRC-01", "Rule 142(1) (show cause notice under Section 73, 74 or 74A)", "DRC-06", "Time stated in the notice, usually 30 days", "An order confirming tax, interest and penalty. Appeals then belong to the litigation page"],
   ["ADT-01", "Section 65 and Rule 101 (departmental audit)", "No reply form: records and written explanations", "Date stated in the notice", "The audit goes ahead on the records available, and findings can lead to a show cause notice"],
   ["RFD-08", "Rule 92(3) (proposed refund rejection)", "RFD-09", "15 days", "The refund can be rejected in whole or in part by an order"],
-  ["MOV-07", "Section 129 (goods or vehicle detained in transit)", "MOV-08", "7 days", "An order in MOV-09 demands tax and penalty. Release and appeals belong to the litigation page"],
+  ["MOV-07", "Section 129(3) (goods or vehicle detained in transit)", "A written reply to the officer. MOV-08 is not a reply: it is the bond for provisional release", "Before the order, which must be passed within 7 days of service of the notice", "An order in MOV-09 demands the penalty. Release and appeals belong to the litigation page"],
+];
+
+// Table: ASMT-10 vs DRC-01A vs DRC-01 decision table.
+const NOTICE_DECIDER = [
+  ["ASMT-10", "Scrutiny of returns (Section 61 and Rule 99). No show cause notice yet", "The officer has found discrepancies in your returns and wants an explanation. No demand has been raised", "ASMT-11, with any tax you accept paid through DRC-03", "30 days from being informed, or the further time the officer allows"],
+  ["DRC-01A", "Before a show cause notice (Rule 142(1A)). Optional for the officer", "The officer has worked out tax, interest and penalty and is giving you a chance to settle before a formal notice", "DRC-03 to pay in full; Part B of DRC-01A to part-pay or object", "The date given in the intimation. Rule 142 does not fix a period"],
+  ["DRC-01", "Show cause notice issued under Section 73, 74 or 74A (Rule 142(1))", "Adjudication has begun. An order in DRC-07 follows unless the notice is dropped or closed by payment", "DRC-06", "The time stated in the notice, usually 30 days. Under Section 74A, paying within 60 days of the notice removes or reduces the penalty"],
 ];
 
 // Table 2: Section 73 vs 74 vs 74A.
@@ -80,7 +87,7 @@ const SECTION_COMPARISON = [
   ["Periods covered", "FY 2023-24 and earlier", "FY 2023-24 and earlier", "FY 2024-25 onwards"],
   ["Type of allegation", "Short payment, wrong ITC or wrong refund without fraud", "The same, but with fraud, wilful misstatement or suppression of facts", "One provision for both: the notice states whether fraud, wilful misstatement or suppression is alleged"],
   ["Time to issue the notice", "At least 3 months before the order deadline", "At least 6 months before the order deadline", "Within 42 months of the annual return due date, whether or not fraud is alleged"],
-  ["Time to pass the order", "Within 3 years of the annual return due date", "Within 5 years of the annual return due date", "Within 12 months of the notice date"],
+  ["Time to pass the order", "Within 3 years of the annual return due date", "Within 5 years of the annual return due date", "Within 12 months of the notice date, extendable by up to 6 months by the Commissioner or an authorised officer not below Joint Commissioner"],
   ["Penalty basis", "10% of the tax or ₹10,000, whichever is higher. None if tax and interest are paid within 30 days of the notice", "Equal to the tax. Reduced to 15%, 25% or 50% of the tax if paid before the notice, within 30 days of the notice or within 30 days of the order", "10% of the tax or ₹10,000, whichever is higher, without fraud; equal to the tax where fraud is established. Lower amounts apply on early payment"],
 ];
 
@@ -175,7 +182,7 @@ const FAQS = [
   {
     question: "What is the difference between DRC-01A and DRC-01?",
     answer:
-      "DRC-01A is an intimation sent before a show cause notice, giving you a chance to pay the tax with interest or object in writing in Part B. DRC-01 is the summary of the show cause notice itself. Once DRC-01 is issued, formal proceedings have begun and you reply in DRC-06. Settling the issue at the DRC-01A stage can avoid a formal notice.",
+      "DRC-01A is an optional intimation sent before a show cause notice, letting you pay with interest through DRC-03 or part-pay and object in Part B. DRC-01 is the summary of the show cause notice itself: formal proceedings have begun and you reply in DRC-06. Settling at the DRC-01A stage can avoid a formal notice.",
   },
   {
     question: "How much time do I get to reply to a GST notice?",
@@ -198,21 +205,6 @@ const FAQS = [
       "Either the Tamil Nadu Commercial Taxes Department or a CBIC Central GST commissionerate can issue it, depending on which administration your GSTIN is assigned to. The officer's designation and office appear on the notice and in your GST portal profile. Hearings and correspondence go to that office, so confirm it first.",
   },
   {
-    question: "Can I reply to a GST notice myself on the GST portal?",
-    answer:
-      "Yes. Any registered taxpayer can reply under the notices section of the GST portal. The risk lies in the content: a reply that does not reconcile the figures, cite the right provisions or attach evidence can lead to the demand being confirmed. Simple clarifications can be handled directly; a demand with tax, interest or penalty usually needs a CA.",
-  },
-  {
-    question: "What documents do I need to reply to an ITC mismatch notice?",
-    answer:
-      "You need GSTR-2B and GSTR-3B for the period, your purchase register, the supplier invoices, proof of payment to suppliers and, where possible, evidence that suppliers filed their returns. If the mismatch is about timing, ledgers showing when credit was booked and claimed help. For supplier defaults, add correspondence and proof that the goods or services were received.",
-  },
-  {
-    question: "Does an ITC mismatch or ASMT-10 notice mean I have done something wrong?",
-    answer:
-      "Not necessarily. Most of these notices come from the department matching GSTR-3B with GSTR-1 and GSTR-2B, often because a supplier filed late or differently. Compare GSTR-2B with the credit claimed, line by line, for the notice period. An error on your side is accepted with interest; a supplier's default is followed up, as credit generally depends on GSTR-2B.",
-  },
-  {
     question: "Should I pay the amount in a DRC-01A or object to it?",
     answer:
       "It depends on the reconciliation. If the officer is right on an item, paying with interest through DRC-03 usually ends that item without a show cause notice or penalty. If the figure is wrong, you object in Part B with evidence. Many intimations mix both, so a part-payment with a reasoned objection on the rest is common.",
@@ -221,16 +213,6 @@ const FAQS = [
     question: "What happens if the officer does not accept my reply?",
     answer:
       "The officer can issue a show cause notice if none exists, or fix a personal hearing, and then pass an order. Under Section 75 you are entitled to a hearing if an adverse decision is contemplated. If a demand order follows, your remedy is an appeal in APL-01, which our GST litigation page explains.",
-  },
-  {
-    question: "Can I ask the officer for more time to reply?",
-    answer:
-      "Yes. File a written request for an extension or adjournment on the portal or with the office before the date expires, stating the reason. Granting it is at the officer's discretion, and Section 75 limits adjournments in a show cause proceeding to three. Never treat a pending request as an extension until the officer confirms it.",
-  },
-  {
-    question: "Can a Chennai CA reply to a GST notice for a business in another city?",
-    answer:
-      "Yes. Replies are filed online on the GST portal, so the location of the business rarely matters. We work from our only office in Anna Nagar, Chennai, and serve clients elsewhere online. Hearings are attended by video where the authority allows it, or in person by arrangement. For other states we say plainly where local representation serves you better.",
   },
 ];
 
@@ -339,6 +321,53 @@ export default function Page() {
               first 48 hours after a GST show cause notice
             </Link>{" "}
             lists what to do straight away.
+          </p>
+
+          <h2 className={H2}>ASMT-10, DRC-01A or DRC-01: which notice is this?</h2>
+          <p className={P}>
+            Look at the form number in the portal title. An ASMT-10 is a scrutiny query with no demand yet; a DRC-01A is
+            an optional pre-notice intimation inviting you to pay or object; a DRC-01 is the summary of a formal show
+            cause notice that leads to an order. Each has its own reply form and deadline.
+          </p>
+          <Table
+            head={["Form", "Stage", "What it means", "Reply form", "Time to reply"]}
+            rows={NOTICE_DECIDER}
+          />
+          <p className="mt-3 max-w-3xl text-xs text-slate">
+            Source: Section 61 of the CGST Act, Rule 99 and{" "}
+            <a
+              href="https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter18/rule142_v1.00.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={LINK}
+            >
+              Rule 142 of the CGST Rules
+            </a>{" "}
+            as amended, and the{" "}
+            <a
+              href="https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter15/Section74A_v1.00.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={LINK}
+            >
+              text of Section 74A
+            </a>{" "}
+            on CBIC&apos;s tax information portal. The date printed on your own notice governs.
+          </p>
+          <p className={P}>
+            The three forms are often stages of the same issue. If the officer accepts an ASMT-11 reply, you are
+            informed in ASMT-12 and the scrutiny ends; if not, a DRC-01A or a DRC-01 can follow. Settling at the DRC-01A
+            stage, by paying what is right through DRC-03 and objecting to the rest in Part B, can avoid a formal notice
+            altogether. Once a DRC-01 is issued for FY 2024-25 or later, the time limits and penalty rules of Section 74A
+            apply, which our guide to{" "}
+            <Link href="/blog/section-74a-gst-notice" className={LINK}>
+              Section 74A notices, time limits and the reply format
+            </Link>{" "}
+            explains. After a DRC-06 reply is filed, the hearing, the DRC-07 order and the appeal clock are covered in{" "}
+            <Link href="/blog/after-gst-show-cause-reply" className={LINK}>
+              what happens after you reply to a GST show cause notice
+            </Link>
+            .
           </p>
 
           <h2 className={H2}>Is your notice from the State (Tamil Nadu Commercial Taxes) or the Centre (CGST)?</h2>

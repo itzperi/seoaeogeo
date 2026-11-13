@@ -62,8 +62,8 @@ const CALENDAR = [
   ["Form CN", "Event-based", "Within 30 days of a start-up issuing or transferring convertible notes to or from a non-resident"],
   ["Form FDI-LLP(I)", "Event-based", "Within 30 days of an LLP receiving capital contribution from a non-resident"],
   ["Form DI", "Event-based", "Within 30 days of allotment, for downstream investment that counts as indirect foreign investment"],
-  ["Form ODI (Part I)", "Event-based", "When an Indian entity or resident individual makes an overseas direct investment, through the authorised dealer bank"],
-  ["Annual FLA return", "Annual", "By 15 July every year on the RBI's FLAIR portal, for companies and LLPs with outstanding FDI or ODI"],
+  ["Overseas direct investment: financial commitment", "Event-based", "At the time of sending the outward remittance or making the financial commitment, whichever is earlier, through the authorised dealer bank"],
+  ["Annual FLA return", "Annual", "By 15 July every year on the RBI's FLAIR portal, for entities with outstanding FDI or ODI at end-March of the previous or current year"],
   ["Annual Performance Report (APR)", "Annual", "By 31 December every year, for each foreign entity in which ODI is held"],
 ];
 
@@ -73,6 +73,17 @@ const LSF = [
   ["Cap", "The fee cannot exceed 100% of the amount involved, rounded up to the nearest hundred"],
   ["Time window", "The late submission fee option is available for up to three years from the due date; after that, or where a report is neither filed on time nor with the fee, the contravention goes to compounding or penal action under FEMA"],
   ["Payment", "Paid to the RBI regional office for foreign investment returns, by demand draft, NEFT or RTGS, as instructed through the FIRMS process; the fee is not refundable"],
+];
+
+const ODI = [
+  ["Unique Identification Number (UIN)", "Obtain from the Reserve Bank before sending the outward remittance or acquiring the equity, whichever is earlier"],
+  ["Financial commitment", "Report at the time of sending the outward remittance or making the financial commitment, whichever is earlier"],
+  ["Evidence of investment", "Submit share certificates or other documentary evidence to the authorised dealer bank within six months of the remittance"],
+  ["Disinvestment", "Report within 30 days of receiving the disinvestment proceeds"],
+  ["Restructuring of the foreign entity", "Report within 30 days of the restructuring"],
+  ["Overseas portfolio investment", "Report within 60 days from the end of the half-year (September or March) in which it was made or transferred"],
+  ["Annual Performance Report", "By 31 December every year for each foreign entity; where the foreign entity's accounting year ends on 31 December, by 31 December of the following year"],
+  ["Late filing", "Allowed with a late submission fee within a maximum of three years from the due date"],
 ];
 
 const COMPOUNDING = [
@@ -130,10 +141,10 @@ export default function Page() {
         { question: "What is the time limit for filing Form FC-GPR?", answer: "Form FC-GPR must be filed within 30 days from the date shares or other equity instruments are issued to a person resident outside India. The shares themselves must be issued within 60 days of receiving the investment, or the money must be refunded within the following 15 days." },
         { question: "Who files Form FC-TRS, and by when?", answer: "FC-TRS is filed by the resident party to a transfer of shares between a resident and a non-resident, within 60 days of the transfer or the receipt or remittance of funds, whichever is earlier. The non-resident's KYC comes through the authorised dealer bank handling the payment." },
         { question: "Who has to file the FLA return?", answer: "Every Indian company or LLP with outstanding foreign direct investment or overseas direct investment must file the FLA return on the RBI's FLAIR portal by 15 July each year. It is required even if no fresh investment came in during the year. Provisional figures can be filed by the due date and revised once accounts are audited." },
-        { question: "What is the late submission fee for delayed FEMA reporting?", answer: "For a delayed transactional report such as FC-GPR or FC-TRS, the fee is ₹7,500 plus 0.025% of the amount involved for each year of delay, with the delay counted in months and the total capped at the amount involved. For returns such as the FLA return and APR, it is a flat ₹7,500 per return. The option is available for up to three years from the due date." },
+        { question: "What is the late submission fee for delayed FEMA reporting?", answer: "For a delayed transactional report such as FC-GPR or FC-TRS, the fee is ₹7,500 plus 0.025% of the amount involved for each year of delay, counted in months and capped at the amount involved. Returns such as the FLA return and APR carry a flat ₹7,500 each. The option is available for up to three years from the due date." },
         { question: "What happens if a FEMA report is more than three years late?", answer: "The late submission fee route is no longer available, so the contravention has to be compounded with the RBI under Section 15 of FEMA. The RBI's compounding matrix sets a fixed amount plus a variable amount based on the sum involved and the period of delay, and the application carries a ₹10,000 fee plus GST." },
         { question: "When does a foreign-owned Indian company need to file Form DI?", answer: "When an Indian company that is owned or controlled by non-residents invests in the equity of another Indian company, the investment counts as indirect foreign investment. The investing company files Form DI within 30 days of allotment, and the investment must meet the sectoral entry route, caps and pricing rules." },
-        { question: "What does an Indian company file when it invests abroad?", answer: "An overseas direct investment is reported in Form ODI through the authorised dealer bank when the investment is made. After that, an Annual Performance Report is filed for each foreign entity by 31 December every year, based on the foreign entity's latest accounts." },
+        { question: "What does an Indian company file when it invests abroad?", answer: "It obtains a Unique Identification Number before remitting, reports the financial commitment through its authorised dealer bank when it remits or commits, whichever is earlier, and submits evidence of the investment within six months. After that, an Annual Performance Report is filed for each foreign entity by 31 December every year." },
       ]}
       relatedSlugs={["company-registration-india-for-foreigners", "india-subsidiary-compliance-cfo", "transfer-pricing-audit"]}
       relatedPosts={["form-3ceb-due-date-applicability", "post-incorporation-compliance-checklist", "annual-roc-filing-calendar"]}
@@ -145,11 +156,58 @@ export default function Page() {
         2022. Event-based filings run from the date of each transaction; the FLA return and APR fall due every year.
       </p>
       <Table head={["Filing", "Type", "When"]} rows={CALENDAR} />
+      <p className={pClass}>
+        Reporting is done through the Single Master Form on the RBI&apos;s{" "}
+        <a href="https://firms.rbi.org.in/" target="_blank" rel="noopener noreferrer" className={linkClass}>
+          FIRMS portal
+        </a>
+        . Before the first FC-GPR, an Indian entity that has received or expects foreign investment files an
+        entity master there, so a newly incorporated subsidiary should register on FIRMS as soon as the
+        foreign remittance is expected rather than after allotment.
+      </p>
+
+      <h2 className={h2Class}>Who must file the FLA return, and can provisional figures be used?</h2>
+      <p className={pClass}>
+        Every Indian entity with outstanding foreign direct investment or overseas direct investment at end-March
+        of the previous or current year files the FLA return on the FLAIR portal by 15 July. If the audit is not
+        finished, file on provisional figures by 15 July and revise once the audited accounts are ready.
+      </p>
+      <ul className="mt-4 max-w-3xl list-disc space-y-2 pl-6 leading-relaxed text-slate">
+        <li>Filers include companies, LLPs, SEBI-registered alternative investment funds, partnership firms and public-private partnerships with outstanding inward or outward direct investment.</li>
+        <li>An entity with no outstanding inward or outward direct investment at end-March of the reporting year or the previous year does not need to file.</li>
+        <li>The return is filed on the RBI&apos;s FLAIR portal; a revision after audit is requested through FLAIR as soon as the audited statements are available, whatever the size of the difference.</li>
+        <li>Late or non-filing can be treated as a FEMA contravention; the late submission fee is settled with the Foreign Exchange Department of the RBI regional office where the registered office is located.</li>
+      </ul>
+      <p className={pClass}>
+        Source: the RBI&apos;s{" "}
+        <a href="https://www.rbi.org.in/Scripts/FAQView.aspx?Id=95" target="_blank" rel="noopener noreferrer" className={linkClass}>
+          FAQs on the Annual Return on Foreign Liabilities and Assets
+        </a>{" "}
+        (updated as on 1 July 2026). Entities regulated by the IFSCA follow the IFSCA&apos;s instructions instead.
+      </p>
+
+      <h2 className={h2Class}>Which deadlines apply when an Indian company invests abroad?</h2>
+      <p className={pClass}>
+        An Indian company making an overseas direct investment needs a Unique Identification Number before the
+        money leaves, reports the financial commitment when it remits or commits, submits evidence of the
+        investment within six months, reports disinvestment or restructuring within 30 days, and files an Annual
+        Performance Report for each foreign entity by 31 December.
+      </p>
+      <p className={pClass}>
+        These timelines are set by the Foreign Exchange Management (Overseas Investment) Regulations, 2022, as
+        reproduced in the RBI&apos;s{" "}
+        <a href="https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=12380" target="_blank" rel="noopener noreferrer" className={linkClass}>
+          Master Direction on Overseas Investment
+        </a>
+        . Filings go through your authorised dealer bank. Indian groups that set up a subsidiary in the UK, US,
+        UAE or Singapore usually meet all of them in the first two years.
+      </p>
+      <Table head={["Overseas investment event", "Reporting timeline"]} rows={ODI} />
 
       <h2 className={h2Class}>How is the late submission fee calculated?</h2>
       <p className={pClass}>
-        Part XIII of the RBI&apos;s Master Direction on reporting under FEMA sets a uniform late submission fee (LSF)
-        matrix, last updated in 2026. Paying the fee with the delayed report regularises the delay without compounding.
+        Part XIII of the RBI&apos;s Master Direction on reporting under FEMA (updated as on 1 October 2026) sets a
+        uniform late submission fee (LSF) matrix. Paying the fee with the delayed report regularises the delay without compounding.
         For example, an FC-GPR on ₹1 crore filed one year and three months late carries a fee of ₹7,500 plus
         0.025% × ₹1 crore × 1.25, or ₹10,625. Verify the current amount on the RBI website before paying, as the matrix
         is revised from time to time.

@@ -5,8 +5,9 @@ export const meta: BlogPostMeta = {
   slug: "joint-development-agreement-tax-chennai",
   title: "Joint Development Agreement Tax for Chennai Landowners",
   description:
-    "Redeveloping your Chennai bungalow with a builder? When capital gains arise under a JDA, GST on the flats you receive, 10% TDS on cash, and a worked example.",
+    "JDA tax for Chennai landowners: when capital gains arise, GST on your flats, 10% TDS on cash, NRI co-owner TDS and repatriation, with a worked example.",
   date: "2026-10-12",
+  updated: "2026-11-13",
   excerpt:
     "Bungalow-to-apartment redevelopment is common in R A Puram, Mylapore and Adyar. Here is how a landowner is taxed under a joint development agreement, step by step.",
   faqs: [
@@ -39,6 +40,11 @@ export const meta: BlogPostMeta = {
       question: "Can I claim a reinvestment exemption on JDA gains?",
       answer:
         "Often yes. If the property given for development was a residential house, the house reinvestment exemption may apply; for a vacant plot, the exemption for investing net consideration in a house may apply. Whether flats received from the developer qualify, and from which date the time limits run, is fact-specific.",
+    },
+    {
+      question: "How is an NRI co-owner taxed under a Chennai JDA?",
+      answer:
+        "The gain is taxed in the completion-certificate year at 12.5% without indexation. Cash from the developer suffers TDS under the non-resident provision rather than the 10% rule, so a lower-deduction certificate (Form 13, now Form 128) helps. Proceeds reach an NRO account and are remitted after Form 15CA and 15CB, now Forms 145 and 146.",
     },
   ],
   summary:
@@ -220,6 +226,102 @@ export default function Body() {
         flats rather than cash, so advance tax planning matters; a family may
         sell one flat early in the following year to fund it, or plan an
         exemption.
+      </p>
+
+      <h2>How would GST apply to the same JDA, step by step?</h2>
+      <p>
+        <strong>Direct answer:</strong> GST on a residential JDA turns on three events: the transfer of
+        development rights to the developer, the developer&apos;s construction of the landowner&apos;s flats, and
+        any sale of those flats by the landowner before completion. In most Chennai redevelopments the developer
+        bears the first two, and the landowner is affected only by an early sale.
+      </p>
+      <p>
+        The rates and valuation rules come from the Central Tax (Rate) notifications for the real estate scheme
+        that took effect on 1 April 2019, summarised in the GST Council&apos;s FAQs linked above. Without
+        reproducing figures that depend on the project&apos;s bookings and prices, the same four-flat example
+        works like this in principle:
+      </p>
+      <ol>
+        <li><strong>Development rights at signing:</strong> exempt to the extent the project&apos;s flats are booked by buyers before the completion certificate or first occupation. For the share of flats still unbooked on that date, the developer pays tax under reverse charge, limited to 1% (affordable) or 5% (other) of the value of those flats.</li>
+        <li><strong>Construction of her four flats:</strong> the developer pays GST on the construction service supplied to her, valued by reference to the price charged for similar flats in the project to independent buyers. The tax falls due when the completion certificate is issued or on first occupation, whichever is earlier.</li>
+        <li><strong>If she sells one flat before completion:</strong> that sale is a taxable supply by her. She charges GST to the buyer and can take credit for the GST the developer charged her on that flat.</li>
+        <li><strong>If she sells only after completion:</strong> the sale of a completed flat is outside GST, and only income tax, stamp duty and the buyer&apos;s TDS apply.</li>
+      </ol>
+      <p>
+        Because the developer&apos;s liability on the landowner&apos;s flats is sometimes passed on by contract,
+        the JDA should say expressly who bears GST on the construction service and on development rights.
+      </p>
+
+      <h2>How is an NRI landowner taxed under a Chennai JDA?</h2>
+      <p>
+        <strong>Direct answer:</strong> An NRI co-owner is taxed on the same gain, in the year the completion
+        certificate is issued, but at 12.5% without the indexation option. Cash from the developer falls under
+        the TDS provision for non-residents, not the 10% JDA rule, so a lower-deduction certificate matters.
+        Money is received in an NRO account and remitted after Forms 145 and 146.
+      </p>
+      <p>
+        Bungalow families in Mylapore, Adyar and Alwarpet often include a sibling in London, New Jersey or Toronto.
+        The completion-year rule applies to an individual or HUF regardless of residence, but several mechanics
+        change for the non-resident co-owner:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Point</th>
+            <th>Resident co-owner</th>
+            <th>NRI co-owner</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TDS on cash from the developer</td>
+            <td>10% under section 194-IC of the 1961 Act, which covers payments to residents only</td>
+            <td>TDS on payments to non-residents: section 195 of the 1961 Act, section 393(2) of the 2025 Act, at the rate for the capital gain plus surcharge and cess</td>
+          </tr>
+          <tr>
+            <td>Flats received in kind</td>
+            <td>Expressly outside the JDA TDS provision</td>
+            <td>The express carve-out for consideration in kind is in the provision for residents; agree the TDS treatment with the developer in writing</td>
+          </tr>
+          <tr>
+            <td>Rate on long-term gain</td>
+            <td>Lower of 12.5% without indexation or 20% with indexation, for land acquired before 23 July 2024</td>
+            <td>12.5% without indexation; the indexation option is limited to resident individuals and HUFs</td>
+          </tr>
+          <tr>
+            <td>Lower or nil TDS certificate</td>
+            <td>Available, but the 10% rate usually leaves less excess</td>
+            <td>Often worth applying: Form 13 under section 197 for the 1961 Act, Form 128 under section 395 from 1 April 2026</td>
+          </tr>
+          <tr>
+            <td>Where money is received</td>
+            <td>Resident savings or current account</td>
+            <td>NRO account in India</td>
+          </tr>
+          <tr>
+            <td>Sending money abroad</td>
+            <td>Not applicable</td>
+            <td>Up to USD 1 million per financial year from NRO balances, after Form 15CA and, where required, the CA&apos;s Form 15CB; these are Form 145 and Form 146 from 1 April 2026</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Two practical points follow. First, TDS on the cash component rarely covers the tax on the whole gain,
+        because most of the consideration is the flats, so the NRI co-owner needs to pay advance tax in the
+        completion year and file an Indian return for it. Second, when the NRI later sells a flat received under
+        the JDA, the buyer deducts TDS on the sale price under the non-resident provision, so a lower-deduction
+        certificate is worth considering again at that stage. Our{" "}
+        <Link href="/tools/nri-property-sale-tds-calculator">NRI property sale TDS calculator</Link>{" "}
+        shows the difference, and our{" "}
+        <Link href="/form-15ca-15cb-chennai">Form 15CA and 15CB service</Link>{" "}
+        covers the remittance step.
+      </p>
+      <p>
+        Under India&apos;s tax treaties, gains from immovable property situated in India can be taxed in India,
+        so the co-owner&apos;s country of residence, such as the UK, US or Canada, applies its own rules on
+        whether and when to give credit for the Indian tax. Keep the Indian return, the TDS certificates and the
+        advance tax challans for that claim. The renumbered sections and forms are listed in our{" "}
+        <Link href="/blog/income-tax-act-2025-section-mapping">Income-tax Act 2025 section mapping</Link>.
       </p>
 
       <h2>What should families check before signing a JDA?</h2>

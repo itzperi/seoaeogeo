@@ -218,8 +218,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "joint-development-agreement-tax-chennai",
     title: "Joint Development Agreement Tax for Chennai Landowners",
     description:
-      "Redeveloping your Chennai bungalow with a builder? When capital gains arise under a JDA, GST on the flats you receive, 10% TDS on cash, and a worked example.",
+      "JDA tax for Chennai landowners: when capital gains arise, GST on your flats, 10% TDS on cash, NRI co-owner TDS and repatriation, with a worked example.",
     date: "2026-10-12",
+    updated: "2026-11-13",
     excerpt:
       "Bungalow-to-apartment redevelopment is common in R A Puram, Mylapore and Adyar. Here is how a landowner is taxed under a joint development agreement, step by step.",
   },
@@ -229,6 +230,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Section 74A GST notices for FY 2024-25 onwards: how it replaces Sections 73 and 74, the 42-month and 12-month limits, fraud vs non-fraud penalty, and replies.",
     date: "2026-10-12",
+    updated: "2026-11-13",
     excerpt:
       "From FY 2024-25, GST demands are raised under a single Section 74A. Here is how its time limits and penalties differ from Sections 73 and 74, and how to reply.",
   },
@@ -247,6 +249,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Goods detained under Section 129 in Tamil Nadu: the MOV forms, current penalty amounts, paying for release vs contesting, and the appeal with a 10% pre-deposit.",
     date: "2026-10-12",
+    updated: "2026-11-13",
     excerpt:
       "A vehicle stopped for an e-way bill lapse: what each MOV form means, how the Section 129 penalty is worked out, whether to pay or contest, and how to appeal.",
   },
@@ -645,8 +648,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "msme-udyam-registration-checklist",
     title: "MSME Udyam Registration After Incorporation: A Checklist",
     description:
-      "Should your newly incorporated company register under MSME/Udyam? Here's the eligibility, process, and benefits checklist.",
+      "Udyam registration for new companies: 2025 MSME limits, documents, the 45-day payment rule under Section 43B(h), the MSME-1 return and key benefits.",
     date: "2026-09-19",
+    updated: "2026-11-13",
     excerpt:
       "Udyam registration unlocks delayed-payment protection, priority lending, and tender eligibility. Here's whether you qualify and how to apply.",
   },
@@ -700,10 +704,11 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "after-gst-show-cause-reply",
     title: "What Happens After You Reply to a GST Show Cause Notice",
     description:
-      "Filed your reply to a GST show-cause notice already? Here's what happens next, and realistically how long you should expect the process to take.",
+      "After a GST show cause notice reply: the Section 75 personal hearing, time limits for the order, the DRC-07 order, rectification and appeal deadlines.",
     date: "2026-09-19",
+    updated: "2026-11-13",
     excerpt:
-      "If you have already read our guide on the first forty eight hours after receiving a GST show cause notice and filed your reply, the natural...",
+      "Your DRC-06 reply is filed. What comes next: the personal hearing, the officer's time limit, the DRC-07 order, rectification and the appeal clock.",
   },
   {
     slug: "capital-gains-tax-property-sale",

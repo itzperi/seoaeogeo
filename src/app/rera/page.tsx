@@ -15,6 +15,55 @@ export const metadata: Metadata = {
   alternates: { canonical: "/rera" },
 };
 
+const linkClass = "font-medium text-royal-violet underline underline-offset-2";
+const h2Class = "mt-14 text-2xl text-obsidian";
+const pClass = "mt-4 max-w-3xl leading-relaxed text-slate";
+
+const TN_RULES_URL = "https://cms.tn.gov.in/cms_migrated/document/rules_regulations/TNRERA_Rules_2017.pdf";
+
+const CERTIFICATES = [
+  ["Withdrawal certificate", "Chartered Accountant in practice", "Land cost and construction cost incurred, and their proportion to the total estimated cost of the project", "Rule 5, Tamil Nadu RERA Rules, 2017"],
+  ["Site certificate", "Engineer", "The cost items shown match the physical condition at the project site", "Rule 5"],
+  ["Plan certificate", "Architect", "The work at site is built as per the sanctioned plan", "Rule 5"],
+  ["Annual audit of project accounts", "Chartered Accountant in practice", "Accounts audited within six months after each financial year; money collected used for the project; withdrawals in proportion to completion", "Section 4(2)(l)(D) of the Act; declaration in Form B"],
+  ["Final withdrawal after completion", "CA, engineer and architect", "Balance in the separate account released only on the same three certificates", "Rule 5"],
+];
+
+const COSTS = [
+  ["Land cost", "Market value of the land, including stamp duty and registration fees paid to acquire ownership, whether freehold or leasehold"],
+  ["Construction cost", "On-site expenditure on the physical development of the project"],
+  ["Also within construction cost", "Fees and charges for statutory clearances, cost of transfer of development rights, premium FSI charges, finance cost for construction and professional consulting charges"],
+];
+
+function Table({ head, rows }: { head: string[]; rows: string[][] }) {
+  return (
+    <div className="mt-6 max-w-4xl overflow-x-auto rounded-cards border border-ash">
+      <table className="w-full text-left text-sm">
+        <thead className="bg-carbon text-white">
+          <tr>
+            {head.map((h) => (
+              <th key={h} scope="col" className="px-4 py-3 font-medium">
+                {h}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody className="divide-y divide-ash bg-paper">
+          {rows.map((r) => (
+            <tr key={r[0]}>
+              {r.map((c, i) => (
+                <td key={i} className={`px-4 py-3 align-top ${i === 0 ? "font-medium text-obsidian" : "text-slate"}`}>
+                  {c}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 export default function Page() {
   return (
     <ServicePageTemplate
@@ -48,11 +97,13 @@ export default function Page() {
         { name: "Extension & Amendment Filings", text: "Applications for project timeline extensions or registration amendments." },
       ]}
       faqs={[
-        { question: "Which real estate projects need RERA registration?", answer: "Projects with land area exceeding 500 sq. metres or more than 8 apartments, where a completion certificate hasn't been received, must register with TNRERA before advertising, marketing, or selling units." },
-        { question: "What is the 70% escrow account requirement?", answer: "Promoters must deposit 70% of amounts collected from buyers into a separate bank account for the project (commonly called the RERA escrow account), to be used only for construction and land costs of that specific project." },
-        { question: "How often must progress reports be filed?", answer: "Quarterly Progress Reports (QPRs) must be filed with TNRERA every quarter, within 15 days of the quarter end, until the project receives its completion certificate. Promoters also file an annual audited statement of accounts (Form-7) certified by a practising Chartered Accountant, within six months of the end of each financial year." },
-        { question: "Do real estate agents need separate RERA registration?", answer: "Yes, agents facilitating sale or purchase of RERA-registered projects must independently register as real estate agents under RERA." },
-        { question: "Do I need a CA certificate every time I withdraw from the RERA escrow account?", answer: "Yes. Every withdrawal from the project's separate RERA account must be certified by a practising Chartered Accountant, along with an engineer and an architect, confirming the amount withdrawn is in proportion to the percentage of project completion. It is a recurring requirement for each withdrawal, not a one-time certificate at account opening — and one of the most overlooked parts of RERA compliance." },
+        { question: "Which real estate projects need RERA registration?", answer: "Section 3(2)(a) of the Act exempts a project where the land proposed to be developed does not exceed 500 square metres or the number of apartments does not exceed eight, inclusive of all phases. Other projects without a completion certificate must register with TNRERA before advertising, marketing, booking or selling any unit." },
+        { question: "What is the 70% escrow account requirement?", answer: "Promoters must deposit 70% of the amounts realised from buyers into a separate account in a scheduled bank, commonly called the RERA escrow account. The money can be used only for the land cost and construction cost of that project, and withdrawals must be in proportion to the percentage of completion." },
+        { question: "How often must progress reports be filed?", answer: "Project updates are uploaded within 15 days from the end of every quarter until the completion certificate is received. Separately, the promoter must get the project accounts audited by a practising Chartered Accountant within six months after the end of each financial year and produce the CA-certified statement of accounts to the Authority." },
+        { question: "Do real estate agents need separate RERA registration?", answer: "Yes. Under section 9 of the Act, an agent must register with TNRERA before facilitating the sale or purchase of any unit in a registered project. In Tamil Nadu the application is made in Form G under the 2017 Rules, and renewal is applied for in Form J at least one month before expiry." },
+        { question: "Do I need a CA certificate every time I withdraw from the RERA escrow account?", answer: "Yes. Every withdrawal from the separate account needs certificates from a practising Chartered Accountant, an engineer and an architect confirming it is in proportion to the percentage of completion. It is a recurring requirement for each withdrawal, not a one-time certificate at account opening, and the final balance needs the same certificates." },
+        { question: "Which costs can a CA count when certifying a TNRERA withdrawal?", answer: "Under rule 5 of the Tamil Nadu Rules, land cost is the market value of the land plus stamp duty and registration fees for acquiring it. Construction cost covers on-site development expenditure, statutory clearance fees, transfer of development rights, premium FSI charges, finance cost for construction and professional consulting charges." },
+        { question: "Is there a numbered TNRERA form for the CA withdrawal certificate?", answer: "The Tamil Nadu RERA Rules, 2017 use lettered forms, such as Form A for project registration, Form B for the promoter's declaration and Form E for extension, and do not prescribe a numbered CA certificate. Numbered CA forms used in some other states do not apply here, so follow the format TNRERA currently requires." },
       ]}
       relatedQuestions={[
         { question: "What entity structure should a real estate developer register as?", href: "/company-registration-chennai" },
@@ -61,6 +112,56 @@ export default function Page() {
       ]}
       relatedPosts={["rera-registration-renewal", "rera-compliance-calendar-tamil-nadu"]}
       relatedSlugs={["company-registration-chennai", "direct-tax", "roc-compliances"]}
-    />
+    >
+      <h2 className={h2Class}>What does a CA certify for withdrawals from the RERA account in Tamil Nadu?</h2>
+      <p className={pClass}>
+        Before each withdrawal from the project&apos;s separate account, a Chartered Accountant in practice certifies
+        the land cost and construction cost incurred and their proportion to the total estimated cost of the
+        project. An engineer and an architect certify alongside. The Tamil Nadu Rules define these costs but do not
+        prescribe a numbered CA form.
+      </p>
+      <p className={pClass}>
+        The requirement comes from section 4(2)(l)(D) of the Real Estate (Regulation and Development) Act, 2016,
+        and rule 5 of the{" "}
+        <a href={TN_RULES_URL} target="_blank" rel="noopener noreferrer" className={linkClass}>
+          Tamil Nadu Real Estate (Regulation and Development) Rules, 2017
+        </a>
+        . Each professional certifies a different thing, so a withdrawal is only as strong as the weakest of the three
+        certificates:
+      </p>
+      <Table head={["Certificate", "Given by", "What it confirms", "Source"]} rows={CERTIFICATES} />
+
+      <h2 className={h2Class}>Which costs count as land cost and construction cost?</h2>
+      <p className={pClass}>
+        Rule 5 of the Tamil Nadu Rules treats land cost as the market value of the land plus stamp duty and
+        registration fees for acquiring it, and construction cost as on-site development expenditure, including
+        clearance fees, transfer of development rights, premium FSI, finance cost for construction and consulting
+        charges. Costs outside these heads cannot support a withdrawal.
+      </p>
+      <Table head={["Cost head", "What the Tamil Nadu Rules include"]} rows={COSTS} />
+      <p className={pClass}>
+        In practice we tie each certificate to the project ledger, the bank statement of the separate account, the
+        engineer&apos;s cost-to-complete estimate and the latest quarterly update, so the percentage of completion used
+        for the withdrawal matches what is disclosed on the TNRERA website.
+      </p>
+
+      <h2 className={h2Class}>What does the annual RERA audit cover, and when is it due?</h2>
+      <p className={pClass}>
+        The promoter must have the project accounts audited by a Chartered Accountant in practice within six months
+        after the end of every financial year and produce a statement of accounts certified by that CA to the
+        Authority. The audit checks that money collected for the project was used for it and that withdrawals
+        matched the percentage of completion.
+      </p>
+      <ul className="mt-4 max-w-3xl list-disc space-y-2 pl-6 leading-relaxed text-slate">
+        <li>For a 31 March year end, the audited statement is due by 30 September.</li>
+        <li>The promoter&apos;s declaration in Form B, filed with the registration application, records this undertaking along with the 70% deposit and the three-certificate withdrawal rule.</li>
+        <li>The project audit is separate from the company&apos;s statutory audit under the Companies Act; both can run from the same books if the project ledger is kept separately.</li>
+        <li>Joint development projects need clear records of the landowner&apos;s and the promoter&apos;s shares, because collections and withdrawals are certified project by project.</li>
+      </ul>
+      <p className={pClass}>
+        From our Anna Nagar office we prepare withdrawal certificates and the annual project audit for developers
+        across Chennai, alongside quarterly updates and extension filings.
+      </p>
+    </ServicePageTemplate>
   );
 }

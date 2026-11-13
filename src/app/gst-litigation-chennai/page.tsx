@@ -133,6 +133,41 @@ const APPEAL_LADDER = [
   ["5. Supreme Court", "Supreme Court of India (Section 118)", "Against High Court judgments in appeal, or directly against Principal Bench orders", "As directed by the court"],
 ];
 
+// Pre-deposit summary: Sections 107(6), 107(7), 112(8) and 112(9) of the CGST Act as amended.
+const PRE_DEPOSIT = [
+  ["First appeal (Section 107(6))", "The admitted amount in full, plus 10% of the remaining tax in dispute", "₹20 crore under the CGST Act, reduced from ₹25 crore by the Finance (No. 2) Act, 2024", "10% of the penalty, from 1 October 2025 (Finance Act, 2025)", "Recovery of the balance is deemed stayed while the appeal is pending (Section 107(7))"],
+  ["GSTAT appeal (Section 112(8))", "The admitted amount in full, plus a further 10% of the remaining tax in dispute, over and above the first-appeal deposit", "₹20 crore under the CGST Act, reduced from ₹50 crore by the Finance (No. 2) Act, 2024, which also cut the rate from 20% to 10%", "A further 10% of the penalty, from 1 October 2025 (Finance Act, 2025)", "Recovery of the balance is deemed stayed until the appeal is disposed of (Section 112(9))"],
+];
+
+// GSTAT questions and answers. Sources: Sections 109 and 112 of the CGST Act,
+// Rule 110 of the CGST Rules, and the State Benches list on gstat.gov.in.
+const GSTAT_QA = [
+  {
+    q: "Which GSTAT benches are officially listed for Tamil Nadu?",
+    a: "The State Benches list on gstat.gov.in shows three locations for Tamil Nadu: Chennai, Coimbatore (also listed as a sitting) and Madurai. Puducherry appears as a separate entry, with its own location and circuit sitting at Puducherry. The bench that hears a particular appeal is assigned through the GSTAT e-filing portal.",
+  },
+  {
+    q: "How is an appeal filed before the GSTAT?",
+    a: "The appeal is filed electronically in Form GST APL-05 under Rule 110, on the GSTAT e-filing portal; manual filing was removed from 22 September 2025. A provisional acknowledgement issues in Part A of APL-02A, and the final acknowledgement with the appeal number in Part B once any defects are cured.",
+  },
+  {
+    q: "What is the time limit for a GSTAT appeal?",
+    a: "Three months from the date the first appellate order is communicated, or from a date the Government notifies for filing GSTAT appeals, whichever is later (Section 112(1)). The Tribunal can admit an appeal filed within a further three months if you show sufficient cause for the delay (Section 112(6)).",
+  },
+  {
+    q: "What fee is payable on a GSTAT appeal?",
+    a: "Rule 110(5) fixes the fee at ₹1,000 for every ₹1 lakh of tax, input tax credit, difference in tax or credit, or fine, fee or penalty involved, with a minimum of ₹5,000 and a maximum of ₹25,000. An appeal against an order with no demand pays a flat ₹5,000. The pre-deposit is separate.",
+  },
+  {
+    q: "Can the GSTAT refuse to hear a small appeal?",
+    a: "Yes. Under Section 112(2), the Tribunal may, at its discretion, refuse to admit an appeal where the tax or input tax credit involved, the difference in tax or credit, or the fine, fee or penalty in the order does not exceed ₹50,000. Below that amount, weigh the cost of the appeal first.",
+  },
+  {
+    q: "Which appeals go to the Principal Bench instead?",
+    a: "Appeals where one of the issues involved is the place of supply go to the Principal Bench in New Delhi, not to a State Bench. Every other appeal from Tamil Nadu goes to a State Bench. If your appeal raises place of supply along with other issues, plan for a Principal Bench hearing.",
+  },
+];
+
 const TN_DISPUTES = [
   ["ITC mismatch: GSTR-2B vs GSTR-3B", "Credit claimed in GSTR-3B exceeds what suppliers reported, usually because a supplier filed late, amended an invoice or failed to file", "Invoice-wise reconciliation, proof of payment to the supplier, supplier's later returns and correspondence"],
   ["Section 16(4) time limit", "ITC claimed after the deadline (the November return following the financial year end, or the annual return if earlier)", "Check whether the relief in Section 16(5) for FY 2017-18 to 2020-21, or Section 16(6) for revoked registrations, applies"],
@@ -164,11 +199,6 @@ const CITIES = [
 
 const FAQS = [
   {
-    question: "I need urgent help with a GST notice. Can you respond quickly?",
-    answer:
-      "Yes. Send us the notice and we assess your reply deadline and options as a priority. GST reply windows are short, so the priority is confirming exactly what is alleged and which evidence to gather first, rather than a lengthy onboarding process.",
-  },
-  {
     question: "Can a Chartered Accountant represent me in GST litigation?",
     answer:
       "Yes. Under Section 116 of the CGST Act, a practising Chartered Accountant is an authorised representative before GST officers, the Appellate Authority and the GST Appellate Tribunal. That covers replies, personal hearings and arguing the appeal. Appeals and writ petitions before the High Court or Supreme Court need an advocate.",
@@ -191,7 +221,7 @@ const FAQS = [
   {
     question: "Which GSTAT bench will hear my Tamil Nadu appeal?",
     answer:
-      "Tamil Nadu's GSTAT State Benches sit at Chennai, Coimbatore and Madurai, with a circuit sitting at Puducherry. Place-of-supply disputes go to the Principal Bench in New Delhi. The GSTAT e-filing portal assigns the bench when you file, so confirm it there rather than assuming the nearest city.",
+      "The GSTAT's official list shows Tamil Nadu benches at Chennai, Coimbatore (also listed as a sitting) and Madurai, with Puducherry listed separately. Appeals involving place of supply go to the Principal Bench in New Delhi. The GSTAT e-filing portal assigns the bench when you file, so confirm it there rather than assuming the nearest city.",
   },
   {
     question: "What is Section 74A and does it apply to my notice?",
@@ -442,13 +472,75 @@ export default function GstLitigationPage() {
 
             <div>
               <h2 className="text-2xl text-obsidian">
+                How much pre-deposit is needed for a first appeal and a GSTAT appeal?
+              </h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                A first appeal needs the admitted amount plus 10% of the disputed tax; a GSTAT appeal needs a further
+                10% of the tax still in dispute. Each 10% is capped at ₹20 crore under the CGST Act. Where an order
+                demands only a penalty, such as a Section 129 detention order, the deposit is 10% of the penalty at
+                each stage.
+              </p>
+              <Table
+                head={["Appeal", "Tax demands", "Cap on the 10%", "Penalty-only orders", "Once paid"]}
+                rows={PRE_DEPOSIT}
+              />
+              <p className="mt-3 text-xs text-slate">
+                Source: Sections 107 and 112 of the CGST Act as amended, on CBIC&apos;s tax information portal (
+                <a
+                  href="https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter18/section107_v1.00.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={LINK}
+                >
+                  Section 107
+                </a>
+                ,{" "}
+                <a
+                  href="https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter18/section112_v1.00.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={LINK}
+                >
+                  Section 112
+                </a>
+                ). The pre-deposit is paid before filing, and if the appeal succeeds it is refunded with interest under
+                Section 115.
+              </p>
+              <p className="mt-4 leading-relaxed text-slate">
+                Two cases need extra care. For demands from FY 2024-25 onwards, check first whether the order under{" "}
+                <Link href="/blog/section-74a-gst-notice" className={LINK}>
+                  Section 74A
+                </Link>{" "}
+                was passed within its time limit, because limitation can be the strongest ground of appeal. For
+                goods detained in transit, our guide to{" "}
+                <Link href="/blog/eway-bill-detention-section-129-appeal" className={LINK}>
+                  Section 129 detention, release and appeal
+                </Link>{" "}
+                explains how the penalty-only rule applies. To work out the last date and the amount for your own order,
+                use the{" "}
+                <Link href="/tools/gst-appeal-deadline-pre-deposit-calculator" className={LINK}>
+                  GST appeal deadline and pre-deposit calculator
+                </Link>
+                .
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">
                 Where does GSTAT sit in Tamil Nadu?
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
-                The GSTAT notification constitutes two State Benches for Tamil Nadu,
-                sitting at Chennai, Coimbatore and Madurai, with a circuit sitting at
-                Puducherry. According to GSTAT Office Order No. 4/GSTAT/PB/2026 dated
-                29 July 2026, as reported, the roster from 1 August 2026 is:
+                The official State Benches list on{" "}
+                <a href="https://www.gstat.gov.in/state-bench" target="_blank" rel="noopener noreferrer" className={LINK}>
+                  gstat.gov.in
+                </a>{" "}
+                shows three locations for Tamil Nadu: Chennai, Coimbatore (also listed as a sitting) and Madurai.
+                Puducherry is listed separately, with a circuit sitting at Puducherry. The tribunal hears second
+                appeals against first appellate orders, and the bench is assigned on the GSTAT e-filing portal.
+              </p>
+              <p className="mt-4 leading-relaxed text-slate">
+                According to GSTAT Office Order No. 4/GSTAT/PB/2026 dated 29 July 2026, as reported, the roster
+                from 1 August 2026 is:
               </p>
               <ul className="mt-4 space-y-2 text-slate">
                 <li>• <strong className="text-obsidian">Chennai:</strong> Category I matters (classification, ITC, refunds, valuation, assessment and similar) on Mondays and Tuesdays; Category II matters (registration, Section 73/74 proceedings, penalties and residual matters) on Wednesdays.</li>
@@ -465,6 +557,50 @@ export default function GstLitigationPage() {
                   GST Appellate Tribunal for Chennai businesses
                 </Link>{" "}
                 covers how the tribunal works in more detail.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-2xl text-obsidian">
+                What do Tamil Nadu businesses ask about the GSTAT?
+              </h2>
+              <p className="mt-4 leading-relaxed text-slate">
+                Most questions are about which bench will hear the appeal, how it is filed, the time limit, the fee and
+                whether a small demand is worth taking to the tribunal. The answers below come from Sections 109 and 112
+                of the CGST Act, Rule 110 of the CGST Rules and the GSTAT&apos;s own list of State Benches.
+              </p>
+              <div className="mt-6 space-y-4">
+                {GSTAT_QA.map((item) => (
+                  <div key={item.q} className="rounded-cards border border-ash bg-paper p-6 shadow-[var(--shadow-card)]">
+                    <h3 className="font-medium text-obsidian">{item.q}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-slate">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="mt-3 text-xs text-slate">
+                Sources:{" "}
+                <a href="https://www.gstat.gov.in/state-bench" target="_blank" rel="noopener noreferrer" className={LINK}>
+                  GSTAT State Benches
+                </a>
+                {" · "}
+                <a
+                  href="https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/rules/cgst_rules/active/chapter13/rule110_v1.00.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={LINK}
+                >
+                  Rule 110, CGST Rules
+                </a>
+                {" · "}
+                <a
+                  href="https://taxinformation.cbic.gov.in/content/html/tax_repository/gst/acts/2017_CGST_act/active/chapter18/section112_v1.00.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={LINK}
+                >
+                  Section 112, CGST Act
+                </a>
+                . The order being appealed and the GSTAT portal always govern the dates and the bench.
               </p>
             </div>
 
