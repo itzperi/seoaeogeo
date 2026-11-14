@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Shareholders' Agreement for Founders: What to Cover",
   description:
     "Why co-founders need a shareholders' or founders' agreement: vesting, transfer restrictions, deadlock, exits, and how it must align with the articles.",
-  date: "2027-01-01",
+  date: "2026-11-14",
   excerpt:
     "Co-founders agree on everything at the start. A founders' agreement records what happens when they don't: vesting, exits, transfers and deadlock.",
   faqs: [

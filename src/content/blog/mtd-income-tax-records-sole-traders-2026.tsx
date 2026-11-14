@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "MTD for Income Tax: What Records Sole Traders Need From 2026",
   description:
     "MTD for Income Tax starts 6 April 2026 above £50,000 of qualifying income. What digital records sole traders and landlords keep, and who sends the updates.",
-  date: "2027-01-22",
+  date: "2026-11-14",
   excerpt:
     "From 6 April 2026, sole traders and landlords over £50,000 of qualifying income keep digital records and send quarterly updates. What that means for your books.",
   summary:

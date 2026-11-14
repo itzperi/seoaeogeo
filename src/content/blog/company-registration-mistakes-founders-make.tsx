@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "10 Company Registration Mistakes Founders Make in India",
   description:
     "Ten practical mistakes founders make when registering a private limited company, from vague objects and wrong capital to missed INC-20A and mixed funds.",
-  date: "2027-01-05",
+  date: "2026-11-14",
   excerpt:
     "Vague objects, inflated capital, a missed INC-20A, personal money mixed with company money: ten avoidable mistakes in a company's first year.",
   faqs: [

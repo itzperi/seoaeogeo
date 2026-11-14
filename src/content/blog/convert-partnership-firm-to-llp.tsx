@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Convert a Partnership Firm to an LLP: Form 17 Guide",
   description:
     "How a partnership firm converts into an LLP under the Second Schedule of the LLP Act: Form 17, eligibility, Form 14 and what happens to contracts, licences.",
-  date: "2026-12-04",
+  date: "2026-11-14",
   excerpt:
     "A firm can convert into an LLP if every partner becomes a partner of the LLP. Here is how Form 17 works and what carries over automatically.",
   faqs: [

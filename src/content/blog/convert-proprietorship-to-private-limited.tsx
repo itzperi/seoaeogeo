@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Convert a Proprietorship to a Private Limited Company",
   description:
     "How a sole proprietorship moves into a private limited company: incorporation, business transfer, GST and licence changes, bank accounts and tax conditions.",
-  date: "2026-12-01",
+  date: "2026-11-14",
   excerpt:
     "There is no one-click conversion. You incorporate a company, transfer the business into it and re-register GST, licences and bank accounts. Here is how.",
   faqs: [

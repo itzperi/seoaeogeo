@@ -468,7 +468,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "INC-20A Filing: Declaration for Commencement of Business",
     description:
       "INC-20A explained: the 180-day deadline under section 10A, documents and photos needed, who certifies it, penalties for missing it and the strike-off risk.",
-    date: "2026-11-17",
+    date: "2026-11-14",
     excerpt:
       "A new company cannot start business or borrow until it files INC-20A. Here is the 180-day deadline, what the form needs, and what happens if you miss it.",
   },
@@ -477,7 +477,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "MTD for Income Tax: What Records Sole Traders Need From 2026",
     description:
       "MTD for Income Tax starts 6 April 2026 above £50,000 of qualifying income. What digital records sole traders and landlords keep, and who sends the updates.",
-    date: "2027-01-22",
+    date: "2026-11-14",
     excerpt:
       "From 6 April 2026, sole traders and landlords over £50,000 of qualifying income keep digital records and send quarterly updates. What that means for your books.",
   },
@@ -486,7 +486,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "First Board Meeting Checklist for a New Company in India",
     description:
       "What to cover at a new company's first board meeting: the 30-day deadline, agenda items, director disclosures, statutory registers and share certificates.",
-    date: "2026-11-20",
+    date: "2026-11-14",
     excerpt:
       "A new company must hold its first board meeting within 30 days of incorporation. Here is a practical agenda, the registers to open, and what to file next.",
   },
@@ -495,7 +495,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Appointing a Company's First Auditor: Rules and ADT-1",
     description:
       "How the first auditor of a company is appointed under section 139(6), the 30-day board deadline, whether ADT-1 must be filed, and what to do if it is missed.",
-    date: "2026-11-24",
+    date: "2026-11-14",
     excerpt:
       "The board must appoint the first auditor within 30 days of incorporation. How the rule works, the ADT-1 position, and the fix if the deadline is missed.",
   },
@@ -504,7 +504,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Can an Overseas Bookkeeper Do My BAS? What the Law Allows",
     description:
       "Under the Tax Agent Services Act, BAS work for a fee needs a registered agent. What an offshore bookkeeper can do, what needs supervision, and Payday Super.",
-    date: "2027-01-26",
+    date: "2026-11-14",
     excerpt:
       "An offshore bookkeeper can keep and reconcile your books, but BAS services for a fee need a registered BAS or tax agent who supervises, lodges and stays responsible.",
   },
@@ -513,7 +513,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Opening a Current Account for a New Company: KYC and Steps",
     description:
       "How a new company opens its current account: the AGILE-PRO-S request in SPICe+, the KYC documents banks must collect under RBI rules, and how to avoid delays.",
-    date: "2026-11-27",
+    date: "2026-11-14",
     excerpt:
       "Every new company applies for a bank account through AGILE-PRO-S. Here is how that works, which KYC documents banks ask for, and how to avoid delays.",
   },
@@ -522,7 +522,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Convert a Proprietorship to a Private Limited Company",
     description:
       "How a sole proprietorship moves into a private limited company: incorporation, business transfer, GST and licence changes, bank accounts and tax conditions.",
-    date: "2026-12-01",
+    date: "2026-11-14",
     excerpt:
       "There is no one-click conversion. You incorporate a company, transfer the business into it and re-register GST, licences and bank accounts. Here is how.",
   },
@@ -531,7 +531,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "UAE E-Invoicing 2027: What to Fix in Your Books Now",
     description:
       "UAE B2B e-invoicing starts in 2027 through an Accredited Service Provider. The go-live dates, plus the TRN, customer, item and credit-note data to fix first.",
-    date: "2026-12-08",
+    date: "2026-11-14",
     excerpt:
       "B2B e-invoicing in the UAE goes live from 1 January 2027 for the largest businesses and 1 July 2027 for the rest. A practical checklist of what to clean up in your books first.",
   },
@@ -540,7 +540,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Convert a Partnership Firm to an LLP: Form 17 Guide",
     description:
       "How a partnership firm converts into an LLP under the Second Schedule of the LLP Act: Form 17, eligibility, Form 14 and what happens to contracts, licences.",
-    date: "2026-12-04",
+    date: "2026-11-14",
     excerpt:
       "A firm can convert into an LLP if every partner becomes a partner of the LLP. Here is how Form 17 works and what carries over automatically.",
   },
@@ -549,7 +549,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Convert an LLP to a Private Limited Company (URC-1)",
     description:
       "How an LLP becomes a private limited company under section 366 of the Companies Act: URC-1, newspaper notice, creditor consent, tax conditions and next steps.",
-    date: "2027-01-29",
+    date: "2026-11-14",
     excerpt:
       "LLPs that want equity investors or ESOPs often move to a company. Here is how the section 366 route, URC-2 notice and URC-1 filing work in practice.",
   },
@@ -558,7 +558,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Catch-Up Bookkeeping: How Long It Takes and What to Send",
     description:
       "What catch-up bookkeeping involves, what decides how long it takes, the documents to send, the order of the work, and how filing deadlines are handled.",
-    date: "2027-02-02",
+    date: "2026-11-14",
     excerpt:
       "Books months behind? What decides how long a catch-up takes, the documents to send, and the order the work is done in, from bank reconciliations to tax figures.",
   },
@@ -567,7 +567,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "OPC to Private Limited Company Conversion: INC-6 Process",
     description:
       "How a One Person Company converts into a private limited company using Form INC-6, why conversion is now voluntary, and what changes in compliance afterwards.",
-    date: "2026-12-11",
+    date: "2026-11-14",
     excerpt:
       "Since 2021 an OPC no longer has to convert when it crosses capital or turnover limits. When you choose to convert, here is how INC-6 works.",
   },
@@ -576,7 +576,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Private Limited Company for E-commerce Sellers in India",
     description:
       "When online sellers should incorporate, how GST registration works for marketplace sales, the enrolment option for small sellers, and TCS at 0.5% explained.",
-    date: "2026-12-15",
+    date: "2026-11-14",
     excerpt:
       "Selling on Amazon, Flipkart or your own site? When to move to a private limited company, and how GST, enrolment numbers and marketplace TCS work.",
   },
@@ -585,7 +585,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Company Registration for IT and SaaS Startups in Chennai",
     description:
       "Structure choices for Chennai software and SaaS founders: private limited vs LLP, ESOPs, foreign client billing with LUT and inward remittances, and DPIIT.",
-    date: "2026-12-18",
+    date: "2026-11-14",
     excerpt:
       "Software and SaaS founders face specific questions: which structure investors expect, how ESOPs work, and how to bill foreign clients without paying IGST.",
   },
@@ -594,7 +594,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Company Registration for Manufacturers in Tamil Nadu",
     description:
       "Why manufacturers in Tamil Nadu choose a private limited company, and the registrations that follow: Udyam, GST, pollution consent and factory licensing.",
-    date: "2026-12-22",
+    date: "2026-11-14",
     excerpt:
       "Setting up a manufacturing unit in Tamil Nadu? Why a private limited company helps with bank finance, and the registrations to plan alongside it.",
   },
@@ -603,7 +603,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Share Allotment After Incorporation: A Founder's Guide",
     description:
       "What founders must do with shares after incorporation: subscription money, INC-20A, share certificates within 60 days, PAS-3 for new issues and FC-GPR.",
-    date: "2026-12-25",
+    date: "2026-11-14",
     excerpt:
       "Subscriber shares, share certificates, INC-20A, PAS-3 and FC-GPR: the share-related steps a new private limited company must get right in year one.",
   },
@@ -612,7 +612,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "ESOP-Ready Articles of Association for Indian Startups",
     description:
       "How to draft startup articles that support ESOPs: Rule 12 eligibility, capital headroom, transfer and leaver clauses, ESOP trusts and DPIIT flexibilities.",
-    date: "2026-12-29",
+    date: "2026-11-14",
     excerpt:
       "An ESOP plan is only as good as the articles behind it. What to build into your AoA so options can be granted, exercised and bought back cleanly.",
   },
@@ -621,7 +621,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Shareholders' Agreement for Founders: What to Cover",
     description:
       "Why co-founders need a shareholders' or founders' agreement: vesting, transfer restrictions, deadlock, exits, and how it must align with the articles.",
-    date: "2027-01-01",
+    date: "2026-11-14",
     excerpt:
       "Co-founders agree on everything at the start. A founders' agreement records what happens when they don't: vesting, exits, transfers and deadlock.",
   },
@@ -630,7 +630,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "10 Company Registration Mistakes Founders Make in India",
     description:
       "Ten practical mistakes founders make when registering a private limited company, from vague objects and wrong capital to missed INC-20A and mixed funds.",
-    date: "2027-01-05",
+    date: "2026-11-14",
     excerpt:
       "Vague objects, inflated capital, a missed INC-20A, personal money mixed with company money: ten avoidable mistakes in a company's first year.",
   },
@@ -639,7 +639,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "GST Registration After Company Incorporation: When and How",
     description:
       "When a new company needs GST registration, the AGILE-PRO-S option at incorporation, Tamil Nadu thresholds, compulsory cases, documents and the process.",
-    date: "2027-01-08",
+    date: "2026-11-14",
     excerpt:
       "Your company is incorporated. Does it need GST now, later or never? Thresholds, compulsory cases, the AGILE-PRO-S option and the documents to keep ready.",
   },
@@ -648,7 +648,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "AGILE-PRO-S Explained: EPFO, ESIC, GSTIN and Bank Account",
     description:
       "What the AGILE-PRO-S form filed with SPICe+ covers: mandatory EPFO, ESIC and bank account, optional GSTIN, and why Tamil Nadu profession tax stays separate.",
-    date: "2027-01-12",
+    date: "2026-11-14",
     excerpt:
       "AGILE-PRO-S rides along with every SPICe+ incorporation. What it registers automatically, what is optional, and what Chennai companies still do separately.",
   },
@@ -657,7 +657,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Private Limited Company Penalties for Non-Compliance",
     description:
       "What a private limited company risks when filings slip: ₹100 per day late fees on AOC-4 and MGT-7, penalties, director disqualification and strike-off.",
-    date: "2027-01-15",
+    date: "2026-11-14",
     excerpt:
       "Missed annual filings cost more than late fees. How additional fees, penalties, section 164(2) disqualification and strike-off build up, and how to fix it.",
   },
@@ -666,7 +666,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Section 140 Startup Tax Holiday: Eligibility Guide",
     description:
       "The startup tax holiday under section 140 of the Income-tax Act, 2025 (formerly 80-IAC): eligibility, IMB certificate, ₹100 crore turnover cap, 3 of 10 years.",
-    date: "2027-01-19",
+    date: "2026-11-14",
     excerpt:
       "Section 140 of the Income-tax Act, 2025 carries forward the 80-IAC startup tax holiday. Who qualifies, what changed, and how to claim it properly.",
   },

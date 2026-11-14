@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Private Limited Company Penalties for Non-Compliance",
   description:
     "What a private limited company risks when filings slip: ₹100 per day late fees on AOC-4 and MGT-7, penalties, director disqualification and strike-off.",
-  date: "2027-01-15",
+  date: "2026-11-14",
   excerpt:
     "Missed annual filings cost more than late fees. How additional fees, penalties, section 164(2) disqualification and strike-off build up, and how to fix it.",
   faqs: [

@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "OPC to Private Limited Company Conversion: INC-6 Process",
   description:
     "How a One Person Company converts into a private limited company using Form INC-6, why conversion is now voluntary, and what changes in compliance afterwards.",
-  date: "2026-12-11",
+  date: "2026-11-14",
   excerpt:
     "Since 2021 an OPC no longer has to convert when it crosses capital or turnover limits. When you choose to convert, here is how INC-6 works.",
   faqs: [

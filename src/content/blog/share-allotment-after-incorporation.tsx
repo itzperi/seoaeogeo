@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Share Allotment After Incorporation: A Founder's Guide",
   description:
     "What founders must do with shares after incorporation: subscription money, INC-20A, share certificates within 60 days, PAS-3 for new issues and FC-GPR.",
-  date: "2026-12-25",
+  date: "2026-11-14",
   excerpt:
     "Subscriber shares, share certificates, INC-20A, PAS-3 and FC-GPR: the share-related steps a new private limited company must get right in year one.",
   faqs: [

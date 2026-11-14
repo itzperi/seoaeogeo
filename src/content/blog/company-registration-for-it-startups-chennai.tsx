@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Company Registration for IT and SaaS Startups in Chennai",
   description:
     "Structure choices for Chennai software and SaaS founders: private limited vs LLP, ESOPs, foreign client billing with LUT and inward remittances, and DPIIT.",
-  date: "2026-12-18",
+  date: "2026-11-14",
   excerpt:
     "Software and SaaS founders face specific questions: which structure investors expect, how ESOPs work, and how to bill foreign clients without paying IGST.",
   faqs: [

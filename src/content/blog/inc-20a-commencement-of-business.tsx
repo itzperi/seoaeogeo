@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   title: "INC-20A Filing: Declaration for Commencement of Business",
   description:
     "INC-20A explained: the 180-day deadline under section 10A, documents and photos needed, who certifies it, penalties for missing it and the strike-off risk.",
-  date: "2026-11-17",
+  date: "2026-11-14",
   excerpt:
     "A new company cannot start business or borrow until it files INC-20A. Here is the 180-day deadline, what the form needs, and what happens if you miss it.",
   faqs: [

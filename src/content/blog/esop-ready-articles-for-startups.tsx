@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "ESOP-Ready Articles of Association for Indian Startups",
   description:
     "How to draft startup articles that support ESOPs: Rule 12 eligibility, capital headroom, transfer and leaver clauses, ESOP trusts and DPIIT flexibilities.",
-  date: "2026-12-29",
+  date: "2026-11-14",
   excerpt:
     "An ESOP plan is only as good as the articles behind it. What to build into your AoA so options can be granted, exercised and bought back cleanly.",
   faqs: [

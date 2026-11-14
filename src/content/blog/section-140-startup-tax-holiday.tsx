@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Section 140 Startup Tax Holiday: Eligibility Guide",
   description:
     "The startup tax holiday under section 140 of the Income-tax Act, 2025 (formerly 80-IAC): eligibility, IMB certificate, ₹100 crore turnover cap, 3 of 10 years.",
-  date: "2027-01-19",
+  date: "2026-11-14",
   excerpt:
     "Section 140 of the Income-tax Act, 2025 carries forward the 80-IAC startup tax holiday. Who qualifies, what changed, and how to claim it properly.",
   faqs: [

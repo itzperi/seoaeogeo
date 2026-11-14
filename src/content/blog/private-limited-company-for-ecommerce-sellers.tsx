@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Private Limited Company for E-commerce Sellers in India",
   description:
     "When online sellers should incorporate, how GST registration works for marketplace sales, the enrolment option for small sellers, and TCS at 0.5% explained.",
-  date: "2026-12-15",
+  date: "2026-11-14",
   excerpt:
     "Selling on Amazon, Flipkart or your own site? When to move to a private limited company, and how GST, enrolment numbers and marketplace TCS work.",
   faqs: [

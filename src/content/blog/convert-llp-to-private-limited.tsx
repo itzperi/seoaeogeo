@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Convert an LLP to a Private Limited Company (URC-1)",
   description:
     "How an LLP becomes a private limited company under section 366 of the Companies Act: URC-1, newspaper notice, creditor consent, tax conditions and next steps.",
-  date: "2027-01-29",
+  date: "2026-11-14",
   excerpt:
     "LLPs that want equity investors or ESOPs often move to a company. Here is how the section 366 route, URC-2 notice and URC-1 filing work in practice.",
   faqs: [

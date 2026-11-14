@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "AGILE-PRO-S Explained: EPFO, ESIC, GSTIN and Bank Account",
   description:
     "What the AGILE-PRO-S form filed with SPICe+ covers: mandatory EPFO, ESIC and bank account, optional GSTIN, and why Tamil Nadu profession tax stays separate.",
-  date: "2027-01-12",
+  date: "2026-11-14",
   excerpt:
     "AGILE-PRO-S rides along with every SPICe+ incorporation. What it registers automatically, what is optional, and what Chennai companies still do separately.",
   faqs: [

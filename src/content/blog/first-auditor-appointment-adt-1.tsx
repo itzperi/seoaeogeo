@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Appointing a Company's First Auditor: Rules and ADT-1",
   description:
     "How the first auditor of a company is appointed under section 139(6), the 30-day board deadline, whether ADT-1 must be filed, and what to do if it is missed.",
-  date: "2026-11-24",
+  date: "2026-11-14",
   excerpt:
     "The board must appoint the first auditor within 30 days of incorporation. How the rule works, the ADT-1 position, and the fix if the deadline is missed.",
   faqs: [

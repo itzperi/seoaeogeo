@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   title: "First Board Meeting Checklist for a New Company in India",
   description:
     "What to cover at a new company's first board meeting: the 30-day deadline, agenda items, director disclosures, statutory registers and share certificates.",
-  date: "2026-11-20",
+  date: "2026-11-14",
   excerpt:
     "A new company must hold its first board meeting within 30 days of incorporation. Here is a practical agenda, the registers to open, and what to file next.",
   faqs: [

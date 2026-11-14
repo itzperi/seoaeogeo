@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "GST Registration After Company Incorporation: When and How",
   description:
     "When a new company needs GST registration, the AGILE-PRO-S option at incorporation, Tamil Nadu thresholds, compulsory cases, documents and the process.",
-  date: "2027-01-08",
+  date: "2026-11-14",
   excerpt:
     "Your company is incorporated. Does it need GST now, later or never? Thresholds, compulsory cases, the AGILE-PRO-S option and the documents to keep ready.",
   faqs: [

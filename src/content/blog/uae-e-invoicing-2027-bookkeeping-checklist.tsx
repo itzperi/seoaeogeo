@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "UAE E-Invoicing 2027: What to Fix in Your Books Now",
   description:
     "UAE B2B e-invoicing starts in 2027 through an Accredited Service Provider. The go-live dates, plus the TRN, customer, item and credit-note data to fix first.",
-  date: "2026-12-08",
+  date: "2026-11-14",
   excerpt:
     "B2B e-invoicing in the UAE goes live from 1 January 2027 for the largest businesses and 1 July 2027 for the rest. A practical checklist of what to clean up in your books first.",
   summary:
