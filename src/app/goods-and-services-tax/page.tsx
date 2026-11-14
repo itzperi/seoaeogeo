@@ -4,6 +4,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
+import QuoteProcess from "@/components/QuoteProcess";
+import AboutTheCA from "@/components/AboutTheCA";
 import SiloLinks from "@/components/SiloLinks";
 import { JsonLd, howToSchema, serviceSchema, speakableSchema } from "@/lib/schema";
 
@@ -343,6 +345,13 @@ export default function GstPage() {
               </Link>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <section className="bg-paper pb-16">
+        <div className="container-page">
+          <QuoteProcess />
+          <AboutTheCA />
         </div>
       </section>
 

@@ -1,6 +1,6 @@
 import TrackedAnchor from "@/components/TrackedAnchor";
 import { GOOGLE_RATING, GOOGLE_REVIEW_COUNT, GOOGLE_REVIEWS, SHOW_GOOGLE_REVIEWS } from "@/lib/reviews";
-import { BOOKING_LINK, GBP_URL } from "@/lib/site";
+import { BOOKING_LINK, GBP_REVIEW_URL, GBP_URL } from "@/lib/site";
 
 // Sticker-palette fills for the review cards (black text passes AA on all).
 const CARD_FILLS = ["bg-lavender", "bg-sunburst", "bg-mint-pop"];
@@ -43,7 +43,49 @@ export default function GoogleReviews({
   heading?: string;
   className?: string;
 }) {
-  if (!SHOW_GOOGLE_REVIEWS || GOOGLE_REVIEWS.length === 0) return null;
+  // Owner's brief, Task 4.3: show only reviews already published on the site.
+  // While none can be reused (testimonials are off under ICAI guidance, see
+  // reviews.ts), link to the Google listing instead of quoting anyone.
+  if (!SHOW_GOOGLE_REVIEWS || GOOGLE_REVIEWS.length === 0) {
+    return (
+      <section className={className} aria-labelledby="google-reviews-heading">
+        <div className="container-page">
+          <div className="flex flex-wrap items-center justify-between gap-6 rounded-cards border border-carbon bg-white p-6">
+            <div className="max-w-xl">
+              <p className="sticker-tag bg-white">
+                <GoogleG /> Google reviews
+              </p>
+              <h2 id="google-reviews-heading" className="mt-3 text-2xl text-obsidian md:text-3xl">
+                Client reviews are on our Google profile
+              </h2>
+              <p className="mt-2 text-sm leading-relaxed text-slate">
+                We do not reproduce client reviews on this website. You can read them, in full and unedited, on our
+                Google Business Profile, and leave one there if we have worked with you.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <a
+                href={GBP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-carbon px-6 text-sm font-bold uppercase tracking-[0.032em] text-white hover:opacity-85"
+              >
+                Read our client reviews on Google
+              </a>
+              <a
+                href={GBP_REVIEW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-[48px] items-center rounded-full border border-carbon bg-white px-6 text-sm font-bold uppercase tracking-[0.032em] text-carbon hover:bg-sky-wash"
+              >
+                Leave a review
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className={className} aria-labelledby="google-reviews-heading">

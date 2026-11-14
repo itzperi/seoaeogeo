@@ -30,6 +30,7 @@ const P = "mt-4 max-w-3xl leading-relaxed text-slate";
 export default function Page() {
   return (
     <ServicePageTemplate
+      ownQuoteSection
       pageUrl={`${SITE_URL}/gst-registration-chennai`}
       serviceType="GST Registration"
       crumbLabel="GST Registration in Chennai"

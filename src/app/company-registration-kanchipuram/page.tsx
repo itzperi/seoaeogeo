@@ -54,6 +54,7 @@ const AFTER = [
 export default function Page() {
   return (
     <ServicePageTemplate
+      ownQuoteSection
       pageUrl={`${SITE_URL}/company-registration-kanchipuram`}
       serviceType="Company Registration"
       crumbLabel="Company Registration in Kanchipuram"

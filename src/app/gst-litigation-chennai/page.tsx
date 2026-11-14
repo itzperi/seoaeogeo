@@ -1,4 +1,6 @@
 import ICAIVerificationTrustBar from "@/components/ICAIVerificationTrustBar";
+import QuoteProcess from "@/components/QuoteProcess";
+import AboutTheCA from "@/components/AboutTheCA";
 import TamilSummaryBox from "@/components/TamilSummaryBox";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -765,7 +767,9 @@ export default function GstLitigationPage() {
 
       <section className="bg-paper pb-12">
         <div className="container-page">
+          <QuoteProcess />
           <ICAIVerificationTrustBar />
+          <AboutTheCA />
         </div>
       </section>
       <TamilSummaryBox path="/gst-litigation-chennai" />

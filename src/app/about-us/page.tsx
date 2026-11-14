@@ -5,6 +5,7 @@ import PageHero from "@/components/PageHero";
 import CTASection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
 import ProfessionalVerification from "@/components/ProfessionalVerification";
+import AboutTheCA from "@/components/AboutTheCA";
 import Image from "next/image";
 import { AREAS } from "@/lib/areas";
 import {
@@ -228,6 +229,7 @@ export default function AboutPage() {
             .
           </p>
           <ProfessionalVerification />
+          <AboutTheCA className="mt-8" />
           <h3 className="mt-10 text-lg font-medium text-obsidian">Our team</h3>
           <p className="mt-3 max-w-2xl text-sm text-slate">
             {FOUNDER_NAME} leads a 16-member team working across audit, tax,

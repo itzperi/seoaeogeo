@@ -6,6 +6,7 @@ import GoogleReviews from "@/components/GoogleReviews";
 import EnquiryCard from "@/components/EnquiryCard";
 import FAQSection from "@/components/FAQSection";
 import ProfessionalVerification from "@/components/ProfessionalVerification";
+import AboutTheCA from "@/components/AboutTheCA";
 import { JsonLd } from "@/lib/schema";
 import {
   ADDRESS,
@@ -308,6 +309,7 @@ export default function ContactPage() {
           </p>
 
           <ProfessionalVerification />
+          <AboutTheCA className="mt-8" />
           <h2 className={H2}>When can you visit or call the office?</h2>
           <p className={P}>
             The office is open Monday to Saturday, {BUSINESS_HOURS[0].hours}, and closed on Sunday.

@@ -7,6 +7,8 @@ import CTASection from "@/components/CTASection";
 import GoogleProfileStrip from "@/components/GoogleProfileStrip";
 import SiloLinks from "@/components/SiloLinks";
 import ICAIVerificationTrustBar from "@/components/ICAIVerificationTrustBar";
+import QuoteProcess from "@/components/QuoteProcess";
+import AboutTheCA from "@/components/AboutTheCA";
 import CAFirmChecklist from "@/components/CAFirmChecklist";
 import ActTransitionTable, { ACT_ROWS } from "@/components/ActTransitionTable";
 import TamilSummaryBox from "@/components/TamilSummaryBox";
@@ -66,6 +68,7 @@ export default function ServicePageTemplate({
   keyFacts = [],
   relatedPosts = [],
   topBanner,
+  ownQuoteSection = false,
   children,
 }: {
   pageUrl: string;
@@ -94,6 +97,8 @@ export default function ServicePageTemplate({
   relatedPosts?: string[];
   /** Above-the-fold callout, e.g. pointing early-stage pages at their money page. */
   topBanner?: ReactNode;
+  /** The page already has its own, page-specific quote section, so skip the standard one. */
+  ownQuoteSection?: boolean;
   /** Extra page-specific sections (tables, decision guides), rendered after the process steps. */
   children?: ReactNode;
 }) {
@@ -199,9 +204,11 @@ export default function ServicePageTemplate({
 
           {children}
 
+          {!ownQuoteSection && <QuoteProcess />}
           {CHECKLIST_PAGES.has(crumbHref) && <CAFirmChecklist />}
           {ACT_TABLE_PAGES[crumbHref] && <ActTransitionTable rows={ACT_TABLE_PAGES[crumbHref]} />}
           <ICAIVerificationTrustBar />
+          <AboutTheCA />
 
           {related.length > 0 && (
             <>

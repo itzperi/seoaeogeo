@@ -21,6 +21,7 @@ const LINK = "text-royal-violet underline underline-offset-2";
 export default function Page() {
   return (
     <ServicePageTemplate
+      ownQuoteSection
       pageUrl={`${SITE_URL}/company-registration-vellore`}
       serviceType="Company Registration"
       crumbLabel="Company Registration in Vellore"
