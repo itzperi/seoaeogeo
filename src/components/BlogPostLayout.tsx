@@ -4,9 +4,14 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import FAQSection, { type FAQItem } from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import ContentAttribution from "@/components/ContentAttribution";
+import AuthorBio from "@/components/AuthorBio";
 import { getContentReview } from "@/lib/content-reviews";
 import { JsonLd, ORG_ID, PERSON_ID } from "@/lib/schema";
 import { SITE_URL } from "@/lib/site";
+
+// Dates as written in the post meta (YYYY-MM-DD), shown in Indian English.
+const fmtDate = (d: string) =>
+  new Date(`${d}T00:00:00Z`).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
 
 // The money page each post feeds, picked from its slug. Order matters:
 // GST disputes before general GST, company topics before the catch-all.
@@ -93,16 +98,11 @@ export default function BlogPostLayout({
       <section className="border-b border-carbon bg-sky-wash">
         <div className="container-page py-14 md:py-20">
           <p className="sticker-tag bg-sunburst">
-            {new Date(date).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}
-            {updated && updated !== date && (
-              <>
-                {" · "}Updated{" "}
-                {new Date(updated).toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}
-              </>
-            )}
+            Published <time dateTime={date}>{fmtDate(date)}</time>
+            {" · "}Updated <time dateTime={updated ?? date}>{fmtDate(updated ?? date)}</time>
           </p>
           <h1 className="mt-6 max-w-4xl text-5xl text-carbon md:text-7xl">{title}</h1>
-          <ContentAttribution path={`/blog/${slug}`} updated={updated ?? date} author />
+          <ContentAttribution path={`/blog/${slug}`} updated={updated ?? date} author showUpdated={false} />
           <p className="mt-6 max-w-2xl text-lg text-carbon">{description}</p>
           {summary && (
             <p id="lead-answer" className="mt-6 max-w-3xl rounded-cards border border-carbon bg-white p-5 text-base leading-relaxed text-carbon">
@@ -134,6 +134,7 @@ export default function BlogPostLayout({
         </div>
       </article>
 
+      <AuthorBio />
       {faqs && faqs.length > 0 && <FAQSection items={faqs} />}
       <CTASection />
     </>
