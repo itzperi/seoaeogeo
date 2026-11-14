@@ -33,9 +33,14 @@ export const metadata: Metadata = {
 
 const NEAR_OFFICE: { slug: string; note: string }[] = [
   { slug: "chartered-accountant-anna-nagar-chennai", note: "Our office area; Anna Nagar Tower Park is about 1.7 km by road" },
+  { slug: "chartered-accountant-koyambedu-chennai", note: "About 2.1 km by road along 100 Feet Road" },
   { slug: "chartered-accountant-mogappair-chennai", note: "Mogappair East is about 2.6 km by road" },
+  { slug: "chartered-accountant-arumbakkam-chennai", note: "About 2.8 km by road" },
+  { slug: "chartered-accountant-shenoy-nagar-chennai", note: "About 3.7 km by road, or three Metro stops from Thirumangalam on the Green Line" },
   { slug: "chartered-accountant-aminjikarai-chennai", note: "About 4.3 km by road over the Anna Arch flyover" },
+  { slug: "chartered-accountant-villivakkam-chennai", note: "About 4.3 km by road via the Padi flyover" },
   { slug: "chartered-accountant-kilpauk-chennai", note: "About 4.6 km by road" },
+  { slug: "chartered-accountant-kolathur-chennai", note: "About 6.5 km by road" },
 ];
 
 const ABROAD: { href: string; label: string }[] = [
