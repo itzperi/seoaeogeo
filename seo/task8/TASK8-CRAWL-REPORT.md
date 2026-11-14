@@ -26,7 +26,7 @@
 | Page | LCP (target < 2.5 s) | CLS (target < 0.1) | TBT (lab proxy for INP < 200 ms) | Score |
 |---|---|---|---|---|
 | Home | **2.02 s** ✅ | **0.000** ✅ | 2,540 ms ⚠️ (slow host) | 70 |
-| Service: Pvt Ltd registration | 2.94 s ⚠️ | **0.000** ✅ | 1,416 ms ⚠️ (slow host) | 65 |
+| Service: Pvt Ltd registration | 2.94 s ⚠️ run 1; **2.34 s** ✅ run 2 | **0.000** ✅ | 1,416 / 1,552 ms ⚠️ (slow host) | 65 / 69 |
 | Blog: Form 3CEB | **2.33 s** ✅ | **0.000** ✅ | 445 ms | 86 |
 
 **LCP is text on all three pages:** the H1, or the lead answer on the service page. There is no image or font delay; TTFB is about 0.66 s and the rest is render delay while the main thread is busy.
@@ -75,5 +75,5 @@
 3. **Deployment.** This commit is on the local branch and **not pushed**, as the brief asks. Vercel has also not deployed the 7 pushes since 674e10d; please check the Vercel dashboard for a failed or queued build.
 
 ## Data notes
-- **Lab conditions:** Lighthouse 12, mobile, simulated 4G and 4x CPU slowdown, single runs. Repeat runs to confirm did not complete on this machine.
+- **Lab conditions:** Lighthouse 12, mobile, simulated 4G and 4x CPU slowdown. Single runs, plus a second run of the service page; a second home run did not complete on this machine.
 - **Crawl method:** Python against the live site with no redirect following, so every hop is recorded.
