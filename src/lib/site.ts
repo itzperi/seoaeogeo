@@ -27,7 +27,7 @@ export const GBP_REVIEW_URL = `https://search.google.com/local/writereview?place
 // visitors reach the right building even while the profile's map pin is
 // being corrected.
 export const GBP_DIRECTIONS_URL =
-  "https://www.google.com/maps/dir/?api=1&destination=13.0859694%2C80.1997378";
+  "https://www.google.com/maps/dir/?api=1&destination=13.085989%2C80.199684";
 export const LANGUAGES_SPOKEN = ["English", "Tamil", "Hindi"];
 
 // NAP: standardized on the number used on the homepage/contact page (per SEO audit,
@@ -55,7 +55,7 @@ export const ADDRESS_FULL = `${ADDRESS.street}, ${ADDRESS.locality}, ${ADDRESS.c
 export const ADDRESS_SHORT = `${ADDRESS.locality}, ${ADDRESS.city}`;
 
 // Coordinates of the Google Business Profile pin (corrected 2026-10-05).
-export const GEO = { latitude: 13.0859694, longitude: 80.1997378 };
+export const GEO = { latitude: 13.085989, longitude: 80.199684 };
 // Google plus code for the same point — shown next to the address.
 export const PLUS_CODE = "35PX+9V Chennai, Tamil Nadu";
 

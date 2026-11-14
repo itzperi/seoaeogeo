@@ -1,56 +1,13 @@
-import { AREAS } from "./areas";
-import { ALL_SERVICES } from "./services";
 import { getContentReview } from "./content-reviews";
 import {
-  ADDRESS,
-  BUSINESS_HOURS,
-  BUSINESS_LEGAL_NAME,
-  BUSINESS_NAME,
-  EMAIL,
+  ENTITY_PROFILES,
   FIRM_REGISTRATION_NO,
   FOUNDER_CREDENTIALS,
-  FOUNDER_LINKEDIN,
-  FOUNDER_NAME,
-  GBP_URL,
-  GEO,
-  ICAI_MEMBERSHIP_NO,
-  LANGUAGES_SPOKEN,
-  PHONE_TEL,
-  ENTITY_PROFILES,
   FOUNDER_PROFILES,
+  ICAI_MEMBERSHIP_NO,
   SITE_URL,
-  SOCIALS,
-  YEAR_FOUNDED,
-  TEAM_SIZE,
   YEAR_QUALIFIED,
 } from "./site";
-
-const DAY_MAP: Record<string, string[]> = {
-  "Monday – Saturday": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-  Sunday: ["Sunday"],
-};
-
-function openingHoursSpecification() {
-  return BUSINESS_HOURS.filter((h) => h.hours !== "Closed").map((h) => {
-    const [opens, closes] = h.hours.split("–").map((t) => t.trim());
-    return {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: DAY_MAP[h.days] ?? [h.days],
-      opens: to24h(opens),
-      closes: to24h(closes),
-    };
-  });
-}
-
-function to24h(time: string) {
-  const match = time.match(/(\d+):(\d+)\s*(AM|PM)/i);
-  if (!match) return time;
-  const [, hourStr, minute, meridiem] = match;
-  let hour = parseInt(hourStr, 10);
-  if (meridiem.toUpperCase() === "PM" && hour !== 12) hour += 12;
-  if (meridiem.toUpperCase() === "AM" && hour === 12) hour = 0;
-  return `${String(hour).padStart(2, "0")}:${minute}`;
-}
 
 // Countries the firm serves remotely (NRIs, foreign-owned companies,
 // overseas accounting firms).
@@ -89,68 +46,72 @@ export const INTERNATIONAL_AREAS: Record<string, string[]> = {
 
 // Stable entity ids. Every page's WebPage, Service and BlogPosting nodes
 // point at these instead of repeating the entities.
-export const ORG_ID = `${SITE_URL}/#organization`;
+export const ORG_ID = `${SITE_URL}/#firm`;
 export const PERSON_ID = `${SITE_URL}/#ca-rushil`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
-const SCHEMA_NAME = `${BUSINESS_NAME} Chartered Accountants`;
 const ICAI = { "@type": "Organization", name: "The Institute of Chartered Accountants of India", url: "https://www.icai.org/" };
 
+// The sitewide firm entity. Values are fixed by the owner's brief (Nov 2026):
+// no priceRange, offers, ratings, reviews, team size or registration numbers
+// unless the owner supplies them.
 export function organizationSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "AccountingService",
-    "@id": `${SITE_URL}/#organization`,
-    name: SCHEMA_NAME,
-    alternateName: [BUSINESS_NAME, "CS Rushil & Co"],
-    legalName: BUSINESS_LEGAL_NAME,
-    url: SITE_URL,
+    "@type": ["ProfessionalService", "AccountingService"],
+    "@id": ORG_ID,
+    name: "C S Rushil & Co.",
+    legalName: "C S Rushil & Co, Chartered Accountants",
+    url: "https://www.csrushil.com/",
     logo: `${SITE_URL}/logo.png`,
     image: `${SITE_URL}/logo.png`,
-    telephone: PHONE_TEL,
-    email: EMAIL,
-    foundingDate: `${YEAR_FOUNDED}`,
-    knowsLanguage: LANGUAGES_SPOKEN,
-    founder: { "@id": PERSON_ID },
-    employee: { "@id": PERSON_ID },
-    numberOfEmployees: { "@type": "QuantitativeValue", value: TEAM_SIZE },
-    ...(FIRM_REGISTRATION_NO && {
-      identifier: { "@type": "PropertyValue", propertyID: "ICAI firm registration number", value: FIRM_REGISTRATION_NO },
-      hasCredential: {
-        "@type": "EducationalOccupationalCredential",
-        credentialCategory: "Firm registration",
-        name: `ICAI firm registration no. ${FIRM_REGISTRATION_NO}`,
-        recognizedBy: ICAI,
-      },
-    }),
+    telephone: "+91-72001-49711",
+    email: "admin@csrushil.com",
+    foundingDate: "2024",
     address: {
       "@type": "PostalAddress",
-      streetAddress: `${ADDRESS.street}, ${ADDRESS.locality}`,
-      addressLocality: ADDRESS.city,
-      addressRegion: ADDRESS.region,
-      postalCode: ADDRESS.postalCode,
-      addressCountry: ADDRESS.country,
+      streetAddress: "Old Door No. AP-890, New No. 18, J-Block, 1st Street, 13th Main Rd",
+      addressLocality: "Anna Nagar, Chennai",
+      addressRegion: "Tamil Nadu",
+      postalCode: "600040",
+      addressCountry: "IN",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: GEO.latitude,
-      longitude: GEO.longitude,
-    },
+    geo: { "@type": "GeoCoordinates", latitude: 13.085989, longitude: 80.199684 },
+    hasMap: "https://maps.google.com/?cid=9218487927688159679",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        opens: "09:30",
+        closes: "18:30",
+      },
+    ],
     areaServed: [
       { "@type": "City", name: "Chennai" },
-      // Strip topic qualifiers such as "Anna Nagar (income tax)" and dedupe,
-      // so each locality is declared once as a plain place name.
-      ...Array.from(new Set(AREAS.map((area) => area.name.replace(/\s*\([^)]*\)\s*$/, "")))).map((name) => ({
-        "@type": "Place" as const,
-        name: `${name}, Chennai`,
-      })),
+      { "@type": "Place", name: "Anna Nagar" },
+      { "@type": "Place", name: "Kilpauk" },
+      { "@type": "Place", name: "Aminjikarai" },
+      { "@type": "Place", name: "Mogappair" },
+      { "@type": "Place", name: "Ambattur" },
+      { "@type": "Place", name: "T Nagar" },
       { "@type": "State", name: "Tamil Nadu" },
-      ...BOOKKEEPING_COUNTRIES.map((name) => ({ "@type": "Country" as const, name })),
     ],
-    openingHoursSpecification: openingHoursSpecification(),
+    founder: {
+      "@type": "Person",
+      "@id": PERSON_ID,
+      name: "Rushil C S",
+      jobTitle: "Chartered Accountant",
+      sameAs: ["https://in.linkedin.com/company/csrushil-co"],
+    },
+    sameAs: [
+      "https://in.linkedin.com/company/csrushil-co",
+      "https://instagram.com/carushil_c_s/",
+      "https://maps.google.com/?cid=9218487927688159679",
+      ...Object.values(ENTITY_PROFILES).filter((u): u is string => Boolean(u)),
+    ],
     knowsAbout: [
       "Company registration",
       "LLP registration",
-      "Goods and Services Tax (GST)",
+      "GST",
       "Income tax",
       "Statutory audit",
       "Tax audit",
@@ -158,9 +119,18 @@ export function organizationSchema() {
       "FEMA and RBI compliance",
       "NRI taxation",
       "ROC compliance",
+      "Virtual CFO services",
     ],
-    hasMap: GBP_URL,
-    sameAs: [SOCIALS.linkedin, GBP_URL, ...Object.values(ENTITY_PROFILES).filter((u): u is string => Boolean(u))],
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+91-72001-49711",
+      email: "admin@csrushil.com",
+      contactType: "customer service",
+      availableLanguage: ["English", "Tamil"],
+    },
+    ...(FIRM_REGISTRATION_NO && {
+      identifier: { "@type": "PropertyValue", propertyID: "ICAI firm registration number", value: FIRM_REGISTRATION_NO },
+    }),
   };
 }
 
@@ -172,14 +142,15 @@ export function personSchema() {
     "@context": "https://schema.org",
     "@type": "Person",
     "@id": PERSON_ID,
-    name: FOUNDER_NAME,
-    jobTitle: "Founder & Managing Partner, Practising Chartered Accountant",
+    name: "Rushil C S",
+    honorificPrefix: "CA",
+    jobTitle: "Chartered Accountant",
     url: `${SITE_URL}/about-us`,
     description: FOUNDER_CREDENTIALS,
-    worksFor: { "@id": `${SITE_URL}/#organization` },
-    // The Instagram account is CA Rushil C S's own (carushil_c_s), so it
-    // belongs to the Person entity, not the firm.
-    sameAs: [FOUNDER_LINKEDIN, SOCIALS.instagram, ...Object.values(FOUNDER_PROFILES).filter((u): u is string => Boolean(u))],
+    worksFor: { "@id": ORG_ID },
+    // Per the owner's brief the founder's sameAs is the firm's LinkedIn page;
+    // add a personal profile here once the owner confirms it.
+    sameAs: ["https://in.linkedin.com/company/csrushil-co", ...Object.values(FOUNDER_PROFILES).filter((u): u is string => Boolean(u))],
     memberOf: ICAI,
     hasCredential: [
       {
@@ -250,7 +221,7 @@ export function serviceSchema(opts: {
     name: opts.name,
     description: opts.description,
     url: opts.url,
-    provider: { "@id": `${SITE_URL}/#organization` },
+    provider: { "@id": ORG_ID },
     areaServed: opts.areaServedCountries?.length
       ? opts.areaServedCountries.map((name) => ({ "@type": "Country", name }))
       : opts.areaServedName
@@ -277,38 +248,15 @@ export function howToSchema(opts: {
   };
 }
 
-// The 33-service catalog, emitted on the homepage only (it merges into the
-// organization node via the shared @id); repeating it on every page added
-// weight without adding signal.
-export function serviceCatalogSchema() {
-  return {
-    "@context": "https://schema.org",
-    "@type": "AccountingService",
-    "@id": `${SITE_URL}/#organization`,
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "Services",
-      itemListElement: ALL_SERVICES.map((service) => ({
-        "@type": "Offer",
-        itemOffered: {
-          "@type": "Service",
-          name: service.name,
-          url: `${SITE_URL}/${service.slug}`,
-        },
-      })),
-    },
-  };
-}
-
 export function websiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${SITE_URL}/#website`,
     url: SITE_URL,
-    name: BUSINESS_NAME,
+    name: "C S Rushil & Co.",
     inLanguage: "en-IN",
-    publisher: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": ORG_ID },
   };
 }
 
@@ -322,7 +270,7 @@ export function webPageSchema(path: string, name: string, date: string) {
     url: `${SITE_URL}${path}`,
     name,
     isPartOf: { "@id": `${SITE_URL}/#website` },
-    about: { "@id": `${SITE_URL}/#organization` },
+    about: { "@id": ORG_ID },
     publisher: { "@id": ORG_ID },
     ...(review && { reviewedBy: { "@id": PERSON_ID }, lastReviewed: review.reviewedOn }),
     dateModified: date,
@@ -367,7 +315,7 @@ export function moneyPageGraph(opts: {
   name: string;
   description: string;
   dateModified?: string;
-  service: { name: string; serviceType: string; description: string; offers: string[] | { name: string; url: string }[] };
+  service: { name: string; serviceType: string; description: string; offers?: string[] | { name: string; url: string }[] };
   faqs: { question: string; answer: string }[];
   crumbs: { name: string; href: string }[];
   howTo?: { name: string; description: string; steps: { name: string; text: string }[] };
@@ -403,18 +351,7 @@ export function moneyPageGraph(opts: {
       description: opts.service.description,
       url,
       provider: { "@id": ORG_ID },
-      areaServed: [{ "@type": "City", name: "Chennai" }, { "@type": "State", name: "Tamil Nadu" }],
-      hasOfferCatalog: {
-        "@type": "OfferCatalog",
-        name: opts.service.name,
-        itemListElement: opts.service.offers.map((o) => ({
-          "@type": "Offer",
-          itemOffered:
-            typeof o === "string"
-              ? { "@type": "Service", name: o }
-              : { "@type": "Service", name: o.name, url: o.url },
-        })),
-      },
+      areaServed: { "@type": "City", name: "Chennai" },
     },
     { ...faqSchema(opts.faqs), "@id": `${url}#faq` },
     { ...localBusinessBreadcrumb(crumbs.map((c) => ({ name: c.name, url: `${SITE_URL}${c.href}` }))), "@id": `${url}#breadcrumb` },

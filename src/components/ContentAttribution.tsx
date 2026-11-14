@@ -6,10 +6,11 @@ const displayDate = (date: string) => new Date(`${date}T00:00:00Z`).toLocaleDate
   day: "numeric", month: "long", year: "numeric", timeZone: "UTC",
 });
 
-export default function ContentAttribution({ path, updated }: { path: string; updated?: string }) {
+export default function ContentAttribution({ path, updated, author = false }: { path: string; updated?: string; author?: boolean }) {
   const review = getContentReview(path, updated);
   return (
     <p className="mt-4 text-sm text-carbon/80">
+      {author && <>By <Link href="/about-us" className="font-semibold underline underline-offset-2">{FOUNDER_NAME}</Link>, Chartered Accountant · </>}
       Published by <Link href="/about-us" className="font-semibold underline underline-offset-2">{BUSINESS_NAME}</Link>
       {updated && <> · Content updated <time dateTime={updated}>{displayDate(updated)}</time></>}
       {review && <> · Reviewed by <Link href="/about-us" className="font-semibold underline underline-offset-2">{FOUNDER_NAME}</Link>{" "}

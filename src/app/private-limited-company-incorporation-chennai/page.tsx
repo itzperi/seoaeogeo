@@ -13,9 +13,9 @@ import { getPostMeta, isPublished } from "@/lib/blog";
 import { PAGE_DATES } from "@/lib/page-dates";
 
 const PATH = "/private-limited-company-incorporation-chennai";
-const TITLE = "Private Limited Company Incorporation & Registration in Chennai";
+const TITLE = "Private Limited Company Registration in Chennai | Anna Nagar";
 const DESCRIPTION =
-  "Register a Private Limited Company in Chennai in 7–12 days via SPICe+. CA-assisted ROC Chennai filing, DSC, DIN, PAN/TAN & clear MCA government fees.";
+  "Incorporate a Private Limited Company in Chennai via SPICe+. Name approval, DSC, DIN, MoA/AoA, PAN, TAN and bank account help from a CA firm in Anna Nagar.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   alternates: { canonical: PATH, types: { "text/markdown": "/md/private-limited-company-incorporation-chennai" } },
   openGraph: {
     images: [{ url: "/private-limited-company-incorporation-chennai/opengraph-image", width: 1200, height: 630 }],
-    title: "Private Limited Company Incorporation & Registration in Chennai",
+    title: "Private Limited Company Registration in Chennai",
     description: DESCRIPTION,
     url: PATH,
   },
@@ -685,12 +685,12 @@ export default function IncorporationPage() {
                 Related services
               </h3>
               <ul className="mt-4 space-y-3 text-sm">
-                <li><Link href="/company-registration-chennai" className="text-royal-violet hover:underline">Company Registration (all structures)</Link></li>
-                <li><Link href="/llp-registration-chennai" className="text-royal-violet hover:underline">LLP Registration</Link></li>
-                <li><Link href="/opc-registration-chennai" className="text-royal-violet hover:underline">OPC Registration</Link></li>
+                <li><Link href="/company-registration-chennai" className="text-royal-violet hover:underline">company registration in Chennai</Link> (all structures)</li>
+                <li><Link href="/llp-registration-chennai" className="text-royal-violet hover:underline">LLP registration in Chennai</Link></li>
+                <li><Link href="/opc-registration-chennai" className="text-royal-violet hover:underline">OPC registration in Chennai</Link></li>
                 <li><Link href="/startup-india-registration-chennai" className="text-royal-violet hover:underline">Startup India (DPIIT) Recognition</Link></li>
                 <li><Link href="/roc-compliances" className="text-royal-violet hover:underline">ROC Compliances</Link></li>
-                <li><Link href="/goods-and-services-tax" className="text-royal-violet hover:underline">GST Registration</Link></li>
+                <li><Link href="/gst-registration-chennai" className="text-royal-violet hover:underline">GST registration in Chennai</Link></li>
                 <li><Link href="/virtual-cfo-services" className="text-royal-violet hover:underline">Virtual CFO Services</Link></li>
               </ul>
             </div>

@@ -43,7 +43,7 @@ const contactPageSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   url: `${SITE_URL}/contact`,
-  mainEntity: { "@id": `${SITE_URL}/#organization` },
+  mainEntity: { "@id": `${SITE_URL}/#firm` },
 };
 
 const LINK = "text-royal-violet underline underline-offset-2";

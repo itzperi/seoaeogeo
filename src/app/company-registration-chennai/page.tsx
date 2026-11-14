@@ -7,7 +7,7 @@ import { ADDRESS_FULL, BUSINESS_HOURS, PHONE_DISPLAY, PHONE_TEL, SITE_URL } from
 export const metadata: Metadata = {
   title: { absolute: "Company Registration in Chennai | Pvt Ltd, LLP, OPC" },
   description:
-    "Company registration service in Chennai for Pvt Ltd, LLP, OPC, Section 8 and partnership firms: SPICe+ and FiLLiP filing, DSC, DIN and compliance.",
+    "Register a Pvt Ltd, LLP, OPC or Section 8 company in Chennai with a CA firm in Anna Nagar. SPICe+ and FiLLiP filing, DSC, DIN, PAN, TAN. Free consultation.",
   alternates: { canonical: "/company-registration-chennai", types: { "text/markdown": "/md/company-registration-chennai" } },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -30,6 +30,7 @@ const STRUCTURES = [
   },
   {
     name: "Limited Liability Partnership (LLP)",
+    linkLabel: "LLP Registration in Chennai",
     href: "/llp-registration-chennai",
     members: "2 partners, of whom at least 2 are designated partners",
     liability: "Limited to agreed contribution",
@@ -38,6 +39,7 @@ const STRUCTURES = [
   },
   {
     name: "One Person Company (OPC)",
+    linkLabel: "OPC Registration in Chennai",
     href: "/opc-registration-chennai",
     members: "1 member, 1 nominee and at least 1 director",
     liability: "Limited to unpaid share capital",
@@ -46,6 +48,7 @@ const STRUCTURES = [
   },
   {
     name: "Partnership Firm",
+    linkLabel: "Partnership Firm Registration in Chennai",
     href: "/partnership-firm-registration-chennai",
     members: "2 partners",
     liability: "Unlimited; partners are jointly and severally liable",
@@ -54,6 +57,7 @@ const STRUCTURES = [
   },
   {
     name: "Sole Proprietorship",
+    linkLabel: "Proprietorship Registration in Chennai",
     href: "/proprietorship-registration-chennai",
     members: "1 owner",
     liability: "Unlimited; business and owner are the same person",
@@ -62,6 +66,7 @@ const STRUCTURES = [
   },
   {
     name: "Section 8 Company",
+    linkLabel: "Section 8 Company Registration in Chennai",
     href: "/section-8-company-registration-chennai",
     members: "2 directors and 2 members for a private Section 8 company",
     liability: "Limited",
@@ -200,6 +205,10 @@ export default function Page() {
         our page on{" "}
         <Link href="/private-limited-company-incorporation-chennai" className="text-royal-violet underline underline-offset-2">
           Private Limited Company Registration in Chennai
+        </Link>
+        . After incorporation, most businesses also need{" "}
+        <Link href="/gst-registration-chennai" className="text-royal-violet underline underline-offset-2">
+          GST registration in Chennai
         </Link>
         . Foreign-owned businesses should also read our page on{" "}
         <Link href="/company-registration-india-for-foreigners" className="text-royal-violet underline underline-offset-2">

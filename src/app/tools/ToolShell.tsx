@@ -79,7 +79,7 @@ export function webApplicationNode(opts: { path: string; name: string; descripti
     operatingSystem: "Any",
     inLanguage: "en-IN",
     isAccessibleForFree: true,
-    provider: { "@id": "https://www.csrushil.com/#organization" },
+    provider: { "@id": "https://www.csrushil.com/#firm" },
   };
 }
 
@@ -123,7 +123,7 @@ export default function ToolShell({
       description,
       inLanguage: "en-IN",
       isPartOf: { "@id": `${SITE_URL}/#website` },
-      about: { "@id": "https://www.csrushil.com/#organization" },
+      about: { "@id": "https://www.csrushil.com/#firm" },
       breadcrumb: { "@id": `${url}#breadcrumb` },
       speakable: { "@type": "SpeakableSpecification", cssSelector: ["h1", "#lead-answer"] },
     },
