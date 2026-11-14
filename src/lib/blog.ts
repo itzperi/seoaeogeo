@@ -21,6 +21,10 @@ export type BlogPostModule = {
 // Static registry — Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
+  "increase-authorised-capital-sh-7": () =>
+    import("@/content/blog/increase-authorised-capital-sh-7"),
+  "asmt-10-gst-scrutiny-notice-reply": () =>
+    import("@/content/blog/asmt-10-gst-scrutiny-notice-reply"),
   "dir-3-kyc-due-date-late-fee": () =>
     import("@/content/blog/dir-3-kyc-due-date-late-fee"),
   "aoc-4-mgt-7-late-fee": () =>
@@ -199,6 +203,24 @@ export type BlogSlug = keyof typeof modules;
 // export by convention; duplicated here (rather than importing every module
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
+  {
+    slug: "increase-authorised-capital-sh-7",
+    title: "Increase in Authorised Capital: SH-7, MCA Fee and Stamp Duty",
+    description:
+      "Increasing authorised capital: Section 61, the resolution and MGT-14, SH-7 within 30 days, the MCA fee on the increase and Tamil Nadu stamp duty.",
+    date: "2026-11-14",
+    excerpt:
+      "Raising authorised capital takes a members' resolution, an SH-7 filing within 30 days, an MCA fee worked out on the difference in capital and, in Tamil Nadu, stamp duty on the increase.",
+  },
+  {
+    slug: "asmt-10-gst-scrutiny-notice-reply",
+    title: "ASMT-10 GST Scrutiny Notice: Time Limit and How to Reply",
+    description:
+      "ASMT-10 under Section 61 and Rule 99: the 30-day reply in ASMT-11, extensions, closure in ASMT-12, what follows if not accepted, and a reply checklist.",
+    date: "2026-11-14",
+    excerpt:
+      "An ASMT-10 is the first formal question in a GST scrutiny. Here is the time limit for the ASMT-11 reply, how a case is closed in ASMT-12, and what happens if the officer is not satisfied.",
+  },
   {
     slug: "dir-3-kyc-due-date-late-fee",
     title: "DIR-3 KYC 2026: Due Date, ₹5,000 Late Fee, Deactivated DIN",
