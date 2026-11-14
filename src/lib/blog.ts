@@ -232,6 +232,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "FC-GPR is filed on the RBI FIRMS portal within 30 days of allotting shares to a foreign investor. Documents needed and how the late submission fee works.",
     date: "2026-11-13",
+    updated: "2026-11-14",
     excerpt:
       "An Indian company that allots shares to a foreign investor has 30 days to report it in FC-GPR. Here is the timeline, the documents the form needs, and the late submission fee formula.",
   },
@@ -315,7 +316,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Goods detained under Section 129 in Tamil Nadu: the MOV forms, current penalty amounts, paying for release vs contesting, and the appeal with a 10% pre-deposit.",
     date: "2026-10-12",
-    updated: "2026-11-13",
+    updated: "2026-11-14",
     excerpt:
       "A vehicle stopped for an e-way bill lapse: what each MOV form means, how the Section 129 penalty is worked out, whether to pay or contest, and how to appeal.",
   },
@@ -325,7 +326,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Which ROC handles your Tamil Nadu company? District-wise ROC Chennai and Coimbatore list, Puducherry, the Regional Director and official MCA contacts.",
     date: "2026-10-12",
-    updated: "2026-11-13",
+    updated: "2026-11-14",
     excerpt:
       "Tamil Nadu has two Registrars of Companies. A district-by-district table, what the ROC actually decides for your company, and where Puducherry fits.",
   },

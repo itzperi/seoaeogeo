@@ -7,7 +7,7 @@ export const meta: BlogPostMeta = {
   description:
     "Goods detained under Section 129 in Tamil Nadu: the MOV forms, current penalty amounts, paying for release vs contesting, and the appeal with a 10% pre-deposit.",
   date: "2026-10-12",
-  updated: "2026-11-13",
+  updated: "2026-11-14",
   excerpt:
     "A vehicle stopped for an e-way bill lapse: what each MOV form means, how the Section 129 penalty is worked out, whether to pay or contest, and how to appeal.",
   faqs: [
@@ -19,7 +19,7 @@ export const meta: BlogPostMeta = {
     {
       question: "How quickly must the officer pass the penalty order?",
       answer:
-        "Section 129(3) requires a notice within seven days of detention and an order within seven days of service of that notice. Several High Courts and a GSTAT bench have treated these timelines as mandatory and set aside late MOV-09 orders, so note the dates of the MOV-06, MOV-07 and MOV-09 forms carefully.",
+        "Section 129(3) requires a notice within seven days of detention and an order within seven days of service of that notice. An order passed after these limits can be challenged on that ground in the appeal, so record the dates of the MOV-06, MOV-07 and MOV-09 forms carefully.",
     },
     {
       question: "If we pay the penalty to release the goods, can we still appeal?",
@@ -29,7 +29,7 @@ export const meta: BlogPostMeta = {
     {
       question: "What pre-deposit is needed to appeal a Section 129 order?",
       answer:
-        "From 1 October 2025, the first appeal needs a pre-deposit of 10% of the penalty, replacing the earlier 25%, and a GSTAT appeal a further 10%. The Delhi High Court has held the 10% rule does not apply where the notice was issued before that date. Confirm the current position for your dates before filing.",
+        "From 1 October 2025, the first appeal needs a pre-deposit of 10% of the penalty, replacing the earlier 25%, and a GSTAT appeal a further 10%. For penalty-only orders under Section 122(1A), the Delhi High Court held the new proviso does not govern notices issued before that date; whether that extends to Section 129 orders is unsettled.",
     },
     {
       question: "Is every e-way bill mistake a ground for detention?",

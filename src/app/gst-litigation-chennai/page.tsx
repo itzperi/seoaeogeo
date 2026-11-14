@@ -448,9 +448,16 @@ export default function GstLitigationPage() {
                 pre-deposit. The pre-deposit caps were reduced by the Finance (No. 2)
                 Act, 2024, and the Finance Act, 2025 replaced the earlier 25%
                 pre-deposit for e-way bill penalty orders with 10% of the penalty for
-                any penalty-only order, from 1 October 2025. Courts and tribunals have
-                held that the penalty-only rule does not apply where the show-cause
-                notice was issued before that date.
+                any penalty-only order, from 1 October 2025. The Delhi High Court has
+                held, in{" "}
+                <a href="https://indiankanoon.org/doc/173947388/" target="_blank" rel="noopener noreferrer" className={LINK}>
+                  Gaurav Jain &amp; Anr. v. Joint Commissioner (Appeals-II), CGST Delhi Zone &amp; Anr., W.P.(C) 8414/2026,
+                  decided on 31 July 2026
+                </a>
+                , that the 10% penalty pre-deposit does not apply to a first appeal against a penalty-only order
+                where the show-cause notice was issued before 1 October 2025. That case concerned a penalty under
+                Section 122(1A), not a Section 129 detention order, which carried a 25% pre-deposit before the
+                change. It is a Delhi High Court ruling, so check how it applies to your own dates and forum.
               </p>
               <Table head={["Stage", "Forum", "Time limit and form", "Pre-deposit"]} rows={APPEAL_LADDER} />
               <p className="mt-3 text-xs text-slate">
@@ -464,9 +471,14 @@ export default function GstLitigationPage() {
                   cbic-gst.gov.in
                 </a>
                 . The pre-deposit is computed on tax only; disputed interest and
-                penalty are not counted, except for penalty-only orders. The one-time
-                window for older orders to reach GSTAT closed on 31 July 2026; later
-                orders follow the normal 3-month limit.
+                penalty are not counted, except for penalty-only orders. For older
+                orders, the Government notified a special last date for GSTAT appeals,
+                which the GSTAT announced as extended to{" "}
+                <a href="https://gstat.gov.in/whats-new/32" target="_blank" rel="noopener noreferrer" className={LINK}>
+                  31 July 2026
+                </a>
+                . That date has passed; appeals against later orders follow the normal 3-month limit,
+                condonable by 3 more months.
               </p>
             </div>
 

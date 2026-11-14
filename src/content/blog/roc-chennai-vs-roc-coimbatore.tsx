@@ -158,7 +158,7 @@ export default function Body() {
               {chennaiDistricts.join(", ")}; also the Union Territory of
               Andaman and Nicobar Islands
             </td>
-            <td>29 districts</td>
+            <td>29 districts and one UT</td>
           </tr>
           <tr>
             <td>ROC Puducherry</td>
@@ -176,6 +176,15 @@ export default function Body() {
         did. Two places people often get wrong: Karur and Madurai are under ROC
         Chennai, while Dindigul and Krishnagiri (which includes Hosur) are
         under ROC Coimbatore.
+      </p>
+      <p>
+        The Andaman and Nicobar Islands have no Registrar of Companies of
+        their own. The February 2026 adjudication notification lists the Union
+        Territory of Andaman and Nicobar Islands under the Registrar of
+        Companies, Chennai, and the MCA&apos;s Registrar of Companies contact
+        page has no separate office for the islands. A company with its
+        registered office in Port Blair or elsewhere in the islands therefore
+        deals with ROC Chennai.
       </p>
 
       <h2>Which ROC covers common Tamil Nadu business towns?</h2>
@@ -395,8 +404,8 @@ export default function Body() {
       <p>
         <strong>
           The Regional Director, Southern Region, works from Shastri Bhavan in
-          Chennai and supervises the Registrars at Chennai, Coimbatore,
-          Puducherry and Andaman. Some Central Government powers under the
+          Chennai and supervises the Registrars of Companies at Chennai,
+          Coimbatore and Puducherry. Some Central Government powers under the
           Companies Act are delegated to Regional Directors, so applications
           such as INC-23, RD-1 and appeals against ROC penalty orders go to
           this office rather than to the ROC.
@@ -416,9 +425,12 @@ export default function Body() {
         >
           Regional Directors page
         </a>{" "}
-        maps the Chennai, Coimbatore, Pondicherry and Andaman registries to the
-        Southern Region Directorate. The portal&apos;s approval services split
-        the work like this:
+        lists Chennai, Pondicherry, Coimbatore and Andaman under the Southern
+        Region Directorate. &quot;Andaman&quot; there refers to the Andaman and
+        Nicobar Islands, which come under ROC Chennai: the MCA&apos;s
+        Registrar of Companies contact page shows no separate Andaman office,
+        and the adjudication notification places the islands with ROC Chennai.
+        The portal&apos;s approval services split the work like this:
       </p>
       <table>
         <thead>

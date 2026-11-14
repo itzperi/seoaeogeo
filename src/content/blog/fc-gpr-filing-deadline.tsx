@@ -8,6 +8,12 @@ import Link from "next/link";
 // Circular No. 16 dated 30 Sep 2022 (Rs 7,500 + 0.025% x A x n; cap 100% of A;
 // up to 3 years; advice void if unpaid in 30 days). Valuer: MD Foreign
 // Investment in India (updated up to 15 June 2026) para 8.1.1(2).
+// Documents: MD Reporting under FEMA lists attachments only for the case where
+// the allottee differs from the remitter (KYC of both, NOC, letter, agreement
+// or board resolution); checked against the June 2021 text on rbi.org.in, as
+// the current PDF sits behind a CAPTCHA. MD-FII requires the statutory
+// auditor's certificate for shares issued against pre-incorporation expenses.
+// Other rows are AD bank practice and are labelled "commonly requested".
 export const meta: BlogPostMeta = {
   slug: "fc-gpr-filing-deadline",
   title: "FC-GPR Filing 2026: 30-Day Deadline, Documents, Late Fee",
@@ -173,36 +179,64 @@ export default function Body() {
       </p>
 
       <h2>What documents does FC-GPR need?</h2>
+      <p>
+        The RBI&apos;s Master Direction on Reporting under FEMA says FC-GPR is
+        filed in the Single Master Form on FIRMS, but it does not set out a
+        general list of attachments. The documents below are the ones AD banks
+        commonly ask for before they verify the form. Your AD bank may ask for
+        more or fewer, so check its list early.
+      </p>
       <table>
         <thead>
           <tr>
             <th>Document</th>
             <th>What it shows</th>
+            <th>Basis</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Foreign inward remittance certificate (FIRC) and the bank&apos;s KYC of the investor</td>
             <td>The money came through banking channels from the investor named in the form</td>
+            <td>Commonly requested by AD banks</td>
           </tr>
           <tr>
             <td>Valuation certificate</td>
             <td>The issue price is not below fair value, certified by a Chartered Accountant, SEBI-registered merchant banker or practising cost accountant (for an unlisted company)</td>
+            <td>The fair value pricing rule is in the Master Direction on Foreign Investment; the certificate itself is commonly requested by AD banks</td>
           </tr>
           <tr>
             <td>Company secretary&apos;s certificate</td>
             <td>The company has complied with the Companies Act and the FEMA conditions for the issue</td>
+            <td>Commonly requested by AD banks</td>
           </tr>
           <tr>
             <td>Board or shareholder resolution for the allotment, with the list of allottees</td>
             <td>The date of issue and the number and type of instruments</td>
+            <td>Commonly requested by AD banks</td>
           </tr>
           <tr>
             <td>Declaration by the authorised representative</td>
             <td>Sector, entry route and sectoral cap have been checked</td>
+            <td>Commonly requested by AD banks</td>
+          </tr>
+          <tr>
+            <td>Statutory auditor&apos;s certificate on pre-incorporation or pre-operative expenses</td>
+            <td>The expenses against which the shares were issued were used for that purpose</td>
+            <td>Required by the Master Direction on Foreign Investment, only where shares are issued against such expenses</td>
           </tr>
         </tbody>
       </table>
+      <p>
+        One case has its own list in the Master Direction on Reporting. Where
+        the shares are issued to a person other than the one who sent the
+        remittance, FC-GPR has to be filed with KYC reports of both the
+        remitter and the beneficial owner, a no-objection certificate from the
+        remitter stating their relationship, a letter from the beneficial owner
+        explaining why the remitter paid on its behalf, and the agreement or
+        board resolution for issuing the shares to someone other than the
+        remitter.
+      </p>
       <p>
         The pricing rule for unlisted companies is in the RBI&apos;s{" "}
         <a href="https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx?id=11200" target="_blank" rel="noopener noreferrer">
@@ -309,7 +343,7 @@ export default function Body() {
         <li>Receive the investment into the company&apos;s bank account and obtain the FIRC and KYC from the AD bank.</li>
         <li>Obtain the valuation certificate dated close to the issue.</li>
         <li>Allot the shares by board resolution within 60 days of receiving the money, and file the return of allotment with the ROC.</li>
-        <li>Obtain the company secretary&apos;s certificate.</li>
+        <li>Obtain the company secretary&apos;s certificate and any other documents your AD bank asks for.</li>
         <li>Fill FC-GPR on FIRMS within 30 days of allotment, upload the documents and submit.</li>
         <li>Answer any queries from the AD bank, which verifies the form and forwards it to the RBI.</li>
         <li>Keep the approval acknowledgement with the company&apos;s statutory records.</li>
