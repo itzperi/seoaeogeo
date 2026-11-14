@@ -10,6 +10,7 @@ export const meta: BlogPostMeta = {
   description:
     "How to choose between a chartered accountant firm and an online filing platform: who signs, ICAI checks, confidentiality, fees and which work suits each.",
   date: "2026-11-08",
+  updated: "2026-11-14",
   excerpt:
     "Who signs your filings, how to verify a chartered accountant, how fees are split and which kinds of work suit each option, set out without naming any provider.",
   summary:
@@ -23,27 +24,22 @@ export const meta: BlogPostMeta = {
     {
       question: "How do I check that a chartered accountant is genuine?",
       answer:
-        "Ask for the CA's ICAI membership number and, for a firm, its firm registration number, then check them on ICAI's public Trace a Member search at traceamember.icai.org. The number should also appear on any audit report or certificate the CA signs for you.",
+        "Ask for the CA's ICAI membership number and, for a firm, its firm registration number, then check them on ICAI's public Trace a Member search at traceamember.icai.org. The number should also appear on any audit report or certificate the CA signs for you, along with a UDIN that can be verified on ICAI's UDIN portal.",
     },
     {
       question: "Who is accountable if a filing goes wrong?",
       answer:
-        "A chartered accountant is personally bound by the ICAI Code of Ethics and the Institute's disciplinary process under the Chartered Accountants Act, 1949. A platform's responsibility is set by its terms of service. Read those terms and confirm who reviews your filing before it is submitted.",
+        "A chartered accountant is personally bound by the ICAI Code of Ethics and the Institute's disciplinary process under the Chartered Accountants Act, 1949. A platform's responsibility is set by its terms of service. Read those terms and confirm who reviews your filing before it is submitted, and who will respond if the department raises a query later.",
     },
     {
       question: "What is the difference between government fees and professional fees?",
       answer:
-        "Government fees are statutory charges paid to a department, such as MCA filing fees, stamp duty or name reservation charges, and they are the same whoever files. Professional fees are what the adviser charges for the work. Ask for the two to be shown separately in writing.",
+        "Government fees are statutory charges paid to a department, such as MCA filing fees, stamp duty or name reservation charges, and they are the same whoever files. Professional fees are what the adviser charges for the work. Ask for the two to be shown separately in writing, along with anything excluded from the scope.",
     },
     {
       question: "Is my data handled differently by a CA firm and a platform?",
       answer:
-        "Chartered accountants owe clients a professional duty of confidentiality under the ICAI Code of Ethics. Any business that processes your personal data, including a platform, must also follow the Digital Personal Data Protection Act, 2023. Ask either option where your documents are stored and who can see them.",
-    },
-    {
-      question: "Can I switch from a platform to a CA firm, or the other way?",
-      answer:
-        "Yes. Ask for copies of everything filed so far, the portal credentials you own, acknowledgements and working papers, and any notices received. Your new adviser needs these to continue without gaps, especially near a due date.",
+        "Chartered accountants owe clients a professional duty of confidentiality under the ICAI Code of Ethics. Any business that processes your personal data, including a platform, must also follow the Digital Personal Data Protection Act, 2023. Ask either option where your documents are stored, who can see them and how long they are kept.",
     },
   ],
 };
@@ -54,6 +50,12 @@ const link = "font-medium text-royal-violet underline underline-offset-2";
 export default function Body() {
   return (
     <>
+      <p>
+        Choose by the work, not the channel. A standard filing from clean documents can suit either a chartered
+        accountant firm or an online filing platform. Work that needs a signature, a judgement or a reply to the
+        department needs a named chartered accountant you can verify with ICAI. Before you pay, ask who will sign.
+      </p>
+
       <p>
         Many businesses in Chennai can now get a company registered or a GST return filed either through a chartered
         accountant firm or through an online filing platform. Both can be the right choice. The useful question is not
@@ -103,6 +105,34 @@ export default function Body() {
         </Link>{" "}
         covers the other checks.
       </p>
+      <p>
+        Audit reports and certificates signed by a chartered accountant also carry a Unique Document Identification
+        Number (UDIN) generated on ICAI&apos;s system. Anyone relying on the document, such as a bank or a department,
+        can check the UDIN on the{" "}
+        <a href="https://udin.icai.org/" target="_blank" rel="noopener noreferrer" className={link}>
+          ICAI UDIN portal
+        </a>
+        . If a report you receive has no UDIN, ask why before you submit it anywhere.
+      </p>
+
+      <h2 className={h2}>What kind of work do online platforms usually handle?</h2>
+      <p>
+        Online platforms are generally built around repeatable, form-driven work: you upload documents, answer
+        structured questions and the platform prepares the filing. That model can work well when your facts are simple
+        and your documents are complete, for example a salaried return with one employer and a bank interest
+        certificate, or nil GST returns for a business that has not started trading. The questions to ask are the same
+        as for any adviser: who reviews the filing, whether a chartered accountant is involved, and what happens if the
+        department raises a query after it is filed.
+      </p>
+
+      <h2 className={h2}>What happens after the filing is submitted?</h2>
+      <p>
+        Filing is rarely the end of the matter. A GST return can lead to a scrutiny notice, an income tax return can be
+        processed with an adjustment, and an MCA form can be marked for resubmission. Before you engage anyone, find out
+        whether replies to such queries are part of the scope, who will draft them, and whether the same person who
+        prepared the filing will review the reply. For notices in particular, the person answering needs your full
+        records, not only the summary used for the return.
+      </p>
 
       <h2 className={h2}>How are fees structured?</h2>
       <p>
@@ -125,6 +155,15 @@ export default function Body() {
         <li>Will I receive copies of every filing, acknowledgement and portal credential?</li>
       </ol>
 
+      <h2 className={h2}>Can you switch from one to the other?</h2>
+      <p>
+        Yes, in either direction. Before you move, collect copies of everything filed so far, acknowledgements, working
+        papers and any notices received, and make sure the portal credentials for GST, income tax and the MCA are in
+        your own name and control. Your new adviser needs these to continue without gaps, especially close to a due
+        date. If a statutory auditor is changing, the incoming auditor will also communicate with the outgoing one, as
+        the ICAI&apos;s rules require.
+      </p>
+
       <h2 className={h2}>When does a chartered accountant firm make sense?</h2>
       <p>
         A firm is the natural fit when the work needs a signature, when a notice or appeal is involved, or when the
@@ -136,9 +175,13 @@ export default function Body() {
         <Link href="/gst-notice-reply-chennai" className={link}>
           GST notice
         </Link>{" "}
-        or planning a statutory audit. If you would like to talk it through, you can{" "}
+        or planning a statutory audit. If you are weighing options, our page as a{" "}
+        <Link href="/" className={link}>
+          CA firm in Chennai
+        </Link>{" "}
+        explains how we work, and you can{" "}
         <Link href="/contact" className={link}>
-          book a 15-minute consultation
+          book a free 15-minute consultation
         </Link>{" "}
         with C S Rushil &amp; Co. in Anna Nagar.
       </p>

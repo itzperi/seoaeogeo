@@ -733,7 +733,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     date: "2026-09-16",
     updated: "2026-10-06",
     excerpt:
-      "Credentials, service breadth, responsiveness, and red flags — a practical checklist for picking a chartered accountant in Chennai.",
+      "Credentials, service breadth, responsiveness and red flags: a practical checklist for picking a chartered accountant in Chennai.",
   },
   {
     slug: "ca-firm-or-online-filing-platform",
@@ -741,6 +741,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "How to choose between a chartered accountant firm and an online filing platform: who signs, ICAI checks, confidentiality, fees and which work suits each.",
     date: "2026-11-08",
+    updated: "2026-11-14",
     excerpt:
       "Who signs your filings, how to verify a chartered accountant, how fees are split and which kinds of work suit each option, set out without naming any provider.",
   },
@@ -789,8 +790,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Quarterly TDS return due dates for FY 2026-27, the Section 234E late fee and Section 271H penalty, and a practical checklist for filing each quarter on time.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
-      "Every quarterly TDS deadline for FY 2026-27, plus the penalty math for missing one — bookmark this one.",
+      "Every quarterly TDS deadline for FY 2026-27, plus the penalty math for missing one. Bookmark this one.",
   },
   {
     slug: "msme-udyam-registration-checklist",
@@ -808,8 +810,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Every recurring RERA filing deadline Tamil Nadu developers need to track, from quarterly progress reports and annual audits to project extension requests.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
-      "Quarterly Progress Reports, escrow certifications, and extension filings — the full TNRERA compliance calendar in one place.",
+      "Quarterly Progress Reports, escrow certifications and extension filings: the full TNRERA compliance calendar in one place.",
   },
   {
     slug: "12a-80g-registration-guide-chennai-ngos",
@@ -817,8 +820,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "How Chennai trusts, societies and Section 8 companies register under 12A and 80G for tax exemption and donor deductions, and how provisional approval works.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
-      "12A exempts your NGO's income; 80G lets your donors claim a deduction. Most Chennai NGOs need both — here's the process.",
+      "12A exempts your NGO's income; 80G lets your donors claim a deduction. Most Chennai NGOs need both, and here's the process.",
   },
   {
     slug: "statutory-audit-checklist",
@@ -826,6 +830,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "The documents and records a statutory auditor will ask your company for, and how to prepare them in advance so the audit is faster and the queries fewer.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "Most audit delays come from documents nobody prepared in advance. Here's exactly what your auditor is going to ask for.",
   },
@@ -833,8 +838,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "add-remove-director",
     title: "How to Add or Remove a Director from Your Company in India",
     description:
-      "Founders in Chennai often need to add a co founder, an investor's nominee, or remove a director who is exiting — each has a specific procedure to follow.",
+      "Founders in Chennai often need to add a co founder, an investor's nominee, or remove a director who is exiting, each has a specific procedure to follow.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "Founders in Chennai often need to add a co founder as a director, bring on an investor's nominee, or remove a director who is exiting the...",
   },
@@ -874,6 +880,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Most audit delay in Chennai businesses has nothing to do with book complexity and everything to do with documents not being ready when the auditor arrives.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "A surprising amount of audit delay in Chennai businesses has nothing to do with the complexity of the books and everything to do with...",
   },
@@ -881,8 +888,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "fcra-registration",
     title: "FCRA Registration for Chennai NGOs Accepting Foreign Funds",
     description:
-      "Any Chennai trust, society, or Section 8 company accepting foreign donations needs FCRA registration first — and the rules have tightened considerably.",
+      "Any Chennai trust, society, or Section 8 company accepting foreign donations needs FCRA registration first, and the rules have tightened considerably.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "Any trust, society, or Section 8 company in Chennai that wants to receive donations or grants from a foreign source needs FCRA registration...",
   },
@@ -902,6 +910,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "When freelance designers, consultants and developers in Chennai need GST registration, how export of services under LUT works, and what returns follow.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "When freelance designers, consultants and developers in Chennai need GST registration, how export of services under LUT works, and what returns follow.",
   },
@@ -911,6 +920,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "GSTR 9 is the annual return every regular GST registered business must file, summarizing a full year of GSTR-1 and GSTR-3B filings. A practical checklist.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "GSTR 9 is the annual return every regular GST registered business needs to file, summarizing an entire financial year of GSTR 1 and GSTR 3B...",
   },
@@ -918,8 +928,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "itc-mismatch-notices",
     title: "ITC Mismatch Notices: Why They Happen and How to Respond",
     description:
-      "An ITC mismatch notice is one of the most common GST notices Chennai businesses receive — usually because GSTR-3B and a supplier's GSTR-1 don't match.",
+      "An ITC mismatch notice is one of the most common GST notices Chennai businesses receive, usually because GSTR-3B and a supplier's GSTR-1 don't match.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "An Input Tax Credit (ITC) mismatch notice is one of the most common GST notices Chennai businesses receive, and it usually comes down to...",
   },
@@ -929,8 +940,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Every LLP must file Form 11 and Form 8 each year, whatever its turnover or activity. What each form covers, the due dates and the late fee for missing them.",
     date: "2026-09-25",
+    updated: "2026-11-14",
     excerpt:
-      "Every LLP must file Form 11 and Form 8 annually regardless of turnover or activity — here's exactly what each form covers and when they're due.",
+      "Every LLP must file Form 11 and Form 8 annually regardless of turnover or activity. Here's exactly what each form covers and when they're due.",
   },
   {
     slug: "lut-for-exporters",
@@ -938,6 +950,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "If your Chennai business exports services or goods, a Letter of Undertaking (LUT) is one of the most valuable and most overlooked GST filings you can make.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "If your Chennai business sells services or goods to clients outside India, a Letter of Undertaking (LUT) is one of the most valuable and...",
   },
@@ -947,6 +960,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "When NRIs with family, property or investments in India must file an Indian income tax return, which income is taxable here and how DTAA relief applies.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "Non resident Indians with family, property, or investments back in Chennai often have a genuine Indian tax filing obligation that gets...",
   },
@@ -966,6 +980,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Chennai business owners often treat \"audit\" as one thing, but statutory, tax, and internal audit are three separate exercises with different triggers.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "Business owners in Chennai often use the word audit as if it means one single thing, but statutory audit, tax audit, and internal audit are...",
   },
@@ -975,6 +990,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Closing a company that never took off? How strike-off differs from formal winding up, which route fits your company and what each process really involves.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "When a Chennai business owner decides to shut down a company that never took off or has stopped operating, one of the first questions is...",
   },
@@ -982,8 +998,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "tds-on-rent",
     title: "TDS on Rent: What Chennai Landlords and Tenants Should Know",
     description:
-      "TDS on rent trips up both sides in Chennai — tenants who don't realize they must deduct it, and landlords who forget to check it against their return.",
+      "TDS on rent trips up both sides in Chennai, tenants who don't realize they must deduct it, and landlords who forget to check it against their return.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "Tax deducted at source on rent payments trips up both sides of the transaction in Chennai, tenants who don't realize they need to deduct it...",
   },
@@ -993,6 +1010,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "IT and startup businesses along Chennai's OMR corridor tend to need a Virtual CFO for a specific reason: getting fundraise-ready, not just filing taxes.",
     date: "2026-09-26",
+    updated: "2026-11-14",
     excerpt:
       "IT and startup businesses along OMR tend to need a Virtual CFO for one specific reason: getting fundraise-ready, not just filing taxes on time.",
   },
@@ -1002,6 +1020,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Business owners considering Virtual CFO support often aren't sure what it actually involves month to month. Here's what a genuine monthly review covers.",
     date: "2026-09-19",
+    updated: "2026-11-14",
     excerpt:
       "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense...",
   },
@@ -1011,6 +1030,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Paying a personal bill from the business account feels harmless in the moment. It's the single habit that creates the most avoidable tax and audit pain.",
     date: "2026-09-26",
+    updated: "2026-11-14",
     excerpt:
       "Paying a personal bill from the business account feels harmless. It's the single habit that creates the most avoidable tax and audit pain.",
   },
@@ -1020,6 +1040,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "There's no single legal cash deposit limit, but specific thresholds trigger automatic reporting to the Income Tax Department. Here's what those actually are.",
     date: "2026-09-26",
+    updated: "2026-11-14",
     excerpt:
       "There's no single legal cash deposit limit, but specific thresholds trigger automatic reporting to the Income Tax Department.",
   },
@@ -1027,17 +1048,19 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "why-income-tax-notices-issued",
     title: "Why Income Tax Notices Get Issued: The Actual Triggers",
     description:
-      "An income tax notice usually means one specific, fixable data mismatch — not that you're in trouble. Here are the actual triggers behind most notices.",
+      "An income tax notice usually means one specific, fixable data mismatch, not that you're in trouble. Here are the actual triggers behind most notices.",
     date: "2026-09-26",
+    updated: "2026-11-14",
     excerpt:
-      "An income tax notice usually means one specific, fixable data mismatch — not that you're in trouble. Here are the actual triggers.",
+      "An income tax notice usually means one specific, fixable data mismatch, not that you're in trouble. Here are the actual triggers.",
   },
   {
     slug: "gst-threshold-is-a-trigger",
-    title: "The GST Threshold Isn't a Safe Zone — It's a Trigger",
+    title: "The GST Threshold Isn't a Safe Zone: It's a Trigger",
     description:
       "Staying just under the GST registration threshold feels safe, but crossing it is a trigger to register, not an exemption. How to watch the limit and act.",
     date: "2026-09-26",
+    updated: "2026-11-14",
     excerpt:
       "Staying just under the GST registration threshold feels safe, but crossing it is a trigger to register, not an exemption. How to watch the limit and act.",
   },
@@ -1047,6 +1070,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "Filing monthly GST returns yourself looks like an easy saving. The real cost of errors, missed credit and late fees usually shows up months later in notices.",
     date: "2026-09-26",
+    updated: "2026-11-14",
     excerpt:
       "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely small.",
   },
@@ -1056,6 +1080,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     description:
       "A business that is profitable on paper can still run out of cash to pay its bills. Why the gap between profit and cash opens up, and the steps that close it.",
     date: "2026-09-26",
+    updated: "2026-11-14",
     excerpt:
       "A business that is profitable on paper can still run out of cash to pay its bills. Why the gap between profit and cash opens up, and the steps that close it.",
   },
