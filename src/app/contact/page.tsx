@@ -16,6 +16,7 @@ import {
   EMAIL,
   GOOGLE_MAPS_EMBED_SRC,
   GBP_DIRECTIONS_URL,
+  GBP_URL,
   PHONE_DISPLAY,
   PHONE_TEL,
   SITE_URL,
@@ -287,7 +288,9 @@ export default function ContactPage() {
         <div className="container-page">
           <h2 className="text-2xl text-obsidian">How do you reach the Anna Nagar office?</h2>
           <p className={P}>
-            The office is in J-Block, {ADDRESS.locality}, Chennai, on 1st Street, 13th Main Road.
+            The office is in J-Block, {ADDRESS.locality}, Chennai, on 1st Street, 13th Main Road, about 300 metres
+            from the Thirumangalam Metro entrance on 2nd Avenue (Chennai Metro Green Line).{" "}
+            <a href={GBP_URL} target="_blank" rel="noopener noreferrer" className={LINK}>View C S Rushil &amp; Co. on Google Maps</a>.
           </p>
           <p className={P}>
             Our full address is {ADDRESS_FULL}. <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className={LINK}>Open directions to the Anna Nagar office</a>. If you are using a map app, search for the Plus Code {PLUS_CODE} or

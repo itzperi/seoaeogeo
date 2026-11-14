@@ -40,6 +40,42 @@ export default function Page() {
       ]}
       sections={[
         {
+          heading: "How do clients from nearby areas reach our J-Block office?",
+          body: (
+            <>
+              <p>
+                The office is on 1st Street, 13th Main Road, J-Block, about 300 metres from the Thirumangalam Metro
+                entrance on 2nd Avenue, a few minutes&apos; walk from the Chennai Metro Green Line. For clients
+                coming by road, the approximate straight-line distances from the office are:
+              </p>
+              <table>
+                <thead>
+                  <tr>
+                    <th>From</th>
+                    <th>Approximate distance</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Thirumangalam Metro (2nd Avenue entrance)</td><td>About 0.3 km</td></tr>
+                  <tr><td>Anna Nagar West</td><td>About 1.2 km</td></tr>
+                  <tr><td>Anna Nagar Tower Park</td><td>About 1.6 km</td></tr>
+                  <tr><td>Mogappair East</td><td>About 1.7 km</td></tr>
+                  <tr><td>CMBT (Koyambedu bus terminus)</td><td>About 2 km</td></tr>
+                  <tr><td>Aminjikarai</td><td>About 2.7 km</td></tr>
+                  <tr><td>Shenoy Nagar Metro</td><td>About 2.9 km</td></tr>
+                  <tr><td>Kilpauk</td><td>About 4.2 km</td></tr>
+                </tbody>
+              </table>
+              <p>
+                Distances are straight-line from the office pin, measured on OpenStreetMap; road distance is longer.
+                For turn-by-turn directions, open the office on Google Maps from the section below, or see the{" "}
+                <Link href="/contact">contact page</Link>. Please book a time before visiting so the right team member
+                is available.
+              </p>
+            </>
+          ),
+        },
+        {
           heading: "Company registration in Anna Nagar",
           body: (
             <p>

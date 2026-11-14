@@ -1,95 +1,62 @@
-# Deploying to GoDaddy cPanel (Node.js App)
+# Deploying csrushil.com (Vercel)
 
-This repo is a Next.js app configured for `output: "standalone"`
-(`next.config.ts`), which is the supported way to run Next.js under
-cPanel's Node.js App feature (Phusion Passenger) — it produces a
-self-contained `server.js` that Passenger runs directly, without needing
-`next start` or a full `node_modules` install on the server for every
-request.
+The live site, **https://www.csrushil.com**, is served by **Vercel**: responses carry `Server: Vercel` and `X-Vercel-Cache`. Vercel builds and deploys the **`master`** branch of the GitHub repository `itzperi/seoaeogeo`.
 
-## One-time setup in cPanel
+> `.cpanel.yml` and the old GoDaddy cPanel instructions are legacy. The site does not run on cPanel. Keep `.cpanel.yml` only if you plan to move hosting.
 
-1. **Software → Setup Node.js App → Create Application**
-   - **Node.js version:** 20.x (LTS) — this repo requires Node ≥ 20
-     (`package.json` → `engines.node`).
-   - **Application mode:** Production.
-   - **Application root:** pick a folder outside `public_html`, e.g.
-     `nodeapp` (cPanel creates it under your home directory —
-     `/home/<username>/nodeapp`).
-   - **Application URL:** the domain/subdomain this should serve
-     (e.g. `csrushil.com`).
-   - **Application startup file:** `server.js` — this is the file
-     `next build` generates inside `.next/standalone/`, which `.cpanel.yml`
-     copies into the application root on every deploy.
-   - Click **Create**. cPanel will show you two values you need for the
-     next step:
-     - **Application root** (the full path, e.g. `/home/csrushil/nodeapp`)
-     - **Enter to the virtual environment** command, which contains the
-       exact venv activation path (e.g.
-       `/home/csrushil/nodevenv/nodeapp/20/bin/activate`).
+## How a change goes live
 
-2. **Edit `.cpanel.yml`** in this repo (already committed with
-   placeholders) and replace the two `REPLACE_ME` values with the exact
-   paths cPanel just showed you:
-   ```yaml
-   - export DEPLOYPATH=/home/<your-actual-username>/nodeapp
-   - export NODE_VENV=/home/<your-actual-username>/nodevenv/nodeapp/20/bin/activate
+1. Work on a branch, then verify:
+   - type-check;
+   - ESLint;
+   - `node --test scripts/content-reviews.test.mjs`.
+
+   Low-RAM machines: don't run `next build` locally (see the README / SEO prompts for the D: temp-tsconfig method).
+2. Merge or fast-forward the branch into `master` and push:
+   ```bash
+   git push origin <branch>:master
    ```
-   Commit and push that change before your first deploy — cPanel reads
-   `.cpanel.yml` from the repo it pulls, not from a template.
+3. Vercel starts a production build automatically for every push to `master`.
+4. **Confirm the deploy**. Vercel does **not** post commit statuses or deployments to GitHub for this project, so GitHub shows nothing. Check either:
+   - **Vercel dashboard → the project → Deployments.** The newest entry should show the pushed commit with status **Ready** and the **Production** label;
+   - **the live site.** Fetch a page whose content changed and compare:
+     ```bash
+     curl -s https://www.csrushil.com/direct-tax | grep -o '<title>[^<]*'
+     ```
 
-3. **Software → Git Version Control → Create**
-   - **Clone URL:** `https://github.com/itzperi/seoaeogeo.git`
-   - **Repository Path:** any folder (this is just where cPanel checks out
-     the git repo — separate from the Node app's Application root from
-     step 1).
-   - **Branch:** `master` (this repo's only branch — there is no `main`).
+## If a push does not go live
 
-4. **Deploy:** in Git Version Control, open the repo, click **Pull or
-   Deploy → Update from Remote**, then **Deploy HEAD Commit**. This runs
-   every task in `.cpanel.yml`: installs dependencies, runs `next build`,
-   and copies the standalone server + static assets + `public/` into your
-   Node app's Application root.
+| What the Vercel Deployments page shows | Cause | Fix |
+|---|---|---|
+| No deployment for the commit | The Git integration is disconnected or paused, or the production branch is set to something other than `master` | Project → Settings → Git: reconnect `itzperi/seoaeogeo` and set the production branch to `master`. Then Deployments → latest → **Redeploy** |
+| **Error** | Build failed | Open the deployment → Build Logs. Fix the error on a branch, verify, push again |
+| **Ready**, but not on the domain | Built as a preview, or production promotion is manual | Deployment → **Promote to Production** |
+| **Queued / Building** for a long time | Build queue or concurrency limit | Wait, or cancel older builds |
 
-5. **Software → Setup Node.js App → your app → Restart.** (The first
-   deploy already touches `tmp/restart.txt`, which Passenger watches for
-   automatically — an explicit restart from the UI is just a safety net
-   the first time.)
+Known build note:
+- `npm run build` with Turbopack once failed in a sandbox on the Google Fonts resolver.
+- `npm run build -- --webpack` passed.
+- If Vercel's build fails with a `next/font/google` error, set the build command to `next build --webpack` in Project → Settings → Build & Development.
 
-6. Visit the Application URL and confirm the site loads.
+## After every production deploy
 
-## Every subsequent deploy
+1. Spot-check:
+   - `/`, `/direct-tax`, `/private-limited-company-incorporation-chennai`;
+   - one new blog post;
+   - one redirect (e.g. `/ca-fees-chennai` should 308 to `/blog/how-to-choose-a-chartered-accountant-in-chennai`).
+2. Search Console:
+   - resubmit `https://www.csrushil.com/sitemap.xml`;
+   - request indexing for new or substantially changed URLs.
+3. Bing / IndexNow: `npm run indexnow` (submits changed URLs; run it with the owner's approval).
+4. If schema changed, test a few pages in Google's Rich Results Test and the Schema Markup Validator.
 
-Once steps 1–3 are done, shipping a new commit is just:
+## Environment variables (Vercel → Settings → Environment Variables)
 
-```
-git push origin master
-```
+| Variable | Used for |
+|---|---|
+| `SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_URL` | Supabase project for lead and click logging (`src/lib/supabase.ts`) |
+| `SUPABASE_SECRET_KEY` (or legacy `SUPABASE_SERVICE_ROLE_KEY`) | Server-side Supabase access, including the `/admin` lead viewer |
+| `ADMIN_USERNAME`, `ADMIN_PASSWORD` | Login for `/admin` |
+| `NEXT_PUBLIC_GA_ID` | GA4 measurement ID (analytics loads only when set) |
 
-then, in cPanel's Git Version Control UI: **Update from Remote → Deploy
-HEAD Commit**. No manual file copying, no re-running `npm install`
-by hand — `.cpanel.yml` does the build and copy every time.
-
-## Things that only work correctly once this is actually deployed
-
-- Google, your Google Business Profile, and real visitors only ever see
-  whatever `csrushil.com` currently serves — every commit on GitHub is
-  invisible until it's deployed. As of this writing, the live site is
-  still the old pre-rebuild version, not this repo's output.
-- `SITE_URL` in `src/lib/site.ts` is hardcoded to `https://csrushil.com` —
-  confirm the Application URL in step 1 matches exactly (including
-  `www`/non-`www`, since that affects canonical URLs and schema).
-
-## Troubleshooting
-
-- **"npm: command not found" during deploy** — `NODE_VENV` in
-  `.cpanel.yml` doesn't match the path cPanel actually created. Re-check
-  Setup Node.js App's "Enter to the virtual environment" value.
-- **App shows a 503 / doesn't start** — check **Setup Node.js App → your
-  app → the log file path shown there.** Usually either the Node version
-  is below 20, or `server.js` isn't at the exact Application root cPanel
-  expects (confirm `DEPLOYPATH` in `.cpanel.yml` matches "Application
-  root" exactly, including no trailing slash mismatch).
-- **Site loads but has no styling / broken images** — the `.next/static`
-  or `public/` copy step in `.cpanel.yml` didn't run; check the deploy
-  log in Git Version Control for which task failed.
+Never commit secret values to the repository.
