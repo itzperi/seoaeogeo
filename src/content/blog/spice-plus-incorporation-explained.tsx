@@ -5,9 +5,9 @@ export const meta: BlogPostMeta = {
   slug: "spice-plus-incorporation-explained",
   title: "SPICe+ Step by Step (2026): Part A, Part B and AGILE-PRO-S",
   description:
-    "SPICe+ step by step for 2026: Part A name reservation, Part B filing, e-MoA and e-AoA, AGILE-PRO-S, DSC and DIN, resubmission and common rejection reasons.",
+    "SPICe+ step by step for 2026: Part A, Part B, e-MoA, e-AoA, AGILE-PRO-S, DSC and DIN, how to resubmit, and the errors the MCA flags most often.",
   date: "2026-09-19",
-  updated: "2026-10-12",
+  updated: "2026-11-13",
   excerpt:
     "How a Tamil Nadu company is incorporated on MCA V3 today: Part A, Part B, the linked forms, what AGILE-PRO-S makes mandatory, and why filings come back.",
   faqs: [
@@ -40,6 +40,11 @@ export const meta: BlogPostMeta = {
       question: "How many directors can get a DIN through SPICe+?",
       answer:
         "SPICe+ Part B can allot a Director Identification Number to up to three proposed directors who do not already hold one. Directors who already have a DIN simply enter it. Every subscriber and director still needs a valid Class 3 Digital Signature Certificate to sign the forms, so arrange DSCs first.",
+    },
+    {
+      question: "Can I apply for the same name again while my SPICe+ is in resubmission?",
+      answer:
+        "No. The MCA's SPICe+ FAQs say the system blocks a new application for the same or a similar name while an earlier SRN for it has been paid for and is pending, or is in resubmission. Wait for that SRN to be decided, cancelled or expired. If an approved name has an error, it must be withdrawn before you reapply.",
     },
   ],
   summary:
@@ -277,7 +282,11 @@ export default function Body() {
       <ul>
         <li>
           <strong>Name objections:</strong> similarity to an existing company,
-          LLP or registered trademark, or words that need prior approval.
+          LLP or registered trademark, or words that need prior approval. See{" "}
+          <Link href="/blog/company-name-rejection-reasons">
+            why the MCA rejects company names
+          </Link>
+          .
         </li>
         <li>
           <strong>Registered office proof:</strong> a utility bill older than
@@ -301,6 +310,112 @@ export default function Body() {
           notarised and apostilled or consularised as required.
         </li>
       </ul>
+
+      <h2>How do you resubmit a SPICe+ application, step by step?</h2>
+      <p>
+        <strong>
+          When the Central Registration Centre marks SPICe+ for resubmission,
+          the SRN shows that status in your MCA application history with the
+          objection remarks. Correct every point raised, regenerate and re-sign
+          the affected forms with DSCs, and resubmit before the last date shown.
+          Rule 38 of the Incorporation Rules allows two resubmissions.
+        </strong>
+      </p>
+      <ol>
+        <li>
+          <strong>Read the whole remark.</strong> List every objection before
+          changing anything; a partial fix uses up one of the two
+          resubmissions.
+        </li>
+        <li>
+          <strong>Open the SRN from your application history</strong> on the
+          MCA V3 dashboard and edit the fields or attachments the remark
+          refers to.
+        </li>
+        <li>
+          <strong>Switch to web forms where asked.</strong> If the remark asks
+          for e-MoA and e-AoA but the links do not appear on the SPICe+
+          dashboard, the MCA explains that they are enabled only once the
+          scanned MoA and AoA (attachments 1 and 2) are removed.
+        </li>
+        <li>
+          <strong>Regenerate and re-sign.</strong> Download the latest PDF
+          version of each changed form, have the director and the certifying
+          professional affix valid DSCs, and upload it.
+        </li>
+        <li>
+          <strong>Resubmit before the last date.</strong> An application not
+          resubmitted in time can be cancelled, and starting again may mean
+          reserving the name afresh.
+        </li>
+      </ol>
+      <p>
+        The MCA has said that processing at the Central Registration Centre is
+        faceless and randomised, and that resubmissions are normally not
+        examined by the official who saw the application first, so answer each
+        remark on its own terms rather than relying on earlier correspondence.
+        While an SRN is in resubmission, the system will not accept another
+        application for the same or a similar name.
+      </p>
+
+      <h2>Which SPICe+ errors does the MCA&apos;s own FAQ flag?</h2>
+      <p>
+        <strong>
+          The MCA&apos;s SPICe+ FAQs list the defects that lead to rejection:
+          registered office proof that does not match the form, a missing NOC
+          or rent agreement, capital figures that differ between the e-MoA and
+          Part B, NIC codes that do not fit the objects, scanned forms attached
+          instead of web forms, and illegible or copy-pasted signatures.
+        </strong>
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Area</th>
+            <th>What the MCA flags</th>
+            <th>How to avoid it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Registered office</td>
+            <td>Address differs from the proof; incomplete address on the utility bill; regional-language bill without an English translation; NOC, lease or rent agreement missing, not from the owner, or not naming the proposed company</td>
+            <td>Match the address word for word, translate the bill, and have the owner&apos;s NOC name the company</td>
+          </tr>
+          <tr>
+            <td>Capital clause</td>
+            <td>Authorised or subscribed capital differs between the MoA and SPICe+; face value shown as zero</td>
+            <td>Fill Part B first and let the e-MoA prefill from it</td>
+          </tr>
+          <tr>
+            <td>Objects and NIC codes</td>
+            <td>NIC code not in line with the objects; regulated words without the regulator&apos;s in-principle approval</td>
+            <td>Pick NIC codes that describe the main business; attach any approval</td>
+          </tr>
+          <tr>
+            <td>Directors without a DIN</td>
+            <td>PAN, ID proof or a current residential address proof not attached</td>
+            <td>Attach all three, with a recent address proof</td>
+          </tr>
+          <tr>
+            <td>Attachments</td>
+            <td>Scanned INC-9, MoA or AoA instead of web forms; illegible documents; wrong nationality; subscribing company&apos;s board resolution missing share or representative details</td>
+            <td>Use the linked web forms and check every scan before upload</td>
+          </tr>
+          <tr>
+            <td>Signatures</td>
+            <td>Old PDF version; form not signed by both director and professional; invalid DSC; disqualified director; copy-pasted signatures, which the MCA warns can attract action under sections 447 and 448</td>
+            <td>Sign the latest PDF with valid DSCs and never paste signatures</td>
+          </tr>
+          <tr>
+            <td>Payment</td>
+            <td>SRN cancelled if the signed PDF is not uploaded within 15 days of SRN generation, or fees are not paid within 7 days of upload</td>
+            <td>Pay as soon as the forms are uploaded; see our{" "}
+              <Link href="/blog/government-fees-company-registration">government fees guide</Link>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
       <h2>Which documents does SPICe+ need?</h2>
       <table>

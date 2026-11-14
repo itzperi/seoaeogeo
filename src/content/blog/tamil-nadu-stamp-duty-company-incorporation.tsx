@@ -5,8 +5,9 @@ export const meta: BlogPostMeta = {
   slug: "tamil-nadu-stamp-duty-company-incorporation",
   title: "Stamp Duty on Company Incorporation in Tamil Nadu (2026)",
   description:
-    "How stamp duty on the MoA and AoA works for companies registered in Tamil Nadu, how SPICe+ computes and collects it, and how authorised capital affects it.",
+    "Stamp duty on MoA and AoA in Tamil Nadu, how SPICe+ collects it, and the duty on increasing authorised capital (SH-7) and share transfers (SH-4).",
   date: "2026-10-16",
+  updated: "2026-11-13",
   excerpt:
     "Stamp duty on the MoA and AoA is a state levy. Here is how it works for a Tamil Nadu company, how SPICe+ collects it, and why authorised capital matters.",
   faqs: [
@@ -29,6 +30,16 @@ export const meta: BlogPostMeta = {
       question: "Is stamp duty payable again when authorised capital is increased?",
       answer:
         "Yes. MCA guidance lists form SH-7, used to notify an alteration of share capital, among the filings on which stamp duty is paid electronically through MCA21. For a Tamil Nadu company, the system computes the duty on the increase based on the state schedule, and the SRN is processed only after both the filing fee and stamp duty are paid.",
+    },
+    {
+      question: "Is stamp duty payable on a share transfer form SH-4?",
+      answer:
+        "Yes. Section 56 of the Companies Act, 2013 requires a duly stamped instrument of transfer, and SH-4 is the prescribed form for shares held in physical form. The MCA's e-stamp facility does not cover SH-4, so the duty is arranged outside MCA21 before the transferor and transferee sign and the form is lodged with the company.",
+    },
+    {
+      question: "Can I pay a shortfall in stamp duty after filing SPICe+ or SH-7?",
+      answer:
+        "Yes. The MCA's Pay Stamp Duty facility, under MCA Services and Fee and Payment Services after login, lets you pay stamp duty later within the challan's validity and pay any balance found to be deficient. You cannot, however, move duty already paid to a different state if the wrong state was selected.",
     },
   ],
 
@@ -104,7 +115,7 @@ export default function Body() {
         is the state&apos;s official site for stamp and registration matters.
       </p>
 
-      <h2>How the AoA slab works in practice</h2>
+      <h2>How does the AoA slab work in practice?</h2>
       <p>
         Because the AoA entry is charged per ten lakh rupees of authorised
         capital or part of it, the duty steps up in slabs rather than rising
@@ -121,7 +132,7 @@ export default function Body() {
         confirm the figure in SPICe+ before paying.
       </p>
 
-      <h2>Illustration: reading the entries for common capital amounts</h2>
+      <h2>What is the stamp duty at common capital amounts?</h2>
       <p>
         Applying the 2023 entries as published, the stamp duty on incorporation
         documents for a Tamil Nadu company would work out as below. These are
@@ -177,7 +188,7 @@ export default function Body() {
         lakh costs the same as Rs. 20 lakh.
       </p>
 
-      <h2>How SPICe+ computes and collects stamp duty</h2>
+      <h2>How does SPICe+ compute and collect stamp duty?</h2>
       <p>
         Part B of SPICe+ has a dedicated stamp duty block. Based on the state of
         the registered office and the authorised capital entered in the form,
@@ -199,7 +210,7 @@ export default function Body() {
         office state before you pay.
       </p>
 
-      <h2>Choosing authorised capital with stamp duty in mind</h2>
+      <h2>How should stamp duty shape your authorised capital?</h2>
       <p>
         Authorised capital is the ceiling on the shares a company can issue. It
         drives both the MCA filing fee (companies with authorised capital up to
@@ -216,18 +227,62 @@ export default function Body() {
         shows how the capital figure changes the fees.
       </p>
 
-      <h2>Stamp duty when you increase capital later</h2>
+      <h2>How is stamp duty worked out when authorised capital is increased?</h2>
+      <p>
+        <strong>
+          The company files SH-7 and pays the stamp duty on the increase
+          electronically through MCA21, which prefills the amount for a Tamil
+          Nadu company. The Tamil Nadu Article 10 entry has no separate wording
+          for increases, so we do not quote a figure for them; rely on the
+          amount the SH-7 stamp duty block computes before you pay.
+        </strong>
+      </p>
       <p>
         When authorised capital is increased, the company files SH-7 with the
         Registrar within thirty days of the alteration under section 64 of the
-        Companies Act, 2013. Stamp duty on the increase is collected
-        electronically through MCA21 at the same time, again computed by the
-        system using the Tamil Nadu schedule. Building this into your fundraising
-        plan avoids surprises. Ongoing filings like SH-7 are part of routine{" "}
+        Companies Act, 2013. The MCA&apos;s e-stamp FAQs list SH-7, alongside
+        SPICe+ Part B and FC-1, as a filing on which stamp duty must be paid
+        electronically through MCA21 for every state except Sikkim. As with
+        incorporation, a separate SRN and challan are generated for the stamp
+        duty, and the form is processed only after both the filing fee and the
+        duty are paid. If a shortfall is found later, the balance can be paid
+        through the Pay Stamp Duty facility under MCA Services. Build the SH-7
+        fee and duty into your fundraising plan; ongoing filings like this are
+        part of routine{" "}
         <Link href="/roc-compliances">ROC compliances</Link>.
       </p>
 
-      <h2>Other documents that attract stamp duty</h2>
+      <h2>Is stamp duty payable on a share transfer in form SH-4?</h2>
+      <p>
+        <strong>
+          Yes. Section 56 of the Companies Act, 2013 requires a proper, duly
+          stamped instrument of transfer, and rule 11 of the Companies (Share
+          Capital and Debentures) Rules, 2014 prescribes form SH-4 for shares
+          held in physical form. MCA21 does not collect this duty, so the
+          stamping has to be arranged before the form is executed and lodged
+          with the company.
+        </strong>
+      </p>
+      <p>
+        The MCA&apos;s e-stamp facility covers only SPICe+ Part B (with the MoA
+        and AoA), SH-7, FC-1 and certified copies obtained from the MCA, so a
+        share transfer between shareholders of a private company sits outside
+        it. The instrument must be executed by or on behalf of both the
+        transferor and the transferee and delivered to the company, which then
+        registers the transfer. In May 2026 the MCA also clarified that, under
+        rule 11(2), SH-4 is the form for transferring a member&apos;s interest
+        in a company without share capital, such as a company limited by
+        guarantee.
+      </p>
+      <p>
+        We have not printed a rate here. Duty on transfers of shares is set in
+        Schedule I to the Indian Stamp Act, 1899, and we could not confirm the
+        current entry against an official copy of the Act on the date of this
+        update. Confirm the rate on the consideration or value before the
+        transferor and transferee sign.
+      </p>
+
+      <h2>Which other documents attract stamp duty?</h2>
       <p>
         The MoA and AoA are not the only instruments. Share certificates issued
         to subscribers, rent agreements for the registered office, and
@@ -235,8 +290,54 @@ export default function Body() {
         schedule. The rates and the method of payment differ by instrument, so
         check each one separately rather than assuming SPICe+ covers it.
       </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Document</th>
+            <th>Duty for a Tamil Nadu entity</th>
+            <th>How it is paid</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Memorandum of Association (SPICe+)</td>
+            <td>Rs. 200 (Article 39)</td>
+            <td>Through MCA21, separate stamp duty challan</td>
+          </tr>
+          <tr>
+            <td>Articles of Association (SPICe+)</td>
+            <td>Rs. 500 per Rs. 10 lakh of authorised capital or part, up to Rs. 5 lakh (Article 10)</td>
+            <td>Through MCA21, separate stamp duty challan</td>
+          </tr>
+          <tr>
+            <td>Increase in authorised capital (SH-7)</td>
+            <td>Computed by MCA21 for the state</td>
+            <td>Through MCA21</td>
+          </tr>
+          <tr>
+            <td>Share transfer in physical form (SH-4)</td>
+            <td>Rate under Schedule I to the Indian Stamp Act; not quoted here</td>
+            <td>Outside MCA21, before execution</td>
+          </tr>
+          <tr>
+            <td>Certified copies obtained from the MCA</td>
+            <td>As computed by the portal</td>
+            <td>Through MCA21</td>
+          </tr>
+          <tr>
+            <td>Partnership deed (for comparison)</td>
+            <td>Rs. 1,000 where capital exceeds Rs. 500, as listed on tnreginet</td>
+            <td>Under the Tamil Nadu stamp law, outside MCA21</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        If you are choosing between a company and a firm, our page on{" "}
+        <Link href="/partnership-firm-registration-chennai">partnership firm registration in Chennai</Link>{" "}
+        sets out the Registration Department&apos;s fees for firms.
+      </p>
 
-      <h2>Common mistakes with stamp duty</h2>
+      <h2>What are the common stamp duty mistakes?</h2>
       <ul>
         <li><strong>Selecting the wrong state:</strong> the duty is credited to the state chosen and cannot be moved later</li>
         <li><strong>Assuming another state&apos;s rate:</strong> online calculators often show rates for a different state or an outdated Tamil Nadu schedule</li>
@@ -245,7 +346,7 @@ export default function Body() {
         <li><strong>Forgetting SH-7:</strong> raising authorised capital later without budgeting for the duty on the increase</li>
       </ul>
 
-      <h2>Where this fits in the overall cost</h2>
+      <h2>Where does stamp duty fit in the overall cost?</h2>
       <p>
         Stamp duty is one part of the government cost of incorporation. Our post
         on{" "}

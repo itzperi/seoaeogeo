@@ -24,6 +24,31 @@ const CHANGES = [
   { change: "Partner joins, retires or dies; firm dissolved", section: "Section 63", action: "Supplementary or retirement deed, notice to the Registrar, and updates to PAN, GST and bank records." },
 ];
 
+// Section 58(1)(a)-(f), 58(1) proviso on signatures, 58(2) verification and 58(3) restricted words,
+// Indian Partnership Act, 1932.
+const FORM_I_FIELDS = [
+  { field: "Firm name", law: "Section 58(1)(a)", tip: "Use exactly the name in the deed. Section 58(3) bars words such as Crown, Emperor, Empress, Empire, Imperial, King, Queen or Royal, or words implying government sanction or patronage, unless the State Government consents in writing." },
+  { field: "Place or principal place of business", law: "Section 58(1)(b)", tip: "Give the full address as it appears on the rent agreement or ownership proof. The statement goes to the Registrar for the area where a place of business is situated or proposed." },
+  { field: "Other places of business", law: "Section 58(1)(c)", tip: "List every branch or other place where the firm carries on business. Branches opened or closed later are reported by notice under Section 61." },
+  { field: "Date each partner joined", law: "Section 58(1)(d)", tip: "For a new firm this is usually the date of the deed. For an existing firm, take each date from the earlier deeds rather than guessing." },
+  { field: "Partners' full names and permanent addresses", law: "Section 58(1)(e)", tip: "Spell names as on PAN and ID proofs. A later change of a partner's name or permanent address needs a notice under Section 62." },
+  { field: "Duration of the firm", law: "Section 58(1)(f)", tip: "State a fixed term, a specific venture, or at will. Under Section 7, a firm with no provision for duration or determination is a partnership at will." },
+  { field: "Signatures and verification", law: "Section 58(1) and 58(2)", tip: "All partners, or agents they have specially authorised, sign the statement, and each signatory verifies it in the prescribed manner." },
+];
+
+// Fees as listed on tnreginet's Duty and Fees page (checked 13 November 2026).
+const FIRM_FEES = [
+  { item: "Statement to register the firm", law: "Section 58", fee: "Rs. 200" },
+  { item: "Change of firm name or principal place of business", law: "Section 60", fee: "Rs. 50" },
+  { item: "Opening or closing a branch", law: "Section 61", fee: "Rs. 50" },
+  { item: "Change in a partner's name or permanent address", law: "Section 62", fee: "Rs. 50" },
+  { item: "Change in constitution, dissolution, or a minor's election on majority", law: "Section 63", fee: "Rs. 50" },
+  { item: "Rectification of mistakes", law: "Section 64", fee: "Rs. 50" },
+  { item: "Stamp duty on the partnership instrument, capital up to Rs. 500", law: "Indian Stamp Act, as applied in Tamil Nadu", fee: "Rs. 50" },
+  { item: "Stamp duty on the partnership instrument, capital above Rs. 500", law: "Indian Stamp Act, as applied in Tamil Nadu", fee: "Rs. 1,000" },
+  { item: "Registration fee, only if the deed itself is registered as a document at a Sub-Registrar's office", law: "Tamil Nadu registration fees", fee: "1% of the capital" },
+];
+
 export default function Page() {
   return (
     <ServicePageTemplate
@@ -80,7 +105,12 @@ export default function Page() {
         {
           question: "How much stamp duty applies to a partnership deed in Tamil Nadu?",
           answer:
-            "Stamp duty on a partnership deed follows the Tamil Nadu stamp law and depends on factors such as the capital contributed. Rates are revised from time to time, so we confirm the current amount from the Registration Department before the deed is executed. Under-stamped deeds can be impounded, so this matters.",
+            "The Registration Department's tnreginet portal lists stamp duty of Rs. 1,000 on a partnership instrument where the capital exceeds Rs. 500, and Rs. 50 where it does not. The Indian Stamp (Tamil Nadu Amendment) Act, 2023 raised the earlier Rs. 300 rate. Under-stamped deeds can be impounded, so check the current figure before signing.",
+        },
+        {
+          question: "What is the government fee to register a partnership firm on tnreginet?",
+          answer:
+            "tnreginet's Duty and Fees page lists Rs. 200 for filing the Section 58 statement that registers a firm, and Rs. 50 for each later statement or notice, such as a change of address, a new branch or a partner retiring. Stamp duty on the deed is separate, and none of these figures includes professional fees.",
         },
         {
           question: "How many partners can a partnership firm have?",
@@ -124,6 +154,130 @@ export default function Page() {
           incorporating a Pvt Ltd company in Chennai
         </Link>{" "}
         covers the process.
+      </p>
+
+      <h2 className="mt-14 text-2xl text-obsidian">How does partnership firm registration in Tamil Nadu work?</h2>
+      <p className="mt-4 max-w-3xl font-medium leading-relaxed text-obsidian">
+        In Tamil Nadu, a firm is registered with the Registrar of Firms in the Registration Department. The partners file a
+        statement under Section 58 of the Indian Partnership Act, 1932 in Form No. I, with the Rs. 200 fee listed on tnreginet. Once
+        satisfied, the Registrar records the firm in the Register of Firms under Section 59.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Section 58 allows a firm to register at any time, not only when it starts, by delivering the statement to the Registrar for
+        the area in which any of its places of business is situated or proposed. Section 59 then requires the Registrar, once
+        satisfied that Section 58 has been complied with, to record an entry of the statement in the Register of Firms and file it.
+        Later changes are recorded through the statements and notices in Sections 60 to 63, each with its own fee. The state&apos;s
+        portal is{" "}
+        <a href="https://tnreginet.gov.in/portal/" target="_blank" rel="noopener noreferrer" className="text-royal-violet underline underline-offset-2">
+          tnreginet
+        </a>
+        , where firm registration sits alongside document, society and chit fund registration.
+      </p>
+
+      <h2 className="mt-14 text-2xl text-obsidian">How do you apply for partnership firm registration on tnreginet?</h2>
+      <p className="mt-4 max-w-3xl font-medium leading-relaxed text-obsidian">
+        Firm registration is one of the online services on tnreginet. You register as a user, choose firm registration, enter the
+        Form No. I particulars, upload the stamped and signed deed with the partners&apos; ID proofs, and pay the fee online. The
+        District Registrar&apos;s office then scrutinises the application and raises any queries on the portal.
+      </p>
+      <ol className="mt-4 max-w-3xl list-decimal space-y-3 pl-5 text-slate">
+        <li>Stamp and execute the partnership deed first, so the registered particulars match a deed that already exists.</li>
+        <li>Create a user account on tnreginet and log in. The portal&apos;s Help section carries user manuals for its services.</li>
+        <li>Open the firm registration service and enter the firm name, places of business, partners, joining dates and duration exactly as in the deed.</li>
+        <li>Upload the deed and the partners&apos; ID and address proofs, with proof of the principal place of business where the portal asks for it.</li>
+        <li>Pay the Rs. 200 registration fee online.</li>
+        <li>Track the application and answer any query from the Registrar&apos;s office on the portal.</li>
+        <li>Once the firm is entered in the Register of Firms, apply for the firm&apos;s PAN and open its bank account.</li>
+      </ol>
+
+      <h2 className="mt-14 text-2xl text-obsidian">What goes into Form No. I, field by field?</h2>
+      <p className="mt-4 max-w-3xl font-medium leading-relaxed text-obsidian">
+        Form No. I is the statement Section 58 requires. It records the firm name, the place or principal place of business, any
+        other places of business, the date each partner joined, every partner&apos;s full name and permanent address, and the
+        duration of the firm. All partners, or agents they specially authorise, sign and verify it.
+      </p>
+      <div className="mt-6 overflow-x-auto rounded-cards border border-ash">
+        <table className="w-full min-w-[640px] border-collapse text-sm">
+          <thead>
+            <tr className="bg-fog text-left">
+              <th className="p-4 font-medium text-obsidian">Field</th>
+              <th className="p-4 font-medium text-obsidian">Indian Partnership Act</th>
+              <th className="p-4 font-medium text-obsidian">How to fill it</th>
+            </tr>
+          </thead>
+          <tbody className="bg-paper">
+            {FORM_I_FIELDS.map((row) => (
+              <tr key={row.field} className="border-t border-ash">
+                <td className="p-4 font-medium text-obsidian">{row.field}</td>
+                <td className="p-4 text-slate">{row.law}</td>
+                <td className="p-4 text-slate">{row.tip}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 className="mt-14 text-2xl text-obsidian">What clauses should a partnership deed include?</h2>
+      <p className="mt-4 max-w-3xl font-medium leading-relaxed text-obsidian">
+        Write down every term you do not want the Act to decide for you. Under Section 13, unless the partners agree otherwise, no
+        partner is paid for working in the business, profits and losses are shared equally, interest on capital comes only out of
+        profits, and advances beyond agreed capital earn six per cent a year.
+      </p>
+      <ul className="mt-4 max-w-3xl space-y-3 text-slate">
+        <li>• <strong>Name, place and nature of business:</strong> identical to what goes into Form No. I.</li>
+        <li>• <strong>Duration:</strong> a fixed term, a particular venture, or at will (Section 7). Under Section 42, a firm for a fixed term or a venture is dissolved when the term expires or the venture is completed, unless the deed says otherwise.</li>
+        <li>• <strong>Capital:</strong> what each partner brings, in cash or in kind, and whether interest is paid on it.</li>
+        <li>• <strong>Profit and loss ratio:</strong> otherwise equal shares apply under Section 13(b).</li>
+        <li>• <strong>Remuneration of working partners:</strong> otherwise none is payable under Section 13(a).</li>
+        <li>• <strong>Interest on loans by partners:</strong> otherwise six per cent a year under Section 13(d).</li>
+        <li>• <strong>Management and signing powers:</strong> who operates the bank account, signs contracts and borrows. Section 12 lets every partner take part in the business unless the deed provides otherwise.</li>
+        <li>• <strong>Non-compete:</strong> Section 11(2) allows the deed to stop a partner carrying on any other business while a partner.</li>
+        <li>• <strong>Admission of partners:</strong> Section 31 requires the consent of all existing partners unless the deed sets another rule.</li>
+        <li>• <strong>Retirement and expulsion:</strong> Section 32 lets a partner retire with everyone&apos;s consent, under an express agreement, or by written notice in a partnership at will. Section 33 permits expulsion only under a power in the deed, used in good faith.</li>
+        <li>• <strong>Death or insolvency of a partner:</strong> Section 42 dissolves the firm on a partner&apos;s death or insolvency, subject to contract, so add a continuation clause and a method of valuing the outgoing share.</li>
+        <li>• <strong>Minors:</strong> a minor can only be admitted to the benefits of partnership (Section 30), with the consent of all partners.</li>
+        <li>• <strong>Books, accounts and disputes:</strong> where the books are kept, the accounting year, and how disagreements are settled.</li>
+      </ul>
+
+      <h2 className="mt-14 text-2xl text-obsidian">What government fees apply to a partnership firm in Tamil Nadu?</h2>
+      <p className="mt-4 max-w-3xl font-medium leading-relaxed text-obsidian">
+        tnreginet&apos;s Duty and Fees page lists Rs. 200 for filing the Section 58 statement that registers a firm and Rs. 50 for
+        each later statement or notice under Sections 60 to 64. Stamp duty on the partnership instrument is Rs. 1,000 where the
+        capital exceeds Rs. 500. These are government charges only.
+      </p>
+      <div className="mt-6 overflow-x-auto rounded-cards border border-ash">
+        <table className="w-full min-w-[640px] border-collapse text-sm">
+          <thead>
+            <tr className="bg-fog text-left">
+              <th className="p-4 font-medium text-obsidian">Item</th>
+              <th className="p-4 font-medium text-obsidian">Law</th>
+              <th className="p-4 font-medium text-obsidian">Government fee or duty</th>
+            </tr>
+          </thead>
+          <tbody className="bg-paper">
+            {FIRM_FEES.map((row) => (
+              <tr key={row.item} className="border-t border-ash">
+                <td className="p-4 font-medium text-obsidian">{row.item}</td>
+                <td className="p-4 text-slate">{row.law}</td>
+                <td className="p-4 text-slate">{row.fee}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Figures are as listed on the Registration Department&apos;s portal on 13 November 2026; the state revises them from time to
+        time. The Indian Stamp (Tamil Nadu Amendment) Act, 2023 raised the partnership duty from Rs. 300 to Rs. 1,000. Registering
+        the firm with the Registrar of Firms and registering the deed as a document at a Sub-Registrar&apos;s office are separate
+        steps, and the 1% registration fee applies only to the second. If the partners later want limited liability, see{" "}
+        <Link href="/blog/convert-partnership-firm-to-llp" className="text-royal-violet underline underline-offset-2">
+          converting a partnership firm into an LLP
+        </Link>{" "}
+        and our{" "}
+        <Link href="/llp-registration-chennai" className="text-royal-violet underline underline-offset-2">
+          LLP registration
+        </Link>{" "}
+        page.
       </p>
 
       <h2 className="mt-14 text-2xl text-obsidian">What compliance applies after registration?</h2>

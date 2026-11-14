@@ -5,8 +5,9 @@ export const meta: BlogPostMeta = {
   slug: "government-fees-company-registration",
   title: "Government Fees for Company Registration in India (2026)",
   description:
-    "The statutory costs of registering a company: MCA filing fees, the zero-fee band, name reservation, PAN and TAN, stamp duty and DSC. Government charges only.",
+    "Statutory costs of registering a company in India: MCA fee and zero-fee band, name reservation, PAN, TAN, Tamil Nadu stamp duty, OPC and DSC.",
   date: "2026-10-20",
+  updated: "2026-11-13",
   excerpt:
     "A breakdown of the statutory, government-side costs of incorporating a company: MCA filing fee, name reservation, PAN, TAN, stamp duty and DSC.",
   faqs: [
@@ -30,6 +31,16 @@ export const meta: BlogPostMeta = {
       answer:
         "Not strictly. A DSC is issued by a licensed Certifying Authority under the Information Technology Act, and its price is set by the Certifying Authority or its agent rather than by the MCA. The cost varies with the validity period and token, so treat it as a necessary third-party cost and compare quotes.",
     },
+    {
+      question: "What is the government fee to register a One Person Company?",
+      answer:
+        "An OPC is incorporated through SPICe+, so the MCA's zero filing fee applies when authorised capital is up to Rs. 15 lakh. You still pay Rs. 66 for PAN, Rs. 65 for TAN and the state stamp duty on the MoA and AoA, which in Tamil Nadu is Rs. 700 at Rs. 10 lakh of capital.",
+    },
+    {
+      question: "How are the SPICe+ fee and stamp duty paid?",
+      answer:
+        "SPICe+ generates two challans, one for the MCA fee, PAN and TAN and a separate one for stamp duty. Both can be paid online or offline at an authorised bank within the challan's validity. The MCA starts processing only after both payments are confirmed, and the state chosen for stamp duty cannot be changed after payment.",
+    },
   ],
   summary:
     "Government costs of company registration are the MCA SPICe+ filing fee, which is zero for authorised capital up to Rs. 15 lakh, the PAN and TAN charges collected through one consolidated challan, a separate name reservation fee if used, and state stamp duty. Digital Signature Certificates are market-priced. Professional fees are excluded from these statutory figures.",
@@ -52,7 +63,7 @@ export default function Body() {
         current amount on the MCA portal before you pay.
       </p>
 
-      <h2>Summary of statutory costs</h2>
+      <h2>What are the statutory costs of registering a company?</h2>
       <table>
         <thead>
           <tr>
@@ -93,6 +104,11 @@ export default function Body() {
             <td>Varies by state; in Tamil Nadu linked to authorised capital for the AoA</td>
           </tr>
           <tr>
+            <td>One Person Company (OPC) incorporated through SPICe+</td>
+            <td>MCA</td>
+            <td>Same SPICe+ rule: zero filing fee for authorised capital up to Rs. 15 lakh; PAN, TAN and stamp duty still apply</td>
+          </tr>
+          <tr>
             <td>GSTIN, EPFO, ESIC and bank account via AGILE-PRO-S</td>
             <td>Respective agencies</td>
             <td>No fee</td>
@@ -105,7 +121,7 @@ export default function Body() {
         </tbody>
       </table>
 
-      <h2>How the MCA filing fee works</h2>
+      <h2>How does the MCA filing fee work?</h2>
       <p>
         The MCA&apos;s{" "}
         <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/spiceplus-linked-filings.html" target="_blank" rel="noopener noreferrer">SPICe+ FAQs</a>{" "}
@@ -130,7 +146,93 @@ export default function Body() {
         is more reliable than any third-party table.
       </p>
 
-      <h2>Name reservation: when do you pay Rs. 1,000?</h2>
+      <h2>What does a Tamil Nadu company pay at common capital levels?</h2>
+      <p>
+        <strong>
+          For a Tamil Nadu company with authorised capital up to Rs. 15 lakh,
+          the MCA filing fee is zero, so the government charges are Rs. 131 for
+          PAN and TAN plus state stamp duty: Rs. 700 at Rs. 1 lakh or Rs. 10
+          lakh of capital, and Rs. 1,200 at Rs. 15 lakh. Digital signatures and
+          any separate name reservation are extra.
+        </strong>
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Authorised capital</th>
+            <th>MCA filing fee</th>
+            <th>PAN and TAN</th>
+            <th>Tamil Nadu stamp duty (MoA + AoA)</th>
+            <th>Government total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Rs. 1 lakh</td>
+            <td>Nil</td>
+            <td>Rs. 131</td>
+            <td>Rs. 700</td>
+            <td>Rs. 831</td>
+          </tr>
+          <tr>
+            <td>Rs. 10 lakh</td>
+            <td>Nil</td>
+            <td>Rs. 131</td>
+            <td>Rs. 700</td>
+            <td>Rs. 831</td>
+          </tr>
+          <tr>
+            <td>Rs. 15 lakh</td>
+            <td>Nil</td>
+            <td>Rs. 131</td>
+            <td>Rs. 1,200</td>
+            <td>Rs. 1,331</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        The stamp duty column applies the Tamil Nadu entries of Rs. 200 for the
+        MoA and Rs. 500 for every Rs. 10 lakh of authorised capital or part of
+        it for the AoA, explained in our{" "}
+        <Link href="/blog/tamil-nadu-stamp-duty-company-incorporation">Tamil Nadu stamp duty</Link>{" "}
+        post. Above Rs. 15 lakh the MCA fee is no longer nil and depends on the
+        slab in the fee rules, so we have not extended the table; the{" "}
+        <Link href="/tools/company-registration-government-fee-calculator">government fee calculator</Link>{" "}
+        and the MCA&apos;s Enquire Fees service cover higher amounts. The
+        figure SPICe+ shows before you pay is the one that counts.
+      </p>
+
+      <h2>What are the government fees for OPC and LLP registration?</h2>
+      <p>
+        <strong>
+          A One Person Company is incorporated through SPICe+ like any other
+          company, so the MCA&apos;s zero filing fee for authorised capital up
+          to Rs. 15 lakh applies, plus stamp duty and the PAN and TAN charges.
+          An LLP is incorporated through a different form, FiLLiP, under the
+          LLP rules, and its fee should be checked on the MCA&apos;s Enquire
+          Fees service.
+        </strong>
+      </p>
+      <p>
+        For an OPC, the only structural difference in SPICe+ Part B is a
+        separate nomination block for the nominee, whose identity and address
+        proof is attached alongside the member&apos;s. The MCA&apos;s SPICe+
+        FAQs also warn that an OPC application may be rejected if its objects
+        contain words such as issue shares, debentures or make investments,
+        contrary to rule 3(6) of the Incorporation Rules. See{" "}
+        <Link href="/opc-registration-chennai">OPC registration in Chennai</Link>{" "}
+        for the process.
+      </p>
+      <p>
+        For an LLP, we have deliberately not printed fee figures here, because
+        we could not confirm the current fee schedule against an official copy
+        of the LLP rules on the date of this update. Names for new LLPs are
+        reserved through the separate RUN-LLP service. Our{" "}
+        <Link href="/llp-registration-chennai">LLP registration</Link> page
+        covers the steps.
+      </p>
+
+      <h2>When do you pay the Rs. 1,000 name reservation fee?</h2>
       <p>
         You pay the Rs. 1,000 name reservation fee only if you file SPICe+ Part A
         on its own to reserve the name first. If you file Part A and Part B
@@ -144,7 +246,7 @@ export default function Body() {
         explains how to improve your chances at this stage.
       </p>
 
-      <h2>Stamp duty: the state component</h2>
+      <h2>How does state stamp duty fit in?</h2>
       <p>
         Stamp duty on the MoA and AoA is levied by the state where the
         registered office is located and is collected electronically through
@@ -154,7 +256,7 @@ export default function Body() {
         <Link href="/blog/tamil-nadu-stamp-duty-company-incorporation">stamp duty for company incorporation in Tamil Nadu</Link>.
       </p>
 
-      <h2>Digital Signature Certificates: the cost basis</h2>
+      <h2>What decides the cost of Digital Signature Certificates?</h2>
       <p>
         Every subscriber and director who signs the incorporation forms needs a
         Class 3 Digital Signature Certificate. DSCs are issued by Certifying
@@ -174,7 +276,7 @@ export default function Body() {
         page explains the application steps.
       </p>
 
-      <h2>What the zero-fee band does and does not cover</h2>
+      <h2>What does the zero-fee band cover, and what does it not?</h2>
       <p>
         The zero filing fee for companies with authorised capital up to Rs. 15
         lakh is valuable, but it is often misunderstood. It covers the MCA fee
@@ -194,7 +296,7 @@ export default function Body() {
         fee and stamp duty.
       </p>
 
-      <h2>How to check the exact fee before filing</h2>
+      <h2>How do you check the exact fee before filing?</h2>
       <p>
         Rather than relying on tables published online, use the MCA&apos;s own
         tools:
@@ -212,7 +314,32 @@ export default function Body() {
         ready.
       </p>
 
-      <h2>Costs that are not government fees but often appear in quotes</h2>
+      <h2>How are the MCA fee and stamp duty paid?</h2>
+      <p>
+        <strong>
+          SPICe+ generates two challans: one for the MCA fee, PAN and TAN, and
+          a separate one with its own SRN for stamp duty. Both can be paid by
+          net banking, credit or debit card, NEFT, or offline at an authorised
+          bank. The MCA does not start processing the form until both payments
+          are confirmed.
+        </strong>
+      </p>
+      <p>
+        According to the MCA&apos;s{" "}
+        <a href="https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/payment2/estamp.html" target="_blank" rel="noopener noreferrer">e-stamp FAQs</a>,
+        the two challans need not be paid at the same moment, but both must be
+        paid within the challan&apos;s validity; if one is left unpaid, the
+        transaction is cancelled once that validity expires. If you pay the
+        MCA fee online and do not pay the stamp duty straight away, the Pay
+        Stamp Duty facility under MCA Services and Fee and Payment Services
+        lets you pay it later within the same validity, and also pay any
+        shortfall found afterwards. Stamp duty with paise is rounded up to the
+        next rupee. Two points cost founders money: the state chosen for stamp
+        duty cannot be changed after payment, and any refund of stamp duty is
+        handled by that state government under its own rules, not by the MCA.
+      </p>
+
+      <h2>Which costs in a quote are not government fees?</h2>
       <p>
         When you compare quotes, separate the following from statutory charges:
       </p>
@@ -223,7 +350,7 @@ export default function Body() {
         <li>Professional fees for drafting, filing and certification</li>
       </ul>
 
-      <h2>Government fees after incorporation</h2>
+      <h2>What government fees apply after incorporation?</h2>
       <p>
         Statutory costs continue after the certificate of incorporation. INC-20A
         (declaration for commencement of business), ADT-1, annual returns and
@@ -240,7 +367,7 @@ export default function Body() {
         <Link href="/annual-compliance-package">annual compliance package</Link>.
       </p>
 
-      <h2>A quick worked checklist</h2>
+      <h2>What should your fee checklist include?</h2>
       <ul>
         <li>Decide authorised capital and check whether it is within the Rs. 15 lakh zero-fee band</li>
         <li>Decide whether to reserve the name separately (Rs. 1,000) or file Part A and B together</li>
