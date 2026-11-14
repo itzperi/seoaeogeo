@@ -6,7 +6,7 @@ import Calculator from "./Calculator";
 const PATH = "/tools/company-registration-government-fee-calculator";
 const TITLE = "Company Registration Government Fee Calculator | TN";
 const DESCRIPTION =
-  "Estimate government fees to register a Private Limited, OPC or LLP in Tamil Nadu: SPICe+ fee, name reservation, stamp duty, PAN and TAN. Statutory charges only.";
+  "Estimate government fees to register a Private Limited, OPC or LLP in Tamil Nadu: SPICe+ fee, name reservation, stamp duty, PAN and TAN. Statutory fees only.";
 const H1 = "Company Registration Government Fee Calculator";
 
 export const metadata: Metadata = {

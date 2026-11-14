@@ -10,7 +10,7 @@ const market = getBookkeepingMarket(PATH.slice(1))!;
 export const metadata: Metadata = {
   title: { absolute: "Outsourced Bookkeeping for US Small Businesses | QuickBooks" },
   description:
-    "Monthly QuickBooks Online or Xero bookkeeping, catch-up clean-ups, 1099 tracking and a year-end package for your CPA, kept by a Chartered Accountancy team in Chennai.",
+    "Monthly QuickBooks Online or Xero bookkeeping, catch-up clean-ups, 1099 tracking and a year-end package for your CPA, kept by a CA team in Chennai, India.",
   alternates: { canonical: PATH },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

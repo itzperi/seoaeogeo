@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "gst-registration-after-company-incorporation",
-  title: "GST Registration After Company Incorporation",
+  title: "GST Registration After Company Incorporation: When and How",
   description:
     "When a new company needs GST registration, the AGILE-PRO-S option at incorporation, Tamil Nadu thresholds, compulsory cases, documents and the process.",
   date: "2027-01-08",

@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Private Limited Company Registration in Erode | CA" },
   description:
-    "Company registration in Erode for turmeric traders, handloom and textile units, handled online from our Chennai office: SPICe+, ROC Coimbatore, GST, FSSAI, IEC.",
+    "Company registration in Erode for turmeric traders, handloom and textile units, handled online from our Chennai office: SPICe+, ROC Coimbatore, GST, IEC.",
   alternates: { canonical: "/company-registration-erode" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

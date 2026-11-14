@@ -11,7 +11,7 @@ export const meta: BlogPostMeta = {
   slug: "income-tax-act-2025-section-mapping",
   title: "Income-tax Act 2025: Old vs New Section and Form Numbers",
   description:
-    "Section 44AB is now 63, 195 is 393(2), 54 is 82, Form 15CA is 145 and Form 3CEB is 48. A table of 1961 to 2025 section, form and rule numbers.",
+    "Section 44AB is now 63, 195 is 393(2), 54 is 82, Form 15CA is 145 and Form 3CEB is 48. A table of 1961 to 2025 section, form and rule numbers for each topic.",
   date: "2026-11-13",
   excerpt:
     "The Income-tax Act, 2025 renumbers most sections and forms from tax year 2026-27. A lookup table of old and new numbers for audit, TDS, capital gains, notices and transfer pricing.",

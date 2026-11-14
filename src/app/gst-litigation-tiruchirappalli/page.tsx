@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 
 const title = "GST Litigation & GSTAT Appeals in Tiruchirappalli | CA Firm";
 const description =
-  "GST notices and appeals for Trichy engineering units and works contractors: rate and TDS disputes, ITC on works contracts, APL-01 and GSTAT appeals.";
+  "GST notices and appeals for Trichy engineering units and works contractors: rate and TDS disputes, ITC on works contracts, APL-01 and GSTAT appeals, online.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

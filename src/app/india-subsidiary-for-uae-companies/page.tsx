@@ -8,7 +8,7 @@ import { SITE_URL } from "@/lib/site";
 const slug = "/india-subsidiary-for-uae-companies";
 const title = "India Subsidiary for UAE Companies: Setup, FDI and Tax";
 const description =
-  "Set up an Indian subsidiary from the UAE: mainland or free-zone parent, MOFA and Indian mission attestation, FDI route, FC-GPR, India–UAE treaty, NRI founders.";
+  "Set up an Indian subsidiary from the UAE: mainland or free-zone parent, document attestation, FDI route, FC-GPR, the India-UAE tax treaty and NRI founders.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

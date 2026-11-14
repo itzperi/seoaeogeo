@@ -37,7 +37,7 @@ export default function FooterLogoGesture() {
       className="cursor-default"
     >
       <Image
-        src="/images/ca-india-badge.png"
+        src="/images/ca-india-badge.webp"
         alt="Chartered Accountancy practice"
         width={35}
         height={32}

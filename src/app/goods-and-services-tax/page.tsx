@@ -19,9 +19,9 @@ const GST_STEPS = [
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/goods-and-services-tax`;
-const title = "GST Consultants in Chennai | C S Rushil & Co.";
+const title = "GST Consultants in Chennai | Returns, Notices & Appeals";
 const description =
-  "GST consultants in Chennai for registration, GSTR-1 and 3B returns, GSTR-9/9C, ITC reconciliation, LUT for exporters, notice replies, appeals and cancellation.";
+  "GST consultants in Chennai for registration, GSTR-1 and 3B returns, GSTR-9/9C, ITC reconciliation, LUT for exporters, notice replies, appeals, cancellation.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

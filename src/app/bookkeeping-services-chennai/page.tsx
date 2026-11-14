@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Bookkeeping Services in Chennai | Cloud Accounting" },
   description:
-    "Cloud accounting on Zoho Books, Tally Prime, QuickBooks, or Xero — monthly books close, MIS reporting, and backlog clean-up for Chennai businesses.",
+    "Cloud accounting on Zoho Books, Tally Prime, QuickBooks or Xero for Chennai businesses: monthly books close, MIS reporting and clean-up of backlog accounts.",
   alternates: { canonical: "/bookkeeping-services-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

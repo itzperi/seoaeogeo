@@ -11,7 +11,7 @@ const h2 = "mt-14 text-2xl text-obsidian";
 const p = "mt-4 max-w-3xl leading-relaxed text-slate";
 
 export const metadata: Metadata = {
-  title: { absolute: "India Tax for NRIs in Singapore: ITR, DTAA, RNOR" },
+  title: { absolute: "Indian Tax Services for NRIs in Singapore: ITR, DTAA, RNOR" },
   description:
     "Indian tax for NRIs in Singapore: India–Singapore DTAA, IRAS Certificate of Residence and Form 10F, RSU/ESOP, CPF on return, RNOR and Chennai property TDS.",
   alternates: { canonical: slug },

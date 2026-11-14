@@ -6,7 +6,7 @@ import { BOOKING_LINK, SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Private Limited Company Registration in Kanchipuram | CA" },
   description:
-    "Pvt Ltd company registration in Kanchipuram for Sriperumbudur–Oragadam suppliers and silk businesses, handled online from Anna Nagar: SPICe+, ROC Chennai, GST.",
+    "Pvt Ltd company registration in Kanchipuram for Sriperumbudur and Oragadam suppliers and silk businesses, handled online from Anna Nagar: SPICe+, ROC, GST.",
   alternates: { canonical: "/company-registration-kanchipuram" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

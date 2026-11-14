@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "what-virtual-cfo-reviews-monthly",
-  title: "What a Virtual CFO Actually Reviews Every Month",
+  title: "What a Virtual CFO Actually Reviews Every Month: A Checklist",
   description:
     "Business owners considering Virtual CFO support often aren't sure what it actually involves month to month. Here's what a genuine monthly review covers.",
   date: "2026-09-19",

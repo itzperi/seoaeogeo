@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "msme-udyam-registration-checklist",
   title: "MSME Udyam Registration After Incorporation: A Checklist",
   description:
-    "Udyam registration for new companies: 2025 MSME limits, documents, the 45-day payment rule under Section 43B(h), the MSME-1 return and key benefits.",
+    "Udyam registration for new companies: the 2025 MSME limits, documents, the 45-day payment rule under Section 43B(h), the MSME-1 return and the key benefits.",
   date: "2026-09-19",
   updated: "2026-11-13",
   excerpt:

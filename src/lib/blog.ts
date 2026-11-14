@@ -207,7 +207,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "increase-authorised-capital-sh-7",
     title: "Increase in Authorised Capital: SH-7, MCA Fee and Stamp Duty",
     description:
-      "Increasing authorised capital: Section 61, the resolution and MGT-14, SH-7 within 30 days, the MCA fee on the increase and Tamil Nadu stamp duty.",
+      "How to increase authorised capital: Section 61, the resolution and MGT-14, SH-7 within 30 days, the MCA fee on the increase and Tamil Nadu stamp duty.",
     date: "2026-11-14",
     excerpt:
       "Raising authorised capital takes a members' resolution, an SH-7 filing within 30 days, an MCA fee worked out on the difference in capital and, in Tamil Nadu, stamp duty on the increase.",
@@ -280,7 +280,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "income-tax-act-2025-section-mapping",
     title: "Income-tax Act 2025: Old vs New Section and Form Numbers",
     description:
-      "Section 44AB is now 63, 195 is 393(2), 54 is 82, Form 15CA is 145 and Form 3CEB is 48. A table of 1961 to 2025 section, form and rule numbers.",
+      "Section 44AB is now 63, 195 is 393(2), 54 is 82, Form 15CA is 145 and Form 3CEB is 48. A table of 1961 to 2025 section, form and rule numbers for each topic.",
     date: "2026-11-13",
     excerpt:
       "The Income-tax Act, 2025 renumbers most sections and forms from tax year 2026-27. A lookup table of old and new numbers for audit, TDS, capital gains, notices and transfer pricing.",
@@ -336,7 +336,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "eway-bill-detention-section-129-appeal",
     title: "E-Way Bill Detention Under Section 129: Release and Appeal",
     description:
-      "Goods detained under Section 129 in Tamil Nadu: the MOV forms, current penalty amounts, paying for release vs contesting, and the appeal with a 10% pre-deposit.",
+      "Goods detained under Section 129 in Tamil Nadu: the MOV forms, current penalty amounts, paying for release vs contesting, and the appeal and 10% pre-deposit.",
     date: "2026-10-12",
     updated: "2026-11-14",
     excerpt:
@@ -375,7 +375,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "tamil-nadu-stamp-duty-company-incorporation",
     title: "Stamp Duty on Company Incorporation in Tamil Nadu (2026)",
     description:
-      "Stamp duty on MoA and AoA in Tamil Nadu, how SPICe+ collects it, and the duty on increasing authorised capital (SH-7) and share transfers (SH-4).",
+      "Stamp duty on MoA and AoA in Tamil Nadu, how SPICe+ collects it, and the duty on increasing authorised capital (SH-7) and on share transfers (SH-4) explained.",
     date: "2026-10-16",
     updated: "2026-11-13",
     excerpt:
@@ -385,7 +385,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "government-fees-company-registration",
     title: "Government Fees for Company Registration in India (2026)",
     description:
-      "Statutory costs of registering a company in India: MCA fee and zero-fee band, name reservation, PAN, TAN, Tamil Nadu stamp duty, OPC and DSC.",
+      "Statutory costs of registering a company in India: the MCA fee and zero-fee band, name reservation, PAN, TAN, Tamil Nadu stamp duty, OPC rules and DSC.",
     date: "2026-10-20",
     updated: "2026-11-13",
     excerpt:
@@ -395,7 +395,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "nri-director-private-limited-company",
     title: "NRI as Director of an Indian Private Limited Company",
     description:
-      "How NRIs can be directors and shareholders of an Indian private limited company: DIN, attested documents, the 182-day resident director rule and FDI reporting.",
+      "How NRIs can be directors and shareholders of an Indian private limited company: DIN, attested documents, the 182-day resident director rule, FDI reporting.",
     date: "2026-10-23",
     excerpt:
       "NRIs can be directors and shareholders of an Indian company. Here is how DIN, document attestation, the resident director rule and FDI reporting work.",
@@ -411,7 +411,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "registered-office-at-home-company",
-    title: "Can Your Home Be a Company's Registered Office?",
+    title: "Can Your Home Be a Company's Registered Office in India?",
     description:
       "Using a home, rented flat or co-working space as a company's registered office: the NOC, utility bill and rent agreement MCA expects, and when INC-22 applies.",
     date: "2026-10-30",
@@ -420,7 +420,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "company-registration-timeline-day-by-day",
-    title: "Company Registration Timeline: A Day-by-Day Guide",
+    title: "Company Registration Timeline in India: A Day-by-Day Guide",
     description:
       "A realistic 7 to 12 working day timeline for registering a private limited company through SPICe+, step by step, and the common issues that cause delays.",
     date: "2026-11-03",
@@ -465,7 +465,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "inc-20a-commencement-of-business",
-    title: "INC-20A: Declaration for Commencement of Business",
+    title: "INC-20A Filing: Declaration for Commencement of Business",
     description:
       "INC-20A explained: the 180-day deadline under section 10A, documents and photos needed, who certifies it, penalties for missing it and the strike-off risk.",
     date: "2026-11-17",
@@ -477,13 +477,13 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "MTD for Income Tax: What Records Sole Traders Need From 2026",
     description:
       "MTD for Income Tax starts 6 April 2026 above £50,000 of qualifying income. What digital records sole traders and landlords keep, and who sends the updates.",
-    date: "2026-11-19",
+    date: "2027-01-22",
     excerpt:
       "From 6 April 2026, sole traders and landlords over £50,000 of qualifying income keep digital records and send quarterly updates. What that means for your books.",
   },
   {
     slug: "first-board-meeting-checklist",
-    title: "First Board Meeting Checklist for a New Company",
+    title: "First Board Meeting Checklist for a New Company in India",
     description:
       "What to cover at a new company's first board meeting: the 30-day deadline, agenda items, director disclosures, statutory registers and share certificates.",
     date: "2026-11-20",
@@ -504,15 +504,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Can an Overseas Bookkeeper Do My BAS? What the Law Allows",
     description:
       "Under the Tax Agent Services Act, BAS work for a fee needs a registered agent. What an offshore bookkeeper can do, what needs supervision, and Payday Super.",
-    date: "2026-11-26",
+    date: "2027-01-26",
     excerpt:
       "An offshore bookkeeper can keep and reconcile your books, but BAS services for a fee need a registered BAS or tax agent who supervises, lodges and stays responsible.",
   },
   {
     slug: "opening-current-account-new-company",
-    title: "Opening a Current Account for a New Company",
+    title: "Opening a Current Account for a New Company: KYC and Steps",
     description:
-      "How a new company opens its current account: the AGILE-PRO-S request in SPICe+, the KYC documents banks must collect under RBI rules, and tips to avoid delays.",
+      "How a new company opens its current account: the AGILE-PRO-S request in SPICe+, the KYC documents banks must collect under RBI rules, and how to avoid delays.",
     date: "2026-11-27",
     excerpt:
       "Every new company applies for a bank account through AGILE-PRO-S. Here is how that works, which KYC documents banks ask for, and how to avoid delays.",
@@ -531,7 +531,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "UAE E-Invoicing 2027: What to Fix in Your Books Now",
     description:
       "UAE B2B e-invoicing starts in 2027 through an Accredited Service Provider. The go-live dates, plus the TRN, customer, item and credit-note data to fix first.",
-    date: "2026-12-03",
+    date: "2026-12-08",
     excerpt:
       "B2B e-invoicing in the UAE goes live from 1 January 2027 for the largest businesses and 1 July 2027 for the rest. A practical checklist of what to clean up in your books first.",
   },
@@ -539,7 +539,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "convert-partnership-firm-to-llp",
     title: "Convert a Partnership Firm to an LLP: Form 17 Guide",
     description:
-      "How a partnership firm converts into an LLP under the Second Schedule of the LLP Act: Form 17, eligibility, Form 14, and what happens to contracts and licences.",
+      "How a partnership firm converts into an LLP under the Second Schedule of the LLP Act: Form 17, eligibility, Form 14 and what happens to contracts, licences.",
     date: "2026-12-04",
     excerpt:
       "A firm can convert into an LLP if every partner becomes a partner of the LLP. Here is how Form 17 works and what carries over automatically.",
@@ -549,7 +549,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     title: "Convert an LLP to a Private Limited Company (URC-1)",
     description:
       "How an LLP becomes a private limited company under section 366 of the Companies Act: URC-1, newspaper notice, creditor consent, tax conditions and next steps.",
-    date: "2026-12-08",
+    date: "2027-01-29",
     excerpt:
       "LLPs that want equity investors or ESOPs often move to a company. Here is how the section 366 route, URC-2 notice and URC-1 filing work in practice.",
   },
@@ -557,14 +557,14 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "catch-up-bookkeeping-how-long-what-to-send",
     title: "Catch-Up Bookkeeping: How Long It Takes and What to Send",
     description:
-      "What catch-up bookkeeping involves, what decides how long it takes, the documents to send, the order the work is done in, and how filing deadlines are handled.",
-    date: "2026-12-10",
+      "What catch-up bookkeeping involves, what decides how long it takes, the documents to send, the order of the work, and how filing deadlines are handled.",
+    date: "2027-02-02",
     excerpt:
       "Books months behind? What decides how long a catch-up takes, the documents to send, and the order the work is done in, from bank reconciliations to tax figures.",
   },
   {
     slug: "opc-to-private-limited-conversion",
-    title: "OPC to Private Limited Conversion: INC-6 Process",
+    title: "OPC to Private Limited Company Conversion: INC-6 Process",
     description:
       "How a One Person Company converts into a private limited company using Form INC-6, why conversion is now voluntary, and what changes in compliance afterwards.",
     date: "2026-12-11",
@@ -573,7 +573,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "private-limited-company-for-ecommerce-sellers",
-    title: "Private Limited Company for E-commerce Sellers",
+    title: "Private Limited Company for E-commerce Sellers in India",
     description:
       "When online sellers should incorporate, how GST registration works for marketplace sales, the enrolment option for small sellers, and TCS at 0.5% explained.",
     date: "2026-12-15",
@@ -593,7 +593,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "company-registration-for-manufacturers-tamil-nadu",
     title: "Company Registration for Manufacturers in Tamil Nadu",
     description:
-      "Why manufacturers in Tamil Nadu often choose a private limited company, and the registrations that follow: Udyam, GST, pollution consent and factory licensing.",
+      "Why manufacturers in Tamil Nadu choose a private limited company, and the registrations that follow: Udyam, GST, pollution consent and factory licensing.",
     date: "2026-12-22",
     excerpt:
       "Setting up a manufacturing unit in Tamil Nadu? Why a private limited company helps with bank finance, and the registrations to plan alongside it.",
@@ -609,7 +609,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "esop-ready-articles-for-startups",
-    title: "ESOP-Ready Articles of Association for Startups",
+    title: "ESOP-Ready Articles of Association for Indian Startups",
     description:
       "How to draft startup articles that support ESOPs: Rule 12 eligibility, capital headroom, transfer and leaver clauses, ESOP trusts and DPIIT flexibilities.",
     date: "2026-12-29",
@@ -627,7 +627,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "company-registration-mistakes-founders-make",
-    title: "10 Company Registration Mistakes Founders Make",
+    title: "10 Company Registration Mistakes Founders Make in India",
     description:
       "Ten practical mistakes founders make when registering a private limited company, from vague objects and wrong capital to missed INC-20A and mixed funds.",
     date: "2027-01-05",
@@ -636,7 +636,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "gst-registration-after-company-incorporation",
-    title: "GST Registration After Company Incorporation",
+    title: "GST Registration After Company Incorporation: When and How",
     description:
       "When a new company needs GST registration, the AGILE-PRO-S option at incorporation, Tamil Nadu thresholds, compulsory cases, documents and the process.",
     date: "2027-01-08",
@@ -645,7 +645,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "agile-pro-s-pan-tan-epfo-esic",
-    title: "AGILE-PRO-S Explained: EPFO, ESIC, GSTIN and Bank",
+    title: "AGILE-PRO-S Explained: EPFO, ESIC, GSTIN and Bank Account",
     description:
       "What the AGILE-PRO-S form filed with SPICe+ covers: mandatory EPFO, ESIC and bank account, optional GSTIN, and why Tamil Nadu profession tax stays separate.",
     date: "2027-01-12",
@@ -682,7 +682,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "ca-firm-or-online-filing-platform",
-    title: "CA Firm or Online Filing Platform: How to Choose",
+    title: "CA Firm or Online Tax Filing Platform: How to Choose",
     description:
       "How to choose between a chartered accountant firm and an online filing platform: who signs, ICAI checks, confidentiality, fees and which work suits each.",
     date: "2026-11-08",
@@ -693,7 +693,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "gst-show-cause-notice-first-48-hours",
     title: "GST Show-Cause Notice: What to Do in the First 48 Hours",
     description:
-      "Received a GST show-cause notice? Here's exactly what to check, gather, and do in the first 48 hours before your reply deadline.",
+      "Received a GST show cause notice? What to check, which documents to gather and what to do in the first 48 hours, well before your reply deadline arrives.",
     date: "2026-09-19",
     excerpt:
       "The first 48 hours after a GST show-cause notice decide whether this becomes a quick reply or a years-long appeal. Here's the checklist.",
@@ -702,7 +702,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "spice-plus-incorporation-explained",
     title: "SPICe+ Step by Step (2026): Part A, Part B and AGILE-PRO-S",
     description:
-      "SPICe+ step by step for 2026: Part A, Part B, e-MoA, e-AoA, AGILE-PRO-S, DSC and DIN, how to resubmit, and the errors the MCA flags most often.",
+      "SPICe+ step by step for 2026: Part A, Part B, e-MoA, e-AoA, AGILE-PRO-S, DSC and DIN, how to resubmit a form, and the errors the MCA flags most often.",
     date: "2026-09-19",
     updated: "2026-11-13",
     excerpt:
@@ -730,7 +730,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "tds-return-filing-deadlines",
-    title: "TDS Return Filing Deadlines for FY 2026-27",
+    title: "TDS Return Filing Deadlines for FY 2026-27: 24Q, 26Q, 27Q",
     description:
       "Quarterly TDS return due dates for FY 2026-27, the Section 234E late fee and Section 271H penalty, and a practical checklist for filing each quarter on time.",
     date: "2026-09-19",
@@ -741,7 +741,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "msme-udyam-registration-checklist",
     title: "MSME Udyam Registration After Incorporation: A Checklist",
     description:
-      "Udyam registration for new companies: 2025 MSME limits, documents, the 45-day payment rule under Section 43B(h), the MSME-1 return and key benefits.",
+      "Udyam registration for new companies: the 2025 MSME limits, documents, the 45-day payment rule under Section 43B(h), the MSME-1 return and the key benefits.",
     date: "2026-09-19",
     updated: "2026-11-13",
     excerpt:
@@ -751,7 +751,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "rera-compliance-calendar-tamil-nadu",
     title: "RERA Compliance Calendar for Tamil Nadu Developers",
     description:
-      "Every recurring RERA filing deadline Tamil Nadu developers need to track, from Quarterly Progress Reports to project extensions.",
+      "Every recurring RERA filing deadline Tamil Nadu developers need to track, from quarterly progress reports and annual audits to project extension requests.",
     date: "2026-09-19",
     excerpt:
       "Quarterly Progress Reports, escrow certifications, and extension filings — the full TNRERA compliance calendar in one place.",
@@ -760,7 +760,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "12a-80g-registration-guide-chennai-ngos",
     title: "12A and 80G Registration: Step-by-Step for Chennai NGOs",
     description:
-      "How Chennai trusts, societies, and Section 8 companies can register under 12A and 80G to unlock tax exemption and donor deductions.",
+      "How Chennai trusts, societies and Section 8 companies register under 12A and 80G for tax exemption and donor deductions, and how provisional approval works.",
     date: "2026-09-19",
     excerpt:
       "12A exempts your NGO's income; 80G lets your donors claim a deduction. Most Chennai NGOs need both — here's the process.",
@@ -769,14 +769,14 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "statutory-audit-checklist",
     title: "Statutory Audit Checklist: What Auditors Actually Ask For",
     description:
-      "The documents and records a statutory auditor will actually request — prepare your company for a faster, smoother audit.",
+      "The documents and records a statutory auditor will ask your company for, and how to prepare them in advance so the audit is faster and the queries fewer.",
     date: "2026-09-19",
     excerpt:
       "Most audit delays come from documents nobody prepared in advance. Here's exactly what your auditor is going to ask for.",
   },
   {
     slug: "add-remove-director",
-    title: "How to Add or Remove a Director from Your Company",
+    title: "How to Add or Remove a Director from Your Company in India",
     description:
       "Founders in Chennai often need to add a co founder, an investor's nominee, or remove a director who is exiting — each has a specific procedure to follow.",
     date: "2026-09-19",
@@ -787,7 +787,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "advance-tax-deadlines",
     title: "Advance Tax Due Dates 2026-27: Instalments and Interest",
     description:
-      "Advance tax for tax year 2026-27 is due 15 June, 15 September, 15 December and 15 March: 15%, 45%, 75% and 100%. Who must pay and how interest works.",
+      "Advance tax for tax year 2026-27 is due 15 June, 15 September, 15 December and 15 March: 15%, 45%, 75% and 100%. Who must pay and how the interest works.",
     date: "2026-09-19",
     updated: "2026-11-13",
     excerpt:
@@ -815,7 +815,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "documents-checklist-before-auditor-visit",
-    title: "Documents Checklist Before Your Auditor's Visit",
+    title: "Documents Checklist Before Your Statutory Auditor's Visit",
     description:
       "Most audit delay in Chennai businesses has nothing to do with book complexity and everything to do with documents not being ready when the auditor arrives.",
     date: "2026-09-19",
@@ -845,10 +845,10 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "gst-freelancers-consultants",
     title: "GST on Freelancers and Consultants: Do You Need to Register?",
     description:
-      "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
+      "When freelance designers, consultants and developers in Chennai need GST registration, how export of services under LUT works, and what returns follow.",
     date: "2026-09-19",
     excerpt:
-      "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
+      "When freelance designers, consultants and developers in Chennai need GST registration, how export of services under LUT works, and what returns follow.",
   },
   {
     slug: "gstr9-annual-return-checklist",
@@ -872,14 +872,14 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "llp-annual-filing-form8-form11",
     title: "LLP Annual Filing: Form 8 and Form 11 Due Dates Explained",
     description:
-      "Every LLP in Chennai must file Form 11 and Form 8 annually, regardless of turnover or activity — here's what each form covers and when they're due.",
+      "Every LLP must file Form 11 and Form 8 each year, whatever its turnover or activity. What each form covers, the due dates and the late fee for missing them.",
     date: "2026-09-25",
     excerpt:
       "Every LLP must file Form 11 and Form 8 annually regardless of turnover or activity — here's exactly what each form covers and when they're due.",
   },
   {
     slug: "lut-for-exporters",
-    title: "LUT for Exporters: How to File and Why It Matters",
+    title: "LUT for Exporters Under GST: How to File and Why It Matters",
     description:
       "If your Chennai business exports services or goods, a Letter of Undertaking (LUT) is one of the most valuable and most overlooked GST filings you can make.",
     date: "2026-09-19",
@@ -890,7 +890,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "nri-itr-filing",
     title: "NRI Income Tax Return Filing: A Guide for Chennai NRIs",
     description:
-      "NRIs with family, property, or investments in Chennai often have a genuine Indian tax filing obligation that gets overlooked simply by living abroad.",
+      "When NRIs with family, property or investments in India must file an Indian income tax return, which income is taxable here and how DTAA relief applies.",
     date: "2026-09-19",
     excerpt:
       "Non resident Indians with family, property, or investments back in Chennai often have a genuine Indian tax filing obligation that gets...",
@@ -918,7 +918,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "strike-off-vs-winding-up",
     title: "Company Strike Off vs Winding Up: What Is the Difference",
     description:
-      "Shutting down a company that never took off? The first question is strike-off vs. formal winding up — genuinely different processes and costs.",
+      "Closing a company that never took off? How strike-off differs from formal winding up, which route fits your company and what each process really involves.",
     date: "2026-09-19",
     excerpt:
       "When a Chennai business owner decides to shut down a company that never took off or has stopped operating, one of the first questions is...",
@@ -943,7 +943,7 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "what-virtual-cfo-reviews-monthly",
-    title: "What a Virtual CFO Actually Reviews Every Month",
+    title: "What a Virtual CFO Actually Reviews Every Month: A Checklist",
     description:
       "Business owners considering Virtual CFO support often aren't sure what it actually involves month to month. Here's what a genuine monthly review covers.",
     date: "2026-09-19",
@@ -981,16 +981,16 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "gst-threshold-is-a-trigger",
     title: "The GST Threshold Isn't a Safe Zone — It's a Trigger",
     description:
-      "Staying just under the GST registration threshold feels safe. In practice, it's the moment that starts a clock, not a permanent exemption.",
+      "Staying just under the GST registration threshold feels safe, but crossing it is a trigger to register, not an exemption. How to watch the limit and act.",
     date: "2026-09-26",
     excerpt:
-      "Staying just under the GST registration threshold feels safe. In practice, it's the moment that starts a clock, not a permanent exemption.",
+      "Staying just under the GST registration threshold feels safe, but crossing it is a trigger to register, not an exemption. How to watch the limit and act.",
   },
   {
     slug: "cost-of-diy-gst-filing",
     title: "What Goes Wrong When You File GST Returns Yourself",
     description:
-      "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely the amount you saved.",
+      "Filing monthly GST returns yourself looks like an easy saving. The real cost of errors, missed credit and late fees usually shows up months later in notices.",
     date: "2026-09-26",
     excerpt:
       "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely small.",
@@ -999,10 +999,10 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "cash-flow-not-profit-business-failure",
     title: "Businesses Fail From a Lack of Cash, Not a Lack of Profit",
     description:
-      "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
+      "A business that is profitable on paper can still run out of cash to pay its bills. Why the gap between profit and cash opens up, and the steps that close it.",
     date: "2026-09-26",
     excerpt:
-      "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
+      "A business that is profitable on paper can still run out of cash to pay its bills. Why the gap between profit and cash opens up, and the steps that close it.",
   },
 ];
 

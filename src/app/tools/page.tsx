@@ -4,7 +4,7 @@ import ToolShell, { EstimateNote, H2, LINK, P } from "./ToolShell";
 import { SITE_URL } from "@/lib/site";
 
 const PATH = "/tools";
-const TITLE = "Tax & Compliance Calculators | C S Rushil & Co";
+const TITLE = "Tax & Compliance Calculators for India | C S Rushil & Co.";
 const DESCRIPTION =
   "Calculators from a Chennai chartered accountancy firm: NRI residential status, company registration government fees and GST appeal deadlines with pre-deposit.";
 const H1 = "Tax & Compliance Calculators";

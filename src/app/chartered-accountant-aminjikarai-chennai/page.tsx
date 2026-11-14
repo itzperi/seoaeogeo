@@ -1,10 +1,14 @@
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 import type { Metadata } from "next";
 import AreaPageTemplate from "@/components/AreaPageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/chartered-accountant-aminjikarai-chennai`;
 const L = "text-royal-violet underline underline-offset-2";
+
+// Re-render daily so links to scheduled guides (PostLink) switch on when they publish.
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: { absolute: "Chartered Accountant in Aminjikarai | C S Rushil & Co." },
@@ -140,9 +144,9 @@ export default function Page() {
                 Moving the business across covers stock, fixed assets, bank accounts, supplier and landlord agreements, and
                 the trade licence. The extra compliance of a company, including annual ROC filings and a statutory audit
                 every year, is real, so we compare it against the benefits with you before anything is filed. Read about{" "}
-                <Link href="/blog/convert-proprietorship-to-private-limited" className={L}>
+                <PostLink slug="convert-proprietorship-to-private-limited" className={L}>
                   converting a proprietorship to a private limited company
-                </Link>
+                </PostLink>
                 .
               </p>
             </>
@@ -190,7 +194,7 @@ export default function Page() {
         { slug: "tds-on-rent", title: "TDS on Rent: What Chennai Landlords and Tenants Should Know" },
         { slug: "convert-proprietorship-to-private-limited", title: "Converting a Proprietorship to a Private Limited Company" },
         { slug: "itc-mismatch-notices", title: "ITC Mismatch Notices: Why They Happen and How to Respond" },
-        { slug: "gst-registration-after-company-incorporation", title: "GST Registration After Company Incorporation" },
+        { slug: "gst-registration-after-company-incorporation", title: "GST Registration After Company Incorporation: When and How" },
       ]}
     />
   );

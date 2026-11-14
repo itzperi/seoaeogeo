@@ -5,8 +5,8 @@ export const meta: BlogPostMeta = {
   slug: "catch-up-bookkeeping-how-long-what-to-send",
   title: "Catch-Up Bookkeeping: How Long It Takes and What to Send",
   description:
-    "What catch-up bookkeeping involves, what decides how long it takes, the documents to send, the order the work is done in, and how filing deadlines are handled.",
-  date: "2026-12-10",
+    "What catch-up bookkeeping involves, what decides how long it takes, the documents to send, the order of the work, and how filing deadlines are handled.",
+  date: "2027-02-02",
   excerpt:
     "Books months behind? What decides how long a catch-up takes, the documents to send, and the order the work is done in, from bank reconciliations to tax figures.",
   summary:

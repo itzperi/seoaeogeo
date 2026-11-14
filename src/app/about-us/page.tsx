@@ -32,7 +32,7 @@ const TEAM = [
   { name: "Harini", photo: "/images/team/harini.webp" },
   { name: "Athulia", photo: "/images/team/athulia.webp" },
   { name: "Ajay M", photo: "/images/team/ajay-c.webp", linkedin: "https://www.linkedin.com/in/ajay-m-578a21232" },
-  { name: "Omair Khan", photo: "/images/team/omair-khan.png", linkedin: "https://www.linkedin.com/in/omairxkhan" },
+  { name: "Omair Khan", photo: "/images/team/omair-khan.webp", linkedin: "https://www.linkedin.com/in/omairxkhan" },
 ];
 
 // Facts only from src/lib/site.ts and /how-we-work. No fees, outcomes or
@@ -174,15 +174,15 @@ export default function AboutPage() {
               <Image
                 src="/images/team/rushil-cs.webp"
                 alt={`${FOUNDER_NAME}, practising Chartered Accountant and founder of C S Rushil & Co.`}
-                fill
-                sizes="96px"
-                className="object-cover object-top"
+                width={96}
+                height={96}
+                className="h-full w-full object-cover object-top"
                 priority
               />
             </div>
             <div>
               <h3 className="text-lg font-medium text-obsidian">{FOUNDER_NAME}</h3>
-              <p className="text-sm text-slate">Founder &amp; Managing Partner — Practising Chartered Accountant</p>
+              <p className="text-sm text-slate">Founder &amp; Managing Partner, Practising Chartered Accountant</p>
               <p className="mt-3 text-sm leading-relaxed text-slate">
                 {FOUNDER_CREDENTIALS}. Leads the firm&apos;s audit, taxation,
                 and compliance practice, and heads client engagements across
@@ -242,9 +242,10 @@ export default function AboutPage() {
                   <Image
                     src={member.photo}
                     alt={`${member.name}, team member at C S Rushil & Co.`}
-                    fill
-                    sizes="112px"
-                    className="object-cover object-top"
+                    width={112}
+                    height={112}
+                    loading="lazy"
+                    className="h-full w-full object-cover object-top"
                   />
                 </div>
                 <p className="mt-3 text-sm font-medium text-obsidian">{member.name}</p>

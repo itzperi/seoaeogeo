@@ -1,9 +1,10 @@
 import type { BlogPostMeta } from "@/lib/blog";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 
 export const meta: BlogPostMeta = {
   slug: "inc-20a-commencement-of-business",
-  title: "INC-20A: Declaration for Commencement of Business",
+  title: "INC-20A Filing: Declaration for Commencement of Business",
   description:
     "INC-20A explained: the 180-day deadline under section 10A, documents and photos needed, who certifies it, penalties for missing it and the strike-off risk.",
   date: "2026-11-17",
@@ -132,7 +133,7 @@ export default function Body() {
       <h2>Step-by-step: getting INC-20A filed</h2>
       <ul>
         <li><strong>Open the bank account.</strong> Most new companies apply for this through AGILE-PRO-S at incorporation. See our post on{" "}
-          <Link href="/blog/opening-current-account-new-company">opening a current account for a new company</Link>.</li>
+          <PostLink slug="opening-current-account-new-company">opening a current account for a new company</PostLink>.</li>
         <li><strong>Collect subscription money.</strong> Each subscriber transfers the value of their shares to the company account from their own bank account, so the trail is clear.</li>
         <li><strong>Hold a board meeting.</strong> Authorise a director to sign INC-20A. This is often done at the first board meeting.</li>
         <li><strong>Prepare the registered office.</strong> Put up the company name board and take the required photographs with a director present.</li>
@@ -235,9 +236,9 @@ export default function Body() {
         INC-20A is one of several deadlines that start on the date of
         incorporation, alongside the first board meeting, first auditor
         appointment and share certificates. Our guides to the{" "}
-        <Link href="/blog/first-board-meeting-checklist">first board meeting</Link>{" "}
+        <PostLink slug="first-board-meeting-checklist">first board meeting</PostLink>{" "}
         and{" "}
-        <Link href="/blog/first-auditor-appointment-adt-1">first auditor appointment</Link>{" "}
+        <PostLink slug="first-auditor-appointment-adt-1">first auditor appointment</PostLink>{" "}
         explain the others. Our{" "}
         <Link href="/roc-compliances">ROC compliances</Link> service and{" "}
         <Link href="/annual-compliance-package">annual compliance package</Link>{" "}

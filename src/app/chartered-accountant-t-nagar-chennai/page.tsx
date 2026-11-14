@@ -8,7 +8,7 @@ const PAGE_URL = `${SITE_URL}/chartered-accountant-t-nagar-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "Chartered Accountant in T Nagar, Chennai | C S Rushil & Co." },
   description:
-    "GST, tax, and audit services for T Nagar traders and retail businesses — from a Chennai chartered accountancy firm familiar with high-volume retail compliance.",
+    "GST, tax and audit services for T Nagar traders and retail businesses from a Chennai chartered accountancy firm that knows high-volume retail compliance.",
   alternates: { canonical: "/chartered-accountant-t-nagar-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

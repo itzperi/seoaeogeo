@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 const slug = "/income-tax-consultant-bangalore";
 const title = "Income Tax Consultant in Bengaluru | C S Rushil & Co.";
 const description =
-  "Online income tax advice for high-income Bengaluru residents: foreign RSUs and ESOPs, Schedule FA, startup share sales and Karnataka property gains.";
+  "Online income tax advice for high-income Bengaluru residents: foreign RSUs and ESOPs, Schedule FA, startup share sales and gains on Karnataka property.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

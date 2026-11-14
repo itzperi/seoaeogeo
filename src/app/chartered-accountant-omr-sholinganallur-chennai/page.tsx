@@ -7,7 +7,7 @@ const PAGE_URL = `${SITE_URL}/chartered-accountant-omr-sholinganallur-chennai`;
 export const metadata: Metadata = {
   title: { absolute: "Chartered Accountant in OMR / Sholinganallur, Chennai" },
   description:
-    "Company incorporation, GST, payroll TDS, and virtual CFO services for IT and startup businesses along Chennai's OMR IT corridor and Sholinganallur.",
+    "Company incorporation, GST, payroll TDS and virtual CFO services for IT companies and startups along Chennai's OMR IT corridor, Sholinganallur and Perungudi.",
   alternates: { canonical: "/chartered-accountant-omr-sholinganallur-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

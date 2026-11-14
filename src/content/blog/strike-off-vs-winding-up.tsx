@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "strike-off-vs-winding-up",
   title: "Company Strike Off vs Winding Up: What Is the Difference",
   description:
-    "Shutting down a company that never took off? The first question is strike-off vs. formal winding up — genuinely different processes and costs.",
+    "Closing a company that never took off? How strike-off differs from formal winding up, which route fits your company and what each process really involves.",
   date: "2026-09-19",
   excerpt:
     "When a Chennai business owner decides to shut down a company that never took off or has stopped operating, one of the first questions is...",

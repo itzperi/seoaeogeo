@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 
 const title = "GST Litigation & GSTAT Appeals in Tiruppur | CA Firm";
 const description =
-  "GST refund and notice disputes for Tiruppur knitwear exporters: IGST and LUT refund rejections, inverted duty claims, RFD-08 replies, APL-01 and GSTAT appeals.";
+  "GST refund and notice disputes for Tiruppur knitwear exporters: IGST and LUT refund rejections, inverted duty claims, RFD-08 replies, APL-01, GSTAT appeals.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

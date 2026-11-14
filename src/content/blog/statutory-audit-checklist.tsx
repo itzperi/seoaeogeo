@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "statutory-audit-checklist",
   title: "Statutory Audit Checklist: What Auditors Actually Ask For",
   description:
-    "The documents and records a statutory auditor will actually request — prepare your company for a faster, smoother audit.",
+    "The documents and records a statutory auditor will ask your company for, and how to prepare them in advance so the audit is faster and the queries fewer.",
   date: "2026-12-02",
   excerpt:
     "Most audit delays come from documents nobody prepared in advance. Here's exactly what your auditor is going to ask for.",

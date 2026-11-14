@@ -10,7 +10,7 @@ const market = getBookkeepingMarket(PATH.slice(1))!;
 export const metadata: Metadata = {
   title: { absolute: "Outsourced Bookkeeping for UK Businesses | Xero & MTD" },
   description:
-    "Xero, QuickBooks and FreeAgent bookkeeping, MTD-ready VAT figures and quarterly MTD for Income Tax records for UK companies, sole traders and landlords, kept from Chennai.",
+    "Xero, QuickBooks and FreeAgent bookkeeping, MTD-ready VAT figures and MTD for Income Tax records for UK companies, sole traders and landlords, kept in India.",
   alternates: { canonical: PATH },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

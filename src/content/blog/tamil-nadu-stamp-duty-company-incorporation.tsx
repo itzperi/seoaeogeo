@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "tamil-nadu-stamp-duty-company-incorporation",
   title: "Stamp Duty on Company Incorporation in Tamil Nadu (2026)",
   description:
-    "Stamp duty on MoA and AoA in Tamil Nadu, how SPICe+ collects it, and the duty on increasing authorised capital (SH-7) and share transfers (SH-4).",
+    "Stamp duty on MoA and AoA in Tamil Nadu, how SPICe+ collects it, and the duty on increasing authorised capital (SH-7) and on share transfers (SH-4) explained.",
   date: "2026-10-16",
   updated: "2026-11-13",
   excerpt:

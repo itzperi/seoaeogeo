@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "private-limited-company-for-ecommerce-sellers",
-  title: "Private Limited Company for E-commerce Sellers",
+  title: "Private Limited Company for E-commerce Sellers in India",
   description:
     "When online sellers should incorporate, how GST registration works for marketplace sales, the enrolment option for small sellers, and TCS at 0.5% explained.",
   date: "2026-12-15",

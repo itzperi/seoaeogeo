@@ -5,10 +5,10 @@ export const meta: BlogPostMeta = {
   slug: "gst-threshold-is-a-trigger",
   title: "The GST Threshold Isn't a Safe Zone — It's a Trigger",
   description:
-    "Staying just under the GST registration threshold feels safe. In practice, it's the moment that starts a clock, not a permanent exemption.",
+    "Staying just under the GST registration threshold feels safe, but crossing it is a trigger to register, not an exemption. How to watch the limit and act.",
   date: "2026-09-26",
   excerpt:
-    "Staying just under the GST registration threshold feels safe. In practice, it's the moment that starts a clock, not a permanent exemption.",
+    "Staying just under the GST registration threshold feels safe, but crossing it is a trigger to register, not an exemption. How to watch the limit and act.",
   summary:
     "The GST registration threshold is a trigger, not a permanent exemption. Turnover is tracked on a continuous financial-year basis, so registration is due from the month you cross it. Inter-state supply of goods, certain agency arrangements and some e-commerce sales can require registration even below the threshold.",
   faqs: [

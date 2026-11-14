@@ -8,7 +8,7 @@ import { SITE_URL } from "@/lib/site";
 const slug = "/india-subsidiary-for-us-companies";
 const title = "Set Up an India Subsidiary for a US Company | Chennai";
 const description =
-  "CA-led help for US companies setting up an Indian subsidiary: incorporation, FEMA reporting and first-year compliance, served online from Chennai.";
+  "CA-led help for US companies setting up an Indian subsidiary: incorporation, FEMA reporting, transfer pricing and first-year compliance, online from Chennai.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

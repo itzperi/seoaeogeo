@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "gst-show-cause-notice-first-48-hours",
   title: "GST Show-Cause Notice: What to Do in the First 48 Hours",
   description:
-    "Received a GST show-cause notice? Here's exactly what to check, gather, and do in the first 48 hours before your reply deadline.",
+    "Received a GST show cause notice? What to check, which documents to gather and what to do in the first 48 hours, well before your reply deadline arrives.",
   date: "2026-09-23",
   excerpt:
     "The first 48 hours after a GST show-cause notice decide whether this becomes a quick reply or a years-long appeal. Here's the checklist.",

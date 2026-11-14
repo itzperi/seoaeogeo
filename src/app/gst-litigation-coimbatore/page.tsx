@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 
 const title = "GST Litigation & GSTAT Appeals in Coimbatore | CA Firm";
 const description =
-  "GST notices and appeals for Coimbatore pump, motor, foundry and textile machinery units: SCN replies, APL-01 appeals and Coimbatore GSTAT bench, handled online.";
+  "GST notices and appeals for Coimbatore pump, motor, foundry and textile machinery units: SCN replies, APL-01 appeals and the GSTAT, handled from Chennai.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

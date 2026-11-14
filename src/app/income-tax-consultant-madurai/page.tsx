@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 const slug = "/income-tax-consultant-madurai";
 const title = "Income Tax Consultant in Madurai for HNIs | C S Rushil & Co.";
 const description =
-  "Income tax for Madurai traders, doctors, hospital owners and jewellers: AIS high-value transactions, cash rules, farm income and property gains, served online.";
+  "Income tax for Madurai traders, doctors, hospital owners and jewellers: AIS high-value transactions, cash rules, farm income and property gains, online.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

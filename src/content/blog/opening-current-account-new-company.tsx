@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "opening-current-account-new-company",
-  title: "Opening a Current Account for a New Company",
+  title: "Opening a Current Account for a New Company: KYC and Steps",
   description:
-    "How a new company opens its current account: the AGILE-PRO-S request in SPICe+, the KYC documents banks must collect under RBI rules, and tips to avoid delays.",
+    "How a new company opens its current account: the AGILE-PRO-S request in SPICe+, the KYC documents banks must collect under RBI rules, and how to avoid delays.",
   date: "2026-11-27",
   excerpt:
     "Every new company applies for a bank account through AGILE-PRO-S. Here is how that works, which KYC documents banks ask for, and how to avoid delays.",

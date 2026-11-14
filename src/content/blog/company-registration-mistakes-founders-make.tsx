@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "company-registration-mistakes-founders-make",
-  title: "10 Company Registration Mistakes Founders Make",
+  title: "10 Company Registration Mistakes Founders Make in India",
   description:
     "Ten practical mistakes founders make when registering a private limited company, from vague objects and wrong capital to missed INC-20A and mixed funds.",
   date: "2027-01-05",

@@ -1,5 +1,6 @@
 import type { BlogPostMeta } from "@/lib/blog";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 
 // Sources: Companies Act ss. 92(4)-(5), 137(1) and (3) as amended by the
 // Companies (Amendment) Act, 2020 (in force 21 Dec 2020); additional fee of
@@ -283,7 +284,7 @@ export default function Body() {
         being reappointed or appointed in any company for five years. Under
         Section 248, the Registrar can strike off a company that is not carrying
         on business or has not complied. Our post on{" "}
-        <Link href="/blog/private-limited-company-penalties-non-compliance">penalties for non-compliance</Link>{" "}
+        <PostLink slug="private-limited-company-penalties-non-compliance">penalties for non-compliance</PostLink>{" "}
         covers these in more detail.
       </p>
 

@@ -43,7 +43,7 @@ const EVENT_FILINGS = [
 export const metadata: Metadata = {
   title: { absolute: "ROC Compliance in Chennai: Filing Due Dates & Late Fees" },
   description:
-    "AOC-4, MGT-7, DPT-3, MSME-1, DIR-3 KYC and LLP Form 8 and 11 due dates, late fees and event filings for Chennai companies and LLPs, from a CA firm in Anna Nagar.",
+    "AOC-4, MGT-7, DPT-3, MSME-1, DIR-3 KYC and LLP Form 8 and 11 due dates, late fees and event filings for Chennai companies and LLPs, by a CA in Anna Nagar.",
   openGraph: {
     title: "ROC Compliance in Chennai: Filing Due Dates & Late Fees",
     description: "The full ROC calendar for companies and LLPs, late fees and event-based filings, handled by a Chartered Accountancy firm in Anna Nagar, Chennai.",

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "agile-pro-s-pan-tan-epfo-esic",
-  title: "AGILE-PRO-S Explained: EPFO, ESIC, GSTIN and Bank",
+  title: "AGILE-PRO-S Explained: EPFO, ESIC, GSTIN and Bank Account",
   description:
     "What the AGILE-PRO-S form filed with SPICe+ covers: mandatory EPFO, ESIC and bank account, optional GSTIN, and why Tamil Nadu profession tax stays separate.",
   date: "2027-01-12",

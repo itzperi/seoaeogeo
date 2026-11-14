@@ -7,10 +7,12 @@ const PAGE_URL = `${SITE_URL}/chartered-accountant-anna-nagar-chennai`;
 const L = "text-royal-violet underline underline-offset-2";
 const WALK_IN = "Walk-ins are welcome, and booking a slot saves waiting time.";
 
+// Title and description exactly as specified in the owner's brief (Task 7.2),
+// although they run past the 60 and 158 character targets.
 export const metadata: Metadata = {
-  title: { absolute: "Chartered Accountant, Anna Nagar, Chennai | C S Rushil & Co." },
+  title: { absolute: "Chartered Accountant in Anna Nagar, Chennai | C S Rushil & Co." },
   description:
-    "CA in J-Block, Anna Nagar, Chennai for company registration, GST, income tax and audit. Visit our 13th Main Road office or work online. Free 15-min consult.",
+    "Chartered accountant in J-Block, Anna Nagar, Chennai for company registration, GST, income tax and audit. Visit our 13th Main Road office or work online. Free consultation.",
   alternates: { canonical: "/chartered-accountant-anna-nagar-chennai", types: { "text/markdown": "/md/chartered-accountant-anna-nagar-chennai" } },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -214,7 +216,7 @@ export default function Page() {
       furtherReading={[
         { slug: "how-to-choose-a-chartered-accountant-in-chennai", title: "How to Choose a CA Firm in Chennai: 9 Checks Before You Hire" },
         { slug: "itc-mismatch-notices", title: "ITC Mismatch Notices: Why They Happen and How to Respond" },
-        { slug: "documents-checklist-before-auditor-visit", title: "Documents Checklist Before Your Auditor's Visit" },
+        { slug: "documents-checklist-before-auditor-visit", title: "Documents Checklist Before Your Statutory Auditor's Visit" },
         { slug: "post-incorporation-compliance-checklist", title: "Post-Incorporation Compliance Checklist for Chennai Firms" },
         { slug: "advance-tax-deadlines", title: "Advance Tax Due Dates 2026-27: Instalments and Interest" },
         { slug: "msme-udyam-registration-checklist", title: "MSME Udyam Registration After Incorporation: A Checklist" },

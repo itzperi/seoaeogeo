@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 
 const title = "Income Tax Consultant for HNIs in Chennai | C S Rushil & Co.";
 const description =
-  "Tax planning for HNIs and families in Chennai: capital gains on property and shares, ESOPs, foreign RSUs, Schedule FA, residential status, HUFs and advance tax.";
+  "Tax planning for HNIs and families in Chennai: capital gains on property and shares, ESOPs, foreign RSUs, Schedule FA, residency, HUFs and advance tax.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

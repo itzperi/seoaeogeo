@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "llp-annual-filing-form8-form11",
   title: "LLP Annual Filing: Form 8 and Form 11 Due Dates Explained",
   description:
-    "Every LLP in Chennai must file Form 11 and Form 8 annually, regardless of turnover or activity — here's what each form covers and when they're due.",
+    "Every LLP must file Form 11 and Form 8 each year, whatever its turnover or activity. What each form covers, the due dates and the late fee for missing them.",
   date: "2026-09-25",
   excerpt:
     "Every LLP must file Form 11 and Form 8 annually regardless of turnover or activity — here's exactly what each form covers and when they're due.",

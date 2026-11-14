@@ -8,9 +8,9 @@ const PATH = "/outsourced-bookkeeping-australia";
 const market = getBookkeepingMarket(PATH.slice(1))!;
 
 export const metadata: Metadata = {
-  title: { absolute: "Outsourced Bookkeeping for Australian Businesses | Xero, MYOB" },
+  title: { absolute: "Outsourced Bookkeeping for Australian Businesses | Xero" },
   description:
-    "Xero, MYOB and QuickBooks bookkeeping, reconciliations and EOFY handover for Australian businesses, kept from Chennai, with BAS lodged by your registered BAS or tax agent.",
+    "Xero, MYOB and QuickBooks bookkeeping, reconciliations and EOFY handover for Australian businesses, kept from Chennai, with BAS lodged by your tax agent.",
   alternates: { canonical: PATH },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

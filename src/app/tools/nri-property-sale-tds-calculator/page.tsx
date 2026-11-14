@@ -6,7 +6,7 @@ import Calculator from "./Calculator";
 const PATH = "/tools/nri-property-sale-tds-calculator";
 const TITLE = "NRI Property Sale TDS Calculator | Section 195 Estimate";
 const DESCRIPTION =
-  "Estimate the TDS a buyer deducts when an NRI sells Indian property, the tax on the actual gain, and the cash a lower deduction certificate could leave with you.";
+  "Estimate the TDS a buyer deducts when an NRI sells Indian property, the tax on the actual gain, and the cash a lower deduction certificate could leave you.";
 const H1 = "Section 195 NRI Property Sale TDS vs Lower TDS Certificate Estimator";
 
 export const metadata: Metadata = {

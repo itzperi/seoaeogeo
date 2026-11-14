@@ -193,7 +193,7 @@ export default function Page() {
       ]}
       furtherReading={[
         { slug: "msme-udyam-registration-checklist", title: "MSME Udyam Registration After Incorporation: A Checklist" },
-        { slug: "registered-office-at-home-company", title: "Can Your Home Be a Company's Registered Office?" },
+        { slug: "registered-office-at-home-company", title: "Can Your Home Be a Company's Registered Office in India?" },
         { slug: "eway-bill-detention-section-129-appeal", title: "E-Way Bill Detention Under Section 129: Release and Appeal" },
         { slug: "gst-freelancers-consultants", title: "GST on Freelancers and Consultants: Do You Need to Register?" },
         { slug: "company-registration-for-manufacturers-tamil-nadu", title: "Company Registration for Manufacturers in Tamil Nadu" },

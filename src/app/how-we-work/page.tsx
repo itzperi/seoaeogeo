@@ -11,14 +11,14 @@ import { ADDRESS_FULL, BUSINESS_HOURS, FIRM_REGISTRATION_NO, FOUNDER_NAME, ICAI_
 // security or reply-time claims the firm has not confirmed.
 
 const DESCRIPTION =
-  "How C S Rushil & Co. takes on a new client: a 15-minute consultation, a scoping call, a written engagement letter, then onboarding. No price lists.";
+  "How C S Rushil & Co. takes on a new client: a 15-minute consultation, a scoping call, a written engagement letter, then onboarding. No published price lists.";
 
 export const metadata: Metadata = {
-  title: { absolute: "How We Work With Clients | C S Rushil & Co." },
+  title: { absolute: "How We Work With Clients | C S Rushil & Co., Chennai" },
   description: DESCRIPTION,
   alternates: { canonical: "/how-we-work" },
   openGraph: {
-    title: "How We Work With Clients | C S Rushil & Co.",
+    title: "How We Work With Clients | C S Rushil & Co., Chennai",
     description: DESCRIPTION,
     url: "/how-we-work",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

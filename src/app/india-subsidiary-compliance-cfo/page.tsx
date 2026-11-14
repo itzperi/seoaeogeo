@@ -56,7 +56,7 @@ const NOT_INCLUDED = [
 export const metadata: Metadata = {
   title: { absolute: "India Subsidiary Compliance & CFO Retainer | Chennai" },
   description:
-    "CA-led retainer for foreign-owned Indian subsidiaries and GCCs: ROC, FEMA, transfer pricing, GST, TDS, payroll and monthly group reporting.",
+    "CA-led retainer for foreign-owned Indian subsidiaries and GCCs: ROC, FEMA, transfer pricing, GST, TDS, payroll and monthly group reporting, from Chennai.",
   alternates: { canonical: "/india-subsidiary-compliance-cfo" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

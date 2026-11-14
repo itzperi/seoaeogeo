@@ -10,7 +10,7 @@ export const meta: BlogPostMeta = {
   slug: "advance-tax-deadlines",
   title: "Advance Tax Due Dates 2026-27: Instalments and Interest",
   description:
-    "Advance tax for tax year 2026-27 is due 15 June, 15 September, 15 December and 15 March: 15%, 45%, 75% and 100%. Who must pay and how interest works.",
+    "Advance tax for tax year 2026-27 is due 15 June, 15 September, 15 December and 15 March: 15%, 45%, 75% and 100%. Who must pay and how the interest works.",
   date: "2026-09-19",
   updated: "2026-11-13",
   excerpt:

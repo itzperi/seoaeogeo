@@ -5,10 +5,10 @@ export const meta: BlogPostMeta = {
   slug: "cash-flow-not-profit-business-failure",
   title: "Businesses Fail From a Lack of Cash, Not a Lack of Profit",
   description:
-    "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
+    "A business that is profitable on paper can still run out of cash to pay its bills. Why the gap between profit and cash opens up, and the steps that close it.",
   date: "2026-09-26",
   excerpt:
-    "A profitable business on paper can still run out of money to pay its own bills. Here's why that gap exists and what actually closes it.",
+    "A business that is profitable on paper can still run out of cash to pay its bills. Why the gap between profit and cash opens up, and the steps that close it.",
   summary:
     "A profitable business can still run out of cash because profit is recorded when a sale is earned while cash arrives when the customer pays, and inventory ties up money the profit statement does not show. A rolling cash flow forecast, kept separate from profit, catches shortfalls early.",
   faqs: [

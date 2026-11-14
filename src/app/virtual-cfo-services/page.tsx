@@ -334,7 +334,7 @@ export default function VirtualCfoPage() {
               <p className="mt-4 text-sm text-slate">
                 For a closer look at what actually shows up in a monthly review, see{" "}
                 <Link href="/blog/what-virtual-cfo-reviews-monthly" className="text-royal-violet underline">
-                  What a Virtual CFO Actually Reviews Every Month
+                  What a Virtual CFO Actually Reviews Every Month: A Checklist
                 </Link>
                 .
               </p>

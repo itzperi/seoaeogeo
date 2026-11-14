@@ -5,10 +5,10 @@ export const meta: BlogPostMeta = {
   slug: "gst-freelancers-consultants",
   title: "GST on Freelancers and Consultants: Do You Need to Register?",
   description:
-    "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
+    "When freelance designers, consultants and developers in Chennai need GST registration, how export of services under LUT works, and what returns follow.",
   date: "2026-09-19",
   excerpt:
-    "Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories.",
+    "When freelance designers, consultants and developers in Chennai need GST registration, how export of services under LUT works, and what returns follow.",
   summary:
     "Freelancers and consultants providing services must register for GST once aggregate turnover in a financial year crosses twenty lakh rupees, counted across all clients. Out-of-state clients alone do not force registration below that limit. Most professional services attract eighteen percent GST, and exporters of services often register and file a Letter of Undertaking.",
   faqs: [
@@ -39,7 +39,7 @@ export default function Body() {
   return (
     <>
       <p>
-        Freelance designers, consultants, developers, and marketing professionals in Chennai often assume GST is only for shops and factories. That assumption causes real problems once income crosses a certain level.
+        When freelance designers, consultants and developers in Chennai need GST registration, how export of services under LUT works, and what returns follow. That assumption causes real problems once income crosses a certain level.
       </p>
 
       <h2>The actual threshold for service providers</h2>

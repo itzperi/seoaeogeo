@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "esop-ready-articles-for-startups",
-  title: "ESOP-Ready Articles of Association for Startups",
+  title: "ESOP-Ready Articles of Association for Indian Startups",
   description:
     "How to draft startup articles that support ESOPs: Rule 12 eligibility, capital headroom, transfer and leaver clauses, ESOP trusts and DPIIT flexibilities.",
   date: "2026-12-29",

@@ -6,7 +6,7 @@ import HighTicketSections, { type Audience } from "@/components/HighTicketSectio
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/nri-tax-services";
-const title = "NRI Tax Services in India | CA Firm in Chennai";
+const title = "NRI Tax Services in India | Chartered Accountants, Chennai";
 const description =
   "Residential status, DTAA relief, property-sale TDS, NRO repatriation and RNOR planning for NRIs, handled online by a Chennai chartered accountant firm.";
 

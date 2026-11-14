@@ -10,7 +10,7 @@ const market = getBookkeepingMarket(PATH.slice(1))!;
 export const metadata: Metadata = {
   title: { absolute: "Outsourced Bookkeeping for Singapore Companies | Xero" },
   description:
-    "Monthly Xero or QuickBooks bookkeeping, GST F5 figures and year-end SFRS books ready for your tax agent and corporate secretary, kept by a Chartered Accountancy team in Chennai.",
+    "Monthly Xero or QuickBooks bookkeeping, GST F5 figures and year-end SFRS books ready for your tax agent and corporate secretary, kept by a CA team in Chennai.",
   alternates: { canonical: PATH },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "12a-80g-registration-guide-chennai-ngos",
   title: "12A and 80G Registration: Step-by-Step for Chennai NGOs",
   description:
-    "How Chennai trusts, societies, and Section 8 companies can register under 12A and 80G to unlock tax exemption and donor deductions.",
+    "How Chennai trusts, societies and Section 8 companies register under 12A and 80G for tax exemption and donor deductions, and how provisional approval works.",
   date: "2026-11-25",
   excerpt:
     "12A exempts your NGO's income; 80G lets your donors claim a deduction. Most Chennai NGOs need both — here's the process.",

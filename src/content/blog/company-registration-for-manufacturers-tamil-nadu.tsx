@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "company-registration-for-manufacturers-tamil-nadu",
   title: "Company Registration for Manufacturers in Tamil Nadu",
   description:
-    "Why manufacturers in Tamil Nadu often choose a private limited company, and the registrations that follow: Udyam, GST, pollution consent and factory licensing.",
+    "Why manufacturers in Tamil Nadu choose a private limited company, and the registrations that follow: Udyam, GST, pollution consent and factory licensing.",
   date: "2026-12-22",
   excerpt:
     "Setting up a manufacturing unit in Tamil Nadu? Why a private limited company helps with bank finance, and the registrations to plan alongside it.",

@@ -6,7 +6,7 @@ import Link from "next/link";
 // to who may sign what, how to verify a CA, and how fees are structured.
 export const meta: BlogPostMeta = {
   slug: "ca-firm-or-online-filing-platform",
-  title: "CA Firm or Online Filing Platform: How to Choose",
+  title: "CA Firm or Online Tax Filing Platform: How to Choose",
   description:
     "How to choose between a chartered accountant firm and an online filing platform: who signs, ICAI checks, confidentiality, fees and which work suits each.",
   date: "2026-11-08",

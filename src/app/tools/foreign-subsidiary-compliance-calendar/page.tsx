@@ -4,9 +4,9 @@ import ToolShell, { EstimateNote, H2, LINK, P, ServiceCta, Table, webApplication
 import Calculator from "./Calculator";
 
 const PATH = "/tools/foreign-subsidiary-compliance-calendar";
-const TITLE = "India Subsidiary First-Year Compliance Calendar";
+const TITLE = "Foreign Subsidiary in India: First-Year Compliance Calendar";
 const DESCRIPTION =
-  "Enter incorporation and share allotment dates to get a dated first-year calendar for an Indian subsidiary: INC-20A, FC-GPR, FLA, Form 3CEB, AGM and ROC filings.";
+  "Enter incorporation and allotment dates to get a dated first-year calendar for an Indian subsidiary: INC-20A, FC-GPR, FLA, Form 3CEB, AGM and ROC filings.";
 const H1 = "India Subsidiary First-Year Compliance Calendar";
 
 export const metadata: Metadata = {

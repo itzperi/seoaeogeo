@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "rera-compliance-calendar-tamil-nadu",
   title: "RERA Compliance Calendar for Tamil Nadu Developers",
   description:
-    "Every recurring RERA filing deadline Tamil Nadu developers need to track, from Quarterly Progress Reports to project extensions.",
+    "Every recurring RERA filing deadline Tamil Nadu developers need to track, from quarterly progress reports and annual audits to project extension requests.",
   date: "2026-11-18",
   excerpt:
     "Quarterly Progress Reports, escrow certifications, and extension filings — the full TNRERA compliance calendar in one place.",

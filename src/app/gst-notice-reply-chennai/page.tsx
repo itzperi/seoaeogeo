@@ -16,7 +16,7 @@ import { PAGE_DATES } from "@/lib/page-dates";
 const PATH = "/gst-notice-reply-chennai";
 const TITLE = "GST Notice Reply in Chennai | ASMT-10, DRC-01A, DRC-06";
 const DESCRIPTION =
-  "CA-led GST notice reply in Chennai for ASMT-10, DRC-01A and DRC-01 notices. Send the notice on WhatsApp or book a 15-minute consultation.";
+  "CA-led GST notice reply in Chennai for ASMT-10, DRC-01A, DRC-01 and show cause notices. Send the notice on WhatsApp or book a 15-minute consultation today.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

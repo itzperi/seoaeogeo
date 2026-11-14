@@ -6,7 +6,7 @@ export const meta: BlogPostMeta = {
   title: "Can an Overseas Bookkeeper Do My BAS? What the Law Allows",
   description:
     "Under the Tax Agent Services Act, BAS work for a fee needs a registered agent. What an offshore bookkeeper can do, what needs supervision, and Payday Super.",
-  date: "2026-11-26",
+  date: "2027-01-26",
   excerpt:
     "An offshore bookkeeper can keep and reconcile your books, but BAS services for a fee need a registered BAS or tax agent who supervises, lodges and stays responsible.",
   summary:

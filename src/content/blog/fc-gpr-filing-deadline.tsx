@@ -1,5 +1,6 @@
 import type { BlogPostMeta } from "@/lib/blog";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 
 // Sources: FEMA (Mode of Payment and Reporting of Non-Debt Instruments)
 // Regulations, 2019 (FEMA 395/2019-RB, consolidated up to 13 June 2026):
@@ -118,7 +119,7 @@ export default function Body() {
         money to complete reporting. Because the 60-day allotment window runs
         first, plan the board meeting and valuation before the money arrives.
         Our post on{" "}
-        <Link href="/blog/share-allotment-after-incorporation">share allotment after incorporation</Link>{" "}
+        <PostLink slug="share-allotment-after-incorporation">share allotment after incorporation</PostLink>{" "}
         covers the company law steps.
       </p>
 

@@ -1,9 +1,10 @@
 import type { BlogPostMeta } from "@/lib/blog";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 
 export const meta: BlogPostMeta = {
   slug: "first-board-meeting-checklist",
-  title: "First Board Meeting Checklist for a New Company",
+  title: "First Board Meeting Checklist for a New Company in India",
   description:
     "What to cover at a new company's first board meeting: the 30-day deadline, agenda items, director disclosures, statutory registers and share certificates.",
   date: "2026-11-20",
@@ -170,7 +171,7 @@ export default function Body() {
         who then appoint the auditor at an extraordinary general meeting within
         ninety days. Obtain the auditor&apos;s written consent and eligibility
         certificate before the meeting. Our post on{" "}
-        <Link href="/blog/first-auditor-appointment-adt-1">first auditor appointment and ADT-1</Link>{" "}
+        <PostLink slug="first-auditor-appointment-adt-1">first auditor appointment and ADT-1</PostLink>{" "}
         explains the filing nuances.
       </p>
 

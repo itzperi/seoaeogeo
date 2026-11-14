@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Private Limited Company Registration in Coimbatore | CA" },
   description:
-    "Company registration in Coimbatore for Pvt Ltd, LLP and OPC founders, handled online from our Chennai office: DSC, SPICe+ filing, ROC Coimbatore, GST and Udyam.",
+    "Company registration in Coimbatore for Pvt Ltd, LLP and OPC founders, handled online from our Chennai office: DSC, SPICe+ filing, ROC Coimbatore, GST, Udyam.",
   alternates: { canonical: "/company-registration-coimbatore" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

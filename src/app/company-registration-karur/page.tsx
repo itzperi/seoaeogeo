@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Private Limited Company Registration in Karur | CA" },
   description:
-    "Private limited company registration in Karur for home textile exporters, bus body builders and finance firms, done online from Anna Nagar: SPICe+, ROC Chennai.",
+    "Private limited company registration in Karur for home textile exporters, bus body builders and finance firms, done online from Anna Nagar: SPICe+ and ROC.",
   alternates: { canonical: "/company-registration-karur" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "documents-checklist-before-auditor-visit",
-  title: "Documents Checklist Before Your Auditor's Visit",
+  title: "Documents Checklist Before Your Statutory Auditor's Visit",
   description:
     "Most audit delay in Chennai businesses has nothing to do with book complexity and everything to do with documents not being ready when the auditor arrives.",
   date: "2026-09-19",

@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Private Limited Company Registration in Chengalpattu | CA" },
   description:
-    "Private limited company registration in Chengalpattu for Mahindra World City, Maraimalai Nagar and OMR/GST Road firms, handled online from Anna Nagar, Chennai.",
+    "Private limited company registration in Chengalpattu for Mahindra World City, Maraimalai Nagar and GST Road firms, handled online from Anna Nagar, Chennai.",
   alternates: { canonical: "/company-registration-chengalpattu" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

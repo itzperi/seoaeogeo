@@ -296,10 +296,10 @@ export default function ContactPage() {
           <p className={P}>
             Our full address is {ADDRESS_FULL}. <a href={GBP_DIRECTIONS_URL} target="_blank" rel="noopener noreferrer" className={LINK}>Open directions to the Anna Nagar office</a>. If you are using a map app, search for the Plus Code {PLUS_CODE} or
             for C S Rushil &amp; Co., and use the embedded map above to see the pin. When you arrive, look for J-Block
-            and 1st Street on 13th Main Road. If you are coming for a first meeting, it helps to book a slot
-            on the calendar above or call ahead on{" "}
-            <a href={`tel:${PHONE_TEL}`} className={LINK}>{PHONE_DISPLAY}</a>, so that the right person is available
-            when you walk in. You can also reach the team by email at{" "}
+            and 1st Street on 13th Main Road. Walk-ins are welcome, and booking a slot saves waiting time: use the
+            calendar above or call{" "}
+            <a href={`tel:${PHONE_TEL}`} className={LINK}>{PHONE_DISPLAY}</a> before you come. You can also reach the
+            team by email at{" "}
             <a href={`mailto:${EMAIL}`} className={LINK}>{EMAIL}</a>.
           </p>
           <p className={P}>

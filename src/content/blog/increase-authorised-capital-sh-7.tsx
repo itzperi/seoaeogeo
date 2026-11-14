@@ -1,5 +1,6 @@
 import type { BlogPostMeta } from "@/lib/blog";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 
 // Sources (checked 14 Nov 2026):
 // - Companies Act, 2013 as on MCA (content/dam/mca/pdf/CompaniesAct2013.pdf,
@@ -18,7 +19,7 @@ export const meta: BlogPostMeta = {
   slug: "increase-authorised-capital-sh-7",
   title: "Increase in Authorised Capital: SH-7, MCA Fee and Stamp Duty",
   description:
-    "Increasing authorised capital: Section 61, the resolution and MGT-14, SH-7 within 30 days, the MCA fee on the increase and Tamil Nadu stamp duty.",
+    "How to increase authorised capital: Section 61, the resolution and MGT-14, SH-7 within 30 days, the MCA fee on the increase and Tamil Nadu stamp duty.",
   date: "2026-11-14",
   excerpt:
     "Raising authorised capital takes a members' resolution, an SH-7 filing within 30 days, an MCA fee worked out on the difference in capital and, in Tamil Nadu, stamp duty on the increase.",
@@ -200,7 +201,7 @@ export default function Body() {
         <li>
           <strong>Issue shares only after the increase is in place.</strong>{" "}
           Our guide to{" "}
-          <Link href="/blog/share-allotment-after-incorporation">share allotment</Link>{" "}
+          <PostLink slug="share-allotment-after-incorporation">share allotment</PostLink>{" "}
           covers the allotment that usually follows.
         </li>
       </ol>

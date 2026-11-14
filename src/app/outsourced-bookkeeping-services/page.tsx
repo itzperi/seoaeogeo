@@ -7,9 +7,9 @@ import { SITE_URL } from "@/lib/site";
 const PATH = "/outsourced-bookkeeping-services";
 
 export const metadata: Metadata = {
-  title: { absolute: "Outsourced Bookkeeping Services from India | US, UK, SG, AU, UAE" },
+  title: { absolute: "Outsourced Bookkeeping from India for US, UK, SG, AU, UAE" },
   description:
-    "Outsourced bookkeeping from a Chartered Accountancy firm in Chennai for businesses in the US, UK, Singapore, Australia, the UAE and India: how it works, who files what, and what it costs to run.",
+    "Outsourced bookkeeping from a CA firm in Chennai for businesses in the US, UK, Singapore, Australia and the UAE: how it works, security and who files what.",
   alternates: { canonical: PATH },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

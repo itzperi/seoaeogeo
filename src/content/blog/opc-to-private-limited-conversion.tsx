@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "opc-to-private-limited-conversion",
-  title: "OPC to Private Limited Conversion: INC-6 Process",
+  title: "OPC to Private Limited Company Conversion: INC-6 Process",
   description:
     "How a One Person Company converts into a private limited company using Form INC-6, why conversion is now voluntary, and what changes in compliance afterwards.",
   date: "2026-12-11",

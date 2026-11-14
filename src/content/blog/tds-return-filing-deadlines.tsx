@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "tds-return-filing-deadlines",
-  title: "TDS Return Filing Deadlines for FY 2026-27",
+  title: "TDS Return Filing Deadlines for FY 2026-27: 24Q, 26Q, 27Q",
   description:
     "Quarterly TDS return due dates for FY 2026-27, the Section 234E late fee and Section 271H penalty, and a practical checklist for filing each quarter on time.",
   date: "2026-10-28",

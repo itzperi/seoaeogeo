@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "nri-itr-filing",
   title: "NRI Income Tax Return Filing: A Guide for Chennai NRIs",
   description:
-    "NRIs with family, property, or investments in Chennai often have a genuine Indian tax filing obligation that gets overlooked simply by living abroad.",
+    "When NRIs with family, property or investments in India must file an Indian income tax return, which income is taxable here and how DTAA relief applies.",
   date: "2026-09-19",
   excerpt:
     "Non resident Indians with family, property, or investments back in Chennai often have a genuine Indian tax filing obligation that gets...",

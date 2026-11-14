@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 
 const title = "GST Litigation and GSTAT Appeals in Hosur | CA Firm";
 const description =
-  "GST disputes for Hosur auto component and electronics units: place-of-supply and IGST disputes, e-way bill detentions, SCN replies and GSTAT appeals.";
+  "GST disputes for Hosur auto component and electronics units: place-of-supply and IGST disputes, e-way bill detentions, SCN replies and GSTAT appeals, online.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

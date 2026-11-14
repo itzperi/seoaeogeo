@@ -47,7 +47,7 @@ export default function Page() {
         { question: "Can you help with GST litigation for a Guindy-based manufacturing company?", answer: "Yes — GST show-cause notice replies, appeals, and GSTAT representation are core services we provide to businesses across Guindy's industrial base." },
       ]}
       furtherReading={[
-        { slug: "what-virtual-cfo-reviews-monthly", title: "What a Virtual CFO Actually Reviews Every Month" },
+        { slug: "what-virtual-cfo-reviews-monthly", title: "What a Virtual CFO Actually Reviews Every Month: A Checklist" },
         { slug: "itc-mismatch-notices", title: "ITC Mismatch Notices: Why They Happen and How to Respond" },
       ]}
     />

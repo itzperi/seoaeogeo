@@ -5,10 +5,10 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "Trust and NGO Registration in Chennai | C S Rushil & Co." },
   description:
-    "Formation and compliance for trusts, societies, and Section 8 companies in Chennai, including 12A/80G registration support for tax-exempt status.",
+    "Formation and compliance for trusts, societies and Section 8 companies in Chennai, including 12A and 80G registration for tax exemption and donor deductions.",
   openGraph: {
     title: "Trust and NGO Registration in Chennai | C S Rushil & Co.",
-    description: "Formation and compliance for trusts, societies, and Section 8 companies in Chennai, including 12A/80G registration support for tax-exempt status.",
+    description: "Formation and compliance for trusts, societies and Section 8 companies in Chennai, including 12A and 80G registration for tax exemption and donor deductions.",
     url: "/trust",
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },

@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "lut-for-exporters",
-  title: "LUT for Exporters: How to File and Why It Matters",
+  title: "LUT for Exporters Under GST: How to File and Why It Matters",
   description:
     "If your Chennai business exports services or goods, a Letter of Undertaking (LUT) is one of the most valuable and most overlooked GST filings you can make.",
   date: "2026-09-19",

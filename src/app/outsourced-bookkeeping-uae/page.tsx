@@ -8,9 +8,9 @@ const PATH = "/outsourced-bookkeeping-uae";
 const market = getBookkeepingMarket(PATH.slice(1))!;
 
 export const metadata: Metadata = {
-  title: { absolute: "Bookkeeping Services for Dubai & UAE Companies | Corporate Tax" },
+  title: { absolute: "Bookkeeping for Dubai & UAE Companies | VAT & Corporate Tax" },
   description:
-    "IFRS bookkeeping for Dubai, Abu Dhabi and free zone companies: VAT figures, Corporate Tax-ready books and e-invoicing preparation, kept from Chennai. Filings by your FTA tax agent.",
+    "IFRS bookkeeping for Dubai, Abu Dhabi and free zone companies: VAT figures, Corporate Tax-ready books and e-invoicing preparation, filed by your tax agent.",
   alternates: { canonical: PATH },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

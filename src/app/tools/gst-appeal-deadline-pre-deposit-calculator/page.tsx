@@ -4,7 +4,7 @@ import ToolShell, { EstimateNote, H2, LINK, P, ServiceCta, Table, webApplication
 import Calculator from "./Calculator";
 
 const PATH = "/tools/gst-appeal-deadline-pre-deposit-calculator";
-const TITLE = "GST Appeal Deadline & Pre-Deposit Calculator";
+const TITLE = "GST Appeal Deadline & Pre-Deposit Calculator (Section 107)";
 const DESCRIPTION =
   "Work out your GST appeal due date and the 10% pre-deposit for a first appeal under section 107 or a GSTAT appeal under section 112, with caps applied.";
 const H1 = "GST Appeal Deadline & Pre-Deposit Calculator";

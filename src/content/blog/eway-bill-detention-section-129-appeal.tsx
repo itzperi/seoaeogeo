@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "eway-bill-detention-section-129-appeal",
   title: "E-Way Bill Detention Under Section 129: Release and Appeal",
   description:
-    "Goods detained under Section 129 in Tamil Nadu: the MOV forms, current penalty amounts, paying for release vs contesting, and the appeal with a 10% pre-deposit.",
+    "Goods detained under Section 129 in Tamil Nadu: the MOV forms, current penalty amounts, paying for release vs contesting, and the appeal and 10% pre-deposit.",
   date: "2026-10-12",
   updated: "2026-11-14",
   excerpt:

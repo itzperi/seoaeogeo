@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 
 const title = "GST Litigation & GSTAT Appeals in Madurai | CA Firm";
 const description =
-  "GST notices and appeals for Madurai and southern Tamil Nadu traders, granite units and agri-linked businesses: SCN replies, APL-01 and the Madurai GSTAT bench.";
+  "GST notices and appeals for Madurai and south Tamil Nadu traders, granite units and agri-linked businesses: SCN replies, APL-01 and the Madurai GSTAT bench.";
 
 export const metadata: Metadata = {
   title: { absolute: title },

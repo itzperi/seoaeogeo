@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "cost-of-diy-gst-filing",
   title: "What Goes Wrong When You File GST Returns Yourself",
   description:
-    "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely the amount you saved.",
+    "Filing monthly GST returns yourself looks like an easy saving. The real cost of errors, missed credit and late fees usually shows up months later in notices.",
   date: "2026-09-26",
   excerpt:
     "Handling monthly GST filings yourself looks like an easy saving. The real cost usually shows up months later, and it's rarely small.",

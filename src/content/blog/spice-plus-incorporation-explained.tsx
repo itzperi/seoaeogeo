@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "spice-plus-incorporation-explained",
   title: "SPICe+ Step by Step (2026): Part A, Part B and AGILE-PRO-S",
   description:
-    "SPICe+ step by step for 2026: Part A, Part B, e-MoA, e-AoA, AGILE-PRO-S, DSC and DIN, how to resubmit, and the errors the MCA flags most often.",
+    "SPICe+ step by step for 2026: Part A, Part B, e-MoA, e-AoA, AGILE-PRO-S, DSC and DIN, how to resubmit a form, and the errors the MCA flags most often.",
   date: "2026-09-19",
   updated: "2026-11-13",
   excerpt:

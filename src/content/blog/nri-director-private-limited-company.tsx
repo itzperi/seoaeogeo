@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "nri-director-private-limited-company",
   title: "NRI as Director of an Indian Private Limited Company",
   description:
-    "How NRIs can be directors and shareholders of an Indian private limited company: DIN, attested documents, the 182-day resident director rule and FDI reporting.",
+    "How NRIs can be directors and shareholders of an Indian private limited company: DIN, attested documents, the 182-day resident director rule, FDI reporting.",
   date: "2026-10-23",
   excerpt:
     "NRIs can be directors and shareholders of an Indian company. Here is how DIN, document attestation, the resident director rule and FDI reporting work.",

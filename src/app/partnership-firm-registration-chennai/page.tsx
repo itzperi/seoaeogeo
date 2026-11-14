@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
 import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
+
+// Re-render daily so links to scheduled guides (PostLink) switch on when they publish.
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: { absolute: "Partnership Firm Registration in Chennai | Deed & Filing" },
   description:
-    "Partnership firm registration in Chennai: deed drafting and stamping, filing with the Registrar of Firms on tnreginet, PAN, GST and partner changes.",
+    "Partnership firm registration in Chennai: deed drafting and stamping, filing with the Registrar of Firms on tnreginet, PAN, GST and later partner changes.",
   alternates: { canonical: "/partnership-firm-registration-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -270,9 +274,9 @@ export default function Page() {
         time. The Indian Stamp (Tamil Nadu Amendment) Act, 2023 raised the partnership duty from Rs. 300 to Rs. 1,000. Registering
         the firm with the Registrar of Firms and registering the deed as a document at a Sub-Registrar&apos;s office are separate
         steps, and the 1% registration fee applies only to the second. If the partners later want limited liability, see{" "}
-        <Link href="/blog/convert-partnership-firm-to-llp" className="text-royal-violet underline underline-offset-2">
+        <PostLink slug="convert-partnership-firm-to-llp" className="text-royal-violet underline underline-offset-2">
           converting a partnership firm into an LLP
-        </Link>{" "}
+        </PostLink>{" "}
         and our{" "}
         <Link href="/llp-registration-chennai" className="text-royal-violet underline underline-offset-2">
           LLP registration

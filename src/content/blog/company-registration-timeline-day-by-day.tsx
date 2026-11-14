@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "company-registration-timeline-day-by-day",
-  title: "Company Registration Timeline: A Day-by-Day Guide",
+  title: "Company Registration Timeline in India: A Day-by-Day Guide",
   description:
     "A realistic 7 to 12 working day timeline for registering a private limited company through SPICe+, step by step, and the common issues that cause delays.",
   date: "2026-11-03",

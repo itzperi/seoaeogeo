@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "registered-office-at-home-company",
-  title: "Can Your Home Be a Company's Registered Office?",
+  title: "Can Your Home Be a Company's Registered Office in India?",
   description:
     "Using a home, rented flat or co-working space as a company's registered office: the NOC, utility bill and rent agreement MCA expects, and when INC-22 applies.",
   date: "2026-10-30",

@@ -5,7 +5,7 @@ export const meta: BlogPostMeta = {
   slug: "government-fees-company-registration",
   title: "Government Fees for Company Registration in India (2026)",
   description:
-    "Statutory costs of registering a company in India: MCA fee and zero-fee band, name reservation, PAN, TAN, Tamil Nadu stamp duty, OPC and DSC.",
+    "Statutory costs of registering a company in India: the MCA fee and zero-fee band, name reservation, PAN, TAN, Tamil Nadu stamp duty, OPC rules and DSC.",
   date: "2026-10-20",
   updated: "2026-11-13",
   excerpt:
