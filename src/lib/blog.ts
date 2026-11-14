@@ -21,6 +21,16 @@ export type BlogPostModule = {
 // Static registry — Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
+  "what-does-a-ca-firm-in-chennai-do": () =>
+    import("@/content/blog/what-does-a-ca-firm-in-chennai-do"),
+  "when-does-a-business-need-a-chartered-accountant": () =>
+    import("@/content/blog/when-does-a-business-need-a-chartered-accountant"),
+  "how-to-verify-a-chartered-accountant-in-india": () =>
+    import("@/content/blog/how-to-verify-a-chartered-accountant-in-india"),
+  "ca-engagement-letter-what-it-should-cover": () =>
+    import("@/content/blog/ca-engagement-letter-what-it-should-cover"),
+  "first-meeting-with-a-ca-firm-documents-checklist": () =>
+    import("@/content/blog/first-meeting-with-a-ca-firm-documents-checklist"),
   "increase-authorised-capital-sh-7": () =>
     import("@/content/blog/increase-authorised-capital-sh-7"),
   "asmt-10-gst-scrutiny-notice-reply": () =>
@@ -203,6 +213,51 @@ export type BlogSlug = keyof typeof modules;
 // export by convention; duplicated here (rather than importing every module
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
+  {
+    slug: "what-does-a-ca-firm-in-chennai-do",
+    title: "What Does a CA Firm in Chennai Do? Services and Signatures",
+    description:
+      "What a CA firm in Chennai does, service by service, and which work only a practising chartered accountant may sign: statutory audit, tax audit and Form 146.",
+    date: "2026-11-14",
+    excerpt:
+      "Company registration, GST, income tax, audit, ROC filings, bookkeeping, virtual CFO and NRI tax explained one by one, plus the reports that only a chartered accountant in practice can sign.",
+  },
+  {
+    slug: "when-does-a-business-need-a-chartered-accountant",
+    title: "When Does a Business Need a CA? 10 Triggers in Chennai",
+    description:
+      "Ten moments when a Chennai business should bring in a chartered accountant: incorporation, GST threshold, first notice, audit, payroll and foreign money.",
+    date: "2026-11-14",
+    excerpt:
+      "Incorporation, crossing the GST threshold, a first tax notice, audit applicability, hiring staff, foreign money and property sales: ten points at which a chartered accountant stops being optional.",
+  },
+  {
+    slug: "how-to-verify-a-chartered-accountant-in-india",
+    title: "How to Verify a Chartered Accountant or CA Firm in India",
+    description:
+      "Check a CA before you hire: ICAI Trace a Member, certificate of practice, firm registration number, UDIN on signed reports and a written engagement letter.",
+    date: "2026-11-14",
+    excerpt:
+      "Five checks you can run yourself before hiring a chartered accountant: ICAI membership, certificate of practice, firm registration number, UDIN on signed documents and the engagement letter.",
+  },
+  {
+    slug: "ca-engagement-letter-what-it-should-cover",
+    title: "CA Engagement Letter: What It Should Cover Before You Sign",
+    description:
+      "What a CA firm's engagement letter should cover: scope, deliverables, timelines, responsibilities, confidentiality, itemised fees, scope changes and exit.",
+    date: "2026-11-14",
+    excerpt:
+      "Scope, exclusions, deliverables, timelines, who does what, confidentiality, an itemised quote with government fees shown separately, scope changes and termination: the clauses to read before you sign.",
+  },
+  {
+    slug: "first-meeting-with-a-ca-firm-documents-checklist",
+    title: "First Meeting With a CA Firm: Documents Checklist by Need",
+    description:
+      "What to bring to a first meeting with a CA firm in Chennai: document lists for a new company, GST registration, a tax notice, an NRI property sale and books.",
+    date: "2026-11-14",
+    excerpt:
+      "Document checklists for five common first meetings with a chartered accountant: starting a company, registering for GST, answering a tax notice, selling property as an NRI and handing over your books.",
+  },
   {
     slug: "increase-authorised-capital-sh-7",
     title: "Increase in Authorised Capital: SH-7, MCA Fee and Stamp Duty",

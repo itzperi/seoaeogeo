@@ -402,6 +402,25 @@ export default function HomePage() {
             . For membership checks, use{" "}
             <a href="https://traceamember.icai.org/" target="_blank" rel="noopener noreferrer" className="font-medium text-royal-violet underline underline-offset-4">ICAI&apos;s Trace a Member service</a>.
           </p>
+          <nav aria-labelledby="ca-guides" className="mt-8 max-w-3xl">
+            <h3 id="ca-guides" className="text-lg font-medium text-obsidian">Guides to working with a CA firm in Chennai</h3>
+            <ul className="mt-3 grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {[
+                ["/blog/what-does-a-ca-firm-in-chennai-do", "What a CA firm in Chennai does, service by service"],
+                ["/blog/when-does-a-business-need-a-chartered-accountant", "When a business needs a chartered accountant"],
+                ["/blog/how-to-verify-a-chartered-accountant-in-india", "How to verify a chartered accountant or CA firm"],
+                ["/blog/ca-engagement-letter-what-it-should-cover", "What a CA engagement letter should cover"],
+                ["/blog/first-meeting-with-a-ca-firm-documents-checklist", "Documents to bring to a first meeting with a CA"],
+                ["/blog/ca-firm-or-online-filing-platform", "CA firm or online filing platform"],
+              ].map(([href, label]) => (
+                <li key={href}>
+                  <Link href={href} className="text-sm font-medium text-royal-violet underline underline-offset-4">
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </section>
 
