@@ -31,6 +31,8 @@ const PLACE_TA: Record<string, string> = {
   "anna-nagar": "அண்ணா நகர்",
   guindy: "கிண்டி",
   kilpauk: "கீழ்ப்பாக்கம்",
+  mogappair: "மொகப்பேர்",
+  aminjikarai: "அமைந்தகரை",
   mylapore: "மயிலாப்பூர்",
   nungambakkam: "நுங்கம்பாக்கம்",
   "omr-sholinganallur": "ஓஎம்ஆர் சோழிங்கநல்லூர்",

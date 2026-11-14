@@ -1,24 +1,21 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import AreaPageTemplate from "@/components/AreaPageTemplate";
-import { LANGUAGES_SPOKEN, SITE_URL } from "@/lib/site";
+import { SITE_URL } from "@/lib/site";
 
 const PAGE_URL = `${SITE_URL}/chartered-accountant-anna-nagar-chennai`;
-
-const LANGUAGES_TEXT =
-  LANGUAGES_SPOKEN.length > 1
-    ? `${LANGUAGES_SPOKEN.slice(0, -1).join(", ")} and ${LANGUAGES_SPOKEN[LANGUAGES_SPOKEN.length - 1]}`
-    : LANGUAGES_SPOKEN.join("");
+const L = "text-royal-violet underline underline-offset-2";
+const WALK_IN = "Walk-ins are welcome, and booking a slot saves waiting time.";
 
 export const metadata: Metadata = {
-  title: { absolute: "Chartered Accountant in Anna Nagar, Chennai | C S Rushil" },
+  title: { absolute: "Chartered Accountant, Anna Nagar, Chennai | C S Rushil & Co." },
   description:
-    "CA firm in Anna Nagar, Chennai for company and LLP registration, GST and income tax. Visit Mon–Sat, 9:30 AM–6:30 PM; book first so the right CA is free.",
+    "CA in J-Block, Anna Nagar, Chennai for company registration, GST, income tax and audit. Visit our 13th Main Road office or work online. Free 15-min consult.",
   alternates: { canonical: "/chartered-accountant-anna-nagar-chennai", types: { "text/markdown": "/md/chartered-accountant-anna-nagar-chennai" } },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "Chartered Accountant in Anna Nagar, Chennai",
-    description: "Company and LLP registration, GST, audit and income tax services from a CA firm based in Anna Nagar.",
+    description: "Company and LLP registration, GST, audit and income tax from a CA firm whose only office is in J-Block, Anna Nagar.",
     url: "/chartered-accountant-anna-nagar-chennai",
   },
 };
@@ -30,13 +27,13 @@ export default function Page() {
       locality="Anna Nagar"
       crumbHref="/chartered-accountant-anna-nagar-chennai"
       h1="Chartered Accountant in Anna Nagar, Chennai"
-      subhead="C S Rushil & Co. is a chartered accountant firm headquartered in Anna Nagar, at J-Block, 1st Street, 13th Main Rd — led by CA Rushil C S with a 16-member team handling company registration, GST, audit and tax."
-      distanceNote="This is our home base: our office is in Anna Nagar itself, open Monday to Saturday, 9:30 AM to 6:30 PM. We recommend booking a consultation first so the right team member is available — for Anna Nagar clients, a same-day meeting is often possible. Call us for directions and parking."
-      directAnswer="Yes. C S Rushil & Co. is a chartered accountant firm headquartered in Anna Nagar, at J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai 600040. The firm handles company registration, GST, audit and income tax, and Anna Nagar clients can meet the team in person at the office or work with the firm online."
+      subhead="C S Rushil & Co. is a chartered accountant firm based in Anna Nagar, at J-Block, 1st Street, 13th Main Rd. Led by CA Rushil C S, the firm handles company registration, GST, audit and income tax for the neighbourhood and beyond."
+      distanceNote={`Anna Nagar is our office's home area: our only office is here, on 1st Street, 13th Main Road, J-Block, open Monday to Saturday from 9:30 AM to 6:30 PM and closed on Sunday. ${WALK_IN} Call +91 72001 49711 for directions and parking.`}
+      directAnswer="Yes. C S Rushil & Co. is a chartered accountant firm whose only office is in Anna Nagar, at Old Door No. AP-890, New No. 18, J-Block, 1st Street, 13th Main Rd, Chennai 600040. Anna Nagar is the office's home area, so clients here can drop in, book a slot, or work with the firm online."
       localContext={[
-        "Anna Nagar is one of Chennai's original planned townships, laid out on a grid road system that's unusual for the city — a legacy of its development as a model residential-commercial district. That planning has aged into one of Chennai's more business-friendly neighbourhoods: wide roads, established commercial stretches, and a mix of long-standing local businesses alongside newer offices.",
-        "Anna Nagar is served by the Chennai Metro Green Line, with stations at Thirumangalam, Anna Nagar Tower and Anna Nagar East, so clients from elsewhere in the city can reach the area by metro. Call us before you visit and we will give you directions from the station or main road that suits you, along with parking guidance.",
-        "Anna Nagar's business mix includes traders and retailers, clinics run by doctors, consultants and other professionals, and early-stage startups, with small manufacturers and services businesses in the nearby industrial areas around Ambattur and Padi. Each brings different compliance needs, from GST returns for a shop to a first statutory audit for a growing company.",
+        "We serve Anna Nagar from inside the neighbourhood. Our office on 13th Main Road in J-Block is a short walk or drive from most Anna Nagar streets, so clients can bring original documents, sign forms and meet a chartered accountant face to face, then switch to WhatsApp, email and video calls for routine filings.",
+        "Anna Nagar is one of Chennai's planned townships, laid out on a grid of numbered main roads, avenues and lettered blocks, which is unusual for the city. That planning has aged into a business-friendly district: wide avenues, established commercial stretches such as 2nd Avenue, and long-standing local businesses alongside newer offices.",
+        "The Chennai Metro Green Line serves Anna Nagar through Thirumangalam, Anna Nagar Tower and Anna Nagar East stations, so clients from elsewhere in the city can reach the area without driving. OpenStreetMap places Anna Nagar in the Greater Chennai Corporation's Anna Nagar zone (Zone 8), which matters for trade licences and professional tax.",
       ]}
       sections={[
         {
@@ -45,9 +42,10 @@ export default function Page() {
             <>
               <p>
                 The office is on 1st Street, 13th Main Road, J-Block, about 300 metres from the Thirumangalam Metro
-                entrance on 2nd Avenue, a few minutes&apos; walk from the Chennai Metro Green Line. For clients
-                coming by road, the approximate straight-line distances from the office are:
+                entrance on 2nd Avenue, a few minutes&apos; walk from the Chennai Metro Green Line. By road, Anna Nagar Tower
+                Park is about 2 minutes off-peak (route estimate), about 1.7 km via 2nd Avenue and 6th Main Road.
               </p>
+              <p className="mt-4">For clients coming from nearby areas, the approximate straight-line distances from the office are:</p>
               <table>
                 <thead>
                   <tr>
@@ -66,84 +64,136 @@ export default function Page() {
                   <tr><td>Kilpauk</td><td>About 4.2 km</td></tr>
                 </tbody>
               </table>
-              <p>
-                Distances are straight-line from the office pin, measured on OpenStreetMap; road distance is longer.
-                For turn-by-turn directions, open the office on Google Maps from the section below, or see the{" "}
-                <Link href="/contact">contact page</Link>. Please book a time before visiting so the right team member
-                is available.
+              <p className="mt-4">
+                Distances are straight-line from the office pin, measured on OpenStreetMap; road distance is longer. The
+                Tower Park drive time comes from the public OSRM routing service on OpenStreetMap road data and assumes
+                clear roads. For turn-by-turn directions, open the office on Google Maps from the section below, or see
+                the <Link href="/contact" className={L}>contact page</Link>. {WALK_IN}
               </p>
             </>
           ),
         },
         {
-          heading: "Company registration in Anna Nagar",
+          heading: "What kinds of businesses operate in Anna Nagar?",
+          body: (
+            <>
+              <p>
+                Anna Nagar mixes retail, healthcare, professional services and young companies. Its avenues and main roads
+                carry showrooms, restaurants, boutiques, banks and coaching centres, while the side streets hold clinics,
+                diagnostic centres, consultants&apos; offices and early-stage startups working from small commercial units or
+                converted homes.
+              </p>
+              <p className="mt-4">
+                Each of these brings a different compliance load. A 2nd Avenue retailer needs GST returns that reconcile
+                card, UPI and cash sales. A specialist doctor needs practice income and tax audit limits watched. A startup
+                in its first year needs its first board meeting, first auditor and commencement filing done on time. Small
+                manufacturers and service firms in the industrial areas around Ambattur, a short drive west, need e-way
+                bills, job-work records and Udyam registration.
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "How do Anna Nagar founders register a company or LLP?",
+          body: (
+            <>
+              <p>
+                Anna Nagar founders can register a private limited company or LLP with us end to end: DSC, DIN, name
+                approval, MoA and AoA or the LLP agreement, and the SPICe+ or FiLLiP filing. Because the office is in the
+                neighbourhood, document checks and signing usually happen in a single visit, and the rest moves online.
+              </p>
+              <p className="mt-4">
+                A private limited company usually takes 7 to 12 working days once documents and digital signatures are
+                ready. An LLP suits partners, family businesses and professional practices that want limited liability with
+                lighter compliance than a company. See{" "}
+                <Link href="/private-limited-company-incorporation-chennai#anna-nagar" className={L}>
+                  private limited company registration in Anna Nagar
+                </Link>
+                ,{" "}
+                <Link href="/llp-registration-chennai" className={L}>
+                  LLP registration in Chennai
+                </Link>{" "}
+                or compare every structure on our{" "}
+                <Link href="/company-registration-chennai" className={L}>
+                  company registration in Chennai
+                </Link>{" "}
+                page.
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "Which GST and local registrations do Anna Nagar shops and clinics need?",
+          body: (
+            <>
+              <p>
+                An Anna Nagar shop usually needs GST registration once its turnover or type of supply requires it, Tamil
+                Nadu Shops and Establishments registration, a Greater Chennai Corporation trade licence and professional tax
+                enrolment once it employs staff. Clinics check which services are
+                GST-exempt, and a clinic run as a company or LLP applies separately for clinical establishment registration.
+              </p>
+              <p className="mt-4">
+                We handle{" "}
+                <Link href="/goods-and-services-tax" className={L}>
+                  GST registration, returns and notices
+                </Link>
+                , along with{" "}
+                <Link href="/income-tax-return-filing-chennai" className={L}>
+                  income tax return filing
+                </Link>{" "}
+                for business owners, professionals and salaried residents of the area. Restaurants and bakeries also need FSSAI
+                registration or a licence. Tamil Nadu&apos;s GST threshold is
+                lower for services than for goods, so a consultant and a retailer with the same turnover can get different
+                answers.
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "How do we help Anna Nagar families with income tax?",
+          body: (
+            <>
+              <p>
+                Many long-settled Anna Nagar families now earn from several sources at once: a family business or practice,
+                rent from flats and shop units on the main roads, interest and dividends, and capital gains when an older
+                house is sold or redeveloped. We plan advance tax across those sources and keep ownership shares consistent
+                between family members.
+              </p>
+              <p className="mt-4">
+                Several generations often file together, and property may be jointly owned by parents and children, so we
+                handle the reinvestment choices after a property sale with the whole family in view. Because our office is
+                in Anna Nagar, families can bring deeds and statements in person. See our{" "}
+                <Link href="/income-tax-consultant-for-hni-chennai" className={L}>
+                  income tax services for high-income individuals and families in Chennai
+                </Link>
+                .
+              </p>
+            </>
+          ),
+        },
+        {
+          heading: "Is Anna Nagar the only place C S Rushil & Co. has an office?",
           body: (
             <p>
-              We register private limited companies end to end — DSC, DIN, name approval, MoA/AoA and SPICe+ filing — and
-              Anna Nagar founders can finish document drop-off and signing at our office in one visit. See{" "}
-              <Link href="/private-limited-company-incorporation-chennai#anna-nagar" className="text-royal-violet underline underline-offset-2">
-                private limited company registration in Anna Nagar
-              </Link>{" "}
-              or compare every structure on our{" "}
-              <Link href="/company-registration-chennai" className="text-royal-violet underline underline-offset-2">
-                company registration in Chennai
-              </Link>{" "}
-              page.
+              Yes. Anna Nagar is the office&apos;s home area, and our only office is at Old Door No. AP-890, New No. 18,
+              J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai 600040. We have no branches elsewhere; clients from
+              other parts of Chennai, other cities and abroad visit this office or work with us online.
             </p>
           ),
         },
         {
-          heading: "LLP registration in Anna Nagar",
+          heading: "How does our quote work for Anna Nagar clients?",
           body: (
             <p>
-              For partners, family businesses and professional practices that want limited liability with lighter
-              compliance than a company, we handle the FiLLiP filing and the LLP agreement. Read more about{" "}
-              <Link href="/llp-registration-chennai" className="text-royal-violet underline underline-offset-2">
-                LLP registration in Chennai
-              </Link>
-              .
-            </p>
-          ),
-        },
-        {
-          heading: "GST and income tax in Anna Nagar",
-          body: (
-            <p>
-              We handle{" "}
-              <Link href="/goods-and-services-tax" className="text-royal-violet underline underline-offset-2">
-                GST registration, returns and notices
-              </Link>
-              , along with{" "}
-              <Link href="/income-tax-return-filing-chennai" className="text-royal-violet underline underline-offset-2">
-                income tax return filing
-              </Link>{" "}
-              for business owners, professionals and salaried residents of the area.
-            </p>
-          ),
-        },
-        {
-          heading: "Income tax for families and high-income individuals in Anna Nagar",
-          body: (
-            <p>
-              Anna Nagar has many long-settled families whose income now comes from several sources at once: a family business or professional
-              practice, rent from flats and shop units on the main roads, interest and dividends, and capital gains when an older house is sold or
-              redeveloped into apartments. Several generations often file together, and property may be jointly owned by parents and children. We
-              plan advance tax across these sources, keep rent and ownership shares consistent between family members, and handle the reinvestment
-              choices after a property sale. Because our office is in Anna Nagar, families can bring deeds and statements in person. See our{" "}
-              <Link href="/income-tax-consultant-for-hni-chennai" className="text-royal-violet underline underline-offset-2">
-                income tax services for high-income individuals and families in Chennai
-              </Link>{" "}
-              or, for a single return,{" "}
-              <Link href="/income-tax-return-filing-chennai" className="text-royal-violet underline underline-offset-2">
-                income tax return filing in Chennai
-              </Link>
-              .
+              You start with a free 15-minute consultation, at our J-Block office or by video. We then send an itemised
+              quote that shows government fees separately from our professional fees, so you know exactly what is paid to
+              each authority. No work starts until you approve the quote. Book through this page or call +91 72001 49711.
             </p>
           ),
         },
       ]}
       relevantServices={[
-        { slug: "private-limited-company-incorporation-chennai", why: "Private limited company registration in Anna Nagar with a CA firm you can visit in person: documents, DSC and SPICe+ filing in 7–12 working days." },
+        { slug: "private-limited-company-incorporation-chennai", why: "Private limited company registration in Anna Nagar with a CA firm you can visit in person: documents, DSC and SPICe+ filing in 7 to 12 working days once papers are ready." },
         { slug: "company-registration-chennai", why: "Compare business structures and register the right one for your Anna Nagar business." },
         { slug: "llp-registration-chennai", why: "LLP registration for Anna Nagar partners, family businesses and professional practices, including the LLP agreement." },
         { slug: "goods-and-services-tax", why: "GST registration and return filing for Anna Nagar's mix of retail, trading, and services businesses." },
@@ -155,22 +205,18 @@ export default function Page() {
         { slug: "payroll-services-chennai", why: "Payroll outsourcing with PF, ESI, and TDS compliance for Anna Nagar employers." },
       ]}
       faqs={[
-        { question: "Can I walk in to your Anna Nagar office without an appointment?", answer: "Our office is at J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai 600040. We recommend booking a consultation first so the right team member is available, but for Anna Nagar clients a same-day in-person meeting is often possible. Call us for directions and parking." },
-        { question: "Are you open on Saturdays?", answer: "Yes. The office is open Monday to Saturday, 9:30 AM to 6:30 PM, and closed on Sundays. Saturday slots suit many business owners and salaried clients, so book ahead if you want a specific time." },
-        { question: "Which languages does your team speak?", answer: `Our team works with clients in ${LANGUAGES_TEXT}.` },
-        { question: "What documents should I bring for company registration?", answer: "For each director and shareholder: PAN, Aadhaar and a recent passport-size photo. For the company: proof of the registered office address, such as a rent agreement or electricity bill, with a No Objection Certificate from the property owner. NRI or foreign directors need additional documents, and we share a checklist for your situation before you start." },
-        { question: "Can I work with you online instead of visiting?", answer: "Yes. Most GST, income tax and ROC filings are online, so many clients work with us by phone, email, WhatsApp and video call. Anna Nagar clients can mix the two — meet once in person, then handle the rest remotely." },
-        { question: "How do I book an appointment?", answer: "Book a consultation through the booking button on this page, call +91 72001 49711, or message us on WhatsApp. Tell us what you need help with so we can schedule the right person." },
-        { question: "Which services need an in-person visit?", answer: "Company and LLP registration, where documents are checked and signed; first meetings for a statutory or tax audit; and replies to GST or income tax notices, where it helps to go through your records together. Routine return filing and bookkeeping usually do not need a visit." },
-        { question: "How do I choose a CA firm in Anna Nagar?", answer: "Check four things: the partner's ICAI membership (verifiable on the ICAI website), whether the firm handles your specific work such as company registration, GST notices or audit, who on the team will actually do your filings, and how quickly they respond. Meeting the team at their office before you sign up is the simplest test." },
-        { question: "What should I ask a CA firm before hiring them?", answer: "Ask how the firm communicates through the year, not just at filing time, and how quickly it replies to simple questions. Ask whether it regularly handles your type of work, and how it has dealt with GST or income tax notices, audit queries and disputes. Routine filing is easy to compare; handling problems is where firms differ. Also notice whether the partner can explain why a structure, deduction or filing approach applies to you in plain language rather than processing paperwork silently. If you leave the first conversation more confused than when you arrived, take that into account before committing to an ongoing relationship." },
+        { question: "Can I walk in to your Anna Nagar office without an appointment?", answer: `Yes. ${WALK_IN} The office is at J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai 600040, open Monday to Saturday from 9:30 AM to 6:30 PM and closed on Sunday. Call +91 72001 49711 for directions and parking guidance before you set out.` },
+        { question: "How far is your office from Thirumangalam Metro station?", answer: "About 300 metres from the Thirumangalam Metro entrance on 2nd Avenue, a few minutes' walk. Thirumangalam is on the Chennai Metro Green Line, which also serves Anna Nagar Tower and Anna Nagar East stations, so clients from other Green Line stops can reach the office without driving or looking for parking." },
+        { question: "Can my Anna Nagar home be the registered office of my new company?", answer: "Often, yes. The Companies Act does not insist on commercial premises, and a home address is commonly used with a recent utility bill, ownership or rent documents, and a no objection certificate from the owner naming the proposed company. We check these papers at our J-Block office before filing SPICe+." },
+        { question: "Which documents should an Anna Nagar family bring for a property sale?", answer: "Bring the sale deed, the original purchase deed or inheritance papers, bills for improvements, the buyer's TDS certificate, and PAN and Aadhaar of every co-owner. If the sale money will go into another house or specified bonds, bring those papers too, so the capital gains exemption is worked out correctly for each owner." },
+        { question: "Do Anna Nagar shops and clinics need professional tax enrolment?", answer: "Usually, yes, once they employ staff. Anna Nagar falls under the Greater Chennai Corporation, so an employer enrols for Tamil Nadu professional tax with the Corporation, deducts it from eligible salaries and pays it on the half-yearly cycle. We handle enrolment together with GST, Shops and Establishments registration and the trade licence." },
       ]}
       furtherReading={[
         { slug: "how-to-choose-a-chartered-accountant-in-chennai", title: "How to Choose a CA Firm in Chennai: 9 Checks Before You Hire" },
         { slug: "itc-mismatch-notices", title: "ITC Mismatch Notices: Why They Happen and How to Respond" },
         { slug: "documents-checklist-before-auditor-visit", title: "Documents Checklist Before Your Auditor's Visit" },
         { slug: "post-incorporation-compliance-checklist", title: "Post-Incorporation Compliance Checklist for Chennai Firms" },
-        { slug: "advance-tax-deadlines", title: "Advance Tax Deadlines for FY 2026 to 27: A Practical Guide" },
+        { slug: "advance-tax-deadlines", title: "Advance Tax Due Dates 2026-27: Instalments and Interest" },
         { slug: "msme-udyam-registration-checklist", title: "MSME Udyam Registration After Incorporation: A Checklist" },
       ]}
     />
