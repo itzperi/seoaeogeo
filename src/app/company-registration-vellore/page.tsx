@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
-import { SITE_URL } from "@/lib/site";
+import { BOOKING_LINK, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { absolute: "Private Limited Company Registration in Vellore | CA" },
@@ -93,6 +93,21 @@ export default function Page() {
           answer:
             "Yes. Any premises in Vellore that you own or rent, including your home, shop or factory, can be the registered office. You need a recent utility bill and, if the premises are rented or belong to someone else, a rent agreement and the owner's no-objection letter. The office can be shifted later through an ROC filing.",
         },
+        {
+          question: "Can Gudiyattam match or coir units form a company to run a shared facility?",
+          answer:
+            "Yes. Common facility centres under the MSE Cluster Development Programme are run through a special purpose vehicle owned by the member units. Vellore's District Export Action Plan records two Gudiyattam match clusters set up as private limited companies. Each member's shareholding, voting rights and use of the facility should be written into the articles at the outset.",
+        },
+        {
+          question: "Is a Katpadi engineering supplier still under ROC Chennai after the 2019 district split?",
+          answer:
+            "Yes. Katpadi taluk stayed in Vellore district when Ranipet and Tirupattur were carved out in 2019, and all three districts come under the Registrar of Companies, Chennai. The split matters for address details instead: registered office proof, the GST jurisdiction and the professional tax authority should all reflect the current district.",
+        },
+        {
+          question: "Which local office supports new MSMEs in Vellore after incorporation?",
+          answer:
+            "The District Industries Centre, Vellore, helps new micro, small and medium enterprises with credit-linked schemes such as NEEDS, UYEGP and PMEGP, and convenes the MSME single window portal through which units seek approvals online. Keeping the company's PAN, GSTIN and Udyam certificate ready makes those applications smoother.",
+        },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
       relatedPosts={["lut-for-exporters", "private-limited-vs-llp-chennai-startups", "spice-plus-incorporation-explained", "post-incorporation-compliance-checklist"]}
@@ -119,6 +134,41 @@ export default function Page() {
         alteration filing later. Professional tax is registered with the local body where the business operates.
       </p>
 
+      <h2 className="mt-14 text-2xl text-obsidian">What does Vellore district&apos;s industrial base look like today?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        The District Export Action Plan published on the Vellore district website describes an economy where services carry
+        much of the weight: trade, medical services, hotels and restaurants, banking, real estate and construction all attract
+        investment. On the factory side it names leather and shoe units, coir products, safety matches, power loom and handloom
+        goods such as lungis and towels, general engineering and fabrication, garments and automobile components. Gudiyattam
+        block is singled out as a hub for both matches and coir, while the Katpadi and Vellore area has a concentration of engineering
+        and auto-component units, including ancillaries supplying BHEL at Ranipet.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Organised industrial land inside the present district is limited. The same plan records one TANSIDCO estate, at
+        Katpadi, set up in 1968 and occupied by automobile spare parts, engineering, and leather and chemical units, with a
+        new estate proposed at Vallimalai in Katpadi block. SIPCOT&apos;s list of industrial parks shows none within Vellore
+        district itself; Ranipet Industrial Park and SEZ sits in neighbouring Ranipet district.
+      </p>
+
+      <h2 className="mt-14 text-2xl text-obsidian">Which structure tends to fit each Vellore trade?</h2>
+      <ul className="mt-4 max-w-3xl space-y-3 text-slate">
+        <li>• <strong className="text-obsidian">Match and coir makers around Gudiyattam</strong> often begin as proprietorships. An LLP adds limited liability without heavy paperwork, and a private limited company suits a group of units pooling money into shared machinery.</li>
+        <li>• <strong className="text-obsidian">Engineering and fabrication shops in Katpadi</strong> that supply public-sector and large private buyers generally prefer a Pvt Ltd, since vendor registration is simpler with audited accounts and a board that can sign contracts.</li>
+        <li>• <strong className="text-obsidian">Handloom and power loom families</strong> producing lungis, towels and sarees can move from a partnership to an LLP while keeping their existing profit-sharing ratios.</li>
+      </ul>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        These are general patterns, not rules; the right choice depends on your owners, finance plans and buyers.
+        Sources:{" "}
+        <a href="https://vellore.nic.in/district-industries-center/" target="_blank" rel="noopener noreferrer" className={LINK}>
+          Vellore District Industries Centre (District Export Action Plan)
+        </a>{" "}
+        and{" "}
+        <a href="https://sipcotweb.tn.gov.in/industrial-parks" target="_blank" rel="noopener noreferrer" className={LINK}>
+          SIPCOT industrial parks
+        </a>
+        .
+      </p>
+
       <h2 className="mt-14 text-2xl text-obsidian">How do we serve Vellore clients from Chennai?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">
         C S Rushil &amp; Co. operates from one office, in Anna Nagar, Chennai, and has no branch or address in Vellore. We work with
@@ -127,6 +177,14 @@ export default function Page() {
           company registration guide
         </Link>
         .
+      </p>
+
+      <h2 className="mt-14 text-2xl text-obsidian">How does our quote work for a Vellore registration?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        It begins with a{" "}
+        <a href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className={LINK}>free 15-minute consultation</a>{" "}
+        by video call. Afterwards we email an itemised quote in which government fees, such as MCA filing fees and stamp
+        duty, appear on separate lines from our professional fees. Nothing is filed and no work begins until you approve it.
       </p>
     </ServicePageTemplate>
   );

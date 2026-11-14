@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
-import { SITE_URL } from "@/lib/site";
+import { BOOKING_LINK, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: { absolute: "Private Limited Company Registration in Kanchipuram | CA" },
@@ -126,6 +126,21 @@ export default function Page() {
           answer:
             "The foreign parent subscribes to shares of a new Indian private limited company incorporated through SPICe+, with at least one director resident in India. Parent documents are apostilled or consularised. After shares are allotted against money received from abroad, the company reports the investment to RBI in Form FC-GPR within 30 days.",
         },
+        {
+          question: "Which structure suits a supplier to the aerospace park at Vallam Vadagal?",
+          answer:
+            "A Private Limited Company usually fits. Aerospace and defence buyers tend to audit suppliers closely and prefer a corporate entity with audited accounts, board records and room to bring in investors for costly machinery. An LLP can work for a small design or engineering-services partnership. Factory and industrial approvals are applied for separately after incorporation.",
+        },
+        {
+          question: "Can a weaver who works through a silk co-operative also run a company?",
+          answer:
+            "Generally, yes. A weavers' co-operative is registered under the Tamil Nadu Co-operative Societies Act, not with the Registrar of Companies, so membership does not by itself prevent a family from incorporating a company or LLP for its own label, subject to the society's bye-laws. Purchases, stock and accounts of the two should be kept fully separate.",
+        },
+        {
+          question: "Can a canteen, housekeeping or transport contractor for the industrial parks start as an OPC?",
+          answer:
+            "Yes. A single founder can begin with a One Person Company and still have limited liability. For contractors whose work depends on many deployed staff, EPFO, ESIC and contract-labour compliance usually matter more than the structure. An OPC can convert voluntarily into a private limited company once the founder brings in co-owners or investors.",
+        },
       ]}
       relatedSlugs={["private-limited-company-incorporation-chennai", "llp-registration-chennai", "opc-registration-chennai", "gst-registration-chennai", "msme-udyam-registration-chennai", "annual-compliance-package"]}
       relatedPosts={["private-limited-vs-llp-chennai-startups", "spice-plus-incorporation-explained", "lut-for-exporters", "post-incorporation-compliance-checklist"]}
@@ -156,6 +171,42 @@ export default function Page() {
           </tbody>
         </table>
       </div>
+
+      <h2 className="mt-14 text-2xl text-obsidian">Where are the district&apos;s SIPCOT parks, and who supplies them?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        SIPCOT, the state industrial development corporation, lists seven of its parks in Kanchipuram district: Sriperumbudur
+        Industrial Park and SEZ, Oragadam, Irungattukottai, Pillaipakkam, Vallam Vadagal Industrial Park and Aerospace Park,
+        Nemili, and Thirumudivakkam. Around large plants like these, a second tier of smaller businesses grows up: machining
+        and tooling shops, packaging and pallet makers, transport fleets, canteen and housekeeping contractors, and staffing
+        firms. Each of them needs a legal entity that a plant&apos;s purchase department will accept, which is often the
+        point at which a proprietor decides to incorporate.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Vallam Vadagal is the only park in that list that SIPCOT names as an aerospace park. Founders aiming at aerospace
+        work should build compliance habits early: board minutes, statutory registers and audited accounts from the first
+        year make customer audits easier to clear.
+      </p>
+
+      <h2 className="mt-14 text-2xl text-obsidian">How does the silk trade fit alongside company registration?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        The district administration&apos;s page on the Kancheevaram silks and sarees GI tag notes that the first weavers&apos;
+        co-operative, the Kamatchi Amman Society, was formed in 1949, and that many weavers still work through co-operative
+        societies. Those societies sit under co-operative law, outside the Companies Act. A master weaver or saree merchant
+        who wants a separate retail or online brand, a showroom lease or a bank limit in a business name would form a company
+        or LLP for that purpose. A Private Limited Company suits a brand expecting outside investment; an LLP suits relatives
+        sharing a showroom.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Sources:{" "}
+        <a href="https://sipcotweb.tn.gov.in/industrial-parks" target="_blank" rel="noopener noreferrer" className={LINK}>
+          SIPCOT industrial parks
+        </a>{" "}
+        and{" "}
+        <a href="https://kancheepuram.nic.in/about-district/gi-tag-product-kancheevaram-silks-and-sarees/" target="_blank" rel="noopener noreferrer" className={LINK}>
+          Kancheepuram district: Kancheevaram silks and sarees
+        </a>
+        .
+      </p>
 
       <h2 className="mt-14 text-2xl text-obsidian">How do we serve Kanchipuram clients from Chennai?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">
@@ -192,6 +243,15 @@ export default function Page() {
         . Nearby pages: <Link href="/company-registration-chengalpattu" className={LINK}>Chengalpattu</Link> and{" "}
         <Link href="/company-registration-vellore" className={LINK}>Vellore</Link>. To discuss your registration,{" "}
         <Link href="/contact" className={LINK}>contact us</Link>.
+      </p>
+
+      <h2 className="mt-14 text-2xl text-obsidian">How is a Kanchipuram registration quoted?</h2>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Before anything is filed, we offer a{" "}
+        <a href={BOOKING_LINK} target="_blank" rel="noopener noreferrer" className={LINK}>free 15-minute consultation</a>,
+        by video or at our Anna Nagar office. You then receive an itemised quote in two clearly separated parts: the
+        government fees payable to MCA and towards stamp duty, and our own professional fees. We begin only after you have
+        approved the quote.
       </p>
     </ServicePageTemplate>
   );
