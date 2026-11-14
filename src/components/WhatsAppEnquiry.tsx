@@ -112,7 +112,7 @@ export default function EnquiryModal() {
           </button>
         </div>
         <p className="mt-3 text-sm text-slate">
-          Your message is ready. Edit it if you like, then tap send — it opens WhatsApp and a chartered accountant replies there.
+          Your message is ready. Edit it if you like, then tap send. It opens WhatsApp and a chartered accountant replies there.
         </p>
         <label htmlFor="enquiry-message" className="sr-only">
           Your message

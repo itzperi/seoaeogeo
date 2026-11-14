@@ -7,7 +7,7 @@ import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 export default function CTASection({
   title = "Ready to talk to a chartered accountant?",
-  subtitle = "Talk to a chartered accountant in Chennai today — no obligation, no jargon.",
+  subtitle = "Talk to a chartered accountant in Chennai today. No obligation, no jargon.",
   showForm = true,
   service,
 }: {

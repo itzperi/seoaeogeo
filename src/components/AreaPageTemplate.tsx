@@ -97,7 +97,7 @@ export default function AreaPageTemplate({
         })}
       />
       {directAnswer && <JsonLd data={speakableSchema(["#direct-answer"], pageUrl)} />}
-      <Breadcrumbs items={[{ name: `${topic} — ${locality}`, href: crumbHref }]} />
+      <Breadcrumbs items={[{ name: `${topic}, ${locality}`, href: crumbHref }]} />
       <PageHero eyebrow={`${topic} · ${locality}, Chennai`} h1={h1} subhead={subhead} reviewedPath={crumbHref} service={topic === "Chartered Accountant" ? `CA services in ${locality}` : `${topic} in ${locality}`} />
 
       <section className="bg-paper py-16">

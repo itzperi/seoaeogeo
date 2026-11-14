@@ -80,12 +80,12 @@ const HOME_FAQS = [
   {
     question: "How do I find a chartered accountant near me in Chennai for company registration?",
     answer:
-      "C S Rushil & Co. is a Chennai-based chartered accountancy firm in Anna Nagar led by CA Rushil C S (Certified FAFD, Start-up Mentor), handling private limited company incorporation, GST, audit, and ROC compliance for businesses across Chennai — Anna Nagar, T. Nagar, Nungambakkam, Guindy, OMR, and beyond. Our only office is in Anna Nagar; clients elsewhere are served online or by appointment at that office.",
+      "C S Rushil & Co. is a Chennai-based chartered accountancy firm in Anna Nagar led by CA Rushil C S (Certified FAFD, Start-up Mentor), handling private limited company incorporation, GST, audit, and ROC compliance for businesses across Chennai, including Anna Nagar, T. Nagar, Nungambakkam, Guindy, OMR, and beyond. Our only office is in Anna Nagar; clients elsewhere are served online or by appointment at that office.",
   },
   {
     question: "Is there a chartered accountant near me in Anna Nagar, Chennai?",
     answer:
-      "Yes — C S Rushil & Co. is based in Anna Nagar, Chennai, and serves clients across the city for company incorporation, GST, audit, direct tax, and ROC compliance. Book a consultation to visit our office or meet virtually.",
+      "Yes. C S Rushil & Co. is based in Anna Nagar, Chennai, and serves clients across the city for company incorporation, GST, audit, direct tax, and ROC compliance. Book a consultation to visit our office or meet virtually.",
   },
   {
     question: "Do you handle GST litigation and notice replies?",
@@ -204,7 +204,7 @@ export default function HomePage() {
           <div>
             <p className="sticker-tag bg-sunburst">Chartered Accountants · {ADDRESS_SHORT}</p>
             <h1 className="mt-6 text-[52px] text-carbon sm:text-7xl lg:text-[96px]">
-              CA Firm in Chennai — Chartered Accountants for Tax, GST, Audit &amp; Incorporation
+              CA Firm in Chennai: Chartered Accountants for Tax, GST, Audit &amp; Incorporation
             </h1>
             <p id="lead-answer" className="mt-6 max-w-xl text-lg leading-relaxed text-carbon">
               {BUSINESS_NAME} is a <strong>CA firm in Chennai</strong>, a{" "}
