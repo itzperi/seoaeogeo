@@ -54,7 +54,7 @@ export default function Footer() {
         </nav>
 
         <nav aria-label="Chennai locations">
-          <p className="eyebrow text-xs text-slate">Chennai hubs</p>
+          <p className="eyebrow text-xs text-slate">Chennai locations</p>
           <ul className="mt-4 space-y-2 text-sm text-slate">
             {PRIMARY_AREA_LINKS.map((link) => (
               <li key={link.href}>

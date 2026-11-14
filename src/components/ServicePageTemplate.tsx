@@ -18,6 +18,7 @@ import { INTERNATIONAL_AREAS, JsonLd, howToSchema, serviceSchema, speakableSchem
 import { TN_CITY_PAGES } from "@/lib/tn-cities";
 import { getPostMeta, isPublished } from "@/lib/blog";
 import { getService } from "@/lib/services";
+import { EXTRA_RELATED_POSTS } from "@/lib/related-posts";
 
 // Pages that show the "what to check before choosing who files for you" table.
 const CHECKLIST_PAGES = new Set([
@@ -105,9 +106,10 @@ export default function ServicePageTemplate({
   const related = relatedSlugs.map(getService).filter((s): s is NonNullable<typeof s> => Boolean(s));
   const cityLinks = locationLinks(crumbHref);
   const citySvc = cityServices(crumbHref);
-  const guides = relatedPosts
+  const guides = [...new Set([...relatedPosts, ...(EXTRA_RELATED_POSTS[crumbHref] ?? [])])]
     .map(getPostMeta)
-    .filter((p): p is NonNullable<typeof p> => Boolean(p) && isPublished(p!.date));
+    .filter((p): p is NonNullable<typeof p> => Boolean(p) && isPublished(p!.date))
+    .slice(0, 5);
   return (
     <>
       <JsonLd

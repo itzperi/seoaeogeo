@@ -178,8 +178,8 @@ export default function HowWeWorkPage() {
           <p className="mt-4 leading-relaxed text-slate">
             Our only office is at {ADDRESS_FULL}. Clients in Chennai can meet us there; clients across Tamil Nadu, the rest
             of India, and NRIs and companies abroad are served online. See the{" "}
-            <Link href="/#areas" className={LINK}>
-              Chennai areas we serve
+            <Link href="/locations" className={LINK}>
+              locations we serve
             </Link>{" "}
             or start with our{" "}
             <Link href="/" className={LINK}>

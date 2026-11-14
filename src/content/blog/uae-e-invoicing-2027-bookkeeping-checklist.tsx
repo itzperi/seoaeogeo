@@ -118,7 +118,7 @@ export default function Body() {
       </p>
 
       <p>
-        How bookkeeping from India fits around your tax agent and auditor in the UAE is set out on the <Link href="/outsourced-bookkeeping-uae">outsourced bookkeeping for UAE businesses</Link> page.
+        How bookkeeping from India fits around your tax agent and auditor in the UAE is set out on the <Link href="/outsourced-bookkeeping-uae">outsourced bookkeeping for UAE businesses</Link> page, and the wider service is on our <Link href="/outsourced-bookkeeping-services">outsourced bookkeeping services</Link> page.
       </p>
     </>
   );

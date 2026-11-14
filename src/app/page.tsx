@@ -429,6 +429,11 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+          <p className="mt-6 text-sm">
+            <Link href="/locations" className="font-medium text-obsidian underline underline-offset-2">
+              See every location we serve, including Tamil Nadu cities and clients abroad
+            </Link>
+          </p>
         </div>
       </section>
 

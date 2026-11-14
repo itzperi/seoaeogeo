@@ -209,8 +209,8 @@ export default function AreaPageTemplate({
                 </li>
               ))}
               <li>
-                <Link href="/#areas" className="inline-block rounded-navpills border border-carbon bg-white px-4 py-2 text-sm font-medium text-obsidian hover:bg-fog">
-                  All Chennai areas →
+                <Link href="/locations" className="inline-block rounded-navpills border border-carbon bg-white px-4 py-2 text-sm font-medium text-obsidian hover:bg-fog">
+                  All locations we serve →
                 </Link>
               </li>
             </ul>

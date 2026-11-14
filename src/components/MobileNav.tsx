@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { AREAS_HUB, CATEGORY_HUBS, FLAGSHIP_LINKS, PRIMARY_AREA_LINKS } from "@/lib/nav";
+import { HEADER_GROUPS } from "@/lib/nav";
 import { PHONE_DISPLAY, PHONE_TEL, WHATSAPP_LINK } from "@/lib/site";
 
 export default function MobileNav() {
@@ -30,71 +30,24 @@ export default function MobileNav() {
       {open && (
         <div className="absolute inset-x-0 top-[72px] z-40 max-h-[calc(100vh-72px)] overflow-y-auto border-y border-carbon bg-white">
           <div className="container-page py-6">
-            <p className="eyebrow text-xs text-slate">Flagship services</p>
-            <ul className="mt-2 space-y-1">
-              {FLAGSHIP_LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-sm font-medium text-obsidian hover:bg-fog"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <p className="eyebrow mt-6 text-xs text-slate">Practice areas</p>
-            <ul className="mt-2 space-y-1">
-              {CATEGORY_HUBS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <p className="eyebrow mt-6 text-xs text-slate">Locations</p>
-            <ul className="mt-3 space-y-1">
-              {[...PRIMARY_AREA_LINKS, AREAS_HUB].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <p className="eyebrow mt-6 text-xs text-slate">Company</p>
-            <ul className="mt-3 space-y-1">
-              {[
-                ["About", "/about-us"],
-                ["Insights", "/blog"],
-                ["Videos", "/videos"],
-                ["FAQ", "/faq"],
-                ["Contact", "/contact"],
-              ].map(([label, href]) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    onClick={() => setOpen(false)}
-                    className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            {HEADER_GROUPS.map((group, gi) => (
+              <div key={group.label}>
+                <p className={`eyebrow text-xs text-slate ${gi ? "mt-6" : ""}`}>{group.label}</p>
+                <ul className="mt-2 space-y-1">
+                  {group.links.map((link) => (
+                    <li key={link.href}>
+                      <Link
+                        href={link.href}
+                        onClick={() => setOpen(false)}
+                        className="block rounded-lg px-3 py-2.5 text-sm text-obsidian hover:bg-fog"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
 
             <a
               href={`tel:${PHONE_TEL}`}

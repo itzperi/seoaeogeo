@@ -24,6 +24,7 @@ const STATIC_PATHS = [
   "videos",
   "faq",
   "how-we-work",
+  "locations",
   "tools",
   "tools/nri-residential-status-calculator",
   "tools/company-registration-government-fee-calculator",

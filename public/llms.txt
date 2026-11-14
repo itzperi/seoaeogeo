@@ -21,6 +21,7 @@
 - [NRI Property Sale TDS Calculator](https://www.csrushil.com/tools/nri-property-sale-tds-calculator): Section 195 estimate for an NRI selling Indian property: default TDS on the sale price (12.5% plus surcharge and cess for long-term), estimated tax on the gain, and the difference a Form 13 lower deduction certificate could keep with the seller. Estimate only.
 - [India Subsidiary First-Year Compliance Calendar](https://www.csrushil.com/tools/foreign-subsidiary-compliance-calendar): Dated first-year calendar for a foreign-owned Indian subsidiary from its incorporation and allotment dates: first auditor, FC-GPR, INC-20A, FLA return, Form 3CEB/Form 48, income tax return, first AGM, AOC-4 and MGT-7, with apostille or attestation notes for US, UK, Singapore and UAE parents.
 - [How we work](https://www.csrushil.com/how-we-work): 15-minute consultation, conflict and independence check, scoping call, written engagement letter, onboarding. No published price lists.
+- [Locations we serve](https://www.csrushil.com/locations): every Chennai area, Tamil Nadu city, other metro and overseas page, all served from the one office in J-Block, Anna Nagar.
 
 ## Company & LLP registration
 - [Company Registration](https://www.csrushil.com/company-registration-chennai): Private Limited, LLP, OPC, Section 8, partnership and proprietorship registration in Chennai, from name approval to certificate of incorporation.

@@ -94,6 +94,7 @@ export const PAGE_DATES: Record<string, string> = {
   "/india-subsidiary-for-uae-companies": "2026-11-04",
   "/india-subsidiary-for-uk-companies": "2026-11-04",
   "/india-subsidiary-for-us-companies": "2026-11-04",
+  "/locations": "2026-11-14",
   "/llp-registration-chennai": "2026-10-16",
   "/management-consultancy": "2026-10-14",
   "/msme-udyam-registration-chennai": "2026-11-04",

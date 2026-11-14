@@ -168,7 +168,9 @@ export default function Body() {
         reworded, not just renumbered. The Income Tax Department publishes the Act and rules on{" "}
         <a href="https://www.incometax.gov.in/" target="_blank" rel="noopener noreferrer">incometax.gov.in</a>. For help
         applying either Act to your return, notice or transfer pricing report, see our{" "}
-        <Link href="/direct-tax">tax consultants in Chennai</Link> page.
+        <Link href="/direct-tax">tax consultants in Chennai</Link> page. Tax audit reports and transfer pricing reports in Form 48 under the new numbering are covered on our{" "}
+        <Link href="/tax-audit-chennai">tax audit in Chennai</Link> and{" "}
+        <Link href="/transfer-pricing-audit">transfer pricing audit</Link> pages.
       </p>
     </>
   );

@@ -78,7 +78,10 @@ const SITUATIONS = [
   { situation: "Selling on Amazon, Flipkart or your own store", applies: "State-wise GSTR-1, TCS credit and settlement reconciliation", href: "/gst-return-filing-for-ecommerce-sellers", page: "GST for e-commerce sellers" },
   { situation: "Freelancer or consultant billing clients abroad", applies: "Export of services under LUT, and registration rules for inter-state services", href: "/gst-return-filing-for-freelancers", page: "GST for freelancers" },
   { situation: "Exporter or importer", applies: "LUT, IGST on imports, refunds of unused credit", href: "/gst-return-filing-for-import-export-businesses", page: "GST for importers and exporters" },
-  { situation: "Restaurant, clinic, startup or manufacturer", applies: "Sector rules for rates, exemptions, credit and refunds", href: "/gst-return-filing-for-restaurants", page: "GST by industry" },
+  { situation: "Restaurant, cafe or food business", applies: "Composition or regular scheme, and delivery platform sales reconciled to the books", href: "/gst-return-filing-for-restaurants", page: "GST for restaurants" },
+  { situation: "Clinic or healthcare practice", applies: "Exempt healthcare services kept apart from taxable sales, and credit on equipment", href: "/gst-return-filing-for-clinics", page: "GST for clinics" },
+  { situation: "Startup filing its first returns", applies: "Opening stock, invoice format and a monthly reconciliation routine", href: "/gst-return-filing-for-startups", page: "GST for startups" },
+  { situation: "Manufacturer", applies: "Input tax credit, job work, e-way bills and refunds of accumulated credit", href: "/gst-return-filing-for-manufacturers", page: "GST for manufacturers" },
 ];
 
 const FAQS = [

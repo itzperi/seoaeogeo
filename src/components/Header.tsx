@@ -1,17 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import TrackedAnchor from "@/components/TrackedAnchor";
-import { AREAS_HUB, CATEGORY_HUBS, FLAGSHIP_LINKS, PRIMARY_AREA_LINKS } from "@/lib/nav";
+import { HEADER_GROUPS } from "@/lib/nav";
 import { BOOKING_LINK, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import MobileNav from "./MobileNav";
-
-const NAV_LINKS = [
-  { href: "/about-us", label: "About" },
-  { href: "/blog", label: "Insights" },
-  { href: "/videos", label: "Videos" },
-  { href: "/faq", label: "FAQ" },
-  { href: "/contact", label: "Contact" },
-];
 
 // No display class here: each use adds its own (inline-flex / hidden …),
 // otherwise "inline-flex" overrides "hidden" and the pill shows on phones.
@@ -35,57 +27,24 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-1 xl:flex" aria-label="Main">
-          <div className="group relative">
-            <button className={`inline-flex ${PILL}`} aria-haspopup="true">
-              Services
-            </button>
-            <div className="invisible fixed left-1/2 top-[56px] -translate-x-1/2 pt-4 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-              <div className="grid w-[min(92vw,820px)] grid-cols-2 gap-4 rounded-[20px] border border-carbon bg-white p-4">
-                <div>
-                  <p className="px-2 pb-1 text-[11px] font-bold uppercase tracking-[0.06em] text-slate">Practice areas</p>
-                  {CATEGORY_HUBS.map((link) => (
-                    <Link key={link.href} href={link.href} className="block rounded-xl px-2 py-1.5 text-sm text-carbon hover:bg-sky-wash">
+          {HEADER_GROUPS.map((group, gi) => (
+            <div key={group.label} className="group relative">
+              <button className={`inline-flex ${PILL}`} aria-haspopup="true" aria-label={group.label}>
+                {group.short}
+              </button>
+              <div
+                className={`invisible absolute top-full pt-2 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100 ${gi >= HEADER_GROUPS.length - 2 ? "right-0" : "left-0"}`}
+              >
+                <div className="w-72 rounded-[20px] border border-carbon bg-white p-2">
+                  <p className="px-3 pb-1 pt-1 text-[11px] font-bold uppercase tracking-[0.06em] text-slate">{group.label}</p>
+                  {group.links.map((link) => (
+                    <Link key={link.href} href={link.href} className="block rounded-xl px-3 py-2 text-sm text-carbon hover:bg-sky-wash">
                       {link.label}
-                    </Link>
-                  ))}
-                </div>
-                <div>
-                  <p className="px-2 pb-1 text-[11px] font-bold uppercase tracking-[0.06em] text-slate">Flagship services</p>
-                  {FLAGSHIP_LINKS.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="mb-1.5 flex items-center justify-between gap-2 rounded-xl border border-carbon bg-sunburst px-3 py-2 text-sm font-medium text-carbon hover:bg-lavender"
-                    >
-                      {link.label}
-                      <span className="rounded-full bg-carbon px-2 py-0.5 text-[10px] font-bold uppercase tracking-[0.06em] text-white">Core</span>
                     </Link>
                   ))}
                 </div>
               </div>
             </div>
-          </div>
-          <div className="group relative">
-            <button className={`inline-flex ${PILL}`} aria-haspopup="true">
-              Locations
-            </button>
-            <div className="invisible absolute left-0 top-full pt-2 opacity-0 transition group-focus-within:visible group-focus-within:opacity-100 group-hover:visible group-hover:opacity-100">
-              <div className="w-56 rounded-[20px] border border-carbon bg-white p-2">
-                {PRIMARY_AREA_LINKS.map((link) => (
-                  <Link key={link.href} href={link.href} className="block rounded-xl px-3 py-2 text-sm text-carbon hover:bg-sky-wash">
-                    {link.label}
-                  </Link>
-                ))}
-                <Link href={AREAS_HUB.href} className="mt-1 block rounded-xl border-t border-ash px-3 py-2 text-sm font-medium text-carbon hover:bg-sky-wash">
-                  {AREAS_HUB.label} →
-                </Link>
-              </div>
-            </div>
-          </div>
-          {NAV_LINKS.map((link) => (
-            <Link key={link.href} href={link.href} className={`inline-flex ${PILL}`}>
-              {link.label}
-            </Link>
           ))}
         </nav>
 
@@ -99,9 +58,9 @@ export default function Header() {
             href={BOOKING_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden min-h-[40px] items-center rounded-full border border-carbon bg-carbon px-5 text-[13px] font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85 lg:inline-flex"
+            className="hidden min-h-[40px] items-center rounded-full border border-carbon bg-carbon px-4 text-[12px] font-bold uppercase tracking-[0.032em] text-white transition-opacity hover:opacity-85 lg:inline-flex"
           >
-            Book 15-Min Consultation
+            Book Consultation
           </TrackedAnchor>
           <MobileNav />
         </div>

@@ -123,7 +123,7 @@ export default function Body() {
       </p>
 
       <p>
-        How bookkeeping from India fits around a UK accountant who submits as your HMRC agent is set out on the <Link href="/outsourced-bookkeeping-uk">outsourced bookkeeping for UK businesses</Link> page.
+        How bookkeeping from India fits around a UK accountant who submits as your HMRC agent is set out on the <Link href="/outsourced-bookkeeping-uk">outsourced bookkeeping for UK businesses</Link> page. UK accounting practices that want a white-label team for client books can read about <Link href="/outsourced-accounting-for-uk-accountants">outsourced accounting for UK accountants</Link>.
       </p>
     </>
   );

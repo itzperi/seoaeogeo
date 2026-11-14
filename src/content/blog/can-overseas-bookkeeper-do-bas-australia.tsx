@@ -128,7 +128,7 @@ export default function Body() {
       </ul>
 
       <p>
-        How bookkeeping from India fits around a registered BAS or tax agent who lodges is set out on the <Link href="/outsourced-bookkeeping-australia">outsourced bookkeeping for Australian businesses</Link> page.
+        How bookkeeping from India fits around a registered BAS or tax agent who lodges is set out on the <Link href="/outsourced-bookkeeping-australia">outsourced bookkeeping for Australian businesses</Link> page, and the wider service, including the security and access controls we use, is on our <Link href="/outsourced-bookkeeping-services">outsourced bookkeeping services</Link> page.
       </p>
     </>
   );
