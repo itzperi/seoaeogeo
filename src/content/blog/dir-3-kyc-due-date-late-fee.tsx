@@ -296,7 +296,7 @@ export default function Body() {
         <li>Personal mobile numbers, emails and addresses on record, so any change is filed within 30 days.</li>
         <li>DSC expiry dates, since an expired DSC delays both KYC and company filings.</li>
         <li>KYC due dates added to the{" "}
-          <Link href="/blog/annual-roc-filing-calendar">annual ROC filing calendar</Link>,
+          <Link href="/roc-compliances">annual ROC filing calendar</Link>,
           so a three-year item is not forgotten.
         </li>
       </ul>

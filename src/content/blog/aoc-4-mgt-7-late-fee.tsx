@@ -108,7 +108,7 @@ export default function Body() {
         The relaxed dates are fixed calendar dates. They apply only to filings
         for FY 2025-26, and only to the forms named in the circular. Forms such
         as ADT-1 and MGT-14 are not covered. See our{" "}
-        <Link href="/blog/annual-roc-filing-calendar">annual ROC filing calendar</Link>{" "}
+        <Link href="/roc-compliances">annual ROC filing calendar</Link>{" "}
         for the full list of company due dates.
       </p>
 

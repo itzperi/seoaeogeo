@@ -306,7 +306,7 @@ export default function Body() {
       </ul>
       <p>
         For other routine filings that follow a change, see the{" "}
-        <Link href="/blog/annual-roc-filing-calendar">annual ROC filing calendar</Link>.
+        <Link href="/roc-compliances">annual ROC filing calendar</Link>.
         C S Rushil &amp; Co. handles registered office changes, including
         Regional Director applications, from Anna Nagar, Chennai, and online, as
         part of our <Link href="/roc-compliances">ROC compliance services</Link>.

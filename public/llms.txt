@@ -1,10 +1,10 @@
 # C S Rushil & Co.
 > C S Rushil & Co. (legal name: C S Rushil & Co, Chartered Accountants) is a chartered accountancy firm
 > at Old Door No. AP-890, New No. 18, J-Block, 1st Street, 13th Main Rd, Anna Nagar, Chennai 600040,
-> founded in 2024 and led by CA Rushil C S (Certified FAFD, Start-up Mentor) with a 16-member team.
+> founded in 2024 and led by CA Rushil C S (Certified FAFD, Start-up Mentor).
 > Services: company, LLP, OPC, partnership and Section 8 registration; GST; income tax and NRI tax;
 > statutory, tax and internal audit; ROC, FEMA and annual compliance; accounting outsourcing; virtual CFO.
-> Consultations in English, Tamil and Hindi; walk-in office in Anna Nagar and online service across India.
+> Consultations in English and Tamil; walk-ins welcome at the Anna Nagar office (booking a slot saves waiting time) and online service across India.
 
 ## Core services (one canonical page each)
 - [CA Firm in Chennai](https://www.csrushil.com/): Chartered accountancy firm in J-Block, Anna Nagar, Chennai, led by CA Rushil C S; tax, GST, audit, incorporation and virtual CFO work for businesses, professionals and NRIs.
@@ -25,7 +25,7 @@
 
 ## Company & LLP registration
 - [Company Registration](https://www.csrushil.com/company-registration-chennai): Private Limited, LLP, OPC, Section 8, partnership and proprietorship registration in Chennai, from name approval to certificate of incorporation.
-- [LLP Registration](https://www.csrushil.com/llp-registration-chennai): Limited Liability Partnership registration in Chennai — DPIN, name reservation, FiLLiP filing, and LLP Agreement drafting.
+- [LLP Registration](https://www.csrushil.com/llp-registration-chennai): Limited Liability Partnership registration in Chennai: DPIN, name reservation, FiLLiP filing, and LLP Agreement drafting.
 - [OPC Registration](https://www.csrushil.com/opc-registration-chennai): One Person Company registration for solo founders: SPICe+ filing, nominee consent (INC-3), NRI eligibility and later conversion to Pvt Ltd.
 - [Partnership Firm Registration](https://www.csrushil.com/partnership-firm-registration-chennai): Partnership deed drafting and stamping, registration with the Tamil Nadu Registrar of Firms on tnreginet, firm PAN, GST and deed changes.
 - [Proprietorship Registration](https://www.csrushil.com/proprietorship-registration-chennai): GST, Udyam, Tamil Nadu Shops and Establishments and trade licence for sole proprietors, plus documents for a current account.
@@ -50,7 +50,7 @@
 
 ## GST
 - [Goods & Services Tax (GST)](https://www.csrushil.com/goods-and-services-tax): GST registration, return filing, amendments, cancellations, notice replies, and LUT applications.
-- [GST Registration](https://www.csrushil.com/gst-registration-chennai): New GST registration for businesses and professionals in Chennai — documentation, ARN tracking, and certificate issuance.
+- [GST Registration](https://www.csrushil.com/gst-registration-chennai): New GST registration for businesses and professionals in Chennai: documentation, ARN tracking, and certificate issuance.
 - [GST Return Filing](https://www.csrushil.com/gst-return-filing-chennai): Monthly and quarterly GSTR-1 and GSTR-3B, QRMP, CMP-08, GSTR-4 and annual GSTR-9/9C, with GSTR-2B reconciliation before every filing.
 - [GST Notice Reply](https://www.csrushil.com/gst-notice-reply-chennai): Replies to ASMT-10, DRC-01A, DRC-01 and audit notices for Tamil Nadu businesses, before a dispute becomes an appeal.
 - [GST Returns: GST returns for e-commerce sellers](https://www.csrushil.com/gst-return-filing-for-ecommerce-sellers): GST returns for e-commerce sellers: state-wise GSTR-1, GSTR-3B and marketplace settlements matched first
@@ -69,16 +69,16 @@
 - [Income Tax Notice Reply](https://www.csrushil.com/income-tax-notice-reply-chennai): Responses to intimations, defective-return, scrutiny and reassessment notices, including faceless assessment submissions.
 - [Income Tax Assessment & Appeals](https://www.csrushil.com/income-tax-assessment-appeals-chennai): Scrutiny and reassessment proceedings, appeals to the CIT(A) and the ITAT, and applications for stay of demand.
 - [TDS Return Filing](https://www.csrushil.com/tds-return-filing-chennai): Quarterly TDS statements in Forms 138, 140 and 144 (earlier 24Q, 26Q, 27Q), Form 16/16A certificates, corrections and TDS on rent and property.
-- [NRI Tax Services](https://www.csrushil.com/nri-tax-services): Indian tax filing, DTAA claims, property-sale TDS and repatriation for NRIs in the UAE, UK, USA and elsewhere — handled remotely from Chennai.
-- [NRI Tax Services — UAE](https://www.csrushil.com/nri-tax-services-uae): Indian ITR, DTAA claims and deemed-residency checks for NRIs living in Dubai, Abu Dhabi and the wider UAE.
-- [NRI Tax Services — UK](https://www.csrushil.com/nri-tax-services-uk): Indian tax filing and India–UK DTAA support, with the figures your UK accountant needs for HMRC.
-- [NRI Tax Services — USA](https://www.csrushil.com/nri-tax-services-usa): Indian tax filing and India–US DTAA support, with account data for your US CPA’s FBAR and FATCA reporting.
-- [NRI Property Sale — TDS & Repatriation](https://www.csrushil.com/nri-property-sale-tds-chennai): Lower-deduction certificates, capital gains, Form 15CA/15CB and repatriation for NRIs selling property in Chennai.
+- [NRI Tax Services](https://www.csrushil.com/nri-tax-services): Indian tax filing, DTAA claims, property-sale TDS and repatriation for NRIs in the UAE, UK, USA and elsewhere: handled remotely from Chennai.
+- [NRI Tax Services, UAE](https://www.csrushil.com/nri-tax-services-uae): Indian ITR, DTAA claims and deemed-residency checks for NRIs living in Dubai, Abu Dhabi and the wider UAE.
+- [NRI Tax Services, UK](https://www.csrushil.com/nri-tax-services-uk): Indian tax filing and India–UK DTAA support, with the figures your UK accountant needs for HMRC.
+- [NRI Tax Services, USA](https://www.csrushil.com/nri-tax-services-usa): Indian tax filing and India–US DTAA support, with account data for your US CPA’s FBAR and FATCA reporting.
+- [NRI Property Sale, TDS & Repatriation](https://www.csrushil.com/nri-property-sale-tds-chennai): Lower-deduction certificates, capital gains, Form 15CA/15CB and repatriation for NRIs selling property in Chennai.
 - [Form 15CA & 15CB](https://www.csrushil.com/form-15ca-15cb-chennai): CA certificate and remitter's declaration (now Forms 146 and 145) for payments to non-residents, NRO repatriation and property-sale proceeds.
 
 ## Audit
 - [Audit & Assurance](https://www.csrushil.com/audit-and-assurance): Statutory, internal, tax, transfer pricing, forensic, and stock audits delivered with independence and rigour.
-- [Statutory Audit](https://www.csrushil.com/statutory-audit-chennai): Companies Act statutory audit for Chennai businesses — independent, evidence-based financial statement audit.
+- [Statutory Audit](https://www.csrushil.com/statutory-audit-chennai): Companies Act statutory audit for Chennai businesses: independent, evidence-based financial statement audit.
 - [Tax Audit](https://www.csrushil.com/tax-audit-chennai): Section 44AB tax audit for businesses and professionals in Chennai crossing prescribed turnover limits.
 - [Transfer Pricing Audit](https://www.csrushil.com/transfer-pricing-audit): Form 3CEB certification and arm's-length pricing documentation for related-party and cross-border transactions.
 
@@ -124,15 +124,15 @@ Bookkeeping is kept from the Chennai office in the client's own software. Outsid
 - [Company Registration in Nagercoil](https://www.csrushil.com/company-registration-nagercoil): Pvt Ltd registration for Kanyakumari district rubber, seafood and coir businesses and Gulf-returnee founders.
 
 ## Income tax for high-income individuals by city (served online from Anna Nagar, Chennai)
-- [Income Tax Consultant — Coimbatore](https://www.csrushil.com/income-tax-consultant-coimbatore): Income tax for Coimbatore industrialist families: profit from firms and companies, HUFs, farm income and capital gains on land.
-- [Income Tax Consultant — Madurai](https://www.csrushil.com/income-tax-consultant-madurai): Income tax for Madurai traders, jewellers and doctors: AIS high-value transactions, cash rules, farm income and property gains.
-- [Income Tax Consultant — Trichy](https://www.csrushil.com/income-tax-consultant-tiruchirappalli): Income tax for Trichy PSU retirees, ancillary unit owners and Gulf/Singapore NRIs: pension, VRS, residency and property gains.
-- [Income Tax Consultant — Bengaluru](https://www.csrushil.com/income-tax-consultant-bangalore): Foreign RSUs, ESOPs, Schedule FA, startup share sales and Karnataka property for Bengaluru tech employees and founders.
-- [Income Tax Consultant — Hyderabad](https://www.csrushil.com/income-tax-consultant-hyderabad): RSUs, pharma promoter shares, agricultural land and development deals for Hyderabad GCC staff, promoters and landowners.
-- [Income Tax Consultant — Mumbai](https://www.csrushil.com/income-tax-consultant-mumbai): Listed equity, F&O and intraday as business income, AIF and PMS reporting and Maharashtra property for Mumbai investors.
-- [Income Tax Consultant — Delhi NCR](https://www.csrushil.com/income-tax-consultant-delhi-ncr): Partner and LLP income, rental portfolios, builder floors and leasehold property for Delhi, Gurugram and Noida families.
-- [Income Tax Consultant — Pune](https://www.csrushil.com/income-tax-consultant-pune): ESOPs, returning NRIs and RNOR status, foreign assets and Maharashtra property gains for Pune professionals.
-- [Income Tax Consultant — Kolkata](https://www.csrushil.com/income-tax-consultant-kolkata): HUF returns, inherited and tenanted property and unlisted family-company shares for Kolkata families.
+- [Income Tax Consultant, Coimbatore](https://www.csrushil.com/income-tax-consultant-coimbatore): Income tax for Coimbatore industrialist families: profit from firms and companies, HUFs, farm income and capital gains on land.
+- [Income Tax Consultant, Madurai](https://www.csrushil.com/income-tax-consultant-madurai): Income tax for Madurai traders, jewellers and doctors: AIS high-value transactions, cash rules, farm income and property gains.
+- [Income Tax Consultant, Trichy](https://www.csrushil.com/income-tax-consultant-tiruchirappalli): Income tax for Trichy PSU retirees, ancillary unit owners and Gulf/Singapore NRIs: pension, VRS, residency and property gains.
+- [Income Tax Consultant, Bengaluru](https://www.csrushil.com/income-tax-consultant-bangalore): Foreign RSUs, ESOPs, Schedule FA, startup share sales and Karnataka property for Bengaluru tech employees and founders.
+- [Income Tax Consultant, Hyderabad](https://www.csrushil.com/income-tax-consultant-hyderabad): RSUs, pharma promoter shares, agricultural land and development deals for Hyderabad GCC staff, promoters and landowners.
+- [Income Tax Consultant, Mumbai](https://www.csrushil.com/income-tax-consultant-mumbai): Listed equity, F&O and intraday as business income, AIF and PMS reporting and Maharashtra property for Mumbai investors.
+- [Income Tax Consultant, Delhi NCR](https://www.csrushil.com/income-tax-consultant-delhi-ncr): Partner and LLP income, rental portfolios, builder floors and leasehold property for Delhi, Gurugram and Noida families.
+- [Income Tax Consultant, Pune](https://www.csrushil.com/income-tax-consultant-pune): ESOPs, returning NRIs and RNOR status, foreign assets and Maharashtra property gains for Pune professionals.
+- [Income Tax Consultant, Kolkata](https://www.csrushil.com/income-tax-consultant-kolkata): HUF returns, inherited and tenanted property and unlisted family-company shares for Kolkata families.
 
 ## GST litigation across Tamil Nadu (served from Anna Nagar, Chennai)
 - [GST Litigation in Coimbatore](https://www.csrushil.com/gst-litigation-coimbatore): Notice replies and appeals for pump, motor, foundry and textile machinery units, including the Coimbatore GSTAT bench.
@@ -144,8 +144,10 @@ Bookkeeping is kept from the Chennai office in the client's own software. Outsid
 
 ## Areas served (Chennai)
 The only office is in Anna Nagar. Each area page covers that area's typical clients and local compliance; clients outside Anna Nagar are served online or by appointment at the office.
-- [Chartered Accountant in Anna Nagar](https://www.csrushil.com/chartered-accountant-anna-nagar-chennai): Home office; walk-in by appointment
+- [Chartered Accountant in Anna Nagar](https://www.csrushil.com/chartered-accountant-anna-nagar-chennai): The firm's only office, at J-Block, 13th Main Road; walk-ins are welcome, and booking a slot saves waiting time
 - [Chartered Accountant in Kilpauk](https://www.csrushil.com/chartered-accountant-kilpauk-chennai)
+- [Chartered Accountant in Mogappair](https://www.csrushil.com/chartered-accountant-mogappair-chennai)
+- [Chartered Accountant in Aminjikarai](https://www.csrushil.com/chartered-accountant-aminjikarai-chennai)
 - [Chartered Accountant in T Nagar](https://www.csrushil.com/chartered-accountant-t-nagar-chennai)
 - [Chartered Accountant in Ambattur](https://www.csrushil.com/chartered-accountant-ambattur-chennai)
 - [Chartered Accountant in OMR / Sholinganallur](https://www.csrushil.com/chartered-accountant-omr-sholinganallur-chennai)

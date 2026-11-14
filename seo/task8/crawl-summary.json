@@ -1,0 +1,283 @@
+{
+ "issues": [],
+ "broken": [
+  {
+   "source": "/partnership-firm-registration-chennai",
+   "target": "/blog/convert-partnership-firm-to-llp",
+   "hops": 0,
+   "chain": "/blog/convert-partnership-firm-to-llp(404)"
+  },
+  {
+   "source": "/blog/aoc-4-mgt-7-late-fee",
+   "target": "/blog/private-limited-company-penalties-non-compliance",
+   "hops": 0,
+   "chain": "/blog/private-limited-company-penalties-non-compliance(404)"
+  },
+  {
+   "source": "/blog/fc-gpr-filing-deadline",
+   "target": "/blog/share-allotment-after-incorporation",
+   "hops": 0,
+   "chain": "/blog/share-allotment-after-incorporation(404)"
+  }
+ ],
+ "redirected": [
+  {
+   "source": "/blog/change-registered-office-company",
+   "target": "/blog/annual-roc-filing-calendar",
+   "hops": 1,
+   "chain": "/blog/annual-roc-filing-calendar(308) -> /roc-compliances(200)"
+  }
+ ],
+ "rule_issues": [
+  [
+   "live",
+   "/chartered-accountant-chennai",
+   "/chartered-accountant-chennai(308) -> /(200)"
+  ],
+  [
+   "live",
+   "/nri-tax-services-usa-uk",
+   "/nri-tax-services-usa-uk(308) -> /nri-tax-services(200)"
+  ],
+  [
+   "live",
+   "/blog/llp-vs-opc-vs-pvt-ltd",
+   "/blog/llp-vs-opc-vs-pvt-ltd(308) -> /company-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/startup-india-registration",
+   "/blog/startup-india-registration(308) -> /startup-india-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/annual-roc-filing-calendar",
+   "/blog/annual-roc-filing-calendar(308) -> /roc-compliances(200)"
+  ],
+  [
+   "live",
+   "/blog/audit-applicability-thresholds",
+   "/blog/audit-applicability-thresholds(308) -> /audit-and-assurance(200)"
+  ],
+  [
+   "live",
+   "/blog/trust-vs-society-vs-section8",
+   "/blog/trust-vs-society-vs-section8(308) -> /trust(200)"
+  ],
+  [
+   "live",
+   "/blog/rera-registration-renewal",
+   "/blog/rera-registration-renewal(308) -> /rera(200)"
+  ],
+  [
+   "live",
+   "/blog/old-vs-new-tax-regime",
+   "/blog/old-vs-new-tax-regime(308) -> /income-tax-return-filing-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/gst-registration-online-sellers-chennai",
+   "/blog/gst-registration-online-sellers-chennai(308) -> /gst-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/common-compliance-mistakes-chennai-startups",
+   "/blog/common-compliance-mistakes-chennai-startups(308) -> /annual-compliance-package(200)"
+  ],
+  [
+   "live",
+   "/blog/msme-loan-schemes-tamil-nadu",
+   "/blog/msme-loan-schemes-tamil-nadu(308) -> /msme-udyam-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/outgrown-bookkeeping-signs",
+   "/blog/outgrown-bookkeeping-signs(308) -> /bookkeeping-services-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/cash-flow-forecasting-framework",
+   "/blog/cash-flow-forecasting-framework(308) -> /virtual-cfo-services(200)"
+  ],
+  [
+   "live",
+   "/blog/virtual-cfo-vs-full-time-cfo-cost-comparison",
+   "/blog/virtual-cfo-vs-full-time-cfo-cost-comparison(308) -> /virtual-cfo-services(200)"
+  ],
+  [
+   "live",
+   "/blog/gst-litigation-t-nagar-jewellery",
+   "/blog/gst-litigation-t-nagar-jewellery(308) -> /blog/itc-mismatch-notices(200)"
+  ],
+  [
+   "live",
+   "/ca-fees-chennai",
+   "/ca-fees-chennai(308) -> /blog/how-to-choose-a-chartered-accountant-in-chennai(200)"
+  ],
+  [
+   "live",
+   "/formation-of-business-entity",
+   "/formation-of-business-entity(308) -> /company-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/12a-80g-adyar-institutions",
+   "/blog/12a-80g-adyar-institutions(308) -> /trust(200)"
+  ],
+  [
+   "live",
+   "/blog/advance-tax-anna-nagar-shop-owners",
+   "/blog/advance-tax-anna-nagar-shop-owners(308) -> /direct-tax(200)"
+  ],
+  [
+   "live",
+   "/blog/bookkeeping-adyar-clinics",
+   "/blog/bookkeeping-adyar-clinics(308) -> /bookkeeping-services-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/capital-gains-kilpauk-property",
+   "/blog/capital-gains-kilpauk-property(308) -> /direct-tax(200)"
+  ],
+  [
+   "live",
+   "/blog/choosing-ca-firm-anna-nagar",
+   "/blog/choosing-ca-firm-anna-nagar(308) -> /chartered-accountant-anna-nagar-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/direct-tax-mylapore-trading-families",
+   "/blog/direct-tax-mylapore-trading-families(308) -> /direct-tax(200)"
+  ],
+  [
+   "live",
+   "/blog/fcra-mylapore-cultural-institutions",
+   "/blog/fcra-mylapore-cultural-institutions(308) -> /trust(200)"
+  ],
+  [
+   "live",
+   "/blog/first-gst-return-tambaram-shops",
+   "/blog/first-gst-return-tambaram-shops(308) -> /gst-return-filing-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/form26as-mismatch-velachery",
+   "/blog/form26as-mismatch-velachery(308) -> /income-tax-return-filing-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/gst-litigation-guindy-industrial",
+   "/blog/gst-litigation-guindy-industrial(308) -> /gst-litigation-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/gst-notice-anna-nagar-traders",
+   "/blog/gst-notice-anna-nagar-traders(308) -> /gst-notice-reply-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/gst-registration-porur-retail",
+   "/blog/gst-registration-porur-retail(308) -> /gst-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/llp-registration-nungambakkam-professional-firms",
+   "/blog/llp-registration-nungambakkam-professional-firms(308) -> /llp-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/llp-registration-porur-consultancies",
+   "/blog/llp-registration-porur-consultancies(308) -> /llp-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/management-consultancy-anna-nagar-business",
+   "/blog/management-consultancy-anna-nagar-business(308) -> /management-consultancy(200)"
+  ],
+  [
+   "live",
+   "/blog/msme-loan-tambaram-traders",
+   "/blog/msme-loan-tambaram-traders(308) -> /msme-udyam-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/payroll-ambattur-factory-workforce",
+   "/blog/payroll-ambattur-factory-workforce(308) -> /payroll-services-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/payroll-omr-startup-esop",
+   "/blog/payroll-omr-startup-esop(308) -> /payroll-services-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/roc-compliance-ambattur-manufacturers",
+   "/blog/roc-compliance-ambattur-manufacturers(308) -> /roc-compliances(200)"
+  ],
+  [
+   "live",
+   "/blog/roc-compliance-anna-nagar-startups",
+   "/blog/roc-compliance-anna-nagar-startups(308) -> /roc-compliances(200)"
+  ],
+  [
+   "live",
+   "/blog/roc-registered-office-change-guindy",
+   "/blog/roc-registered-office-change-guindy(308) -> /roc-compliances(200)"
+  ],
+  [
+   "live",
+   "/blog/statutory-audit-ambattur-manufacturers",
+   "/blog/statutory-audit-ambattur-manufacturers(308) -> /statutory-audit-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/statutory-audit-anna-nagar-companies",
+   "/blog/statutory-audit-anna-nagar-companies(308) -> /statutory-audit-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/statutory-audit-nungambakkam-established",
+   "/blog/statutory-audit-nungambakkam-established(308) -> /statutory-audit-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/tax-audit-kilpauk-doctors",
+   "/blog/tax-audit-kilpauk-doctors(308) -> /tax-audit-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/tax-audit-threshold-anna-nagar",
+   "/blog/tax-audit-threshold-anna-nagar(308) -> /tax-audit-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/tax-audit-t-nagar-traders",
+   "/blog/tax-audit-t-nagar-traders(308) -> /tax-audit-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/transfer-pricing-omr-subsidiaries",
+   "/blog/transfer-pricing-omr-subsidiaries(308) -> /transfer-pricing-audit(200)"
+  ],
+  [
+   "live",
+   "/blog/udyam-registration-anna-nagar-manufacturers",
+   "/blog/udyam-registration-anna-nagar-manufacturers(308) -> /msme-udyam-registration-chennai(200)"
+  ],
+  [
+   "live",
+   "/blog/virtual-cfo-guindy-corporate-offices",
+   "/blog/virtual-cfo-guindy-corporate-offices(308) -> /virtual-cfo-services(200)"
+  ],
+  [
+   "live",
+   "/blog/virtual-cfo-vs-accountant-nungambakkam",
+   "/blog/virtual-cfo-vs-accountant-nungambakkam(308) -> /virtual-cfo-services(200)"
+  ],
+  [
+   "live",
+   "/review",
+   "/review(307) -> https://search.google.com/local/writereview?placeid=ChIJzXoB0DFnUjoRv2EUuO2l7n8(external)"
+  ]
+ ]
+}
