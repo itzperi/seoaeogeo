@@ -13,7 +13,7 @@ export const ICAI_MEMBER_LOOKUP_URL = "https://traceamember.icai.org/";
 export const FIRM_REGISTRATION_NO: string | null = null; // ICAI FRN
 export const YEAR_QUALIFIED: string | null = null;
 export const YEAR_FOUNDED = 2024;
-export const TEAM_SIZE = 16;
+// No team size: not in FIRM FACTS (owner's brief, rule 1; removed 14 Nov 2026).
 // The Business Profile's permanent CID link (from the profile's own edit
 // URLs). Used for schema sameAs/hasMap and every "view on Google" link, so
 // Google can tie the website to this exact listing. Prefer this over the
@@ -28,7 +28,7 @@ export const GBP_REVIEW_URL = `https://search.google.com/local/writereview?place
 // being corrected.
 export const GBP_DIRECTIONS_URL =
   "https://www.google.com/maps/dir/?api=1&destination=13.085989%2C80.199684";
-export const LANGUAGES_SPOKEN = ["English", "Tamil", "Hindi"];
+export const LANGUAGES_SPOKEN = ["English", "Tamil"];
 
 // NAP: standardized on the number used on the homepage/contact page (per SEO audit,
 // the site previously showed +91 7200149711 on some pages and +91 7449273374 on others).

@@ -40,7 +40,7 @@ const TEAM = [
 const ABOUT_FAQS = [
   {
     question: "Who leads C S Rushil & Co.?",
-    answer: `The firm is led by ${FOUNDER_NAME}, a Chartered Accountant who founded it in ${YEAR_FOUNDED}. A team of 16 works with clients on company registration, GST, income tax, audit, FEMA and virtual CFO work.`,
+    answer: `The firm is led by ${FOUNDER_NAME}, a Chartered Accountant who founded it in ${YEAR_FOUNDED}. The firm works with clients on company registration, GST, income tax, audit, FEMA and virtual CFO work.`,
   },
   {
     question: "Where is the C S Rushil & Co. office?",
@@ -48,7 +48,7 @@ const ABOUT_FAQS = [
   },
   {
     question: "Which languages can I use for a consultation?",
-    answer: "Consultations are held in English, Tamil and Hindi, in person at the Anna Nagar office or by video call.",
+    answer: "Consultations are held in English and Tamil, in person at the Anna Nagar office or by video call.",
   },
   {
     question: "How does an engagement with the firm start?",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
 // only — no superlatives, no comparison with other firms.
 const VALUES = [
   { title: "Scoped in writing", text: "Each engagement starts with a scoping call and a written engagement letter that lists what is and is not included." },
-  { title: "Explained in plain language", text: "Filings, notices and reports are explained in English, Tamil or Hindi before anything is signed or submitted." },
+  { title: "Explained in plain language", text: "Filings, notices and reports are explained in English or Tamil before anything is signed or submitted." },
   { title: "Independence checked", text: "A conflict and independence check runs before we accept work. The firm does not audit a company whose books it keeps." },
   { title: "Fees agreed first", text: "Professional fees are agreed in the engagement letter before work begins. Government fees are shown separately." },
 ];
@@ -96,8 +96,8 @@ export default function AboutPage() {
         lead={
           <>
             <strong>C S Rushil &amp; Co.</strong> is a chartered accountancy firm in J-Block, Anna Nagar, Chennai, founded in
-            2024 and led by <strong>CA Rushil C S</strong> (ICAI; Certificate in Forensic Accounting and Fraud Detection). A
-            team of 16 handles company registration, GST and income tax, audit, FEMA and virtual CFO work for clients in
+            2024 and led by <strong>CA Rushil C S</strong> (ICAI; Certificate in Forensic Accounting and Fraud Detection). The
+            firm handles company registration, GST and income tax, audit, FEMA and virtual CFO work for clients in
             Chennai, across Tamil Nadu and abroad.
           </>
         }
@@ -117,9 +117,9 @@ export default function AboutPage() {
                 clients strengthen compliance, mitigate risk, and grow with confidence.
               </p>
               <p className="mt-4 leading-relaxed text-slate">
-                Backed by a team of 16 skilled professionals, we deliver audit, taxation,
-                risk, compliance, and management consulting services for businesses across
-                sectors — combining a technology-driven approach with hands-on experience.
+                We deliver audit, taxation, risk, compliance and management consulting
+                services for businesses across sectors, combining a technology-driven approach
+                with hands-on experience.
               </p>
               <a
                 href={SOCIALS.linkedin}
@@ -232,7 +232,7 @@ export default function AboutPage() {
           <AboutTheCA className="mt-8" />
           <h3 className="mt-10 text-lg font-medium text-obsidian">Our team</h3>
           <p className="mt-3 max-w-2xl text-sm text-slate">
-            {FOUNDER_NAME} leads a 16-member team working across audit, tax,
+            {FOUNDER_NAME} leads the team working across audit, tax,
             GST and compliance. Some of the people you may work with:
           </p>
           <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-5">
@@ -278,7 +278,7 @@ export default function AboutPage() {
             clients, including clients based in the United States, on Indian
             tax filing, DTAA benefit claims, and compliance matters that
             don&apos;t require an in-person visit. Our team communicates in
-            English, Tamil, and Hindi.
+            English and Tamil.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             {AREAS.map((area) => (

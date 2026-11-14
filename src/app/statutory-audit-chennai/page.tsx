@@ -290,7 +290,7 @@ export default function Page() {
         Chennai hosts many foreign-owned companies, from IT and engineering centres along OMR and in Guindy to
         manufacturers in Sriperumbudur, Oragadam and Ambattur. Each type brings different audit emphasis: revenue
         true-ups and ESOP recharges for service centres, and inventory, fixed assets and customs-linked pricing for
-        manufacturers. Our 16-member team, led by CA Rushil C S, plans the work around the parent&apos;s reporting date
+        manufacturers. Our team, led by CA Rushil C S, plans the work around the parent&apos;s reporting date
         and the Indian statutory calendar together.
       </p>
     </ServicePageTemplate>

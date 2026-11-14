@@ -30,7 +30,6 @@ import {
   PHONE_DISPLAY,
   PHONE_TEL,
   SITE_URL,
-  TEAM_SIZE,
   WHATSAPP_LINK,
   YEAR_FOUNDED,
 } from "@/lib/site";
@@ -57,7 +56,6 @@ export const metadata: Metadata = {
 const TRUST_FACTS = [
   ["Led by", `${FOUNDER_NAME}, practising Chartered Accountant (ICAI)`],
   ["Credentials", "ICAI Certificate in Forensic Accounting and Fraud Detection (FAFD); Start-up Mentor"],
-  ["Team", `${TEAM_SIZE} professionals`],
   ["Office", ADDRESS_FULL],
   ["Established", `${YEAR_FOUNDED}`],
   ...(ICAI_MEMBERSHIP_NO ? [["ICAI membership no.", ICAI_MEMBERSHIP_NO]] : []),
@@ -208,8 +206,8 @@ export default function HomePage() {
             </h1>
             <p id="lead-answer" className="mt-6 max-w-xl text-lg leading-relaxed text-carbon">
               {BUSINESS_NAME} is a <strong>CA firm in Chennai</strong>, a{" "}
-              <strong>chartered accountancy firm</strong> (the &ldquo;auditor&rdquo; most Tamil Nadu businesses call) in J-Block, Anna Nagar, led by {FOUNDER_NAME}. Our{" "}
-              {TEAM_SIZE}-member team handles <strong>Private Limited Company registration</strong>,{" "}
+              <strong>chartered accountancy firm</strong> (the &ldquo;auditor&rdquo; most Tamil Nadu businesses call) in J-Block, Anna Nagar, led by {FOUNDER_NAME}. The{" "}
+              firm handles <strong>Private Limited Company registration</strong>,{" "}
               <strong>GST registration, returns and notices</strong>, <strong>virtual CFO</strong> work, audit and income tax.
               Our only office is in Anna Nagar; businesses, professionals and NRIs can consult in person or online.
             </p>
@@ -257,7 +255,7 @@ export default function HomePage() {
             </div>
             <dl className="mt-10 grid max-w-md grid-cols-3 gap-3">
               {[
-                [String(TEAM_SIZE), "Professionals", "bg-white"],
+                [String(YEAR_FOUNDED), "Founded", "bg-white"],
                 ["8+", "Service lines", "bg-lavender"],
                 ["Anna Nagar", "Chennai office", "bg-mint-pop"],
               ].map(([value, label, bg]) => (
@@ -281,7 +279,6 @@ export default function HomePage() {
         <ul className="container-page flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] font-bold uppercase tracking-[0.032em] text-carbon">
           {[
             `Established ${YEAR_FOUNDED}`,
-            `${TEAM_SIZE}-member team`,
             `Led by ${FOUNDER_NAME} (${FOUNDER_CREDENTIALS})`,
             ...(ICAI_MEMBERSHIP_NO ? [`ICAI membership no. ${ICAI_MEMBERSHIP_NO}`] : []),
             ...(FIRM_REGISTRATION_NO ? [`Firm registration no. ${FIRM_REGISTRATION_NO}`] : []),
@@ -307,7 +304,7 @@ export default function HomePage() {
               companies with the Registrar of Companies (ROC), Chennai, and represents clients before tax authorities.
               Only a chartered accountant in practice can be appointed as a company&apos;s statutory auditor (Section 141,
               Companies Act, 2013). {BUSINESS_NAME} is one such firm. It was founded in {YEAR_FOUNDED}, is led by{" "}
-              {FOUNDER_NAME} and has {TEAM_SIZE} professionals working from a single office in J-Block, Anna Nagar, open{" "}
+              {FOUNDER_NAME} and works from a single office in J-Block, Anna Nagar, open{" "}
               {BUSINESS_HOURS[0].days.replace(" – ", " to ")}, {BUSINESS_HOURS[0].hours.replace(" – ", " to ")}. The team
               handles private limited company and LLP registration, GST registration, returns and notices, income tax and
               TDS, statutory and tax audits, ROC filings and virtual CFO work in {LANGUAGES_SPOKEN.slice(0, -1).join(", ")}{" "}
@@ -334,7 +331,7 @@ export default function HomePage() {
               ["Office", ADDRESS_FULL],
               ["Hours", BUSINESS_HOURS.map((h) => `${h.days}: ${h.hours}`).join("; ")],
               ["Founded", String(YEAR_FOUNDED)],
-              ["Team", `${TEAM_SIZE} professionals, led by ${FOUNDER_NAME}`],
+              ["Led by", `${FOUNDER_NAME}, practising Chartered Accountant`],
               ["Languages", LANGUAGES_SPOKEN.join(", ")],
               ["Company registrations", "Filed with the Registrar of Companies, Chennai (MCA SPICe+)"],
               ["Service area", "In person in Chennai; online across Tamil Nadu and for NRIs"],
@@ -449,7 +446,7 @@ export default function HomePage() {
               <a href={FOUNDER_LINKEDIN} target="_blank" rel="noopener noreferrer" className="font-medium text-royal-violet underline underline-offset-2">
                 {FOUNDER_NAME}
               </a>{" "}
-              ({FOUNDER_CREDENTIALS}). A team of {TEAM_SIZE} professionals handles audit, taxation, GST litigation,
+              ({FOUNDER_CREDENTIALS}). The firm handles audit, taxation, GST litigation,
               company law compliance and virtual CFO work.
             </p>
             <dl className="mt-6 divide-y divide-ash overflow-hidden rounded-cards border border-carbon bg-white">

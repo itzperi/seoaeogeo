@@ -5,7 +5,7 @@ import PageHero from "@/components/PageHero";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 import { JsonLd, howToSchema } from "@/lib/schema";
-import { ADDRESS_SHORT, EMAIL, FOUNDER_NAME, TEAM_SIZE } from "@/lib/site";
+import { ADDRESS_SHORT, EMAIL, FOUNDER_NAME } from "@/lib/site";
 
 const TITLE = "CA Firms in Chennai for Articleship | C S Rushil & Co.";
 const DESCRIPTION =
@@ -170,7 +170,7 @@ export default function CareerPage() {
       <PageHero
         eyebrow="Careers"
         h1="CA articleship and careers at C S Rushil & Co."
-        subhead={`A ${TEAM_SIZE}-member team in ${ADDRESS_SHORT} hiring article assistants, semi-qualified accountants and qualified CAs.`}
+        subhead={`A chartered accountancy firm in ${ADDRESS_SHORT} hiring article assistants, semi-qualified accountants and qualified CAs.`}
         lead={
           <>
             C S Rushil &amp; Co. is a chartered accountancy firm in Anna Nagar, Chennai, that takes article assistants and
@@ -292,7 +292,7 @@ export default function CareerPage() {
             articles learn from the person who signs off the advice.
           </p>
           <p className={P}>
-            The firm is led by {FOUNDER_NAME}, who is also a start-up mentor. The team of {TEAM_SIZE} is small enough
+            The firm is led by {FOUNDER_NAME}, who is also a start-up mentor. The team is small enough
             that articles see how a file moves from first conversation to final sign-off, rather than working on a
             narrow slice. You can read more about the founder and the team on our{" "}
             <Link href="/about-us" className={LINK}>about us</Link> page and about the way we run engagements on{" "}
@@ -338,7 +338,7 @@ export default function CareerPage() {
             how these areas connect. A company incorporated in the morning needs{" "}
             <Link href="/roc-compliances" className={LINK}>ROC filings</Link> later, a{" "}
             <Link href="/goods-and-services-tax" className={LINK}>GST</Link> registration, and eventually an audit. Our
-            office is in {ADDRESS_SHORT}, and the team works with clients in English, Tamil and Hindi.
+            office is in {ADDRESS_SHORT}, and the team works with clients in English and Tamil.
           </p>
 
           <h2 className={H2}>How do you apply for articleship or a job with us?</h2>
