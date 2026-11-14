@@ -51,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...staticEntries,
     ...ALL_SERVICES.map((s) => entry(s.slug)),
-    ...AREAS.map((a) => entry(a.slug)),
+    ...AREAS.filter((a) => !a.noindex).map((a) => entry(a.slug)),
     ...TN_CITY_PAGES.map((c) => entry(c.slug)),
     ...LOCATION_PAGES.map((l) => entry(l.slug)),
     ...blogEntries,

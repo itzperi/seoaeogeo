@@ -217,8 +217,8 @@ export default function Body() {
       </p>
       <p>
         We advise returning families in{" "}
-        <Link href="/income-tax-consultant-besant-nagar-chennai">Besant Nagar</Link>,{" "}
-        <Link href="/income-tax-consultant-neelankarai-ecr-chennai">Neelankarai and the ECR</Link>{" "}
+        Besant Nagar,{" "}
+        Neelankarai and the ECR{" "}
         and across Chennai through our{" "}
         <Link href="/nri-tax-services">NRI tax services</Link> and wider{" "}
         <Link href="/income-tax-consultant-for-hni-chennai">HNI tax planning</Link>, from our only

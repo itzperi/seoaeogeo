@@ -421,13 +421,13 @@ export default function Page() {
           Nungambakkam
         </Link>
         , as well as{" "}
-        <Link href="/income-tax-consultant-besant-nagar-chennai" className={linkClass}>Besant Nagar</Link>,{" "}
-        <Link href="/income-tax-consultant-alwarpet-chennai" className={linkClass}>Alwarpet</Link>,{" "}
-        <Link href="/income-tax-consultant-ra-puram-chennai" className={linkClass}>R A Puram</Link>,{" "}
-        <Link href="/income-tax-consultant-kotturpuram-chennai" className={linkClass}>Kotturpuram</Link>,{" "}
-        <Link href="/income-tax-consultant-gopalapuram-chennai" className={linkClass}>Gopalapuram</Link> and Poes
+        Besant Nagar,{" "}
+        Alwarpet,{" "}
+        R A Puram,{" "}
+        Kotturpuram,{" "}
+        Gopalapuram and Poes
         Garden, and{" "}
-        <Link href="/income-tax-consultant-neelankarai-ecr-chennai" className={linkClass}>Neelankarai and the East Coast Road</Link>.
+        Neelankarai and the East Coast Road.
         Outside Chennai, clients in{" "}
         <Link href="/income-tax-consultant-coimbatore" className={linkClass}>Coimbatore</Link>,{" "}
         <Link href="/income-tax-consultant-madurai" className={linkClass}>Madurai</Link> and{" "}

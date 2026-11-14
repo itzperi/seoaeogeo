@@ -43,6 +43,14 @@ const nextConfig: NextConfig = {
       { source: "/blog/cash-flow-forecasting-framework", destination: "/virtual-cfo-services", permanent: true },
       { source: "/blog/virtual-cfo-vs-full-time-cfo-cost-comparison", destination: "/virtual-cfo-services", permanent: true },
       { source: "/blog/gst-litigation-t-nagar-jewellery", destination: "/blog/itc-mismatch-notices", permanent: true },
+      // Income-tax area pages merged into /direct-tax (owner-approved, 14 Nov 2026).
+      { source: "/income-tax-consultant-alwarpet-chennai", destination: "/direct-tax", statusCode: 301 },
+      { source: "/income-tax-consultant-anna-nagar-chennai", destination: "/direct-tax", statusCode: 301 },
+      { source: "/income-tax-consultant-besant-nagar-chennai", destination: "/direct-tax", statusCode: 301 },
+      { source: "/income-tax-consultant-gopalapuram-chennai", destination: "/direct-tax", statusCode: 301 },
+      { source: "/income-tax-consultant-kotturpuram-chennai", destination: "/direct-tax", statusCode: 301 },
+      { source: "/income-tax-consultant-neelankarai-ecr-chennai", destination: "/direct-tax", statusCode: 301 },
+      { source: "/income-tax-consultant-ra-puram-chennai", destination: "/direct-tax", statusCode: 301 },
       { source: "/ca-fees-chennai", destination: "/blog/how-to-choose-a-chartered-accountant-in-chennai", permanent: true },
       // Merged into the company registration hub (it competed for the same searches).
       { source: "/formation-of-business-entity", destination: "/company-registration-chennai", permanent: true },

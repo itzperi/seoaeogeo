@@ -217,7 +217,7 @@ export default function Body() {
         We also handle the same work online for{" "}
         <Link href="/income-tax-consultant-bangalore">technology employees in Bengaluru</Link>{" "}
         and for families in{" "}
-        <Link href="/income-tax-consultant-besant-nagar-chennai">Besant Nagar</Link>{" "}
+        Besant Nagar{" "}
         and nearby areas who have returned from abroad. All consultations take
         place at our Anna Nagar office or by video call. To have your vesting
         history reconciled before the next return,{" "}

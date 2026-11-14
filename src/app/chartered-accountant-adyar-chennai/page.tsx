@@ -6,6 +6,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/chartered-accountant-adyar-chennai`;
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: { absolute: "Chartered Accountant in Adyar, Chennai | C S Rushil & Co." },
   description:
     "Tax audit, income tax filing, and trust/NGO registration for Adyar's professionals, consultants, and long-established institutions, from a Chennai CA firm.",

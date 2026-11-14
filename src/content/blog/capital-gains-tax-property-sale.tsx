@@ -198,8 +198,8 @@ export default function Body() {
         <a href="https://tnreginet.gov.in/" target="_blank" rel="noopener noreferrer">Tamil Nadu Registration Department portal (tnreginet.gov.in)</a>{" "}
         before you agree a price, rather than relying on a figure quoted by a
         broker. Older bungalows in areas such as{" "}
-        <Link href="/income-tax-consultant-ra-puram-chennai">R A Puram</Link> and{" "}
-        <Link href="/income-tax-consultant-alwarpet-chennai">Alwarpet</Link> sometimes
+        R A Puram and{" "}
+        Alwarpet sometimes
         sell below the guideline value because of title, access or building
         condition issues; if so, keep a registered valuer&apos;s report on file.
       </p>

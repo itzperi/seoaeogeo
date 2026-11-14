@@ -5,6 +5,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/chartered-accountant-guindy-chennai`;
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: { absolute: "Chartered Accountant in Guindy, Chennai | C S Rushil & Co." },
   description:
     "Statutory audit, ROC compliance, and GST litigation support for Guindy's corporate offices and industrial estate businesses, from a Chennai CA firm.",

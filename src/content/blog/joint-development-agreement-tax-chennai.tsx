@@ -336,8 +336,8 @@ export default function Body() {
       </ul>
       <p>
         We advise redevelopment families in{" "}
-        <Link href="/income-tax-consultant-ra-puram-chennai">R A Puram</Link>,{" "}
-        <Link href="/income-tax-consultant-gopalapuram-chennai">Gopalapuram</Link>{" "}
+        R A Puram,{" "}
+        Gopalapuram{" "}
         and across central Chennai as part of our{" "}
         <Link href="/income-tax-consultant-for-hni-chennai">income tax planning for HNIs and families</Link>.
         Meetings take place at our Anna Nagar office or by video call. To review

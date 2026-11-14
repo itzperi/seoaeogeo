@@ -6,6 +6,7 @@ import { SITE_URL } from "@/lib/site";
 const PAGE_URL = `${SITE_URL}/chartered-accountant-nungambakkam-chennai`;
 
 export const metadata: Metadata = {
+  robots: { index: false, follow: true },
   title: { absolute: "Chartered Accountant in Nungambakkam | C S Rushil & Co." },
   description:
     "Company incorporation, virtual CFO, and GST services for Nungambakkam's corporate offices and businesses, from a Chennai CA firm based nearby in Anna Nagar.",

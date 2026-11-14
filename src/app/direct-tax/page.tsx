@@ -57,13 +57,7 @@ const PLACES: { group: string; links: { href: string; label: string }[] }[] = [
   {
     group: "Chennai neighbourhoods",
     links: [
-      { href: "/income-tax-consultant-anna-nagar-chennai", label: "Anna Nagar (our office)" },
-      { href: "/income-tax-consultant-alwarpet-chennai", label: "Alwarpet" },
-      { href: "/income-tax-consultant-besant-nagar-chennai", label: "Besant Nagar" },
-      { href: "/income-tax-consultant-ra-puram-chennai", label: "R A Puram" },
-      { href: "/income-tax-consultant-kotturpuram-chennai", label: "Kotturpuram" },
-      { href: "/income-tax-consultant-gopalapuram-chennai", label: "Gopalapuram" },
-      { href: "/income-tax-consultant-neelankarai-ecr-chennai", label: "Neelankarai and ECR" },
+      { href: "/chartered-accountant-anna-nagar-chennai", label: "Anna Nagar (our office)" },
       { href: "/chartered-accountant-nungambakkam-chennai", label: "Nungambakkam" },
       { href: "/chartered-accountant-adyar-chennai", label: "Adyar" },
       { href: "/chartered-accountant-mylapore-chennai", label: "Mylapore" },

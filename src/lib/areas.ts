@@ -3,6 +3,9 @@ export type AreaSummary = {
   name: string;
   // Topic for the pre-typed WhatsApp enquiry; defaults to general CA services.
   topic?: string;
+  // Kept live for visitors but noindex,follow and out of the sitemap until the
+  // page carries 600+ words unique to the area (owner's brief, Task 3).
+  noindex?: boolean;
 };
 
 // Locality pages — deliberately kept separate from SERVICES (src/lib/services.ts).
@@ -15,18 +18,11 @@ export const AREAS: AreaSummary[] = [
   { slug: "chartered-accountant-t-nagar-chennai", name: "T Nagar" },
   { slug: "chartered-accountant-ambattur-chennai", name: "Ambattur" },
   { slug: "chartered-accountant-omr-sholinganallur-chennai", name: "OMR / Sholinganallur" },
-  { slug: "chartered-accountant-velachery-chennai", name: "Velachery" },
-  { slug: "chartered-accountant-adyar-chennai", name: "Adyar" },
-  { slug: "chartered-accountant-nungambakkam-chennai", name: "Nungambakkam" },
-  { slug: "chartered-accountant-guindy-chennai", name: "Guindy" },
-  { slug: "chartered-accountant-porur-chennai", name: "Porur" },
-  { slug: "chartered-accountant-tambaram-chennai", name: "Tambaram" },
-  { slug: "chartered-accountant-mylapore-chennai", name: "Mylapore" },
-  { slug: "income-tax-consultant-anna-nagar-chennai", name: "Anna Nagar (income tax)", topic: "Income tax consultation" },
-  { slug: "income-tax-consultant-besant-nagar-chennai", name: "Besant Nagar", topic: "Income tax consultation" },
-  { slug: "income-tax-consultant-alwarpet-chennai", name: "Alwarpet", topic: "Income tax consultation" },
-  { slug: "income-tax-consultant-ra-puram-chennai", name: "R A Puram", topic: "Income tax consultation" },
-  { slug: "income-tax-consultant-kotturpuram-chennai", name: "Kotturpuram", topic: "Income tax consultation" },
-  { slug: "income-tax-consultant-gopalapuram-chennai", name: "Gopalapuram", topic: "Income tax consultation" },
-  { slug: "income-tax-consultant-neelankarai-ecr-chennai", name: "Neelankarai / ECR", topic: "Income tax consultation" },
+  { slug: "chartered-accountant-velachery-chennai", name: "Velachery", noindex: true },
+  { slug: "chartered-accountant-adyar-chennai", name: "Adyar", noindex: true },
+  { slug: "chartered-accountant-nungambakkam-chennai", name: "Nungambakkam", noindex: true },
+  { slug: "chartered-accountant-guindy-chennai", name: "Guindy", noindex: true },
+  { slug: "chartered-accountant-porur-chennai", name: "Porur", noindex: true },
+  { slug: "chartered-accountant-tambaram-chennai", name: "Tambaram", noindex: true },
+  { slug: "chartered-accountant-mylapore-chennai", name: "Mylapore", noindex: true },
 ];
