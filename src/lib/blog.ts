@@ -21,6 +21,18 @@ export type BlogPostModule = {
 // Static registry — Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
+  "dir-3-kyc-due-date-late-fee": () =>
+    import("@/content/blog/dir-3-kyc-due-date-late-fee"),
+  "aoc-4-mgt-7-late-fee": () =>
+    import("@/content/blog/aoc-4-mgt-7-late-fee"),
+  "change-registered-office-company": () =>
+    import("@/content/blog/change-registered-office-company"),
+  "fc-gpr-filing-deadline": () =>
+    import("@/content/blog/fc-gpr-filing-deadline"),
+  "fla-return-due-date": () =>
+    import("@/content/blog/fla-return-due-date"),
+  "drc-01a-gst-intimation": () =>
+    import("@/content/blog/drc-01a-gst-intimation"),
   "income-tax-act-2025-section-mapping": () =>
     import("@/content/blog/income-tax-act-2025-section-mapping"),
   "foreign-rsu-tax-schedule-fa-chennai": () =>
@@ -188,6 +200,60 @@ export type BlogSlug = keyof typeof modules;
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
   {
+    slug: "dir-3-kyc-due-date-late-fee",
+    title: "DIR-3 KYC 2026: Due Date, ₹5,000 Late Fee, Deactivated DIN",
+    description:
+      "DIR-3 KYC is now filed once every three financial years, by 30 June. The new due dates, the ₹5,000 late and reactivation fee, and how to revive a DIN.",
+    date: "2026-11-13",
+    excerpt:
+      "Directors no longer file KYC every year. From 31 March 2026, DIR-3 KYC Web is due once every third financial year by 30 June. Here is when yours falls due and what a missed filing costs.",
+  },
+  {
+    slug: "aoc-4-mgt-7-late-fee",
+    title: "AOC-4 and MGT-7 Late Fee 2026: How ₹100 a Day Adds Up",
+    description:
+      "AOC-4 is due 30 days and MGT-7 60 days after the AGM. How the ₹100-a-day additional fee works, the FY 2025-26 relaxation, MGT-7A and Sec 92/137 penalty.",
+    date: "2026-11-13",
+    excerpt:
+      "Late AOC-4 and MGT-7 filings cost ₹100 a day per form, with no cap. Here is how the fee is counted, what the MCA's October 2026 relaxation changes, and the separate penalties.",
+  },
+  {
+    slug: "change-registered-office-company",
+    title: "Registered Office Change 2026: INC-22, INC-23 and MGT-14",
+    description:
+      "How a company changes its registered office in India: same city, same state under another ROC, or another state. INC-22, INC-23, MGT-14 and timelines.",
+    date: "2026-11-13",
+    excerpt:
+      "A move across the road needs one form. A move to another state needs a special resolution, newspaper notices and Regional Director approval. Here is each route, step by step.",
+  },
+  {
+    slug: "fc-gpr-filing-deadline",
+    title: "FC-GPR Filing 2026: 30-Day Deadline, Documents, Late Fee",
+    description:
+      "FC-GPR is filed on the RBI FIRMS portal within 30 days of allotting shares to a foreign investor. Documents needed and how the late submission fee works.",
+    date: "2026-11-13",
+    excerpt:
+      "An Indian company that allots shares to a foreign investor has 30 days to report it in FC-GPR. Here is the timeline, the documents the form needs, and the late submission fee formula.",
+  },
+  {
+    slug: "fla-return-due-date",
+    title: "FLA Return Due 15 July 2027: Who Must File and How",
+    description:
+      "RBI's FLA return is due by 15 July each year from Indian entities with FDI or overseas investment: who files, provisional data, FLAIR portal, late fee.",
+    date: "2026-11-13",
+    excerpt:
+      "Every Indian company or LLP with foreign direct investment or overseas investment files the RBI's FLA return by 15 July. Here is who must file, what goes into it and how the FLAIR portal works.",
+  },
+  {
+    slug: "drc-01a-gst-intimation",
+    title: "DRC-01A GST Intimation 2026: What It Means, How to Reply",
+    description:
+      "DRC-01A is the GST officer's intimation before a show cause notice under Rule 142(1A). Whether it is mandatory, Part A and Part B, paying vs contesting.",
+    date: "2026-11-13",
+    excerpt:
+      "A DRC-01A is not yet a show cause notice, but it usually comes just before one. Here is what Part A tells you, how to answer in Part B, and when paying through DRC-03 makes sense.",
+  },
+  {
     slug: "income-tax-act-2025-section-mapping",
     title: "Income-tax Act 2025: Old vs New Section and Form Numbers",
     description:
@@ -257,8 +323,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "roc-chennai-vs-roc-coimbatore",
     title: "ROC Chennai vs ROC Coimbatore: Which ROC Is Yours?",
     description:
-      "Which Registrar of Companies handles your Tamil Nadu company? District-wise ROC Chennai and ROC Coimbatore list, what it changes in practice, and Puducherry.",
+      "Which ROC handles your Tamil Nadu company? District-wise ROC Chennai and Coimbatore list, Puducherry, the Regional Director and official MCA contacts.",
     date: "2026-10-12",
+    updated: "2026-11-13",
     excerpt:
       "Tamil Nadu has two Registrars of Companies. A district-by-district table, what the ROC actually decides for your company, and where Puducherry fits.",
   },
@@ -275,8 +342,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "company-name-rejection-reasons",
     title: "Why the MCA Rejects Company Names (and How to Avoid It)",
     description:
-      "Why company names get rejected in SPICe+ Part A: identical names, trademark conflicts, restricted words and naming rules, plus how to pick two strong options.",
+      "Why the MCA rejects company names, how to check name availability and trademarks, and how RUN differs from SPICe+ Part A, with tips for two strong names.",
     date: "2026-10-13",
+    updated: "2026-11-13",
     excerpt:
       "Identical names, trademark clashes, restricted words and generic descriptive names: why SPICe+ Part A name applications fail, and how to avoid it.",
   },
@@ -284,8 +352,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "tamil-nadu-stamp-duty-company-incorporation",
     title: "Stamp Duty on Company Incorporation in Tamil Nadu (2026)",
     description:
-      "How stamp duty on the MoA and AoA works for companies registered in Tamil Nadu, how SPICe+ computes and collects it, and how authorised capital affects it.",
+      "Stamp duty on MoA and AoA in Tamil Nadu, how SPICe+ collects it, and the duty on increasing authorised capital (SH-7) and share transfers (SH-4).",
     date: "2026-10-16",
+    updated: "2026-11-13",
     excerpt:
       "Stamp duty on the MoA and AoA is a state levy. Here is how it works for a Tamil Nadu company, how SPICe+ collects it, and why authorised capital matters.",
   },
@@ -293,8 +362,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "government-fees-company-registration",
     title: "Government Fees for Company Registration in India (2026)",
     description:
-      "The statutory costs of registering a company: MCA filing fees, the zero-fee band, name reservation, PAN and TAN, stamp duty and DSC. Government charges only.",
+      "Statutory costs of registering a company in India: MCA fee and zero-fee band, name reservation, PAN, TAN, Tamil Nadu stamp duty, OPC and DSC.",
     date: "2026-10-20",
+    updated: "2026-11-13",
     excerpt:
       "A breakdown of the statutory, government-side costs of incorporating a company: MCA filing fee, name reservation, PAN, TAN, stamp duty and DSC.",
   },
@@ -609,9 +679,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     slug: "spice-plus-incorporation-explained",
     title: "SPICe+ Step by Step (2026): Part A, Part B and AGILE-PRO-S",
     description:
-      "SPICe+ step by step for 2026: Part A name reservation, Part B filing, e-MoA and e-AoA, AGILE-PRO-S, DSC and DIN, resubmission and common rejection reasons.",
+      "SPICe+ step by step for 2026: Part A, Part B, e-MoA, e-AoA, AGILE-PRO-S, DSC and DIN, how to resubmit, and the errors the MCA flags most often.",
     date: "2026-09-19",
-    updated: "2026-10-12",
+    updated: "2026-11-13",
     excerpt:
       "How a Tamil Nadu company is incorporated on MCA V3 today: Part A, Part B, the linked forms, what AGILE-PRO-S makes mandatory, and why filings come back.",
   },
