@@ -114,7 +114,7 @@ The owner has asked for "1,000 times" growth. That is not reachable honestly for
 |---|---|
 | Firm facts, NAP, hours, GBP ids | `src/lib/site.ts` |
 | Service catalogue (homepage grid, footer, sitemap) | `src/lib/services.ts` |
-| Blog (about 96 posts) | TSX files in `src/content/blog/`, registered in `BLOG_INDEX` in `src/lib/blog.ts`. The index date controls publishing, and `updated` comes from the index. Keep title, description and excerpt identical in both places. Link posts with `PostLink`. |
+| Blog (94 posts) | TSX files in `src/content/blog/`, registered in `BLOG_INDEX` in `src/lib/blog.ts`. The index date controls publishing, and `updated` comes from the index. Keep title, description and excerpt identical in both places. Link posts with `PostLink`. |
 | Area pages (20, all indexable) | `src/app/chartered-accountant-<area>-chennai/`, registry `src/lib/areas.ts`, Tamil names `src/lib/tamil.ts`, hub `/locations` |
 | Tamil Nadu city pages | `src/lib/tn-cities.ts` (company registration), `src/lib/location-pages.ts` (income tax and GST litigation) |
 | Tools (7) | `src/app/tools/*`, shared `ToolShell.tsx`, index `src/app/tools/page.tsx` |
