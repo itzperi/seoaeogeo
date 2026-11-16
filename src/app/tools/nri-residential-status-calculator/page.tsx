@@ -4,10 +4,10 @@ import ToolShell, { EstimateNote, H2, LINK, P, ServiceCta, Table, webApplication
 import Calculator from "./Calculator";
 
 const PATH = "/tools/nri-residential-status-calculator";
-const TITLE = "NRI Residential Status Calculator | Section 6 Test";
+const TITLE = "NRI Days & Residential Status Calculator | Section 6";
 const DESCRIPTION =
-  "Check whether you are resident, RNOR, deemed resident or non-resident for Indian tax. Enter your days in India and see which test applies, explained simply.";
-const H1 = "NRI Residential Status Calculator";
+  "NRI days calculator: enter your days in India and check whether you are resident, RNOR, deemed resident or non-resident for Indian income tax, explained simply.";
+const H1 = "NRI Days and Residential Status Calculator";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },

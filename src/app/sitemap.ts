@@ -29,6 +29,8 @@ const STATIC_PATHS = [
   "tools/nri-residential-status-calculator",
   "tools/company-registration-government-fee-calculator",
   "tools/gst-appeal-deadline-pre-deposit-calculator",
+  "tools/gst-late-fee-interest-calculator",
+  "tools/tds-interest-late-fee-calculator",
   "tools/nri-property-sale-tds-calculator",
   "tools/foreign-subsidiary-compliance-calendar",
 ];

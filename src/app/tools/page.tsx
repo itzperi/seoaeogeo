@@ -6,7 +6,7 @@ import { SITE_URL } from "@/lib/site";
 const PATH = "/tools";
 const TITLE = "Tax & Compliance Calculators for India | C S Rushil & Co.";
 const DESCRIPTION =
-  "Calculators from a Chennai chartered accountancy firm: NRI residential status, company registration government fees and GST appeal deadlines with pre-deposit.";
+  "Calculators from a Chennai chartered accountancy firm: NRI residential status, company registration fees, GST appeal deadlines, GST late fees and TDS interest.";
 const H1 = "Tax & Compliance Calculators";
 
 export const metadata: Metadata = {
@@ -38,6 +38,16 @@ const TOOLS = [
     href: "/tools/gst-appeal-deadline-pre-deposit-calculator",
     name: "GST Appeal Deadline & Pre-Deposit Calculator",
     text: "Find the due date for a first appeal under section 107 or a GSTAT appeal under section 112, and the pre-deposit by tax head.",
+  },
+  {
+    href: "/tools/gst-late-fee-interest-calculator",
+    name: "GST Late Fee & Interest Calculator",
+    text: "Work out the late fee on a late GSTR-3B, GSTR-1, GSTR-9 or GSTR-4, split into CGST and SGST with the notified caps, and the 18% interest on tax paid in cash.",
+  },
+  {
+    href: "/tools/tds-interest-late-fee-calculator",
+    name: "TDS Interest & Late Filing Fee Calculator",
+    text: "Work out interest for late deduction (1% a month) and late payment (1.5% a month) of TDS, counting each part of a month as a full month, and the ₹200 a day late filing fee with its cap.",
   },
   {
     href: "/tools/nri-property-sale-tds-calculator",
