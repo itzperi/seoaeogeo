@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export const meta: BlogPostMeta = {
   slug: "company-name-rejection-reasons",
-  title: "Why the MCA Rejects Company Names (and How to Avoid It)",
+  title: "Company Name Rejected by MCA? 8 Reasons and How to Fix It",
   description:
-    "Why the MCA rejects company names, how to check name availability and trademarks, and how RUN differs from SPICe+ Part A, with tips for two strong names.",
+    "Company name rejected by MCA? The 8 common reasons, how to check name availability and trademarks before you file, and what to do after a rejection.",
   date: "2026-10-13",
   updated: "2026-11-13",
   excerpt:

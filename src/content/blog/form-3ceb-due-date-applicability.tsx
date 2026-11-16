@@ -8,9 +8,9 @@ import Link from "next/link";
 // (30 November 2026). Re-check the official notification before each season.
 export const meta: BlogPostMeta = {
   slug: "form-3ceb-due-date-applicability",
-  title: "Form 3CEB Due Date 2026, Applicability and Form 48",
+  title: "Form 3CEB Due Date 2026, Late Filing Penalty and Form 48",
   description:
-    "Form 3CEB for FY 2025-26 was due 31 October 2026. Who must file, the ₹20 crore domestic rule, the late-filing penalty, and Form 48 from tax year 2026-27.",
+    "Form 3CEB for FY 2025-26 was due 31 October 2026. Missed it? The late-filing penalty, who must file, the ₹20 crore domestic rule and Form 48 from 2026-27.",
   date: "2026-09-25",
   updated: "2026-11-13",
   excerpt:

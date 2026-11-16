@@ -10,9 +10,9 @@ const WALK_IN = "Walk-ins are welcome, and booking a slot saves waiting time.";
 // Title and description exactly as specified in the owner's brief (Task 7.2),
 // although they run past the 60 and 158 character targets.
 export const metadata: Metadata = {
-  title: { absolute: "Chartered Accountant in Anna Nagar, Chennai | C S Rushil & Co." },
+  title: { absolute: "CA Firm in Anna Nagar, Chennai | Chartered Accountant" },
   description:
-    "Chartered accountant in J-Block, Anna Nagar, Chennai for company registration, GST, income tax and audit. Visit our 13th Main Road office or work online. Free consultation.",
+    "CA firm in J-Block, Anna Nagar, Chennai: company registration, GST, income tax and audit. Walk in to our 13th Main Road office near Thirumangalam Metro.",
   alternates: { canonical: "/chartered-accountant-anna-nagar-chennai", types: { "text/markdown": "/md/chartered-accountant-anna-nagar-chennai" } },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],

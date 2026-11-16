@@ -174,7 +174,7 @@ export default function Page() {
         heading="Section 8 company, trust and society"
         columns={["Point", "Section 8 company", "Trust", "Society"]}
         rows={[
-          ["Formed under", "Companies Act, 2013", "Trust deed under the applicable trust law", "Society registration under the applicable law (to confirm)"],
+          ["Formed under", "Companies Act, 2013", "Trust deed under the applicable trust law", "Societies Registration Act, 1860 or a state law such as the Tamil Nadu Societies Registration Act, 1975"],
           ["Governance", "Board of directors", "Trustees", "Governing body and members"],
           ["Dividends", "Not allowed", "Not applicable", "Not allowed"],
           ["Ongoing filings", "MCA returns and audit", "Trust accounts and income tax", "Society accounts and income tax"],

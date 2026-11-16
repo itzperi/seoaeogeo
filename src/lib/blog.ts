@@ -21,6 +21,10 @@ export type BlogPostModule = {
 // Static registry — Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
+  "partnership-firm-registration-tamil-nadu-online": () =>
+    import("@/content/blog/partnership-firm-registration-tamil-nadu-online"),
+  "proprietorship-registration-tamil-nadu": () =>
+    import("@/content/blog/proprietorship-registration-tamil-nadu"),
   "what-does-a-ca-firm-in-chennai-do": () =>
     import("@/content/blog/what-does-a-ca-firm-in-chennai-do"),
   "when-does-a-business-need-a-chartered-accountant": () =>
@@ -213,6 +217,24 @@ export type BlogSlug = keyof typeof modules;
 // export by convention; duplicated here (rather than importing every module
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
+  {
+    slug: "partnership-firm-registration-tamil-nadu-online",
+    title: "Partnership Firm Registration in Tamil Nadu Online: Steps",
+    description:
+      "How to register a partnership firm in Tamil Nadu online on TNREGINET: who the Registrar of Firms is, the section 58 statement, stamp duty, fees and notices.",
+    date: "2026-11-16",
+    excerpt:
+      "Partnership firms in Tamil Nadu are registered online on TNREGINET. Who the Registrar of Firms is, what the section 58 statement holds, the deed's stamp duty, the fees, and what Form C and later notices are for.",
+  },
+  {
+    slug: "proprietorship-registration-tamil-nadu",
+    title: "Proprietorship Registration in Tamil Nadu: What You Need",
+    description:
+      "How to register a sole proprietorship in Tamil Nadu: why there is no single certificate, and when you need GST, Udyam, Shops and Establishments, FSSAI or IEC.",
+    date: "2026-11-16",
+    excerpt:
+      "A sole proprietorship in Tamil Nadu has no single registration. It is set up through GST, Udyam, Shops and Establishments and other registrations, each with its own trigger. Here is which ones you need, and in what order.",
+  },
   {
     slug: "what-does-a-ca-firm-in-chennai-do",
     title: "What Does a CA Firm in Chennai Do? Services and Signatures",
@@ -418,9 +440,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "company-name-rejection-reasons",
-    title: "Why the MCA Rejects Company Names (and How to Avoid It)",
+    title: "Company Name Rejected by MCA? 8 Reasons and How to Fix It",
     description:
-      "Why the MCA rejects company names, how to check name availability and trademarks, and how RUN differs from SPICe+ Part A, with tips for two strong names.",
+      "Company name rejected by MCA? The 8 common reasons, how to check name availability and trademarks before you file, and what to do after a rejection.",
     date: "2026-10-13",
     updated: "2026-11-13",
     excerpt:
@@ -896,9 +918,9 @@ export const BLOG_INDEX: BlogPostMeta[] = [
   },
   {
     slug: "form-3ceb-due-date-applicability",
-    title: "Form 3CEB Due Date 2026, Applicability and Form 48",
+    title: "Form 3CEB Due Date 2026, Late Filing Penalty and Form 48",
     description:
-      "Form 3CEB for FY 2025-26 was due 31 October 2026. Who must file, the ₹20 crore domestic rule, the late-filing penalty, and Form 48 from tax year 2026-27.",
+      "Form 3CEB for FY 2025-26 was due 31 October 2026. Missed it? The late-filing penalty, who must file, the ₹20 crore domestic rule and Form 48 from 2026-27.",
     date: "2026-09-25",
     updated: "2026-11-13",
     excerpt:

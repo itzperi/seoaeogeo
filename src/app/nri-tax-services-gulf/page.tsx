@@ -11,7 +11,7 @@ const h2 = "mt-14 text-2xl text-obsidian";
 const p = "mt-4 max-w-3xl leading-relaxed text-slate";
 
 export const metadata: Metadata = {
-  title: { absolute: "India Tax for NRIs in Saudi, Qatar, Oman, Kuwait, Bahrain" },
+  title: { absolute: "Tax for NRIs in Saudi, Qatar, Kuwait, Oman & Bahrain (India)" },
   description:
     "Indian tax for NRIs in Saudi Arabia, Qatar, Oman, Kuwait and Bahrain: DTAA, Form 10F, NRE/NRO interest, Tamil Nadu property TDS, 15CA/15CB and RNOR planning.",
   alternates: { canonical: slug },
@@ -88,7 +88,7 @@ export default function Page() {
     <ServicePageTemplate
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="NRI Tax Advisory"
-      crumbLabel="NRI Tax Services — Gulf"
+      crumbLabel="NRI Tax Services Gulf"
       crumbHref={slug}
       parentCrumb={{ name: "NRI Tax Services", href: "/nri-tax-services" }}
       eyebrow="NRI Clients · Saudi Arabia, Qatar, Oman, Kuwait, Bahrain"

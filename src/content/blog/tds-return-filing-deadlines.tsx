@@ -19,7 +19,7 @@ export const meta: BlogPostMeta = {
     {
       question: "What is the penalty for late TDS return filing?",
       answer:
-        "A late fee of ₹200 per day applies until the statement is filed, capped at the TDS deductible, under Section 234E of the 1961 Act (Section 427 of the 2025 Act). Under the 1961 Act, Section 271H also allows a penalty of ₹10,000 to ₹1,00,000, avoided if tax, fee and interest are paid and the statement filed within one month.",
+        "A late fee of ₹200 per day applies until the statement is filed, capped at the TDS deductible, under Section 234E of the 1961 Act (Section 427 of the 2025 Act). Section 271H of the 1961 Act (Section 461 of the 2025 Act) also allows a penalty of ₹10,000 to ₹1,00,000, avoided if tax, fee and interest are paid and the statement filed within one month.",
     },
     {
       question: "Is there a penalty for late TDS deposit as well as late return filing?",
@@ -156,11 +156,11 @@ export default function Body() {
           deduction.
         </li>
         <li>
-          <strong>Penalty (Section 271H of the 1961 Act):</strong> ₹10,000 to ₹1,00,000, at the
+          <strong>Penalty (Section 271H of the 1961 Act, Section 461 of the 2025 Act):</strong> ₹10,000 to ₹1,00,000, at the
           Assessing Officer&apos;s discretion, for incorrect information or for
           statements filed late. Since 1 April 2025, the penalty is avoided only if
           the TDS, late fee and interest are paid and the statement is filed within
-          one month of the due date (earlier, one year). For tax year 2026-27, check the corresponding provision of the 2025 Act.
+          one month of the due date (earlier, one year). From tax year 2026-27 the same penalty sits in Section 461 of the 2025 Act.
         </li>
         <li>
           <strong>Interest (Section 201(1A) of the 1961 Act, Section 398 of the 2025 Act):</strong> 1% a month from the date

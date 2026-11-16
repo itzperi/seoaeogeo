@@ -9,9 +9,9 @@ import { SITE_URL } from "@/lib/site";
 export const revalidate = 86400;
 
 export const metadata: Metadata = {
-  title: { absolute: "Partnership Firm Registration in Chennai | Deed & Filing" },
+  title: { absolute: "Partnership Firm Registration in Chennai & Tamil Nadu Online" },
   description:
-    "Partnership firm registration in Chennai: deed drafting and stamping, filing with the Registrar of Firms on tnreginet, PAN, GST and later partner changes.",
+    "Partnership firm registration in Chennai, applied for online on tnreginet with the Tamil Nadu Registrar of Firms: deed drafting, stamping, PAN, GST and changes.",
   alternates: { canonical: "/partnership-firm-registration-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -102,6 +102,16 @@ export default function Page() {
             "No. Registration with the Registrar of Firms is optional under the Indian Partnership Act, 1932, but an unregistered firm has real disadvantages. Under Section 69, it cannot sue a third party to enforce a contract, and partners cannot sue the firm or each other to enforce deed rights. Banks and government departments often ask for the registration certificate.",
         },
         {
+          question: "Who is the Registrar of Firms in Tamil Nadu?",
+          answer:
+            "The Registrar of Firms sits in the Tamil Nadu Registration Department, not with the Registrar of Companies. The Inspector General of Registration acts as Registrar of Firms at the head office, and the District Registrars (Administration) function as Registrar of Firms for their districts. Under Section 58, the statement goes to the Registrar for the area where any place of business of the firm is situated.",
+        },
+        {
+          question: "What is Form C for a partnership firm in Tamil Nadu?",
+          answer:
+            "Form C is the name commonly used in Tamil Nadu for the registration certificate or acknowledgement issued once the firm is entered in the Register of Firms. The Indian Partnership Act does not use that label: registration takes effect when the Registrar records the entry under Section 59, and a certified copy of that entry is proof of registration under Section 68.",
+        },
+        {
           question: "What documents are needed to register a partnership firm?",
           answer:
             "You need the application in Form No. I signed by all partners, the stamped and signed partnership deed, and government ID proofs of every partner. Keep a rent agreement or ownership proof for the business place and, if someone else owns it, a no-objection letter. If the firm name needs government approval, that approval order is also required.",
@@ -119,7 +129,7 @@ export default function Page() {
         {
           question: "How many partners can a partnership firm have?",
           answer:
-            "A partnership firm needs at least two partners. The Companies (Miscellaneous) Rules, 2014 cap the number at 50 partners (to confirm against the current rules). Partners can be individuals, and a company or LLP can be a partner through an authorised representative. A minor can be admitted to benefits only with all partners' consent.",
+            "A partnership firm needs at least two partners. The Companies (Miscellaneous) Rules, 2014 cap the number at 50 partners, under section 464 of the Companies Act, 2013 read with Rule 10. Partners can be individuals, and a company or LLP can be a partner through an authorised representative. A minor can be admitted to benefits only with all partners' consent.",
         },
         {
           question: "What happens when a partner joins or leaves the firm?",
@@ -176,6 +186,22 @@ export default function Page() {
           tnreginet
         </a>
         , where firm registration sits alongside document, society and chit fund registration.
+      </p>
+
+      <h2 className="mt-14 text-2xl text-obsidian">Can a partnership firm be registered online in Tamil Nadu?</h2>
+      <p className="mt-4 max-w-3xl font-medium leading-relaxed text-obsidian">
+        Yes. Rule 20, added to the Tamil Nadu Partnership (Registration of Firms) Rules, 1932 in October 2021, allows applications,
+        fees and registration to be handled electronically. The Registration Department now takes new firm registrations and later
+        filings online on tnreginet, so partners do not need to visit the Registrar&apos;s office in person.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        The Registrar of Firms is the District Registrar (Administration) for the area where the firm has a place of business. You
+        enter the Section 58 particulars exactly as in the deed, upload the stamped deed signed by all partners, and pay the fee online.
+        Later changes are filed the same way, by statement or notice under Sections 60 to 63. Our guide to{" "}
+        <PostLink slug="partnership-firm-registration-tamil-nadu-online" className="text-royal-violet underline underline-offset-2">
+          partnership firm registration in Tamil Nadu online
+        </PostLink>{" "}
+        walks through each step, the stamp duty on the deed, what &quot;Form C&quot; refers to, and the mistakes that lead to queries.
       </p>
 
       <h2 className="mt-14 text-2xl text-obsidian">How do you apply for partnership firm registration on tnreginet?</h2>

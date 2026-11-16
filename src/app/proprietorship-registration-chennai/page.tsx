@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import ComparisonTable from "@/components/ComparisonTable";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
+
+// Re-render daily so links to scheduled guides (PostLink) switch on when they publish.
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: { absolute: "Proprietorship Registration in Chennai | GST, Udyam" },
@@ -81,12 +85,17 @@ export default function Page() {
         {
           question: "Is Shops and Establishments registration mandatory in Tamil Nadu?",
           answer:
-            "It depends on headcount. Under the Tamil Nadu Shops and Establishments Act, 1947, registration applies to shops and commercial establishments employing 10 or more persons, following the 2018 amendment (to confirm the current threshold on the Labour Department portal). Smaller establishments are generally outside registration, though the Act's rules on hours and holidays may still apply.",
+            "It depends on headcount. Under section 3 of the Tamil Nadu Shops and Establishments Act, 1947, as amended, an establishment employing 10 or more workers must apply for registration within six months of starting business. Under rules notified on 2 July 2024, the application is made online in Form Y with a Rs. 100 fee, and the certificate is issued in Form Z within 24 hours.",
         },
         {
           question: "Do I need GST registration as a proprietor?",
           answer:
             "You need GST registration once your aggregate turnover crosses the threshold, or from the start if you make inter-state supplies of goods, sell through e-commerce operators or fall in another compulsory category. Below that, it is optional; some proprietors register voluntarily because business clients want GST invoices or input tax credit. Registration is linked to the proprietor's PAN.",
+        },
+        {
+          question: "Does a proprietor in Chennai pay profession tax?",
+          answer:
+            "Yes, if the proprietor carries on a trade or profession within Greater Chennai. The Corporation levies profession tax every half-year on persons engaged in a profession, trade, calling or employment in the city, and employers also deduct it from staff salaries. The amount depends on half-yearly income, so check the Corporation's current rates before paying.",
         },
         {
           question: "Is Udyam registration free?",
@@ -133,6 +142,23 @@ export default function Page() {
           </tbody>
         </table>
       </div>
+
+      <h2 className="mt-14 text-2xl text-obsidian">How do you register a sole proprietorship in Tamil Nadu?</h2>
+      <p className="mt-4 max-w-3xl font-medium leading-relaxed text-obsidian">
+        There is no single filing. You register the business through what it triggers: GST once turnover or the type of supply
+        requires it, Udyam on the free government portal, and Tamil Nadu Shops and Establishments registration once you employ 10 or
+        more workers. FSSAI and IEC follow if you sell food or import and export.
+      </p>
+      <p className="mt-4 max-w-3xl leading-relaxed text-slate">
+        Order matters. Take GST first where it applies, because Udyam asks for the GSTIN, then Udyam, then any sector licence, and
+        then open a current account using two of these as business proof. Shops and Establishments registration is applied for online
+        in Form Y with a Rs. 100 fee within six months of starting business, and the Form Z certificate is issued within 24 hours. Our
+        guide to{" "}
+        <PostLink slug="proprietorship-registration-tamil-nadu" className="text-royal-violet underline underline-offset-2">
+          proprietorship registration in Tamil Nadu
+        </PostLink>{" "}
+        sets out each registration, the documents, the order of steps and when to move to a private limited company.
+      </p>
 
       <h2 className="mt-14 text-2xl text-obsidian">What documents do you need?</h2>
       <ul className="mt-4 max-w-3xl space-y-3 text-slate">
