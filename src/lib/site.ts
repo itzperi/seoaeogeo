@@ -1,5 +1,5 @@
 // Vercel serves the site on www (the bare domain 308-redirects there), so
-// canonicals, sitemap and schema must use www too — pointing them at the
+// canonicals, sitemap and schema must use www too, pointing them at the
 // redirecting bare domain sends Google conflicting signals.
 export const SITE_URL = "https://www.csrushil.com";
 export const BUSINESS_NAME = "C S Rushil & Co.";
@@ -51,12 +51,12 @@ export const ADDRESS = {
 export const ADDRESS_FULL = `${ADDRESS.street}, ${ADDRESS.locality}, ${ADDRESS.city} - ${ADDRESS.postalCode}`;
 
 // Short form for tight spaces (eyebrow labels, hero subheads) where the full
-// street address would overflow — never use this for schema/NAP fields.
+// street address would overflow, never use this for schema/NAP fields.
 export const ADDRESS_SHORT = `${ADDRESS.locality}, ${ADDRESS.city}`;
 
 // Coordinates of the Google Business Profile pin (corrected 2026-10-05).
 export const GEO = { latitude: 13.085989, longitude: 80.199684 };
-// Google plus code for the same point — shown next to the address.
+// Google plus code for the same point, shown next to the address.
 export const PLUS_CODE = "35PX+9V Chennai, Tamil Nadu";
 
 // CA Rushil C S's personal LinkedIn (Person schema sameAs).
@@ -101,7 +101,7 @@ export function withBookingUtm(href: string, pathname: string) {
 }
 
 // wa.me expects the number with no "+" or spaces. Same NAP phone number as
-// everywhere else — do not point this at a different number.
+// everywhere else, do not point this at a different number.
 export const WHATSAPP_LINK = `https://wa.me/${PHONE_TEL.replace(/\D/g, "")}`;
 
 // Precise pin (lat/long) rather than an address-text search, so the embed
@@ -113,6 +113,6 @@ export const GOOGLE_MAPS_EMBED_SRC =
   "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.2084858389876!2d80.1997378!3d13.0859694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526731d0017acd%3A0x7feea5edb81461bf!2sC%20S%20Rushil%20%26%20Co.!5e0!3m2!1sen!2sin!4v1791275708840!5m2!1sen!2sin";
 
 export const BUSINESS_HOURS = [
-  { days: "Monday – Saturday", hours: "9:30 AM – 6:30 PM" },
+  { days: "Monday to Saturday", hours: "9:30 AM to 6:30 PM" },
   { days: "Sunday", hours: "Closed" },
 ];

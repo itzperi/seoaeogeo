@@ -8,7 +8,7 @@ import { track } from "@/lib/track";
 // Click-to-open WhatsApp enquiry. A visitor clicks "Enquire on WhatsApp" for a
 // service, sees a ready-typed message they can edit, and one tap opens WhatsApp
 // with it. Never opens on its own (ICAI: no unsolicited pop-ups) and asks for
-// no form fields — the WhatsApp chat itself is the lead.
+// no form fields; the WhatsApp chat itself is the lead.
 
 const EVENT = "csr:open-enquiry";
 type Detail = { service?: string; placement: string };

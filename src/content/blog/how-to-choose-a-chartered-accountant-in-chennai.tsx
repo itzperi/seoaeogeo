@@ -9,7 +9,7 @@ export const meta: BlogPostMeta = {
   date: "2026-09-16",
   updated: "2026-10-06",
   excerpt:
-    "ICAI verification, peer review, fee clarity, response times, specialisation, data security and red flags — nine checks to run before you hire a CA firm in Chennai.",
+    "ICAI verification, peer review, fee clarity, response times, specialisation, data security and red flags, nine checks to run before you hire a CA firm in Chennai.",
   faqs: [
     {
       question: "How do I verify a CA's ICAI membership?",

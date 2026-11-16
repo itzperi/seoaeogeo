@@ -97,7 +97,7 @@ const HOME_FAQS = [
 ];
 
 // Neutral checklist for choosing any CA firm. Each item states a firm fact
-// only where it is verifiably true — no response-time or fee commitments.
+// only where it is verifiably true, no response-time or fee commitments.
 const CHOOSING_CRITERIA: { title: string; text: string; firmFact?: string }[] = [
   {
     title: "ICAI membership you can verify",
@@ -305,7 +305,7 @@ export default function HomePage() {
               Only a chartered accountant in practice can be appointed as a company&apos;s statutory auditor (Section 141,
               Companies Act, 2013). {BUSINESS_NAME} is one such firm. It was founded in {YEAR_FOUNDED}, is led by{" "}
               {FOUNDER_NAME} and works from a single office in J-Block, Anna Nagar, open{" "}
-              {BUSINESS_HOURS[0].days.replace(" – ", " to ")}, {BUSINESS_HOURS[0].hours.replace(" – ", " to ")}. The team
+              {BUSINESS_HOURS[0].days}, {BUSINESS_HOURS[0].hours}. The team
               handles private limited company and LLP registration, GST registration, returns and notices, income tax and
               TDS, statutory and tax audits, ROC filings and virtual CFO work in {LANGUAGES_SPOKEN.slice(0, -1).join(", ")}{" "}
               and {LANGUAGES_SPOKEN[LANGUAGES_SPOKEN.length - 1]}. Clients elsewhere in Chennai, across Tamil Nadu and

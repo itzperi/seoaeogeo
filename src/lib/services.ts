@@ -223,7 +223,7 @@ export const SERVICES: ServiceSummary[] = [
     slug: "iec-registration-chennai",
     name: "IEC Registration",
     shortDescription:
-      "Import Export Code from DGFT for Chennai importers and exporters, with annual April–June updation, modification and GST LUT support.",
+      "Import Export Code from DGFT for Chennai importers and exporters, with annual April to June updation, modification and GST LUT support.",
   },
   {
     slug: "fssai-license-chennai",
@@ -247,13 +247,13 @@ export const SERVICES: ServiceSummary[] = [
     slug: "india-subsidiary-for-uk-companies",
     name: "India Subsidiary for UK Companies",
     shortDescription:
-      "Indian subsidiary set-up for UK parents: FCDO apostille, resident director, FDI route, FC-GPR, India–UK tax treaty and CETA points.",
+      "Indian subsidiary set-up for UK parents: FCDO apostille, resident director, FDI route, FC-GPR, India-UK tax treaty and CETA points.",
   },
   {
     slug: "india-subsidiary-for-uae-companies",
     name: "India Subsidiary for UAE Companies",
     shortDescription:
-      "Indian subsidiary set-up for UAE mainland and free-zone parents and NRI founders: MOFA attestation, FDI route, FC-GPR and India–UAE treaties.",
+      "Indian subsidiary set-up for UAE mainland and free-zone parents and NRI founders: MOFA attestation, FDI route, FC-GPR and India-UAE treaties.",
   },
   {
     slug: "income-tax-consultant-for-hni-chennai",
@@ -395,12 +395,12 @@ export const SPECIALIST_SERVICES: ServiceSummary[] = [
   {
     slug: "nri-tax-services-uk",
     name: "NRI Tax Services: UK",
-    shortDescription: "Indian tax filing and India–UK DTAA support, with the figures your UK accountant needs for HMRC.",
+    shortDescription: "Indian tax filing and India-UK DTAA support, with the figures your UK accountant needs for HMRC.",
   },
   {
     slug: "nri-tax-services-usa",
     name: "NRI Tax Services: USA",
-    shortDescription: "Indian tax filing and India–US DTAA support, with account data for your US CPA’s FBAR and FATCA reporting.",
+    shortDescription: "Indian tax filing and India-US DTAA support, with account data for your US CPA’s FBAR and FATCA reporting.",
   },
   {
     slug: "nri-tax-services-gulf",
@@ -410,7 +410,7 @@ export const SPECIALIST_SERVICES: ServiceSummary[] = [
   {
     slug: "nri-tax-services-singapore",
     name: "NRI Tax Services: Singapore",
-    shortDescription: "Indian tax for NRIs in Singapore: India–Singapore DTAA, Certificate of Residence, RSUs and returning to Chennai.",
+    shortDescription: "Indian tax for NRIs in Singapore: India-Singapore DTAA, Certificate of Residence, RSUs and returning to Chennai.",
   },
 ];
 

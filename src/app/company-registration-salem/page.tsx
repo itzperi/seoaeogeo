@@ -39,7 +39,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our office is in Anna Nagar, Chennai. We have no Salem office and serve Salem clients online." },
         { label: "Registrar (ROC)", value: "ROC Coimbatore, which covers Salem, Namakkal, Dharmapuri and six other western Tamil Nadu districts." },
         { label: "Common structures", value: "LLP or Pvt Ltd for family-run processing and weaving businesses; Pvt Ltd for units that need bank finance; OPC for solo founders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "Usual follow-ons", value: "GST, Udyam, FSSAI for food products such as sago, professional tax with the local body, and IEC for exporters." },
       ]}
       subServicesHeading="What do we handle for Salem businesses?"

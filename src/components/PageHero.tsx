@@ -27,7 +27,7 @@ export default function PageHero({
   service?: string;
   /** false when the page emits its WebPage node inside its own @graph. */
   schema?: boolean;
-  /** 40–55 word direct answer shown as the first paragraph under the H1. */
+  /** 40 to 55 word direct answer shown as the first paragraph under the H1. */
   lead?: ReactNode;
 }) {
   const updated = reviewedPath ? PAGE_DATES[reviewedPath] : undefined;

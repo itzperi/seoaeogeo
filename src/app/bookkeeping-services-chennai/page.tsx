@@ -25,10 +25,10 @@ export default function Page() {
       parentCrumb={{ name: "Outsourced Bookkeeping", href: "/outsourced-bookkeeping-services" }}
       eyebrow="Bookkeeping · Chennai"
       h1="Bookkeeping Services in Chennai"
-      subhead="Cloud accounting, monthly books close, and MIS reporting on the software you already use — from routine bookkeeping to backlog clean-up before an audit or raise."
+      subhead="Cloud accounting, monthly books close, and MIS reporting on the software you already use, from routine bookkeeping to backlog clean-up before an audit or raise."
       introHeading="What do bookkeeping services in Chennai cover?"
-      intro="Bookkeeping is the ongoing recording and reconciliation of a business's financial transactions — sales, purchases, bank movements, and payroll entries — kept accurate and current enough that the resulting financial statements are actually reliable. Done well, it's the foundation everything else (tax filing, audit, investor reporting) is built on; done inconsistently, it creates the kind of backlog that turns a routine audit or funding round into a scramble."
-      citation={{ label: "ICAI — Accounting Standards", href: "https://www.icai.org/post/accounting-standards" }}
+      intro="Bookkeeping is the ongoing recording and reconciliation of a business's financial transactions (sales, purchases, bank movements, and payroll entries) kept accurate and current enough that the resulting financial statements are actually reliable. Done well, it's the foundation everything else (tax filing, audit, investor reporting) is built on; done inconsistently, it creates the kind of backlog that turns a routine audit or funding round into a scramble."
+      citation={{ label: "ICAI: Accounting Standards", href: "https://www.icai.org/post/accounting-standards" }}
       keyFacts={[
         { label: "Software", value: "Tally Prime, Zoho Books, QuickBooks or Xero, on your own licence or subscription." },
         { label: "Books retention (companies)", value: "Books of account and vouchers for at least 8 financial years, under Section 128 of the Companies Act, 2013." },
@@ -38,14 +38,14 @@ export default function Page() {
       ]}
       subServicesHeading="What bookkeeping services do we offer in Chennai?"
       subServices={[
-        { name: "Cloud Accounting on Zoho Books / Tally Prime / QuickBooks / Xero", text: "Setup, data migration, and ongoing bookkeeping on the platform you already use — no forced switch to a different system." },
+        { name: "Cloud Accounting on Zoho Books / Tally Prime / QuickBooks / Xero", text: "Setup, data migration, and ongoing bookkeeping on the platform you already use, no forced switch to a different system." },
         { name: "Monthly Books Close & MIS Reporting", text: "Books closed by a fixed date every month, with P&L, cash flow, and budget-versus-actual reporting delivered on schedule." },
         { name: "Bookkeeping for Foreign Subsidiaries in India", text: "Books maintained in your parent company's format (US GAAP or IFRS) for Indian wholly-owned subsidiaries, with FEMA/FC-GPR tracking and transfer-pricing-ready records." },
         { name: "Startup Bookkeeping & Investor-Ready MIS", text: "Monthly board and investor reporting, burn-rate and runway tracking, and due-diligence-ready data rooms for funded startups." },
         { name: "E-commerce & D2C Bookkeeping", text: "Reconciliation of Amazon, Flipkart, and Shopify settlements, TCS under GST, and inventory accounting for online sellers." },
         { name: "Bookkeeping for Doctors, Clinics & Hospitals", text: "Practice-specific bookkeeping structured around how a medical practice actually earns and spends." },
         { name: "Bookkeeping for NRIs & Family Offices", text: "Rental income, capital gains, and investment tracking across India and abroad." },
-        { name: "Accounts Clean-up & Backlog Bookkeeping", text: "Fixing books that have fallen behind, ahead of an audit, funding round, or sale — handled with the urgency these situations need." },
+        { name: "Accounts Clean-up & Backlog Bookkeeping", text: "Fixing books that have fallen behind, ahead of an audit, funding round, or sale, handled with the urgency these situations need." },
       ]}
       howTo={{
         heading: "How do we set up and run your bookkeeping each month?",
@@ -59,11 +59,11 @@ export default function Page() {
         ],
       }}
       faqs={[
-        { question: "Do I need to switch accounting software to work with you?", answer: "No — we work on whatever platform you already use, whether that's Zoho Books, Tally Prime, QuickBooks, or Xero. If you're not on any of these yet, we can help you choose and migrate, but it's never a requirement to start." },
+        { question: "Do I need to switch accounting software to work with you?", answer: "No, we work on whatever platform you already use, whether that's Zoho Books, Tally Prime, QuickBooks, or Xero. If you're not on any of these yet, we can help you choose and migrate, but it's never a requirement to start." },
         { question: "How quickly can you clean up backlog bookkeeping before an audit?", answer: "A few months of backlog with clean source documents can often be caught up in one to two weeks; a full year with disorganised records takes longer. The timeline depends on how far behind the books are and how organised the underlying invoices and bank statements are, and we'll give you a realistic estimate after a first look." },
-        { question: "Can you maintain books in US GAAP or IFRS format for our Indian subsidiary?", answer: "Yes — this is a specific service we provide for wholly-owned subsidiaries of overseas parent companies, including reporting in the parent's format alongside standard Indian statutory books, and coordination on FEMA/FC-GPR filings." },
-        { question: "Do you handle reconciliation for Amazon or Flipkart sellers?", answer: "Yes — reconciling marketplace settlement reports against your books, tracking TCS deducted under GST, and inventory accounting is a routine part of our e-commerce bookkeeping service." },
-        { question: "What's included in monthly MIS reporting?", answer: "A closed profit and loss statement, cash flow position, and a comparison against your budget where one exists — delivered on a fixed date every month, not whenever time allows." },
+        { question: "Can you maintain books in US GAAP or IFRS format for our Indian subsidiary?", answer: "Yes, this is a specific service we provide for wholly-owned subsidiaries of overseas parent companies, including reporting in the parent's format alongside standard Indian statutory books, and coordination on FEMA/FC-GPR filings." },
+        { question: "Do you handle reconciliation for Amazon or Flipkart sellers?", answer: "Yes, reconciling marketplace settlement reports against your books, tracking TCS deducted under GST, and inventory accounting is a routine part of our e-commerce bookkeeping service." },
+        { question: "What's included in monthly MIS reporting?", answer: "A closed profit and loss statement, cash flow position, and a comparison against your budget where one exists, delivered on a fixed date every month, not whenever time allows." },
         { question: "Tally Prime or Zoho Books: which should a Chennai business use?", answer: "Both work. Tally Prime suits businesses with inventory, multiple godowns or a long history in Tally, and is widely known by Chennai accountants and auditors. Zoho Books suits service businesses and startups that want cloud access, bank feeds and online invoicing from anywhere. We keep books in either and can migrate opening balances if you decide to switch." },
         { question: "Is the audit trail (edit log) mandatory in accounting software?", answer: "For companies, yes. Since 1 April 2023 the Companies (Accounts) Rules require accounting software that records an audit trail of every change, with the date, and the feature cannot be disabled. The statutory auditor reports on it. When we set up or migrate books we check that the edit log is switched on in your Tally Prime or Zoho Books edition." },
         { question: "How long must a company keep its books in India?", answer: "Section 128 of the Companies Act, 2013 requires books of account and the relevant vouchers to be kept for at least 8 financial years before the current year. Income tax and GST rules also set their own periods, so in practice books are kept for at least 8 years and longer where an assessment or appeal is open." },

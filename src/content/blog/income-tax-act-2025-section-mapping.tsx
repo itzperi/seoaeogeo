@@ -85,9 +85,9 @@ const TP: Row[] = [
   ["Meaning of associated enterprise", "Section 92A", "Section 162", "/transfer-pricing-audit", "Transfer pricing"],
   ["Meaning of international transaction", "Section 92B", "Section 163", "/transfer-pricing-audit", "Transfer pricing"],
   ["Specified domestic transaction (₹20 crore)", "Section 92BA", "Section 164", "/transfer-pricing-audit", "Transfer pricing"],
-  ["Methods for arm's length price", "Section 92C; Rules 10A–10CA", "Section 165; Rules 77–81", "/transfer-pricing-audit", "Transfer pricing"],
+  ["Methods for arm's length price", "Section 92C; Rules 10A to 10CA", "Section 165; Rules 77 to 81", "/transfer-pricing-audit", "Transfer pricing"],
   ["Reference to the Transfer Pricing Officer", "Section 92CA", "Section 166", "/transfer-pricing-audit", "Transfer pricing"],
-  ["Safe harbour", "Section 92CB; Rules 10TA–10TG", "Section 167; Rules 86–102", "/transfer-pricing-audit", "Transfer pricing"],
+  ["Safe harbour", "Section 92CB; Rules 10TA to 10TG", "Section 167; Rules 86 to 102", "/transfer-pricing-audit", "Transfer pricing"],
   ["Advance pricing agreement", "Sections 92CC and 92CD; Forms 3CEC, 3CED/3CEDA", "Sections 168 and 169; Forms 50, 51", "/transfer-pricing-audit", "Transfer pricing"],
   ["Secondary adjustment", "Section 92CE", "Section 170", "/transfer-pricing-audit", "Transfer pricing"],
   ["Documentation", "Section 92D; Rule 10D", "Section 171; Rule 84", "/transfer-pricing-audit", "Transfer pricing"],
@@ -122,7 +122,7 @@ function MapTable({ rows }: { rows: Row[] }) {
             <td>{topic}</td>
             <td>{old}</td>
             <td>{now}</td>
-            <td>{href ? <Link href={href}>{label}</Link> : "—"}</td>
+            <td>{href ? <Link href={href}>{label}</Link> : "-"}</td>
           </tr>
         ))}
       </tbody>

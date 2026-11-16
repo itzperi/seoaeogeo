@@ -104,7 +104,7 @@ const PLAYBOOK = [
   {
     form: "MOV-06 / MOV-07 / MOV-09",
     title: "Goods or vehicle detained in transit (Section 129)",
-    means: "MOV-06 is the detention order, MOV-07 the notice proposing tax and penalty, MOV-09 the order of demand. Common on routes into Chennai such as the Chennai–Bengaluru highway and the Ennore port and Red Hills approaches.",
+    means: "MOV-06 is the detention order, MOV-07 the notice proposing tax and penalty, MOV-09 the order of demand. Common on routes into Chennai such as the Chennai-Bengaluru highway and the Ennore port and Red Hills approaches.",
     reply: "Reply to MOV-07 within 7 days; secure release by paying the penalty or furnishing security; appeal the MOV-09 order in APL-01 with 10% of the penalty as pre-deposit.",
     defence: "Whether the defect was a technical lapse, such as a clerical e-way bill error or lapsed validity, with no intent to evade tax.",
   },
@@ -289,7 +289,7 @@ export default function GstLitigationPage() {
             <strong>GSTAT Chennai Bench</strong>.
           </>
         }
-        subhead="Show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal representation — handled from our Anna Nagar office by chartered accountants who can appear on your behalf under Section 116 of the CGST Act."
+        subhead="Show-cause notice replies, departmental audits, appeals before the Appellate Authority, and GST Appellate Tribunal representation, handled from our Anna Nagar office by chartered accountants who can appear on your behalf under Section 116 of the CGST Act."
       />
 
       <section className="bg-paper py-16">
@@ -353,7 +353,7 @@ export default function GstLitigationPage() {
                 Under Section 116 of the CGST Act, a practising Chartered Accountant is
                 a statutorily recognised authorised representative and can appear and
                 argue on your behalf before GST officers, the Appellate Authority, and
-                the GST Appellate Tribunal — without requiring a separate advocate for
+                the GST Appellate Tribunal, without requiring a separate advocate for
                 most proceedings.
               </p>
             </div>
@@ -639,10 +639,10 @@ export default function GstLitigationPage() {
               <p className="mt-4 rounded-cards border border-royal-violet/20 bg-lilac-mist p-5 text-sm leading-relaxed text-obsidian">
                 <strong>Our take:</strong> ITC mismatch notices are, in our
                 experience, the most common trigger for a GST
-                show-cause notice among Chennai SMEs and traders — usually
+                show-cause notice among Chennai SMEs and traders, usually
                 because a supplier filed their return late or incorrectly,
                 not because of anything the recipient business did wrong.
-                The fix is rarely &ldquo;pay the demand&rdquo; — it&apos;s proving the
+                The fix is rarely &ldquo;pay the demand&rdquo; it&apos;s proving the
                 mismatch sits with the supplier&apos;s filing, which requires
                 pulling GSTR-2B history and correspondence, not just
                 arguing the point. Our guide to{" "}
@@ -681,15 +681,15 @@ export default function GstLitigationPage() {
               </h2>
               <p className="mt-4 leading-relaxed text-slate">
                 We start by reading the notice or order itself before touching your
-                books — the exact section cited (73, 74 or 74A, for instance) and the
+                books, the exact section cited (73, 74 or 74A, for instance) and the
                 specific allegation determine both the reply deadline and the
                 documents we pull first. From there we reconcile the disputed period
                 against your GSTR-2B, e-way bills, and underlying invoices to build a
                 factual position, draft the reply or appeal memorandum grounded in
                 that reconciliation, and represent you personally at hearings under
                 Section 116 of the CGST Act rather than handing the matter to a
-                separate advocate. Every deadline — the SCN reply window, the
-                3-month appeal limitation, the pre-deposit payment — is tracked and
+                separate advocate. Every deadline, the SCN reply window, the
+                3-month appeal limitation, the pre-deposit payment, is tracked and
                 flagged to you in writing, not left for you to calculate.
               </p>
             </div>

@@ -72,7 +72,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our office is in Anna Nagar, Chennai. We have no office in Karur; we serve Karur clients online." },
         { label: "Registrar (ROC)", value: "ROC Chennai, which has jurisdiction over Karur district. Neighbouring Namakkal and Dindigul fall under ROC Coimbatore." },
         { label: "Common structures", value: "Private Limited Company for exporters and finance businesses; LLP for family weaving and body-building firms; OPC for solo founders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready; RBI registration for lending businesses is a separate, longer process." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready; RBI registration for lending businesses is a separate, longer process." },
         { label: "Usual follow-ons", value: "IEC, LUT and export council membership for exporters; GST and Udyam for most units." },
       ]}
       subServicesHeading="What do we handle for Karur businesses?"

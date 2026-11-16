@@ -39,7 +39,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our office is in Anna Nagar, Chennai. We have no office in Coimbatore; we serve Coimbatore clients online." },
         { label: "Registrar (ROC)", value: "ROC Coimbatore, whose jurisdiction covers Coimbatore district along with Tiruppur, Erode, Salem and five other western districts." },
         { label: "Common structures", value: "Private Limited Company for manufacturers seeking bank finance or investors; LLP for engineering consultancies and family firms; OPC for solo founders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "Usual follow-ons", value: "GST, Udyam (MSME), professional tax with the local body, and IEC if you export pumps, machinery or textiles." },
       ]}
       subServicesHeading="What do we handle for Coimbatore businesses?"

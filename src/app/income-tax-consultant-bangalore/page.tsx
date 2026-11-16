@@ -84,7 +84,7 @@ export default function Page() {
     <ServicePageTemplate
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="Income Tax Consultancy for High-Income Individuals"
-      crumbLabel="Income Tax Consultant — Bengaluru"
+      crumbLabel="Income Tax Consultant: Bengaluru"
       crumbHref={slug}
       parentCrumb={{ name: "Income Tax for HNIs", href: "/income-tax-consultant-for-hni-chennai" }}
       eyebrow="Income Tax · Bengaluru clients served online"
@@ -126,7 +126,7 @@ export default function Page() {
         { question: "Does C S Rushil & Co. have an office in Bengaluru?", answer: "No. Our only office is in Anna Nagar, Chennai. We serve Bengaluru clients online through video meetings, a secure document portal and electronic filing. Clients who prefer to meet in person are welcome at the Anna Nagar office by appointment, but most Bengaluru engagements never need a visit." },
         { question: "How are RSUs from a US parent company taxed in India?", answer: "RSUs are taxed twice in India. On vesting, the market value of the shares released is a salary perquisite, and your Indian employer deducts TDS on it. When you later sell, the difference between the sale price and that value is a capital gain, long-term if held for more than 24 months." },
         { question: "Do I have to report foreign shares I sold to cover tax?", answer: "Generally yes. Foreign asset reporting covers assets held at any time in the reporting period, so shares released and sold the same day to cover withholding should still be listed. For returns of FY 2025-26, the period is calendar year 2025. We confirm the period that applies to tax year 2026-27 returns when the forms are notified." },
-        { question: "Can I get credit for US tax withheld on my RSU dividends?", answer: "Usually yes. A resident can claim foreign tax credit in India for tax withheld abroad on dividends, limited to the Indian tax on that income and subject to the India–US treaty. A separate statement of foreign income and tax, Form 67 for returns under the 1961 Act, must be filed in time for the claim." },
+        { question: "Can I get credit for US tax withheld on my RSU dividends?", answer: "Usually yes. A resident can claim foreign tax credit in India for tax withheld abroad on dividends, limited to the Indian tax on that income and subject to the India-US treaty. A separate statement of foreign income and tax, Form 67 for returns under the 1961 Act, must be filed in time for the claim." },
         { question: "I work at a Bengaluru startup. When is tax due on my ESOPs?", answer: "Normally tax is due when you exercise, on the difference between fair market value and the exercise price. If your employer is an eligible startup recognised for this purpose, TDS on that perquisite can be deferred until you sell, leave the company, or a fixed period passes, whichever happens first." },
         { question: "How is a founder's secondary sale to an investor taxed?", answer: "It is a capital gain on unlisted shares, taxed at 12.5% without indexation if held for more than 24 months, otherwise at slab rates. If the price is below the fair market value worked out under the valuation rules, that value may be used instead. Reinvesting in a residential house can reduce tax." },
         { question: "Does the Karnataka guidance value affect my income tax?", answer: "Yes. If you sell property for less than the stamp duty value fixed under the Karnataka guidance value, and the gap exceeds the 10% tolerance, that value is treated as your sale price for capital gains. A buyer paying below guidance value can also be taxed on the difference as other income." },
@@ -171,7 +171,7 @@ export default function Page() {
         account, each holding of shares (including tranches sold the same day to cover tax), any ESPP shares, and any
         foreign bank account opened during an overseas assignment. Each entry needs the date of acquisition, the peak value
         during the period and the closing value, converted into rupees. For returns of FY 2025-26, the reporting period is
-        calendar year 2025, not the April–March year, which is why we ask for broker statements for January to December.
+        calendar year 2025, not the April to March year, which is why we ask for broker statements for January to December.
         Leaving out a foreign asset can attract a penalty under the Black Money Act, so this schedule deserves the same
         attention as the income figures. Returns with foreign assets cannot be filed on the simplified ITR-1.
       </p>

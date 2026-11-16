@@ -97,7 +97,7 @@ export default function Page() {
       subhead="A Chennai-based Chartered Accountancy team that prepares bookkeeping, VAT returns, year-end statutory accounts and corporation tax computations inside your own Xero, QuickBooks, IRIS, TaxCalc or CCH environment, for your practice to review, sign off and submit."
       introHeading="How does outsourced bookkeeping work for a UK accountancy practice?"
       intro="A UK practice keeps the client relationship, the engagement letter and the final sign-off, and an offshore team does the preparation work in the practice’s own software. We code bank feeds, reconcile ledgers, draft MTD-ready VAT returns, prepare year-end accounts for Companies House and draft CT600 computations, then hand each file back with a review note. Nothing is submitted to HMRC or Companies House by us. Your reviewer checks the working papers, raises queries, and files under the practice’s own agent credentials."
-      citation={{ label: "GOV.UK — Making Tax Digital guidance", href: "https://www.gov.uk/government/collections/making-tax-digital-for-vat" }}
+      citation={{ label: "GOV.UK: Making Tax Digital guidance", href: "https://www.gov.uk/government/collections/making-tax-digital-for-vat" }}
       keyFacts={[
         { label: "Who files", value: "Your practice, as the client's HMRC agent and with Companies House. We prepare only." },
         { label: "Where the work happens", value: "Inside your own Xero, QuickBooks, Sage, IRIS, CCH or TaxCalc environment, under named logins." },

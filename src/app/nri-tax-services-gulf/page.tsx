@@ -100,7 +100,7 @@ export default function Page() {
         { label: "Countries covered", value: "Saudi Arabia, Qatar, Oman, Kuwait and Bahrain; the UAE has its own page" },
         { label: "Taxable in India", value: "Indian-source income: rent, NRO interest, capital gains, Indian business income" },
         { label: "Property sale", value: "Buyer deducts TDS under section 195; a lower-deduction certificate can reduce it" },
-        { label: "Calls", value: "Gulf working hours overlap with our Mon–Sat 9:30 AM–6:30 PM IST office" },
+        { label: "Calls", value: "Gulf working hours overlap with our Mon to Sat 9:30 AM to 6:30 PM IST office" },
       ]}
       subServicesHeading="Which Indian tax services do Gulf NRIs need?"
       subServices={[

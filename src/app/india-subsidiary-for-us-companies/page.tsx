@@ -65,7 +65,7 @@ const DOCUMENTS = [
 const INTERCOMPANY = [
   ["Cost-plus services", "The Indian subsidiary provides software development, engineering, analytics or back-office services to the US parent and is paid its costs plus a markup.", "Markup must be at arm's length; benchmarking study and annual transfer pricing report; GST treatment of the export of services."],
   ["Reimbursement of costs", "The parent pays shared costs such as software licences or travel that relate to the Indian company, or vice versa.", "Documentation that the recharge is at cost and for the recipient's benefit; withholding tax review."],
-  ["Licence of IP or brand", "The Indian company uses the parent's technology or trade mark.", "Royalty rate supported by benchmarking; withholding tax under the India–US treaty; FEMA reporting where applicable."],
+  ["Licence of IP or brand", "The Indian company uses the parent's technology or trade mark.", "Royalty rate supported by benchmarking; withholding tax under the India-US treaty; FEMA reporting where applicable."],
   ["Secondment of US staff", "US employees work in India for a period while staying on US payroll.", "Indian tax on salary for work done in India, possible permanent establishment questions, and recharge arrangements."],
 ];
 
@@ -140,7 +140,7 @@ export default function Page() {
         { question: "How are US documents apostilled for use in India?", answer: "Both countries are parties to the Hague Apostille Convention, so US public documents need an apostille rather than embassy legalisation. State documents and notarised papers are apostilled by the Secretary of State of the issuing or notarising state, and federal documents by the US Department of State. The Indian authorities then accept them without further attestation." },
         { question: "What is FC-GPR and who files it?", answer: "FC-GPR is the RBI form reporting the issue of shares to a foreign investor. The Indian company files it on the FIRMS portal within 30 days of allotting shares to the US parent, through its authorised dealer bank, with the remittance details, the investor's KYC and a valuation certificate." },
         { question: "How is the Indian subsidiary paid for services to the US parent?", answer: "Most US groups use a cost-plus services agreement, where the Indian company invoices the parent for its costs plus an arm's length markup. Indian transfer pricing rules require this markup to be supported by benchmarking and documented each year, and the export of services also needs the correct GST treatment." },
-        { question: "Does the India–US tax treaty help the subsidiary?", answer: "The India–US Double Taxation Avoidance Agreement can reduce Indian withholding tax on dividends, interest, royalties and fees paid to the US parent, subject to conditions. The parent usually needs a US residency certification, such as IRS Form 6166, and the prescribed declarations in India to claim the treaty rate." },
+        { question: "Does the India-US tax treaty help the subsidiary?", answer: "The India-US Double Taxation Avoidance Agreement can reduce Indian withholding tax on dividends, interest, royalties and fees paid to the US parent, subject to conditions. The parent usually needs a US residency certification, such as IRS Form 6166, and the prescribed declarations in India to claim the treaty rate." },
         { question: "Do you advise on US tax filings such as Form 5471?", answer: "No. We are Indian chartered accountants and do not give US tax advice. We prepare the Indian financial statements, tax payment records and intercompany data your US CPA needs for Form 5471, controlled foreign corporation inclusions and foreign tax credits, and we coordinate timelines so both sets of filings use the same numbers." },
         { question: "How long does incorporation take?", answer: "Based on our experience, a private limited company is usually incorporated in 7 to 12 working days once all documents and digital signatures are ready. Apostille, courier and bank steps on the US side add time, so we agree a timetable with you at the start. This is an estimate from past work, not a promise." },
         { question: "Should we use an employer of record first?", answer: "An employer of record can suit a very small or short-term team, while a subsidiary suits a long-term team, owned assets or contracts signed in India. Each has compliance and cost trade-offs, including permanent establishment questions. Our EOR versus subsidiary guide compares them, and we can discuss your case in a 15-minute consultation." },
@@ -201,9 +201,9 @@ export default function Page() {
       </p>
       <DataTable head={["Item for your US adviser", "Why it comes up", "Who handles it"]} rows={US_ITEMS} />
 
-      <h2 className="mt-14 text-2xl text-obsidian">How does the India–US tax treaty affect the subsidiary?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">How does the India-US tax treaty affect the subsidiary?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-        The Indian subsidiary is an Indian tax resident and pays Indian corporate tax on its profits. The India–US Double
+        The Indian subsidiary is an Indian tax resident and pays Indian corporate tax on its profits. The India-US Double
         Taxation Avoidance Agreement matters mainly for payments that cross the border: dividends, interest, royalties and fees
         for services paid to the US parent, where Indian withholding tax can be reduced to treaty rates if the conditions are
         met. To claim those rates the parent typically provides a US residency certification and the declarations required
@@ -211,7 +211,7 @@ export default function Page() {
         for the parent, which matters for secondments and visiting teams.
       </p>
 
-      <h2 className="mt-14 text-2xl text-obsidian">How does a US–India working model run day to day?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">How does a US-India working model run day to day?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         India Standard Time is 9.5 to 10.5 hours ahead of US Eastern time and 12.5 to 13.5 hours ahead of US Pacific time,
         depending on daylight saving. In practice, the Indian evening overlaps with the US morning, which is when we hold

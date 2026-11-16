@@ -3,7 +3,7 @@ import { createHmac, timingSafeEqual } from "crypto";
 const SESSION_COOKIE = "admin_session";
 
 // The session token is an HMAC of a fixed label using the admin password as
-// the key — never the password itself, and never sent to or stored in the
+// the key, never the password itself, and never sent to or stored in the
 // browser in a reversible form. Recomputing and comparing this on every
 // request means no session store is needed, and rotating ADMIN_PASSWORD in
 // Vercel's environment variables immediately invalidates every existing

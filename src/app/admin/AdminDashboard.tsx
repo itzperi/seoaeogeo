@@ -170,7 +170,7 @@ export default function AdminDashboard({
         <section className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-4 lg:grid-cols-7">
           {stats.map(([label, value, fromClicks]) => (
             <div key={label} className="rounded-cards border border-ash bg-paper p-4">
-              <p className="text-2xl text-obsidian">{fromClicks && clicks === null ? "—" : value}</p>
+              <p className="text-2xl text-obsidian">{fromClicks && clicks === null ? "-" : value}</p>
               <p className="mt-1 text-xs text-slate">{label} · 30 days</p>
             </div>
           ))}
@@ -244,7 +244,7 @@ export default function AdminDashboard({
                     <p className="mt-1 text-xs text-slate">
                       {new Date(lead.created_at).toLocaleString("en-IN", { dateStyle: "medium", timeStyle: "short" })}
                       {lead.source_page && <> · from {lead.source_page}</>}
-                      {lead.utm_source && <> · {lead.utm_source}/{lead.utm_medium ?? "—"}</>}
+                      {lead.utm_source && <> · {lead.utm_source}/{lead.utm_medium ?? "-"}</>}
                     </p>
                   </div>
                   <select
@@ -270,7 +270,7 @@ export default function AdminDashboard({
                   ].map(([label, value]) => (
                     <div key={label as string}>
                       <dt className="text-xs text-slate">{label}</dt>
-                      <dd className="text-obsidian">{value || "—"}</dd>
+                      <dd className="text-obsidian">{value || "-"}</dd>
                     </div>
                   ))}
                 </dl>

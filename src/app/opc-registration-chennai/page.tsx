@@ -37,13 +37,13 @@ export default function Page() {
       h1="OPC Registration in Chennai"
       subhead="A company with a single owner: limited liability and a corporate identity without needing a co-founder. We handle name approval, SPICe+ filing, nominee consent and the first-year compliance calendar."
       introHeading="What is a One Person Company?"
-      intro="OPC registration in Chennai creates a One Person Company under the Companies Act, 2013: a private company with a single member, who must be an Indian citizen and a natural person. The member names a nominee who takes over if the member dies or becomes incapable. It is incorporated through SPICe+, typically in 7–12 working days once documents are ready."
+      intro="OPC registration in Chennai creates a One Person Company under the Companies Act, 2013: a private company with a single member, who must be an Indian citizen and a natural person. The member names a nominee who takes over if the member dies or becomes incapable. It is incorporated through SPICe+, typically in 7 to 12 working days once documents are ready."
       citation={{
         label: "MCA FAQs on One Person Company",
         href: "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/one-person-company.html",
       }}
       keyFacts={[
-        { label: "Typical time", value: "7–12 working days once documents are ready, the same SPICe+ route as a Private Limited Company." },
+        { label: "Typical time", value: "7 to 12 working days once documents are ready, the same SPICe+ route as a Private Limited Company." },
         { label: "Government form", value: "SPICe+ Part A and Part B with AGILE-PRO-S, e-MoA and e-AoA. The nominee's consent (INC-3) is a declaration inside Part B, signed with the nominee's DSC." },
         { label: "Minimum members", value: "1 member, 1 nominee and at least 1 director. Both member and nominee must be Indian citizens; residence in India is no longer required for them." },
         { label: "Who it suits", value: "Solo consultants, freelancers and single-founder businesses that want limited liability and a company name on contracts." },

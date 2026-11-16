@@ -46,7 +46,7 @@ export default function Page() {
       subhead="Monthly bookkeeping, catch-up clean-ups and year-end books for businesses in the United States, the United Kingdom, Singapore, Australia, the UAE and India, kept by a Chartered Accountancy firm in Anna Nagar, Chennai, in the software you already use."
       introHeading="What is outsourced bookkeeping?"
       intro="Outsourced bookkeeping means an outside firm records and reconciles your business transactions every month instead of an employee doing it in-house. Our team works inside your own QuickBooks, Xero, MYOB, Zoho Books or Tally file, reconciles every bank and card account, closes each month by an agreed date and sends you reports and questions. In India we also file GST, TDS and ROC returns. In other countries we prepare the figures, and you or your locally registered accountant or tax agent file them."
-      citation={{ label: "ICAI — Accounting Standards", href: "https://www.icai.org/post/accounting-standards" }}
+      citation={{ label: "ICAI: Accounting Standards", href: "https://www.icai.org/post/accounting-standards" }}
       keyFacts={[
         { label: "Countries served", value: "United States, United Kingdom, Singapore, Australia and the UAE remotely; Chennai and the rest of India directly." },
         { label: "Software", value: "QuickBooks Online, Xero, MYOB, FreeAgent, Sage, Zoho Books, Tally Prime and Odoo, under your own subscription." },

@@ -82,7 +82,7 @@ export default function Page() {
     <ServicePageTemplate
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="Income Tax Consultancy for High-Income Individuals"
-      crumbLabel="Income Tax Consultant — Mumbai"
+      crumbLabel="Income Tax Consultant: Mumbai"
       crumbHref={slug}
       parentCrumb={{ name: "Income Tax for HNIs", href: "/income-tax-consultant-for-hni-chennai" }}
       eyebrow="Income Tax · Mumbai clients served online"

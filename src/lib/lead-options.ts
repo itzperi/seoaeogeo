@@ -25,8 +25,8 @@ export const CLIENT_TYPE_OPTIONS = [
 
 export const TURNOVER_OPTIONS = [
   "Above ₹50 crore",
-  "₹5 – 50 crore",
-  "₹50 lakh – 5 crore",
+  "₹5 to 50 crore",
+  "₹50 lakh to 5 crore",
   "Below ₹50 lakh",
   "Not applicable",
 ] as const;

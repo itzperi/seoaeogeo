@@ -18,12 +18,12 @@ export const meta: BlogPostMeta = {
     {
       question: "What happens if I miss the reply deadline?",
       answer:
-        "The department can pass an ex-parte order — a decision made without your side being heard — typically confirming the entire proposed demand. This is far harder and more expensive to reverse than replying on time in the first place.",
+        "The department can pass an ex-parte order, a decision made without your side being heard, typically confirming the entire proposed demand. This is far harder and more expensive to reverse than replying on time in the first place.",
     },
     {
       question: "Can I request an extension?",
       answer:
-        "Extensions are occasionally granted at the officer's discretion for genuine cause, but they are not guaranteed. Request one in writing immediately if you need it — don't simply let the deadline pass and hope for leniency.",
+        "Extensions are occasionally granted at the officer's discretion for genuine cause, but they are not guaranteed. Request one in writing immediately if you need it; don't simply let the deadline pass and hope for leniency.",
     },
   ],
   summary:
@@ -34,7 +34,7 @@ export default function Body() {
   return (
     <>
       <p>
-        A GST show-cause notice (SCN) is not something to set aside for later —
+        A GST show-cause notice (SCN) is not something to set aside for later,
         the reply window is strict, and a missed or weak reply can lead to an
         ex-parte order confirming the entire demand. Here is exactly what to do
         in the first 48 hours.
@@ -44,7 +44,7 @@ export default function Body() {
       <p>
         Identify three things immediately: which section it&apos;s issued under
         (Section 73 for non-fraud cases, Section 74 for fraud/suppression
-        allegations under the <a href="https://cbic-gst.gov.in/gst-acts.html" target="_blank" rel="noopener noreferrer">CGST Act</a> — the distinction matters enormously for penalty exposure;
+        allegations under the <a href="https://cbic-gst.gov.in/gst-acts.html" target="_blank" rel="noopener noreferrer">CGST Act</a>; the distinction matters enormously for penalty exposure;
         for FY 2024-25 onward, demands are issued under the single Section 74A
         instead, which allows a notice up to 42 months from the due date of the
         annual return and an order within 12 months of the notice, extendable by
@@ -53,7 +53,7 @@ export default function Body() {
         valuation, ITC mismatch, non-filing, etc.).
       </p>
 
-      <h2>Hours 2–6: Gather the relevant documents</h2>
+      <h2>Hours 2 to 6: Gather the relevant documents</h2>
       <ul>
         <li>All GST returns (GSTR-1, GSTR-3B, GSTR-9) for the period in question</li>
         <li>GSTR-2B and your purchase register, if the notice concerns ITC</li>
@@ -62,13 +62,13 @@ export default function Body() {
         <li>Any prior correspondence with the department on the same matter</li>
       </ul>
 
-      <h2>Day 1–2: Get a professional assessment</h2>
+      <h2>Day 1 to 2: Get a professional assessment</h2>
       <p>
         Before drafting anything, get a chartered accountant experienced in
         <Link href="/gst-notice-reply-chennai">GST notice replies</Link> to assess whether the
         allegation has merit, is a genuine data-entry mismatch, or is a
         misapplication of the law on the department&apos;s part. This assessment
-        determines your entire response strategy — a straightforward clerical
+        determines your entire response strategy; a straightforward clerical
         correction is handled very differently from a substantive legal dispute
         over classification or valuation.
       </p>
@@ -84,11 +84,11 @@ export default function Body() {
         <tbody>
           <tr>
             <td>Point-by-point rebuttal</td>
-            <td>Address each allegation individually — a generic denial is treated as no reply at all.</td>
+            <td>Address each allegation individually; a generic denial is treated as no reply at all.</td>
           </tr>
           <tr>
             <td>Supporting documents as annexures</td>
-            <td>Every factual claim needs a document behind it — returns, invoices, ledgers.</td>
+            <td>Every factual claim needs a document behind it, returns, invoices, ledgers.</td>
           </tr>
           <tr>
             <td>Relevant case law or circulars, if applicable</td>
@@ -103,14 +103,14 @@ export default function Body() {
 
       <h2>What not to do</h2>
       <ul>
-        <li>Don&apos;t ignore the notice hoping it resolves itself — it won&apos;t.</li>
+        <li>Don&apos;t ignore the notice hoping it resolves itself; it won&apos;t.</li>
         <li>Don&apos;t send an informal, undocumented reply by email outside the proper portal process.</li>
-        <li>Don&apos;t wait until the last day to start gathering documents — some records (like old e-way bills) take time to retrieve.</li>
+        <li>Don&apos;t wait until the last day to start gathering documents, some records (like old e-way bills) take time to retrieve.</li>
       </ul>
 
       <p>
-        If your notice concerns a genuinely disputed legal question — not just a
-        clerical fix — you may be looking at the start of a longer litigation
+        If your notice concerns a genuinely disputed legal question, not just a
+        clerical fix; you may be looking at the start of a longer litigation
         process. See our dedicated page on{" "}
         <a href="/gst-litigation-chennai">GST litigation in Chennai</a> for what
         comes after the reply stage.

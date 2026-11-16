@@ -4,7 +4,7 @@
 export type TrackAction = "call" | "whatsapp" | "book" | "form_start" | "form_submit" | "enquiry_open";
 
 // GA4 event names for each funnel action (sent only when GA4 is loaded,
-// i.e. NEXT_PUBLIC_GA_ID is set — see layout.tsx). Mark whatsapp_click,
+// i.e. NEXT_PUBLIC_GA_ID is set, see layout.tsx). Mark whatsapp_click,
 // call_click, consultation_booking_click and calculator_lead_click as key
 // events (conversions) in GA4.
 const GA4_EVENT: Record<TrackAction, string> = {

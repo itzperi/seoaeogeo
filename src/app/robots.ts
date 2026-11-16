@@ -7,7 +7,7 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "*", allow: "/" },
       // Explicit named allows for AI answer-engine crawlers, so ChatGPT
       // Search, Perplexity, and Claude can cite this site with no
-      // ambiguity — the wildcard rule above already permits them, but
+      // ambiguity, the wildcard rule above already permits them, but
       // some crawler operators specifically check for a named entry.
       { userAgent: "Googlebot", allow: "/" },
       { userAgent: "Bingbot", allow: "/" },

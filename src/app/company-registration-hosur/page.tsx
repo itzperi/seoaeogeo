@@ -39,7 +39,7 @@ export default function Page() {
         { label: "Where we work from", value: "Anna Nagar, Chennai. We have no office in Hosur or Krishnagiri; we serve Hosur clients online." },
         { label: "Registrar (ROC)", value: "ROC Coimbatore, whose jurisdiction includes Krishnagiri district, where Hosur is located." },
         { label: "Common structures", value: "Pvt Ltd for component suppliers to large manufacturers; LLP for tool rooms and engineering service firms; OPC for solo founders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "State registrations", value: "Tamil Nadu GST, professional tax with the Hosur local body, and Udyam. These follow the registered office, not where the founders live." },
       ]}
       subServicesHeading="What do we handle for Hosur businesses?"
@@ -121,7 +121,7 @@ export default function Page() {
         <li>• <strong className="text-obsidian">Logistics, maintenance and staffing firms</strong> serving the industrial parks.</li>
       </ul>
 
-      <h2 className="mt-14 text-2xl text-obsidian">What does the Tamil Nadu–Karnataka border mean for your registration?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">What does the Tamil Nadu-Karnataka border mean for your registration?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">
         Hosur sits next to the Karnataka border, and many promoters live in Bengaluru. The registered office decides which ROC the
         company comes under, and each state where you have a place of business needs its own GST registration. Professional tax

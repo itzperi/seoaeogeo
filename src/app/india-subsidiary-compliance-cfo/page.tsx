@@ -88,7 +88,7 @@ export default function Page() {
       subhead="A single retainer covering the Indian statutory calendar and the reporting your parent company expects: ROC and FEMA filings, transfer pricing, GST, TDS, payroll, statutory audit coordination and monthly MIS, for foreign-owned subsidiaries and global capability centres in Chennai."
       introHeading="What compliance does a foreign-owned Indian subsidiary have each year?"
       intro="A foreign-owned Indian subsidiary must hold at least four board meetings a year, get its accounts audited, file AOC-4 and MGT-7 with the Registrar, file the FLA return with the RBI by 15 July, and file Form 3CEB transfer pricing reports for transactions with its foreign parent. Alongside these sit monthly GST and TDS returns, PF, ESI and Tamil Nadu professional tax, and the annual income tax return. Most foreign parents also need monthly management accounts in IFRS or US GAAP for group consolidation."
-      citation={{ label: "Reserve Bank of India — FLA return FAQs (rbi.org.in)", href: "https://www.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=1171" }}
+      citation={{ label: "Reserve Bank of India: FLA return FAQs (rbi.org.in)", href: "https://www.rbi.org.in/commonman/english/scripts/FAQs.aspx?Id=1171" }}
       keyFacts={[
         { label: "FLA return (RBI)", value: "By 15 July each year" },
         { label: "AGM and ROC filings", value: "AGM within six months of year end; AOC-4 within 30 days and MGT-7 within 60 days of the AGM" },

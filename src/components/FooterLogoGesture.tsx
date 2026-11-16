@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 
-// Tap the CA badge 3 times within 1.5s to reach the admin login — a
+// Tap the CA badge 3 times within 1.5s to reach the admin login, a
 // low-friction way for the site owner to reach /admin without a visible
 // nav link, without this being an actual access-control mechanism itself
 // (the real protection is the server-side login check on the page it

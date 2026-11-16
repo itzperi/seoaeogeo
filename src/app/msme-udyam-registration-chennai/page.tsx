@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: { absolute: "MSME Udyam Registration in Chennai | C S Rushil & Co." },
   description:
-    "Udyam (MSME) registration for small and medium enterprises in Chennai — unlock collateral-free loans, delayed-payment protection, and scheme benefits.",
+    "Udyam (MSME) registration for small and medium enterprises in Chennai, unlock collateral-free loans, delayed-payment protection, and scheme benefits.",
   alternates: { canonical: "/msme-udyam-registration-chennai" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -26,7 +26,7 @@ export default function Page() {
       h1="MSME / Udyam Registration in Chennai"
       subhead="Register your business under Udyam to access collateral-free loans, delayed-payment protection, and government scheme benefits reserved for MSMEs."
       introHeading="What is Udyam (MSME) registration?"
-      intro="Udyam registration is the government's official process for classifying a business as a Micro, Small, or Medium Enterprise (MSME), based on investment in plant/machinery or equipment and annual turnover. Registration is free, fully online, and based on self-declaration linked to PAN and GST data — but the classification itself unlocks real, tangible benefits: priority-sector bank lending, collateral-free credit under CGTMSE, protection against delayed payments from buyers under the MSMED Act for micro and small enterprises, and eligibility for government tenders and subsidy schemes."
+      intro="Udyam registration is the government's official process for classifying a business as a Micro, Small, or Medium Enterprise (MSME), based on investment in plant/machinery or equipment and annual turnover. Registration is free, fully online, and based on self-declaration linked to PAN and GST data, but the classification itself unlocks real, tangible benefits: priority-sector bank lending, collateral-free credit under CGTMSE, protection against delayed payments from buyers under the MSMED Act for micro and small enterprises, and eligibility for government tenders and subsidy schemes."
       citation={{ label: "Udyam Registration Portal: registration form for new enterprises", href: "https://udyamregistration.gov.in/UdyamRegistration.aspx" }}
       subServicesHeading="What does our Udyam registration support include?"
       subServices={[
@@ -34,7 +34,7 @@ export default function Page() {
         { name: "MSME Classification Advisory", text: "Determining whether your business qualifies as Micro, Small, or Medium based on current investment and turnover thresholds." },
         { name: "Udyam Certificate Updates", text: "Amendments to your Udyam registration as your turnover or investment changes classification tier." },
         { name: "Delayed Payment Recovery Guidance", text: "Advisory for micro and small enterprises on invoking MSMED Act protections when a buyer delays payment beyond the statutory 45-day limit." },
-        { name: "Scheme Eligibility Mapping", text: "Identifying applicable central and Tamil Nadu state MSME schemes — subsidies, credit-linked capital subsidy, and priority lending — relevant to your sector." },
+        { name: "Scheme Eligibility Mapping", text: "Identifying applicable central and Tamil Nadu state MSME schemes (subsidies, credit-linked capital subsidy, and priority lending) relevant to your sector." },
         { name: "Bank Loan Documentation Support", text: "Preparing the financial documentation banks require to process collateral-free MSME loan applications." },
       ]}
       howTo={{
@@ -49,9 +49,9 @@ export default function Page() {
         ],
       }}
       faqs={[
-        { question: "Is Udyam registration mandatory?", answer: "It's not legally mandatory to operate a business, but without it you cannot access MSME-specific benefits — priority lending, delayed-payment protection, tender eligibility, and various subsidy schemes — so most eligible businesses register voluntarily to unlock these." },
-        { question: "What documents are needed for Udyam registration?", answer: "Only your Aadhaar (of the proprietor/managing partner/karta) and PAN and GST details of the business — the process is largely self-declaration based, pulling investment and turnover figures from linked government databases." },
-        { question: "How is a business classified as Micro, Small, or Medium?", answer: "Based on investment in plant, machinery, or equipment and annual turnover — thresholds are revised periodically by the government, so we confirm current limits at the time of your registration to classify correctly." },
+        { question: "Is Udyam registration mandatory?", answer: "It's not legally mandatory to operate a business, but without it you cannot access MSME-specific benefits (priority lending, delayed-payment protection, tender eligibility, and various subsidy schemes) so most eligible businesses register voluntarily to unlock these." },
+        { question: "What documents are needed for Udyam registration?", answer: "Only your Aadhaar (of the proprietor/managing partner/karta) and PAN and GST details of the business; the process is largely self-declaration based, pulling investment and turnover figures from linked government databases." },
+        { question: "How is a business classified as Micro, Small, or Medium?", answer: "Based on investment in plant, machinery, or equipment and annual turnover, thresholds are revised periodically by the government, so we confirm current limits at the time of your registration to classify correctly." },
         { question: "Can I register for Udyam if I don't have GST registration?", answer: "Businesses exempt from GST registration can still register on Udyam; those required to have GST must link their GSTIN as part of the process." },
         { question: "What happens if a buyer delays payment beyond 45 days?", answer: "Under the MSMED Act, registered micro and small enterprise suppliers are entitled to compound interest, with monthly rests, at three times the RBI bank rate on payments delayed beyond the agreed period (max 45 days), and can approach the Micro and Small Enterprises Facilitation Council for recovery. Medium enterprises are not covered by these provisions." },
         { question: "Does the buyer need to be MSME-registered for the 45-day payment rule to apply?", answer: "No. The rule protects the supplier, not the buyer: anyone buying goods or services from a registered micro or small enterprise must pay within the agreed period, which cannot exceed 45 days from acceptance, or within 15 days where there is no written agreement, whether or not the buyer is registered itself. Medium enterprises do not get this protection. Many small manufacturers supplying larger OEMs never invoke it for fear of upsetting a key customer, but knowing the right exists, tracking receivables against the 45-day limit, and knowing that income tax rules deny buyers a deduction for such overdue dues until they are paid all strengthen your position in payment-term discussions." },

@@ -56,8 +56,8 @@ const CLIENT_POINTS: Record<string, number> = {
 
 const TURNOVER_POINTS: Record<string, number> = {
   "Above ₹50 crore": 30,
-  "₹5 – 50 crore": 25,
-  "₹50 lakh – 5 crore": 12,
+  "₹5 to 50 crore": 25,
+  "₹50 lakh to 5 crore": 12,
   "Below ₹50 lakh": 3,
   "Not applicable": 0,
 };
@@ -70,7 +70,7 @@ const URGENCY_POINTS: Record<string, number> = {
 
 const INTERNATIONAL = new Set(["UAE / Gulf", "United Kingdom", "USA / Canada", "Other country"]);
 
-// Rough priority score (0–100) so the team calls the highest-value enquiries
+// Rough priority score (0 to 100) so the team calls the highest-value enquiries
 // first. It sorts the dashboard; it never filters anyone out.
 export function scoreLead(lead: Pick<NewLead, "service" | "client_type" | "turnover" | "location" | "urgency">) {
   let score =

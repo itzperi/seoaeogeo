@@ -40,7 +40,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our office is in Anna Nagar, Chennai. We have no office in Thoothukudi and serve Thoothukudi clients online." },
         { label: "Registrar (ROC)", value: "ROC Chennai, which has jurisdiction over Thoothukudi district." },
         { label: "Common structures", value: "Pvt Ltd for freight forwarders, shipping agents and importers dealing with overseas parties; LLP for family salt and trading firms; OPC for solo traders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "Trade set-up", value: "IEC from DGFT, GST, LUT for exporters, AD code registration through your bank, and Udyam." },
       ]}
       subServicesHeading="What do we handle for Thoothukudi businesses?"

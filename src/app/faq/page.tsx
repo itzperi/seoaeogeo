@@ -22,21 +22,21 @@ const HUB_FAQS = [
   {
     question: "How long does company registration take in Chennai?",
     answer:
-      "With documents ready, a Private Limited Company is typically registered in 7–12 working days and an LLP in 10–15 working days through the MCA's SPICe+ / FiLLiP forms, depending on processing times and whether the name-approval step needs a resubmission.",
+      "With documents ready, a Private Limited Company is typically registered in 7 to 12 working days and an LLP in 10 to 15 working days through the MCA's SPICe+ / FiLLiP forms, depending on processing times and whether the name-approval step needs a resubmission.",
     href: "/company-registration-chennai",
     linkLabel: "Full company registration guide",
   },
   {
     question: "What's the turnover limit for mandatory GST registration?",
     answer:
-      "₹40 lakh for suppliers of goods (₹20 lakh in special-category states) and ₹20 lakh for suppliers of services. Certain categories — inter-state suppliers, e-commerce sellers, casual taxable persons — must register regardless of turnover.",
+      "₹40 lakh for suppliers of goods (₹20 lakh in special-category states) and ₹20 lakh for suppliers of services. Certain categories (inter-state suppliers, e-commerce sellers, casual taxable persons) must register regardless of turnover.",
     href: "/gst-registration-chennai",
     linkLabel: "Full GST registration guide",
   },
   {
     question: "What should I do if I receive a GST show-cause notice?",
     answer:
-      "Note the response deadline (usually 30 days), gather the invoices, e-way bills, and GSTR filings referenced in the notice, and reply before the window closes — a missed reply can lead to an ex-parte order confirming the full demand.",
+      "Note the response deadline (usually 30 days), gather the invoices, e-way bills, and GSTR filings referenced in the notice, and reply before the window closes; a missed reply can lead to an ex-parte order confirming the full demand.",
     href: "/gst-litigation-chennai",
     linkLabel: "Full GST litigation guide",
   },
@@ -50,7 +50,7 @@ const HUB_FAQS = [
   {
     question: "Is a statutory audit mandatory even for a dormant company?",
     answer:
-      "Yes. Every company registered under the Companies Act must have its financial statements audited annually regardless of turnover, profit, or business activity — a dormant or zero-transaction company is not exempt.",
+      "Yes. Every company registered under the Companies Act must have its financial statements audited annually regardless of turnover, profit, or business activity; a dormant or zero-transaction company is not exempt.",
     href: "/statutory-audit-chennai",
     linkLabel: "Full statutory audit guide",
   },
@@ -71,7 +71,7 @@ const HUB_FAQS = [
   {
     question: "Who actually needs a Virtual CFO?",
     answer:
-      "Startups managing investor reporting for the first time, and SMEs scaling to a point where the founder can no longer track cash flow, margins, and budgets confidently — the trigger is usually a recurring pattern of unclear numbers, not a specific revenue threshold.",
+      "Startups managing investor reporting for the first time, and SMEs scaling to a point where the founder can no longer track cash flow, margins, and budgets confidently; the trigger is usually a recurring pattern of unclear numbers, not a specific revenue threshold.",
     href: "/virtual-cfo-services",
     linkLabel: "Full Virtual CFO guide",
   },
@@ -85,7 +85,7 @@ const HUB_FAQS = [
   {
     question: "Is Udyam (MSME) registration mandatory?",
     answer:
-      "It's not legally mandatory to operate a business, but without it you cannot access MSME-specific benefits — priority lending, delayed-payment protection, tender eligibility, and subsidy schemes — so most eligible businesses register voluntarily.",
+      "It's not legally mandatory to operate a business, but without it you cannot access MSME-specific benefits (priority lending, delayed-payment protection, tender eligibility, and subsidy schemes) so most eligible businesses register voluntarily.",
     href: "/msme-udyam-registration-chennai",
     linkLabel: "Full MSME/Udyam guide",
   },
@@ -107,7 +107,7 @@ export default function FaqHubPage() {
             work. Each answer is short and links to the full service page for the details.
           </>
         }
-        subhead="Quick answers to the questions we hear most across company registration, GST, income tax, and audit — each with a link to the full guide on that topic."
+        subhead="Quick answers to the questions we hear most across company registration, GST, income tax, and audit, each with a link to the full guide on that topic."
       />
 
       <section className="bg-paper py-16">

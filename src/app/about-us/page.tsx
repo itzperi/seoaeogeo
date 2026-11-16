@@ -78,7 +78,7 @@ export const metadata: Metadata = {
 // Factual description of how engagements run. ICAI's website advisory
 // (14 Oct 2020, item 27) does not permit a "why choose us" feature, and the
 // Code of Ethics bars exaggerated or comparative claims, so this states process
-// only — no superlatives, no comparison with other firms.
+// only, no superlatives, no comparison with other firms.
 const VALUES = [
   { title: "Scoped in writing", text: "Each engagement starts with a scoping call and a written engagement letter that lists what is and is not included." },
   { title: "Explained in plain language", text: "Filings, notices and reports are explained in English or Tamil before anything is signed or submitted." },
@@ -113,7 +113,7 @@ export default function AboutPage() {
                 C S Rushil &amp; Co. is a chartered accountancy
                 firm based in Anna Nagar, Chennai, founded in {YEAR_FOUNDED} by {FOUNDER_NAME} (
                 {FOUNDER_CREDENTIALS}). The firm is built on the principle of demystifying
-                financial complexity through precise audits and strategic insight — helping
+                financial complexity through precise audits and strategic insight, helping
                 clients strengthen compliance, mitigate risk, and grow with confidence.
               </p>
               <p className="mt-4 leading-relaxed text-slate">
@@ -134,7 +134,7 @@ export default function AboutPage() {
               <h2 className="text-2xl text-obsidian">Our mission</h2>
               <p className="mt-4 leading-relaxed text-slate">
                 To provide holistic financial, compliance, and advisory services that
-                drive business transformation — supporting enterprises whether they are
+                drive business transformation, supporting enterprises whether they are
                 early-stage start-ups or established companies navigating growth.
               </p>
               <h2 className="mt-10 text-2xl text-obsidian">Our values</h2>
@@ -219,7 +219,7 @@ export default function AboutPage() {
               Institute of Chartered Accountants of India (ICAI)
             </a>
             , the statutory body that certifies and governs every practising CA in the country. You can
-            verify any CA&apos;s membership on the ICAI website — one of the checks in our guide on{" "}
+            verify any CA&apos;s membership on the ICAI website, one of the checks in our guide on{" "}
             <Link
               href="/blog/how-to-choose-a-chartered-accountant-in-chennai"
               className="font-medium text-royal-violet underline underline-offset-2"
@@ -266,11 +266,11 @@ export default function AboutPage() {
           <h2 className="mt-16 text-2xl text-obsidian">Areas we serve</h2>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">
             Our office is in Anna Nagar, Chennai, and we work with clients
-            across the city — in person for those nearby, and virtually for
+            across the city, in person for those nearby, and virtually for
             everyone else. Businesses regularly reach us from Anna Nagar,
             Kilpauk, Aminjikarai, Villivakkam, Ambattur, T. Nagar,
             Nungambakkam, Vadapalani, and Chennai&apos;s OMR/IT corridor,
-            among other areas — wherever you&apos;re based in Chennai, our
+            among other areas, wherever you&apos;re based in Chennai, our
             incorporation, GST, audit, and tax services are available to you.
           </p>
           <p className="mt-4 max-w-2xl leading-relaxed text-slate">

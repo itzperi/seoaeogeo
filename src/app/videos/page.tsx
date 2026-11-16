@@ -87,7 +87,7 @@ const CLUSTERS: Cluster[] = [
     videos: [
       {
         id: "DWeSksGE6DS",
-        topic: "The GST threshold is not a safe zone — it's a trigger",
+        topic: "The GST threshold is not a safe zone, it's a trigger",
         blogSlug: "gst-threshold-is-a-trigger",
         summary:
           "The video argues that staying below the GST registration limit is not a comfortable place to sit. Once turnover crosses the limit that applies to your business, registration, invoicing and return obligations begin, and the department can look back at how you reached that point.",

@@ -72,7 +72,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our office is in Anna Nagar, Chennai. We have no office in Thanjavur; we serve Thanjavur clients online." },
         { label: "Registrar (ROC)", value: "ROC Chennai, which has jurisdiction over Thanjavur district." },
         { label: "Common structures", value: "Private Limited Company for mills and processors seeking finance; producer company for farmer collectives; LLP for family trading firms." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "Usual follow-ons", value: "FSSAI, GST, Udyam, and IEC for exporters of food products or handicrafts." },
       ]}
       subServicesHeading="What do we handle for Thanjavur businesses?"

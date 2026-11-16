@@ -25,7 +25,7 @@ const STRUCTURES = [
     href: "/private-limited-company-incorporation-chennai",
     members: "2 directors and 2 shareholders (can be the same people); up to 200 members",
     liability: "Limited to unpaid share capital",
-    time: "7–12 working days once documents are ready",
+    time: "7 to 12 working days once documents are ready",
     suits: "Startups raising equity, businesses planning to scale or issue ESOPs",
   },
   {
@@ -34,7 +34,7 @@ const STRUCTURES = [
     href: "/llp-registration-chennai",
     members: "2 partners, of whom at least 2 are designated partners",
     liability: "Limited to agreed contribution",
-    time: "10–15 working days once documents are ready",
+    time: "10 to 15 working days once documents are ready",
     suits: "Professional firms, consultancies, family businesses not raising equity",
   },
   {
@@ -97,13 +97,13 @@ export default function Page() {
       lead="C S Rushil & Co. helps Chennai founders choose a business structure and prepare incorporation documents from its Anna Nagar office. Company incorporation uses MCA's SPICe+ process; LLPs follow a separate filing process. Start with the proposed owners, business activity and office documents so the applicable route and requirements can be checked."
       subhead="Private Limited, LLP, OPC, Section 8, partnership and proprietorship set-ups: name approval, MCA filing and the first-year compliance calendar, handled by a chartered accountant firm in Anna Nagar."
       introHeading="What does our company registration service in Chennai cover?"
-      intro="Our company registration service in Chennai covers Private Limited companies, LLPs, OPCs, Section 8 companies, partnership firms and proprietorships. We obtain DSCs, reserve the name, file SPICe+ or FiLLiP, and set up PAN, TAN and post-incorporation filings. With documents ready, a Pvt Ltd typically takes 7–12 working days and an LLP 10–15."
+      intro="Our company registration service in Chennai covers Private Limited companies, LLPs, OPCs, Section 8 companies, partnership firms and proprietorships. We obtain DSCs, reserve the name, file SPICe+ or FiLLiP, and set up PAN, TAN and post-incorporation filings. With documents ready, a Pvt Ltd typically takes 7 to 12 working days and an LLP 10 to 15."
       citation={{
         label: "MCA SPICe+ and linked filings FAQs",
         href: "https://www.mca.gov.in/content/mca/global/en/help-faq/faqs/company-services/incorporation/spiceplus-linked-filings.html",
       }}
       keyFacts={[
-        { label: "Typical time", value: "Pvt Ltd: 7–12 working days. LLP: 10–15 working days. Both counted from the point documents are ready." },
+        { label: "Typical time", value: "Pvt Ltd: 7 to 12 working days. LLP: 10 to 15 working days. Both counted from the point documents are ready." },
         { label: "Government form", value: "SPICe+ Part A and Part B with AGILE-PRO-S, e-MoA (INC-33) and e-AoA (INC-34) for companies; FiLLiP for LLPs. Filed on the MCA V3 portal." },
         { label: "Minimum members", value: "Pvt Ltd: 2 directors and 2 shareholders. LLP: 2 designated partners. OPC: 1 member plus a nominee." },
         { label: "Resident director", value: "A company needs at least one director who stayed in India for 182 days during the financial year (Section 149(3), Companies Act, 2013)." },
@@ -136,7 +136,7 @@ export default function Page() {
         {
           question: "How long does company registration take in Chennai?",
           answer:
-            "A Private Limited Company or OPC typically takes 7–12 working days and an LLP 10–15 working days, counted from the point all documents and DSCs are ready. The clock depends on MCA processing and whether the proposed name is accepted first time. Allow about three weeks in total if you are collecting documents from scratch. Most delays come from a rejected name or a mismatch between a director's PAN and Aadhaar details, which we check before filing.",
+            "A Private Limited Company or OPC typically takes 7 to 12 working days and an LLP 10 to 15 working days, counted from the point all documents and DSCs are ready. The clock depends on MCA processing and whether the proposed name is accepted first time. Allow about three weeks in total if you are collecting documents from scratch. Most delays come from a rejected name or a mismatch between a director's PAN and Aadhaar details, which we check before filing.",
         },
         {
           question: "What documents are needed to register a company?",

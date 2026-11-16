@@ -10,7 +10,7 @@ const td = "px-4 py-3 align-top text-slate";
 const DOCUMENTS = [
   { doc: "PAN, and Aadhaar if you hold one", why: "Login to the Indian e-filing portal and e-verification of the return.", source: "Your own records" },
   { doc: "Passport pages or travel record for the year", why: "Counting days in India for the 182-day and 120-day residential status tests.", source: "Passport stamps, e-gate or airline records" },
-  { doc: "UAE Tax Residency Certificate", why: "Needed only if relief under the India–UAE DTAA is claimed, together with Form 41 (Form 10F for years under the 1961 Act).", source: "UAE Federal Tax Authority, through EmaraTax" },
+  { doc: "UAE Tax Residency Certificate", why: "Needed only if relief under the India-UAE DTAA is claimed, together with Form 41 (Form 10F for years under the 1961 Act).", source: "UAE Federal Tax Authority, through EmaraTax" },
   { doc: "NRO, NRE and FCNR statements and interest certificates", why: "Reporting taxable NRO interest, confirming exempt NRE and FCNR interest, and claiming TDS credit.", source: "Your Indian banks" },
   { doc: "Rent agreement, rent received and tenant TDS certificates", why: "Computing rental income and claiming credit for tax the tenant deducted.", source: "Your tenant or the family member who collects rent" },
   { doc: "Capital gains statements", why: "Gains on Indian shares and mutual funds, with purchase dates and cost.", source: "Your broker, and the CAMS or KFintech consolidated statement" },
@@ -37,13 +37,13 @@ const CALENDAR = [
 export const metadata: Metadata = {
   title: { absolute: "NRI Tax Services for UAE Residents: India ITR, DTAA" },
   description:
-    "India tax for NRIs in Dubai, Abu Dhabi, Sharjah: ITR filing, India–UAE DTAA with TRC and Form 10F, deemed-residency checks, NRE/NRO and Chennai property TDS.",
+    "India tax for NRIs in Dubai, Abu Dhabi, Sharjah: ITR filing, India-UAE DTAA with TRC and Form 10F, deemed-residency checks, NRE/NRO and Chennai property TDS.",
   alternates: { canonical: "/nri-tax-services-uae" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
     title: "NRI Tax Services for UAE Residents: India ITR & DTAA",
     description:
-      "Indian return filing, India–UAE DTAA claims, NRE/NRO treatment and return-to-India planning for NRIs living in the UAE.",
+      "Indian return filing, India-UAE DTAA claims, NRE/NRO treatment and return-to-India planning for NRIs living in the UAE.",
     url: "/nri-tax-services-uae",
   },
 };
@@ -57,10 +57,10 @@ export default function Page() {
       crumbHref="/nri-tax-services-uae"
       eyebrow="NRI Clients · UAE & Gulf"
       h1="India Tax for NRIs in the UAE: ITR, DTAA, NRE/NRO & Property TDS"
-      subhead="Indian income tax returns, residential status checks, India–UAE DTAA claims and property sale support for Indians working or running businesses in Dubai, Abu Dhabi, Sharjah and the wider Gulf, handled remotely from our Chennai office."
+      subhead="Indian income tax returns, residential status checks, India-UAE DTAA claims and property sale support for Indians working or running businesses in Dubai, Abu Dhabi, Sharjah and the wider Gulf, handled remotely from our Chennai office."
       introHeading="Do NRIs living in the UAE pay tax in India?"
-      intro="Yes, but only on income earned or received in India, such as rent from a Chennai flat, NRO interest, capital gains on Indian shares or property, and Indian business income. UAE salary is not taxed in India while you remain a non-resident, and the UAE does not levy personal income tax on it. Because a Gulf-based NRI often has no tax to credit abroad, Indian tax paid is a real final cost, so getting residential status, TDS and the India–UAE DTAA right matters more than for NRIs in high-tax countries."
-      citation={{ label: "UAE Federal Tax Authority — Tax Residency Certificate", href: "https://tax.gov.ae/en/services/tax.residency.certificate.aspx" }}
+      intro="Yes, but only on income earned or received in India, such as rent from a Chennai flat, NRO interest, capital gains on Indian shares or property, and Indian business income. UAE salary is not taxed in India while you remain a non-resident, and the UAE does not levy personal income tax on it. Because a Gulf-based NRI often has no tax to credit abroad, Indian tax paid is a real final cost, so getting residential status, TDS and the India-UAE DTAA right matters more than for NRIs in high-tax countries."
+      citation={{ label: "UAE Federal Tax Authority: Tax Residency Certificate", href: "https://tax.gov.ae/en/services/tax.residency.certificate.aspx" }}
       keyFacts={[
         { label: "UAE personal income tax", value: "None on individuals' salary or personal income" },
         { label: "Taxable in India", value: "Indian-source income: rent, NRO interest, capital gains, Indian business income" },
@@ -71,7 +71,7 @@ export default function Page() {
       subServices={[
         { name: "Residential Status Review", text: "Counting days in India for the year, checking the 182-day and 120-day tests, and assessing whether the deemed-residency rule could apply to you before the return is filed." },
         { name: "Indian ITR Filing", text: "Filing the return for rental income, NRO interest, capital gains and other Indian income, and reconciling TDS against Form 26AS and the Annual Information Statement." },
-        { name: "India–UAE DTAA Claims", text: "Preparing the Form 10F filing and organising your UAE Tax Residency Certificate so treaty relief can be claimed where an article of the India–UAE DTAA applies." },
+        { name: "India-UAE DTAA Claims", text: "Preparing the Form 10F filing and organising your UAE Tax Residency Certificate so treaty relief can be claimed where an article of the India-UAE DTAA applies." },
         { name: "NRE, NRO and FCNR Review", text: "Checking that NRE and FCNR interest is treated as exempt, that NRO interest is reported, and that excess TDS on NRO deposits is claimed back as a refund." },
         { name: "Chennai Property Sale and TDS", text: "Lower-deduction certificate, capital gains computation and Form 15CA/15CB when you sell property in Chennai or elsewhere in Tamil Nadu." },
         { name: "Return-to-India Planning", text: "Planning the year you move back from the Gulf so that RNOR status, the timing of UAE end-of-service gratuity and the conversion of NRE deposits are handled in the right order." },
@@ -92,7 +92,7 @@ export default function Page() {
         { question: "What is the deemed-residency rule and why does it matter for UAE residents?", answer: "Under the deemed-residency rule, an Indian citizen with Indian income above ₹15 lakh who is not liable to tax in any country by reason of residence or domicile can be treated as a resident of India, classed as RNOR. This matters for Gulf NRIs because the UAE does not tax personal income. A UAE Tax Residency Certificate and evidence of residence help, but the facts need checking each year." },
         { question: "How many days can I spend in India and remain an NRI?", answer: "As a general rule, you become resident if you spend 182 days or more in India in a financial year. For an Indian citizen or person of Indian origin visiting India, the alternative 60-day test is replaced by 120 days if Indian income exceeds ₹15 lakh, combined with 365 days over the previous four years. We count your exact days because a few extra weeks of travel can change your status." },
         { question: "Is NRE fixed deposit interest taxable in India for UAE NRIs?", answer: "No. Interest on NRE accounts and FCNR deposits is exempt from Indian tax while you are a non-resident, and no Indian TDS is deducted on it, but NRO interest is taxable and banks deduct TDS at the non-resident rate, often more than the tax actually due. Many UAE NRIs whose family members manage NRO accounts in Chennai are owed refunds of this excess TDS through their return." },
-        { question: "Do I need a Tax Residency Certificate to use the India–UAE DTAA?", answer: "Yes. To claim relief under the India–UAE DTAA, you need a Tax Residency Certificate issued by the UAE Federal Tax Authority, plus Form 10F filed electronically on the Indian e-filing portal, and the benefit available then depends on the income type and the treaty article that applies. We check whether a claim is worthwhile for each income stream rather than claiming it by default." },
+        { question: "Do I need a Tax Residency Certificate to use the India-UAE DTAA?", answer: "Yes. To claim relief under the India-UAE DTAA, you need a Tax Residency Certificate issued by the UAE Federal Tax Authority, plus Form 10F filed electronically on the Indian e-filing portal, and the benefit available then depends on the income type and the treaty article that applies. We check whether a claim is worthwhile for each income stream rather than claiming it by default." },
         { question: "I run a business in the UAE. Does UAE corporate tax affect my Indian return?", answer: "Only indirectly: UAE corporate tax at 9% applies to business profits above the threshold for financial years starting on or after 1 June 2023 and is handled separately by your UAE tax agent, while your Indian return covers your Indian income. If you control a UAE company from India or spend long periods here, we check whether Indian residency or business-connection questions arise and coordinate with your UAE adviser." },
         { question: "I am moving back to Chennai from the Gulf. What should I plan?", answer: "Plan your RNOR status first: returning NRIs often qualify as Resident but Not Ordinarily Resident for a period, during which most foreign income stays outside Indian tax, so the order in which you move, receive your end-of-service gratuity and convert your NRE and FCNR deposits matters. We help sequence these steps, including the redesignation of NRE accounts to resident accounts and the treatment of FCNR deposits, so you do not lose the benefit of the transition years by acting in the wrong order." },
         { question: "When is the Indian return due for tax year 2026-27 if I live in the UAE?", answer: "For most UAE-based NRIs, whose Indian income is rent, interest or capital gains and whose accounts are not audited, the Indian return for tax year 2026-27 is due by 31 July 2027. A belated return can be filed up to 31 December 2027, and a filed return can be revised up to 31 March 2028. Advance tax instalments fall on 15 June, 15 September and 15 December 2026 and 15 March 2027." },

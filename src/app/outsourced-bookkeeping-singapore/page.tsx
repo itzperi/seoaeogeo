@@ -34,7 +34,7 @@ export default function Page() {
       subhead="Monthly bookkeeping in Xero, QuickBooks Online or Zoho Books, quarterly GST F5 figures once you are registered, and year-end books under SFRS that your tax agent and corporate secretary can file from. Singapore is 2.5 hours ahead of Chennai, so your whole afternoon is shared working time."
       introHeading="How does outsourced bookkeeping work for a Singapore company?"
       intro="You invite our team into your Xero, QuickBooks Online or Zoho Books file and keep receipts flowing through Dext or a shared folder. Each month we record transactions, reconcile SGD and foreign-currency bank accounts, revalue foreign balances and send management accounts with a short list of questions. Once you are GST-registered we prepare the GST F5 figures each quarter. At year end your tax agent and corporate secretary receive a trial balance and draft SFRS financial statements to file the ECI, Form C-S or Form C, and the annual return with ACRA."
-      citation={{ label: "IRAS — Record keeping requirements for companies", href: "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/record-keeping-requirements" }}
+      citation={{ label: "IRAS: Record keeping requirements for companies", href: "https://www.iras.gov.sg/taxes/corporate-income-tax/basics-of-corporate-income-tax/record-keeping-requirements" }}
       keyFacts={[
         { label: "Who it is for", value: "Singapore private limited companies, startups, e-commerce businesses and regional holding companies with Indian or Southeast Asian operations." },
         { label: "Software", value: "Xero, QuickBooks Online or Zoho Books, with Dext for receipts. You keep the subscription and the file." },
@@ -49,7 +49,7 @@ export default function Page() {
         { name: "GST F5 Figures", text: "Standard-rated, zero-rated and exempt supplies, input tax and imported services prepared box by box and reconciled to the ledger each quarter." },
         { name: "Year-End Books under SFRS", text: "Trial balance, fixed asset schedule and draft financial statements for your tax agent and corporate secretary." },
         { name: "Catch-Up Bookkeeping", text: "Backlog years brought current before the 30 November filing deadline, an audit or a fundraise." },
-        { name: "Singapore–India Group Books", text: "Consistent charts of accounts and intercompany reconciliations where the Singapore company owns an Indian subsidiary." },
+        { name: "Singapore-India Group Books", text: "Consistent charts of accounts and intercompany reconciliations where the Singapore company owns an Indian subsidiary." },
       ]}
       howTo={{
         heading: "How do you get started with outsourced bookkeeping from India?",

@@ -10,7 +10,7 @@ export async function POST(req: NextRequest) {
 
   if (!checkCredentials(username, password)) {
     // Same generic response whether the username or password was wrong,
-    // and no delay difference — avoids confirming which one was incorrect.
+    // and no delay difference, avoids confirming which one was incorrect.
     return NextResponse.json({ ok: false }, { status: 401 });
   }
 

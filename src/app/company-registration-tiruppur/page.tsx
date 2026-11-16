@@ -39,7 +39,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our only office is in Anna Nagar, Chennai. We do not have a Tiruppur office; Tiruppur work is done online and by courier." },
         { label: "Registrar (ROC)", value: "ROC Coimbatore, which has jurisdiction over Tiruppur district." },
         { label: "Common structures", value: "Pvt Ltd for exporters dealing with overseas buyers and banks; LLP for family-run knitting, dyeing or printing units; OPC for a single-owner merchant exporter." },
-        { label: "Typical time", value: "7–12 working days for incorporation once documents are ready; IEC and LUT are filed after the company has its PAN." },
+        { label: "Typical time", value: "7 to 12 working days for incorporation once documents are ready; IEC and LUT are filed after the company has its PAN." },
         { label: "Export set-up", value: "IEC from DGFT, GST registration, LUT for zero-rated exports, and an AD code registered with customs through your bank." },
       ]}
       subServicesHeading="What do we handle for Tiruppur exporters and textile units?"

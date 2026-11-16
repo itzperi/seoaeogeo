@@ -2,7 +2,7 @@
 // attribution and a link back to Google. Rules for adding more:
 // - Copy the text exactly as posted; never edit a client's words.
 // - Skip any review that still contains template text (e.g. "[Income tax
-//   filing/GST compliance]") — it reads as fake on the site.
+//   filing/GST compliance]"); it reads as fake on the site.
 // - First name + initial only.
 // - No Review/AggregateRating schema: Google ignores self-hosted review
 //   markup for LocalBusiness, and ICAI discourages self-promotional ratings.

@@ -6,9 +6,9 @@ export type BlogPostMeta = {
   title: string;
   description: string;
   date: string; // ISO yyyy-mm-dd
-  updated?: string; // ISO yyyy-mm-dd — last substantive revision (optional)
+  updated?: string; // ISO yyyy-mm-dd, last substantive revision (optional)
   excerpt: string;
-  /** 40–60 word direct answer shown under the H1 as #lead-answer (AEO / voice). */
+  /** 40 to 60 word direct answer shown under the H1 as #lead-answer (AEO / voice). */
   summary?: string;
   faqs?: FAQItem[];
 };
@@ -18,7 +18,7 @@ export type BlogPostModule = {
   default: ComponentType;
 };
 
-// Static registry — Next.js needs statically analyzable imports for the App
+// Static registry, Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
   "partnership-firm-registration-tamil-nadu-online": () =>
@@ -213,7 +213,7 @@ const modules = {
 
 export type BlogSlug = keyof typeof modules;
 
-// Metadata for the index page — kept in sync with each post's own `meta`
+// Metadata for the index page, kept in sync with each post's own `meta`
 // export by convention; duplicated here (rather than importing every module
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
@@ -1116,12 +1116,12 @@ export function getPostMeta(slug: string) {
   return BLOG_INDEX.find((p) => p.slug === slug);
 }
 
-// BLOG_INDEX doubles as a content calendar — most dates are intentionally in
+// BLOG_INDEX doubles as a content calendar; most dates are intentionally in
 // the future (see CONTENT-CALENDAR.md's "steady drip, not a burst" guidance).
 // Since this is a statically-built site, every post would otherwise go live
 // simultaneously on deploy with a false past-tense "published" date. This
 // gates both the listing and the post route itself so a post genuinely
-// isn't reachable — and doesn't claim a datePublished — before its date.
+// isn't reachable, and doesn't claim a datePublished, before its date.
 export function isPublished(date: string) {
   const today = new Date().toISOString().slice(0, 10);
   return date <= today;

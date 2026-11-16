@@ -40,7 +40,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our office is in Anna Nagar, Chennai. We have no Vellore office; Vellore clients are served online." },
         { label: "Registrar (ROC)", value: "ROC Chennai, which covers Vellore district as well as neighbouring Ranipet and Tirupattur districts." },
         { label: "Common structures", value: "Pvt Ltd for leather and footwear exporters and hospitals or diagnostic centres; LLP for family trading firms; OPC for solo founders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "Usual follow-ons", value: "GST, IEC and LUT for exporters, Udyam, professional tax, and sector licences such as drug or clinical establishment registration." },
       ]}
       subServicesHeading="What do we handle for Vellore businesses?"

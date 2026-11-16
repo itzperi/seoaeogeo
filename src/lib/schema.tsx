@@ -135,7 +135,7 @@ export function organizationSchema() {
 }
 
 // Standalone entity, referenced by `@id` from organizationSchema().founder
-// rather than inlined — a separately-citable Person node with credentials
+// rather than inlined; a separately-citable Person node with credentials
 // is a stronger signal than a nested property (see GEO-ANALYSIS.md).
 export function personSchema() {
   return {

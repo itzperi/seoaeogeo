@@ -12,12 +12,12 @@ const linkClass = "font-medium text-royal-violet underline underline-offset-2";
 // on the last permitted day (30 September). Earlier AGMs pull the AOC-4,
 // MGT-7 and ADT-1 dates forward.
 const COMPANY_CALENDAR = [
-  { form: "MSME-1 (October–March)", what: "Half-yearly return of amounts owed to micro and small suppliers for more than 45 days", due: "30 April", who: "Companies with such dues" },
+  { form: "MSME-1 (October to March)", what: "Half-yearly return of amounts owed to micro and small suppliers for more than 45 days", due: "30 April", who: "Companies with such dues" },
   { form: "DPT-3", what: "Annual return of deposits and of outstanding money received that is not a deposit", due: "30 June", who: "Most companies, other than government companies" },
   { form: "DIR-3 KYC Web", what: "KYC of each director, to keep the DIN active", due: "30 June, once every three financial years (from 31 March 2026)", who: "Every DIN holder" },
   { form: "AGM", what: "Annual general meeting that adopts the audited accounts", due: "Within 6 months of the year end, so by 30 September (first AGM within 9 months of the first year end)", who: "Every company except an OPC" },
   { form: "ADT-1", what: "Notice of auditor appointment or reappointment", due: "Within 15 days of the AGM", who: "Every company appointing an auditor" },
-  { form: "MSME-1 (April–September)", what: "Second half-yearly MSME return", due: "31 October", who: "Companies with such dues" },
+  { form: "MSME-1 (April to September)", what: "Second half-yearly MSME return", due: "31 October", who: "Companies with such dues" },
   { form: "AOC-4 / AOC-4 XBRL", what: "Audited financial statements and board's report", due: "Within 30 days of the AGM (late October for a 30 September AGM)", who: "Every company" },
   { form: "MGT-7 / MGT-7A", what: "Annual return (MGT-7A for OPCs and small companies)", due: "Within 60 days of the AGM (late November for a 30 September AGM)", who: "Every company" },
 ];
@@ -81,7 +81,7 @@ export default function Page() {
           { name: "Board and AGM documentation", text: "Notices, minutes, and resolutions for the Annual General Meeting and any board meetings held during the year are drafted and maintained." },
           { name: "Annual ROC filings", text: "AOC-4 and MGT-7/7A are filed with the Registrar of Companies within the statutory timelines (AOC-4 within 30 days and MGT-7/7A within 60 days of the AGM), along with DIR-3 KYC Web for each director in the years it falls due." },
           { name: "Statutory registers update", text: "Registers of members, directors, and charges are updated to reflect the year's changes." },
-          { name: "Event-based filings as they arise", text: "Any changes during the year — new directors, share capital changes, registered office moves — are filed with the ROC as they happen, not bundled into the annual cycle." },
+          { name: "Event-based filings as they arise", text: "Any changes during the year (new directors, share capital changes, registered office moves) are filed with the ROC as they happen, not bundled into the annual cycle." },
         ],
       }}
       subServicesHeading="Which ROC compliance services do we handle?"
@@ -96,7 +96,7 @@ export default function Page() {
       faqs={[
         { question: "What happens if I miss an ROC filing deadline?", answer: "A late AOC-4 or MGT-7/7A attracts an additional fee of ₹100 per day of delay for each form, with no upper cap, under the Companies (Registration Offices and Fees) Rules, 2014. Prolonged non-compliance can lead to director disqualification or the company being struck off by the ROC. Directors are disqualified under Section 164(2) if the company fails to file financial statements or annual returns for three consecutive financial years." },
         { question: "Which ROC filings are mandatory every year?", answer: "Every company must file AOC-4 (financial statements, within 30 days of the AGM) and MGT-7/7A (annual return, within 60 days of the AGM) each year, based on its audited accounts. Director KYC is no longer annual: from 31 March 2026, each DIN holder files DIR-3 KYC Web once every three financial years, by 30 June." },
-        { question: "Do LLPs also have ROC compliance requirements?", answer: "Yes — LLPs file Form 11 (Annual Return) by 30 May and Form 8 (Statement of Account and Solvency) by 30 October every year, which are different due dates from companies." },
+        { question: "Do LLPs also have ROC compliance requirements?", answer: "Yes, LLPs file Form 11 (Annual Return) by 30 May and Form 8 (Statement of Account and Solvency) by 30 October every year, which are different due dates from companies." },
         { question: "Which ROC filings are triggered by events rather than dates?", answer: "Appointing or removing a director (DIR-12), shifting the registered office (INC-22), increasing authorised capital (SH-7), and creating or satisfying a charge for a loan (CHG-1 or CHG-4) each need their own filing, generally within 30 days of the event. No one sends a reminder, and first-year companies hit these milestones most often: a co-founder joins the board, the office moves out of a home, a first business loan creates a charge. Late filing attracts additional fees that grow with the delay, often to several times the normal fee, and the delay stays visible on the company's public MCA record." },
         { question: "Is filing INC-22 enough when we move our registered office?", answer: "No. INC-22 updates the registered office with the Registrar, but the GST registration needs its own amendment for the new principal place of business, filed on the GST portal within 15 days of the change, and statutory registers, letterheads and other official records must show the new address too. Missing the GST amendment leaves your MCA and GST records showing different addresses, which surfaces later as a mismatch. Companies that relocate rather than incorporate at their current address, such as offices moving to Guindy for its connectivity, miss this second step most often." },
         { question: "What is the due date for AOC-4 and MGT-7?", answer: "AOC-4 is due within 30 days of the AGM and MGT-7 or MGT-7A within 60 days of it. For a company with a 31 March year end that holds its AGM on 30 September, that means late October for AOC-4 and late November for MGT-7. A company that holds its AGM earlier has earlier due dates, which is why we date the calendar from your actual AGM." },

@@ -39,7 +39,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our office is in Anna Nagar, Chennai. We have no Madurai office; Madurai clients are served online." },
         { label: "Registrar (ROC)", value: "ROC Chennai, whose jurisdiction covers Tamil Nadu except nine western districts that fall under ROC Coimbatore." },
         { label: "Common structures", value: "Pvt Ltd for food and manufacturing brands seeking finance; LLP for trading and professional firms; OPC for solo founders and consultants." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "Usual follow-ons", value: "GST, Udyam, FSSAI for food businesses, professional tax with the Madurai local body, and IEC for exporters." },
       ]}
       subServicesHeading="What do we handle for Madurai businesses?"

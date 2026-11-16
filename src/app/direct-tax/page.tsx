@@ -47,7 +47,7 @@ const NRI_CASES = [
   { who: "NRI selling a flat, house or plot in India", needs: "Buyer's TDS at non-resident rates, a lower deduction certificate before the sale, capital gains and reinvestment", href: "/nri-property-sale-tds-chennai", page: "NRI property sale TDS" },
   { who: "NRI sending money abroad from an NRO account", needs: "The CA certificate and remitter's form (earlier 15CB and 15CA, now Forms 146 and 145)", href: "/form-15ca-15cb-chennai", page: "Form 15CA and 15CB" },
   { who: "Indian citizen in the UAE or another no-tax country with Indian income above ₹15 lakh", needs: "A check whether the deemed-resident rule makes them resident but not ordinarily resident in India", href: "/nri-tax-services-uae", page: "NRI tax for the UAE and Dubai" },
-  { who: "NRI in the US, UK or Singapore with income taxed in both countries", needs: "Treaty relief under the India–US, India–UK or India–Singapore DTAA, and figures for the foreign return", href: "/nri-tax-services-usa", page: "NRI tax for the USA" },
+  { who: "NRI in the US, UK or Singapore with income taxed in both countries", needs: "Treaty relief under the India-US, India-UK or India-Singapore DTAA, and figures for the foreign return", href: "/nri-tax-services-usa", page: "NRI tax for the USA" },
   { who: "NRI returning to India for good", needs: "Residential status, RNOR years, foreign income and Schedule FA for foreign assets", href: "/blog/rnor-status-returning-nri", page: "RNOR status for returning NRIs" },
 ];
 

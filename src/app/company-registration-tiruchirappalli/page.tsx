@@ -39,7 +39,7 @@ export default function Page() {
         { label: "Where we work from", value: "Anna Nagar, Chennai. We have no office in Trichy; we serve Tiruchirappalli clients online." },
         { label: "Registrar (ROC)", value: "ROC Chennai, which has jurisdiction over Tiruchirappalli district." },
         { label: "Common structures", value: "Pvt Ltd for fabrication and engineering vendors bidding for larger contracts; LLP for engineering consultancies; OPC for solo technical founders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "Usual follow-ons", value: "GST, Udyam (useful for public procurement), professional tax with the local body, and vendor registration with buyers." },
       ]}
       subServicesHeading="What do we handle for Trichy businesses?"

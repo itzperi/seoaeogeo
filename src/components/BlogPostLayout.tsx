@@ -69,7 +69,7 @@ export default function BlogPostLayout({
   /** Last substantive revision (YYYY-MM-DD); defaults to the publish date. */
   updated?: string;
   faqs?: FAQItem[];
-  /** 40–60 word direct answer rendered as #lead-answer. */
+  /** 40 to 60 word direct answer rendered as #lead-answer. */
   summary?: string;
   children: ReactNode;
 }) {

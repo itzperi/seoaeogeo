@@ -39,7 +39,7 @@ export default function Page() {
         { label: "Where we work from", value: "Anna Nagar, Chennai. We do not have an office in Erode; Erode clients are served online." },
         { label: "Registrar (ROC)", value: "ROC Coimbatore, whose jurisdiction includes Erode district." },
         { label: "Common structures", value: "Pvt Ltd for commodity traders and processors needing working-capital finance; LLP for family textile and trading firms; OPC for solo founders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "Usual follow-ons", value: "GST, Udyam, FSSAI for spices and food products, APEDA or Spices Board registration and IEC if you export, and professional tax." },
       ]}
       subServicesHeading="What do we handle for Erode businesses?"

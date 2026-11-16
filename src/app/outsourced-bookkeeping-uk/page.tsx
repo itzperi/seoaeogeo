@@ -34,7 +34,7 @@ export default function Page() {
       subhead="Monthly bookkeeping in Xero, QuickBooks, FreeAgent or Sage, VAT return figures reconciled before each quarter, and the digital records Making Tax Digital for Income Tax now asks of sole traders and landlords. You or your UK accountant submit to HMRC."
       introHeading="How does outsourced bookkeeping work for a UK business?"
       intro="You add our team as users in your Xero, QuickBooks, FreeAgent or Sage file and keep sending receipts the way you do now, for example through Dext or Hubdoc. Each month we code bank transactions, reconcile every account, keep the sales and purchase ledgers current and send you a short report with any questions. Before each VAT quarter we prepare the return figures and reconcile them to the VAT control account. You, or your UK accountant acting as your HMRC agent, review and submit them."
-      citation={{ label: "GOV.UK — Making Tax Digital for VAT", href: "https://www.gov.uk/government/collections/making-tax-digital-for-vat" }}
+      citation={{ label: "GOV.UK: Making Tax Digital for VAT", href: "https://www.gov.uk/government/collections/making-tax-digital-for-vat" }}
       keyFacts={[
         { label: "Who it is for", value: "UK limited companies, sole traders, partnerships and landlords, including those newly brought into Making Tax Digital for Income Tax." },
         { label: "Software", value: "Xero, QuickBooks Online, FreeAgent or Sage, with Dext or Hubdoc for receipts. You keep the subscription and the file." },

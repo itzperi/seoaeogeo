@@ -73,7 +73,7 @@ export default function Page() {
       crumbHref="/rera"
       eyebrow="Real Estate · Chennai"
       h1="RERA Compliance in Chennai"
-      subhead="Project registration, quarterly filings, CA certificates for escrow withdrawals, and ongoing compliance advisory for real estate developers and agents under TNRERA — from our Anna Nagar office."
+      subhead="Project registration, quarterly filings, CA certificates for escrow withdrawals, and ongoing compliance advisory for real estate developers and agents under TNRERA, from our Anna Nagar office."
       introHeading="What is RERA compliance in Chennai?"
       intro="The Real Estate (Regulation and Development) Act, 2016 requires promoters of qualifying real estate projects to register with the state regulatory authority (TNRERA in Tamil Nadu) and file periodic disclosures on construction progress, funds utilisation, and project timelines. Non-compliance carries financial penalties and can freeze project sales."
       citation={{ label: "Tamil Nadu RERA (TNRERA): Frequently Asked Questions", href: "https://rera.tn.gov.in/homePageFiles/RERA-FAQs.pdf" }}
@@ -82,7 +82,7 @@ export default function Page() {
         steps: [
           { name: "Project registration", text: "Before any advertising, marketing, or booking, the project is registered with TNRERA along with the required land title, approval, and disclosure documents." },
           { name: "Escrow account setup", text: "A separate project-specific bank account (commonly called the RERA escrow account) is opened to receive 70% of amounts collected from buyers, used only for that project's construction and land costs." },
-          { name: "CA certification for escrow withdrawal", text: "Each withdrawal from the separate account must be certified by a practising Chartered Accountant, together with an engineer and an architect, as being in proportion to the percentage of project completion — the CA certifies the land and construction costs incurred, and many promoters aren't aware this is a recurring, not one-time, requirement." },
+          { name: "CA certification for escrow withdrawal", text: "Each withdrawal from the separate account must be certified by a practising Chartered Accountant, together with an engineer and an architect, as being in proportion to the percentage of project completion; the CA certifies the land and construction costs incurred, and many promoters aren't aware this is a recurring, not one-time, requirement." },
           { name: "Quarterly Progress Report filing", text: "Construction and financial progress is reported to TNRERA within 15 days of the end of every quarter until the project receives its completion certificate." },
           { name: "Extension or amendment filings", text: "If the project timeline changes, an extension or amendment application is filed with TNRERA rather than allowing the registration to lapse." },
         ],

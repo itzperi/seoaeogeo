@@ -62,7 +62,7 @@ export default function Page() {
       parentCrumb={{ name: "Company Registration", href: "/company-registration-chennai" }}
       eyebrow="Company Registration · Kanchipuram"
       h1="Private Limited Company Registration in Kanchipuram"
-      subhead="Pvt Ltd registration for suppliers in the Sriperumbudur–Oragadam industrial belt, logistics firms and Kanchipuram silk businesses. Our office is in Anna Nagar, Chennai; we handle Kanchipuram district registrations online, by video call and digital signature."
+      subhead="Pvt Ltd registration for suppliers in the Sriperumbudur-Oragadam industrial belt, logistics firms and Kanchipuram silk businesses. Our office is in Anna Nagar, Chennai; we handle Kanchipuram district registrations online, by video call and digital signature."
       introHeading="How does private limited company registration in Kanchipuram work?"
       intro="Private limited company registration in Kanchipuram is an online SPICe+ application to the Ministry of Corporate Affairs. A company with its registered office in Kanchipuram district comes under the Registrar of Companies, Chennai. We are based in Anna Nagar, Chennai, and handle Kanchipuram registrations by video call, scanned documents and digital signatures."
       citation={{
@@ -74,7 +74,7 @@ export default function Page() {
         { label: "Registrar (ROC)", value: "ROC Chennai, which has jurisdiction over Kanchipuram district." },
         { label: "District note", value: "Chengalpattu district was carved out of Kanchipuram in 2019, so check which district your registered office now falls in before filing." },
         { label: "Common structures", value: "Private Limited Company for industrial suppliers and foreign-owned units; LLP for family trading and service firms; OPC for solo founders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
       ]}
       subServicesHeading="What do we handle for Kanchipuram businesses?"
       subServices={[
@@ -148,7 +148,7 @@ export default function Page() {
     >
       <h2 className="mt-14 text-2xl text-obsidian">Which Kanchipuram businesses typically incorporate, and what should they check?</h2>
       <p className="mt-4 max-w-3xl leading-relaxed text-slate">
-        Kanchipuram district combines two very different economies: the Sriperumbudur–Oragadam industrial corridor, with
+        Kanchipuram district combines two very different economies: the Sriperumbudur-Oragadam industrial corridor, with
         automobile, auto-component and electronics manufacturing in large industrial parks, and the temple town&apos;s
         long-established silk weaving and saree trade. The registration questions differ for each.
       </p>

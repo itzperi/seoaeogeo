@@ -8,7 +8,7 @@ export type AreaSummary = {
   noindex?: boolean;
 };
 
-// Locality pages — deliberately kept separate from SERVICES (src/lib/services.ts).
+// Locality pages, deliberately kept separate from SERVICES (src/lib/services.ts).
 // Each page has genuinely distinct local content (not a template swap) per
 // RANKING-PLAN.md's doorway-page-risk guidance. Drives the homepage "Areas
 // We Serve" section and the sitemap.

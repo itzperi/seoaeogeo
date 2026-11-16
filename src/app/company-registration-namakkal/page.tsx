@@ -72,7 +72,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our office is in Anna Nagar, Chennai. We have no office in Namakkal; we serve Namakkal clients online." },
         { label: "Registrar (ROC)", value: "ROC Coimbatore, whose jurisdiction includes Namakkal along with Salem, Erode, Coimbatore and five other western districts." },
         { label: "Common structures", value: "Private Limited Company for larger poultry, feed and fleet businesses; LLP for family farms and fleets; OPC for solo founders." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready." },
         { label: "Usual follow-ons", value: "GST where applicable, FSSAI for processors, vehicle and permit transfers for transport companies." },
       ]}
       subServicesHeading="What do we handle for Namakkal businesses?"

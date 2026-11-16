@@ -72,7 +72,7 @@ export default function Page() {
         { label: "Where we work from", value: "Our office is in Anna Nagar, Chennai. We have no office in Nagercoil; we serve Kanyakumari district clients online." },
         { label: "Registrar (ROC)", value: "ROC Chennai, which has jurisdiction over Kanyakumari district. A registered office across the border in Kerala would come under the Kerala ROC instead." },
         { label: "Common structures", value: "Private Limited Company for seafood and processing businesses; LLP for family trading firms; OPC for a single returning founder." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready; directors still abroad can sign digitally." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready; directors still abroad can sign digitally." },
         { label: "Usual follow-ons", value: "GST, IEC and LUT, and MPEDA or Coir Board registration for exporters." },
       ]}
       subServicesHeading="What do we handle for Nagercoil businesses?"

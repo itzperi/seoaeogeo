@@ -10,7 +10,7 @@
 export type CaseStudy = {
   slug: string;
   title: string;
-  /** 150–158 characters, no amounts or client names. */
+  /** 150 to 158 characters, no amounts or client names. */
   description: string;
   /** Kind of client, e.g. "Manufacturing start-up, Ambattur". Never a name. */
   clientType: string;

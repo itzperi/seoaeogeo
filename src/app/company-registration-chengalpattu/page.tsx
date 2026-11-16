@@ -78,7 +78,7 @@ export default function Page() {
         { label: "Registrar (ROC)", value: "ROC Chennai, which has jurisdiction over Chengalpattu district." },
         { label: "District note", value: "Chengalpattu district was formed from Kanchipuram district in 2019 and takes in Tambaram, Chengalpattu town, Maraimalai Nagar and southern OMR." },
         { label: "Common structures", value: "Private Limited Company for SEZ units, manufacturers and funded start-ups; LLP for project-specific real estate and professional firms." },
-        { label: "Typical time", value: "7–12 working days once documents and digital signatures are ready; SEZ approvals take longer and run separately." },
+        { label: "Typical time", value: "7 to 12 working days once documents and digital signatures are ready; SEZ approvals take longer and run separately." },
       ]}
       subServicesHeading="What do we handle for Chengalpattu businesses?"
       subServices={[

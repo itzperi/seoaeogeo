@@ -105,7 +105,7 @@ const DOCUMENTS = [
 ];
 
 const CALENDAR = [
-  ["April–May 2026", "Download the AIS for FY 2025-26; tell your employer which regime to use for tax year 2026-27; collect Form 16 and capital gains statements; plan property sales and reinvestment windows"],
+  ["April to May 2026", "Download the AIS for FY 2025-26; tell your employer which regime to use for tax year 2026-27; collect Form 16 and capital gains statements; plan property sales and reinvestment windows"],
   ["15 June 2026", "First advance tax instalment for tax year 2026-27: 15% of the estimated tax"],
   ["By 31 July 2026", "Return for FY 2025-26 for individuals without business income, with Schedule FA for calendar year 2025 and Schedule AL if income exceeds ₹1 crore"],
   ["31 August 2026", "Return for FY 2025-26 where you have business or professional income without a tax audit"],
@@ -113,7 +113,7 @@ const CALENDAR = [
   ["21 November 2026", "Return for FY 2025-26 for audit cases, including partners of audited firms (extended from 31 October by CBDT Circular No. 7/2026)"],
   ["15 December 2026", "Third instalment: 75% cumulatively"],
   ["31 December 2026", "Belated return for FY 2025-26; last date for declarations under FAST-DS 2026 for eligible undisclosed foreign assets; calendar year closes for Schedule FA reporting"],
-  ["January–February 2027", "Review realised and unrealised gains, set-off of losses, gifts within the family, and reinvestment deadlines falling in the next few months"],
+  ["January to February 2027", "Review realised and unrealised gains, set-off of losses, gifts within the family, and reinvestment deadlines falling in the next few months"],
   ["15 March 2027", "Fourth instalment: 100% of the estimated tax for tax year 2026-27"],
   ["31 March 2027", "Last date to revise the FY 2025-26 return; old-regime investments for tax year 2026-27; end of tax year 2026-27"],
   ["31 July 2027", "Return for tax year 2026-27, the first return under the Income-tax Act, 2025, for individuals without business income"],

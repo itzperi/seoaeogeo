@@ -37,7 +37,7 @@ export default function BlogIndexPage() {
             reviewed by <strong>CA Rushil C S</strong> and links to the matching service page if you need help.
           </>
         }
-        subhead="Practical, Chennai-specific guidance on GST, incorporation, and compliance — written by our team, not generic filler."
+        subhead="Practical, Chennai-specific guidance on GST, incorporation, and compliance, written by our team, not generic filler."
       />
       <section className="bg-paper py-16">
         <div className="container-page grid grid-cols-1 gap-6 sm:grid-cols-2">

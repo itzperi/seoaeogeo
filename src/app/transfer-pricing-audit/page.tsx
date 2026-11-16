@@ -66,9 +66,9 @@ const ACT_MAPPING = [
   ["Meaning of associated enterprise", "Section 92A", "Section 162"],
   ["Meaning of international transaction", "Section 92B", "Section 163"],
   ["Specified domestic transaction (₹20 crore threshold)", "Section 92BA", "Section 164"],
-  ["Methods for arm's length price", "Section 92C; Rules 10A–10CA", "Section 165; Rules 77–81"],
+  ["Methods for arm's length price", "Section 92C; Rules 10A to 10CA", "Section 165; Rules 77 to 81"],
   ["Reference to Transfer Pricing Officer", "Section 92CA", "Section 166"],
-  ["Safe harbour", "Section 92CB; Rules 10TA–10TG", "Section 167; Rules 86–102"],
+  ["Safe harbour", "Section 92CB; Rules 10TA to 10TG", "Section 167; Rules 86 to 102"],
   ["Advance pricing agreement", "Sections 92CC and 92CD", "Sections 168 and 169"],
   ["Secondary adjustment", "Section 92CE", "Section 170"],
   ["Documentation", "Section 92D; Rule 10D", "Section 171; Rule 84"],
@@ -87,12 +87,12 @@ const DUE_DATES = [
 ];
 
 const DOCUMENTATION = [
-  ["Entity and group", "Ownership structure; profile of the multinational group with name, address, legal status and tax residence of each associated enterprise you transacted with; business and industry description", "Rule 84(1)(a)–(c)"],
+  ["Entity and group", "Ownership structure; profile of the multinational group with name, address, legal status and tax residence of each associated enterprise you transacted with; business and industry description", "Rule 84(1)(a)-(c)"],
   ["Transactions", "Nature, terms and prices of each transaction with each associated enterprise, with quantum and value", "Rule 84(1)(d)"],
   ["Functional analysis", "Functions performed, risks assumed and assets employed by you and by the associated enterprise", "Rule 84(1)(e)"],
   ["Business records", "Economic and market analyses, forecasts and budgets that bear on the transactions", "Rule 84(1)(f)"],
-  ["Economic analysis", "Uncontrolled transactions considered, comparability analysis, methods considered, why the most appropriate method was chosen, the actual working, and comparability adjustments", "Rule 84(1)(g)–(j)"],
-  ["Assumptions and adjustments", "Assumptions, policies and price negotiations that affected pricing; any adjustment made to align prices and income", "Rule 84(1)(k)–(l)"],
+  ["Economic analysis", "Uncontrolled transactions considered, comparability analysis, methods considered, why the most appropriate method was chosen, the actual working, and comparability adjustments", "Rule 84(1)(g)-(j)"],
+  ["Assumptions and adjustments", "Assumptions, policies and price negotiations that affected pricing; any adjustment made to align prices and income", "Rule 84(1)(k)-(l)"],
   ["Supporting evidence", "Agreements, invoices, emails and correspondence on negotiated terms, published accounts, market studies and price publications", "Rule 84(5)"],
 ];
 
@@ -151,13 +151,13 @@ const CAPTIVE_MODELS = [
 ];
 
 const CALENDAR = [
-  ["April–June", "Agree the year's pricing policy and mark-up with the group TP team; sign or renew intercompany agreements; check whether safe harbour or an APA is worth considering"],
+  ["April to June", "Agree the year's pricing policy and mark-up with the group TP team; sign or renew intercompany agreements; check whether safe harbour or an APA is worth considering"],
   ["Each quarter", "Compare actual margins with the policy and raise true-up invoices before the gap grows; track new transaction types such as ESOP recharges or secondments"],
-  ["July–September", "Close the audited accounts; refresh the comparable set with the latest available data; hold FAR interviews and draft the documentation"],
+  ["July to September", "Close the audited accounts; refresh the comparable set with the latest available data; hold FAR interviews and draft the documentation"],
   ["By 31 October", "Furnish Form 3CEB (FY 2025-26) or Form 48 (tax year 2026-27 onwards)"],
   ["By 30 November", "File the income-tax return, and the master file (Form 56) where it applies"],
   ["Calendar-year groups", "Form 58 intimation two months before the group's CbCR deadline; Form 59 within 12 months of the parent's year-end, for example by 31 December for a December year-end"],
-  ["January–March", "Year-end true-up so the books close within the arm's length range; plan the next year's policy and any APA renewal"],
+  ["January to March", "Year-end true-up so the books close within the arm's length range; plan the next year's policy and any APA renewal"],
 ];
 
 export default function Page() {

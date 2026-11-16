@@ -1,4 +1,4 @@
-// Minimal Supabase REST (PostgREST) client — no SDK dependency.
+// Minimal Supabase REST (PostgREST) client, no SDK dependency.
 //
 // No code writes to this database any more: enquiries go to WhatsApp, and
 // click events are not stored. The client only reads old leads for /admin,

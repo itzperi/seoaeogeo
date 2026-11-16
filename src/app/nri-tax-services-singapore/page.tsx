@@ -13,7 +13,7 @@ const p = "mt-4 max-w-3xl leading-relaxed text-slate";
 export const metadata: Metadata = {
   title: { absolute: "Indian Tax Services for NRIs in Singapore: ITR, DTAA, RNOR" },
   description:
-    "Indian tax for NRIs in Singapore: India–Singapore DTAA, IRAS Certificate of Residence and Form 10F, RSU/ESOP, CPF on return, RNOR and Chennai property TDS.",
+    "Indian tax for NRIs in Singapore: India-Singapore DTAA, IRAS Certificate of Residence and Form 10F, RSU/ESOP, CPF on return, RNOR and Chennai property TDS.",
   alternates: { canonical: slug },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -75,7 +75,7 @@ const AUDIENCES: Audience[] = [
   { who: "Software or finance professional in Singapore with RSUs", need: "A clear view of how Indian tax touches equity pay from a global employer, without getting into Singapore tax.", help: "Indian-side review of vesting, residential status and what will change on return, coordinated with your Singapore adviser.", enquiry: "Indian tax on RSUs as an NRI in Singapore" },
   { who: "Singapore banker planning to return to Chennai", need: "An RNOR plan before resigning, covering savings, CPF and Indian holdings.", help: "A dated plan covering arrival month, account conversions and the Indian view on foreign funds.", enquiry: "RNOR planning for a return from Singapore to Chennai" },
   { who: "NRI in Singapore selling a Chennai flat", need: "Correct TDS from the buyer and a clean remittance to Singapore.", help: "Lower-deduction certificate, capital gains workings and Form 15CA/15CB.", enquiry: "selling a Chennai property as an NRI in Singapore" },
-  { who: "Singapore PR or citizen of Indian origin with Indian investments", need: "A view on Form 10F, treaty relief and which Indian returns are needed.", help: "Residence documents, treaty claim review and return filing.", enquiry: "India–Singapore DTAA claim and Form 10F" },
+  { who: "Singapore PR or citizen of Indian origin with Indian investments", need: "A view on Form 10F, treaty relief and which Indian returns are needed.", help: "Residence documents, treaty claim review and return filing.", enquiry: "India-Singapore DTAA claim and Form 10F" },
 ];
 
 const NOT_INCLUDED = [
@@ -95,11 +95,11 @@ export default function Page() {
       parentCrumb={{ name: "NRI Tax Services", href: "/nri-tax-services" }}
       eyebrow="NRI Clients · Singapore"
       h1="India Tax for NRIs in Singapore: ITR, DTAA, RSU/ESOP and RNOR Planning"
-      subhead="Indian return filing, India–Singapore treaty paperwork, equity pay, Chennai property sale TDS and return-to-India planning for Indians in Singapore, served online from our Anna Nagar office in Chennai."
+      subhead="Indian return filing, India-Singapore treaty paperwork, equity pay, Chennai property sale TDS and return-to-India planning for Indians in Singapore, served online from our Anna Nagar office in Chennai."
       introHeading="Do NRIs living in Singapore pay tax in India?"
       intro="Yes, but only on income earned or received in India, such as rent from a Chennai flat, NRO interest, gains on Indian shares or property and Indian business income. Singapore salary is not taxed in India while you remain a non-resident, though equity pay and a planned return to India need an Indian-side review."
       keyFacts={[
-        { label: "Treaty", value: "India–Singapore DTAA; relief needs a Singapore Certificate of Residence and Form 10F" },
+        { label: "Treaty", value: "India-Singapore DTAA; relief needs a Singapore Certificate of Residence and Form 10F" },
         { label: "Taxable in India", value: "Indian-source income: rent, NRO interest, capital gains, Indian business income" },
         { label: "Time difference", value: "Singapore is 2 hours 30 minutes ahead of India, so same-day calls work" },
         { label: "Scope", value: "Indian tax only; Singapore tax stays with your Singapore adviser" },
@@ -108,7 +108,7 @@ export default function Page() {
       subServices={[
         { name: "Residential Status Review", text: "A day count for the year and a check of the tests, including the deemed-residency rule, before the return is filed." },
         { name: "Indian ITR Filing", text: "Returns covering rent, NRO interest, capital gains and other Indian income, reconciled against Form 26AS and the Annual Information Statement." },
-        { name: "India–Singapore DTAA Claims", text: "Organising the IRAS Certificate of Residence and filing Form 10F where a treaty claim is worth making." },
+        { name: "India-Singapore DTAA Claims", text: "Organising the IRAS Certificate of Residence and filing Form 10F where a treaty claim is worth making." },
         { name: "RSU and ESOP Review (Indian Side)", text: "Understanding how vesting and sale of equity from a global employer is seen in India, now and after you return." },
         { name: "Chennai Property Sale and TDS", text: "Lower-deduction certificate, capital gains computation and Form 15CA/15CB for remittance to Singapore." },
         { name: "Return-to-India Planning", text: "Planning arrival month, RNOR years and account conversions, and stating the Indian view on foreign funds such as CPF and SRS cautiously." },
@@ -126,7 +126,7 @@ export default function Page() {
       }}
       faqs={[
         { question: "Does India tax my Singapore salary?", answer: "Not while you are a non-resident: salary for work done in Singapore and received outside India is outside Indian tax for an NRI. The position changes if you become resident, so we count your days in India each year. Salary credited directly into an Indian account can be treated as received in India." },
-        { question: "What is the India–Singapore DTAA and how do I claim it?", answer: "It is a treaty between the two countries that allocates taxing rights and gives relief from double tax on certain income. To claim it in India you generally need a Certificate of Residence from IRAS and Form 10F filed on the Indian e-filing portal. We check whether a claim helps for each income stream." },
+        { question: "What is the India-Singapore DTAA and how do I claim it?", answer: "It is a treaty between the two countries that allocates taxing rights and gives relief from double tax on certain income. To claim it in India you generally need a Certificate of Residence from IRAS and Form 10F filed on the Indian e-filing portal. We check whether a claim helps for each income stream." },
         { question: "How do I get a Certificate of Residence from IRAS?", answer: "IRAS issues the Certificate of Residence to people who are tax residents of Singapore, and you apply to it directly, usually online. The certificate confirms residence for the treaty. Processing and eligibility are set by IRAS, so check its current requirements, and send us the certificate so we can prepare Form 10F." },
         { question: "What if India and Singapore both treat me as a resident?", answer: "The treaty has tie-breaker rules for dual residents. In plain terms, they look at where you have a permanent home, where your personal and economic ties are closer, where you habitually live and your nationality, in that order. We apply them to your facts and record the position with your documents." },
         { question: "Are my RSUs or ESOPs taxed in India while I work in Singapore?", answer: "Equity pay is generally taxed in India only to the extent it relates to services rendered in India, so a non-resident working fully in Singapore usually has little Indian tax on vesting. After you return, vesting and sale are looked at under your new status. We review the Indian side; Singapore tax goes to your Singapore adviser." },
@@ -154,9 +154,9 @@ export default function Page() {
         from the figures that adviser gives us where the two interact.
       </p>
 
-      <h2 className={h2}>What does the India–Singapore DTAA do for an NRI?</h2>
+      <h2 className={h2}>What does the India-Singapore DTAA do for an NRI?</h2>
       <p className={p}>
-        The India–Singapore double taxation avoidance agreement decides which country may tax particular income and how the
+        The India-Singapore double taxation avoidance agreement decides which country may tax particular income and how the
         other gives relief, so that the same income is not fully taxed twice.
       </p>
       <p className={p}>

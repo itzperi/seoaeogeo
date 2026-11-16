@@ -62,7 +62,7 @@ const DOCUMENTS = [
 ];
 
 const UAE_INDIA = [
-  ["India–UAE tax treaty", "Double Taxation Avoidance Agreement signed in 1992 and amended by protocols in 2007 and 2012, as modified by the BEPS Multilateral Instrument.", "Withholding rates on dividends, interest, royalties and fees, tax residence tests, permanent establishment and relief from double taxation."],
+  ["India-UAE tax treaty", "Double Taxation Avoidance Agreement signed in 1992 and amended by protocols in 2007 and 2012, as modified by the BEPS Multilateral Instrument.", "Withholding rates on dividends, interest, royalties and fees, tax residence tests, permanent establishment and relief from double taxation."],
   ["Comprehensive Economic Partnership Agreement (CEPA)", "Signed on 18 February 2022 and in force from 1 May 2022.", "Tariffs and market access for trade in goods and services; relevant if the Indian company trades with the UAE."],
   ["Bilateral Investment Treaty (BIT)", "Signed on 13 February 2024 and in force from 31 August 2024, replacing the earlier treaty.", "Protection standards for investments made by investors of one country in the other, with dispute resolution conditions."],
 ];
@@ -100,14 +100,14 @@ export default function Page() {
       parentCrumb={{ name: "Company Setup in India for Foreign Businesses", href: "/company-registration-india-for-foreigners" }}
       eyebrow="India Entry · UAE Mainland & Free-Zone Companies"
       h1="Set Up a Subsidiary in India from the UAE"
-      subhead="How a UAE mainland or free-zone company, or an NRI founder based in the UAE, incorporates an Indian private limited company: document attestation, the resident director rule, the FDI automatic route, FC-GPR, the India–UAE tax treaty, CEPA and investment treaty, and points for your UAE adviser."
+      subhead="How a UAE mainland or free-zone company, or an NRI founder based in the UAE, incorporates an Indian private limited company: document attestation, the resident director rule, the FDI automatic route, FC-GPR, the India-UAE tax treaty, CEPA and investment treaty, and points for your UAE adviser."
       keyFacts={[
         { label: "Usual structure", value: "UAE company holds all or nearly all shares of an Indian private limited company, with a nominee as the second shareholder." },
         { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days during the financial year (section 149(3), Companies Act, 2013)." },
         { label: "Document legalisation", value: "Attestation, not apostille: the UAE is not listed as a party to the Hague Apostille Convention. Documents go through the UAE Ministry of Foreign Affairs and then the Indian mission." },
         { label: "FDI approval", value: "None in automatic-route sectors, unless a beneficial owner is from a country sharing a land border with India." },
         { label: "RBI reporting", value: "Form FC-GPR within 30 days of share allotment, then the annual FLA return by 15 July." },
-        { label: "Treaties", value: "India–UAE tax treaty; CEPA in force from 1 May 2022; Bilateral Investment Treaty in force from 31 August 2024." },
+        { label: "Treaties", value: "India-UAE tax treaty; CEPA in force from 1 May 2022; Bilateral Investment Treaty in force from 31 August 2024." },
       ]}
       introHeading="Can a UAE company set up a wholly owned subsidiary in India?"
       intro="Yes. A UAE mainland or free-zone company can own 100% of an Indian private limited company under the automatic route in most sectors. Because the UAE is not a party to the Apostille Convention, its documents are attested by the UAE Ministry of Foreign Affairs and the Indian mission. One director must be resident in India for 182 days."
@@ -137,7 +137,7 @@ export default function Page() {
         { question: "Do UAE documents need an apostille for India?", answer: "No. The UAE is not listed as a party to the Hague Apostille Convention on the HCCH status table, so UAE documents are legalised by attestation instead. They are notarised or issued by the relevant authority, attested by the UAE Ministry of Foreign Affairs, and then attested by the Embassy of India in Abu Dhabi or the Consulate General in Dubai." },
         { question: "Can an NRI living in the UAE be a director of the Indian company?", answer: "Yes, but an NRI who lives in the UAE usually cannot be the resident director, because section 149(3) of the Companies Act, 2013 requires at least one director who stayed in India for 182 days during the financial year. The NRI can be one director, with a second director in India meeting the residency test." },
         { question: "Should an NRI founder invest personally or through a UAE company?", answer: "It depends on your plans. Holding personally is simpler and investment by an NRI on a non-repatriation basis is treated like domestic investment under the FEMA rules. Holding through a UAE company may suit group structures and outside investors, but it brings FC-GPR reporting, substance questions and UAE tax considerations. We compare both for your case." },
-        { question: "Does the India–UAE tax treaty reduce tax on dividends?", answer: "The India–UAE Double Taxation Avoidance Agreement can reduce Indian withholding tax on dividends, interest, royalties and fees paid to a UAE resident parent, subject to conditions such as tax residence and beneficial ownership. The parent needs a UAE tax residence certificate and the prescribed declarations in India to claim the treaty rate." },
+        { question: "Does the India-UAE tax treaty reduce tax on dividends?", answer: "The India-UAE Double Taxation Avoidance Agreement can reduce Indian withholding tax on dividends, interest, royalties and fees paid to a UAE resident parent, subject to conditions such as tax residence and beneficial ownership. The parent needs a UAE tax residence certificate and the prescribed declarations in India to claim the treaty rate." },
         { question: "Do CEPA and the investment treaty affect incorporation?", answer: "Not directly. CEPA, in force from 1 May 2022, deals mainly with trade in goods and services, and the Bilateral Investment Treaty, in force from 31 August 2024, sets protection standards for investments. Incorporation itself still follows the FDI Policy, the Companies Act and FEMA reporting." },
         { question: "What UAE Corporate Tax points should we check?", answer: "Your UAE adviser will usually look at whether dividends and gains from the Indian subsidiary qualify for relief, how the investment affects any qualifying free zone status, UAE transfer pricing on intercompany transactions, and substance. We do not advise on UAE tax, but we provide the Indian figures your adviser needs." },
         { question: "What if the UAE parent is owned by investors from a neighbouring country of India?", answer: "Investment where a beneficial owner is situated in, or is a citizen of, a country sharing a land border with India needs government approval in every sector, even if the investing company is in the UAE. We check the full ownership chain at the start so that this is identified before documents are prepared." },
@@ -186,7 +186,7 @@ export default function Page() {
         cover the personal side.
       </p>
 
-      <h2 className="mt-14 text-2xl text-obsidian">Which India–UAE agreements apply?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">Which India-UAE agreements apply?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Three agreements between India and the UAE are relevant. The tax treaty affects routine payments between the
         companies; CEPA matters if you trade goods or services across the border; the investment treaty sets protection
@@ -201,7 +201,7 @@ export default function Page() {
       </p>
       <DataTable head={["Item for your UAE adviser", "Why it comes up", "Who handles it"]} rows={UAE_ITEMS} />
 
-      <h2 className="mt-14 text-2xl text-obsidian">How does a UAE–India working model run day to day?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">How does a UAE-India working model run day to day?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         India Standard Time is 1.5 hours ahead of UAE time, so working days almost fully overlap. Our team in Anna Nagar,
         Chennai works with UAE clients remotely: documents move through a secure portal, filings are signed digitally, and

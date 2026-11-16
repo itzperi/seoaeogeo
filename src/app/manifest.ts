@@ -3,7 +3,7 @@ import { BUSINESS_NAME } from "@/lib/site";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: `${BUSINESS_NAME} — Chartered Accountants in Chennai`,
+    name: `${BUSINESS_NAME}: Chartered Accountants in Chennai`,
     short_name: BUSINESS_NAME,
     start_url: "/",
     display: "standalone",

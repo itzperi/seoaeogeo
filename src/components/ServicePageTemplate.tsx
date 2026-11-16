@@ -92,9 +92,9 @@ export default function ServicePageTemplate({
   relatedSlugs?: string[];
   /** Hub page this page sits under, e.g. Company registration → OPC. */
   parentCrumb?: Crumb;
-  /** 3–6 row "Key facts" table at the top: time, form, who needs it, deadline/penalty. */
+  /** 3 to 6 row "Key facts" table at the top: time, form, who needs it, deadline/penalty. */
   keyFacts?: KeyFact[];
-  /** Blog slugs shown as "Related guides" (3–5). Unpublished/unknown slugs are skipped. */
+  /** Blog slugs shown as "Related guides" (3 to 5). Unpublished/unknown slugs are skipped. */
   relatedPosts?: string[];
   /** Above-the-fold callout, e.g. pointing early-stage pages at their money page. */
   topBanner?: ReactNode;

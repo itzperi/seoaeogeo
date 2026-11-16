@@ -62,7 +62,7 @@ const FAQS = [
   {
     question: "How long does private limited company registration take in Chennai?",
     answer:
-      "Private limited company registration in Chennai usually takes 7–12 working days once documents and digital signatures are ready. Allow about three weeks if you are starting from scratch. Most delays come from a rejected name or a mismatch between a director's PAN and Aadhaar details, so we check both before filing.",
+      "Private limited company registration in Chennai usually takes 7 to 12 working days once documents and digital signatures are ready. Allow about three weeks if you are starting from scratch. Most delays come from a rejected name or a mismatch between a director's PAN and Aadhaar details, so we check both before filing.",
   },
   {
     question: "What is the minimum capital and number of directors required?",
@@ -273,7 +273,7 @@ export default function IncorporationPage() {
             Planning <strong>Private Limited Company registration in Chennai</strong>? C S Rushil &amp; Co., a{" "}
             <strong>chartered accountancy firm</strong> in Anna Nagar, files your SPICe+ incorporation with the{" "}
             <strong>Registrar of Companies, Chennai</strong>: DSCs, DIN, name approval, e-MoA and e-AoA, PAN and TAN,
-            usually within 7–12 working days once documents are ready.
+            usually within 7 to 12 working days once documents are ready.
           </>
         }
         subhead="Pvt Ltd company incorporation via SPICe+ with ROC Chennai, through to first-year compliance, for founders across the city and Tamil Nadu."
@@ -287,7 +287,7 @@ export default function IncorporationPage() {
               <p id="direct-answer" className="mt-4 leading-relaxed text-slate">
                 Private limited company registration in Chennai is an online SPICe+ application to the Ministry of
                 Corporate Affairs under the Companies Act, 2013. It needs two directors, two shareholders, digital
-                signatures and a registered office address, and usually takes 7–12 working days once documents are
+                signatures and a registered office address, and usually takes 7 to 12 working days once documents are
                 ready. The company is recorded with the Registrar of Companies, Chennai.
               </p>
               <p className="mt-4 leading-relaxed text-slate">
@@ -313,7 +313,7 @@ export default function IncorporationPage() {
               <h2 className="bg-carbon px-5 py-3 text-sm font-bold uppercase tracking-[0.032em] text-white">What are the key facts at a glance?</h2>
               <dl className="divide-y divide-ash bg-paper">
                 {[
-                  { label: "Typical time", value: "7–12 working days once documents are ready; about 3 weeks if you are collecting documents from scratch." },
+                  { label: "Typical time", value: "7 to 12 working days once documents are ready; about 3 weeks if you are collecting documents from scratch." },
                   { label: "Government forms", value: "SPICe+ Part A (name) and Part B (incorporation) with AGILE-PRO-S, e-MoA (INC-33) and e-AoA (INC-34) on the MCA V3 portal." },
                   { label: "Registrar", value: "ROC Chennai for a registered office in Chennai and most of Tamil Nadu; ROC Coimbatore for nine western districts." },
                   { label: "Minimum members", value: "2 directors and 2 shareholders (can be the same people); maximum 200 members. No minimum paid-up capital." },
@@ -407,14 +407,14 @@ export default function IncorporationPage() {
               <h2 className="text-2xl text-obsidian">Who can register a private limited company?</h2>
               <ul className="mt-4 space-y-3 text-slate">
                 <li>• Minimum 2 directors and 2 shareholders (can be the same individuals), up to 15 directors without a special resolution.</li>
-                <li>• At least one director must be resident in India — stayed in India for at least 182 days during the financial year (Section 149(3), Companies Act, 2013).</li>
+                <li>• At least one director must be resident in India, stayed in India for at least 182 days during the financial year (Section 149(3), Companies Act, 2013).</li>
                 <li>• No minimum paid-up capital requirement.</li>
                 <li>• A registered office address in India with proof of ownership or tenancy and a no-objection certificate.</li>
                 <li>• Valid PAN, Aadhaar, and a working email and mobile number for each director for OTP verification.</li>
               </ul>
               <p className="mt-4 rounded-cards border border-royal-violet/20 bg-lilac-mist p-5 text-sm leading-relaxed text-obsidian">
                 <strong>What we actually see slow this down:</strong> the most common cause of a SPICe+ resubmission
-                we handle for Chennai founders isn&apos;t a policy issue — it&apos;s a director&apos;s name, date of
+                we handle for Chennai founders isn&apos;t a policy issue, it&apos;s a director&apos;s name, date of
                 birth, or address not matching exactly between their PAN and Aadhaar records (a middle name present on
                 one and not the other is a frequent culprit). We check this before filing, not after a rejection.
               </p>
@@ -424,7 +424,7 @@ export default function IncorporationPage() {
               <h2 className="text-2xl text-obsidian">What are the SPICe+ steps and timelines for a Pvt Ltd company?</h2>
               <p className="mt-4 leading-relaxed text-slate">
                 The table follows a private limited company from digital signatures to the commencement-of-business
-                declaration. Steps 1–6 happen before or at incorporation; steps 7–9 are the first deadlines after the
+                declaration. Steps 1 to 6 happen before or at incorporation; steps 7 to 9 are the first deadlines after the
                 Certificate of Incorporation is issued.
               </p>
               <div className="mt-4 overflow-x-auto rounded-cards border border-ash">
@@ -606,7 +606,7 @@ export default function IncorporationPage() {
                 register a private limited company with a chartered accountant they
                 can meet in person. You can drop off KYC documents, sign the
                 registered-office NOC and finish DSC verification at our office in
-                one visit, and the SPICe+ filing itself is online, so the 7–12
+                one visit, and the SPICe+ filing itself is online, so the 7 to 12
                 working-day timeline is the same as anywhere in Chennai.
               </p>
               <p className="mt-4 leading-relaxed text-slate">
@@ -672,7 +672,7 @@ export default function IncorporationPage() {
             <div className="rounded-cards border border-carbon bg-royal-violet p-8">
               <h3 className="text-lg font-medium text-white">Talk to a CA about your registration</h3>
               <p className="mt-2 text-sm text-white">
-                Tell us your directors, shareholders and business activity — we&apos;ll
+                Tell us your directors, shareholders and business activity, we&apos;ll
                 confirm the documents you need and the timeline for your case.
               </p>
               <Link

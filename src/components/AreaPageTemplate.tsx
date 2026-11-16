@@ -76,7 +76,7 @@ export default function AreaPageTemplate({
   relevantServices: { slug: string; why: string }[];
   faqs: FAQItem[];
   furtherReading?: { slug: string; title: string }[];
-  /** 40–60 word answer to "Is there a CA firm near <locality>?" — the passage snippets and AI answers quote. */
+  /** 40 to 60 word answer to "Is there a CA firm near <locality>?", the passage snippets and AI answers quote. */
   directAnswer?: string;
   /** Extra H2 sections with rich body (inline links), rendered after the local context. */
   sections?: { heading: string; body: ReactNode }[];

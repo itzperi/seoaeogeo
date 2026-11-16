@@ -10,7 +10,7 @@ const td = "px-4 py-3 align-top text-slate";
 const DOCUMENTS = [
   { doc: "PAN, and Aadhaar if you hold one", why: "Login to the Indian e-filing portal and e-verification of the return.", source: "Your own records" },
   { doc: "Passport pages or travel record for the year", why: "Counting days in India for the residential status tests.", source: "Passport stamps or airline records" },
-  { doc: "HMRC certificate of residence", why: "Needed only if relief under the India–UK DTAA is claimed in India, together with Form 41 (Form 10F for years under the 1961 Act).", source: "HMRC" },
+  { doc: "HMRC certificate of residence", why: "Needed only if relief under the India-UK DTAA is claimed in India, together with Form 41 (Form 10F for years under the 1961 Act).", source: "HMRC" },
   { doc: "NRO, NRE and FCNR statements and interest certificates", why: "Reporting taxable NRO interest and claiming TDS credit; NRE and FCNR interest summary for your UK accountant.", source: "Your Indian banks" },
   { doc: "Rent agreement, rent received and tenant TDS certificates", why: "Computing rental income and claiming credit for tax the tenant deducted.", source: "Your tenant or the family member who collects rent" },
   { doc: "Capital gains statements", why: "Gains on Indian shares and mutual funds, with dates needed for UK tax-year apportionment.", source: "Your broker, and the CAMS or KFintech consolidated statement" },
@@ -43,11 +43,11 @@ const CALENDAR = [
 export const metadata: Metadata = {
   title: { absolute: "India Tax for NRIs in the UK: ITR, DTAA & HMRC Credit" },
   description:
-    "Indian ITR filing for NRIs in the UK, India–UK DTAA claims, and the tax computation and TDS proof your UK accountant needs for HMRC foreign tax credit relief.",
+    "Indian ITR filing for NRIs in the UK, India-UK DTAA claims, and the tax computation and TDS proof your UK accountant needs for HMRC foreign tax credit relief.",
   alternates: { canonical: "/nri-tax-services-uk" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "NRI Tax Services for UK Residents: India–UK DTAA",
+    title: "NRI Tax Services for UK Residents: India-UK DTAA",
     description:
       "Indian return filing and HMRC-ready evidence of Indian tax paid for NRIs living in the United Kingdom.",
     url: "/nri-tax-services-uk",
@@ -63,10 +63,10 @@ export default function Page() {
       crumbHref="/nri-tax-services-uk"
       eyebrow="NRI Clients · United Kingdom"
       h1="India Tax for NRIs in the UK: DTAA, HMRC Credit & Indian Income"
-      subhead="Indian income tax returns, India–UK DTAA positions and a clear record of Indian tax paid for NRIs living in London, Leicester, Birmingham, Manchester and across the UK, prepared so your UK accountant can claim relief on your Self Assessment return."
+      subhead="Indian income tax returns, India-UK DTAA positions and a clear record of Indian tax paid for NRIs living in London, Leicester, Birmingham, Manchester and across the UK, prepared so your UK accountant can claim relief on your Self Assessment return."
       introHeading="How do NRIs in the UK avoid paying tax twice on Indian income?"
-      intro="You pay Indian tax first on Indian rent, interest or capital gains, then report the same income on your UK Self Assessment return and claim foreign tax credit relief for the Indian tax, usually capped at the UK tax on that income. The India–UK DTAA decides which country has the first right to tax each type of income. Our role is the Indian side: filing your Indian return correctly and giving your UK accountant the computation and TDS evidence HMRC expects to see."
-      citation={{ label: "GOV.UK — Tax on foreign income: if you’re taxed twice", href: "https://www.gov.uk/tax-foreign-income/taxed-twice" }}
+      intro="You pay Indian tax first on Indian rent, interest or capital gains, then report the same income on your UK Self Assessment return and claim foreign tax credit relief for the Indian tax, usually capped at the UK tax on that income. The India-UK DTAA decides which country has the first right to tax each type of income. Our role is the Indian side: filing your Indian return correctly and giving your UK accountant the computation and TDS evidence HMRC expects to see."
+      citation={{ label: "GOV.UK: Tax on foreign income: if you’re taxed twice", href: "https://www.gov.uk/tax-foreign-income/taxed-twice" }}
       keyFacts={[
         { label: "Tax years", value: "India: 1 April to 31 March. UK: 6 April to 5 April." },
         { label: "Indian return due (tax year 2026-27)", value: "31 July 2027 for individuals without business income and not subject to audit" },
@@ -78,7 +78,7 @@ export default function Page() {
         { name: "Indian ITR Filing", text: "Filing your Indian return for rent, NRO interest, dividends and capital gains, with TDS reconciled against Form 26AS and the Annual Information Statement." },
         { name: "Foreign Tax Credit Evidence Pack", text: "A per-income summary of Indian tax paid, with Form 16A certificates, the Form 26AS extract and the filed return, arranged so your UK accountant can match it to the Self Assessment foreign pages." },
         { name: "Tax-Year Apportionment Schedules", text: "Month-by-month schedules of Indian rent, interest credits and sale dates, so income can be split between the Indian year ending 31 March and the UK year ending 5 April." },
-        { name: "India–UK DTAA Positions", text: "Identifying which treaty article applies to each Indian income stream and, where relief is claimed in India, filing Form 10F with your UK certificate of residence." },
+        { name: "India-UK DTAA Positions", text: "Identifying which treaty article applies to each Indian income stream and, where relief is claimed in India, filing Form 10F with your UK certificate of residence." },
         { name: "Property and Share Sales", text: "Capital gains computation, lower TDS certificate and Form 15CA/15CB when you sell Indian property or investments, with the figures your UK adviser needs for UK capital gains reporting." },
         { name: "Coordination with Your UK Accountant", text: "Answering your UK accountant’s questions on the Indian figures directly, in UK working hours, while UK tax advice stays with them." },
       ]}
@@ -89,7 +89,7 @@ export default function Page() {
           { name: "File the Indian return", text: "We prepare the computation, confirm your non-resident status from your travel dates, and file and e-verify your Indian return, typically well ahead of the Indian due date." },
           { name: "Prepare the apportionment schedule", text: "Because the UK tax year runs from 6 April to 5 April, we split each Indian income item by date so your UK accountant can report the right amount in the right UK tax year." },
           { name: "Hand over the evidence pack", text: "Your UK accountant receives the filed return, Form 26AS, Form 16A certificates and a summary of Indian tax paid per income type, which supports the foreign tax credit claim on your Self Assessment return." },
-          { name: "UK accountant completes Self Assessment", text: "Your UK accountant reports the Indian income on the foreign pages, applies the India–UK DTAA and claims foreign tax credit relief before the 31 January online filing deadline." },
+          { name: "UK accountant completes Self Assessment", text: "Your UK accountant reports the Indian income on the foreign pages, applies the India-UK DTAA and claims foreign tax credit relief before the 31 January online filing deadline." },
         ],
       }}
       faqs={[

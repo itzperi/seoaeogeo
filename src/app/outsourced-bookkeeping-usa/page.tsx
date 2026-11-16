@@ -34,7 +34,7 @@ export default function Page() {
       subhead="A Chartered Accountancy team in Chennai keeps your QuickBooks Online or Xero books current every month, catches up books that have fallen behind, tracks 1099 vendors and hands your CPA a clean year-end package. Your CPA or Enrolled Agent still prepares and files your tax returns."
       introHeading="How does outsourced bookkeeping work for a US business?"
       intro="You give our team accountant access to your QuickBooks Online or Xero file and connect your bank feeds. Each month we categorise transactions, reconcile every bank, card, PayPal and Stripe account, post accruals and close the month by an agreed date, then send you a profit and loss, a balance sheet and a short list of questions. At year end your CPA receives reconciled books and supporting schedules. We do not prepare or file US federal or state tax returns; your CPA or Enrolled Agent does."
-      citation={{ label: "IRS — Recordkeeping for small businesses", href: "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping" }}
+      citation={{ label: "IRS: Recordkeeping for small businesses", href: "https://www.irs.gov/businesses/small-businesses-self-employed/recordkeeping" }}
       keyFacts={[
         { label: "Who it is for", value: "US sole proprietors, single and multi-member LLCs, S corporations, C corporations and e-commerce sellers." },
         { label: "Software", value: "QuickBooks Online or Xero, with Bill.com, Gusto, ADP, Shopify, Amazon and Stripe data where used. You keep the subscription and the file." },

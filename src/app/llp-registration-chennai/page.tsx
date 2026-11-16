@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 const CONVERSIONS = [
   { from: "Partnership firm → LLP", form: "Form 17 (with FiLLiP)", law: "Section 55 and Second Schedule, LLP Act, 2008", note: "All partners of the firm must become partners of the LLP. Assets, liabilities, contracts and registrations move to the LLP." },
-  { from: "Private or unlisted public company → LLP", form: "Form 18 (with FiLLiP)", law: "Sections 56–57 and Third/Fourth Schedules, LLP Act, 2008", note: "All shareholders become partners; the company must have no security interest outstanding or creditors must consent." },
+  { from: "Private or unlisted public company → LLP", form: "Form 18 (with FiLLiP)", law: "Sections 56 to 57 and Third/Fourth Schedules, LLP Act, 2008", note: "All shareholders become partners; the company must have no security interest outstanding or creditors must consent." },
   { from: "LLP → company", form: "URC-1 with SPICe+", law: "Section 366, Companies Act, 2013", note: "Used when an LLP wants to raise equity. Partners' consent and a fresh set of company documents are needed." },
 ];
 
@@ -38,7 +38,7 @@ export default function Page() {
       intro="LLP registration in Chennai creates a Limited Liability Partnership under the LLP Act, 2008: a separate legal entity where each partner's liability is limited to their agreed contribution. It suits professional firms and family businesses wanting partnership flexibility. It cannot issue shares, so founders raising equity usually choose a Private Limited Company."
       citation={{ label: "MCA FiLLiP (incorporation of LLP) web form", href: "https://www.mca.gov.in/content/mca/global/en/mca/llp-e-filling/Fillip.html" }}
       keyFacts={[
-        { label: "Typical time", value: "10–15 working days for incorporation once documents are ready; the LLP agreement follows within 30 days." },
+        { label: "Typical time", value: "10 to 15 working days for incorporation once documents are ready; the LLP agreement follows within 30 days." },
         { label: "Government forms", value: "FiLLiP for name and incorporation (with DIN, PAN and TAN); Form 3 for the LLP agreement; Form 8 and Form 11 every year." },
         { label: "Minimum partners", value: "2 partners, with at least 2 designated partners who are individuals; at least one designated partner must be resident in India (120 days or more in the financial year)." },
         { label: "Who it suits", value: "Consultants, agencies, architects and other professional or services businesses that will not raise equity." },
@@ -74,7 +74,7 @@ export default function Page() {
         {
           question: "How long does LLP registration take in Chennai?",
           answer:
-            "LLP registration in Chennai typically takes 10–15 working days through FiLLiP once DSCs and documents are ready, covering name approval, DIN allotment and incorporation. The LLP agreement must then be filed in Form 3 within 30 days of incorporation. That is a separate deadline: missing it attracts an additional fee even though the LLP is already registered.",
+            "LLP registration in Chennai typically takes 10 to 15 working days through FiLLiP once DSCs and documents are ready, covering name approval, DIN allotment and incorporation. The LLP agreement must then be filed in Form 3 within 30 days of incorporation. That is a separate deadline: missing it attracts an additional fee even though the LLP is already registered.",
         },
         {
           question: "What happens if the LLP agreement is not filed within 30 days?",

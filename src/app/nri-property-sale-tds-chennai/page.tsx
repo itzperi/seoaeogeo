@@ -28,7 +28,7 @@ export default function Page() {
       subhead="Capital gains computation, the lower or nil TDS certificate, the buyer’s TDS paperwork, Sub-Registrar coordination and Form 15CA/15CB for repatriation, for NRIs selling a flat, house or plot in Chennai from abroad."
       introHeading="How much TDS is deducted when an NRI sells property in India?"
       intro="An NRI selling Indian property usually faces TDS on the full sale price, not the profit. For property held over 24 months, that means 12.5% plus surcharge and cess on the whole consideration, unless the seller first obtains a lower or nil deduction certificate. The certificate lets the buyer deduct tax on the estimated gain."
-      citation={{ label: "TRACES — Form 13 lower or nil deduction certificate FAQs", href: "https://traces61contents.tdscpc.gov.in/en/faq-taxpayer-Form-13.html" }}
+      citation={{ label: "TRACES: Form 13 lower or nil deduction certificate FAQs", href: "https://traces61contents.tdscpc.gov.in/en/faq-taxpayer-Form-13.html" }}
       subServicesHeading="What tax work does an NRI property sale in Chennai involve?"
       subServices={[
         { name: "Capital Gains Computation", text: "Working out the holding period, cost of acquisition (including the previous owner’s cost for inherited property), improvement costs and the gain, and comparing the sale price with the guideline value." },

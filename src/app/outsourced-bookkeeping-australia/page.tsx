@@ -34,7 +34,7 @@ export default function Page() {
       subhead="Bookkeeping and reconciliations in Xero, MYOB or QuickBooks Online, payroll and super liabilities reconciled every pay run under Payday Super, and a clean 30 June handover for your accountant. BAS stays with your registered BAS or tax agent, as the Tax Agent Services Act requires."
       introHeading="How does outsourced bookkeeping work for an Australian business?"
       intro="You add our team as users in your Xero, MYOB or QuickBooks Online file and keep receipts flowing through Dext or Hubdoc. Each week or month we code bank feeds, reconcile bank, card and merchant accounts, keep debtors and creditors current, and reconcile PAYG withholding and super payable after each pay run. Because we are not registered with the Tax Practitioners Board, your registered BAS agent or tax agent reviews and lodges BAS, working from books that are already reconciled."
-      citation={{ label: "Tax Practitioners Board — Outsourcing and offshoring", href: "https://www.tpb.gov.au/outsourcing-and-offshoring" }}
+      citation={{ label: "Tax Practitioners Board: Outsourcing and offshoring", href: "https://www.tpb.gov.au/outsourcing-and-offshoring" }}
       keyFacts={[
         { label: "Who it is for", value: "Australian sole traders, partnerships, companies and trusts, and the BAS or tax agents who look after them." },
         { label: "Software", value: "Xero, MYOB or QuickBooks Online, with Dext or Hubdoc for receipts. You keep the subscription and the file." },

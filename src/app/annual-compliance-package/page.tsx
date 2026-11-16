@@ -25,12 +25,12 @@ const linkClass = "font-medium text-royal-violet underline underline-offset-2";
 const CALENDAR = [
   { when: "Every month", company: "GST returns (GSTR-1 by the 11th, GSTR-3B by the 20th); TDS deposit by the 7th", llp: "Same, if registered for GST or liable to deduct TDS" },
   { when: "Every quarter", company: "TDS statements: 31 July, 31 October, 31 January, 31 May", llp: "Same" },
-  { when: "30 May", company: "—", llp: "Form 11 (annual return)" },
+  { when: "30 May", company: "-", llp: "Form 11 (annual return)" },
   { when: "30 June", company: "DIR-3 KYC Web, in the year it falls due (once every three financial years)", llp: "DIR-3 KYC Web for designated partners, in the year it falls due" },
   { when: "30 September", company: "Last date for the AGM (within six months of year end); tax audit report where applicable", llp: "Tax audit report where applicable" },
   { when: "30 October", company: "AOC-4 within 30 days of the AGM", llp: "Form 8 (statement of account and solvency)" },
   { when: "31 October", company: "Income tax return (companies)", llp: "Income tax return, if accounts are audited" },
-  { when: "29 November", company: "MGT-7 or MGT-7A within 60 days of the AGM", llp: "—" },
+  { when: "29 November", company: "MGT-7 or MGT-7A within 60 days of the AGM", llp: "-" },
   { when: "31 December", company: "GSTR-9 and GSTR-9C, where applicable", llp: "GSTR-9 and GSTR-9C, where applicable" },
 ];
 

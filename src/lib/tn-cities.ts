@@ -1,5 +1,5 @@
 // Tamil Nadu city pages for company registration (served online from the
-// Anna Nagar office — no branch addresses). Drives the hub links and sitemap.
+// Anna Nagar office, no branch addresses). Drives the hub links and sitemap.
 export const TN_CITY_PAGES: { slug: string; city: string }[] = [
   { slug: "company-registration-coimbatore", city: "Coimbatore" },
   { slug: "company-registration-madurai", city: "Madurai" },
