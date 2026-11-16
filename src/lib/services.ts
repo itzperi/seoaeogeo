@@ -4,7 +4,7 @@ export type ServiceSummary = {
   shortDescription: string;
 };
 
-// Central catalog — drives the homepage grid, footer, and sitemap.
+// Central catalog: drives the homepage grid, footer, and sitemap.
 // Every slug below maps 1:1 to a page under src/app/<slug>/page.tsx with its
 // own unique <title> and meta description (fixes the site-wide duplicate
 // title/meta issue flagged as Critical in the SEO audit).
@@ -13,13 +13,13 @@ export const SERVICES: ServiceSummary[] = [
     slug: "private-limited-company-incorporation-chennai",
     name: "Private Limited Company Incorporation",
     shortDescription:
-      "End-to-end SPICe+ incorporation for Private Limited Companies in Chennai — documentation, MCA filing, and post-incorporation compliance.",
+      "End-to-end SPICe+ incorporation for Private Limited Companies in Chennai: documentation, MCA filing, and post-incorporation compliance.",
   },
   {
     slug: "llp-registration-chennai",
     name: "LLP Registration",
     shortDescription:
-      "Limited Liability Partnership registration in Chennai — DPIN, name reservation, FiLLiP filing, and LLP Agreement drafting.",
+      "Limited Liability Partnership registration in Chennai: DPIN, name reservation, FiLLiP filing, and LLP Agreement drafting.",
   },
   {
     slug: "company-registration-chennai",
@@ -43,7 +43,7 @@ export const SERVICES: ServiceSummary[] = [
     slug: "gst-registration-chennai",
     name: "GST Registration",
     shortDescription:
-      "New GST registration for businesses and professionals in Chennai — documentation, ARN tracking, and certificate issuance.",
+      "New GST registration for businesses and professionals in Chennai: documentation, ARN tracking, and certificate issuance.",
   },
   {
     slug: "audit-and-assurance",
@@ -55,7 +55,7 @@ export const SERVICES: ServiceSummary[] = [
     slug: "statutory-audit-chennai",
     name: "Statutory Audit",
     shortDescription:
-      "Companies Act statutory audit for Chennai businesses — independent, evidence-based financial statement audit.",
+      "Companies Act statutory audit for Chennai businesses: independent, evidence-based financial statement audit.",
   },
   {
     slug: "tax-audit-chennai",
@@ -97,7 +97,7 @@ export const SERVICES: ServiceSummary[] = [
     slug: "virtual-cfo-services",
     name: "Virtual CFO Services",
     shortDescription:
-      "Outsourced financial leadership — MIS, budgeting, fundraising support, and board-ready reporting for growing businesses.",
+      "Outsourced financial leadership: MIS, budgeting, fundraising support, and board-ready reporting for growing businesses.",
   },
   {
     slug: "management-consultancy",
@@ -133,7 +133,7 @@ export const SERVICES: ServiceSummary[] = [
     slug: "nri-tax-services",
     name: "NRI Tax Services",
     shortDescription:
-      "Indian tax filing, DTAA claims, property-sale TDS and repatriation for NRIs in the UAE, UK, USA and elsewhere — handled remotely from Chennai.",
+      "Indian tax filing, DTAA claims, property-sale TDS and repatriation for NRIs in the UAE, UK, USA and elsewhere, handled remotely from Chennai.",
   },
   {
     slug: "opc-registration-chennai",
@@ -384,32 +384,32 @@ export const SPECIALIST_SERVICES: ServiceSummary[] = [
   },
   {
     slug: "nri-property-sale-tds-chennai",
-    name: "NRI Property Sale — TDS & Repatriation",
+    name: "NRI Property Sale: TDS & Repatriation",
     shortDescription: "Lower-deduction certificates, capital gains, Form 15CA/15CB and repatriation for NRIs selling property in Chennai.",
   },
   {
     slug: "nri-tax-services-uae",
-    name: "NRI Tax Services — UAE",
+    name: "NRI Tax Services: UAE",
     shortDescription: "Indian ITR, DTAA claims and deemed-residency checks for NRIs living in Dubai, Abu Dhabi and the wider UAE.",
   },
   {
     slug: "nri-tax-services-uk",
-    name: "NRI Tax Services — UK",
+    name: "NRI Tax Services: UK",
     shortDescription: "Indian tax filing and India–UK DTAA support, with the figures your UK accountant needs for HMRC.",
   },
   {
     slug: "nri-tax-services-usa",
-    name: "NRI Tax Services — USA",
+    name: "NRI Tax Services: USA",
     shortDescription: "Indian tax filing and India–US DTAA support, with account data for your US CPA’s FBAR and FATCA reporting.",
   },
   {
     slug: "nri-tax-services-gulf",
-    name: "NRI Tax Services — Gulf",
+    name: "NRI Tax Services: Gulf",
     shortDescription: "Indian tax for NRIs in Saudi Arabia, Qatar, Oman, Kuwait and Bahrain: residency, NRO income, Chennai property and DTAA relief.",
   },
   {
     slug: "nri-tax-services-singapore",
-    name: "NRI Tax Services — Singapore",
+    name: "NRI Tax Services: Singapore",
     shortDescription: "Indian tax for NRIs in Singapore: India–Singapore DTAA, Certificate of Residence, RSUs and returning to Chennai.",
   },
 ];

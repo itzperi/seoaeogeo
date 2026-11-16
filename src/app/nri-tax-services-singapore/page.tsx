@@ -90,7 +90,7 @@ export default function Page() {
     <ServicePageTemplate
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="NRI Tax Advisory"
-      crumbLabel="NRI Tax Services — Singapore"
+      crumbLabel="NRI Tax Services Singapore"
       crumbHref={slug}
       parentCrumb={{ name: "NRI Tax Services", href: "/nri-tax-services" }}
       eyebrow="NRI Clients · Singapore"

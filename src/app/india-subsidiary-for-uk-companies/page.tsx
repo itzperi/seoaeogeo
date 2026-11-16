@@ -6,9 +6,9 @@ import HighTicketSections, { type Audience } from "@/components/HighTicketSectio
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-uk-companies";
-const title = "India Subsidiary for UK Companies: Setup, FDI and Tax";
+const title = "India Subsidiary for UK Companies: Benefits, Setup and Tax";
 const description =
-  "Set up an Indian subsidiary from the UK: Companies House documents with FCDO apostille, resident director, FDI route, FC-GPR, India–UK tax treaty and CETA.";
+  "Benefits of an Indian subsidiary for a UK company and how to set one up: FCDO apostille, resident director, FDI route, FC-GPR and the India-UK tax treaty.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -71,7 +71,7 @@ const UK_ITEMS = [
 ];
 
 const UK_INDIA = [
-  ["India–UK tax treaty", "Double Taxation Avoidance Convention covering taxes on income and capital gains, amended by a protocol signed in 2012.", "Withholding rates on dividends, interest, royalties and fees, tax residence, permanent establishment and relief from double taxation."],
+  ["India-UK tax treaty", "Double Taxation Avoidance Convention covering taxes on income and capital gains, amended by a protocol signed in 2012.", "Withholding rates on dividends, interest, royalties and fees, tax residence, permanent establishment and relief from double taxation."],
   ["Comprehensive Economic and Trade Agreement (CETA)", "Signed on 24 July 2025 and in force from 15 July 2026, according to the UK government.", "Mainly tariffs on goods, services market access and business mobility; it does not replace the FDI Policy or Indian tax rules."],
   ["Double Contributions Convention", "Social security agreement that entered into force alongside CETA on 15 July 2026.", "Relevant if UK employees are posted to the Indian subsidiary, as it addresses paying social security contributions in both countries."],
 ];
@@ -101,14 +101,14 @@ export default function Page() {
       parentCrumb={{ name: "Company Setup in India for Foreign Businesses", href: "/company-registration-india-for-foreigners" }}
       eyebrow="India Entry · United Kingdom Parent Companies"
       h1="Set Up a Subsidiary in India from the UK"
-      subhead="How a UK limited company incorporates a wholly owned Indian private limited company: Companies House documents and the FCDO apostille, the resident director rule, the FDI automatic route, FC-GPR, the India–UK tax treaty and trade agreement, and points for your UK adviser."
+      subhead="How a UK limited company incorporates a wholly owned Indian private limited company: Companies House documents and the FCDO apostille, the resident director rule, the FDI automatic route, FC-GPR, the India-UK tax treaty and trade agreement, and points for your UK adviser."
       keyFacts={[
         { label: "Usual structure", value: "UK Ltd parent holds all or nearly all shares of an Indian private limited company, with a nominee as the second shareholder." },
         { label: "Directors", value: "At least two; at least one must have stayed in India for 182 days during the financial year (section 149(3), Companies Act, 2013)." },
         { label: "Document legalisation", value: "Apostille issued by the FCDO Legalisation Office; the UK and India are both parties to the Hague Apostille Convention." },
         { label: "FDI approval", value: "None in automatic-route sectors; check the FDI Policy for your activity first." },
         { label: "RBI reporting", value: "Form FC-GPR within 30 days of share allotment, then the annual FLA return by 15 July." },
-        { label: "Treaties", value: "India–UK tax treaty; trade agreement (CETA) and social security convention in force from 15 July 2026." },
+        { label: "Treaties", value: "India-UK tax treaty; trade agreement (CETA) and social security convention in force from 15 July 2026." },
       ]}
       introHeading="Can a UK company set up a wholly owned subsidiary in India?"
       intro="Yes. A UK limited company can own 100% of an Indian private limited company under the automatic route in most sectors, without prior government approval. It needs a nominee as second shareholder, two directors including one resident in India for 182 days, documents apostilled by the FCDO Legalisation Office, and an FC-GPR filing within 30 days of allotment."
@@ -134,13 +134,15 @@ export default function Page() {
         ],
       }}
       faqs={[
+        { question: "What are the benefits of an Indian subsidiary for a UK company?", answer: "The main benefits are limited liability, because the Indian business's contracts and debts sit in a separate Indian company; the ability to hire staff directly on Indian payroll; local contracting, banking, GST registration and invoicing; and access to the India-UK tax treaty on payments to the parent. In return, the subsidiary carries annual audit, ROC, tax, transfer pricing and FEMA obligations." },
+        { question: "When is an EOR or a branch office a better fit than a subsidiary?", answer: "An employer of record can suit a small team while you test the market, as long as the staff do not sign contracts or sell for the UK company. A branch office needs RBI approval through an authorised dealer bank, can carry on only the activities permitted to branches and does not ring-fence liability. A subsidiary fits a growing team, Indian customers or direct control of contracts and banking." },
         { question: "Can a UK limited company own 100% of an Indian company?", answer: "Yes. Where the FDI Policy allows 100% foreign investment under the automatic route, a UK Ltd can hold the whole economic interest in an Indian private limited company. A private company needs two shareholders, so a nominee, often a UK director or another group company, holds one share on behalf of the parent." },
         { question: "How are UK documents apostilled for use in India?", answer: "The UK and India are both parties to the Hague Apostille Convention, so UK documents are legalised by an apostille from the FCDO Legalisation Office instead of attestation by the Indian High Commission. Documents such as board resolutions and passport copies are first certified by a UK notary or solicitor, then sent for the apostille." },
         { question: "Does the Indian subsidiary need a director who lives in India?", answer: "Yes. Section 149(3) of the Companies Act, 2013 requires at least one director who has stayed in India for 182 days or more during the financial year. The UK directors can sit on the board from the UK and sign electronically, while the resident director is usually a senior India employee or an independent professional." },
-        { question: "Does the India–UK trade agreement change how a subsidiary is set up?", answer: "No. The Comprehensive Economic and Trade Agreement, in force from 15 July 2026, mainly covers tariffs, services market access and business mobility. Setting up a subsidiary still follows the FDI Policy, the Companies Act and FEMA reporting. The agreement may still matter if your Indian company trades goods with the UK." },
-        { question: "How does the India–UK tax treaty affect payments to the parent?", answer: "The India–UK Double Taxation Avoidance Convention can reduce Indian withholding tax on dividends, interest, royalties and fees paid to the UK parent, subject to conditions. The parent usually needs a UK certificate of residence from HMRC and the prescribed declarations in India to claim the treaty rate." },
+        { question: "Does the India-UK trade agreement change how a subsidiary is set up?", answer: "No. The Comprehensive Economic and Trade Agreement, in force from 15 July 2026, mainly covers tariffs, services market access and business mobility. Setting up a subsidiary still follows the FDI Policy, the Companies Act and FEMA reporting. The agreement may still matter if your Indian company trades goods with the UK." },
+        { question: "How does the India-UK tax treaty affect payments to the parent?", answer: "The India-UK Double Taxation Avoidance Convention can reduce Indian withholding tax on dividends, interest, royalties and fees paid to the UK parent, subject to conditions. The parent usually needs a UK certificate of residence from HMRC and the prescribed declarations in India to claim the treaty rate." },
         { question: "What UK tax points should we raise with our UK adviser?", answer: "Common items are the UK controlled foreign company rules, whether dividends from India qualify for the UK dividend exemption, relief for Indian withholding tax, UK transfer pricing on intercompany services and group reporting. We do not advise on UK tax, but we provide the Indian figures and documents your adviser needs." },
-        { question: "What if we post UK employees to the Indian subsidiary?", answer: "Seconded staff raise Indian income tax on salary for work done in India, possible permanent establishment questions for the UK company, and social security. The India–UK Double Contributions Convention, in force from 15 July 2026, addresses contributions in both countries. Recharge arrangements also need transfer pricing support." },
+        { question: "What if we post UK employees to the Indian subsidiary?", answer: "Seconded staff raise Indian income tax on salary for work done in India, possible permanent establishment questions for the UK company, and social security. The India-UK Double Contributions Convention, in force from 15 July 2026, addresses contributions in both countries. Recharge arrangements also need transfer pricing support." },
         { question: "How do you work with UK clients across time zones?", answer: "India Standard Time is 4.5 hours ahead of the UK during British Summer Time and 5.5 hours ahead in winter. This leaves a good overlap from the UK morning to the Indian late afternoon, so we hold calls in UK business hours and agree a monthly reporting calendar with your finance team." },
       ]}
       relatedQuestions={[
@@ -150,6 +152,62 @@ export default function Page() {
       ]}
       relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "virtual-cfo-services"]}
     >
+      <h2 className="mt-14 text-2xl text-obsidian">What are the benefits of an Indian subsidiary for a UK company?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        An Indian private limited company is a separate legal person under the Companies Act, 2013. For a UK parent, the
+        benefits are mostly practical, and each one comes with compliance work that is best planned before incorporation.
+      </p>
+      <ul className="mt-4 max-w-2xl list-disc space-y-2 pl-5 leading-relaxed text-slate">
+        <li>
+          <span className="font-medium text-obsidian">Limited liability ring-fencing.</span> Contracts, employees, leases and
+          debts of the Indian business sit with the Indian company. The UK parent&apos;s exposure is generally limited to the
+          capital it has invested, unless it gives guarantees, letters of comfort or other support to Indian banks or
+          landlords.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Hiring employees directly.</span> The subsidiary can employ staff in
+          its own name, run Indian payroll, deduct TDS on salaries and register under the labour laws that apply to it. Staff
+          have an Indian employer, and the UK parent directs the work through the subsidiary&apos;s own management.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Contracting and invoicing locally.</span> The company can sign
+          contracts with Indian customers and suppliers, hold an Indian bank account, register for GST and invoice in
+          rupees. Services supplied to the UK parent are invoiced under an intercompany agreement and can qualify as an
+          export of services for GST where the conditions are met.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">The India-UK tax treaty.</span> The subsidiary is taxed in India on
+          its own profits. The India-UK Double Taxation Avoidance Convention can reduce Indian withholding tax on dividends,
+          interest, royalties and fees paid to the parent, subject to conditions such as a UK certificate of residence. UK
+          staff who visit or work in India can still raise permanent establishment questions for the parent, so their roles
+          are reviewed as part of the set-up.
+        </li>
+      </ul>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        A subsidiary is not always the right first step. If you need only a few people in India, or are still testing the
+        market, an employer of record can employ staff for you without an Indian entity, provided they do not conclude
+        contracts or run sales for the UK company. A branch office is an extension of the UK company rather than a separate
+        company, so it does not ring-fence liability; it needs RBI approval through an authorised dealer bank and can carry
+        on only the activities permitted to branches. Our{" "}
+        <Link href="/eor-vs-subsidiary-india" className={linkClass}>
+          comparison of an EOR, a subsidiary and a branch
+        </Link>{" "}
+        sets out when each one fits.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        The benefits come with obligations that run every year: a resident director, a statutory audit, ROC filings in
+        AOC-4 and MGT-7, the income tax return with transfer pricing documentation for dealings with the parent, GST and
+        TDS returns, and FEMA reporting, starting with FC-GPR on the first allotment and the FLA return by 15 July. Our{" "}
+        <Link href="/india-subsidiary-compliance-cfo" className={linkClass}>
+          India subsidiary compliance and CFO service
+        </Link>{" "}
+        runs this calendar, and our{" "}
+        <Link href="/fema-rbi-compliance" className={linkClass}>
+          FEMA and RBI compliance
+        </Link>{" "}
+        page lists each RBI filing and its due date.
+      </p>
+
       <CrossBorderSteps country="uk" service="an India subsidiary for a UK company" />
       <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />
 
@@ -181,7 +239,7 @@ export default function Page() {
         government approval in every sector.
       </p>
 
-      <h2 className="mt-14 text-2xl text-obsidian">Which India–UK agreements matter for a new subsidiary?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">Which India-UK agreements matter for a new subsidiary?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Three agreements between India and the UK are relevant in different ways. Only the tax treaty affects the
         subsidiary&apos;s routine compliance; the trade agreement and social security convention matter if you trade goods
@@ -209,7 +267,7 @@ export default function Page() {
         prepares this documentation alongside the statutory audit.
       </p>
 
-      <h2 className="mt-14 text-2xl text-obsidian">How does a UK–India working model run day to day?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">How does a UK-India working model run day to day?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         India is 4.5 hours ahead of the UK in summer and 5.5 hours ahead in winter, so the UK morning overlaps with the Indian
         afternoon. Our team in Anna Nagar, Chennai works with UK clients remotely: documents move through a secure portal,

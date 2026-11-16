@@ -53,7 +53,7 @@ export default function Page() {
     <ServicePageTemplate
       pageUrl={`${SITE_URL}/nri-tax-services-uae`}
       serviceType="NRI Tax Advisory"
-      crumbLabel="NRI Tax Services — UAE"
+      crumbLabel="NRI Tax Services UAE"
       crumbHref="/nri-tax-services-uae"
       eyebrow="NRI Clients · UAE & Gulf"
       h1="India Tax for NRIs in the UAE: ITR, DTAA, NRE/NRO & Property TDS"

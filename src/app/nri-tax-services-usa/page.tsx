@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
@@ -10,7 +11,7 @@ const td = "px-4 py-3 align-top text-slate";
 const DOCUMENTS = [
   { doc: "PAN, and Aadhaar if you hold one", why: "Login to the Indian e-filing portal and e-verification of the return.", source: "Your own records" },
   { doc: "Passport pages or travel record for the year", why: "Counting days in India for the residential status tests.", source: "Passport stamps or airline records" },
-  { doc: "US residency certification (Form 6166)", why: "Needed only if relief under the India–US DTAA is claimed in India, together with Form 41 (Form 10F for years under the 1961 Act).", source: "IRS, on application using Form 8802" },
+  { doc: "US residency certification (Form 6166)", why: "Needed only if relief under the India-US DTAA is claimed in India, together with Form 41 (Form 10F for years under the 1961 Act).", source: "IRS, on application using Form 8802" },
   { doc: "NRO, NRE and FCNR statements and interest certificates", why: "Reporting taxable NRO interest and claiming TDS credit; maximum and 31 December balances for your CPA's FBAR and Form 8938 work.", source: "Your Indian banks" },
   { doc: "Rent agreement, rent received and tenant TDS certificates", why: "Computing rental income and claiming credit for tax the tenant deducted.", source: "Your tenant or the family member who collects rent" },
   { doc: "Capital gains statements and mutual fund holdings", why: "Gains on Indian shares and mutual funds, with purchase dates, units and values your CPA may need for US reporting.", source: "Your broker, and the CAMS or KFintech consolidated statement" },
@@ -39,15 +40,15 @@ const CALENDAR = [
 ];
 
 export const metadata: Metadata = {
-  title: { absolute: "NRI Tax Services for US Residents: India ITR & DTAA" },
+  title: { absolute: "NRI Tax Filing Services for NRIs in the USA: ITR and DTAA" },
   description:
-    "Indian ITR filing for NRIs in the USA, India–US DTAA positions, and Indian tax and account records your US CPA needs for Form 1116, FBAR and Form 8938.",
+    "NRI tax filing services for NRIs in the USA: Indian ITR, TDS on NRO interest, Form 15CA/15CB and DTAA relief, plus account records your US CPA needs for FBAR.",
   alternates: { canonical: "/nri-tax-services-usa" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "NRI Tax Services for US Residents: India ITR & DTAA",
+    title: "NRI Tax Filing Services for NRIs in the USA: ITR and DTAA",
     description:
-      "Indian return filing and the Indian tax and account records your US CPA needs, for NRIs living in the United States.",
+      "NRI tax filing services for NRIs in the USA: Indian ITR, TDS on NRO interest, Form 15CA/15CB and DTAA relief, plus account records your US CPA needs for FBAR.",
     url: "/nri-tax-services-usa",
   },
 };
@@ -57,14 +58,14 @@ export default function Page() {
     <ServicePageTemplate
       pageUrl={`${SITE_URL}/nri-tax-services-usa`}
       serviceType="NRI Tax Advisory"
-      crumbLabel="NRI Tax Services — USA"
+      crumbLabel="NRI Tax Services USA"
       crumbHref="/nri-tax-services-usa"
       eyebrow="NRI Clients · United States"
       h1="India Tax for NRIs in the USA: ITR, DTAA, FBAR/FATCA Touchpoints"
-      subhead="Indian income tax returns, India–US DTAA positions and year-end Indian account records for NRIs in California, New Jersey, Texas and across the US, prepared so your US CPA has what they need for foreign tax credit, FBAR and FATCA reporting."
+      subhead="Indian income tax returns, India-US DTAA positions and year-end Indian account records for NRIs in California, New Jersey, Texas and across the US, prepared so your US CPA has what they need for foreign tax credit, FBAR and FATCA reporting."
       introHeading="Do NRIs living in the USA have to file taxes in both India and the US?"
       intro="Often yes. If you have Indian rent, NRO interest, dividends or capital gains above the basic exemption, or tax to reclaim, you file an Indian return. If you are a US citizen, green-card holder or otherwise US tax resident, the same income also goes on your US return, where Indian tax paid can usually be claimed as a foreign tax credit on Form 1116. We handle the Indian return and supply your US CPA with the Indian figures; the US return stays with them."
-      citation={{ label: "IRS — Report of Foreign Bank and Financial Accounts (FBAR)", href: "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" }}
+      citation={{ label: "IRS: Report of Foreign Bank and Financial Accounts (FBAR)", href: "https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar" }}
       keyFacts={[
         { label: "Tax years", value: "India: 1 April to 31 March. US: calendar year." },
         { label: "Indian return due (tax year 2026-27)", value: "31 July 2027 for individuals without business income and not subject to audit" },
@@ -76,7 +77,7 @@ export default function Page() {
         { name: "Indian ITR Filing", text: "Filing your Indian return for rent, NRO interest, dividends and capital gains, with TDS reconciled against Form 26AS and the Annual Information Statement." },
         { name: "Foreign Tax Credit Support", text: "A summary of Indian tax paid by income type, with Form 16A certificates and the filed return, so your US CPA can prepare Form 1116 from documented figures." },
         { name: "Indian Account Balance Records", text: "A list of every Indian bank, demat and mutual fund account with the highest balance during the US calendar year and the 31 December balance, for your CPA’s FBAR and Form 8938 work." },
-        { name: "Calendar-Year Income Schedules", text: "Splitting Indian income between the Indian April–March year and the US January–December year, using dated bank and broker statements." },
+        { name: "Calendar-Year Income Schedules", text: "Splitting Indian income between the Indian April to March year and the US January to December year, using dated bank and broker statements." },
         { name: "NRE, NRO and FCNR Review", text: "Confirming the Indian treatment of each account and flagging that interest exempt in India, such as NRE and FCNR interest, is generally still reportable in the US." },
         { name: "Property Sale and Repatriation", text: "Lower TDS certificate, capital gains computation and Form 15CA/15CB when you sell Indian property, plus the cost and sale figures your CPA needs for US reporting." },
       ]}
@@ -85,16 +86,18 @@ export default function Page() {
         steps: [
           { name: "Gather Indian statements after 31 March", text: "Collect NRO, NRE and FCNR statements, interest certificates, the mutual fund consolidated account statement, demat holdings, rent records and any property sale papers for the Indian financial year." },
           { name: "Confirm residential status", text: "Using your travel dates, we confirm that you are a non-resident for Indian tax for the year, since this decides which Indian income is taxable and which accounts you may hold." },
-          { name: "File the Indian return", text: "We prepare the computation, apply any India–US DTAA position where relevant, and file and e-verify the return, claiming refunds of excess TDS deducted on NRO interest or property sales." },
+          { name: "File the Indian return", text: "We prepare the computation, apply any India-US DTAA position where relevant, and file and e-verify the return, claiming refunds of excess TDS deducted on NRO interest or property sales." },
           { name: "Prepare the US calendar-year schedule", text: "We re-cut Indian income and tax by calendar month so your US CPA can report January to December figures, and list maximum and year-end account balances in rupees for each Indian account." },
           { name: "Hand over to your US CPA", text: "Your US CPA receives the filed return, Form 26AS, Form 16A certificates and the account balance list, and handles Form 1116, FBAR, Form 8938 and any PFIC reporting on the US side." },
         ],
       }}
       faqs={[
+        { question: "What are the Form 8938 thresholds for an NRI living in the US?", answer: "According to the IRS, an unmarried taxpayer living in the US files Form 8938 when specified foreign financial assets exceed USD 50,000 on the last day of the tax year or USD 75,000 at any time during the year. For a married couple filing jointly in the US, the figures are USD 100,000 and USD 150,000. Higher thresholds apply to taxpayers living abroad. Form 8938 is filed in addition to the FBAR, not instead of it." },
+        { question: "Which Indian filings do you handle for an NRI in the US?", answer: "We handle the Indian side: the Indian income tax return, TDS on NRO interest and any refund claim, Form 15CA and 15CB (Forms 145 and 146 under the Income-tax Act, 2025) for repatriation, and DTAA relief documents such as Form 41. We also give your US preparer a list of Indian account balances. The FBAR, Form 8938 and your US return stay with your US preparer." },
         { question: "Do I need to file FBAR for my Indian bank accounts?", answer: "Possibly: a US person generally files FBAR (FinCEN Form 114) when the combined balance of foreign financial accounts exceeds USD 10,000 at any time during the calendar year, and NRE, NRO and FCNR accounts usually count. The FBAR is filed by you or your US CPA, not by us. We prepare the Indian account list with maximum and year-end balances so the figures can be completed accurately." },
         { question: "What is the difference between FBAR and Form 8938?", answer: "Both report foreign assets, but they are separate filings: FBAR goes to FinCEN once foreign accounts exceed USD 10,000 in aggregate, while Form 8938, under FATCA, is filed with your US tax return and applies above higher thresholds that depend on your filing status and whether you live in the US. Your US CPA decides which apply to you; we supply the Indian balances and account details for both." },
         { question: "Are my Indian mutual funds a problem for US tax?", answer: "They can be: Indian mutual funds are commonly treated as PFICs for US tax purposes, which can mean complex reporting and unfavourable US tax treatment. This is a US tax question, so we flag it to you and your US adviser rather than advising on it. On the Indian side, we report the funds’ gains correctly and give your CPA the purchase dates, units and values they will need." },
-        { question: "Can I claim US foreign tax credit for Indian tax paid?", answer: "Usually yes: a US tax resident can generally claim a foreign tax credit on Form 1116 for Indian income tax paid on Indian-source income, subject to US limits, with the India–US DTAA helping decide which country taxes each type of income first. Your CPA handles the US claim. We make sure the Indian tax figure is final and documented by filing the Indian return and matching TDS to Form 26AS." },
+        { question: "Can I claim US foreign tax credit for Indian tax paid?", answer: "Usually yes: a US tax resident can generally claim a foreign tax credit on Form 1116 for Indian income tax paid on Indian-source income, subject to US limits, with the India-US DTAA helping decide which country taxes each type of income first. Your CPA handles the US claim. We make sure the Indian tax figure is final and documented by filing the Indian return and matching TDS to Form 26AS." },
         { question: "Is NRE interest tax-free for a US resident?", answer: "Only in India. NRE and FCNR interest is exempt from Indian tax while you are a non-resident, but US citizens, green-card holders and other US tax residents are taxed on worldwide income, so that interest is generally reportable on the US return with no Indian tax to credit. NRO interest is taxable in both countries, with Indian TDS available as a credit. We provide an annual interest summary for all three." },
         { question: "How do the Indian and US tax years line up?", answer: "They do not: the Indian financial year runs from 1 April to 31 March, while the US tax year is the calendar year, so Indian income for one Indian year spans two US returns and must be split by calendar month. We prepare a calendar-month schedule of Indian income and tax so your US CPA can report the correct January to December figures without estimating from Indian annual totals." },
         { question: "When are the FBAR and Indian return deadlines for 2026-27?", answer: "The FBAR for calendar year 2026 is due on 15 April 2027, with an automatic extension to 15 October 2027 that does not need to be requested. The Indian return for tax year 2026-27, covering April 2026 to March 2027, is due by 31 July 2027 for most NRIs without business income. Your US CPA files the FBAR; we file the Indian return." },
@@ -108,6 +111,48 @@ export default function Page() {
       relatedSlugs={["nri-tax-services", "nri-property-sale-tds-chennai", "nri-tax-services-uk", "nri-tax-services-uae"]}
       relatedPosts={["nri-itr-filing", "capital-gains-tax-property-sale", "advance-tax-deadlines"]}
     >
+      <h2 className="mt-14 text-2xl text-obsidian">Do NRIs in the US have to report Indian bank accounts (FBAR and Form 8938)?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Often yes, if you are a US person for these purposes. US persons, which include US citizens and resident aliens,
+        file a Report of Foreign Bank and Financial Accounts (FBAR) on FinCEN Form 114 when the aggregate value of their
+        foreign financial accounts exceeds USD 10,000 at any time during the calendar year. NRE, NRO and FCNR deposits and
+        other Indian bank accounts usually count towards that total. The FBAR is filed electronically through FinCEN&apos;s
+        BSA E-Filing System, not with the tax return; it is due on 15 April, with an automatic extension to 15 October.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Form 8938, the Statement of Specified Foreign Financial Assets under FATCA, is a separate disclosure filed with the
+        US income tax return. The IRS thresholds depend on filing status and where you live: for an unmarried taxpayer
+        living in the US, more than USD 50,000 on the last day of the tax year or more than USD 75,000 at any time during
+        the year; for a married couple filing jointly in the US, more than USD 100,000 or USD 150,000. Higher thresholds
+        apply to taxpayers living abroad. Indian deposit accounts can be reportable on both forms, and filing Form 8938
+        does not replace the FBAR.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Reporting an account is different from reporting its income. A US tax resident is generally taxed on worldwide
+        income, so NRO interest, NRE and FCNR interest that is exempt in India, Indian rent, dividends and capital gains may
+        also appear on the US return, with Indian tax paid considered for the foreign tax credit. Your US preparer decides
+        what is reported and on which form.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Our role is the Indian side. We file your Indian income tax return, reconcile the TDS deducted on NRO interest
+        against Form 26AS and claim any refund, prepare Form 15CA and 15CB (Forms 145 and 146 under the Income-tax Act,
+        2025) when money is repatriated, and assemble the DTAA relief documents, such as Form 41 with your US residency
+        certificate on Form 6166. We also list each Indian account with its highest and 31 December balance. The FBAR,
+        Form 8938 and the US return stay with your US preparer. See our{" "}
+        <Link href="/form-15ca-15cb-chennai" className={linkClass}>
+          Form 15CA and 15CB service
+        </Link>{" "}
+        and our guide to{" "}
+        <Link href="/blog/nri-itr-filing" className={linkClass}>
+          NRI income tax return filing
+        </Link>
+        . The thresholds above are taken from the IRS{" "}
+        <a href="https://www.irs.gov/businesses/comparison-of-form-8938-and-fbar-requirements" target="_blank" rel="noopener noreferrer" className={linkClass}>
+          comparison of Form 8938 and FBAR requirements
+        </a>
+        .
+      </p>
+
       <h2 className="mt-14 text-2xl text-obsidian">What documents does a US-based NRI need for an Indian tax return?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         The list covers the usual cases; we confirm what applies to you after the first call. The same statements also give

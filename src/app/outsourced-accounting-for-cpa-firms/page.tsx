@@ -4,14 +4,14 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Outsourced Accounting and Tax Prep for US CPA Firms" },
+  title: { absolute: "Outsourcing Tax Preparation to India for US CPA Firms" },
   description:
-    "Offshore bookkeeping, month-end close and 1040, 1065 and 1120-S tax prep support for US CPA firms, prepared in your software for your review and signature.",
+    "Outsourcing tax preparation to India for US CPA firms: 1040, 1065 and 1120-S returns prepared in your tax software for your CPA's review, signature and filing.",
   alternates: { canonical: "/outsourced-accounting-for-cpa-firms" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
-    title: "Outsourced Accounting & Tax Prep Support for US CPA Firms",
-    description: "Bookkeeping, month-end close and tax return preparation support for US CPA firms, from a Chartered Accountancy firm in Chennai.",
+    title: "Outsourcing Tax Preparation to India for US CPA Firms",
+    description: "1040, 1065 and 1120-S preparation, bookkeeping and month-end close support for US CPA firms, from a Chartered Accountancy firm in Chennai.",
     url: "/outsourced-accounting-for-cpa-firms",
   },
 };
@@ -149,6 +149,9 @@ export default function Page() {
         { question: "Which software do you work in?", answer: "For bookkeeping we work in QuickBooks Online and Xero, and for tax preparation we work in Drake, Lacerte, UltraTax CS, CCH Axcess Tax and ProConnect. These are platforms we can work in using your firm's licences and environment; we do not claim vendor certifications. Your data, templates and diagnostics stay consistent with how your in-house staff work. Other packages can be discussed at scoping." },
         { question: "What happens in the first 90 days of an engagement?", answer: "The first 30 days cover agreements, your Section 7216 consent process, named logins and a small trial batch. Days 31 to 60 increase volume in steps while your reviewers' recurring comments are built into a firm-specific checklist. By days 61 to 90 the daily handover is settled, peak-season capacity is planned and access rights are reviewed. Timing depends on your volumes and how quickly access is granted." },
         { question: "Do you also support UK accountancy practices?", answer: "Yes, we support UK practices separately, because their work is built around VAT returns, Making Tax Digital, Companies House year-end accounts, self-assessment and UK GDPR rather than US returns. The software, deadlines and data protection rules are different enough that we run it as its own service. Details are on our page for UK accountancy practices." },
+        { question: "Do you file US tax returns directly for individuals?", answer: "No. We prepare 1040, 1065 and 1120-S returns only as offshore support for US CPA firms, in the firm's own tax software, for the firm's review and signature. We are a Chartered Accountancy firm in India, not a US CPA firm or an IRS enrolled agent, and we do not sign or e-file US returns. If you are an individual looking for a US tax filing company in India, a US CPA or enrolled agent should prepare and file your return." },
+        { question: "Can you prepare 1120-S returns for our S corporation clients?", answer: "Yes. From the year-end trial balance and prior-year return, we prepare the 1120-S in your tax software with the book-to-tax adjustments, shareholder K-1s and supporting workpapers. Items that need judgment, such as distributions, shareholder loans and officer compensation, are flagged in the review notes. Your CPA or EA reviews the return, signs it and files it." },
+        { question: "Do IRS rules allow a CPA firm to outsource tax preparation to India?", answer: "Yes, provided the rules on taxpayer information are followed. Treasury regulations under Section 7216 require the taxpayer's prior written consent before a US preparer discloses tax return information to a preparer outside the US, and Rev. Proc. 2013-14 sets the wording that consent must contain, with extra conditions where Social Security numbers are shared. Your firm obtains the consent and stays responsible for the return." },
       ]}
       relatedQuestions={[
         { question: "Do you offer outsourced bookkeeping for UK accountancy practices?", href: "/outsourced-accounting-for-uk-accountants" },
@@ -157,6 +160,74 @@ export default function Page() {
       ]}
       relatedSlugs={["outsourced-accounting-for-uk-accountants", "bookkeeping-services-chennai", "nri-tax-services-usa"]}
     >
+      <h2 className="mt-14 text-2xl text-obsidian">What does outsourcing tax preparation to India look like for a US CPA firm?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Outsourcing tax preparation to India means a preparer in our Chennai office works on your firm&apos;s returns inside
+        your firm&apos;s own systems, while your CPAs keep the review, the signature and the client. We are a Chartered
+        Accountancy firm in India, not a US CPA firm or an IRS enrolled agent. We do not sign US returns, and we do not
+        prepare or file US returns directly for individuals or businesses: every return we work on is a draft for a US CPA
+        firm. A typical season runs like this.
+      </p>
+      <ul className="mt-4 max-w-2xl list-disc space-y-2 pl-5 text-slate">
+        <li>
+          <span className="font-medium text-obsidian">Access to your software:</span> your firm gives a named login to its
+          remote desktop, hosted environment or tax software, such as Drake, UltraTax CS, Lacerte, CCH Axcess Tax or
+          ProConnect, limited to the clients in scope. Returns are prepared where your staff would prepare them, so
+          nothing is re-keyed and client files stay on your infrastructure.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Source documents and workpapers:</span> client documents arrive
+          through your portal or document system. We prepare the return, tie it out to the source documents and save
+          workpapers under your naming convention, with assumptions and missing items listed.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Review notes:</span> your reviewer leaves notes on the return in your
+          workflow tool. We clear them, answer questions in writing and add recurring points to a firm-specific checklist,
+          so the same note does not come back on the next return.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Turnaround in the US season:</span> because India is 9.5 to 10.5
+          hours ahead of US Eastern time, work assigned at the end of your day can be prepared during the India day and be
+          ready for review the next morning. Turnaround for each return type is agreed in writing at scoping
+          and revisited before busy season and extension season, not promised on this page.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Consent and safeguards:</span> before a client&apos;s tax
+          information reaches us, your firm obtains that taxpayer&apos;s Section 7216 consent, including the statement
+          required for disclosure to a preparer outside the US. Rev. Proc. 2013-14 adds conditions for sharing Social
+          Security numbers, so your firm decides whether they are shared or masked. We work to your written information
+          security plan and the safeguards in IRS Publication 4557.
+        </li>
+      </ul>
+
+      <h2 className="mt-14 text-2xl text-obsidian">Which returns can be prepared offshore: 1040, 1065, 1120-S?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Individual, partnership and S corporation returns all suit offshore preparation, because most of the hours go
+        into gathering, entering and reconciling data. The judgment calls and the signature stay with your firm.
+      </p>
+      <ul className="mt-4 max-w-2xl list-disc space-y-2 pl-5 text-slate">
+        <li>
+          <span className="font-medium text-obsidian">Form 1040:</span> we enter W-2s, 1099s, K-1s received and brokerage
+          statements from the client&apos;s documents and organiser, prepare the supporting schedules, compare the result
+          with the prior-year return and list missing documents and unusual movements for your reviewer.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Form 1065:</span> from the year-end trial balance we prepare the
+          book-to-tax reconciliation, the balance sheet and capital account schedules, and draft partner K-1s, with a
+          workpaper showing how each partner&apos;s share was allocated under the agreement you provide.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Form 1120-S:</span> for firms looking for 1120-S outsourcing, we
+          prepare the return from the trial balance with book-to-tax adjustments, shareholder K-1s and supporting
+          schedules, and flag distributions, shareholder loans and officer compensation for review.
+        </li>
+      </ul>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        What stays with your CPA: the positions taken and elections made on each return, the engagement letter, all
+        communication with your clients unless you ask us to draft a query for you to send, the final review, the
+        signature as paid preparer and the e-filing. We do not represent your clients before the IRS.
+      </p>
+
       <h2 className="mt-14 text-2xl text-obsidian">Which engagement model suits a US CPA firm?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Most firms choose between three models. The difference is how capacity is reserved, not the quality of the work or

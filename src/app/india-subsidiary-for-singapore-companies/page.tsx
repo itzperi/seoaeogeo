@@ -63,7 +63,7 @@ const DOCUMENTS = [
 ];
 
 const SG_INDIA = [
-  ["India–Singapore Double Taxation Avoidance Agreement", "Income tax treaty between India and Singapore, with later amendments.", "Indian withholding on dividends, interest, royalties and fees paid to the parent, subject to residence and beneficial ownership conditions."],
+  ["India-Singapore Double Taxation Avoidance Agreement", "Income tax treaty between India and Singapore, with later amendments.", "Indian withholding on dividends, interest, royalties and fees paid to the parent, subject to residence and beneficial ownership conditions."],
   ["Comprehensive Economic Cooperation Agreement (CECA)", "Trade and economic agreement between India and Singapore, in force since 2005.", "Mainly trade in goods and services; it does not change the FDI Policy or the Companies Act."],
 ];
 
@@ -101,7 +101,7 @@ export default function Page() {
         { label: "Document legalisation", value: "Apostille under the Hague Apostille Convention, to which Singapore has been a party since 2021 and India since 2005." },
         { label: "FDI approval", value: "None under the automatic route in permitted sectors, subject to the sectoral limits in the current FDI policy." },
         { label: "RBI reporting", value: "Form FC-GPR within 30 days of share allotment; annual FLA return by 15 July, subject to the current rules." },
-        { label: "Treaties", value: "India–Singapore Double Taxation Avoidance Agreement and CECA, subject to the current rules." },
+        { label: "Treaties", value: "India-Singapore Double Taxation Avoidance Agreement and CECA, subject to the current rules." },
       ]}
       introHeading="How does a Singapore company set up a wholly owned subsidiary in India?"
       intro="Yes. A Singapore company can own 100% of an Indian private limited company under the automatic route where the sector permits, subject to the sectoral limits in the current FDI policy. It needs two directors, one resident in India, apostilled documents and an FC-GPR filing within 30 days of allotment."
@@ -132,6 +132,8 @@ export default function Page() {
         { question: "Which RBI reports follow a Singapore investment?", answer: "FC-GPR must be filed within 30 days of share allotment, subject to the current rules. Later share transfers are reported on FC-TRS, and the annual FLA return is due by 15 July, subject to the current rules. Remittances of dividends, royalties or fees to the Singapore parent may need Forms 15CA and 15CB. We prepare these filings each year." },
         { question: "How is pricing with the Singapore parent documented?", answer: "Payments between the Indian company and the Singapore parent are international transactions between associated enterprises. They must be priced at arm's length and documented under Indian transfer pricing rules, subject to the current rules. Documentation is prepared each year, and the accountant's report in Form 3CEB is filed with the return where required. Our transfer pricing service prepares this support." },
         { question: "What should a Singapore company check with its Singapore adviser?", answer: "We advise on Indian law only. A Singapore adviser handles Singapore matters, including the tax and corporate consequences of holding the Indian company and the parent's own ACRA filings and tax position. We provide the Indian filings, figures and documents your Singapore adviser needs, and suggest the two advisers coordinate before the investment." },
+        { question: "Can an Indian resident founder put a Singapore holding company above an Indian company?", answer: "Usually not through the founder's own overseas direct investment. Under Schedule III of the Overseas Investment Rules, 2022, a resident individual's ODI must be in an operating foreign entity not engaged in financial services, without a subsidiary or step-down subsidiary where the individual has control. A Singapore company that controls the founder's Indian company does not meet that condition. Founders who are non-residents under FEMA are in a different position, so residence is checked first." },
+        { question: "How is an overseas investment by an Indian resident reported?", answer: "The investor obtains a Unique Identification Number from the RBI and makes all reporting through a designated authorised dealer bank, under the Overseas Investment Regulations, 2022. Rule 19(3) of the Overseas Investment Rules also bars a financial commitment in a foreign entity that has invested into India where it results in more than two layers of subsidiaries. We prepare the Indian-side filings; Singapore work needs a Singapore adviser." },
         { question: "How long does the set-up usually take?", answer: "Typical timelines are indicative, depends on documents, and are not a commitment. Notarisation and apostille in Singapore often take the longest, followed by SPICe+ incorporation, bank account opening and the remittance of capital. FC-GPR follows allotment within 30 days. A complete document pack and prompt signatures are the main factors that shorten the timeline." },
       ]}
       relatedQuestions={[
@@ -198,7 +200,7 @@ export default function Page() {
         prepares this documentation alongside the statutory audit.
       </p>
 
-      <h2 className="mt-14 text-2xl text-obsidian">Which India–Singapore agreements affect the subsidiary?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">Which India-Singapore agreements affect the subsidiary?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Two agreements are relevant to an Indian subsidiary owned from Singapore. The treaty affects routine payments made
         to the parent; the trade agreement matters if your Indian company trades goods or services with Singapore.
@@ -260,10 +262,59 @@ export default function Page() {
         .
       </p>
 
+      <h2 className="mt-14 text-2xl text-obsidian">Can an Indian founder hold an Indian company through a Singapore company?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Indian founders often ask the reverse of this page&apos;s question: can they set up a Singapore company and have it own their Indian company? The answer turns first on
+        whether the founder is a person resident in India under FEMA, which has its own test, separate from residence for
+        income tax. What follows is general information on the Indian rules; every structure has to be checked on its
+        facts.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        A resident&apos;s investment abroad is governed by the Foreign Exchange Management (Overseas Investment) Rules,
+        2022 and the Overseas Investment Regulations, 2022, both dated 22 August 2022, together with the RBI&apos;s
+        Overseas Investment Directions. Acquiring unlisted equity capital of a foreign company is overseas direct
+        investment (ODI). Under Schedule III of the Rules, a resident individual may make ODI only in an operating foreign
+        entity that is not engaged in financial services activity and does not have a subsidiary or step-down subsidiary
+        where the individual has control in the foreign entity, and the investment counts within the Liberalised
+        Remittance Scheme ceiling. The Rules define control broadly, as the right to appoint a majority of the directors
+        or to control management or policy decisions. A Singapore company that controls the founder&apos;s Indian company
+        has that company as its subsidiary, so a resident founder who controls the Singapore company will generally not
+        meet this condition.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        There is also a limit on layers. Rule 19(3) states that no person resident in India shall make a financial
+        commitment in a foreign entity that has invested or invests into India, directly or indirectly, resulting in a
+        structure with more than two layers of subsidiaries. Some regulated financial companies and Government companies
+        are exempt, and the RBI&apos;s Directions add that no further layer may be added to an existing structure that
+        already has two or more layers. A resident making ODI obtains a Unique Identification Number from the RBI and makes
+        all reporting through a designated authorised dealer (AD) bank. See the{" "}
+        <a href="https://www.rbi.org.in/Scripts/bs_viewcontent.aspx?Id=5087" target="_blank" rel="noopener noreferrer" className={linkClass}>
+          Overseas Investment Rules, 2022
+        </a>{" "}
+        on rbi.org.in.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        If the founder has become a non-resident under FEMA, for example after moving to Singapore, the overseas investment
+        rules, which apply to persons resident in India, generally do not govern the founder&apos;s own investment in the
+        Singapore company. The Singapore company&apos;s holding in the Indian company is then foreign investment, reported
+        to the RBI where the rules require it, such as FC-GPR on a fresh allotment. Moving an existing Indian company under
+        a new Singapore company also involves share transfers with their own FEMA pricing, reporting and Indian tax
+        consequences.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        We handle the Indian side: the FEMA review of the proposed structure, ODI reporting through your AD bank where you
+        are resident in India, and the FC-GPR, FC-TRS and FLA filings for the Indian company. Our{" "}
+        <Link href="/fema-rbi-compliance" className={linkClass}>
+          FEMA and RBI compliance service
+        </Link>{" "}
+        covers these filings. Incorporating the Singapore company, its corporate secretarial work and its Singapore tax
+        position need a Singapore adviser.
+      </p>
+
       <CrossBorderSteps country="singapore" service="an India subsidiary for a Singapore company" />
       <HighTicketSections notIncluded={NOT_INCLUDED} />
 
-      <h2 className="mt-14 text-2xl text-obsidian">How does a Singapore–India working model run day to day?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">How does a Singapore-India working model run day to day?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         India Standard Time is 2.5 hours ahead of Singapore, so the working day overlaps for most of the afternoon in India.
         Our work is handled online from Anna Nagar, Chennai: documents move through a secure portal, filings are signed

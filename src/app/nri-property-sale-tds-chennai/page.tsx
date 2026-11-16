@@ -21,7 +21,7 @@ export default function Page() {
     <ServicePageTemplate
       pageUrl={`${SITE_URL}/nri-property-sale-tds-chennai`}
       serviceType="NRI Property Sale Tax Advisory"
-      crumbLabel="NRI Property Sale TDS — Chennai"
+      crumbLabel="NRI Property Sale TDS in Chennai"
       crumbHref="/nri-property-sale-tds-chennai"
       eyebrow="NRI Clients · Chennai Property"
       h1="Selling Property in Chennai as an NRI: TDS, Lower-Deduction Certificate & Repatriation"

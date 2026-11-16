@@ -5,9 +5,9 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: { absolute: "Company Registration in India for Foreigners | Chennai" },
+  title: { absolute: "Company Formation Services in India for Foreign Businesses" },
   description:
-    "Company registration in India for foreign businesses: subsidiary, LLP or branch, FDI route checks, SPICe+ incorporation and FC-GPR filing, from Chennai.",
+    "Company formation services in India for foreign businesses: subsidiary, LLP or branch, FDI route check, SPICe+ incorporation and FC-GPR filing, from Chennai.",
   alternates: { canonical: "/company-registration-india-for-foreigners" },
   openGraph: {
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
@@ -84,7 +84,7 @@ export default function Page() {
       subhead="Entity selection, FDI route checks, document legalisation, SPICe+ incorporation and post-incorporation FEMA reporting for foreign companies and founders setting up in Chennai, Tamil Nadu or elsewhere in India."
       introHeading="Can a foreign company or foreign national register a company in India?"
       intro="Yes. Foreign companies and individuals can own up to 100% of an Indian private limited company under the automatic route in most sectors, without prior government approval. Some sectors need government approval or carry foreign-ownership caps, so the first step is checking the FDI Policy for your activity. A private company needs at least two directors and two shareholders, and at least one director must have stayed in India for 182 days during the financial year. After incorporation, the share allotment must be reported to the RBI in Form FC-GPR."
-      citation={{ label: "DPIIT — Consolidated FDI Policy (dpiit.gov.in)", href: "https://www.dpiit.gov.in/static/uploads/2025/07/6457fc2703ee6082366c4a958b6473a8.pdf" }}
+      citation={{ label: "DPIIT Consolidated FDI Policy (dpiit.gov.in)", href: "https://www.dpiit.gov.in/static/uploads/2025/07/6457fc2703ee6082366c4a958b6473a8.pdf" }}
       keyFacts={[
         { label: "Foreign ownership", value: "Up to 100% under the automatic route in most sectors; some sectors need government approval or have caps." },
         { label: "Minimum people", value: "Two directors and two shareholders for a private limited company; one director must have stayed in India for at least 182 days in the financial year." },
@@ -121,6 +121,8 @@ export default function Page() {
         { question: "What is FC-GPR and when is it due?", answer: "FC-GPR is the form an Indian company files on the RBI FIRMS portal to report shares issued to a foreign investor, and it is due within 30 days of the allotment. It is filed through the company's authorised dealer bank with the FIRC, KYC of the investor, and a valuation certificate. Late filing can attract a late submission fee or compounding under FEMA." },
         { question: "What ongoing compliance applies after incorporation?", answer: "After incorporation, the company files an annual FLA return with the RBI by 15 July, annual ROC filings, income tax returns, and transfer pricing documentation for transactions with the foreign parent. It also needs a statutory audit, board meetings, GST returns if registered, and TDS and payroll filings. Our India subsidiary compliance retainer covers this annual cycle." },
         { question: "Why set up in Chennai or Tamil Nadu?", answer: "Chennai has an established base in automotive and EV manufacturing, electronics, engineering services and global capability centres, with industrial parks run by SIPCOT around the city. Guidance Tamil Nadu is the state's investment promotion agency and the first point of contact for state incentives and facilitation. A Chennai-based CA firm can deal with the local Registrar, GST offices and banks directly." },
+        { question: "Do you act as the resident director or nominee shareholder?", answer: "No. Your group appoints and trusts the person who meets the 182-day resident director requirement under section 149(3) of the Companies Act, 2013, and the nominee who holds the second share. Both roles should be documented before incorporation. We give you the document list for each person and obtain the directors' digital signature certificates and DINs through SPICe+." },
+        { question: "Can you handle finance and CFO work after the company is formed?", answer: "Yes. Once the company is registered, our India subsidiary compliance and CFO retainer covers the year-end close and statutory audit coordination, monthly management accounts and group reporting packs, GST, TDS and payroll, ROC and board compliance, FEMA reporting such as the annual FLA return, and transfer pricing on transactions with the foreign parent." },
       ]}
       relatedQuestions={[
         { question: "What does annual compliance for an Indian subsidiary involve?", href: "/india-subsidiary-compliance-cfo" },
@@ -129,6 +131,64 @@ export default function Page() {
       ]}
       relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "llp-registration-chennai"]}
     >
+      <h2 className="mt-14 text-2xl text-obsidian">How does a foreign company register a business in India, step by step?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Most foreign businesses register in India by incorporating a private limited company that the foreign parent owns.
+        A branch, liaison or project office is the alternative, but it needs RBI approval through an authorised dealer bank
+        and can do less. For a subsidiary, the sequence is the same whatever the parent country; only the document
+        legalisation changes.
+      </p>
+      <ol className="mt-4 max-w-2xl list-decimal space-y-2 pl-5 text-slate">
+        <li>
+          <span className="font-medium text-obsidian">Check the FDI route.</span> Confirm whether your activity is open to
+          100% foreign investment under the automatic route, which needs no prior government approval, or falls under the
+          government route or a sectoral cap. Investment where a beneficial owner is in, or is a citizen of, a country
+          sharing a land border with India needs government approval in every sector.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Choose the shareholders and directors.</span> A private limited
+          company needs at least two shareholders, usually the parent and a nominee, and at least two directors. Under
+          section 149(3) of the Companies Act, 2013, at least one director must stay in India for 182 days or more in the
+          financial year; for a newly incorporated company the requirement applies proportionately.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Legalise documents abroad.</span> Passports, address proofs, the
+          parent&apos;s board resolution and its incorporation certificate are notarised and apostilled, or consularised
+          where the country is not a party to the Apostille Convention.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Reserve the name and incorporate through SPICe+.</span> Directors
+          obtain digital signature certificates, the name is reserved through SPICe+ Part A on the MCA portal, and SPICe+
+          Part B is filed with the MOA and AOA. DINs are allotted in the same filing, and the certificate of incorporation
+          is issued with the company&apos;s PAN and TAN.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Open the bank account and bring in capital.</span> The company
+          opens an account with an authorised dealer bank and the parent remits the subscription money. Shares must be
+          issued within 60 days of receiving it; otherwise the money must be refunded within the following 15 days.
+        </li>
+        <li>
+          <span className="font-medium text-obsidian">Report the allotment and start compliance.</span> FC-GPR is filed
+          on the RBI FIRMS portal within 30 days of the allotment date (see our guide to the{" "}
+          <Link href="/blog/fc-gpr-filing-deadline" className={linkClass}>
+            FC-GPR filing deadline and late submission fee
+          </Link>
+          ), followed by INC-20A within 180 days of incorporation, the first auditor within 30 days, and GST and payroll
+          registrations where needed.
+        </li>
+      </ol>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        After the first year, the company files the annual FLA return and reports any further share issues; our page on{" "}
+        <Link href="/fema-rbi-compliance" className={linkClass}>
+          FEMA and RBI compliance for foreign-owned companies
+        </Link>{" "}
+        covers that cycle. If the parent is a US corporation, our guide to{" "}
+        <Link href="/india-subsidiary-for-us-companies" className={linkClass}>
+          setting up an India subsidiary for a US company
+        </Link>{" "}
+        covers Secretary of State apostilles and the points to coordinate with your US CPA.
+      </p>
+
       <h2 className="mt-14 text-2xl text-obsidian">How long does each stage of setting up an Indian subsidiary take?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         The durations below are indicative ranges based on typical cases, not commitments; they depend on how quickly

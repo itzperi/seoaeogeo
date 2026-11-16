@@ -59,7 +59,7 @@ export default function Page() {
     <ServicePageTemplate
       pageUrl={`${SITE_URL}/nri-tax-services-uk`}
       serviceType="NRI Tax Advisory"
-      crumbLabel="NRI Tax Services — UK"
+      crumbLabel="NRI Tax Services UK"
       crumbHref="/nri-tax-services-uk"
       eyebrow="NRI Clients · United Kingdom"
       h1="India Tax for NRIs in the UK: DTAA, HMRC Credit & Indian Income"
