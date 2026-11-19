@@ -38,7 +38,7 @@
 ## Core service 2: Private Limited Company Registration in Chennai
 - URL: https://www.csrushil.com/private-limited-company-incorporation-chennai
 - Summary: SPICe+ incorporation under the Companies Act, 2013, recorded with the Registrar of Companies, Chennai.
-- Typical time: 7–12 working days once documents and DSCs are ready; about 3 weeks from scratch.
+- Typical time: 7 to 12 working days once documents and DSCs are ready; about 3 weeks from scratch.
 - Requirements: 2 directors and 2 shareholders (can be the same people); at least one director resident in India for at least 182 days during the financial year (Section 149(3), Companies Act, 2013); no minimum paid-up capital.
 - Registrar: ROC Chennai, Shastri Bhavan, 26 Haddows Road, Nungambakkam, Chennai, for Chennai and most of Tamil Nadu; ROC Coimbatore for nine western districts. SPICe+ forms are examined by the MCA Central Registration Centre.
 - Government charges (authorised capital up to ₹15 lakh): MCA filing fee zero; Tamil Nadu stamp duty ₹200 on the MoA plus ₹500 per ₹10 lakh of authorised capital (or part) on the AoA; PAN ₹66 and TAN ₹65; DSCs priced by the Certifying Authority; ₹1,000 only if the name is reserved separately in SPICe+ Part A.
@@ -50,7 +50,7 @@
 - Startups: burn rate and runway models, unit economics (CAC, LTV), investor MIS, ESOP and cap-table hygiene, DPIIT and FEMA (FC-GPR) tracking.
 - SMEs and manufacturers (₹5 crore to ₹100 crore turnover): working capital and debtor days, SKU and plant costing, CMA data for bank facilities, internal controls, GST and TDS cash-flow mapping.
 - Foreign-owned subsidiaries: monthly group reporting with Ind AS to IFRS or US GAAP bridge, transfer pricing margin monitoring for Form 3CEB, RBI FLA and FEMA calendar.
-- First 90 days: days 1–30 chart of accounts cleanup and reconciliation; days 31–60 first MIS pack and 13-week cash-flow forecast; days 61–90 budget vs actual cadence and board packs.
+- First 90 days: days 1 to 30 chart of accounts cleanup and reconciliation; days 31 to 60 first MIS pack and 13-week cash-flow forecast; days 61 to 90 budget vs actual cadence and board packs.
 - Tools: Zoho Books, Tally Prime, QuickBooks, Xero, RazorpayX and Cashfree reconciliation, Keka and Zoho Payroll, Power BI and Looker Studio.
 
 ## Core service 4: GST Litigation & Appeals in Chennai
@@ -70,6 +70,17 @@
 
 ## Professional standards
 - The firm follows ICAI guidelines: professional fees are not published on the website, and there is no rating markup. Government fees are listed where they are public facts.
+
+## Singapore (served online from Anna Nagar, Chennai)
+Indian law and Indian filings only. Singapore tax, ACRA and IRAS matters stay with the client's Singapore adviser, with whom the firm coordinates. The firm has no Singapore office.
+- [India Subsidiary for Singapore Companies](https://www.csrushil.com/india-subsidiary-for-singapore-companies): Setting up and running an Indian subsidiary from Singapore: apostille, resident director, FC-GPR and FLA reporting, transfer pricing with the parent, the regional-HQ operating model and the gaps auditors usually flag.
+- [NRI Tax Services for Singapore](https://www.csrushil.com/nri-tax-services-singapore): Indian tax return, India-Singapore treaty relief, property-sale TDS and remittance for Indians and OCI cardholders in Singapore.
+- [Outsourced Bookkeeping for Singapore Companies](https://www.csrushil.com/outsourced-bookkeeping-singapore): Bookkeeping prepared in Chennai; the client's Singapore tax agent or corporate secretary files with IRAS and ACRA.
+- [Foreign Subsidiary Compliance Calendar](https://www.csrushil.com/tools/foreign-subsidiary-compliance-calendar): Dated first-year calendar for an Indian subsidiary, with a Singapore parent option (https://www.csrushil.com/tools/foreign-subsidiary-compliance-calendar?parent=sg).
+- [India-Singapore DTAA for Businesses](https://www.csrushil.com/blog/india-singapore-dtaa-for-businesses): Treaty rates on dividends, interest, royalties and fees paid to Singapore, Form 41 and the IRAS certificate of residence, the limitation of benefits clause, the 2016 protocol and the January 2026 Tiger Global ruling.
+- [Compliance Calendar for a Singapore-Owned Indian Subsidiary](https://www.csrushil.com/blog/compliance-calendar-singapore-owned-indian-subsidiary): Every Indian filing from April 2026 to March 2027, event-driven RBI and ROC filings, and what the Singapore parent must supply.
+- [Reverse Flip from Singapore to India: Tax, FEMA, MCA Steps](https://www.csrushil.com/blog/reverse-flip-singapore-to-india): The merger routes, when an amalgamation is not a taxable transfer under the Income-tax Act, 2025, the FEMA reports that follow, ESOPs, and what lawyers in both countries still do.
+- [Moving Back to India from Singapore: A Tax Checklist](https://www.csrushil.com/blog/returning-to-india-from-singapore-tax-checklist): Dated checklist covering IR21, CPF and SRS, RSUs, NRE and FCNR accounts, FEMA section 6(4) assets and Schedule FA.
 
 ## Outsourced bookkeeping (US, UK, Singapore, Australia, UAE, India)
 Bookkeeping is kept from the Chennai office in the client's own software. Outside India the firm prepares figures only; the client or its locally registered accountant, BAS agent or tax agent files with the IRS, HMRC, IRAS/ACRA, ATO or UAE FTA. In India the firm files GST, TDS, ROC and income tax returns directly. No published price lists; fees are quoted after a review of the books.
