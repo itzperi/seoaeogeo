@@ -21,6 +21,14 @@ export type BlogPostModule = {
 // Static registry, Next.js needs statically analyzable imports for the App
 // Router, so each post is its own module rather than loaded from a CMS.
 const modules = {
+  "reverse-flip-singapore-to-india": () =>
+    import("@/content/blog/reverse-flip-singapore-to-india"),
+  "india-singapore-dtaa-for-businesses": () =>
+    import("@/content/blog/india-singapore-dtaa-for-businesses"),
+  "compliance-calendar-singapore-owned-indian-subsidiary": () =>
+    import("@/content/blog/compliance-calendar-singapore-owned-indian-subsidiary"),
+  "returning-to-india-from-singapore-tax-checklist": () =>
+    import("@/content/blog/returning-to-india-from-singapore-tax-checklist"),
   "partnership-firm-registration-tamil-nadu-online": () =>
     import("@/content/blog/partnership-firm-registration-tamil-nadu-online"),
   "proprietorship-registration-tamil-nadu": () =>
@@ -217,6 +225,42 @@ export type BlogSlug = keyof typeof modules;
 // export by convention; duplicated here (rather than importing every module
 // eagerly) so the /blog index stays a cheap static list.
 export const BLOG_INDEX: BlogPostMeta[] = [
+  {
+    slug: "reverse-flip-singapore-to-india",
+    title: "Reverse Flip from Singapore to India: Tax, FEMA, MCA Steps",
+    description:
+      "A reverse flip from a Singapore holding company to India: the merger routes, tax neutrality under the 2025 Act, FEMA reporting, ESOPs and what lawyers still do.",
+    date: "2026-12-15",
+    excerpt:
+      "Which routes move a Singapore holding company into India, when an amalgamation is not a taxable transfer, which FEMA reports follow, and where the Indian-side work ends and the lawyers' work begins.",
+  },
+  {
+    slug: "india-singapore-dtaa-for-businesses",
+    title: "India-Singapore DTAA for Businesses: Withholding Tax and LOB",
+    description:
+      "Treaty rates on dividends, interest, royalties and fees paid from India to Singapore, Form 41 and the IRAS COR, the LOB test, and the 2026 Tiger Global ruling.",
+    date: "2026-12-01",
+    excerpt:
+      "What India withholds on payments to a Singapore company, the documents behind the treaty rate, how share gains are taxed after the 2016 protocol, and what two January 2026 rulings decided on the LOB clause and residence certificates.",
+  },
+  {
+    slug: "compliance-calendar-singapore-owned-indian-subsidiary",
+    title: "Compliance Calendar for a Singapore-Owned Indian Subsidiary",
+    description:
+      "Every Indian filing for a Singapore-owned subsidiary from April 2026 to March 2027, month by month, plus event-driven RBI, ROC and TDS filings and parent tasks.",
+    date: "2026-12-01",
+    excerpt:
+      "A month-by-month Indian compliance calendar for April 2026 to March 2027, written for finance teams at a Singapore parent, with the event-driven filings and the points where the parent has to act.",
+  },
+  {
+    slug: "returning-to-india-from-singapore-tax-checklist",
+    title: "Moving Back to India from Singapore: A Tax Checklist",
+    description:
+      "Leaving Singapore for Chennai? A dated checklist covering IR21 tax clearance, CPF and SRS, RSUs, NRE and FCNR accounts, FEMA section 6(4) and Schedule FA.",
+    date: "2026-12-29",
+    excerpt:
+      "A stage-by-stage checklist for Indians moving back from Singapore: what to settle with your Singapore employer before you go, and what to change in India from the day you land to your first year as an ordinary resident.",
+  },
   {
     slug: "partnership-firm-registration-tamil-nadu-online",
     title: "Partnership Firm Registration in Tamil Nadu Online: Steps",
