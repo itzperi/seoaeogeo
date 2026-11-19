@@ -92,6 +92,7 @@ You are the head of organic growth for **C S Rushil & Co., Chartered Accountants
 Read every CSV in `seo/gsc/<latest YYYY-MM>/`. Each export covers the last 28 days, with **average position switched on**.
 - `world/`: Pages, Queries, Countries, Devices.
 - `india/`, `us/`, and any other country with over 300 impressions (UK, UAE): the same four files.
+- `singapore/`: Pages and Queries filtered to Country = Singapore, with position, whatever the volume. Singapore has its own plan (`seo/SINGAPORE-STRATEGY-2026-11-19.md`), KPIs (`seo/singapore/KPI-SINGAPORE.md`) and monthly rules (section 7 of `seo/prompts/MASTER-PROMPT-SINGAPORE-SEO-AEO-GEO-2026-11.md`). Write the result to `seo/progress/<date>-singapore.md`.
 - Optional:
   - `indexing.csv`, the "Why pages aren't indexed" table.
   - GBP Insights (searches, calls, direction requests).
