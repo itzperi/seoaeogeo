@@ -1,14 +1,15 @@
 import CrossBorderSteps from "@/components/CrossBorderSteps";
 import type { Metadata } from "next";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import HighTicketSections from "@/components/HighTicketSections";
 import { SITE_URL } from "@/lib/site";
 
 const slug = "/india-subsidiary-for-singapore-companies";
-const title = "India Subsidiary for Singapore Companies: Setup and Tax";
+const title = "Set Up an Indian Subsidiary from Singapore: FDI, FC-GPR, Tax";
 const description =
-  "Set up an Indian subsidiary from Singapore: incorporation, resident director and FC-GPR filings. Book a consultation online or visit our Anna Nagar office.";
+  "Set up and run an Indian subsidiary from Singapore: apostille, resident director, FC-GPR, transfer pricing and yearly filings, served online from Chennai.";
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -86,7 +87,7 @@ const NOT_INCLUDED = [
 export default function Page() {
   return (
     <ServicePageTemplate
-      relatedPosts={["form-3ceb-due-date-applicability", "foreign-national-director-indian-company", "first-auditor-appointment-adt-1"]}
+      relatedPosts={["compliance-calendar-singapore-owned-indian-subsidiary", "india-singapore-dtaa-for-businesses", "form-3ceb-due-date-applicability", "foreign-national-director-indian-company", "first-auditor-appointment-adt-1"]}
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="India Subsidiary Incorporation for Singapore Companies"
       crumbLabel="India Subsidiary for Singapore Companies"
@@ -206,6 +207,14 @@ export default function Page() {
         to the parent; the trade agreement matters if your Indian company trades goods or services with Singapore.
       </p>
       <DataTable head={["Agreement", "What it is", "Why it matters"]} rows={SG_INDIA} />
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        Withholding rates on payments to the parent, the documents a Singapore company needs to claim them and the
+        limitation of benefits test are set out in our{" "}
+        <PostLink slug="india-singapore-dtaa-for-businesses" className={linkClass}>
+          guide to the India-Singapore tax treaty for businesses
+        </PostLink>
+        .
+      </p>
 
       <h2 className="mt-14 text-2xl text-obsidian">How long does the set-up usually take?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
@@ -225,7 +234,69 @@ export default function Page() {
         <Link href="/annual-compliance-package" className={linkClass}>
           annual compliance package
         </Link>{" "}
-        covers the statutory calendar.
+        covers the statutory calendar. The filings for the year are listed month by month in our{" "}
+        <PostLink slug="compliance-calendar-singapore-owned-indian-subsidiary" className={linkClass}>
+          compliance calendar for a Singapore-owned Indian subsidiary
+        </PostLink>
+        .
+      </p>
+
+      <h2 className="mt-14 text-2xl text-obsidian">Our auditors keep flagging the Indian subsidiary&apos;s compliance. What is usually missing?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        When a group auditor or the parent&apos;s finance team keeps raising points on an Indian subsidiary, the gaps are
+        usually in a short list of filings that sit outside routine bookkeeping: foreign investment reports to the RBI,
+        the transfer pricing report, director KYC, the annual ROC returns, and tax deducted on payments to the Singapore
+        parent.
+      </p>
+      <ul className="mt-4 max-w-2xl list-disc space-y-2 pl-5 leading-relaxed text-slate">
+        <li>
+          FC-GPR filed late, or not at all, after shares were allotted to the parent. See{" "}
+          <Link href="/blog/fc-gpr-filing-deadline" className={linkClass}>
+            the FC-GPR deadline and late submission fee
+          </Link>
+          .
+        </li>
+        <li>
+          The annual FLA return missed because no one in the group was assigned to it. See{" "}
+          <Link href="/blog/fla-return-due-date" className={linkClass}>
+            the FLA return due date
+          </Link>
+          .
+        </li>
+        <li>
+          No accountant&apos;s report on transactions with the parent, even where the only transaction was a recharge or a
+          licence fee. See{" "}
+          <Link href="/blog/form-3ceb-due-date-applicability" className={linkClass}>
+            Form 3CEB and Form 48 due dates
+          </Link>
+          .
+        </li>
+        <li>
+          DIR-3 KYC not completed for a director based in Singapore. See{" "}
+          <Link href="/blog/dir-3-kyc-due-date-late-fee" className={linkClass}>
+            the DIR-3 KYC due date and late fee
+          </Link>
+          .
+        </li>
+        <li>
+          AOC-4 and MGT-7 filed after their due dates. See{" "}
+          <Link href="/blog/aoc-4-mgt-7-late-fee" className={linkClass}>
+            how the AOC-4 and MGT-7 late fee adds up
+          </Link>
+          .
+        </li>
+        <li>
+          Tax not deducted, or remittance forms missing, on fees, royalties or interest paid to the parent. See{" "}
+          <Link href="/form-15ca-15cb-chennai" className={linkClass}>
+            Form 15CA and 15CB for remittances
+          </Link>
+          .
+        </li>
+      </ul>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        A review of the last two years usually shows which of these apply, and whether a late submission fee or another
+        regularisation route is still open for the RBI filings. We then put the remaining dates on one calendar so the
+        same points do not come back at the next audit.
       </p>
 
       <h2 className="mt-14 text-2xl text-obsidian">What should a Singapore company check with its Singapore adviser?</h2>
@@ -314,11 +385,46 @@ export default function Page() {
       <CrossBorderSteps country="singapore" service="an India subsidiary for a Singapore company" />
       <HighTicketSections notIncluded={NOT_INCLUDED} />
 
-      <h2 className="mt-14 text-2xl text-obsidian">How does a Singapore-India working model run day to day?</h2>
+      <h2 className="mt-14 text-2xl text-obsidian">How does a Singapore regional HQ run an Indian subsidiary?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
-        India Standard Time is 2.5 hours ahead of Singapore, so the working day overlaps for most of the afternoon in India.
-        Our work is handled online from Anna Nagar, Chennai: documents move through a secure portal, filings are signed
-        digitally, and a monthly calendar fixes dates for payroll, the books, GST and TDS. To begin, please{" "}
+        Many Indian subsidiaries are run from a regional headquarters in Singapore, including those of US, UK, European
+        and Japanese groups. The Indian company follows Indian law on its own calendar, so the regional team needs four
+        things: a monthly close, documented intra-group pricing, an audit timetable that fits the group&apos;s year-end,
+        and a director who meets the residence test.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        <span className="font-medium text-obsidian">Monthly close and reporting pack.</span> The books are closed each
+        month in Indian rupees, GST and TDS are filed on Indian dates, and a reporting pack is prepared in the format the
+        region asks for. Differences between the Indian accounts and the group&apos;s accounting policies are listed, so
+        the regional team can adjust for them at consolidation instead of finding them at the year-end.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        <span className="font-medium text-obsidian">Intra-group charges.</span> Management fees, shared-service
+        recharges, software licences, loans and cost-plus service income between the Indian company and the Singapore
+        entity are international transactions with an associated enterprise. Each needs a written agreement, an
+        arm&apos;s length price and yearly documentation. The accountant&apos;s report is Form 3CEB for years up to
+        FY 2025-26 and Form 48 under section 172 of the Income-tax Act, 2025 from tax year 2026-27.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        <span className="font-medium text-obsidian">Audit against the parent&apos;s year-end.</span> An Indian
+        company&apos;s financial year runs from April to March under section 2(41) of the Companies Act, 2013, unless the
+        Tribunal allows a different year to a company that must align with a holding company outside India for
+        consolidation. Where the Singapore entity closes on 31 December, the group needs Indian figures to that date for
+        its consolidation, while the statutory audit, the annual general meeting and the AOC-4 and MGT-7 filings follow
+        the March year. Planning both timetables at the start of the year avoids two rushed closes.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        <span className="font-medium text-obsidian">Directors and signatures.</span> At least one director must have
+        stayed in India for 182 days in the financial year under section 149(3). Directors in Singapore sign filings
+        with digital signature certificates and can join board meetings by video conference, subject to the current
+        rules on meetings.
+      </p>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        <span className="font-medium text-obsidian">Working hours.</span> Singapore is two hours thirty minutes ahead of
+        India. Our office hours, 9:30 AM to 6:30 PM IST from Monday to Saturday, are noon to 9:00 PM in Singapore, so
+        calls fit the Singapore afternoon. The work is handled online from Anna Nagar, Chennai: documents are exchanged
+        electronically, filings are signed digitally, and a monthly calendar fixes the dates for payroll, the books, GST
+        and TDS. To begin, please{" "}
         <Link href="/contact" className={linkClass}>
           contact us
         </Link>{" "}

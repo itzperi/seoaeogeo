@@ -276,7 +276,7 @@ export default function Page() {
 
       <h2 className={h2}>How does a Chennai property sale work with TDS and Form 15CA and 15CB?</h2>
       <p className={p}>
-        The buyer deducts tax under section 195 of the Income-tax Act, 1961 (the 2025 Act carries an equivalent provision),
+        The buyer deducts tax under section 393(2) of the Income-tax Act, 2025 (section 195 of the 1961 Act),
         and a lower-deduction certificate can reduce it, after which Form 15CA and 15CB support the remittance to Singapore.
       </p>
       <p className={p}>
@@ -297,6 +297,29 @@ export default function Page() {
           Form 15CA and 15CB in Chennai
         </Link>
         . We coordinate with your family in Chennai and the buyer so these steps do not hold up registration.
+      </p>
+
+      <h2 className={h2}>I am a Singapore citizen with an OCI card and a flat in Chennai: how am I taxed in India?</h2>
+      <p className={p}>
+        Your Indian tax position depends on the days you spend in India, not on your passport or your OCI card. Most
+        Singapore citizens who visit India for short periods are non-residents, so rent from the flat and any gain when
+        you sell it are taxed in India, with tax deducted at source by the tenant or the buyer.
+      </p>
+      <p className={p}>
+        The days test is the one any visitor faces. The deemed-residence rule that can make some Indian citizens
+        resident without a long stay applies only to Indian citizens, so it does not apply to a Singapore citizen.
+        Rent paid to a non-resident landlord and the price paid to a non-resident seller both carry tax deducted at
+        source under section 393(2) of the Income-tax Act, 2025. On a sale, the buyer deducts on the price unless you
+        hold a lower-deduction certificate, so apply for one as soon as the sale terms are agreed. Your Indian return
+        then sets the tax deducted against the tax actually due, and any excess is refunded.
+      </p>
+      <p className={p}>
+        The India-Singapore treaty leaves India&apos;s right to tax income from property in India in place, so it does
+        not remove Indian tax on the rent or the gain. How Singapore treats the same income is a question for your
+        Singapore adviser. If you inherited the flat, the previous owner&apos;s cost and holding period generally carry
+        over when the gain is worked out, so keep the earlier purchase papers. To send the proceeds to Singapore from
+        your NRO account, the bank asks for Form 145 and, where required, Form 146, which replaced Forms 15CA and 15CB
+        from 1 April 2026.
       </p>
 
       <h2 className={h2}>Does it help if my Singapore company also has an Indian subsidiary?</h2>

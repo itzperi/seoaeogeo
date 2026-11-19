@@ -113,6 +113,17 @@ export default function Page() {
         </table>
       </div>
 
+      <h2 className="mt-14 text-2xl text-obsidian">Is your Indian subsidiary&apos;s compliance being flagged by auditors?</h2>
+      <p className="mt-4 max-w-2xl leading-relaxed text-slate">
+        If a group auditor keeps raising points on the Indian subsidiary of a foreign company, the gaps are usually in
+        filings outside this package: foreign investment reports to the RBI, the transfer pricing report, and tax
+        deducted on payments to the parent. Our{" "}
+        <Link href="/india-subsidiary-compliance-cfo" className={linkClass}>
+          India subsidiary compliance and CFO retainer
+        </Link>{" "}
+        adds those filings to the same annual calendar.
+      </p>
+
       <h2 className="mt-14 text-2xl text-obsidian">Which individual services make up the package?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">
         Each part of the package is also available on its own. See our{" "}

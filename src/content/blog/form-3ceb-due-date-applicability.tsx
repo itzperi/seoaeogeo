@@ -1,5 +1,6 @@
 import type { BlogPostMeta } from "@/lib/blog";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 
 // Facts here must match /transfer-pricing-audit (ACT_MAPPING, DUE_DATES,
 // PENALTIES). The CBDT's 21-day extension for AY 2026-27 moved the tax audit
@@ -86,7 +87,7 @@ export default function Body() {
         transfer pricing cases were not part of it.
       </p>
 
-      <h2>Who needs to file Form 3CEB?</h2>
+      <h2 id="foreign-parents">Who needs to file Form 3CEB?</h2>
       <p>
         Two kinds of transaction trigger the report. The first is any <strong>international transaction with an
         associated enterprise</strong>: a foreign parent, subsidiary or fellow group company. There is no minimum
@@ -105,6 +106,14 @@ export default function Body() {
         <li>A regional hub in <Link href="/india-subsidiary-for-singapore-companies">Singapore</Link> lending to, or licensing software to, its Indian subsidiary.</li>
         <li>A Canadian or other foreign group recharging the salaries of seconded staff or ESOP costs to India.</li>
       </ul>
+      <p>
+        <strong>Singapore parent?</strong> The report follows the Indian company&apos;s April to March year and is due by
+        31 October after that year closes, whatever the parent&apos;s own year-end. Our{" "}
+        <PostLink slug="compliance-calendar-singapore-owned-indian-subsidiary">compliance calendar for a Singapore-owned Indian subsidiary</PostLink>{" "}
+        sets it against the other filings for the year, and our{" "}
+        <PostLink slug="india-singapore-dtaa-for-businesses">India-Singapore treaty guide for businesses</PostLink>{" "}
+        covers withholding on payments to the parent.
+      </p>
 
       <h2>What counts as an associated enterprise?</h2>
       <p>
