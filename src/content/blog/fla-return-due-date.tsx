@@ -307,9 +307,11 @@ export default function Body() {
         Companies with overseas subsidiaries also have their own overseas
         investment reporting. Our{" "}
         <Link href="/tools/foreign-subsidiary-compliance-calendar">foreign subsidiary compliance calendar</Link>{" "}
-        lists these by month, and our page for{" "}
+        lists these by month, and our pages for{" "}
         <Link href="/india-subsidiary-for-us-companies">US companies with an Indian subsidiary</Link>{" "}
-        sets out the first year.
+        and{" "}
+        <Link href="/india-subsidiary-for-singapore-companies">Singapore companies with an Indian subsidiary</Link>{" "}
+        set out the first year.
       </p>
       <p>
         C S Rushil &amp; Co. registers entities on FLAIR and prepares FLA

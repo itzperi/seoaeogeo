@@ -159,7 +159,8 @@ export default function Body() {
 
       <p>
         A Double Taxation Avoidance Agreement between India and your country of residence may cap the Indian tax rate on interest or dividends, provided you hold a tax residency certificate and furnish Form 10F (Form 41 from tax year 2026-27). Indian tax paid is then usually claimed as a credit in your country of residence. Relief has to be claimed properly on both sides, and the Indian return is the evidence the other country will ask for. When money is sent abroad from an NRO account, the bank will also ask for the remittance forms, which our page on{" "}
-        <Link href="/form-15ca-15cb-chennai">Form 15CA and 15CB</Link> (Form 145 and 146 from 1 April 2026) explains.
+        <Link href="/form-15ca-15cb-chennai">Form 15CA and 15CB</Link> (Form 145 and 146 from 1 April 2026) explains. If you live in Singapore, our page on{" "}
+        <Link href="/nri-tax-services-singapore">India tax for NRIs in Singapore</Link> explains the IRAS Certificate of Residence that supports the claim.
       </p>
 
       <h2>How do you file and verify the return from abroad?</h2>

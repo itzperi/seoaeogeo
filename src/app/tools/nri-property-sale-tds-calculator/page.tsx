@@ -247,6 +247,10 @@ export default function Page() {
         <Link href="/nri-tax-services" className={LINK}>
           NRI tax services
         </Link>
+        , or, if you live in Singapore, our page on{" "}
+        <Link href="/nri-tax-services-singapore" className={LINK}>
+          India tax for NRIs in Singapore
+        </Link>
         .
       </p>
 

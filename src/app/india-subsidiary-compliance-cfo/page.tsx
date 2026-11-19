@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 import ServicePageTemplate from "@/components/ServicePageTemplate";
 import HighTicketSections, { type Audience } from "@/components/HighTicketSections";
 import { SITE_URL } from "@/lib/site";
@@ -180,7 +181,15 @@ export default function Page() {
         <Link href="/transfer-pricing-audit" className={linkClass}>
           transfer pricing audit
         </Link>
-        .
+        . For a Singapore parent, the{" "}
+        <PostLink slug="compliance-calendar-singapore-owned-indian-subsidiary" className={linkClass}>
+          compliance calendar for a Singapore-owned Indian subsidiary
+        </PostLink>{" "}
+        lists these dates month by month, and our page on{" "}
+        <Link href="/india-subsidiary-for-singapore-companies" className={linkClass}>
+          setting up an Indian subsidiary from Singapore
+        </Link>{" "}
+        covers the first year.
       </p>
 
       <h2 className="mt-14 text-2xl text-obsidian">What goes into the monthly reporting pack for the foreign parent?</h2>

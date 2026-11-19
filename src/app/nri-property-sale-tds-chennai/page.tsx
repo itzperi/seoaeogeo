@@ -63,6 +63,7 @@ export default function Page() {
         { question: "Do NRIs in the UAE pay tax in India on a Chennai property sale?", href: "/nri-tax-services-uae" },
         { question: "How do I claim UK credit for Indian tax paid on a property gain?", href: "/nri-tax-services-uk" },
         { question: "How is an Indian property sale reported for US tax purposes?", href: "/nri-tax-services-usa" },
+        { question: "What does an NRI in Singapore need for a Chennai sale?", href: "/nri-tax-services-singapore" },
       ]}
       relatedSlugs={["nri-tax-services", "nri-tax-services-uae", "nri-tax-services-uk", "nri-tax-services-usa"]}
     />

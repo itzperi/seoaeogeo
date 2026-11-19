@@ -142,7 +142,11 @@ export default function Page() {
         No, it is an estimate for guidance, and C S Rushil &amp; Co. confirms your status before you rely on it.
         Residential status depends on exact days counted from passport stamps and travel records, and on facts such as
         your income sources and tax liability abroad. Foreign tax questions are for your home adviser, since we advise
-        on Indian law only. Clients abroad are served online.
+        on Indian law only. Clients abroad are served online. If you work in Singapore, our page on{" "}
+        <Link href="/nri-tax-services-singapore" className={LINK}>
+          India tax for NRIs in Singapore
+        </Link>{" "}
+        covers the treaty tie-breaker for people both countries treat as resident, and RNOR planning on return.
       </p>
 
       <ServiceCta links={[{ href: "/nri-tax-services", label: "NRI tax services" }]}>

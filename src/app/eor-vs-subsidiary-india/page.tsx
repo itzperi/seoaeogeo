@@ -210,10 +210,14 @@ export default function Page() {
         ,{" "}
         <Link href="/india-subsidiary-for-uk-companies" className={linkClass}>
           United Kingdom
-        </Link>{" "}
-        and{" "}
+        </Link>
+        ,{" "}
         <Link href="/india-subsidiary-for-uae-companies" className={linkClass}>
           United Arab Emirates
+        </Link>{" "}
+        and{" "}
+        <Link href="/india-subsidiary-for-singapore-companies" className={linkClass}>
+          Singapore
         </Link>
         . The overall process is explained on our{" "}
         <Link href="/company-registration-india-for-foreigners" className={linkClass}>

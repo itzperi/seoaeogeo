@@ -353,9 +353,11 @@ export default function Body() {
         FC-GPR is one of several RBI filings a foreign-owned company makes. The
         annual FLA return, due on 15 July each year, is another. Our{" "}
         <Link href="/tools/foreign-subsidiary-compliance-calendar">foreign subsidiary compliance calendar</Link>{" "}
-        maps them, and our page for{" "}
+        maps them, and our pages for{" "}
         <Link href="/india-subsidiary-for-us-companies">US companies setting up an Indian subsidiary</Link>{" "}
-        explains the first-year sequence.
+        and for{" "}
+        <Link href="/india-subsidiary-for-singapore-companies">Singapore parents investing in India</Link>{" "}
+        explain the first-year sequence.
       </p>
       <p>
         C S Rushil &amp; Co. prepares FC-GPR filings, valuation support and late

@@ -1,5 +1,6 @@
 import type { BlogPostMeta } from "@/lib/blog";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 
 export const meta: BlogPostMeta = {
   slug: "rnor-status-returning-nri",
@@ -214,6 +215,13 @@ export default function Body() {
       <p>
         Check whether you are resident, RNOR or non-resident for a year with our free{" "}
         <Link href="/tools/nri-residential-status-calculator">NRI residential status calculator</Link>.
+      </p>
+      <p>
+        Coming back from Singapore adds CPF, SRS and IRAS clearance to the list. Our page on{" "}
+        <Link href="/nri-tax-services-singapore">India tax for NRIs in Singapore</Link> covers the treaty and property
+        questions, and the{" "}
+        <PostLink slug="returning-to-india-from-singapore-tax-checklist">tax checklist for moving back from Singapore</PostLink>{" "}
+        sets out the steps in order.
       </p>
       <p>
         We advise returning families in{" "}

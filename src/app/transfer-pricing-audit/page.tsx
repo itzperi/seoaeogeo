@@ -373,7 +373,11 @@ export default function Page() {
         </Link>{" "}
         and is reconciled with the tax audit report, so the three workstreams should share one timetable. C S Rushil
         &amp; Co. works with group tax teams in the US, UK, UAE, Singapore, Japan and Germany on this calendar from our
-        office in Anna Nagar, Chennai.
+        office in Anna Nagar, Chennai. For a Singapore parent, the set-up steps and treaty points are on our page for{" "}
+        <Link href="/india-subsidiary-for-singapore-companies" className={linkClass}>
+          Indian subsidiaries of Singapore companies
+        </Link>
+        .
       </p>
     </ServicePageTemplate>
   );

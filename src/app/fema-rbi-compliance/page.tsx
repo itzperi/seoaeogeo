@@ -251,7 +251,11 @@ export default function Page() {
         <Link href="/company-registration-india-for-foreigners" className={linkClass}>
           company registration service for foreign founders
         </Link>{" "}
-        sets up the entity and the first FC-GPR. After that, our{" "}
+        sets up the entity and the first FC-GPR, and our page for{" "}
+        <Link href="/india-subsidiary-for-singapore-companies" className={linkClass}>
+          Singapore companies setting up in India
+        </Link>{" "}
+        covers the apostille and treaty points for a Singapore parent. After that, our{" "}
         <Link href="/india-subsidiary-compliance-cfo" className={linkClass}>
           India subsidiary compliance and CFO service
         </Link>{" "}
