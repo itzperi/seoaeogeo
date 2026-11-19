@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import { WHATSAPP_LINK } from "@/lib/site";
 import { track } from "@/lib/track";
 
@@ -92,6 +92,18 @@ type Out = ReturnType<typeof buildCalendar> & { country: Country; summary: strin
 
 export default function Calculator() {
   const [country, setCountry] = useState<Country>("us");
+  // Optional deep link: ?parent=sg (or us, uk, ...) preselects the parent country. Default stays "us".
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      try {
+        const p = new URLSearchParams(window.location.search).get("parent");
+        if (p && Object.prototype.hasOwnProperty.call(COUNTRY_NAME, p)) setCountry(p as Country);
+      } catch {
+        /* ignore */
+      }
+    }, 0);
+    return () => clearTimeout(timer);
+  }, []);
   const [inc, setInc] = useState("");
   const [allot, setAllot] = useState("");
   const [allotTouched, setAllotTouched] = useState(false);

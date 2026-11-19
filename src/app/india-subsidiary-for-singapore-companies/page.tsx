@@ -87,7 +87,7 @@ const NOT_INCLUDED = [
 export default function Page() {
   return (
     <ServicePageTemplate
-      relatedPosts={["compliance-calendar-singapore-owned-indian-subsidiary", "india-singapore-dtaa-for-businesses", "form-3ceb-due-date-applicability", "foreign-national-director-indian-company", "first-auditor-appointment-adt-1"]}
+      relatedPosts={["compliance-calendar-singapore-owned-indian-subsidiary", "india-singapore-dtaa-for-businesses", "reverse-flip-singapore-to-india", "form-3ceb-due-date-applicability", "foreign-national-director-indian-company", "first-auditor-appointment-adt-1"]}
       pageUrl={`${SITE_URL}${slug}`}
       serviceType="India Subsidiary Incorporation for Singapore Companies"
       crumbLabel="India Subsidiary for Singapore Companies"

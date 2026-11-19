@@ -10,12 +10,12 @@ const GST_SECTOR_EXTRA = ["gst-threshold-is-a-trigger", "itc-mismatch-notices", 
 
 export const EXTRA_RELATED_POSTS: Record<string, string[]> = {
   "/bookkeeping-services-chennai": ["cash-flow-not-profit-business-failure", "gstr9-annual-return-checklist"],
-  "/company-registration-india-for-foreigners": ["private-limited-company-registration-documents", "fc-gpr-filing-deadline", "fla-return-due-date"],
+  "/company-registration-india-for-foreigners": ["private-limited-company-registration-documents", "fc-gpr-filing-deadline", "fla-return-due-date", "india-singapore-dtaa-for-businesses", "reverse-flip-singapore-to-india"],
   "/company-registration-madurai": TN_COMPANY_EXTRA,
   "/company-registration-salem": TN_COMPANY_EXTRA,
   "/company-registration-tirunelveli": TN_COMPANY_EXTRA,
   "/eor-vs-subsidiary-india": ["foreign-national-director-indian-company", "fc-gpr-filing-deadline", "fla-return-due-date"],
-  "/fema-rbi-compliance": ["fc-gpr-filing-deadline", "fla-return-due-date"],
+  "/fema-rbi-compliance": ["fc-gpr-filing-deadline", "fla-return-due-date", "compliance-calendar-singapore-owned-indian-subsidiary"],
   "/fssai-license-chennai": ["moa-objects-clause-drafting"],
   "/gst-return-filing-for-amazon-sellers": GST_SECTOR_EXTRA,
   "/gst-return-filing-for-ecommerce-sellers": GST_SECTOR_EXTRA,
@@ -50,7 +50,7 @@ export const EXTRA_RELATED_POSTS: Record<string, string[]> = {
   "/section-8-company-registration-chennai": ["moa-objects-clause-drafting"],
   "/tax-audit-chennai": ["statutory-audit-checklist", "business-personal-expenses-separate", "documents-checklist-before-auditor-visit"],
   "/trademark-registration-chennai": ["company-name-rejection-reasons"],
-  "/transfer-pricing-audit": ["income-tax-act-2025-section-mapping", "statutory-audit-checklist"],
+  "/transfer-pricing-audit": ["income-tax-act-2025-section-mapping", "statutory-audit-checklist", "india-singapore-dtaa-for-businesses"],
   // Third guide (trust-vs-society-vs-section8) appears on its scheduled publish date.
   "/trust": ["12a-80g-registration-guide-chennai-ngos", "fcra-registration", "trust-vs-society-vs-section8"],
 };

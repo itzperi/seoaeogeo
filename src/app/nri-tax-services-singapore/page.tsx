@@ -141,7 +141,7 @@ export default function Page() {
         { question: "How do Form 15CA and 15CB work?", href: "/form-15ca-15cb-chennai" },
       ]}
       relatedSlugs={["nri-tax-services", "nri-property-sale-tds-chennai", "form-15ca-15cb-chennai", "nri-tax-services-uae"]}
-      relatedPosts={["nri-itr-filing", "rnor-status-returning-nri", "foreign-rsu-tax-schedule-fa-chennai"]}
+      relatedPosts={["nri-itr-filing", "rnor-status-returning-nri", "returning-to-india-from-singapore-tax-checklist", "foreign-rsu-tax-schedule-fa-chennai"]}
     >
       <h2 className={h2}>Who taxes what: India or Singapore?</h2>
       <p className={p}>
