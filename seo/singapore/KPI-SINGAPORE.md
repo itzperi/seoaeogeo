@@ -6,7 +6,7 @@ Plan: `seo/SINGAPORE-STRATEGY-2026-11-19.md` (section 11). Baseline data: `seo/g
 
 **Changes this applies to:**
 - 19 Nov 2026: page fixes, internal links and four guides on branch `seo/singapore-2026-11` (not live until pushed).
-- Guide publish dates: DTAA and compliance calendar on 1 Dec 2026; reverse flip and return checklist on 15 Dec 2026. All are subject to CA sign-off.
+- Guide publish dates: DTAA and compliance calendar on 1 Dec 2026; reverse flip on 15 Dec 2026 and return checklist on 29 Dec 2026. All are subject to CA sign-off.
 
 **Check dates:** about 28 Dec 2026, 25 Jan 2027, 22 Feb 2027 (90-day review), then monthly. The first two windows still include the November 2026 core update, so read them as noisy.
 
