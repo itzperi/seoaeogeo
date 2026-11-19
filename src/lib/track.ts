@@ -30,7 +30,7 @@ const CLUSTERS: [RegExp, string][] = [
 
 // Country or city named in the slug, e.g. "uae" or "coimbatore".
 const PLACES =
-  /(usa|us-companies|uk|uae|gulf|singapore|dubai|chennai|coimbatore|madurai|tiruchirappalli|salem|tiruppur|hosur|vellore|erode|tirunelveli|thoothukudi|kanchipuram|chengalpattu|thanjavur|karur|namakkal|nagercoil|bangalore|hyderabad|mumbai|pune|kolkata|delhi-ncr)/;
+  /(usa|us-companies|uk|uae|gulf|singapore|australia|canada|dubai|chennai|coimbatore|madurai|tiruchirappalli|salem|tiruppur|hosur|vellore|erode|tirunelveli|thoothukudi|kanchipuram|chengalpattu|thanjavur|karur|namakkal|nagercoil|bangalore|hyderabad|mumbai|pune|kolkata|delhi-ncr)/;
 
 function attribution(path: string) {
   const slug = path.replace(/^\/+|\/+$/g, "");
