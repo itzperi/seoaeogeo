@@ -404,8 +404,8 @@ Europe excluding the UK 56 impressions (Germany 15), Malaysia 11, about 25 other
 
 These came from the research passes, sometimes from weak sources. None is to be used until checked against an official source.
 
-1. Whether India has a comprehensive tax treaty with Bahrain, and its scope (incometaxindia.gov.in treaty list). It decides what a Bahrain FAQ can say.
+1. **Verified 21 Nov 2026: India has no comprehensive tax treaty with Bahrain.** The Income Tax Department lists only a Tax Information Exchange Agreement (Notification No. 44/2013, in force 11 April 2013; https://incometaxindia.gov.in/DTAA/Bahrain.html), and has no comprehensive-agreement page for Bahrain as it does for Qatar, Oman, Kuwait and the UAE. The live Gulf page and the Tiruchirappalli page said otherwise; both were corrected in commit `e5c9eb4`. A Bahrain FAQ must say there is no treaty claim.
 2. The form that replaces Form 13 (lower or nil deduction certificate) under the Income-tax Act, 2025, and its section. One weak source said Form 128 under section 395.
-3. The form that replaces Form 10F from 1 April 2026. The site's drafts say Form 41; one search summary said Form 42.
+3. **Verified 21 Nov 2026: Form 41** is "Information to be provided under section 159(8) of the Act", the successor to Form 10F (https://www.incometaxindia.gov.in/documents/d/guest/fn-41). Pages that say "Form 10F" without the 2025 Act form should name both in Wave 2, after their 28-day window.
 4. The section of the Companies Act, 2013 on key managerial personnel (section 203) and whether a virtual CFO engagement can meet it, before the virtual CFO Q&A is written.
 5. The UAE attestation chain for documents used in India, from the Indian embassy or MEA page, before the UAE subsidiary guide is expanded.
