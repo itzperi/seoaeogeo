@@ -1,7 +1,12 @@
 # Singapore run report (19 to 21 Nov 2026)
 
 **Prompt:** `seo/prompts/MASTER-PROMPT-SINGAPORE-SEO-AEO-GEO-2026-11.md`
-**Branch:** `seo/singapore-2026-11`, 17 local commits on master `60229aa`. **Not pushed:** awaiting owner approval (O4), ideally after the November core update settles (about 24 Nov).
+**Branch:** `seo/singapore-2026-11`, 17 commits on master `60229aa`.
+
+**Push history (corrected 21 Nov):**
+- The first 13 commits, up to `cef758d`, were pushed to master on 19 Nov 2026 at 16:13 IST by the separate Sonnet session, and are live.
+- The remaining 4 commits, up to `bc913af`, were pushed on 21 Nov 2026 at 12:24 IST at the owner's request ("push all to get greater sale").
+- IndexNow and GSC submissions have not been run.
 
 **Who did the work:**
 - Opus session: page fixes, internal links, docs, measurement and today's checks and fixes.
@@ -61,14 +66,13 @@ All of it was re-checked on 21 Nov.
 |---|---|
 | Full type-check (`D:\csr-tc-final`, all of `src`) | Pass (exit 0) |
 | ESLint, 25 changed TS/TSX files | Pass (exit 0) |
-| Integrity crawl of the **live** site (230 pages) | 0 errors after fixing the script's stale NAP and geo expectations; before the fix, every page was flagged falsely |
+| Integrity crawl of the **live** site (230 pages, which already included the 19 Nov push) | 0 errors after fixing the script's stale NAP and geo expectations; before the fix, every page was flagged falsely |
 | Dash scan, 62 changed files | 0 in site code. Internal docs only: 2 pre-existing in `PROMPT-GROWTH-LOOP.md`, 1 verbatim GSC query in the strategy |
 | Byte preservation | `git diff 60229aa` is identical with and without `--ignore-cr-at-eol` (60 files, +6,430/−127) |
 | BLOG_INDEX against post meta | Title, description, excerpt and date identical for all four; all four are in the module map |
 | External source links (49) | 37 return 200. 13 on incometaxindia.gov.in and mca.gov.in return 403 (bot block). 9 unreachable from this machine (incometax.gov.in, cpf.gov.sg, itat.gov.in, sci.gov.in); the Supreme Court PDF was confirmed in the browser |
 
-**Not verified:**
-- The new pages in a production build: no local build on this machine. Check the Vercel deploy once pushed.
+**Production check:** the 19 Nov push was live before the 21 Nov crawl, so the page fixes, links, Tamil block and calendar preset were checked in production: 0 integrity errors, and the subsidiary page shows its new title. The four guides correctly return 404 until their dates.
 
 ## 5. Owner actions
 
@@ -77,7 +81,7 @@ All of it was re-checked on 21 Nov.
 | O1 | GSC Singapore Pages and Queries export with position, per page, to find the hidden clicks | Open |
 | O2 | Singapore volumes in Keyword Planner | Open |
 | O3 | CA Rushil signs the four review sheets (open rows listed in each) | Open, and blocks publishing |
-| O4 | Approve the push (after about 24 Nov) and IndexNow | Open |
+| O4 | Approve the push and IndexNow | Push done (19 and 21 Nov); IndexNow still open |
 | O5 | GCC page decision | Open |
 | O6 | Publish the off-site drafts in `seo/singapore/offsite/`; contact Singapore corporate-secretarial firms (no fee-sharing) | Open |
 | O7 | Native-Tamil check of the Tamil block and explainer | Open |
