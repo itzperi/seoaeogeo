@@ -6,7 +6,7 @@ For CA Rushil C S and whoever runs the firm's accounts. Each item says what to d
 
 | # | Action | Why | Time |
 |---|---|---|---|
-| A1 | **Open Vercel, then Deployments.** Look for the newest `master` commit (`792097b` or later). Report what you see: Queued, Error (send the log), Preview instead of Production (click Promote to Production), or nothing listed (reconnect the Git integration). | Production still serves the 19 Nov build. None of the pushes since 21 Nov 12:24 IST (five by the end of that day) has deployed, including a correction of a wrong legal statement (B below). Each new push should have triggered a build, which is what the "empty commit" step is for, and none did. GitHub shows no deployment records, so only the dashboard can show why. | 5 minutes |
+| A1 | **Resolved 21 Nov, 14:16 IST:** an empty commit (`d22ce89`) got the build through, and the corrected pages are live. Keep this step for the next stall: **open Vercel, then Deployments.** Look for the newest `master` commit (`792097b` or later). Report what you see: Queued, Error (send the log), Preview instead of Production (click Promote to Production), or nothing listed (reconnect the Git integration). | Production still serves the 19 Nov build. None of the pushes since 21 Nov 12:24 IST (five by the end of that day) has deployed, including a correction of a wrong legal statement (B below). Each new push should have triggered a build, which is what the "empty commit" step is for, and none did. GitHub shows no deployment records, so only the dashboard can show why. | 5 minutes |
 | A2 | **Done 21 Nov, 14:00 IST:** IndexNow accepted all 230 sitemap URLs (HTTP 200). Once the new build is live, ping only the two corrected pages: `node scripts/indexnow.mjs /nri-tax-services-gulf /income-tax-consultant-tiruchirappalli`. | Bing's index feeds ChatGPT search and Copilot. | 1 minute |
 | A3 | Search Console: request indexing for the 10 URLs in `seo/progress/2026-11-21-24h-sprint.md` section B, then for `/nri-tax-services-gulf` (corrected 21 Nov), then resubmit the sitemap. | Gets Google to recrawl changed pages sooner. | 10 minutes |
 | A4 | Publish the GBP post, the LinkedIn article and the Quora answer in the sprint sheet, section D (after CA Rushil reads each). | Off-site signals; nothing is posted without you. | 30 minutes |
@@ -18,7 +18,7 @@ The Gulf NRI page said "Yes, India has a DTAA with Bahrain" and that India has a
 
 The Income Tax Department lists only a **Tax Information Exchange Agreement** with Bahrain (Notification No. 44/2013, in force 11 April 2013; https://incometaxindia.gov.in/DTAA/Bahrain.html). There is no comprehensive agreement page for Bahrain, while Qatar, Oman, Kuwait and the UAE each have one. So a Bahrain resident has no treaty claim in India.
 
-Both pages were corrected (commit `e5c9eb4`): the Bahrain table row, the introduction sentence, and a note in the Form 10F document row on the Gulf page; the treaty list on the Tiruchirappalli page. Titles and descriptions were not changed. **Please confirm the corrected wording.** It goes live with the next successful deploy (A1).
+Both pages were corrected (commit `e5c9eb4`): the Bahrain table row, the introduction sentence, and a note in the Form 10F document row on the Gulf page; the treaty list on the Tiruchirappalli page. Titles and descriptions were not changed. **Please confirm the corrected wording.** It has been live since 21 Nov, 14:16 IST.
 
 ## C. Decisions (answer in one line each; the agent waits for these)
 
