@@ -465,8 +465,8 @@ export default function Body() {
         adds monthly reporting packs mapped to the parent&apos;s chart of accounts, which is where a December parent and
         a March subsidiary meet. A subsidiary with a simpler profile can use the{" "}
         <Link href="/annual-compliance-package">annual compliance package</Link> for books, audit coordination, ROC,
-        income tax, GST and TDS, with the RBI filings added. Either way the calendar is agreed with your group finance
-        team at the start, and filings are prepared with your resident director, who signs them.
+        income tax, GST and TDS, alongside our FEMA and RBI filings. Either way the calendar is agreed with your group
+        finance team at the start, and filings are prepared for your directors to sign.
       </p>
 
       <h2>Which official sources does this guide rely on?</h2>
