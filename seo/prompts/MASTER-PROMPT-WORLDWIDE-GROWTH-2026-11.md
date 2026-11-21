@@ -5,6 +5,8 @@
 2. Paste everything below the line.
 3. Add which wave to run: "Wave 1", "Wave 2" (from 15 Dec 2026), "Wave 3" (from January 2027) or "monthly".
 
+**Newer prompt (21 Nov 2026):** for all-country runs, use `seo/prompts/MASTER-PROMPT-ALL-COUNTRIES-2026-11-21.md`. It keeps these waves and adds the competitor layer from `seo/ALL-COUNTRIES-COMPETITOR-PLAN-2026-11-21.md`.
+
 It is self-contained. The plan behind it is `seo/WORLDWIDE-GROWTH-PLAN-2026-11-19.md`. Singapore has its own prompt (`seo/prompts/MASTER-PROMPT-SINGAPORE-SEO-AEO-GEO-2026-11.md`); this prompt covers every market and calls that one for Singapore work.
 
 ---

@@ -221,6 +221,7 @@ The Google November 2026 core update rolls out from 10 to about 24 Nov. Don't ju
 ## 9. Key documents in `seo/`
 
 - `GROWTH-PLAN-2026-11-16.md`: the worldwide plan, with page-level actions and market plans.
+- `ALL-COUNTRIES-COMPETITOR-PLAN-2026-11-21.md` and `prompts/MASTER-PROMPT-ALL-COUNTRIES-2026-11-21.md`: what the winning firms in each market do, which tactics this firm may copy (ADOPT, ADAPT, AVOID), country plans and new owner decisions. The newest all-countries plan and prompt.
 - `PROMPT-GROWTH-LOOP.md`: the monthly maximum-growth prompt.
 - `GSC-INDEXING-FIXES-2026-11-14.md`: what each indexing status means, and the owner's GSC steps.
 - `GBP-RANK-1-PLAYBOOK-CA-FIRM-CHENNAI-2026-11.md` and `GBP-ACTION-CHECKLIST-2026-11-13.md`: map pack work.
