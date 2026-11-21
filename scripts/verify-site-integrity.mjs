@@ -52,9 +52,12 @@ await batches(paths, async (path) => {
     try { const value = JSON.parse(raw); nodes.push(...(value["@graph"] ?? [value])); }
     catch { errors.push(`${path}: malformed JSON-LD`); }
   }
-  const org = nodes.find((n) => n["@type"] === "AccountingService" && n.address);
-  check(org?.telephone === "+917200149711" && org?.address?.postalCode === "600040", `${path}: inconsistent organization NAP`);
-  check(org?.geo?.latitude === 13.0859694 && org?.geo?.longitude === 80.1997378, `${path}: inconsistent map coordinates`);
+  // The organisation node is typed ["ProfessionalService", "AccountingService"]. Expected values mirror
+  // src/lib/site.ts (PHONE_TEL, ADDRESS.postalCode, GEO); update both together.
+  const isOrg = (t) => t === "AccountingService" || (Array.isArray(t) && t.includes("AccountingService"));
+  const org = nodes.find((n) => isOrg(n["@type"]) && n.address);
+  check(String(org?.telephone ?? "").replace(/\D/g, "") === "917200149711" && org?.address?.postalCode === "600040", `${path}: inconsistent organization NAP`);
+  check(org?.geo?.latitude === 13.085989 && org?.geo?.longitude === 80.199684, `${path}: inconsistent map coordinates`);
   for (const node of nodes) {
     if (node["@type"] === "FAQPage") for (const q of node.mainEntity ?? []) {
       check(visible.includes(text(q.name)) && visible.includes(text(q.acceptedAnswer.text)), `${path}: FAQ absent from visible HTML: ${q.name}`);
