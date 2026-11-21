@@ -58,12 +58,12 @@ const COUNTRIES: ReactNode[][] = [
   ["Qatar", "Yes, India has a DTAA with Qatar", "Generally the General Tax Authority", "Salary is generally not charged to personal income tax. Confirm with the authority whether it issues a certificate to a salaried individual and what the certificate says."],
   ["Oman", "Yes, India has a DTAA with Oman", "Generally the Tax Authority under the Ministry of Finance", "Salary is generally not charged to personal income tax. Whether a certificate can be issued to an individual is a procedure question to confirm locally."],
   ["Kuwait", "Yes, India has a DTAA with Kuwait", "Generally the Ministry of Finance, through its tax department", "Salary is generally not charged to personal income tax. Procedure and wording of any certificate should be confirmed with the authority."],
-  ["Bahrain", "Yes, India has a DTAA with Bahrain", "Generally the National Bureau for Revenue", "Salary is generally not charged to personal income tax. Confirm how an individual applies and what residence the certificate records."],
+  ["Bahrain", "No. India and Bahrain have a tax information exchange agreement (in force 11 April 2013), not a DTAA", "Not needed for an Indian treaty claim, because there is no DTAA", "Salary is generally not charged to personal income tax. Indian income is taxed under Indian law alone, with no treaty rate to claim."],
 ];
 
 const DOC_ROWS: ReactNode[][] = [
   ["Passport", "Proves identity and nationality, and the entry and exit stamps used for day counts.", "Every country on this page."],
-  ["Residence permit or national ID", "Shows the address and the status under which you live in the country. Saudi Arabia: iqama. Qatar: Qatar ID. Oman: resident card. Kuwait: civil ID. Bahrain: CPR card.", "Copy of front and back, current."],
+  ["Residence permit or national ID", "Shows the address and the status under which you live in the country. Saudi Arabia: iqama. Qatar: Qatar ID. Oman: resident card. Kuwait: civil ID. Bahrain: CPR card, though with no DTAA there is no treaty claim for which Form 10F would be filed.", "Copy of front and back, current."],
   ["Tax residency certificate", "The certificate from the country's tax authority that Form 10F relies on, where one can be obtained.", "Apply in the country; the authority sets the procedure."],
   ["Employment contract or sponsor letter", "Supports the period and nature of your stay and your source of income.", "Your employer or sponsor."],
   ["PAN and foreign tax identification details", "Form 10F asks for your Indian PAN, and for a foreign tax identification number where the country issues one.", "Your PAN card, and the authority's records."],
@@ -143,7 +143,7 @@ export default function Page() {
     >
       <h2 className={h2}>Which Gulf countries does this page cover, and does India have a DTAA with each?</h2>
       <p className={p}>
-        India has a double taxation avoidance agreement with each of the five countries below, and this page covers them
+        India has a double taxation avoidance agreement with Saudi Arabia, Qatar, Oman and Kuwait. With Bahrain it has only a tax information exchange agreement (Notification No. 44/2013, in force 11 April 2013), which lets the two tax authorities share information but does not decide which country taxes what, so a Bahrain resident has no treaty claim to make. This page covers all five countries
         together because the Indian questions are close to identical. NRIs in the UAE have a separate page at{" "}
         <Link href="/nri-tax-services-uae" className={linkClass}>
           NRI tax services for UAE residents

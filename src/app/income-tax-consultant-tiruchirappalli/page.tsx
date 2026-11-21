@@ -65,7 +65,7 @@ const NRI_POINTS = [
   ["Rent from a Trichy house or flat", "Taxed in India; 30% standard deduction and interest on a home loan are allowed. The tenant deducts TDS on rent paid to a non-resident.", "Many tenants are unaware of this TDS; a lower deduction certificate can help where tax is low."],
   ["Sale of Trichy property", "Long-term after 24 months at 12.5% without indexation. The buyer deducts TDS on the whole sale price unless a lower deduction certificate is obtained.", "Apply for the certificate before the sale deed is registered."],
   ["Interest on NRE and NRO deposits", "NRE interest is exempt while non-resident; NRO interest is taxable in India with TDS.", "Exemption on NRE interest stops once the person becomes resident."],
-  ["Singapore and Gulf tax treaties", "India has tax treaties with Singapore, the UAE, Saudi Arabia, Oman, Qatar, Kuwait and Bahrain, which can affect how Indian income is taxed and credited.", "A tax residency certificate from the country of residence is needed to claim treaty benefits."],
+  ["Singapore and Gulf tax treaties", "India has tax treaties with Singapore, the UAE, Saudi Arabia, Oman, Qatar and Kuwait, which can affect how Indian income is taxed and credited. With Bahrain it has only a tax information exchange agreement.", "A tax residency certificate from the country of residence is needed to claim treaty benefits."],
 ];
 
 const CAPITAL_GAINS = [
