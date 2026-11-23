@@ -147,7 +147,7 @@ export default function Page() {
         { question: "How are NRIs in the UAE taxed in India?", href: "/nri-tax-services-uae" },
         { question: "What FEMA filings follow a foreign investment?", href: "/fema-rbi-compliance" },
       ]}
-      relatedSlugs={["india-subsidiary-compliance-cfo", "fema-rbi-compliance", "transfer-pricing-audit"]}
+      relatedSlugs={["india-subsidiary-compliance-cfo", "fema-rbi-compliance", "transfer-pricing-audit", "outsourced-bookkeeping-uae"]}
     >
       <CrossBorderSteps country="uae" service="an India subsidiary for a UAE company" />
       <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />

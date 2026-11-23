@@ -139,7 +139,7 @@ export default function Page() {
         { question: "What does day-to-day bookkeeping support look like for a business in India?", href: "/bookkeeping-services-chennai" },
         { question: "Can the same team support a UK client’s Indian subsidiary?", href: "/india-subsidiary-compliance-cfo" },
       ]}
-      relatedSlugs={["outsourced-accounting-for-cpa-firms", "bookkeeping-services-chennai", "india-subsidiary-compliance-cfo"]}
+      relatedSlugs={["outsourced-accounting-for-cpa-firms", "bookkeeping-services-chennai", "india-subsidiary-compliance-cfo", "outsourced-bookkeeping-uk"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">How do India working hours overlap with UK hours?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

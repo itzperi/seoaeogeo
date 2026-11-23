@@ -150,7 +150,7 @@ export default function Page() {
         { question: "What does annual compliance for an Indian subsidiary involve?", href: "/india-subsidiary-compliance-cfo" },
         { question: "What FEMA filings follow a foreign investment?", href: "/fema-rbi-compliance" },
       ]}
-      relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "virtual-cfo-services"]}
+      relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "virtual-cfo-services", "outsourced-bookkeeping-uk"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">What are the benefits of an Indian subsidiary for a UK company?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

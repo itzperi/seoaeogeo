@@ -158,7 +158,7 @@ export default function Page() {
         { question: "What does your bookkeeping process look like for direct clients?", href: "/bookkeeping-services-chennai" },
         { question: "Can you also help US-based NRIs with their Indian taxes?", href: "/nri-tax-services-usa" },
       ]}
-      relatedSlugs={["outsourced-accounting-for-uk-accountants", "bookkeeping-services-chennai", "nri-tax-services-usa"]}
+      relatedSlugs={["outsourced-accounting-for-uk-accountants", "bookkeeping-services-chennai", "nri-tax-services-usa", "outsourced-bookkeeping-usa"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">What does outsourcing tax preparation to India look like for a US CPA firm?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

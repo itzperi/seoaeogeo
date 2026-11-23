@@ -129,7 +129,7 @@ export default function Page() {
         { question: "How is transfer pricing applied to transactions with the foreign parent?", href: "/transfer-pricing-audit" },
         { question: "Is an LLP a better choice than a private limited company?", href: "/llp-registration-chennai" },
       ]}
-      relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "llp-registration-chennai"]}
+      relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "llp-registration-chennai", "outsourced-bookkeeping-services"]}
     >
       <h2 className="mt-14 text-2xl text-obsidian">How does a foreign company register a business in India, step by step?</h2>
       <p className="mt-4 max-w-2xl leading-relaxed text-slate">

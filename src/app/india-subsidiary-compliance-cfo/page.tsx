@@ -137,7 +137,7 @@ export default function Page() {
         { question: "What does a transfer pricing audit and Form 3CEB involve?", href: "/transfer-pricing-audit" },
         { question: "How is payroll and PF/ESI run for an Indian entity?", href: "/payroll-services-chennai" },
       ]}
-      relatedSlugs={["transfer-pricing-audit", "statutory-audit-chennai", "virtual-cfo-services"]}
+      relatedSlugs={["transfer-pricing-audit", "statutory-audit-chennai", "virtual-cfo-services", "outsourced-bookkeeping-services"]}
       relatedPosts={["annual-roc-filing-calendar", "form-3ceb-due-date-applicability", "tds-return-filing-deadlines", "advance-tax-deadlines"]}
     >
       <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />

@@ -78,7 +78,7 @@ export default function Page() {
         { question: "What reports will we receive each month?", answer: "A monthly MIS pack with profit and loss against budget, balance sheet, cash and bank position, receivables and payables ageing, and a compliance status sheet showing what was filed and when. We add a short commentary on movements that need a decision, such as slow-paying customers or rising costs." },
         { question: "Does outsourcing replace a CFO?", answer: "No. Outsourced accounting produces accurate, timely numbers and keeps you compliant. A CFO uses those numbers to plan cash, raise funds, set budgets and advise the board. Many clients pair accounting outsourcing with our Virtual CFO service once the monthly close is reliable." },
       ]}
-      relatedSlugs={["bookkeeping-services-chennai", "payroll-services-chennai", "virtual-cfo-services"]}
+      relatedSlugs={["bookkeeping-services-chennai", "payroll-services-chennai", "virtual-cfo-services", "outsourced-bookkeeping-services"]}
       relatedPosts={[
         "outgrown-bookkeeping-signs",
         "business-personal-expenses-separate",

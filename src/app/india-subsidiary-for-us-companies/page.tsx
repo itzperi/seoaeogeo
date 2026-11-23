@@ -151,7 +151,7 @@ export default function Page() {
         { question: "What does annual compliance for an Indian subsidiary involve?", href: "/india-subsidiary-compliance-cfo" },
         { question: "How is transfer pricing documented in India?", href: "/transfer-pricing-audit" },
       ]}
-      relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "fema-rbi-compliance"]}
+      relatedSlugs={["india-subsidiary-compliance-cfo", "transfer-pricing-audit", "fema-rbi-compliance", "outsourced-bookkeeping-usa"]}
     >
       <CrossBorderSteps country="us" service="an India subsidiary for a US company" />
       <HighTicketSections audiences={AUDIENCES} notIncluded={NOT_INCLUDED} />
