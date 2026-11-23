@@ -104,6 +104,26 @@ Copied from `seo/CONTEXT-PROMPT.md` section 3; if they ever differ, that file wi
 
 ---
 
+## 4A. WHAT THE 23 NOV TEARDOWNS FOUND (read the files for evidence and source grades)
+
+**India incorporation** (`india-incorporation-leaders.md`; Vakilsearch, IndiaFilings, Kanakkupillai, IncorpX and Razorpay Rize):
+- No competitor owns "incorporation to IPO". IncorpX only has a custom-quote IPO-preparation tier on its virtual CFO page. A lifecycle guide built only on SEBI, MCA and RBI sources is an open gap. The SEBI, MCA and RBI facts in the file are search snippets; re-read each from the primary page and state no SEBI threshold until it is.
+- IncorpX and Kanakkupillai put a definition, tables and 23 to 30 FAQs in FAQPage markup on one page; IncorpX adds a named reviewer, a dated byline and a state-to-registrar table. The firm's Chennai pages have 9 to 10 FAQs: add verified questions, not filler.
+- Vakilsearch's city page repeats the national page's headings and has no structured data; Kanakkupillai's and IndiaFilings' Chennai pages are genuinely local. Use that to split the firm's two Chennai pages by real local content (ROC Chennai, Tamil Nadu stamp duty, professional tax, Shops and Establishments), not by template.
+- AI surfaces: IncorpX serves Markdown and sets Content-Signal; Razorpay names the AI bots; IndiaFilings has a rich `llms.txt`. The firm has Markdown copies, `llms.txt` and named bots; Content-Signal waits for O-AI-TRAIN.
+
+**Bookkeeping, US, UK, Australia, Canada** (`bookkeeping-us-uk-au-ca.md`):
+- India-based vendors with blog clusters win the offshore queries; directories and self-ranked listicles win head terms. Almost nobody cites a regulator, so the firm's primary-source habit is an edge.
+- The firm's market pages already carry FAQPage markup (9 to 10 questions each); do not rebuild that. Real gaps: the UK page lacks the HMRC agent handshake, the US page lacks the IRC 7216 offshore-consent point. Verify both from primary pages before writing.
+- Canada outline (GST/HST small-supplier threshold and reporting periods, payroll remittance, T4 deadline, six-year records, PIPEDA) is usable; most items were seen only as snippets, so open each canada.ca and CRA page first.
+
+**Virtual CFO, Singapore, UAE, Germany, Netherlands** (`virtual-cfo-sg-uae-de-nl.md`):
+- Singapore and UAE rankings go to marketplaces and directories and to publisher or free-zone authority. The firm's virtual CFO page (about 5,200 words) is longer and better structured than all of them, but never mentions treaty paperwork or Form 15CA and mentions Singapore once.
+- **Germany location rule:** section 146(2b) of the Abgabenordnung means a German entity's electronic books may not be kept outside the EU, India included, without tax-office approval. German competitors avoid it by using a local partner firm. A German page is allowed only if it states this plainly and never implies Indian-hosted books are acceptable. Open the GoBD letter and StBerG section 6 first.
+- **Netherlands:** not ready. Verified rules are thin; where books may be kept and KvK annual accounts are NOT VERIFIED. Fold one verified paragraph into the bookkeeping hub instead of a page.
+- Gaps in existing entries: the UAE entry has no WPS or free-zone content; the Singapore entry has no "reporting to the overseas parent" section; neither says whether local law limits where books may be kept.
+- The virtual CFO page says "Form 3CEB". That is correct for FY 2025-26 and out of date from tax year 2026-27 (Form 48 under section 172 of the Income-tax Act, 2025). A factual wording fix is allowed at any time; it is not a title or description change.
+
 ## 5. RESEARCH LOOP (run before any build, and monthly)
 
 1. Confirm the three teardown files exist and are dated within 30 days. If not, run one researcher per file with the same brief: fetch the competitor pages, record only observed facts (title, H1, word count, H2s and which are questions, tables, FAQ count, JSON-LD types, reviewer and date, `llms.txt`), search the target queries (the search tool is US-based; say it is not a local SERP), and separate evidence from guesses.
@@ -131,7 +151,7 @@ Copied from `seo/CONTEXT-PROMPT.md` section 3; if they ever differ, that file wi
 | 2 | **Finance function for a foreign-owned startup in India: virtual CFO, MIS, investor reporting, FEMA and transfer pricing** (`cfo-for-foreign-owned-startup-india`): one guide for all eight parent countries, with a short section per country only where Indian-side rules differ (treaty, remittance paperwork, reporting dates) | Segment A, the high-value deal | Owner yes; primary sources per country; CA review |
 | 3 | **Incorporation to listing: the Indian finance and compliance path for a startup** (private limited, FDI reporting, first audit, transfer pricing, Series funding diligence, listing requirements): lifecycle guide linking the existing pages | Segment A, B | Verify every SEBI, MCA, RBI fact from primary sources; no claim that the firm has taken a company public |
 | 4 | **Outsourced bookkeeping for Canada** (market entry in `bookkeeping-markets.ts`: GST/HST, payroll remittances, CRA record keeping; filing stays with the client's agent) | Segment B, C | Owner yes (O-CA); 600 unshared words; CRA sources verified |
-| 5 | **Outsourced bookkeeping for Germany** and **for the Netherlands** (DATEV, lexoffice and sevDesk handoffs; GoBD record keeping; BTW returns, KvK) | Segment B, C | Only if the research file shows enough verified rules for 600 unshared words each; otherwise fold one verified section into the hub. Owner yes |
+| 5 | **Outsourced bookkeeping for Germany** (section 146 location rule and approval, retention, VAT returns, e-invoicing, DATEV and lexoffice handoffs). **Netherlands: no page yet;** fold one verified paragraph into the hub until the rules are verified | Segment B, C | Germany only after the GoBD letter and StBerG section 6 are opened and the owner approves (O-DE-NL); 600 unshared words; the page must say Indian-hosted books need tax-office approval |
 | 6 | Strengthen the existing US, UK, Australia, Singapore and UAE bookkeeping entries with the gaps the teardown finds (named software handoffs, local rules, FAQs) | Segment B, C | Pages edited within 28 days: sections and links only, no title or description change before the window ends |
 | 7 | **India private limited:** apply the mechanisms the teardown finds (short-answer box, comparison tables, document checklist depth, sources, named CA reviewer) to `/private-limited-company-incorporation-chennai` and `/company-registration-chennai`, and resolve their cannibalisation (positions 29 to 36 for the same queries) | India, 5 to 10% effort | Not before 15 Dec (both edited 16 Nov); merge needs owner approval |
 
