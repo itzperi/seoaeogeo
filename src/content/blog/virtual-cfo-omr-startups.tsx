@@ -1,5 +1,6 @@
 import type { BlogPostMeta } from "@/lib/blog";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 
 export const meta: BlogPostMeta = {
   slug: "virtual-cfo-omr-startups",
@@ -185,6 +186,12 @@ export default function Body() {
         <li>A compliance calendar covering GST, TDS, ROC, LUT renewal and FEMA reporting</li>
         <li>Data room preparation and support through investor diligence</li>
       </ul>
+
+      <p>
+        If you are still deciding between a part-time CFO, a shared CFO and a virtual CFO service, our{" "}
+        <PostLink slug="part-time-vs-shared-vs-virtual-cfo">guide to choosing between them</PostLink> compares the
+        options stage by stage, from first revenue to a funded round.
+      </p>
 
       <p>
         If you are a founder or finance lead along the OMR corridor getting ready for a raise or trying to get a genuine

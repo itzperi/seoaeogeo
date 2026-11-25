@@ -1,5 +1,6 @@
 import type { BlogPostMeta } from "@/lib/blog";
 import Link from "next/link";
+import PostLink from "@/components/PostLink";
 
 export const meta: BlogPostMeta = {
   slug: "what-virtual-cfo-reviews-monthly",
@@ -184,6 +185,12 @@ export default function Body() {
         <li>Budget against actual with a decision on what to adjust</li>
         <li>A compliance check for the month and a look ahead at the next quarter</li>
       </ul>
+
+      <p>
+        Not sure whether you need a part-time, shared or virtual CFO, or a full-time hire? Our{" "}
+        <PostLink slug="part-time-vs-shared-vs-virtual-cfo">comparison of part-time, shared and virtual CFO options</PostLink>{" "}
+        sets out what each one means and which companies must have a whole-time CFO under the Companies Act.
+      </p>
 
       <p>
         For startups, the same rhythm adds runway and fundraising readiness, as described in our note on{" "}

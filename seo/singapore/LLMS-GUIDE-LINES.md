@@ -53,3 +53,11 @@ These lines were taken out of `public/llms.txt` and `public/llms-full.txt` on 21
   ```
   - [Moving Back to India from Singapore: A Tax Checklist](https://www.csrushil.com/blog/returning-to-india-from-singapore-tax-checklist): Dated checklist covering IR21, CPF and SRS, RSUs, NRE and FCNR accounts, FEMA section 6(4) assets and Schedule FA.
   ```
+
+## Other held guide (not Singapore)
+
+- Publish date 5 Dec 2026 (`part-time-vs-shared-vs-virtual-cfo`), for the "## Guides" section of `public/llms.txt` (and `llms-full.txt` if it lists guides), only after CA sign-off of `seo/REVIEW-part-time-vs-shared-vs-virtual-cfo.md`:
+
+  ```
+  - [Part-Time, Shared or Virtual CFO: Which One Should You Hire?](https://www.csrushil.com/blog/part-time-vs-shared-vs-virtual-cfo): What each option means, which companies must have a whole-time CFO under section 203 and rule 8, a comparison and stage-fit table, the first 90 days and a hiring checklist.
+  ```

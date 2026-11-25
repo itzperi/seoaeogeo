@@ -205,6 +205,8 @@ const modules = {
     import("@/content/blog/virtual-cfo-omr-startups"),
   "what-virtual-cfo-reviews-monthly": () =>
     import("@/content/blog/what-virtual-cfo-reviews-monthly"),
+  "part-time-vs-shared-vs-virtual-cfo": () =>
+    import("@/content/blog/part-time-vs-shared-vs-virtual-cfo"),
   "business-personal-expenses-separate": () =>
     import("@/content/blog/business-personal-expenses-separate"),
   "safe-cash-deposit-limit": () =>
@@ -1089,6 +1091,15 @@ export const BLOG_INDEX: BlogPostMeta[] = [
     updated: "2026-11-14",
     excerpt:
       "Business owners considering virtual CFO support often aren't sure what the service actually involves month to month, beyond a vague sense...",
+  },
+  {
+    slug: "part-time-vs-shared-vs-virtual-cfo",
+    title: "Part-Time, Shared or Virtual CFO: Which One Should You Hire?",
+    description:
+      "Part-time, shared, fractional or virtual CFO? What each means, which companies must have a whole-time CFO, how the options compare and what to ask first.",
+    date: "2026-12-05",
+    excerpt:
+      "Four labels, one question: how much senior finance help does your company need, and in what form? A plain comparison, the Companies Act rule on whole-time CFOs, and a checklist for hiring.",
   },
   {
     slug: "business-personal-expenses-separate",
